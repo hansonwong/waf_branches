@@ -1,0 +1,8 @@
+{ 
+	"seriesList": [  
+                {"name":"蓝盾实验设备","dataNumber":10000,"title":"实训设备1"},
+				{"name":"实训设备","dataNumber":1000,"title":"实训设备2"},
+				{"name":"其他设备","dataNumber":10,"title":"实训设备3"}
+			],
+	"title":["访问类型统计"]
+}  

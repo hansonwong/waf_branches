@@ -1,0 +1,15 @@
+[Unit]
+Description=Audit Log Parser processor
+Requires=redis.service
+After=redis.service
+
+[Service]
+# Type=forking
+Type=simple
+ExecStart=/usr/bin/python /usr/local/bluedon/LogParser/LogParser.py
+PIDFile=/var/run/python/LogParser.pid
+Restart=always
+TimeoutStopSec=30s
+
+[Install]
+WantedBy=multi-user.target

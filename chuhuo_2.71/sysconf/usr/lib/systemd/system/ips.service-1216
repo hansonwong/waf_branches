@@ -1,0 +1,14 @@
+[Unit]
+#Description=Audit IPS daemon
+After=rc-local.service
+
+[Service]
+# Type=forking
+Type=simple
+ExecStart=/home/suricata/bin/suricata -c /etc/suricata/suricata.yaml --dpdk  --pidfile /var/run/suricata.pid 
+PIDFile=/var/run/suricata.pid
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+#!/bin/sh
+# keepalived bridge mode
+case "$1" in
+  up)
+    {% for brg_name in brg %}     
+    ifconfig {{ brg_name }} up
+    brctl stp {{brg_name}} on{% endfor %}
+     ;;
+  down)
+    {% for brg_name in brg %}
+    ifconfig {{ brg_name }} down{% endfor %}
+     ;;
+
+esac
+exit 0

@@ -1,0 +1,14 @@
+[Unit]
+Description=keep_pppoe
+After=rc-local.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/usr/local/bluedon
+ExecStart=/usr/bin/python -m networking.keep_pppoe
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,2 @@
+1. 需要做建立连接的超时处理
+2. 考虑是否要把ngx_connection.c中ngx_get_connection()的100个大小的链表设置成可配置的

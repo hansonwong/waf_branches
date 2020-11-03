@@ -1,0 +1,11 @@
+[
+    {"sTitle":"攻击时间","data":"time"},
+    {"sTitle":"源IP地址","data":"yuanIP"},
+    {"sTitle":"目的IP地址","data":"mdIP"},
+    {"sTitle":"目标端口","data":"port"},
+    {"sTitle":"协议","data":"protocol"},
+    {"sTitle":"描述","data":"describe"},        
+    {"sClass":"btn_edit","bVisible":false,"data":""},
+    {"sClass":"btn_view","bVisible":false,"data":""},
+    {"sClass":"btn_del","bVisible":false,"data":""}
+]

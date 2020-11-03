@@ -1,0 +1,226 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import os
+import time
+import sys
+import json
+import commands
+from config import config
+from db import session_scope, Session, BaseConfig, conn_scope, WafNicSet
+from bducarp import allow_mysql_access
+from common import blackandwhite, del_iptables_rule, insert_iptables_rule
+
+fragmentdata = ()
+ddosdata = ()
+# bridgein = []
+# bridgeout = []
+syncdb_ip = None
+minddos = 1
+maxddos = 10000
+limitstr = '-m limit --limit '
+burststr = '--limit-burst '
+hashtimes = '--hashlimit '
+hashburst = '/sec --hashlimit-burst '
+hashmode = '--hashlimit-mode srcip '
+hashlimit = '-m hashlimit --hashlimit-name '
+rulelog = '-j LOG --log-prefix=\"Probable ddos:'
+rulestr = (('ALL-SCAN ', 'ALL-LIMIT ', '-j RETURN', 'all-flood \"'),
+          ('TCP-SCAN ', 'TCP-LIMIT ', '-j RETURN', 'tcp-flood \"'),
+          ('SYN-SCAN ', 'SYN-LIMIT ', '-j RETURN', 'syn-flood \"'),
+          ('ACK-SCAN ', 'ACK-LIMIT ', '-j RETURN', 'ack-flood \"'),
+          ('OTHER-SCAN ', 'OTHER-LIMIT ', '-j RETURN', 'other-tcp \"'),
+          ('UDP-SCAN ', 'UDP-LIMIT ', '-j RETURN', 'udp-flood \"'),
+          ('ICMP-SCAN ', 'ICMP-LIMIT ', '-j RETURN', 'icmp-flood \"'))
+
+
+def dossinit(iptable):
+    os.system('/usr/sbin/%s -F WAFDDOS' % iptable)
+    os.system('/usr/sbin/%s -F ALL-SCAN' % iptable)
+    os.system('/usr/sbin/%s -F ALL-LIMIT' % iptable)
+    os.system('/usr/sbin/%s -F TCP-SCAN' % iptable)
+    os.system('/usr/sbin/%s -F TCP-LIMIT' % iptable)
+    os.system('/usr/sbin/%s -F SYN-SCAN' % iptable)
+    os.system('/usr/sbin/%s -F SYN-LIMIT' % iptable)
+    os.system('/usr/sbin/%s -F ACK-SCAN' % iptable)
+    os.system('/usr/sbin/%s -F ACK-LIMIT' % iptable)
+    os.system('/usr/sbin/%s -F OTHER-SCAN' % iptable)
+    os.system('/usr/sbin/%s -F OTHER-LIMIT' % iptable)
+    os.system('/usr/sbin/%s -F UDP-SCAN' % iptable)
+    os.system('/usr/sbin/%s -F UDP-LIMIT' % iptable)
+    os.system('/usr/sbin/%s -F ICMP-SCAN' % iptable)
+    os.system('/usr/sbin/%s -F ICMP-LIMIT' % iptable)
+    os.system('/usr/sbin/%s -F DROPLINK' % iptable)
+
+    if iptable == "iptables":
+        os.system('/usr/sbin/%s -A WAFDDOS -s 127.0.0.1 -j ACCEPT' % iptable)
+    elif iptable == "ip6tables":
+        os.system('/usr/sbin/%s -A WAFDDOS -s ::1 -j ACCEPT' % iptable)
+
+    # os.system('/usr/sbin/%s -A WAFDDOS -m set --match-set backlist src -j DROP' % iptable)
+
+    if(ddosdata[14]):
+        # setfwinput(iptable)
+        if(ddosdata[15]):
+            os.system('/usr/sbin/%s -A WAFDDOS -p udp -j DROP' % iptable)
+        if(ddosdata[16]):
+            os.system('/usr/sbin/%s -A WAFDDOS -p icmp -j DROP' % iptable)
+
+        os.system('/usr/sbin/%s -A WAFDDOS -j ALL-SCAN' % iptable)
+        os.system('/usr/sbin/%s -A WAFDDOS -p tcp -j TCP-SCAN' % iptable)
+        os.system('/usr/sbin/%s -A WAFDDOS -p tcp --syn -j SYN-SCAN' % iptable)
+        os.system('/usr/sbin/%s -A WAFDDOS -p tcp --tcp-flags ALL ACK -j ACK-SCAN' % iptable)
+        os.system('/usr/sbin/%s -A WAFDDOS -p tcp ! --tcp-flags ALL SYN,ACK -j OTHER-SCAN' % iptable)
+        os.system('/usr/sbin/%s -A WAFDDOS -p udp -j UDP-SCAN' % iptable)
+        os.system('/usr/sbin/%s -A WAFDDOS -p icmp -j ICMP-SCAN' % iptable)
+
+        addiptables(iptable)
+        os.system('/usr/sbin/%s -A DROPLINK -m recent --set --name DROPLINK' % iptable)
+        os.system('/usr/sbin/%s -A DROPLINK -j DROP' % iptable)
+
+
+def addiptables(iptable):
+    count = 0
+    while(count < 14):
+        num = count / 2
+        values = [ddosdata[count], ddosdata[count + 1]]
+        if values[0] > maxddos:
+            values[0] = maxddos
+        elif values[0] < minddos:
+            values[0] = minddos
+        if values[1] > maxddos:
+            values[1] = maxddos
+        elif values[1] < minddos:
+            values[1] = minddos
+
+        iptstr = '/sbin/{iptables} -A '.format(iptables=iptable)
+        iptstr1 = iptstr + rulestr[num][0] + '-j ' + rulestr[num][1]
+        iptstr2 = iptstr + rulestr[num][0] + hashlimit + rulestr[num][0] + hashtimes + str(
+            values[1]) + hashburst + str(values[1]) + ' ' + hashmode + rulestr[num][2]
+        iptstr3 = iptstr + rulestr[num][0] + limitstr + '3/min ' + \
+            rulelog + rulestr[num][3]
+        iptstr4 = iptstr + rulestr[num][0] + '-j DROPLINK'
+        iptstr5 = iptstr + rulestr[num][1] + limitstr + str(
+            values[0]) + '/sec ' + burststr + str(values[0]) + ' -j RETURN'
+        iptstr6 = iptstr + rulestr[num][1] + '-j DROP'
+        # print 'iptstr1:',iptstr1
+        # print 'iptstr2:',iptstr2
+        # print 'iptstr3:',iptstr3
+        # print 'iptstr4:',iptstr4
+        # print 'iptstr5:',iptstr5
+        # print 'iptstr6:',iptstr6
+        os.system(iptstr1)
+        os.system(iptstr2)
+        os.system(iptstr3)
+        os.system(iptstr4)
+        os.system(iptstr5)
+        os.system(iptstr6)
+        count += 2
+
+
+def getfragment(cursor):
+    global fragmentdata
+    cursor.execute('select * from `t_ipfragment`')
+    for fragmentdata in cursor.fetchall():
+        break
+
+
+# def getbridge(cursor):
+    # global bridgein
+    # global bridgeout
+    # cursor.execute('select `sBindDevices`, `bridgeType` from db_firewall.m_tbbridgedevice')
+    # for data in cursor.fetchall():
+        # buff = data[0].split(",")
+        # iflen = len(buff)
+        # # todo: not correct for everythig, need repaire
+        # start_if = 1
+        # if iflen > 2:
+            # start_if = iflen - 2
+
+        # for i in range(start_if, iflen):
+            # bridgeout.append((buff[i], data[1]))
+        # for i in range(0, iflen / 2):
+            # bridgein.append((buff[i], data[1]))
+    # print 'bridgein:',bridgein
+
+
+def getddos(cursor):
+    global ddosdata
+    sqltable = 'totalpacket, perpacket, tcppacket, pertcppacket, synpacket, persynpacket, \
+                ackpacket, perackpacket, othertcp, perothertcp, udppacket, perudppacket, \
+                icmppacket, pericmppacket, ddosenable, udpenable, icmpenable'''
+    sqlstr = 'select ' + sqltable + ' from t_ddosset'
+    cursor.execute(sqlstr)
+    for ddosdata in cursor.fetchall():
+        break
+
+
+def config_ddos(iptable, reboot=False):
+    '''
+    config waf ddos
+    '''
+    if reboot:
+        create_ddos_chain(iptable)
+
+    with conn_scope(**config['db']) as (_, cursor):
+        getddos(cursor)
+
+    # inputinit(iptable)
+    dossinit(iptable)
+    # white_IP()
+
+
+def create_ddos_chain(iptable):
+    '''
+    create ddos chain
+    '''
+    os.system('/usr/sbin/%s -N WEB-OUT' % iptable)
+    os.system('/usr/sbin/%s -N ALL-SCAN' % iptable)
+    os.system('/usr/sbin/%s -N ALL-LIMIT' % iptable)
+    os.system('/usr/sbin/%s -N TCP-SCAN' % iptable)
+    os.system('/usr/sbin/%s -N TCP-LIMIT' % iptable)
+    os.system('/usr/sbin/%s -N SYN-SCAN' % iptable)
+    os.system('/usr/sbin/%s -N SYN-LIMIT' % iptable)
+    os.system('/usr/sbin/%s -N ACK-SCAN' % iptable)
+    os.system('/usr/sbin/%s -N ACK-LIMIT' % iptable)
+    os.system('/usr/sbin/%s -N OTHER-SCAN' % iptable)
+    os.system('/usr/sbin/%s -N OTHER-LIMIT' % iptable)
+    os.system('/usr/sbin/%s -N UDP-SCAN' % iptable)
+    os.system('/usr/sbin/%s -N UDP-LIMIT' % iptable)
+    os.system('/usr/sbin/%s -N ICMP-SCAN' % iptable)
+    os.system('/usr/sbin/%s -N ICMP-LIMIT' % iptable)
+    os.system('/usr/sbin/%s -N DROPLINK' % iptable)
+    # os.system('ipset create backlist hash:ip timeout 60')
+
+
+def white_IP():
+    '''
+    test
+    '''
+    os.system('iptables -F WHITE_IP')
+    os.system('iptables -X WHITE_IP')
+    os.system('iptables -N WHITE_IP')
+    os.system('iptables -I WAFDDOS -j WHITE_IP')
+    with open('/usr/local/bluedon/bdwafd/test/white_ip') as f:
+        for ip in f.readlines():
+            os.system('iptables -A WHITE_IP -s {ip} -j ACCEPT'.format(ip=ip.strip()))
+
+
+if __name__ == '__main__':
+    # white_IP()
+    # if len(sys.argv) > 1:
+        # if sys.argv[1] == 'fragment':
+            # with conn_scope(**config['db']) as (_, cursor):
+                # getfragment(cursor)
+            # os.system('iptables -t raw -F')
+            # if fragmentdata[0]:
+                # os.system('iptables -t raw -A PREROUTING -f -m limit --limit %s/sec --limit-burst %s -j ACCEPT'
+                            # % (fragmentdata[1], fragmentdata[1]))
+                # os.system('iptables -t raw -A PREROUTING -f -j DROP')
+            # exit(0)
+        # elif sys.argv[1] == 'reboot':
+            # create_ddos_chain('iptables', reboot=True)
+
+    if len(sys.argv) > 1 and sys.argv[1] == 'reboot':
+        config_ddos('iptables', True)
+    else:
+        config_ddos('iptables')

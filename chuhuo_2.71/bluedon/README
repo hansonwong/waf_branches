@@ -1,0 +1,42 @@
+## 蓝盾第二代防火墙Python代码说明
+
+### 各个文件、包的功能
+system               # 系统
+usermanage           # 用户管理
+networking           # 网络设置
+objectdefine         # 对象定义
+firedam              # 防火墙
+safetydefend         # 安全防护
+flowmanage           # 流量管理
+smartdefend          # 智能防御
+reportlog            # 报表日志
+
+log                  # python脚本运行的日志
+conf                 # 配置文件
+utils                # 公用的脚本，工具类
+core                 # 项目核心组件，如task.py
+db                   # 数据库连接相关
+templete             # 该文件夹存放配置文件的模板
+
+tmp                  # 临时文件
+requirements.txt     # python第三方模块依赖
+
+
+### 注意事项
+1. 各个包内的脚本需要单独运行的，请使用python -m your_package.your_module，否则会找不到依赖
+比如原先python second_firewall_init.py， 改成python -m core.second_firewall_init
+此种情况只适用于包管理内部使用
+
+2. 如果脚本需要在其他路径运行，比如/etc/rc.local、/etc/crontab 请在脚本前部加入以下两句，然后以全路径执行（可以参考core/second_firewall_init.py）。
+
+os.chdir('/usr/local/bluedon')          # 切换工作目录为second_firewall_init所在目录, 解决python -m 出错
+if '/usr/local/bluedon' not in sys.path:
+    sys.path.append('/usr/local/bluedon')          # 将这个目录加入sys.path，解决导入包出错
+
+
+### 代码风格建议
+1. 使用4个空格缩进代码，禁止使用tab字符。（不是叫你不按tab键，是建议将tab键设置为输入4个空格）
+2. 模块名(文件)、变量、函数、使用小写字母下划线连接，例如"this_is_a_var"。
+3. 常量名用全大写字母下划线连接，例如"THIS_IS_A_CONSTANT"。
+4. 类名使用大驼峰命名法，例如"ThisIsAClass"。
+5. 尽量使命名有含义，不建议这样"itme1, item2, item3..."。

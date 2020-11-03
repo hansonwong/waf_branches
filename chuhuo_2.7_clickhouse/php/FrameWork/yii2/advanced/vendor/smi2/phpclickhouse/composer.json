@@ -1,0 +1,30 @@
+{
+  "name": "smi2/phpclickhouse",
+  "type": "library",
+  "version" : "0.17.12.1",
+  "description": "php ClickHouse client library",
+  "keywords": ["clickhouse", "driver", "client", "curl", "http", "HTTP client"],
+  "homepage": "https://github.com/smi2/phpClickHouse",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Igor Strykhar",
+      "email": "isublimity@gmail.com",
+      "homepage": "https://github.com/isublimity"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "ext-curl": "*",
+    "phpunit/phpunit": "5.5.*"
+  },
+  "autoload": {
+    "files": ["include.php"]
+  },
+  "autoload-dev": {
+    "files": ["include.php"]
+  }
+}

@@ -1,0 +1,221 @@
+status:200
+content-location:http://news.baidu.com/n?cmd=1&class=reci
+transfer-encoding:chunked
+set-cookie:BAIDUID=7B5A115108E631BB0A631EC3E647662B:FG=1; expires=Sat, 15-Oct-16 03:10:18 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+vary:Accept-Encoding, Accept-Encoding
+server:Apache
+date:Fri, 16 Oct 2015 03:10:18 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM "
+content-type:text/html
+####################
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!--STATUS OK-->
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<title>百度新闻搜索——热搜词</title>
+<meta name="description" content="百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展。" >
+<meta name="viewport" content="width=device-width, maximum-scale=1.5, initial-scale=0.76, user-scalabl
+e=yes"/>
+
+<script type="text/javascript" src="http://ns0.bdstatic.com/static/widget/common/base_js_include/base_js_include_07d218e7.js"></script>
+<script type="text/javascript">
+F._fileMap({'http://ns0.bdstatic.com/static/widget/common/framework_static_include/framework_static_include_7256f561.js' : ['/static/common/lib/magic/Background/Background.js',
+'/static/common/lib/magic/Base/Base.js',
+'/static/common/lib/magic/magic.js',
+'/static/common/lib/tangram/base/base.js',
+'/static/common/lib/magic/control/Dialog/Dialog.js',
+'/static/common/lib/magic/control/Layer/Layer.js',
+'/static/common/lib/magic/control/control.js',
+'/static/common/lib/magic/Dialog/Dialog.js',
+'/static/common/lib/magic/Mask/Mask.js',
+'/static/common/lib/magic/control/Tab/Tab.js',
+'/static/common/lib/magic/_query/_query.js',
+'/static/common/lib/magic/setup/setup.js',
+'/static/common/lib/magic/setup/tab/tab.js']});
+</script>
+
+<script type="text/javascript">
+F._fileMap({'http://ns0.bdstatic.com/static/widget/common/module_static_include/module_static_include_d6dbf8c0.js' : ['/static/widget/common/navbar/dep/jquery.lavalamp.js',
+'/static/widget/common/navbar/navbar.js',
+'/static/widget/common/searchbox/searchbox.js',
+'/static/widget/common/sidebar/feedback.js',
+'/static/widget/common/sidebar/sidebar.js',
+'/static/common/ui/jquery/jquery.js',
+'/static/common/ui/vs/ContentPlayer/ContentPlayer.js',
+'/static/common/ui/vs/DynamicList/DynamicList.js',
+'/static/common/ui/vs/ScrollView/ScrollView.js',
+'/static/common/ui/vs/Slide/Slide.js',
+'/static/common/ui/vs/citylist/citylist.js',
+'/static/common/ui/vs/clickMonitor/clickMonitor.js',
+'/static/common/ui/vs/delayload/delayload.js',
+'/static/common/ui/vs/enterState/enterState.js',
+'/static/common/ui/vs/observer/observer.js',
+'/static/common/ui/vs/slider/slider.js',
+'/static/common/ui/vs/suggestion/suggestion.js',
+'/static/common/ui/vs/utils/utils.js',
+'/static/common/ui/vs/vs.js']});
+</script>
+<link type="text/css" rel="stylesheet" href="http://ns1.bdstatic.com/static/widget/common/module_static_include/module_static_include_971aa676.css"/>
+
+<script type="text/javascript">F._fileMap({'http://ns0.bdstatic.com/static/channel/hotwords/hotwords/hotwords_55976f17.js' : ['/static/widget/channel/hotwords/ver_tabs/ver_tabs.js', '/static/widget/channel/hotwords/searchbox/searchbox.js', '/static/widget/channel/hotwords/tagstage/tagstage.js', '__virsul__']});F.use('__virsul__');</script><link href="http://ns1.bdstatic.com/static/channel/hotwords/hotwords/hotwords_01ef3c00.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+	<script type="text/javascript">
+	F.use('/static/common/ui/vs/clickMonitor/clickMonitor.js', function(clickMonitor){
+    clickMonitor.init('ONE_LEVEL_HOT', 'c=hotwords');                          
+	});
+	</script>
+	
+    <!--userbar-->
+    <div id="usrbar"></div>
+	<div class="loading"></div>
+	<div class="wrapper">
+		<div class="head">
+			<div class="headl"></div>
+			<div class="headr">
+				<div class="headrdiv"><a href="http://news.baidu.com/">百度新闻首页</a></div>
+				<div class="headrdiv"><a href="http://news.baidu.com/n?cmd=1&class=media">百度新闻传媒</a></div>
+			</div>
+		</div>
+	
+		<div class="middle">
+			
+
+												
+	
+	<ul class="ver_tabs_ul">
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="0">全部</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="2">国内</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="1">国际</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="5">社会</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="14">军事</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="6">财经</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="10">汽车</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="8">科技</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="4">娱乐</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="3">体育</a>
+		</li>
+			</ul>
+
+	<script type="text/javascript">
+		F.use("/static/widget/channel/hotwords/ver_tabs/ver_tabs.js");
+	</script>
+
+
+			
+<div class="searchbox">
+	<form action="http://news.baidu.com/ns" name="fbaidu" class="sbox">
+		<table class="sbox">
+			<tr>
+            	<td class="search">
+					<table>
+                    	<tr>
+                       		<td class="box">
+                       			<div id="sugarea">
+                       				<span class="s_ipt_wr" id="s_ipt_wr"><input class="word" id="ww" name="word" size="42"  maxlength="100" tabindex="1"></span>
+                       				<span class="s_btn_wr"><input class="btn" type="submit" value="" onmousedown="this.className='btn s_btn_h'" onmouseout="this.className='btn'"></span>
+                       			</div>
+                       		</td>
+                    	</tr>
+                	</table>
+					<input type="hidden" name="tn" value="news" id="news">
+					<input type="hidden" name="from" value="news">
+                	<input type="hidden" name="cl" value="2">
+                	<input type="hidden" name="rn" value="20">
+                	<input type="hidden" name="ct" value="1">
+            	</td>
+            </tr>
+		</table>
+	</form>
+</div>
+
+
+<script type="text/javascript">
+F.use(["/static/common/lib/tangram/base/base.js", "/static/widget/channel/hotwords/searchbox/searchbox.js", "/static/common/ui/vs/suggestion/suggestion.js"], function(T, searchbox, suggestion){
+    T.dom.ready(function(){
+        searchbox();
+        if (navigator.cookieEnabled && !/sug?=0/.test(document.cookie)){
+        	suggestion();
+        }
+
+    });
+});
+</script>
+
+
+
+		</div>
+		
+		<div class="main">
+			<div class="content">
+				
+	<div class="content_tagstage"></div>
+	<script type="text/javascript">
+		F.use("/static/widget/channel/hotwords/tagstage/tagstage.js");
+	</script>
+
+
+			</div>
+			<div class="aside"><a href="javascript:void(0);"></a></div>
+		</div>
+		
+		<div class="bottom"></div>
+	</div>
+	
+	<div class="foot">
+		
+	<ul class="date">
+		<li><a href="javascript:void(0);" data-date="20151012">10-12</a></li>
+		<li><a href="javascript:void(0);" data-date="20151013">10-13</a></li>
+		<li><a href="javascript:void(0);" data-date="20151014">10-14</a></li>
+		<li><a href="javascript:void(0);" data-date="20151015">10-15</a></li>
+		<li><a href="javascript:void(0);" data-date="20151016" class="active">10-16</a></li>
+	</ul>
+
+
+	</div>
+	
+    
+    <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fe9e114d958ea263de46e080563e254c4' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+    F.use('/static/common/lib/tangram/base/base.js', function(baidu){
+        var list = baidu.dom.query('img');
+        baidu.each(list, function(item){	
+            if(/eiv.baidu.com\/hmt\/icon/.test(baidu.dom.getAttr(item, 'src'))){
+                item.style.display = 'none';		
+            }
+
+        });
+    });
+    </script>
+
+    
+</body>
+</html>
+<!--ecombegin--><script type="text/javascript">F.use("/static/common/ui/vs/enterState/enterState.js", function(enterState){enterState("", "")});</script><!--ecomend-->

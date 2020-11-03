@@ -1,0 +1,1 @@
+/root/new/nginx-1.8.1/premake.sh

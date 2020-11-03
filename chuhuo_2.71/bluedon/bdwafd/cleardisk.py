@@ -1,0 +1,142 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import os
+import sys
+import psutil
+import MySQLdb
+import datetime
+from logging import getLogger
+from common import logger_init
+from config import config
+from db import Session, row2dict, session_scope,conn_scope,get_config
+# from helperforabanalyse import save_data_for_abnormal_analyse
+
+oneg = 1000 ** 3
+files = ['/var/log/messages',
+         '/var/log/ddoslog',
+         '/var/log/weboutlog',
+         '/usr/local/bdwaf/logs_bridge/access.log',
+         '/usr/local/bdwaf/logs_bridge/error.log',
+         '/usr/local/bdwaf/logs_bridge/syslog/access_syslog.log',
+         '/usr/local/bdwaf/logs_bridge/syslog/error_syslog.log',
+         '/usr/local/bdwaf/logs_bridge/modsec_audit.log',
+         '/usr/local/bdwaf/logs_bridge/modsec_debug.log',
+         '/usr/local/bdwaf/logs_proxy/access.log',
+         '/usr/local/bdwaf/logs_proxy/error.log',
+         '/usr/local/bdwaf/logs_proxy/syslog/access_syslog.log',
+         '/usr/local/bdwaf/logs_proxy/syslog/error_syslog.log',
+         '/usr/local/bdwaf/logs_proxy/modsec_audit.log',
+         '/usr/local/bdwaf/logs_proxy/modsec_debug.log',
+         '/usr/local/bdwaf/logs_tproxy/access.log',
+         '/usr/local/bdwaf/logs_tproxy/error.log',
+         '/usr/local/bdwaf/logs_tproxy/syslog/access_syslog.log',
+         '/usr/local/bdwaf/logs_tproxy/syslog/error_syslog.log',
+         '/usr/local/bdwaf/logs_tproxy/modsec_audit.log',
+         '/usr/local/bdwaf/logs_tproxy/modsec_debug.log',
+         '/usr/local/bluedon/bdwafd/log/audit.log',
+         '/usr/local/bluedon/bdwafd/log/main.log',
+         '/var/log/mysql/slowquery.log']
+
+
+access_dir = ('/usr/local/bdwaf/logs_bridge/access',
+              '/usr/local/bdwaf/logs_proxy/access',
+              )
+
+
+def cleardatabase():
+    conn = MySQLdb.connect(**config['dbacc'])
+    cursor = conn.cursor()
+    tblnames = ('t_alertlogs_bak', 't_cclogs_bak', 't_counturi_bak',
+                't_ddoslogs_bak', 't_sourceip_bak', 't_syslogs_bak', 't_weboutlogs_bak')
+    for tblname in tblnames:
+        cursor.execute('truncate table %s' % tblname)
+    conn.commit()
+    cursor.close()
+    conn.close()
+
+
+def clearbiglogs():
+    for f in files:
+        if os.path.exists(f) and os.path.getsize(f) > oneg:
+            # if f == '/usr/local/bluedon/bdwaf/logs/access.log':
+            #    save_data_for_abnormal_analyse()
+            getLogger('main').info("remove file '%s'" % f)
+            open(f, 'w').close()
+
+
+def clear_access(total, autodiskclean=None):
+    access_rotate_dir = ('/usr/local/bdwaf/logs_bridge/logrotate',
+                          '/usr/local/bdwaf/logs_proxy/logrotate',
+                          )
+    total = total / 1024
+    for d in (access_rotate_dir + access_dir):
+        if not os.path.exists(d):
+            continue
+        result = os.popen('du --max-depth=1 %s' % d)
+        used = result.readlines()[-1].split('\t')[0]
+        percent = float(used) / total * 100
+        print percent, autodiskclean
+        if (autodiskclean and percent >= autodiskclean / 2) or (not autodiskclean and percent >= 35):
+            os.system('rm -rf %s/*' % d)
+
+
+def get_sysdisk_used():
+    parts = psutil.disk_partitions()
+    total, used = 0, 0
+    for part in parts:
+        disk = psutil.disk_usage(part.mountpoint)
+        total += disk.total
+        used += disk.used
+    return used, total
+
+
+def clear_inode(percent):
+    for _ in range(2):
+        # 清两次
+        st = os.statvfs('/')
+        inode = float(st.f_files - st.f_ffree) / st.f_files
+        if not (percent >= 80 or inode >= 0.8):
+            return
+        for d in access_dir:
+            for root, _, files in os.walk(d):
+                for f in files:
+                    open(os.path.join(root, f), "w").close()  # 置空
+        used, total = get_sysdisk_used()
+        percent = float(used) / float(total) * 100
+
+
+def clear_disk():
+    cwd = config['cwd']
+    os.chdir(cwd)
+    logger_init('main', config['logger']['cleardisk']['path'], config[
+                'logger']['cleardisk']['level'])
+    getLogger('main').info('cleardisk start.')
+    used, total = get_sysdisk_used()
+    percent = float(used) / float(total) * 100
+    getLogger('main').info('before clear: %s' % percent)
+    try:
+        diskclean = get_config("DiskClear")
+        if diskclean['enable']:
+            if diskclean['limit'] <= 95:
+                diskclean['limit'] += 5
+            if diskclean['limit'] < percent:
+                cleardatabase()
+                clearbiglogs()
+                clear_access(total, diskclean['limit'])
+            clear_inode(percent)
+    except Exception, e:
+        if percent >= 80:
+            clearbiglogs()
+            clear_access(total)
+            clear_inode(percent)
+        getLogger('main').exception(e)
+
+    used, total = get_sysdisk_used()
+    percent = float(used) / float(total) * 100
+    getLogger('main').info('after clear: %s' % percent)
+    getLogger('main').info('cleardisk Done.')
+
+
+if __name__ == '__main__':
+    clear_disk()

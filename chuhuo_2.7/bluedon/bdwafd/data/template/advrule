@@ -1,0 +1,6 @@
+
+## advance rules
+
+{% for advrule in advrules %}{% if advrule.src_ips and advrule.dest_ips %}SecRule REMOTE_ADDR "@ipMatch {{advrule.src_ips}}" "chain,phase:1,t:none,severity:'4', msg: 'advance rule {{ }}match.'" 
+    SecRule SERVER_ADDR "@ipMatch {{advrule.dest_ips}}" "t:none" {% endif %}
+{% endfor %}

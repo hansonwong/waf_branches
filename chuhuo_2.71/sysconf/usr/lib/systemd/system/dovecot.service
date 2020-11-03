@@ -1,0 +1,14 @@
+[Unit]
+Description=Dovecot IMAP/POP3 email server
+After=local-fs.target network.target
+
+[Service]
+Type=simple
+ExecStartPre=/usr/libexec/dovecot/prestartscript
+ExecStart=/usr/sbin/dovecot -F
+ExecReload=/bin/kill -HUP $MAINPID
+PrivateTmp=true
+NonBlocking=yes
+
+[Install]
+WantedBy=multi-user.target

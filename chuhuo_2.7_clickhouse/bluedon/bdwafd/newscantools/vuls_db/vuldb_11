@@ -1,0 +1,33 @@
+1461#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#@CGIDIRSinclude/new-visitor.inc.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Les Visiteurs 2.0.1和以前的版本可以远程执行命令，测试脚本在 BID 8902#d9Fa0j#
+4884#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/include/config.inc.php#d9Fa0j#GET#d9Fa0j#PHP Version#d9Fa0j#RFI来自于RSnake列表 (http://ha.ckers.org/weird/rfi-locations.dat) 或者来自于 http://osvdb.org/#d9Fa0j#
+6635#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/config.inc.asp#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+6754#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/phpgroupware/inc/phpgwapi/phpgw.inc.asp#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+7499#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/phpmyadmin/config.inc.asp#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+7500#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/phpmyadmin/themes/darkblue_orange/layout.inc.asp#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+9461#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/config.inc.aspx#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+9758#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/phpgroupware/inc/phpgwapi/phpgw.inc.aspx#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+9760#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/phpmyadmin/config.inc.aspx#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+9762#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/phpmyadmin/themes/darkblue_orange/layout.inc.aspx#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10033#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/inc/conn.inc.bak#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10074#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/conn.inc.bak#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10077#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/dbconnect.inc.bak#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10102#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/include/dbconnect.inc.bak#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10114#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/counter.inc.bak#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10119#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/inc/dbconnect.inc.bak#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10139#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/include/counter.inc.bak#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10149#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/inc/counter.inc.bak#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10151#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/include/conn.inc.bak#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+11987#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/phpgroupware/inc/phpgwapi/phpgw.inc.jsp#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+12495#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/config.inc.jsp#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+12790#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/phpmyadmin/config.inc.jsp#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+12793#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/phpmyadmin/themes/darkblue_orange/layout.inc.jsp#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+13587#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/phpmyadmin/themes/darkblue_orange/layout.inc.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+13745#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/phpmyadmin/config.inc.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+14824#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/config.inc.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+15339#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/phpgroupware/inc/phpgwapi/phpgw.inc.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+15382#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/function_foot_1.inc.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+15409#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/nx/common/cds/menu.inc.php?c_path=otherhost_with__common_lib_launch.inc.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+15431#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/sendphoto.php?album=..&pic=config.inc.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+15432#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/shop/show_cart.inc.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+15434#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/show_cart.inc.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+15443#d9Fa0j#LOW#d9Fa0j#INC包含文件信息#d9Fa0j#/store/show_cart.inc.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#

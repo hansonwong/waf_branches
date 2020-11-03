@@ -1,0 +1,18 @@
+[Unit]
+Description=Firewall dpdk service
+After=dpdk-init.service
+Requires=dpdk-init.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStartPre=/bin/sh /usr/local/bluedon/scripts/kill_process.sh
+ExecStartPre=/bin/sh -c '/usr/bin/echo 2 > /proc/sys/kernel/randomize_va_space'
+ExecStart=/home/ng_platform/bd_dpdk_warper/server/mp_server  -c 0x81 -n 4  --file-prefix "program1" --proc-type primary
+ExecStartPost=/bin/sh /home/ng_platform/sh/disable_aslr.sh
+Restart=always
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target

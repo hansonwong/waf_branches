@@ -1,0 +1,5 @@
+{% if is_sensitive %}   
+    subs_filter_types text/html text/xml text/plain;
+{% for word in sensitive_words %}    subs_filter '{{word}}' '***';
+{% endfor %}
+{% endif %}

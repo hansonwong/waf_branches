@@ -1,0 +1,9 @@
+[Unit]
+Description=Amanda Backup System
+After=local-fs.target
+
+[Service]
+User=amandabackup
+Group=disk
+ExecStart=/usr/sbin/amandad -auth=bsd amdump 
+StandardInput=socket

@@ -1,0 +1,18 @@
+Include /usr/local/bluedon/bdwaf/conf/modsecurity.conf
+Include /usr/local/bluedon/bdwaf/conf/modsecurity_sites_conf/{{ruledata.host}}_{{ruledata.port}}/limits.conf
+
+#ID的使用范围：800001+
+
+{% for rule in ruledata.rules %}
+SecRule REQUEST_FILENAME "@contains {{rule.path}}" "chain,id:{{rule.ruleid}},deny,phase:1,t:none,msg:'invalid length  matched on %{matched_var_name},length:%{matched_var}',tag:'self-learning rules',tag:'host:{{rule.host}}'"
+    SecRule ARGS:{{rule.name}} "{% if rule.tag == 'eq' %}!@eq {{rule.maxlength}}{% elif rule.tag == 'gt' %}@gt {{rule.maxlength}}{% else %}@lt {{rule.minlength}}{% endif %}" "t:none,t:length"
+{% endfor %}
+
+## self study rules
+#ID的使用范围：500000+
+
+{% for rule in ruledata.fwbrules %}
+ SecRule REQUEST_HEADERS:Host "@contains {{rule.host}}" "id:{{rule.ruleid}},pass,chain,nolog,noauditlog,t:lowercase"
+      SecRule REQUEST_FILENAME "@contains {{rule.path}}" "t:none,t:lowercase,chain"
+                 SecRule &ARGS:{{rule.name}} "@gt 0" "t:none,t:lowercase,ctl:ruleRemoveById={{rule.realRuleId}}"
+{% endfor %}

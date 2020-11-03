@@ -1,0 +1,9 @@
+{
+  "frameworkDir":"/Data/apps/wwwroot/waf/FrameWork/yii2/advanced",
+  "mysql":[
+    {"host":"127.0.0.1","user":"root","pwd":"bd_123456","dbName":"waf","yiiKey":"db","port":"3306"},
+    {"host":"127.0.0.1","user":"root","pwd":"bd_123456","dbName":"logs","yiiKey":"dbLogs","port":"3306"},
+    {"host":"127.0.0.1","user":"root","pwd":"bd_123456","dbName":"db_firewall","yiiKey":"dbFirewall","port":"3306"},
+    {"host":"127.0.0.1","user":"root","pwd":"bd_123456","dbName":"db_firewall_log","yiiKey":"dbFirewallLog","port":"3307"}
+  ]
+}

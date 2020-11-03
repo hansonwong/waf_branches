@@ -1,0 +1,9 @@
+[Unit]
+Description=Hyper-V VSS daemon
+ConditionVirtualization=microsoft
+
+[Service]
+ExecStart=/usr/sbin/hypervvssd
+
+[Install]
+WantedBy=multi-user.target

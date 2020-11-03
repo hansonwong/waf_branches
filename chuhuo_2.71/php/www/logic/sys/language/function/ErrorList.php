@@ -1,0 +1,21 @@
+<?php
+return [
+    'disableAndModify' => '请先停用再修改',
+    'selectOneLineData' => '选择一行数据',
+    'selectdataToDelete' => '选择要删除的数据',
+    'pageType' => '页面类型',
+    'pagefile' => '页面文件',
+    'configurationText' => '配置文字',
+    'takeEffect' => '生效',
+    'pageAlreadyExists' => '页面已存在',
+    'unabletoObtainUploadFileInformation' => '无法获取上传文件信息',
+    'validationFileAvailable' => '确认文件可用',
+    'fileUploadFailed' => '文件上传失败',
+    'Don\'tUploadFilesLargerThan%sM' => '不能上传大于%sM的文件',
+    'writePromptText' => '填写提示文字',
+    'noDataSelection' => '没有选择数据',
+    'stopBeforeDeleting' => '删除前先停用',
+    'errorPageType' => '错误页面类型',
+    'uploadPage' => '上传页面',
+    'pagePromptText' => '页面提示文字',
+];

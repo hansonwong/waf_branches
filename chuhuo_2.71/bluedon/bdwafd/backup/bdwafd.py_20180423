@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+""" Bluedon Web Application Firewall Daemon
+
+Usage:
+  bdwafd.py [-hv]
+  bdwafd.py [-d DIR] -s (start|stop|restart)
+
+Arguments:
+  DIR app working directory
+
+Options:
+  -h --help                  show this help message and exit
+  -v --version               show version and exit
+  -d NAME                    set the working directory
+"""
+
+from docopt import docopt
+from bdwafdapp import BDWafd
+ 
+if __name__ == '__main__':
+    args = docopt(__doc__, version='1.0.0')
+    app = BDWafd(args)
+    BDWafd.app = app
+    if args['start']:
+        app.start()
+    elif args['stop']:
+        app.stop()
+    elif args['restart']:
+        app.restart()
+    else:
+        print __doc__
+        exit(0)

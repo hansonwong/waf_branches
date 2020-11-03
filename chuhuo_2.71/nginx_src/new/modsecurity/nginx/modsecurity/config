@@ -1,0 +1,48 @@
+#!/bin/sh
+
+CFLAGS="$CFLAGS \
+     -I/usr/local/apr/include/apr-1  \
+     -I/usr/local/apr/include/apr-1  \
+    -I/usr/local/apache2/include \
+    -I/usr/local/include/libxml2 \
+     \
+    -DWITH_PCRE_STUDY -DMODSEC_PCRE_MATCH_LIMIT=1500 -DMODSEC_PCRE_MATCH_LIMIT_RECURSION=1500  -DREQUEST_EARLY          -DWITH_REMOTE_RULES \
+    -I/usr/local/pcre/include \
+     \
+    "
+
+
+CORE_LIBS="$CORE_LIBS \
+     -L/usr/local/apr/lib -lapr-1 \
+     -L/usr/local/apr/lib -laprutil-1 \
+    -I/usr/local/apache2/include \
+    -lcurl   \
+    -L/usr/local/lib -lxml2 -lz -liconv -lm -ldl \
+     \
+    -L/usr/local/pcre/lib -lpcre \
+    -L/usr/local/apache2/lib  -lm \
+     \
+    "
+
+ngx_addon_name=ngx_http_modsecurity
+
+CORE_MODULES="$CORE_MODULES ngx_pool_context_module"
+
+HTTP_AUX_FILTER_MODULES="ngx_http_modsecurity $HTTP_AUX_FILTER_MODULES"
+
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS \
+		$ngx_addon_dir/ngx_http_modsecurity.c \
+		$ngx_addon_dir/apr_bucket_nginx.c \
+		$ngx_addon_dir/ngx_pool_context.c"
+
+NGX_ADDON_DEPS="$NGX_ADDON_DEPS \
+		$ngx_addon_dir/apr_bucket_nginx.h \
+		$ngx_addon_dir/ngx_pool_context.h"
+
+CORE_LIBS="$ngx_addon_dir/../../standalone/.libs/standalone.a $CORE_LIBS"
+
+CORE_INCS="$CORE_INCS \
+	$ngx_addon_dir \
+	$ngx_addon_dir/../../standalone \
+	$ngx_addon_dir/../../apache2"
+

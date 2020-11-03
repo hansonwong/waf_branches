@@ -1,0 +1,2590 @@
+status:200
+content-location:http://v.baidu.com/comic
+x-powered-by:HPHP
+transfer-encoding:chunked
+set-cookie:BAIDUID=BBEB3E49239BEA4882211378591ED7BE:FG=1; max-age=31536000; expires=Sat, 15-Oct-16 03:09:20 GMT; domain=.baidu.com; path=/; version=1, BAIDUID=4A5C4D491A80EA8510DDC6193FA15A2F:FG=1; expires=Sat, 15-Oct-16 03:09:20 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1, BAIDUID=B2BFD4B5047FE731E96EBA1B0ECE771D:FG=1; expires=Sat, 15-Oct-16 03:09:20 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+vary:Accept-Encoding, Accept-Encoding
+server:Apache
+tracecode:05604599090223465482101611
+date:Fri, 16 Oct 2015 03:09:20 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM ", CP=" OTI DSP COR IVA OUR IND COM ", CP=" OTI DSP COR IVA OUR IND COM "
+content-type:text/html; charset=UTF-8
+####################
+<!DOCTYPE html><!--STATUS OK-->
+<html>
+<head>
+<meta charset="utf-8" />
+<script>void function(g,f,j,c,h,d,b){g.alogObjectName=h,g[h]=g[h]||function(){(g[h].q=g[h].q||[]).push(arguments)},g[h].l=g[h].l||+new Date,d=f.createElement(j),d.async=!0,d.src=c,b=f.getElementsByTagName(j)[0],b.parentNode.insertBefore(d,b)}(window,document,"script","http://img.baidu.com/hunter/alog/alog.min.js","alog");void function(){function c(){return;}window.PDC={mark:function(a,b){alog("speed.set",a,b||+new Date);alog.fire&&alog.fire("mark")},init:function(a){alog("speed.set","options",a)},view_start:c,tti:c,page_ready:c}}();void function(n){var o=!1;n.onerror=function(n,e,t,c){var i=!0;return!e&&/^script error/i.test(n)&&(o?i=!1:o=!0),i&&alog("exception.send","exception",{msg:n,js:e,ln:t,col:c}),!1},alog("exception.on","catch",function(n){alog("exception.send","exception",{msg:n.msg,js:n.path,ln:n.ln,method:n.method,flag:"catch"})})}(window);</script>
+
+<title>百度动漫频道_高清动漫在线观看</title>
+<meta name="keywords" content="最新动漫,最新动画片,好看的动漫,好看的动画片,动漫排行榜,动画片排行榜,动画片大全,日本动漫,动漫网,百度动漫" />
+<meta name="description" content="百度动漫频道为您提供最新好看的动画片大全,最新动漫排行榜推荐好看的动漫、国产动画片、日本动漫、韩国动漫、美国动漫，尽在百度动漫频道。涵盖搞笑、推理、魔法、科幻、神话、少儿等动漫类型，百度动漫频道每天陪伴在你身边。" />
+
+<script>(function(){var hash=location.hash.slice(1);if(hash){var params=hash.split('&'),item;for(var i=0,len=params.length;i<len;i++){item=params[i].split('=');if(item[0]==='word'&&item[1]){location.replace('http://v.baidu.com/v?fr=quicksearch&ie=utf-8&word='+item[1]);break;}}}}());</script>
+<script>__header_start = +new Date;
+			if (document.documentElement.clientWidth < 1245) {
+				document.getElementsByTagName('html')[0].className = 'w1024';
+			}else if(document.documentElement.clientWidth < 1345){
+				document.getElementsByTagName('html')[0].className = 'w1280';
+			}
+		</script>
+
+
+
+<link rel="stylesheet" type="text/css" href="http://vs5.bdstatic.com/browse_static/v3/common/pkg/common_sync_css_0_f2a7259b.css" /><link rel="stylesheet" type="text/css" href="http://vs6.bdstatic.com/browse_static/v3/index/pkg/index_sync_css_1_b3e5d5e.css" /><link rel="stylesheet" type="text/css" href="http://vs5.bdstatic.com/browse_static/v3/common/pkg/common_ui_video_dca1ecf0.css" /><link rel="stylesheet" type="text/css" href="http://vs6.bdstatic.com/browse_static/v3/index/pkg/home_b30645d.css" /><link rel="stylesheet" type="text/css" href="http://vs6.bdstatic.com/browse_static/v3/index/pkg/index_sync_css_0_8b4ed07.css" /></head>
+<script>alog('speed.set', 'ht', +new Date);</script>
+<body>
+
+
+
+
+
+
+<div id="header" monkey="header" alog-alias="header"><div class="hd-inner">
+<div class="hd-inner2 ">
+<div id="userbar" static="bl=userbar" monkey="userbar" alog-alias="userbar"></div>
+<div id="logo">
+<a href="http://v.baidu.com/" class="link-home">
+<img src="http://img.baidu.com/video/img/video_logo_new.gif" alt="百度视频" />
+</a>
+</div><div class="hd-nav">
+<div id="navmini">
+<a href="javascript:void(0)" class="link-toggle">导航<i></i></a>
+<div class="bd" static="bl=float_nav_list"><ul></ul></div>
+</div>
+</div>
+<div id="tabsearch">
+<div class="tabs">
+<a href="http://news.baidu.com/" data-product="news">新闻</a><a href="http://www.baidu.com/" data-product="ps">网页</a><a href="http://tieba.baidu.com/" data-product="tieba">贴吧</a><a href="http://zhidao.baidu.com/" data-product="zhidao">知道</a><a href="http://music.baidu.com/" data-product="music">音乐</a><a href="http://image.baidu.com/" data-product="image">图片</a><strong>视频</strong><a href="http://map.baidu.com/" data-product="map">地图</a><a href="http://baike.baidu.com/" data-product="baike">百科</a><a href="http://www.hao123.com/" target="_blank">hao123</a>
+</div>
+<div class="bd">
+<form action="/v" method="get" name="f1" id="bdvSearch" class="bdv-search" target="_blank">
+<span class="bdv-search-inputs">
+<input type="text" maxlength="120" id="bdvSearchInput" name="word" value="名侦探柯南" data-prekey="名侦探柯南" class="place-holder" autocomplete="off" />
+</span>
+<span class="bdv-search-btns">
+<input type="submit" value="百度一下" id="bdvSearchBtn" />
+</span>
+<input name="ct" type="hidden" value="301989888" />
+<input name="rn" type="hidden" value="20" />
+<input name="pn" type="hidden" value="0" />
+<input name="db" type="hidden" value="0" />
+<input name="s" type="hidden" value="0" />
+<input name="fbl" type="hidden" value="800" />
+<input name="ie" type="hidden" value="utf-8" />
+<input name="oq" type="hidden"  disabled="disabled" />
+<input name="f" type="hidden" value="3"  disabled="disabled" />
+<input name="rsp" type="hidden"  disabled="disabled" />
+</form>
+</div>
+</div>
+<div class="hd-trace">
+<div id="bdvTrace" class="bdv-trace" static="tn=cartoon&bl=bdvTrace">
+<a href="javascript:;" class="bdv-trace-toggle" title="追剧" static="stp=toggle&toggle=1">追剧<i></i></a>
+<span class="bdv-trace-icons bdv-trace-notify"></span>
+<div class="bdv-trace-main" style="display: none">
+<div class="bdv-trace-arrow"><em>◆</em><i>◆</i></div>
+<div class="bdv-trace-content bdv-trace-none">
+<p>订阅精彩视频，请<a href="javascript:;" class="bdv-trace-login" title="登录" static="stp=login">登录</a></p>
+</div>
+</div>
+</div>
+<script type="text/html" id="bdvTraceNoneTpl">
+<p>您最近没有任何订阅</p>
+<a href="/tv" target="_blank" title="去电视剧频道随便看看" static="stp=toTv">去电视剧频道随便看看&gt;&gt;</a>
+</script>
+<script type="text/html" id="bdvTraceBdTpl">
+<div class="bdv-trace-bd"></div>
+<div class="bdv-trace-ft clearfix">
+    <a href="javascript:;" class="bdv-trace-pager bdv-trace-pager-left" data-page="prev" title="上一页" static="stp=prev">&lt;上一页</a>
+    <span class="bdv-trace-pager-no"></span>
+    <a href="javascript:;" class="bdv-trace-pager bdv-trace-pager-right" data-page="next" title="下一页" static="stp=next">下一页&gt;</a>
+</div>
+</script>
+<script type="text/html" id="bdvTraceItemTpl">
+<% var suffix = frp ? '?frp=' + frp : '';
+for (var i = 0, item; item = pageData[i]; i += 1) {
+    item.cur_episode *= 1;
+    item.max_episode *= 1;
+    var introUrl = ['/', item.works_type, '/', item.works_id, '.htm', suffix].join(''),
+        itemTitle = item.title + (item.season > 0 ? (' 第' + item.season + '季') : '');
+%>
+<dl class="bdv-trace-item">
+    <% if (item.works_type !== 'show') { %>
+    <dt>
+        <h3><a href="<%=introUrl%>" title="<%=itemTitle%>" target="_blank" static="stp=ti&to=search"><%=itemTitle%></a></h3>
+        <span class="bdv-trace-item-update">&nbsp;
+        <% if (item.cur_episode > 0 && (item.max_episode == 0 || item.cur_episode < item.max_episode)) { %>
+            更新至<b><%=item.cur_episode%></b>集
+            <% if (item.max_episode > 0) { %>&nbsp;|&nbsp;<% } %>
+        <% } %>
+        <% if (item.max_episode > 0) { %>全<%=item.max_episode%>集<% } %>
+        </span>
+    </dt>
+    <dd class="bdv-trace-item-episodes">
+        <ol data-id="<%=item.works_id%>" data-type="<%=item.works_type%>">
+        <% for (var epIndex = 0, len = item.episodes.length; epIndex < len && epIndex < 5; epIndex += 1) {
+            var ep = item.episodes[epIndex];
+        %>
+            <li>
+            <% if (len === 1 && item.last_view == ep.episode) { %>
+                <div class="bdv-trace-item-episode-latest">已看到最新集</div>
+            </li>
+            <% break; %>
+            <% } %>
+            <% if (epIndex === 3 && (ep.episode * 1 - item.episodes[epIndex - 1].episode * 1 !== 1)) { %>
+                <div class="bdv-trace-item-episode-holder">...</div>
+            </li>
+            <li>
+            <% } %>
+            <% if (item.last_view == ep.episode) { %>
+                <i class="bdv-trace-icons bdv-trace-record"></i>
+            <% } %>
+            <% if (ep.is_new == 1 && item.last_view != ep.episode) { %>
+                <i class="bdv-trace-icons bdv-trace-new"></i>
+            <% } %>
+            <% if (ep.is_play == 1) { %>
+                <a href="<%=func.getPlayUrl(item, ep)%>" target="_blank" title="<%=ep.title%>"
+                 static="stp=jp&to=play" data-ep="<%=ep.episode%>" data-new="<%=ep.is_new%>"
+                ><%=ep.episode%></a>
+            <% } else { %>
+                <a href="javascript:;" title="暂无资源">暂无</a>
+            <% } %>
+            </li>
+        <% } %>
+        </ol>
+    </dd>
+    <% } else { %>
+    <dt>
+        <h3><a href="<%=introUrl%>" title="<%=itemTitle%>" target="_blank" static="stp=ti&to=search"><%=itemTitle%></a></h3>
+        <% if (item.max_episode > 0) { %>
+        <span class="bdv-trace-item-update">&nbsp;更新至<b><%=item.max_episode%></b>期</span>
+        <% } %>
+    </dt>
+    <dd class="bdv-trace-item-episodes bdv-trace-item-episodes-show">
+        <ol data-id="<%=item.works_id%>" data-type="<%=item.works_type%>">
+        <% for (var epIndex = 0, len = item.episodes.length; epIndex < len && epIndex < 3; epIndex += 1) {
+            var ep = item.episodes[epIndex];
+        %>
+            <li>
+            <% if (len === 1 && item.last_view == ep.episode) { %>
+                <div class="bdv-trace-item-episode-latest">已看到最新集</div>
+            </li>
+            <% break; %>
+            <% } %>
+            <% if (epIndex === 2 && (item.episodes[epIndex - 1].episode * 1 - ep.episode * 1 !== 1)) { %>
+                <div class="bdv-trace-item-episode-holder">...</div>
+            </li>
+            <li>
+            <% } %>
+            <% if (item.last_view == ep.episode) { %>
+                <i class="bdv-trace-icons bdv-trace-record"></i>
+            <% } %>
+            <% if (ep.is_new == 1 && item.last_view != ep.episode) { %>
+                <i class="bdv-trace-icons bdv-trace-new"></i>
+            <% } %>
+            <% if (ep.is_play == 1) { %>
+                <a href="<%=func.getPlayUrl(item, ep)%>" target="_blank" title="<%=ep.title%>"
+                 static="stp=jp&to=play" data-ep="<%=ep.episode%>" data-new="<%=ep.is_new%>"
+                ><span><%=ep.episode%>：</span><%=ep.title%></a>
+            <% } else { %>
+                <a href="javascript:;" title="暂无资源">暂无资源</a>
+            <% } %>
+            </li>
+        <% } %>
+        </ol>
+    </dd>
+    <% } %>
+
+    <dd class="bdv-trace-item-ft">
+        <a href="<%=introUrl%>" title="查看全部" target="_blank" class="bdv-trace-item-all" static="stp=all&to=search">查看全部</a>
+        <a href="javascript:;" title="删除" class="bdv-trace-item-del" data-id="<%=item.works_id%>" data-type="<%=item.works_type%>" static="stp=del&id=<%=item.works_id%>&type=<%=item.works_type%>">删除</a>
+    </dd>
+</dl>
+<% } %>
+</script>
+</div>
+<div class="hd-record">
+<div id="bdvRecord" class="bdv-record with-bdv-trace">
+<a href="javascript:;" class="bdv-record-toggle" data-event="click" hidefocus="true">记录<i></i></a>
+<span class="bdv-record-num" style="display:none"></span>
+<div class="bdv-record-arrow"><em>◆</em><i>◆</i></div>
+<div class="bdv-record-main"></div>
+</div>
+<script id="bdvrecord_js" charset="utf-8"></script>
+</div>
+<div class="hd-paopao">
+<div id="index_right_shixiao" static="bl=index_right_qipao"></div>
+<script type="text/template" id="index_right_shixiao_tpl">
+        <% if (data && data.is_hd == 1){ %>
+            <% var item = data; %>
+            <% var isClose = item.hot_week == 1; %>
+        <div class="pop-wrap-big<% if (isClose){ %> hide<% } %>">
+            <a href="#" class="pop-close" static="stp=close"></a>
+            <div class="pop-inner">
+                <span class="label">热点：</span>
+                <p class="big"><a href="<%=item.url%>" target="_blank" static="stp=pop_content"><%=item.intro%></a></p>
+            </div>
+        </div>
+        <div class="pop-wrap-small<% if (isClose){ %> show<% } %>"><span class="label">· 热点：</span><a href="<%=item.url%>" target="_blank" static="stp=normal_content"><%=item.title%></a></div>
+        <% } %>
+    </script>
+</div>
+<div class="hd-keyword">
+<div id="searchKeyword" class="search-keyword" static="bl=top_search_Keyword">
+<ul>
+<li>
+<a href="http://v.baidu.com/show/12492.htm?frp=browse" target="_blank" class="hot">新老学员荣誉之战</a>
+</li>
+<li>
+<a href="http://v.baidu.com/tv/22506.htm?frp=bdbrand" target="_blank">琅琊榜大结局</a>
+</li>
+<li>
+<a href="http://v.baidu.com/movie/120179.htm?frp=browse" target="_blank">明日世界</a>
+</li>
+<li>
+<a href="http://v.baidu.com/movie/120438.htm?frp=browse" target="_blank">新步步惊心</a>
+</li>
+<li>
+<a href="http://v.baidu.com/movie/120459.htm?frp=browse" target="_blank">太平轮</a>
+</li>
+<li>
+<a href="http://v.baidu.com/show/12062.htm?frp=browse" target="_blank">极限挑战番外篇</a>
+</li>
+<li>
+<a href="http://v.baidu.com/tv/20690.htm?frp=browse" target="_blank">云中歌</a>
+</li>
+<li>
+<a href="http://v.baidu.com/hotvideos/" target="_blank">更多&gt;&gt;</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="index-right-top" id="index_right_top" static="bl=adv_float_top" monkey="adv_float_top"></div>
+</div></div></div>
+<div id="nav" monkey="nav" alog-alias="nav" static="bl=nav_list"><div class="nav-inner ">
+<ul class="menu-main">
+<li>
+<a href="http://v.baidu.com/">
+首页
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/tv">
+电视剧
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/movie">
+电影
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/show">
+综艺
+</a>
+</li>
+<li class="current">
+<a href="http://v.baidu.com/comic">
+动漫
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/entindex/">
+娱乐
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/infoindex/">
+资讯
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/sportindex/">
+体育
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/gameindex/">
+游戏
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/eduindex/">
+教育
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/live/">
+卫视
+</a>
+</li>
+</ul>
+<ul class="menu-sub">
+<li>
+<a href="http://v.baidu.com/square/">
+随心看
+</a>
+</li>
+<li>
+<a href="http://yb.baidu.com/" target="_blank">
+影棒
+</a>
+</li>
+<li>
+<a href="http://spread.xiu8.com/spreed!baiduGo.jspa?pid=1070&sid=7&t=1" target="_blank">
+互动
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/car">
+汽车
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/musicindex/">
+音乐
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/amuseindex/">
+搞笑
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/fashion/index">
+时尚
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/gcdance/index">
+广场舞
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/child/index">
+亲子
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/cooperate/qt/nvxing">
+女性
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/page/jiankang">
+健康
+<img src="http://list.video.baidu.com/pc_static/common/blank.gif" style="bottom:30px;left:0px" />
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/cooperate/qt/keji">
+科技
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/top/">
+排行榜
+</a>
+</li>
+</ul>
+</div></div>
+
+
+
+
+<div class="movie-sub-nav" static="bl=comicSubNav&stp=comicSubNav&to=search" monkey="comicSubNav_m" >
+<ul class="sub-nav-items" >
+<li class="nav-item current">
+<a target="_blank" href="http://v.baidu.com/comic/list/filter-true+area-%E5%9B%BD%E4%BA%A7+order-hot+pn-1" static="stp=ti=9">国产动漫</a>
+</li>
+<li class="nav-item">
+<a target="_blank" href="http://v.baidu.com/comic/list/filter-true+area-%E6%97%A5%E6%9C%AC+order-hot+pn-1" static="stp=ti=9">日本动漫</a>
+</li>
+<li class="nav-item">
+<a target="_blank" href="http://v.baidu.com/comic/list/start-2015+order-hot+pn-1" static="stp=ti=9">最新动漫</a>
+</li>
+<li class="nav-item">
+<a target="_blank" href="http://v.baidu.com/comic/list/order-hot+pn-1" static="stp=ti=9">全部动漫</a>
+</li>
+<li class="nav-item">
+<a target="_blank" href="http://v.baidu.com/i/list?tag=%E8%8F%8A%E8%8A%B1%E7%AC%91%E5%85%B8" static="stp=ti=9">菊花笑典</a>
+</li>
+<li class="nav-item">
+<a target="_blank" href="http://v.baidu.com/i/list?tag=%E5%BE%AE%E5%8A%A8%E6%BC%AB%E6%A2%A6%E5%B7%A5%E5%8E%82" static="stp=ti=9">微动漫梦工厂</a>
+</li>
+<li class="nav-item">
+<a target="_blank" href="http://v.baidu.com/i/list?tag=%E5%B0%8F%E5%9B%A7%E7%86%8AV" static="stp=ti=9">小囧熊V</a>
+</li>
+</ul>
+</div>
+
+<div id="content">
+
+<div class="section" alog-alias="comicTopHotData">
+<div class="main recmd-type-list">
+<div class="left-video-wall">
+<div class="wideCarousel">
+<div class="ctrl-mask ctrl-mask-left" static="bl=comic_focus_btn&stp=op&stp=leftop">
+<a class="ctrl" href="javascript:void(0)">&lt;</a>
+</div>
+<div id="wideCarouselList">
+<div class="carousel-items" monkey="comic_focus">
+<ul alog-alias="comic_focus_0_monkey" class="carousel-item" static="bl=comic_focus_area&to=search&stp=hd_0">
+<li class='video block-wall-item item-0'>
+<a target="_blank" href='http://v.baidu.com/comic/4601.htm?frp=browse' title="海贼王" static="ext=po">
+<img src="http://a.hiphotos.baidu.com/video/pic/item/d01373f082025aafea80d75cfdedab64024f1af2.jpg" alt="海贼王">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">海贼王</span>
+<span class="vid-info">热血航道上的故事</span>
+<span class="vid-update">更新至713话</span>
+</a>
+</li>
+<li class='video block-wall-item item-1'>
+<a target="_blank" href='http://spread.179.com/mcpm/game/index.html?f_source=bdsp01_' title="决战海贼王" static="ext=po">
+<img src="http://e.hiphotos.baidu.com/video/pic/item/e824b899a9014c08174582320c7b02087bf4f42f.jpg" alt="决战海贼王">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">决战海贼王</span>
+<span class="vid-info">女帝带你爽飞起</span>
+<span class="vid-update"></span>
+</a>
+</li>
+<li class='video block-wall-item item-2'>
+<a target="_blank" href='http://v.baidu.com/comic/14565.htm?frp=browse' title="一拳超人" static="ext=po">
+<img src="http://f.hiphotos.baidu.com/video/pic/item/5243fbf2b2119313727b572763380cd791238d69.jpg" alt="一拳超人">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">一拳超人</span>
+<span class="vid-info">一拳超人大战邪恶</span>
+<span class="vid-update">更新至2话</span>
+</a>
+</li>
+<li class='video block-wall-item item-3'>
+<a target="_blank" href='http://v.baidu.com/comic/14262.htm?frp=browse' title="龙珠超" static="ext=po">
+<img src="http://e.hiphotos.baidu.com/video/pic/item/a686c9177f3e6709d2d9ec683dc79f3df9dc554f.jpg" alt="龙珠超">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">龙珠超</span>
+<span class="vid-info">黄金弗利萨再燃战火</span>
+<span class="vid-update">更新至14话</span>
+</a>
+</li>
+<li class='video block-wall-item item-4'>
+<a target="_blank" href='http://v.baidu.com/comic/883.htm?frp=browse' title="秦时明月" static="ext=po">
+<img src="http://d.hiphotos.baidu.com/video/pic/item/54fbb2fb43166d22daf4bd03402309f79152d2a2.jpg" alt="秦时明月">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">秦时明月</span>
+<span class="vid-info">士侠隐仗剑游走江湖</span>
+<span class="vid-update">全18话</span>
+</a>
+</li>
+</ul>
+<ul alog-alias="comic_focus_1_monkey" class="carousel-item" static="bl=comic_focus_area&to=search&stp=hd_1">
+<li class='video block-wall-item item-0'>
+<a target="_blank" href='http://v.baidu.com/comic/7679.htm?frp=browse' title="熊出没" static="ext=po">
+<img src="http://f.hiphotos.baidu.com/video/pic/item/adaf2edda3cc7cd9590c9e4e3f01213fb80e9100.jpg" alt="熊出没">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">熊出没</span>
+<span class="vid-info">熊兄弟智斗光头强</span>
+<span class="vid-update">全104话</span>
+</a>
+</li>
+<li class='video block-wall-item item-1'>
+<a target="_blank" href='http://v.baidu.com/comic/5559.htm?frp=browse' title="爱探险的朵拉" static="ext=po">
+<img src="http://d.hiphotos.baidu.com/video/pic/item/dbb44aed2e738bd4dfb718a6a78b87d6267ff997.jpg" alt="爱探险的朵拉">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">爱探险的朵拉</span>
+<span class="vid-info">带领孩子走进启蒙乐园</span>
+<span class="vid-update">全25话</span>
+</a>
+</li>
+<li class='video block-wall-item item-2'>
+<a target="_blank" href='http://v.baidu.com/comic/847.htm?frp=bdbrand' title="名侦探柯南" static="ext=po">
+<img src="http://c.hiphotos.baidu.com/video/pic/item/4610b912c8fcc3cee67863a49445d688d53f20e8.jpg" alt="名侦探柯南">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">名侦探柯南</span>
+<span class="vid-info">警察的好帮手</span>
+<span class="vid-update">更新至775话</span>
+</a>
+</li>
+<li class='video block-wall-item item-3'>
+<a target="_blank" href='http://v.baidu.com/comic/3521.htm?frp=bdbrand' title="新网球王子" static="ext=po">
+<img src="http://a.hiphotos.baidu.com/video/pic/item/060828381f30e924cae90aa54a086e061c95f7d1.jpg" alt="新网球王子">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">新网球王子</span>
+<span class="vid-info">王子们从零开始</span>
+<span class="vid-update">全13话</span>
+</a>
+</li>
+<li class='video block-wall-item item-4'>
+<a target="_blank" href='http://v.baidu.com/comic/5911.htm?frp=browse' title="蜡笔小新 第3季" static="ext=po">
+<img src="http://a.hiphotos.baidu.com/video/pic/item/08f790529822720e9683486d7dcb0a46f31fabdc.jpg" alt="蜡笔小新 第3季">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">蜡笔小新 第3季</span>
+<span class="vid-info">喜欢漂亮姐姐的小屁孩</span>
+<span class="vid-update">全156话</span>
+</a>
+</li>
+</ul>
+<ul alog-alias="comic_focus_2_monkey" class="carousel-item" static="bl=comic_focus_area&to=search&stp=hd_2">
+<li class='video block-wall-item item-0'>
+<a target="_blank" href='http://v.baidu.com/comic/10048.htm?frp=browse' title="野良神" static="ext=po">
+<img src="http://g.hiphotos.baidu.com/video/pic/item/d50735fae6cd7b89a657a914092442a7d9330e69.jpg" alt="野良神">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">野良神</span>
+<span class="vid-info">是人是妖无人知道</span>
+<span class="vid-update">全12话</span>
+</a>
+</li>
+<li class='video block-wall-item item-1'>
+<a target="_blank" href='http://v.baidu.com/comic/3084.htm?frp=browse' title="七龙珠" static="ext=po">
+<img src="http://g.hiphotos.baidu.com/video/pic/item/267f9e2f0708283870fc4d83be99a9014d08f1b0.jpg" alt="七龙珠">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">七龙珠</span>
+<span class="vid-info">宇宙怪物贝比来袭</span>
+<span class="vid-update">全64话</span>
+</a>
+</li>
+<li class='video block-wall-item item-2'>
+<a target="_blank" href='http://v.baidu.com/comic/14313.htm?&amp;q=%E7%86%8A%E5%87%BA%E6%B2%A1%E4%B9%8B%E5%86%AC%E6%97%A5%E4%B9%90%E7%BF%BB%E5%A4%A9' title="熊出没之冬日乐翻天" static="ext=po">
+<img src="http://b.hiphotos.baidu.com/video/pic/item/c75c10385343fbf2e0c298b5b67eca8064388fbd.jpg" alt="熊出没之冬日乐翻天">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">熊出没之冬日乐翻天</span>
+<span class="vid-info">熊大熊二冬日大作战</span>
+<span class="vid-update">全52话</span>
+</a>
+</li>
+<li class='video block-wall-item item-3'>
+<a target="_blank" href='http://v.baidu.com/comic/14690.htm?&amp;q=%E7%94%BB%E6%B1%9F%E6%B9%96%E4%B9%8B%E7%81%B5%E4%B8%BB' title="画江湖之灵主" static="ext=po">
+<img src="http://f.hiphotos.baidu.com/video/pic/item/7a899e510fb30f247c6b7a94ce95d143ac4b03b7.jpg" alt="画江湖之灵主">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">画江湖之灵主</span>
+<span class="vid-info">“灵主”的秘密大揭秘</span>
+<span class="vid-update">更新至2话</span>
+</a>
+</li>
+<li class='video block-wall-item item-4'>
+<a target="_blank" href='http://v.baidu.com/comic/972.htm&amp;frp=browse' title="喜羊羊与灰太狼" static="ext=po">
+<img src="http://a.hiphotos.baidu.com/video/pic/item/ac6eddc451da81cb16ba125a5466d016082431cc.jpg" alt="喜羊羊与灰太狼">
+<span class="gradient-bg">&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-title">喜羊羊与灰太狼</span>
+<span class="vid-info">羊狼两族大争斗</span>
+<span class="vid-update">全530话</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="ctrl-mask ctrl-mask-right" static="bl=comic_focus_btn&stp=po&stp=rightop">
+<a class="ctrl" href="javascript:void(0)">&gt;</a>
+</div>
+</div>
+<div class="carousel-dotted">
+<ul class="carousel-dotted-list">
+<li class="dotted-item dotted-selected"></li>
+<li class="dotted-item"></li>
+<li class="dotted-item"></li>
+</ul>
+</div>
+</div>
+<div class="recommend clearfix" id="recommend" monkey="recmd_list">
+<ul class="recmd-item-list">
+<li static="stp=japan&no=0&bl=comic_hot_type_tab" class="recmd-item neidi" 
+			data-name="日本" 
+			data-get="http://list.video.baidu.com/cartoon/japan.json" 
+			data-active="neidi" 
+			data-static="stp=japan&bl=comic_hot_type_popu&to=search" >
+<a href="http://v.baidu.com/comic/list/filter-true+area-%E6%97%A5%E6%9C%AC+order-hot+pn-1"  target="_blank" style="background-color:#bd9388">
+日本
+<span>共3627部</span></a>
+</li>
+<li static="stp=inland&no=1&bl=comic_hot_type_tab" class="recmd-item hanju" 
+			data-name="国产" 
+			data-get="http://list.video.baidu.com/cartoon/inland.json" 
+			data-active="hanju" 
+			data-static="stp=inland&bl=comic_hot_type_popu&to=search" >
+<a href="http://v.baidu.com/comic/list/filter-true+area-%E5%9B%BD%E4%BA%A7+order-hot+pn-1"  target="_blank" style="background-color:#9196b7">
+国产
+<span>共1574部</span></a>
+</li>
+<li static="stp=blood&no=2&bl=comic_hot_type_tab" class="recmd-item guzhuang" 
+			data-name="热血" 
+			data-get="http://list.video.baidu.com/cartoon/blood.json" 
+			data-active="guzhuang" 
+			data-static="stp=blood&bl=comic_hot_type_popu&to=search" >
+<a href="http://v.baidu.com/comic/list/filter-true+type-%E7%83%AD%E8%A1%80+order-hot+pn-1"  target="_blank" style="background-color:#a7b89a">
+热血
+<span>共1247部</span></a>
+</li>
+<li static="stp=fanny&no=3&bl=comic_hot_type_tab" class="recmd-item zhanzheng" 
+			data-name="搞笑" 
+			data-get="http://list.video.baidu.com/cartoon/fanny.json" 
+			data-active="zhanzheng" 
+			data-static="stp=fanny&bl=comic_hot_type_popu&to=search" >
+<a href="http://v.baidu.com/comic/list/filter-true+type-%E6%90%9E%E7%AC%91+order-hot+pn-1"  target="_blank" style="background-color:#a291ab">
+搞笑
+<span>共1359部</span></a>
+</li>
+<li static="stp=zuixin&no=4&bl=comic_hot_type_tab" class="recmd-item zuixin" 
+			data-name="最新" 
+			data-get="http://list.video.baidu.com/cartoon/hot.json" 
+			data-active="zuixin" 
+			data-static="stp=zuixin&bl=comic_hot_type_popu&to=search" >
+<a href="http://v.baidu.com/comic/list/start-2014+order-hot+pn-1"  target="_blank" style="background-color:#e1a69b">
+最新
+<span>共174部</span></a>
+</li>
+</ul>
+<div class="top-popu"  monkey="popu" id="popu" style="display:none;">
+</div>
+</div>
+<div id="cartoonEnter" class="cartoon-enter"  monkey="cartoonEnter" static="bl=cartoonEnter">
+<ul class="clearfix">
+<li>
+<a href='http://v.baidu.com/comic/1238.htm?frp=browse' static="stp=po&to=search" target="_blank" class="title">
+<img alt="大头儿子小头爸爸" src="http://b.hiphotos.baidu.com/video/pic/item/a686c9177f3e67098b0f080238c79f3df8dc553b.jpg" />
+</a><a href='http://v.baidu.com/comic/1238.htm?frp=browse' static="stp=ti&to=search"  target="_blank" class="sub-title">大头儿子小头爸爸</a></li>
+<li>
+<a href='http://v.baidu.com/comic/685.htm?frp=browse' static="stp=po&to=search" target="_blank" class="title">
+<img alt="海绵宝宝" src="http://d.hiphotos.baidu.com/video/pic/item/50da81cb39dbb6fd4c1f685d0c24ab18972b3700.jpg" />
+</a><a href='http://v.baidu.com/comic/685.htm?frp=browse' static="stp=ti&to=search"  target="_blank" class="sub-title">海绵宝宝</a></li>
+<li>
+<a href='http://v.baidu.com/comic/725.htm?frp=browse' static="stp=po&to=search" target="_blank" class="title">
+<img alt="哆啦A梦" src="http://g.hiphotos.baidu.com/video/pic/item/8718367adab44aedbecaf719b01c8701a08bfb43.jpg" />
+</a><a href='http://v.baidu.com/comic/725.htm?frp=browse' static="stp=ti&to=search"  target="_blank" class="sub-title">哆啦A梦</a></li>
+<li>
+<a href='http://v.baidu.com/comic/972.htm?frp=browse' static="stp=po&to=search" target="_blank" class="title">
+<img alt="喜羊羊" src="http://b.hiphotos.baidu.com/video/pic/item/a1ec08fa513d2697431b281c56fbb2fb4216d8a2.jpg" />
+</a><a href='http://v.baidu.com/comic/972.htm?frp=browse' static="stp=ti&to=search"  target="_blank" class="sub-title">喜羊羊</a></li>
+<li>
+<a href='http://v.baidu.com/comic/830.htm?frp=browse' static="stp=po&to=search" target="_blank" class="title">
+<img alt="猫和老鼠" src="http://b.hiphotos.baidu.com/video/pic/item/c9fcc3cec3fdfc032007c1f9d73f8794a4c22677.jpg" />
+</a><a href='http://v.baidu.com/comic/830.htm?frp=browse' static="stp=ti&to=search"  target="_blank" class="sub-title">猫和老鼠</a></li>
+<li>
+<a href='http://v.baidu.com/comic/7679.htm?frp=browse' static="stp=po&to=search" target="_blank" class="title">
+<img alt="熊出没" src="http://c.hiphotos.baidu.com/video/pic/item/7dd98d1001e939014017a07f78ec54e736d1965d.jpg" />
+</a><a href='http://v.baidu.com/comic/7679.htm?frp=browse' static="stp=ti&to=search"  target="_blank" class="sub-title">熊出没</a></li>
+<li>
+<a href='http://v.baidu.com/comic/4457.htm?frp=bdbrand' static="stp=po&to=search" target="_blank" class="title">
+<img alt="小熊维尼" src="http://b.hiphotos.baidu.com/video/pic/item/00e93901213fb80e187c4c9635d12f2eb83894c5.jpg" />
+</a><a href='http://v.baidu.com/comic/4457.htm?frp=bdbrand' static="stp=ti&to=search"  target="_blank" class="sub-title">小熊维尼</a></li>
+</ul>
+</div>
+</div>
+<div class="side">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='mod-content showComicTopHot' id='showTophot'>
+<div class='hd bdv-tabslider-control' alog-alias="monkey_comic_top_hot_tab" ><h2 static='bl=comic_top_hot_tab_h2' >热播动漫排行</h2>
+<ul class='tab-nav bdv-tabslider-dot' monkey="showTophot_tab"><li><a static="bl=comic_top_hot_tab&stp=comic_top_hot" href='http://v.baidu.com/comic/list/filter-true+area-%E6%97%A5%E6%9C%AC+order-hot+pn-1' target='_blank'>日本</a></li>
+<li><a static="bl=comic_top_hot_tab&stp=comic_top_hot" href='http://v.baidu.com/comic/list/filter-true+area-%E5%9B%BD%E4%BA%A7+order-hot+pn-1' target='_blank'>国产</a></li>
+<li><a static="bl=comic_top_hot_tab&stp=comic_top_hot" href='http://v.baidu.com/comic/list/filter-true+area-%E6%AC%A7%E7%BE%8E+order-hot+pn-1' target='_blank'>欧美</a></li>
+</ul>
+</div>
+<ul class='bd bdv-tabslider-list'>
+<li class='tab-block bdv-tabslider-item'   
+			monkeyconfig="event=click&to=search" 
+			static="bl=cartoon_top_Japan&blname=%E7%83%AD%E6%92%AD%E5%8A%A8%E6%BC%AB%E6%8E%92%E8%A1%8C%24%24%E6%97%A5%E6%9C%AC&to=search&stp=comic_top_hot" 
+			 
+			monkey="showTophot1">
+																				
+						   
+						 
+																															<div class="video pic-item pic-current"  alog-alias="m_showTophot_1_0">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/4601.htm?frp=browse" target="_blank" title="海贼王" >
+<img src="http://c.hiphotos.baidu.com/video/pic/item/a1ec08fa513d26973dd2f50553fbb2fb4316d861.jpg" alt="海贼王">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/4601.htm?frp=browse" target="_blank" class="current-title" title="海贼王" >
+<span class="number weight">1</span>
+<span class="title">海贼王</span>
+<span class="pingfen TVupdate">至713话</span>
+<span class="playCount">至713话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_1_1">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/847.htm?frp=bdbrand" target="_blank" title="名侦探柯南" >
+<img src="http://g.hiphotos.baidu.com/video/pic/item/21a4462309f790525d7200760af3d7ca7bcbd50d.jpg" alt="名侦探柯南">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/847.htm?frp=bdbrand" target="_blank" class="current-title" title="名侦探柯南" >
+<span class="number weight">2</span>
+<span class="title">名侦探柯南</span>
+<span class="pingfen TVupdate">至775话</span>
+<span class="playCount">至775话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_1_2">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/5907.htm?frp=browse" target="_blank" title="蜡笔小新" >
+<img src="http://a.hiphotos.baidu.com/video/pic/item/a9d3fd1f4134970a2b0fb27696cad1c8a7865d6e.jpg" alt="蜡笔小新">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/5907.htm?frp=browse" target="_blank" class="current-title" title="蜡笔小新" >
+<span class="number weight">3</span>
+<span class="title">蜡笔小新</span>
+<span class="pingfen TVupdate">全156话</span>
+<span class="playCount">全156话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_1_3">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/3084.htm?frp=browse" target="_blank" title="七龙珠第三部" >
+<img src="http://f.hiphotos.baidu.com/video/pic/item/b17eca8065380cd71a3d4fb5a744ad3459828143.jpg" alt="七龙珠第三部">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/3084.htm?frp=browse" target="_blank" class="current-title" title="七龙珠第三部" >
+<span class="number ">4</span>
+<span class="title">七龙珠第三部</span>
+<span class="pingfen TVupdate">全64话</span>
+<span class="playCount">全64话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_1_4">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/637.htm?frp=browse" target="_blank" title="迪迦奥特曼" >
+<img src="http://a.hiphotos.baidu.com/video/pic/item/0d338744ebf81a4c2b621591d12a6059252da612.jpg" alt="迪迦奥特曼">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/637.htm?frp=browse" target="_blank" class="current-title" title="迪迦奥特曼" >
+<span class="number ">5</span>
+<span class="title">迪迦奥特曼</span>
+<span class="pingfen TVupdate">全52话</span>
+<span class="playCount">全52话</span>
+</a>
+</div>
+																									
+						 
+						 
+																															<div class="video pic-item"  alog-alias="m_showTophot_1_5">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/4002.htm?frp=browse" target="_blank" title="潮与虎" >
+<img src="http://a.hiphotos.baidu.com/video/pic/item/00e93901213fb80ee5dc8e8f30d12f2eb938945d.jpg" alt="潮与虎">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/4002.htm?frp=browse" target="_blank" class="current-title" title="潮与虎" >
+<span class="number ">6</span>
+<span class="title">潮与虎</span>
+<span class="pingfen TVupdate">全10话</span>
+<span class="playCount">全10话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_1_6">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/4409.htm?frp=browse" target="_blank" title="数码宝贝" >
+<img src="http://b.hiphotos.baidu.com/video/pic/item/a8014c086e061d9545f1c9607df40ad162d9ca37.jpg" alt="数码宝贝">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/4409.htm?frp=browse" target="_blank" class="current-title" title="数码宝贝" >
+<span class="number ">7</span>
+<span class="title">数码宝贝</span>
+<span class="pingfen TVupdate">全48话</span>
+<span class="playCount">全48话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_1_7">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/3521.htm?frp=browse" target="_blank" title="新网球王子" >
+<img src="http://a.hiphotos.baidu.com/video/pic/item/08f790529822720e8b5c65a47dcb0a46f31fabda.jpg" alt="新网球王子">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/3521.htm?frp=browse" target="_blank" class="current-title" title="新网球王子" >
+<span class="number ">8</span>
+<span class="title">新网球王子</span>
+<span class="pingfen TVupdate">全13话</span>
+<span class="playCount">全13话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_1_8">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/8596.htm?frp=bdbrand" target="_blank" title="宠物小精灵" >
+<img src="http://d.hiphotos.baidu.com/video/pic/item/eaf81a4c510fd9f9016c1221232dd42a2834a47b.jpg" alt="宠物小精灵">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/8596.htm?frp=bdbrand" target="_blank" class="current-title" title="宠物小精灵" >
+<span class="number ">9</span>
+<span class="title">宠物小精灵</span>
+<span class="pingfen TVupdate">至90话</span>
+<span class="playCount">至90话</span>
+</a>
+</div>
+																																																																																																																																																																							</li>
+<li class='tab-block bdv-tabslider-item'   
+			monkeyconfig="event=click&to=search" 
+			static="bl=cartoon_top_China&blname=%E7%83%AD%E6%92%AD%E5%8A%A8%E6%BC%AB%E6%8E%92%E8%A1%8C%24%24%E5%9B%BD%E4%BA%A7&to=search&stp=comic_top_hot" 
+			style='display:none;' 
+			monkey="showTophot2">
+<script type='text/tabcontent' style='display:none'>
+																								
+						 
+						 
+																															<div class="video pic-item pic-current"  alog-alias="m_showTophot_2_0">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/883.htm?frp=browse" target="_blank" title="秦时明月2" >
+<img src="http://c.hiphotos.baidu.com/video/pic/item/279759ee3d6d55fbc4cbf9bf68224f4a20a4dd1e.jpg" alt="秦时明月2">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/883.htm?frp=browse" target="_blank" class="current-title" title="秦时明月2" >
+<span class="number weight">1</span>
+<span class="title">秦时明月2</span>
+<span class="pingfen TVupdate">全18话</span>
+<span class="playCount">全18话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_2_1">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/7679.htm?frp=browse" target="_blank" title="熊出没之丛林总动员" >
+<img src="http://d.hiphotos.baidu.com/video/pic/item/b151f8198618367acf42b8b828738bd4b21ce588.jpg" alt="熊出没之丛林总动员">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/7679.htm?frp=browse" target="_blank" class="current-title" title="熊出没之丛林总动员" >
+<span class="number weight">2</span>
+<span class="title">熊出没之丛林总动员</span>
+<span class="pingfen TVupdate">全104话</span>
+<span class="playCount">全104话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_2_2">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/13651.htm?frp=bdbrand" target="_blank" title="猪猪侠 第9部" >
+<img src="http://d.hiphotos.baidu.com/video/pic/item/77094b36acaf2edddc8c8e8c8b1001e939019352.jpg" alt="猪猪侠 第9部">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/13651.htm?frp=bdbrand" target="_blank" class="current-title" title="猪猪侠 第9部" >
+<span class="number weight">3</span>
+<span class="title">猪猪侠 第9部</span>
+<span class="pingfen TVupdate">全52话</span>
+<span class="playCount">全52话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_2_3">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/574.htm?frp=browse" target="_blank" title="巴啦啦小魔仙" >
+<img src="http://b.hiphotos.baidu.com/video/pic/item/908fa0ec08fa513d1c09a8bb3b6d55fbb2fbd930.jpg" alt="巴啦啦小魔仙">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/574.htm?frp=browse" target="_blank" class="current-title" title="巴啦啦小魔仙" >
+<span class="number ">4</span>
+<span class="title">巴啦啦小魔仙</span>
+<span class="pingfen TVupdate">全52话</span>
+<span class="playCount">全52话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_2_4">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/3794.htm?frp=bdbrand" target="_blank" title="勇者大冒险" >
+<img src="http://f.hiphotos.baidu.com/video/pic/item/35a85edf8db1cb139270b68ad854564e92584b0a.jpg" alt="勇者大冒险">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/3794.htm?frp=bdbrand" target="_blank" class="current-title" title="勇者大冒险" >
+<span class="number ">5</span>
+<span class="title">勇者大冒险</span>
+<span class="pingfen TVupdate">至24话</span>
+<span class="playCount">至24话</span>
+</a>
+</div>
+																									
+						 
+						 
+																															<div class="video pic-item"  alog-alias="m_showTophot_2_5">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/753.htm?frp=browse" target="_blank" title="铠甲勇士" >
+<img src="http://e.hiphotos.baidu.com/video/pic/item/35a85edf8db1cb13bbd5a124d854564e92584b4d.jpg" alt="铠甲勇士">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/753.htm?frp=browse" target="_blank" class="current-title" title="铠甲勇士" >
+<span class="number ">6</span>
+<span class="title">铠甲勇士</span>
+<span class="pingfen TVupdate">全60话</span>
+<span class="playCount">全60话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_2_6">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/3833.htm?&frp=bdbrand" target="_blank" title="贝瓦儿歌" >
+<img src="http://d.hiphotos.baidu.com/video/pic/item/d01373f082025aafe5dae1fcfeedab64034f1a18.jpg" alt="贝瓦儿歌">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/3833.htm?&frp=bdbrand" target="_blank" class="current-title" title="贝瓦儿歌" >
+<span class="number ">7</span>
+<span class="title">贝瓦儿歌</span>
+<span class="pingfen TVupdate">至417话</span>
+<span class="playCount">至417话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_2_7">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/10879.htm?frp=browse" target="_blank" title="黑猫警长" >
+<img src="http://a.hiphotos.baidu.com/video/pic/item/1c950a7b02087bf44bf3beb1f4d3572c11dfcf4f.jpg" alt="黑猫警长">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/10879.htm?frp=browse" target="_blank" class="current-title" title="黑猫警长" >
+<span class="number ">8</span>
+<span class="title">黑猫警长</span>
+<span class="pingfen TVupdate">全12话</span>
+<span class="playCount">全12话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_2_8">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/9274.htm?frp=browse" target="_blank" title="大头儿子小头爸爸" >
+<img src="http://g.hiphotos.baidu.com/video/pic/item/023b5bb5c9ea15ce48d1003eb3003af33a87b2ce.jpg" alt="大头儿子小头爸爸">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/9274.htm?frp=browse" target="_blank" class="current-title" title="大头儿子小头爸爸" >
+<span class="number ">9</span>
+<span class="title">大头儿子小头爸爸</span>
+<span class="pingfen TVupdate">全52话</span>
+<span class="playCount">全52话</span>
+</a>
+</div>
+																																																																																																																																																																											</script>
+</li>
+<li class='tab-block bdv-tabslider-item'   
+			monkeyconfig="event=click&to=search" 
+			static="bl=cartoon_top_occident&blname=%E7%83%AD%E6%92%AD%E5%8A%A8%E6%BC%AB%E6%8E%92%E8%A1%8C%24%24%E6%AC%A7%E7%BE%8E&to=search&stp=comic_top_hot" 
+			style='display:none;' 
+			monkey="showTophot3">
+<script type='text/tabcontent' style='display:none'>
+																								
+						 
+						 
+																															<div class="video pic-item pic-current"  alog-alias="m_showTophot_3_0">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/4170.htm?frp=bdbrand" target="_blank" title="爱探险的朵拉" >
+<img src="http://g.hiphotos.baidu.com/video/pic/item/3812b31bb051f819e178a809dcb44aed2e73e710.jpg" alt="爱探险的朵拉">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/4170.htm?frp=bdbrand" target="_blank" class="current-title" title="爱探险的朵拉" >
+<span class="number weight">1</span>
+<span class="title">爱探险的朵拉</span>
+<span class="pingfen TVupdate">全120话</span>
+<span class="playCount">全120话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_3_1">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/685.htm?frp=browse" target="_blank" title="海绵宝宝" >
+<img src="http://d.hiphotos.baidu.com/video/pic/item/d31b0ef41bd5ad6ee427cbb382cb39dbb7fd3c88.jpg" alt="海绵宝宝">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/685.htm?frp=browse" target="_blank" class="current-title" title="海绵宝宝" >
+<span class="number weight">2</span>
+<span class="title">海绵宝宝</span>
+<span class="pingfen TVupdate">全121话</span>
+<span class="playCount">全121话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_3_2">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/944.htm?frp=browse" target="_blank" title="托马斯和他的朋友们" >
+<img src="http://a.hiphotos.baidu.com/video/pic/item/9922720e0cf3d7cad9d8962ff11fbe096b63a9b9.jpg" alt="托马斯和他的朋友们">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/944.htm?frp=browse" target="_blank" class="current-title" title="托马斯和他的朋友们" >
+<span class="number weight">3</span>
+<span class="title">托马斯和他的朋友们</span>
+<span class="pingfen TVupdate">全26话</span>
+<span class="playCount">全26话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_3_3">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/4289.htm?frp=browse" target="_blank" title="米奇妙妙屋" >
+<img src="http://e.hiphotos.baidu.com/video/pic/item/f603918fa0ec08fadd1fb8e45fee3d6d55fbda52.jpg" alt="米奇妙妙屋">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/4289.htm?frp=browse" target="_blank" class="current-title" title="米奇妙妙屋" >
+<span class="number ">4</span>
+<span class="title">米奇妙妙屋</span>
+<span class="pingfen TVupdate">全39话</span>
+<span class="playCount">全39话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_3_4">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/10699.htm?frp=browse" target="_blank" title="天线宝宝" >
+<img src="http://d.hiphotos.baidu.com/video/pic/item/7dd98d1001e93901fc54246778ec54e736d19611.jpg" alt="天线宝宝">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/10699.htm?frp=browse" target="_blank" class="current-title" title="天线宝宝" >
+<span class="number ">5</span>
+<span class="title">天线宝宝</span>
+<span class="pingfen TVupdate">全20话</span>
+<span class="playCount">全20话</span>
+</a>
+</div>
+																									
+						 
+						 
+																															<div class="video pic-item"  alog-alias="m_showTophot_3_5">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/13820.htm?frp=browse" target="_blank" title="小羊肖恩" >
+<img src="http://f.hiphotos.baidu.com/video/pic/item/cc11728b4710b912ecf95dbdc5fdfc03924522bc.jpg" alt="小羊肖恩">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/13820.htm?frp=browse" target="_blank" class="current-title" title="小羊肖恩" >
+<span class="number ">6</span>
+<span class="title">小羊肖恩</span>
+<span class="pingfen TVupdate">全20话</span>
+<span class="playCount">全20话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_3_6">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/7980.htm?frp=browse" target="_blank" title="芭比之梦想豪宅" >
+<img src="http://e.hiphotos.baidu.com/video/pic/item/3812b31bb051f819a241d712dcb44aed2e73e706.jpg" alt="芭比之梦想豪宅">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/7980.htm?frp=browse" target="_blank" class="current-title" title="芭比之梦想豪宅" >
+<span class="number ">7</span>
+<span class="title">芭比之梦想豪宅</span>
+<span class="pingfen TVupdate">全9话</span>
+<span class="playCount">全9话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_3_7">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/830.htm?frp=bdbrand" target="_blank" title="猫和老鼠 TV版" >
+<img src="http://b.hiphotos.baidu.com/video/pic/item/eaf81a4c510fd9f97e0dff2a232dd42a2834a45f.jpg" alt="猫和老鼠 TV版">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/830.htm?frp=bdbrand" target="_blank" class="current-title" title="猫和老鼠 TV版" >
+<span class="number ">8</span>
+<span class="title">猫和老鼠 TV版</span>
+<span class="pingfen TVupdate">全185话</span>
+<span class="playCount">全185话</span>
+</a>
+</div>
+																									
+						 
+																																					<div class="video pic-item"  alog-alias="m_showTophot_3_8">
+<div class="video-cover-wrap">
+<a href="http://v.baidu.com/comic/656.htm?frp=browse" target="_blank" title="飞哥与小佛" >
+<img src="http://f.hiphotos.baidu.com/video/pic/item/3b87e950352ac65cbe53ffcefdf2b21193138a3d.jpg" alt="飞哥与小佛">
+<span class="play-video-icon">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://v.baidu.com/comic/656.htm?frp=browse" target="_blank" class="current-title" title="飞哥与小佛" >
+<span class="number ">9</span>
+<span class="title">飞哥与小佛</span>
+<span class="pingfen TVupdate">全65话</span>
+<span class="playCount">全65话</span>
+</a>
+</div>
+																																																																																																																																																																											</script>
+</li>
+</ul>
+</div>
+<div id="trace" class="mod-aside" static="bl=trace&to=search" monkey="trace">
+<div class="hd-aside">
+<h2><span>追剧</span><b></b><span>观看记录</span></h2>
+</div>
+<div class="bd-aside">
+<div class="loading">
+<img src="http://vs5.bdstatic.com/browse_static/v3/index/widget/video/trace/loading_0e6e0f4.gif" class="loadingImg" alt="正在加载" title="正在加载"/><p>数据正在加载...</p>
+</div>
+</div>
+</div>
+<script type="text/html" id="traceTpl">
+	<ul class="traceList">
+					<% var traceSite="http://v.baidu.com/", tracePath={'tv':'tv','movie':'movie','show':'show','comic':'comic'} ;%>
+								<% for(var i = 0, len = data.length; i < len && i < limit; i++){ %>
+		<% var url = traceSite + tracePath[data[i].works_type] + "/" + data[i].works_id +".html" + (frp ? "?frp="+frp : ""); %>
+			<li data-type="<%=type%>" class="trace-item">
+				<a href="<%= url %>" target="_blank">
+				<span class="trace-item-title"><%=data[i].title%> [追剧]</span>
+				<span class="trace-item-del" data-type="<%=data[i].works_type%>" data-id="<%=data[i].works_id%>"></span>
+				<% if(data[i].cur_episode == data[i].max_episode){ %>
+				<span class="trace-item-update">全<%=data[i].max_episode%>集</span>
+				<% }else{ %>
+				<span class="trace-item-update">更新至<%=data[i].cur_episode%>集</span>
+				<% } %>
+				</a>
+			</li>
+		<% } %>
+	</ul>
+</script>
+<script type="text/html" id="recordTpl">
+<% if (hasul){ %><ul class="traceList" ><% } %>
+		<% for(var i = 0, len = data.length; i < len && i < limit; i++){ %>
+			<li data-type="<%=type%>" class="trace-item">
+				<a href="<%= data[i].url  %>" target="_blank">
+				<span class="trace-item-title"><%=data[i].title%> [记录]</span>
+				<span class="trace-item-del"  data-id="<%=data[i].id%>"></span>
+				<span class="trace-item-update">看至第<%=data[i]['watched'][0]%>集</span>
+				</a>
+			</li>
+		<% } %>
+	<% if (hasul){ %></ul><% } %>
+</script>
+<script type="text/html" id="recommendTpl">
+	<h3 class="rec-tip">暂时没有观看记录，为你推荐：</h3>
+	<ul class="recommendList clearfix">
+			<li  >
+		<a href="http://v.baidu.com/comic/847.htm?frp=bdbrand" target="_blank">名侦探柯南</a>
+	</li>
+			<li  >
+		<a href="http://v.baidu.com/comic/883.htm?frp=browse" target="_blank">秦时明月</a>
+	</li>
+			<li  >
+		<a href="http://v.baidu.com/comic/972.htm?frp=browse" target="_blank">喜羊羊与灰太狼</a>
+	</li>
+			<li  >
+		<a href="http://v.baidu.com/comic/13594.htm?frp=browse" target="_blank">黑子的篮球</a>
+	</li>
+			<li  >
+		<a href="http://v.baidu.com/comic/13433.htm?frp=browse" target="_blank">熊出没</a>
+	</li>
+			<li  >
+		<a href="http://v.baidu.com/comic/4601.htm?frp=browse" target="_blank">航海王</a>
+	</li>
+			<li  >
+		<a href="http://v.baidu.com/comic/685.htm?frp=browse" target="_blank">海绵宝宝</a>
+	</li>
+			<li  >
+		<a href="http://v.baidu.com/comic/10787.htm?frp=bdbrand" target="_blank">魔晶猎人</a>
+	</li>
+			<li  >
+		<a href="http://v.baidu.com/comic/11963.htm?frp=browse" target="_blank">赛尔号</a>
+	</li>
+		</ul>
+</script>
+</div>
+</div>
+
+<div class="section wideSroll" alog-alias="cartoonShowHot">
+
+
+
+<div id="cartoonShowHot" >
+<div class='mod-content canScrollItems' >
+<div class='hd bdv-tabslider-control' ><h2 static='bl=cartoon_show_hot_tab_h2&to=search' ><a target='_blank' href='http://v.baidu.com/comic/list/filter-true+order-hot+pn-1'>强档推荐</a></h2>
+<ul class='tab-nav bdv-tabslider-dot' monkey="cartoonShowHot_tab"><li><a static="bl=cartoon_show_hot_tab&stp=" href='http://v.baidu.com/comic/4601.htm?frp=browse' target='_blank'>海贼王</a><i>|</i></li>
+<li><a static="bl=cartoon_show_hot_tab&stp=" href='http://v.baidu.com/comic/5437.htm?frp=browse' target='_blank'>火影忍者</a><i>|</i></li>
+<li><a static="bl=cartoon_show_hot_tab&stp=" href='http://v.baidu.com/comic/1280.htm?frp=browse' target='_blank'>妖精的尾巴</a><i>|</i></li>
+<li><a static="bl=cartoon_show_hot_tab&stp=" href='http://v.baidu.com/comic/13433.htm?frp=browse' target='_blank'>熊出没</a><i>|</i></li>
+</ul>
+<a href='http://v.baidu.com/comic/list/filter-true+order-hot+pn-1' target='_blank' class='getMore'>更多</a></div>
+<ul class='bd bdv-tabslider-list'>
+<li class='tab-block bdv-tabslider-item' static="bl=cartoon_show_hot&blname=%E5%BC%BA%E6%A1%A3%E6%8E%A8%E8%8D%90&to=search&stp=tamasha_focus"  monkey="cartoonShowHot1">
+<div class="scrollItems"><div class="item no-0 " alog-alias="m_cartoonShowHot_1_0" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/4601.htm?frp=browse' target='_blank' title='海贼王' static="stp=po">
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/203fb80e7bec54e788489389bf389b504ec26a85.jpg" alt="海贼王" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">更新至713话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/4601.htm?frp=browse' target='_blank' title='海贼王' static="stp=ti" class='title'>海贼王</a>
+<a href='http://v.baidu.com/comic/4601.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">热血航道路</a>
+</div>
+</div>
+</div><div class="scrollItems">
+</div><div class="scrollItems">
+<div class="item no-1 " alog-alias="m_cartoonShowHot_1_1" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/14565.htm?frp=browse' target='_blank' title='一拳超人' static="stp=po">
+<img class='vid-cover' src="http://d.hiphotos.baidu.com/video/pic/item/72f082025aafa40f6448474aad64034f79f0199e.jpg" alt="一拳超人" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">更新至2话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/14565.htm?frp=browse' target='_blank' title='一拳超人' static="stp=ti" class='title'>一拳超人</a>
+<a href='http://v.baidu.com/comic/14565.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">一拳超人大战邪恶</a>
+</div>
+</div>
+<div class="item no-2 " alog-alias="m_cartoonShowHot_1_2" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/14262.htm?frp=browse' target='_blank' title='龙珠超' static="stp=po">
+<img class='vid-cover' src="http://b.hiphotos.baidu.com/video/pic/item/95eef01f3a292df5363722a8ba315c6035a87393.jpg" alt="龙珠超" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">更新至14话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/14262.htm?frp=browse' target='_blank' title='龙珠超' static="stp=ti" class='title'>龙珠超</a>
+<a href='http://v.baidu.com/comic/14262.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">《龙珠》新系列</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-3 " alog-alias="m_cartoonShowHot_1_3" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/883.htm?' target='_blank' title='秦时明月之夜尽天明' static="stp=po">
+<img class='vid-cover' src="http://e.hiphotos.baidu.com/video/pic/item/6159252dd42a2834099413a55db5c9ea15cebf69.jpg" alt="秦时明月之夜尽天明" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全18话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/883.htm?' target='_blank' title='秦时明月之夜尽天明' static="stp=ti" class='title'>秦时明月之夜尽天明</a>
+<a href='http://v.baidu.com/comic/883.htm?' target='_blank' class='sub-title' static="stp=ti">千重机关 万阙迷岭</a>
+</div>
+</div>
+<div class="item no-4 " alog-alias="m_cartoonShowHot_1_4" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/13433.htm?frp=bdbrand' target='_blank' title='熊出没' static="stp=po">
+<img class='vid-cover' src="http://c.hiphotos.baidu.com/video/pic/item/730e0cf3d7ca7bcb30d8f0bfb8096b63f724a8fa.jpg" alt="熊出没" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全52话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/13433.htm?frp=bdbrand' target='_blank' title='熊出没' static="stp=ti" class='title'>熊出没</a>
+<a href='http://v.baidu.com/comic/13433.htm?frp=bdbrand' target='_blank' class='sub-title' static="stp=ti">熊大熊二戏耍光头强</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-5 " alog-alias="m_cartoonShowHot_1_5" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/847.htm?frp=browse' target='_blank' title='名侦探柯南' static="stp=po">
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/5bafa40f4bfbfbed75730ce97ef0f736afc31f79.jpg" alt="名侦探柯南" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">更新至775话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/847.htm?frp=browse' target='_blank' title='名侦探柯南' static="stp=ti" class='title'>名侦探柯南</a>
+<a href='http://v.baidu.com/comic/847.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">真相只有一个</a>
+</div>
+</div>
+<div class="item no-6 " alog-alias="m_cartoonShowHot_1_6" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/3521.htm?frp=browse' target='_blank' title='新网球王子' static="stp=po">
+<img class='vid-cover' src="http://c.hiphotos.baidu.com/video/pic/item/8326cffc1e178a82f459e5fef003738da977e803.jpg" alt="新网球王子" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全13话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/3521.htm?frp=browse' target='_blank' title='新网球王子' static="stp=ti" class='title'>新网球王子</a>
+<a href='http://v.baidu.com/comic/3521.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">结盟之强强联合</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-7 " alog-alias="m_cartoonShowHot_1_7" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/4477.htm?frp=bdbrand' target='_blank' title='蜡笔小新' static="stp=po">
+<img class='vid-cover' src="http://f.hiphotos.baidu.com/video/pic/item/aec379310a55b3190350badb45a98226cefc17f6.jpg" alt="蜡笔小新" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全1665话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/4477.htm?frp=bdbrand' target='_blank' title='蜡笔小新' static="stp=ti" class='title'>蜡笔小新</a>
+<a href='http://v.baidu.com/comic/4477.htm?frp=bdbrand' target='_blank' class='sub-title' static="stp=ti">大条小新频出糗</a>
+</div>
+</div>
+<div class="item no-8 " alog-alias="m_cartoonShowHot_1_8" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/4170.htm?frp=bdbrand' target='_blank' title='爱探险的朵拉' static="stp=po">
+<img class='vid-cover' src="http://f.hiphotos.baidu.com/video/pic/item/fc1f4134970a304ed6d2286dd7c8a786c8175cb1.jpg" alt="爱探险的朵拉" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全120话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/4170.htm?frp=bdbrand' target='_blank' title='爱探险的朵拉' static="stp=ti" class='title'>爱探险的朵拉</a>
+<a href='http://v.baidu.com/comic/4170.htm?frp=bdbrand' target='_blank' class='sub-title' static="stp=ti">穿越童话般的森林</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-9 " alog-alias="m_cartoonShowHot_1_9" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/10048.htm?frp=browse' target='_blank' title='野良神' static="stp=po">
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/738b4710b912c8fc0221c15efa039245d7882156.jpg" alt="野良神" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全12话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/10048.htm?frp=browse' target='_blank' title='野良神' static="stp=ti" class='title'>野良神</a>
+<a href='http://v.baidu.com/comic/10048.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">不为人所知的神明</a>
+</div>
+</div>
+<div class="item no-10 " alog-alias="m_cartoonShowHot_1_10" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/14313.htm?frp=browse' target='_blank' title='熊出没之冬日乐翻天' static="stp=po">
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/2f738bd4b31c8701ab888475217f9e2f0708ff62.jpg" alt="熊出没之冬日乐翻天" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全52话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/14313.htm?frp=browse' target='_blank' title='熊出没之冬日乐翻天' static="stp=ti" class='title'>熊出没之冬日乐翻天</a>
+<a href='http://v.baidu.com/comic/14313.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">冬季搞笑故事上演</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-11 " alog-alias="m_cartoonShowHot_1_11" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/13393.htm?frp=browse' target='_blank' title='小黄人' static="stp=po">
+<img class='vid-cover' src="http://f.hiphotos.baidu.com/video/pic/item/a50f4bfbfbedab643734c27df136afc378311ecc.jpg" alt="小黄人" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全9话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/13393.htm?frp=browse' target='_blank' title='小黄人' static="stp=ti" class='title'>小黄人</a>
+<a href='http://v.baidu.com/comic/13393.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">小黄人又搞出什么事情</a>
+</div>
+</div>
+<div class="item no-12 " alog-alias="m_cartoonShowHot_1_12" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/574.htm?frp=bdbrand' target='_blank' title='巴啦啦小魔仙' static="stp=po">
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/962bd40735fae6cda0419c3009b30f2443a70fed.png" alt="巴啦啦小魔仙" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全36话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/574.htm?frp=bdbrand' target='_blank' title='巴啦啦小魔仙' static="stp=ti" class='title'>巴啦啦小魔仙</a>
+<a href='http://v.baidu.com/comic/574.htm?frp=bdbrand' target='_blank' class='sub-title' static="stp=ti">黑魔仙夺去魔仙彩石</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-13 " alog-alias="m_cartoonShowHot_1_13" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/9826.htm?frp=browse' target='_blank' title='喜羊羊与灰太狼' static="stp=po">
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/b03533fa828ba61e0548036b4734970a314e59d4.jpg" alt="喜羊羊与灰太狼" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全52话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/9826.htm?frp=browse' target='_blank' title='喜羊羊与灰太狼' static="stp=ti" class='title'>喜羊羊与灰太狼</a>
+<a href='http://v.baidu.com/comic/9826.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">青青草原上的危机</a>
+</div>
+</div>
+<div class="item no-14 " alog-alias="m_cartoonShowHot_1_14" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/3084.htm?frp=browse' target='_blank' title='七龙珠' static="stp=po">
+<img class='vid-cover' src="http://e.hiphotos.baidu.com/video/pic/item/79f0f736afc37931328808beedc4b74542a91140.jpg" alt="七龙珠" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全64话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/3084.htm?frp=browse' target='_blank' title='七龙珠' static="stp=ti" class='title'>七龙珠</a>
+<a href='http://v.baidu.com/comic/3084.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">宇宙里的黑龙星</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-15 " alog-alias="m_cartoonShowHot_1_15" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/4002.htm?frp=browse' target='_blank' title='潮与虎' static="stp=po">
+<img class='vid-cover' src="http://d.hiphotos.baidu.com/video/pic/item/aa18972bd40735fa3b4d84fd98510fb30f240831.jpg" alt="潮与虎" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全10话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/4002.htm?frp=browse' target='_blank' title='潮与虎' static="stp=ti" class='title'>潮与虎</a>
+<a href='http://v.baidu.com/comic/4002.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">少年玄幻降妖之路</a>
+</div>
+</div>
+<div class="item no-16 " alog-alias="m_cartoonShowHot_1_16" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/13651.htm?frp=browse' target='_blank' title='猪猪侠' static="stp=po">
+<img class='vid-cover' src="http://b.hiphotos.baidu.com/video/pic/item/b58f8c5494eef01f3263aa62e6fe9925bc317d25.jpg" alt="猪猪侠" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全52话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/13651.htm?frp=browse' target='_blank' title='猪猪侠' static="stp=ti" class='title'>猪猪侠</a>
+<a href='http://v.baidu.com/comic/13651.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">猪猪侠变身超人</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-17 " alog-alias="m_cartoonShowHot_1_17" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/10869.htm?frp=browse' target='_blank' title='海绵宝宝' static="stp=po">
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/a8773912b31bb051fce1866d307adab44bede0a9.jpg" alt="海绵宝宝" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全334话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/10869.htm?frp=browse' target='_blank' title='海绵宝宝' static="stp=ti" class='title'>海绵宝宝</a>
+<a href='http://v.baidu.com/comic/10869.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">穿方形裤子的鲍勃</a>
+</div>
+</div>
+<div class="item no-18 " alog-alias="m_cartoonShowHot_1_18" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/14687.htm?frp=browse' target='_blank' title='对魔导学园35试验小队' static="stp=po">
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/f31fbe096b63f624522a04ad8144ebf81a4ca32c.jpg" alt="对魔导学园35试验小队" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">更新至2话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/14687.htm?frp=browse' target='_blank' title='对魔导学园35试验小队' static="stp=ti" class='title'>对魔导学园35试验小队</a>
+<a href='http://v.baidu.com/comic/14687.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">一群劣等生拼凑成的团队</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-19 " alog-alias="m_cartoonShowHot_1_19" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/14282.htm?frp=browse' target='_blank' title='干物妹！小埋' static="stp=po">
+<img class='vid-cover' src="http://c.hiphotos.baidu.com/video/pic/item/2e2eb9389b504fc2f6ddd9bae3dde71191ef6d8a.jpg" alt="干物妹！小埋" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全12话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/14282.htm?frp=browse' target='_blank' title='干物妹！小埋' static="stp=ti" class='title'>干物妹！小埋</a>
+<a href='http://v.baidu.com/comic/14282.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">呆萌小埋的日常</a>
+</div>
+</div>
+<div class="item no-20 " alog-alias="m_cartoonShowHot_1_20" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/14263.htm?frp=browse' target='_blank' title='噬神者' static="stp=po">
+<img class='vid-cover' src="http://f.hiphotos.baidu.com/video/pic/item/4034970a304e251f6f3966afa186c9177e3e539f.jpg" alt="噬神者" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全13话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/14263.htm?frp=browse' target='_blank' title='噬神者' static="stp=ti" class='title'>噬神者</a>
+<a href='http://v.baidu.com/comic/14263.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">物种延续的人类之战</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-21 " alog-alias="m_cartoonShowHot_1_21" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/7278.htm' target='_blank' title='迪迦奥特曼' static="stp=po">
+<img class='vid-cover' src="http://a.hiphotos.baidu.com/video/pic/item/d52a2834349b033b031d3ebf13ce36d3d539bd3a.jpg" alt="迪迦奥特曼" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全52话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/7278.htm' target='_blank' title='迪迦奥特曼' static="stp=ti" class='title'>迪迦奥特曼</a>
+<a href='http://v.baidu.com/comic/7278.htm' target='_blank' class='sub-title' static="stp=ti">维护地球和平</a>
+</div>
+</div>
+<div class="item no-22 " alog-alias="m_cartoonShowHot_1_22" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/3084.htm' target='_blank' title='七龙珠' static="stp=po">
+<img class='vid-cover' src="http://e.hiphotos.baidu.com/video/pic/item/d6ca7bcb0a46f21ffee99517f0246b600d33ae91.jpg" alt="七龙珠" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全64话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/3084.htm' target='_blank' title='七龙珠' static="stp=ti" class='title'>七龙珠</a>
+<a href='http://v.baidu.com/comic/3084.htm' target='_blank' class='sub-title' static="stp=ti">寻找宇宙中的黑星龙珠</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-23 " alog-alias="m_cartoonShowHot_1_23" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/3861.htm?' target='_blank' title='托马斯和他的朋友们' static="stp=po">
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/b7fd5266d01609244054795fd10735fae6cd3405.jpg" alt="托马斯和他的朋友们" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全368话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/3861.htm?' target='_blank' title='托马斯和他的朋友们' static="stp=ti" class='title'>托马斯和他的朋友们</a>
+<a href='http://v.baidu.com/comic/3861.htm?' target='_blank' class='sub-title' static="stp=ti">他是一个完美主义者</a>
+</div>
+</div>
+<div class="item no-24 " alog-alias="m_cartoonShowHot_1_24" >
+<div class="video h-item">
+<a href='http://v.baidu.com/comic/4409.htm?frp=browse' target='_blank' title='数码宝贝' static="stp=po">
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/b7003af33a87e9507232d73116385343fbf2b441.jpg" alt="数码宝贝" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="play-video-icon">&nbsp;</span>
+<span class="vid-info vid-duration">全48话</span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://v.baidu.com/comic/4409.htm?frp=browse' target='_blank' title='数码宝贝' static="stp=ti" class='title'>数码宝贝</a>
+<a href='http://v.baidu.com/comic/4409.htm?frp=browse' target='_blank' class='sub-title' static="stp=ti">被命运选中的孩子继续战斗</a>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="tabLeft">
+<div class="mask"></div>
+<a href="javascript:void(0)" class="leftCtrl" ></a>
+</div>
+<div class="tabRight">
+<div class="mask"></div>
+<a href="javascript:void(0)" class="rightCtrl"></a>
+</div>
+</div>
+</div>
+<div class="section wideSroll" alog-alias="cartoonPreview">
+
+
+
+<div id="cartoonPreview" class="short-modoule">
+<div class='mod-content canScrollItems' >
+<div class='hd bdv-tabslider-control' ><h2 static='bl=cartoon_show_preview_tab_h2&to=play' >预告片</h2>
+</div>
+<ul class='bd bdv-tabslider-list'>
+<li class='tab-block bdv-tabslider-item' static="bl=cartoon_show_preview&blname=%E9%A2%84%E5%91%8A%E7%89%87&to=play&stp=show_preview"  monkey="cartoonPreview1">
+<div class="scrollItems"><div class="item no-0" alog-alias="cartoonPreview_1_0" id="cartoon_show_preview">
+<div class="video h-item">
+<a href='http://www.letv.com/ptv/vplay/23732614.html' title='血型君！第三季 番宣CM' static="stp=po"  target='_blank'>
+<img class='vid-cover' src="http://e.hiphotos.baidu.com/video/pic/item/5243fbf2b21193132fb00a2763380cd790238db2.jpg" alt="血型君！第三季 番宣CM" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class='play-video-icon'>&nbsp;</span>
+<span class='vid-info vid-score'></span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://www.letv.com/ptv/vplay/23732614.html' target='_blank' title='血型君！第三季 番宣CM' class='title' static="stp=ti">血型君！第三季 番宣CM</a>
+<a href='http://www.letv.com/ptv/vplay/23732614.html' target='_blank' class='sub-title' static="stp=ti">你知道你这个血型的日常吗</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-1" alog-alias="cartoonPreview_1_1" id="cartoon_show_preview">
+<div class="video h-item">
+<a href='http://www.letv.com/ptv/vplay/23515117.html' title='夏洛特' static="stp=po"  target='_blank'>
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/2cf5e0fe9925bc3175535fd758df8db1cb137076.jpg" alt="夏洛特" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class='play-video-icon'>&nbsp;</span>
+<span class='vid-info vid-score'></span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://www.letv.com/ptv/vplay/23515117.html' target='_blank' title='夏洛特' class='title' static="stp=ti">夏洛特</a>
+<a href='http://www.letv.com/ptv/vplay/23515117.html' target='_blank' class='sub-title' static="stp=ti">夏洛特的约定</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-2" alog-alias="cartoonPreview_1_2" id="cartoon_show_preview">
+<div class="video h-item">
+<a href='http://www.letv.com/ptv/vplay/23692367.html' title='英雄别闹10预告' static="stp=po"  target='_blank'>
+<img class='vid-cover' src="http://c.hiphotos.baidu.com/video/pic/item/ac6eddc451da81cb7c6d38615466d01608243196.jpg" alt="英雄别闹10预告" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class='play-video-icon'>&nbsp;</span>
+<span class='vid-info vid-score'></span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://www.letv.com/ptv/vplay/23692367.html' target='_blank' title='英雄别闹10预告' class='title' static="stp=ti">英雄别闹10预告</a>
+<a href='http://www.letv.com/ptv/vplay/23692367.html' target='_blank' class='sub-title' static="stp=ti">谁说英雄无恶意</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-3" alog-alias="cartoonPreview_1_3" id="cartoon_show_preview">
+<div class="video h-item">
+<a href='http://baidu.baomihua.com/kan/1lCr?fr=v.baidu.com/' title='天龙八部3D' static="stp=po"  target='_blank'>
+<img class='vid-cover' src="http://d.hiphotos.baidu.com/video/pic/item/9922720e0cf3d7ca92285eaaf61fbe096a63a914.jpg" alt="天龙八部3D" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class='play-video-icon'>&nbsp;</span>
+<span class='vid-info vid-score'></span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://baidu.baomihua.com/kan/1lCr?fr=v.baidu.com/' target='_blank' title='天龙八部3D' class='title' static="stp=ti">天龙八部3D</a>
+<a href='http://baidu.baomihua.com/kan/1lCr?fr=v.baidu.com/' target='_blank' class='sub-title' static="stp=ti">决战武林之巅</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-4" alog-alias="cartoonPreview_1_4" id="cartoon_show_preview">
+<div class="video h-item">
+<a href='http://www.letv.com/ptv/vplay/23515334.html' title='魔幻车神' static="stp=po"  target='_blank'>
+<img class='vid-cover' src="http://b.hiphotos.baidu.com/video/pic/item/0b46f21fbe096b633f811c180a338744eaf8acda.jpg" alt="魔幻车神" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class='play-video-icon'>&nbsp;</span>
+<span class='vid-info vid-score'></span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://www.letv.com/ptv/vplay/23515334.html' target='_blank' title='魔幻车神' class='title' static="stp=ti">魔幻车神</a>
+<a href='http://www.letv.com/ptv/vplay/23515334.html' target='_blank' class='sub-title' static="stp=ti">30s预告篇</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-5" alog-alias="cartoonPreview_1_5" id="cartoon_show_preview">
+<div class="video h-item">
+<a href='http://www.letv.com/ptv/vplay/23051114.html' title='艾克斯奥特曼' static="stp=po"  target='_blank'>
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/622762d0f703918fb2e91f06543d269758eec4c5.jpg" alt="艾克斯奥特曼" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class='play-video-icon'>&nbsp;</span>
+<span class='vid-info vid-score'></span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://www.letv.com/ptv/vplay/23051114.html' target='_blank' title='艾克斯奥特曼' class='title' static="stp=ti">艾克斯奥特曼</a>
+<a href='http://www.letv.com/ptv/vplay/23051114.html' target='_blank' class='sub-title' static="stp=ti">超长预告PV</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-6" alog-alias="cartoonPreview_1_6" id="cartoon_show_preview">
+<div class="video h-item">
+<a href='http://www.letv.com/ptv/vplay/23033583.html' title='十万个冷笑话第三季' static="stp=po"  target='_blank'>
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/0e2442a7d933c8955c9ff5a3d41373f083020000.jpg" alt="十万个冷笑话第三季" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class='play-video-icon'>&nbsp;</span>
+<span class='vid-info vid-score'></span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://www.letv.com/ptv/vplay/23033583.html' target='_blank' title='十万个冷笑话第三季' class='title' static="stp=ti">十万个冷笑话第三季</a>
+<a href='http://www.letv.com/ptv/vplay/23033583.html' target='_blank' class='sub-title' static="stp=ti">预告第一弹：太乙真人归来</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-7" alog-alias="cartoonPreview_1_7" id="cartoon_show_preview">
+<div class="video h-item">
+<a href='http://baidu.hz.letv.com/kan/aa14U?fr=v.baidu.com/' title='名侦探柯南' static="stp=po"  target='_blank'>
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/cefc1e178a82b9013c0d7129758da9773912ef0c.jpg" alt="名侦探柯南" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class='play-video-icon'>&nbsp;</span>
+<span class='vid-info vid-score'></span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://baidu.hz.letv.com/kan/aa14U?fr=v.baidu.com/' target='_blank' title='名侦探柯南' class='title' static="stp=ti">名侦探柯南</a>
+<a href='http://baidu.hz.letv.com/kan/aa14U?fr=v.baidu.com/' target='_blank' class='sub-title' static="stp=ti">黑暗组织boss揭密</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-8" alog-alias="cartoonPreview_1_8" id="cartoon_show_preview">
+<div class="video h-item">
+<a href='http://baidu.hz.letv.com/kan/aYr9g?fr=v.baidu.com/' title='禹相龙图' static="stp=po"  target='_blank'>
+<img class='vid-cover' src="http://a.hiphotos.baidu.com/video/pic/item/622762d0f703918f7bd84614543d269758eec4e7.jpg" alt="禹相龙图" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class='play-video-icon'>&nbsp;</span>
+<span class='vid-info vid-score'></span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://baidu.hz.letv.com/kan/aYr9g?fr=v.baidu.com/' target='_blank' title='禹相龙图' class='title' static="stp=ti">禹相龙图</a>
+<a href='http://baidu.hz.letv.com/kan/aYr9g?fr=v.baidu.com/' target='_blank' class='sub-title' static="stp=ti">超长预告片</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-9" alog-alias="cartoonPreview_1_9" id="cartoon_show_preview">
+<div class="video h-item">
+<a href='http://baidu.hz.letv.com/kan/dMz7?fr=v.baidu.com/' title='中国惊奇先生' static="stp=po"  target='_blank'>
+<img class='vid-cover' src="http://e.hiphotos.baidu.com/video/pic/item/63d9f2d3572c11dfadee95c8662762d0f703c219.jpg" alt="中国惊奇先生" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class='play-video-icon'>&nbsp;</span>
+<span class='vid-info vid-score'></span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://baidu.hz.letv.com/kan/dMz7?fr=v.baidu.com/' target='_blank' title='中国惊奇先生' class='title' static="stp=ti">中国惊奇先生</a>
+<a href='http://baidu.hz.letv.com/kan/dMz7?fr=v.baidu.com/' target='_blank' class='sub-title' static="stp=ti">“大电影”终极预告</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-10" alog-alias="cartoonPreview_1_10" id="cartoon_show_preview">
+<div class="video h-item">
+<a href='http://baidu.hz.letv.com/kan/aYA4F?fr=v.baidu.com/' title='西游记之大圣归来' static="stp=po"  target='_blank'>
+<img class='vid-cover' src="http://f.hiphotos.baidu.com/video/pic/item/622762d0f703918fac5e1505543d269758eec475.jpg" alt="西游记之大圣归来" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class='play-video-icon'>&nbsp;</span>
+<span class='vid-info vid-score'></span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://baidu.hz.letv.com/kan/aYA4F?fr=v.baidu.com/' target='_blank' title='西游记之大圣归来' class='title' static="stp=ti">西游记之大圣归来</a>
+<a href='http://baidu.hz.letv.com/kan/aYA4F?fr=v.baidu.com/' target='_blank' class='sub-title' static="stp=ti">主题曲 陈洁仪《从前的我</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-11" alog-alias="cartoonPreview_1_11" id="cartoon_show_preview">
+<div class="video h-item">
+<a href='http://baidu.hz.letv.com/kan/dt72?fr=v.baidu.com/' title='雏蜂' static="stp=po"  target='_blank'>
+<img class='vid-cover' src="http://d.hiphotos.baidu.com/video/pic/item/6f061d950a7b0208376bdb1667d9f2d3562cc8a3.jpg" alt="雏蜂" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class='play-video-icon'>&nbsp;</span>
+<span class='vid-info vid-score'></span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://baidu.hz.letv.com/kan/dt72?fr=v.baidu.com/' target='_blank' title='雏蜂' class='title' static="stp=ti">雏蜂</a>
+<a href='http://baidu.hz.letv.com/kan/dt72?fr=v.baidu.com/' target='_blank' class='sub-title' static="stp=ti">预告PV第二弹</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-12" alog-alias="cartoonPreview_1_12" id="cartoon_show_preview">
+<div class="video h-item">
+<a href='http://baidu.hz.letv.com/kan/1TgQ?fr=v.baidu.com/' title='食戟之灵' static="stp=po"  target='_blank'>
+<img class='vid-cover' src="http://b.hiphotos.baidu.com/video/pic/item/64380cd7912397dda010cbd85d82b2b7d1a28784.jpg" alt="食戟之灵" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class='play-video-icon'>&nbsp;</span>
+<span class='vid-info vid-score'></span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://baidu.hz.letv.com/kan/1TgQ?fr=v.baidu.com/' target='_blank' title='食戟之灵' class='title' static="stp=ti">食戟之灵</a>
+<a href='http://baidu.hz.letv.com/kan/1TgQ?fr=v.baidu.com/' target='_blank' class='sub-title' static="stp=ti">弱肉强食的Avalon</a>
+</div>
+</div>
+</div><div class="scrollItems">
+<div class="item no-13" alog-alias="cartoonPreview_1_13" id="cartoon_show_preview">
+<div class="video h-item">
+<a href='http://baidu.hz.letv.com/kan/1Tg1?fr=v.baidu.com/' title='黄金拼图第2季' static="stp=po"  target='_blank'>
+<img class='vid-cover' src="http://c.hiphotos.baidu.com/video/pic/item/810a19d8bc3eb135719bea67a21ea8d3fc1f4489.jpg" alt="黄金拼图第2季" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class='play-video-icon'>&nbsp;</span>
+<span class='vid-info vid-score'></span>
+</a>
+</div>
+<div class="item-title">
+<a href='http://baidu.hz.letv.com/kan/1Tg1?fr=v.baidu.com/' target='_blank' title='黄金拼图第2季' class='title' static="stp=ti">黄金拼图第2季</a>
+<a href='http://baidu.hz.letv.com/kan/1Tg1?fr=v.baidu.com/' target='_blank' class='sub-title' static="stp=ti">学园生活的喜剧</a>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="tabLeft">
+<div class="mask"></div>
+<a href="javascript:void(0)" class="leftCtrl" ></a>
+</div>
+<div class="tabRight">
+<div class="mask"></div>
+<a href="javascript:void(0)" class="rightCtrl"></a>
+</div>
+</div>
+</div>
+<div id="pager1"><textarea class="g_fis_bigrender" style="display:none;">BigPipe.asyncLoad({id: "pager1"});</textarea></div><div id="pager2"><textarea class="g_fis_bigrender" style="display:none;">BigPipe.asyncLoad({id: "pager2"});</textarea></div>
+</div>
+<div id="footer" alog-alias="home-footer">
+<div class="footer" monkey="footer" alog-alias="footer">
+<div class="links">
+<a href="http://service.baidu.com/question?prod_en=video" target="_blank">帮助</a>&nbsp;|&nbsp;<a href="http://v.baidu.com/videoop.html" target="_blank">互联网视频开放协议</a>&nbsp;|&nbsp;<a href="http://qingting.baidu.com/index?pid=4" target="_blank">意见反馈</a><br />
+<a href="#" onclick="h(this,'http://www.baidu.com/');" class="action-sethome">把百度设为首页</a>&nbsp;|&nbsp;<a href="http://top.baidu.com/" target="_blank">搜索风云榜</a>&nbsp;|&nbsp;<a href="http://home.baidu.com/" target="_blank">关于百度</a>
+</div>
+<p>百度视频搜索结果源于互联网视频网站，系计算机系统根据搜索热度自动排列，不代表百度赞成被搜索网站的内容或立场。</p>
+<p class="copyright">&copy;&nbsp;2015&nbsp;Baidu&nbsp;<a href="http://www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;|&nbsp;<a href="http://v.baidu.com/license.html" target="_blank">网络视听许可证0110516号</a></p>
+</div>
+</div>
+
+
+
+<script src="http://img.baidu.com/hunter/alog/alog.min.js"></script>
+<script>
+        var pageId='page-video-cartoon-new';
+        (function() {
+            alog('set', 'alias', {
+                monkey: 'http://img.baidu.com/hunter/alog/monkey.min.js',
+                element: 'http://img.baidu.com/hunter/alog/element.min.js'
+            });
+            alog('require', ['monkey', 'element'], function(monkey, element){
+                element.an("group", "monkey");
+                monkey.create({
+                    page: pageId,
+                    pid: 241,
+                    p: 104,
+                    hid: 337,
+                    postUrl: 'http://nsclick.baidu.com/u.gif',
+                    reports: {
+                        refer: 1,
+                        staytime: 1
+                    }
+                });
+            });
+            alog('monkey.send', 'pageview', {now: +new Date});
+
+            alog('monkey.on', 'send', function(data){
+                if ( data.xp && data.xp.indexOf('(searchContent)') > -1 ) {
+                    alog("monkey.set", "postUrl", "");
+                } else {
+                    alog("monkey.set", "postUrl", "http://nsclick.baidu.com/u.gif");
+                }
+            });
+
+        }());
+    </script>
+<script>with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://img.baidu.com/hunter/video.js?st='+~(new Date()/864e5)];</script><script type="text/html" id="index_banner_top_tpl">
+<%
+    var item = data[0];
+    if( data && data.length >1 ){
+        item = data[Math.floor(Math.random() * data.length)];
+    }
+%>
+<% if(item && item.hot_day == 1){ %>
+    <div class="ad-top-banner" > 
+        <a href="<%=item.url%>" target="_blank" id="linkAdv984" static="stp=adv_top_984_90">
+            <img src="<%=item.imgh_url%>" alt="<%=item.title%>"/>
+        </a>
+        <a href="javascript:void(0)" class="btnTopBannerClose"></a>
+    </div>
+<% } %>
+</script>
+<script type="text/html" id="index_banner_bottom_tpl">
+<%
+    var item = data[0];
+    if( data && data.length >1 ){
+        item = data[Math.floor(Math.random() * data.length)];
+    }
+%>
+<% if(item && item.hot_day == 1){ %>
+	<div> 
+	<a href="<%=item.url%>" target="_blank" static="stp=iph_promote_984_83">
+		<img src="<%=item.imgh_url%>" alt="<%=item.title%>" />
+	</a>
+	</div>
+<% } %>
+</script>
+<script type="text/html" id="index_right_top_tpl">
+<%
+    var item = data[0];
+    if( data && data.length >1 ){
+        item = data[Math.floor(Math.random() * data.length)];
+    }
+%>
+<% if(item && item.hot_day == 1){ %>
+<a href="<%=item.url%>" target="_blank" static="stp=toplist_140_70" style="background:url(<%=item.imgh_url%>) 100% 100% no-repeat;"></a>
+<% } %>
+</script>
+<script type="text/html" id="index_right_float_tpl">
+<div class="index_AD_right_close">
+	<a title="右侧悬浮广告" class="close" href="javascript:void(0)"></a>
+</div>
+<div class="adContainer">
+
+<% var data = data || []; %>
+<% for(var i = 0, len = data.length; i < len; i++) { %>
+<% var item = data[i]; %>
+<div id="adRightFloat<%=i%>" 
+    class="index_AD_right_fixed
+    <% if( item.title ){ %> has-title <% } %>">
+    <% if (item.intro == 1) { %> index_AD_right_fixed_big<% } %> 
+	<a class="normal" target="_blank" href="" static="bl=index_AD_right_fixed&stp=adv_right_90">
+		<img  src="<%=item.imgh_url || item.imgv_url%>" /><% if (item.intro != 1 ) { %><%=item.title%><% } %>
+	</a>
+	<a title="<%=item.title%>" class="close" href="javascript:void(0)"></a>
+</div>
+<% } %>
+</div>
+</script>
+<div id="back-to-top" class="back-to-top" alog-alias="backTop">
+<ul class="bt-list">
+<li class="bt-top"><a href="#" id="back-to-top-btn" class="bt-btn-top" title="回到顶部"></a></li>
+<li class="bt-bottom">
+<a target="_blank" href="http://qingting.baidu.com/index?pid=4"  class="bt-btn-feedback" id="showFeed">反馈</a>
+</li>
+</ul>
+</div>
+<div class="index-right-float" id="index_right_float" static="bl=adv_float_right" monkey="adv_float_right"></div>
+<script type="text/javascript">
+						window.alogObjectConfig = {
+				product: '104',
+				page: 'page-video-cartoon-new',
+				speed: {
+					sample: '0.1'
+				},
+				monkey: {
+					sample: '0.1'
+					//hid: ''
+					//pageflag: ''
+				},
+				exception: {
+					sample: '0.1'
+				},
+				feature: {
+					sample: '0.1'
+				},
+				csp: {
+					sample: '0.1',
+					'default-src': [
+						{match: '*bae.baidu.com', target: 'Accept,Warn'},
+						{match: '*.baidu.com,*.bdstatic.com,*.bdimg.com,localhost,*.hao123.com,*.hao123img.com', target: 'Accept'},
+						{match: /^(127|172|192|10)(\.\d+){3}$/, target: 'Accept'},
+						{match: '*', target: 'Accept,Warn'}
+					]
+				}
+			};
+		</script>
+<script>void function(e,t,n,a,r,o){function c(t){e.attachEvent?e.attachEvent("onload",t,!1):e.addEventListener&&e.addEventListener("load",t)}function i(e,n,a){a=a||15;var r=new Date;r.setTime((new Date).getTime()+1e3*a),t.cookie=e+"="+escape(n)+";path=/;expires="+r.toGMTString()}function s(e){var n=t.cookie.match(new RegExp("(^| )"+e+"=([^;]*)(;|$)"));return null!=n?unescape(n[2]):null}function d(){var e=s("PMS_JT");if(e){i("PMS_JT","",-1);try{e=eval(e)}catch(n){e={}}e.r&&t.referrer.replace(/#.*/,"")!=e.r||alog("speed.set","wt",e.s)}}c(function(){alog("speed.set","lt",+new Date),r=t.createElement(n),r.async=!0,r.src=a+"?v="+~(new Date/864e5),o=t.getElementsByTagName(n)[0],o.parentNode.insertBefore(r,o)}),d()}(window,document,"script","http://img.baidu.com/hunter/alog/dp.min.js");</script>
+</body><script type="text/javascript" src="http://vs5.bdstatic.com/browse_static/v3/common/pkg/common_sync_js_0_a4e12a09.js"></script>
+<script type="text/javascript">require.resourceMap({"res":[],"pkg":[]});</script><script type="text/javascript" src="http://vs6.bdstatic.com/browse_static/v3/common/pkg/common_sync_js_1_044081bf.js"></script><script type="text/javascript" src="http://vs6.bdstatic.com/browse_static/v3/common/pkg/common_video_5a87e05a.js"></script><script type="text/javascript" src="http://vs5.bdstatic.com/browse_static/v3/index/pkg/index_sync_js_0_724272b.js"></script><script type="text/javascript" src="http://vs5.bdstatic.com/browse_static/v3/common/pkg/common_sync_js_4_7bc1e2e6.js"></script><script type="text/javascript" src="http://vs6.bdstatic.com/browse_static/v3/common/ui/carousel/jCarouselLite_2ef10bec.js"></script><script type="text/javascript" src="http://vs5.bdstatic.com/browse_static/v3/index/pkg/home_video_d2b96da.js"></script><script type="text/javascript" src="http://vs6.bdstatic.com/browse_static/v3/index/pkg/index_sync_js_1_79b3da0.js"></script><script type="text/javascript">
+!function(){			$.log('http://nsclick.baidu.com/p.gif?pid=104&u='+encodeURIComponent(window.location.href)+'&tn=cartoon&tpl=cartoon&sa=false&city=北京');
+			$(function() {
+				$.log('http://nsclick.baidu.com/u.gif?pid=104&fe=bigpipe&page=indsa&first=1');
+				BigPipe.asyncLoad({id: "pager1"});
+				setTimeout(function() {
+					BigPipe.asyncLoad({id: "pager2"},null,function(data){
+						BigPipe.process(data);
+						//百川广告loader
+						(function (e) {
+							if (e._cbgAds) return;
+							var t = function () { var e = document.createElement('script'); e.async = true, e.src = '//static.pay.baidu.com/resource/ads/all.js', document.body.appendChild(e) },
+							n = document.createElement("iframe"); (n.frameElement || n).style.cssText = "display:none", n.src = "javascript:false",
+							n.setAttribute("id", "cbgAdsRuntime"), document.body.appendChild(n);
+							var c = n.contentWindow.document || n.contentDocument; c.open().write('<body onload="(' + t + '())">'), c.close(), e._cbgAds = !0
+						}(window));
+					});
+				}, 400);
+				alog('speed.set', 'drt', +new Date);
+			});
+				require('common:static/ui/lazyloader/lazyloader.js');
+
+							}();
+!function(){	require('common:widget/video/userbar/userbar.js')('cartoon');
+}();
+!function(){	require('common:widget/video/navmini/navmini.js')();
+}();
+!function(){    (function() {
+    	function log(src) {
+    		var t = new Date().getTime(),
+    			img = window['V_fix_img'+t] = new Image();
+    		img.onload = img.onerror = img.onabort = function() {
+    			img.onload = img.onerror = img.onabort = null;
+    			try {
+    				delete window['V_fix_img'+t];
+    				img = null;
+    			} catch(e) {
+    				img = null;
+    			}
+    		}
+    		img.src = src+'&r='+t;
+    	};
+    	var types = { movie: 21, tv: 22, show: 26, comic: 43, person: 50 };
+    	var bdvSugConfig = {
+    		form: 'bdvSearch',
+    		input: 'bdvSearchInput',
+    		num: 6,
+    		delay: 0,
+    		classname: 'bdv-qs-suggestion',
+    		onsubmit: function(evt) {
+    			log( 'http://nsclick.baidu.com/v.gif?pid=104&tn=sug&searchpage=cartoon&s=zdjs&input=' + encodeURIComponent(evt.query) + '&wd=' + encodeURIComponent(evt.title) + ( evt.index ? '&li=' + evt.index : '' ) + ( evt.eventType ? '&eventtype=' + evt.eventType : '' ) );
+    		},
+    		onclicklink: function(evt) {
+    			log( 'http://nsclick.baidu.com/v.gif?pid=104&tn=sug&s=zdjs&bl=spa&input=' + encodeURIComponent(evt.query) + '&wd=' + encodeURIComponent(evt.title) + '&id=' + evt.id + '&ty=' + types[evt.type] + '&stp=' + evt.target + '&li=' + evt.index + '&u=' + encodeURIComponent(evt.url) );
+    		}
+    	};
+
+    	var sug = require("common:static/ui/suggestion/suggestion.js");
+    	sug(bdvSugConfig);
+    }());
+}();
+!function(){	require('common:widget/video/searchbox/searchbox.js')({
+		id: 'bdvSearch',
+				ismis: true,
+		    		pageTn: 'cartoon'
+	});
+}();
+!function(){	require('common:widget/video/tabsearch/tabsearch.js')();
+}();
+!function(){    var trace = require('common:widget/video/bdv_trace/bdv_trace.js');
+    trace('cartoon', '0');
+}();
+!function(){	window.bdvRecordConfig = {
+		proxy: location.protocol + '//' + location.host + '/browse_static/common/html/proxy_blank.html'
+	};
+
+    (function () {
+        var loginCheck = require('common:static/ui/loginCheck/loginCheck.js');
+        var url = 'http://vs3.bdstatic.com/pc_static/open/record/bdv-record-min.js?bdv=0924';
+        $.getScript(url, function () {
+            loginCheck(function (uinfo) {
+                if (uinfo.uid && uinfo.value) {
+                    try {
+                        bdvRecordAPI.init({
+                            islogin: true
+                        });
+                    } catch (e) {}
+                }
+            });
+        });
+    })();
+}();
+!function(){        var _ = require("common:static/vendor/underscore/underscore.js");
+        var tpl = _.template($("#index_right_shixiao_tpl").html());
+        $.ajax({
+            url: "http://v.baidu.com/staticapi/videoAd.json",
+            dataType: "jsonp",
+            jsonpCallback: "videoNewAd",
+            success: function(ret){
+                if (!ret || !ret.length || !ret[0]) return;
+                var item = ret[0].data.videos;
+                _.each(item, function(adItem){
+                    if (adItem.sub_title == "index_right_qipao"){
+                        if ($.cookie.getRaw("_bdvqipao") == -1){
+                            adItem.hot_week = 1;
+                            $.log("http://nsclick.baidu.com/u.gif?pid=104&bl=index_right_qipao&ext=close");
+                        } else {
+                            $.log("http://nsclick.baidu.com/u.gif?pid=104&bl=index_right_qipao&ext=open");
+                        }
+
+                        $("#index_right_shixiao").html(tpl({data: adItem}));
+
+                        $(".pop-wrap-big .pop-close").off("click").on("click", function(e){
+                            e.preventDefault();
+                            $(this).parent().hide()
+                                .next(".pop-wrap-small").show();
+                            $.cookie.setRaw("_bdvqipao", "-1", {
+                                expires: 3*24*60*60*1000
+                            });
+                        });
+
+                        return false;
+                    }
+                });
+            }
+        });
+        
+    }();
+!function(){require.async('common:widget/video/advList/advList.js',function(adv){
+    adv.push(function(){
+        return {"id":"index_right_top","classname":"index-right-top","bl":"adv_float_top","monkey":"adv_float_top"}
+    });
+});
+}();
+!function(){	require('common:widget/video/header/header.js')();
+}();
+!function(){require.async(["common:static/ui/carousel/jCarouselLite.js", "common:static/vendor/jquery/jquery.js"],function(carousel,$){
+	var c = new carousel({
+				itemsTag:".carousel-item",
+				itemSize:document.documentElement.clientWidth<1235?730:955,
+				originalIndex:0,
+				duration:7000,
+				speed:500,
+				easing:null,//"easeInOutCubic",
+				beforeStart:function(){},
+				afterEnd:function(a,b){
+					$(".carousel-dotted-list .dotted-item").removeClass("dotted-selected");
+					$(".carousel-dotted-list .dotted-item").eq(Math.floor(a%3)).addClass("dotted-selected");
+				},
+				auto:true,
+				visible:1,
+				step:1
+			});
+	
+
+	c.render("#wideCarouselList");
+	$(".ctrl-mask-left .ctrl").on("click",function(){
+		c.prev();
+	});
+	$(".ctrl-mask-right .ctrl").on("click",function(){
+		c.next();
+	});
+	$(window).on("window:resize",function(arg,key){
+		if(key.type =="big" || key.type =="w1280"){
+			c.refresh(955)	
+		}
+		if(key.type=="small"){
+			c.refresh(730)	
+		}
+	});
+	$(".wideCarousel").hover(function(){
+		$(this).addClass("showMask");
+	},function(){
+		$(this).removeClass("showMask");
+	});
+});
+}();
+!function(){	var tags={};
+	var popuActive = false;
+				var temp = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='\n\t\t<div  alog-alias="alias-title"  class="popu-title" static="'+
+((__t=( info.static ))==null?'':__t)+
+'">\n\t\t\t<h2 style="background-color:'+
+((__t=( info.bg ))==null?'':__t)+
+'"> '+
+((__t=( info.name ))==null?'':__t)+
+'TOP3</h2>\n\t\t\t<a class="more" target="_blank" href="'+
+((__t=( info.href ))==null?'':__t)+
+'">更多'+
+((__t=( info.name ))==null?'':__t)+
+'动漫</a>\n\t\t</div>\n\t\t<ul class="top3" static="'+
+((__t=( info.static ))==null?'':__t)+
+'">\n\t';
+ for(var i=0,dl=data.length;i<dl;i++){ 
+__p+='\t\n\t\t\t<li alog-alias="alias-'+
+((__t=( info.active ))==null?'':__t)+
+'-'+
+((__t=( i ))==null?'':__t)+
+'">\n\t\t\t\t<div class="video-cover">\n\t\t\t\t\t<span>0'+
+((__t=( i+1 ))==null?'':__t)+
+'</span>\n\t\t\t\t\t<a href="'+
+((__t=( data[i]['url']))==null?'':__t)+
+'" title="'+
+((__t=( data[i]['title'] ))==null?'':__t)+
+'" static="ext=po" target="_blank"><img src="'+
+((__t=( data[i]['imgh_url'] ))==null?'':__t)+
+'" alt="'+
+((__t=( data[i]['title'] ))==null?'':__t)+
+'"></a>\n\t\t\t\t</div>\n\t\t\t\t<div class="video-info">\n\t\t\t\t\t<h5 title="'+
+((__t=( data[i]['title'] ))==null?'':__t)+
+'" ><a static="ext=ti" href="'+
+((__t=( data[i]['url']))==null?'':__t)+
+'" title="'+
+((__t=( data[i]['title'] ))==null?'':__t)+
+'" target="_blank">'+
+((__t=( data[i]["title"] ))==null?'':__t)+
+'</a></h5>\n\t\t\t\t\t<span>类型：';
+ for(var type=0,da=data[i]["type"].length;type<da;type++){ 
+__p+=' <b>'+
+((__t=( data[i]["type"][type]["name"] ))==null?'':__t)+
+'</b>  ';
+ } 
+__p+='</span>\n\t\t\t\t\t<span>地区：';
+ for(var area=0,da=data[i]["area"].length;area<da;area++){ 
+__p+=' <b>'+
+((__t=( data[i]["area"][area]["name"] ))==null?'':__t)+
+'</b>  ';
+ } 
+__p+='</span>\n\t\t\t\t\t<span>更新：<b>'+
+((__t=( data[i]["update"] ))==null?'':__t)+
+'</b></span>\n\t\t\t\t</div>\n\t\t\t</li>\n\n\t\t';
+ } 
+__p+='\n\n\t\t</ul>\n\t\t<div class="thisType" ></div>\n\n';
+}
+return __p;
+};
+	
+	function createRcommendList(data){
+		if(data && data.videoshow && data.videoshow.videos && data.videoshow.videos.length>0){
+		$("#popu").show();
+		data.videoshow.videos.length = 3;	
+		document.getElementById("popu").className = "top-popu";
+		$("#popu").html(temp({
+				data:data.videoshow.videos,
+				info:{
+					"name":data.videoshow.typeName,
+					"href":data.videoshow.typeHref,
+					"bg":data.videoshow.background,
+					"static":data.videoshow.static,
+					"active":data.videoshow.active
+					}
+				})).addClass(data.videoshow.active);	
+		}
+	};
+
+      function getDataSuccess(data,ele){
+          if(!data.videoshow  || data.error==2){
+              return false;
+         }           
+          ele.data("videos",data);
+          data.videoshow["typeName"] = ele.attr("data-name");
+          data.videoshow["active"] = ele.attr("data-active");
+          data.videoshow["static"] = ele.attr("data-static");
+          data.videoshow["typeHref"] = ele.find("a").attr("href");
+          data.videoshow["background"] = ele.find("a").css("background-color");
+          createRcommendList(ele.data("videos"));
+      }   
+      
+      // 电影频道
+	  
+
+	  
+	        // 动漫频道
+      window.ct_japan     = function(data){getDataSuccess(data,$(".recmd-item").eq(0));window.ct_japan   =function(){};}
+      window.ct_inland    = function(data){getDataSuccess(data,$(".recmd-item").eq(1));window.ct_inland    =function(){};}
+      window.ct_blood     = function(data){getDataSuccess(data,$(".recmd-item").eq(2));window.ct_blood  =function(){};}
+      window.ct_fanny     = function(data){getDataSuccess(data,$(".recmd-item").eq(3));window.ct_fanny      =function(){};}
+      window.ct_hot       = function(data){getDataSuccess(data,$(".recmd-item").eq(4));window.ct_hot      =function(){};}
+	  
+
+
+
+
+
+	$(".recmd-item").on("mouseover",function(){
+		
+		var __this = $(this);
+		if(__this.attr("data-get") == "null" ){
+			createRcommendList(__this.data("videos"))
+		}else{
+			$.ajax({  
+				url: __this.attr("data-get"),
+				dataType:"script",
+				beforeSend:function(){
+					__this.attr("data-get","null")
+					__this.data("tags","has");
+				},
+				success:function(data){}
+			})
+		}
+
+	});
+	$("#popu,.recmd-item").hover(function(){
+		popuActive = true;
+	},function(){
+		popuActive = false;
+		setTimeout(function(){
+			if(!popuActive){
+				$("#popu").hide();	
+			}
+		},200);
+	})
+}();
+!function(){require.async("common:static/vendor/jquery/jquery.js",function($){
+		var li = $("#showTophot");
+		li.on("mouseover",".pic-item",function(){
+			$(this).addClass("pic-current")
+				   .siblings(".pic-item")
+				   .removeClass("pic-current");
+		});
+	
+
+	
+});
+}();
+!function(){		var $ = require('common:static/ui/tabSlider/tabSlider.js');
+		$('#showTophot').bdvTabSlider({
+			lazyload : true
+		});
+	}();
+!function(){    ;(function(){
+        var $ = require("common:static/vendor/jquery/jquery.js");
+
+		$(function() {
+            var bdPassPop = require('common:static/ui/bdPassPop/bdPassPop.js'); 
+            var $body = $("body");
+            $body.on("mouseenter","#todayHotMeiNv .item", function() {
+                if(!$body.hasClass('global-logged')) {
+                    var $meinvLogin = $(this).find(".meinv-login");
+                    if(!$(this).hasClass("item-xiuba")) {
+                        $meinvLogin.show();
+                    }
+                }
+            });
+            $body.on("mouseleave", "#todayHotMeiNv .item", function() {
+                var $meinvLogin = $(this).find(".meinv-login");
+                $meinvLogin.hide();
+            });
+            $("body").on("click", "#todayHotMeiNv .item", function(e) {
+                if(!$body.hasClass('global-logged')) {
+                    if(!$(this).hasClass("item-xiuba")) {
+                        e.preventDefault();
+                        bdPassPop.show();
+                    }
+                }
+            });
+            // 新增美女区块
+            $body.on("mouseenter","#showBeauty .item", function() {
+                if(!$body.hasClass('global-logged')) {
+                    var $meinvLogin = $(this).find(".meinv-login");
+                    $meinvLogin.show();
+                }
+            });
+            $body.on("mouseleave", "#showBeauty .item", function() {
+                var $meinvLogin = $(this).find(".meinv-login");
+                $meinvLogin.hide();
+            });
+            // 带图区：点击调起登录
+            $("body").on("click", "#showBeauty .item", function(e) {
+                if(!$body.hasClass('global-logged')) {
+                    e.preventDefault();
+                    bdPassPop.show();
+                }
+            });
+            // 排行榜：点击调起登录
+            $("body").on("click", "#topBeauty li a", function(e) {
+                if(!$body.hasClass('global-logged')) {
+                    e.preventDefault();
+                    bdPassPop.show();
+                }
+            });
+		})    
+    })();
+	}();
+!function(){ var trace = require('index:widget/video/trace/trace.js');
+ trace.init("cartoon","video");
+}();
+!function(){require.async(["common:static/ui/carousel/jCarouselLite.js", "common:static/vendor/jquery/jquery.js"],function(carousel,$){
+	var tabCarousel = new carousel({
+				itemsTag:'.scrollItems',
+				itemSize:document.documentElement.clientWidth<1235?185:195,
+				originalIndex:0,
+				speed:300,
+				easing:null,
+				beforeStart:function(){},
+				afterEnd:function(current,__this){
+					var displied = __this.__data.displied;
+					var tabLeft = $("#cartoonShowHot .tabLeft");
+					var tabRight = $("#cartoonShowHot .tabRight");
+
+						if( $.inArray(0,displied) !== -1 ){
+							tabRight.show();
+							tabLeft.hide();
+						}else if( $.inArray( __this.__data.allItems.length-1 ,displied)!==-1 ){
+							tabRight.hide();
+							tabLeft.show();
+						}else{
+							tabRight.show();
+							tabLeft.show();
+						}
+				},
+				visible:document.documentElement.clientWidth<1235?6:7,
+				step:document.documentElement.clientWidth<1235?5:6,
+				buffer:0.569,
+				firstBig:true
+				});
+	tabCarousel.render("#cartoonShowHot .bdv-tabslider-list");
+	$("#cartoonShowHot .rightCtrl").on("click",function(){
+		tabCarousel.next();
+	});
+	$("#cartoonShowHot .leftCtrl").on("click",function(){
+		tabCarousel.prev();
+	});
+	$(window).on("window:resize",function(arg,key){
+		if(key.type =="big" || key.type =="w1280"){
+			tabCarousel.refresh(195,7,6);	
+		}
+		if(key.type=="small"){
+			tabCarousel.refresh(185,6,5);	
+		}
+	});
+});
+}();
+!function(){require.async(["common:static/ui/carousel/jCarouselLite.js", "common:static/vendor/jquery/jquery.js"],function(carousel,$){
+	var tabCarousel = new carousel({
+				itemsTag:'.scrollItems',
+				itemSize:document.documentElement.clientWidth<1235?185:195,
+				originalIndex:0,
+				speed:300,
+				easing:null,
+				beforeStart:function(){},
+				afterEnd:function(current,__this){
+					var displied = __this.__data.displied;
+					var tabLeft = $("#cartoonPreview .tabLeft");
+					var tabRight = $("#cartoonPreview .tabRight");
+
+						if( $.inArray(0,displied) !== -1 ){
+							tabRight.show();
+							tabLeft.hide();
+						}else if( $.inArray( __this.__data.allItems.length-1 ,displied)!==-1 ){
+							tabRight.hide();
+							tabLeft.show();
+						}else{
+							tabRight.show();
+							tabLeft.show();
+						}
+				},
+				visible:document.documentElement.clientWidth<1235?6:7,
+				step:document.documentElement.clientWidth<1235?5:6,
+				buffer:0.569,
+				firstBig:true
+				});
+	tabCarousel.render("#cartoonPreview .bdv-tabslider-list");
+	$("#cartoonPreview .rightCtrl").on("click",function(){
+		tabCarousel.next();
+	});
+	$("#cartoonPreview .leftCtrl").on("click",function(){
+		tabCarousel.prev();
+	});
+	$(window).on("window:resize",function(arg,key){
+		if(key.type =="big" || key.type =="w1280"){
+			tabCarousel.refresh(195,7,6);	
+		}
+		if(key.type=="small"){
+			tabCarousel.refresh(185,6,5);	
+		}
+	});
+});
+}();
+!function(){$.ajax({
+    url: ' http://v.baidu.com/videoapi?page_name=cbgpopup&format=json&block_sign=list_pc_push',
+    dataType: "jsonp",
+    crossDomain: true,
+    scriptCharset: 'utf-8',
+    success: function (data) {
+        // data[0]['data']['videos'][0]['id'] = '0821-10:00$$0829-12:00';
+        // data[0]['data']['videos'][0]['update'] = '110';
+        if (data && data[0]['data']['videos'].length > 1) {
+            var getcookieid = data[0]['data']['videos'][0]['update'];
+            var cookieid = $.cookie.get(self.cookie);
+            if (getcookieid !== cookieid && parseInt(getcookieid, 10) !== 0) {
+                require("common:widget/video/push/push.js")(data[0]['data']['videos']);
+            } else {
+                                    $.getScript('http://static.pay.baidu.com/resource/tuisong/v1/tuiSong.js',function(){
+                        var t = new TuiSong();
+                    });
+                            }
+        } else {
+                            $.getScript('http://static.pay.baidu.com/resource/tuisong/v1/tuiSong.js',function(){
+                    var t = new TuiSong();
+                });
+                    }
+    }
+});
+
+window["h"] = function(obj, url){
+    if (document.all) {
+        obj.style.behavior = 'url(#default#homepage)';
+        obj.setHomePage(url);
+    }
+}
+}();
+!function(){	var loginCheck = require('common:static/ui/loginCheck/loginCheck.js');
+	require('common:static/ui/statistics/statistics.js');
+   	if ( location.hostname.match(/(?:\.baidu\.com$)|(?:\.hao123\.com$)/) ) {
+		var bdvref = $.cookie.get('bdvref');
+		if ( bdvref ) {
+			V.nsclick.setParam('VIDEO_FR', bdvref);
+		}
+	} else {
+		loginCheck(function(userinfo) {
+			if ( userinfo && userinfo.cookie && userinfo.cookie.bdvref ) {
+				V.nsclick.setParam('VIDEO_FR', userinfo.cookie.bdvref);
+			}
+		});
+	}
+
+															V.nsclick.setParam('tn', 'cartoon');
+												V.nsclick.setParam('tpl', 'cartoon');
+											}();
+!function(){$(function() {
+	$.getScript('http://cbjs.baidu.com/js/m.js', function() {
+		if ( window.BAIDU_CLB_fillSlotAsync ) {
+			$('.adm-union').each(function(index, item) {
+				var domid = item.getAttribute('id'),
+					uniodid = item.getAttribute('data-union');
+				if ( domid && uniodid ) {
+					BAIDU_CLB_fillSlotAsync(uniodid, domid);
+				}
+			});
+		}
+	});
+});
+}();
+!function(){require.async('common:widget/video/advList/advList.js',function(ADV){
+	ADV.init();
+});
+}();
+!function(){require.async('common:widget/video/advList/advList.js',function(adv){
+    adv.push(function(){
+        return {"id":"index_right_float","classname":"index-right-float","bl":"adv_float_right","monkey":"adv_float_right"}
+    });
+});
+}();
+!function(){		require("common:widget/global/backTop/backTop.js")();
+	}();
+!function(){			require('index:static/ui/responsive/responsive.js')();
+			require('index:static/ui/zhuanti/ValentinesDay.js')();
+		}();
+</script></html>
+<!--05604599090223465482101611-->
+<script> var _trace_page_logid = 0560459909; </script>

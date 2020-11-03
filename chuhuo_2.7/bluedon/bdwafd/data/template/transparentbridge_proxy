@@ -1,0 +1,30 @@
+server {
+    listen 80;
+    server_name localhost;
+
+    location / {
+        root html;
+        index index.html index.htm;
+
+        ModSecurityEnabled on;
+        ModSecurityConfig modsecurity_sites_conf/default/default.conf;
+    }
+}
+
+{% for site in sites %}
+server {
+    listen {{site.iWebSitePort}};
+    server_name {{site.sWebSiteName}};
+
+{% if 'Server' in header_hide_list %} {%else%}    proxy_pass_header Server;{%endif%}
+{% if 'X-Powered-By' in header_hide_list %}    proxy_hide_header X-Powered-By;{%endif%}
+
+    location / {
+        root html;
+        index index.html index.htm;
+
+        ModSecurityEnabled on;
+        ModSecurityConfig modsecurity_sites_conf/{{site.sWebSiteName}}_{{site.iWebSitePort}}/{{site.sWebSiteName}}_{{site.iWebSitePort}}.conf;
+    }
+}
+{% endfor %}

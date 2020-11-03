@@ -1,0 +1,10 @@
+prefix=/usr/local/bluedon/gnokii
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gnokii
+Description: Gnokii library interface
+Version: 0.6.29
+Libs: -L${libdir} -lgnokii
+Cflags: -I${includedir}

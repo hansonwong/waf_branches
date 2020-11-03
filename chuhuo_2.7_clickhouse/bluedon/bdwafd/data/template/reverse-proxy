@@ -1,0 +1,76 @@
+server {
+    listen 80;
+    location / {
+#        deny all;
+    }
+}
+{% for site in sites %}upstream pool_{{site['sWebSiteName']|replace(".", "_")}}_{{site['iWebSitePort']}}{
+{% if site['hatype'] == 'hash'%}    ip_hash;{% endif %}
+{% for server in site['servers'] %}    server {{server['ip']}}:{{server['port']}} {% if site['hatype'] == 'weight'%}weight={{server['weight']}}{% endif %} {% if site['helthcheck'] %}max_fails=2 fail_timeout=30s{% endif %};
+{% endfor %}}
+{% if site['cache'] %}proxy_cache_path /usr/local/bdwaf/data/{{site['sWebSiteName']}} levels=1:2 keys_zone=cache_{{site['sWebSiteName']|replace(".", "_")}}:10m inactive=1d max_size=30m;{% endif %}
+server {
+    # Bind Port1111
+    listen {{site['iWebSitePort']}};
+{% if site['sWebSiteProtocol'] == 'https' %}    ssl on;
+    ssl_certificate     licences/{{site['sWebSiteName']}}/ssl.pem;
+    ssl_certificate_key licences/{{site['sWebSiteName']}}/ssl.key;
+{% endif %}
+    
+    # Server Name
+    server_name {{site['sWebSiteName']}};
+    #error page
+{% for error in errorlist %}    error_page  {{error.status_code}}  /{{error.prompt_file}};
+{% endfor %}
+
+    # set upstream cache status in http header
+    add_header Bdwaf-Cache "$upstream_cache_status from $host$uri";
+    
+{% if 'Server' in header_hide_list %} {%else%}    proxy_pass_header Server;{%endif%}
+{% if 'X-Powered-By' in header_hide_list %}    proxy_hide_header X-Powered-By;{%endif%}
+
+    include sites/subs_filter_gbk.conf;
+    include sites/subs_filter_utf8.conf;
+
+    # Reverse Proxy Cache Setting
+{% if site['cache'] %}    proxy_cache cache_{{site['sWebSiteName']|replace(".", "_")}};
+    proxy_cache_valid 200 304 12h;
+    proxy_cache_valid 301 302 1m;
+    proxy_cache_valid any 1m;
+    proxy_cache_key $host$uri$is_args$args;
+    proxy_temp_path /usr/local/bdwaf/tmp/{{site['sWebSiteName']}};{% endif %}
+
+    #error page
+{% for error in errorlist %}    location /{{error.prompt_file}} {
+        root    {% if error.prompt_type == 1 %}/Data/apps/wwwroot/waf/cache/data/errorpages/;{% elif error.prompt_type == 2 %}/Data/apps/wwwroot/waf/cache/data/mode/;{% endif %}
+    }
+{% endfor %}
+    
+    # Default Proxy Policy
+    location / 
+    {
+        # Reverse Proxy
+        proxy_pass {{site['sWebSiteProtocol']}}://pool_{{site['sWebSiteName']|replace(".", "_")}}_{{site['iWebSitePort']}};
+        # fix 301redirect, may cause some unexcepted error
+        # proxy_set_header Host $host:$server_port;
+        # proxy_redirect http://$host:$server_port/ /;
+    }
+}
+
+{% endfor %}
+{% for port, site in ports_dict.iteritems() %}server{
+    listen {{port}} default_server;
+    {% if site['sWebSiteProtocol'] == 'https' %}ssl on;
+    ssl_certificate     /Data/apps/nginx/conf/33iq.crt;
+    ssl_certificate_key /Data/apps/nginx/conf/33iq_nopass.key;
+    {% endif %}
+
+    server_name _;
+
+    #Default Proxy Policy
+    location /
+    {
+        return 500;
+    }
+}
+{% endfor %}

@@ -1,0 +1,94 @@
+程序实现的功能有：
+
+1）本机管理ip地址设置，查看和修改网口ip地址信息
+2）修改管理员登陆密码
+3）网络测试（ping、traceroute、查看路由信息、查看arp信息）
+4）出厂设置
+    a、删除业务数据（保留配置）b、恢复出厂设置（恢复到出厂状态）
+5）重启、关闭本机
+
+----------------------------------------------------------------
+
+本程序由高波童鞋提供，由胡林帆对其进行了修改
+修改部分如下：
+
+1. 恢复出厂设置
+   执行脚本 /usr/local/bluedon/backup_recover.py
+
+2. 恢复数据库默认设置
+    1) 创建目录 /var/log/mysql/default-data/db_firewall_log，出厂时其内容与 /var/log/mysql/data/db_firewall_log 相同
+    恢复默认设置时将该目录的内容拷贝到 /var/log/mysql/data/db_firewall_log 目录下
+
+    2) 创建目录 /usr/local/mysql/default-data/db_firewall，出厂时其内容与 /usr/local/mysql/data/db_firewall 相同
+    恢复默认设置时将该目录的内容拷贝到/usr/local/mysql/data/db_firewall 目录下
+
+3、修改用户密码
+   1) 连接数据库
+      mysql -h127.0.0.1 -uroot -pbd_123456 -P3306
+   
+   2) 查找要修改的用户
+      select sLoginAccount from m_tbaccount where sLoginAccount ='%s';
+
+   3) 修改该用户的密码
+      update m_tbaccount set sPasswd=%s where sLoginAccount='%s'
+
+4、修改网口IP地址
+    1) 连接数据库
+       mysql -h127.0.0.1 -uroot -pbd_123456 -P3306
+
+    2) 查找网口
+       SELECT id FROM m_tbnetport WHERE sPortName='%s'
+
+    3) 修改该网口的IP地址、状态
+       Update m_tbnetport set sIPV4Address='%s/%d', iStatus='%d' WHERE sPortName='%s'
+
+5、程序修改、编译完成后生成可执行文件bdcli，修改bdcli运行权限：
+   [root@localhost ~]# chmod u+s bdcli
+
+-------------------------------------------------------------------------------
+
+设备端串口设置
+
+1、添加一个指定用户: admin, 密码：bd@fwsc2016
+    [root@localhost ~]# useradd admin
+    [root@localhost ~]# passwd admin  --> 输入密码
+
+2、修改文件 /home/admin/.bash_profile
+    在该文件最后一行添加：
+    exec /home/admin/bd_cli/bdcli
+    其中bdcli是串口登陆程序的绝对路径，admin用户登陆时会执行该程序
+
+3、检查 /boot/grub2/grub.cfg 文件是否打开了串口
+    找到以下语句：
+    linux16 /vmlinuz-3.10.0 root=UUID=4e95d6eb-e55b-4d06-902e-f1094b3e48f5 ro vconsole.keymap=us crashkernel=auto  vconsole.font=latarcyrheb-sun16 rhgb quiet \
+                                 LANG=en_US.UTF-8 console=tty0 console=ttyS0,9600n8
+    检查是否有 console=tty0 console=ttyS0,9600n8 选项，没有则添加。
+    注：当前设置的串口波特率为9600
+
+4、检查 /etc/securetty 文件是否设置了串口
+    在该文件最后一行添加 ttyS0, 表示使用COM1作为控制口
+
+5、检查 /etc/inittab 文件是否设置了允许用户登陆
+    s0:12345:respawn:/sbin/agetty -L 9600 ttyS0 vt100
+    没有这句则在文件的最后一行添加
+
+6、设置root超时注销，防止工程人员现场调试时用root登陆后忘记exit
+    在文件 /etc/profile 中添加一行：
+    export TMOUT=300
+
+-------------------------------------------------------------------------------
+
+设备端文件存放路径
+
+1、串口登陆程序
+   /home/admin/bd_cli/bdcli
+
+2、恢复出厂设置的脚本
+   /usr/local/bluedon/backup_recover.py
+
+3、数据库存放路径
+   /usr/local/mysql/default-data/db_firewall/
+   /var/log/mysql/default-data/db_firewall_log/
+
+4、用户密码加密脚本
+   /home/admin/bd_cli/mdpass.php

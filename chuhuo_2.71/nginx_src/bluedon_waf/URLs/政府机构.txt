@@ -1,0 +1,6 @@
+.edu
+.gov
+.mil
+aams.it
+ac.gov.br
+ac.uk

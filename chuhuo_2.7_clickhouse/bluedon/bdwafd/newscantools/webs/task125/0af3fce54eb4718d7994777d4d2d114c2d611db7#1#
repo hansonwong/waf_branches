@@ -1,0 +1,19 @@
+status:200
+content-length:85
+content-location:https://www.baidu.com/shifen/
+set-cookie:BAIDUID=EDA19E324B74B6B157590B384706CAF2:FG=1; expires=Sat, 15-Oct-16 02:58:05 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1, BAIDUID=EDA19E324B74B6B168BEDC6601956822:FG=1; expires=Sat, 15-Oct-16 02:58:05 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1, __bsi=2439328754981079399_00_36_N_N_2_0303_C02F_N_N_N_0; expires=Fri, 16-Oct-15 02:58:10 GMT; domain=www.baidu.com; path=/
+accept-ranges:bytes
+expires:Sat, 17 Oct 2015 02:58:05 GMT
+vary:Accept-Encoding,User-Agent
+server:bfe/1.0.8.5
+last-modified:Mon, 27 Nov 2006 16:00:00 GMT
+connection:keep-alive
+etag:"55-4233ca039e000"
+cache-control:max-age=86400
+date:Fri, 16 Oct 2015 02:58:05 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM ", CP=" OTI DSP COR IVA OUR IND COM "
+content-type:text/html
+####################
+<html>
+<meta http-equiv="refresh" content="0;url=http://jingjia.baidu.com">
+</html> 

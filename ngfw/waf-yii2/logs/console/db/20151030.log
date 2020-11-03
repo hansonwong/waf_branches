@@ -1,0 +1,24 @@
+2015-10-30 09:00:38 [-][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-30 09:00:38 [-][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-30 09:00:38 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-30 09:00:38 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-30 09:00:38 [-][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-30 09:00:38 [-][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-30 09:00:38 [-][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-30 09:00:38 [-][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-30 09:00:38 [-][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-30 09:00:39 [-][-][-][info][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `auth_key`, `created_at`, `updated_at`) VALUES ('root', 'root@root.com', '$2y$13$qP4IT/mrmTngRSJNMXIhsOgO2R1KRBsZX0zpPI.rWdwPJU22DpVJ.', 10, '123456', 1446166839, 1446166839)
+    in E:\yii2\apps\console\controllers\InitController.php:26
+2015-10-30 09:00:39 [-][-][-][profile begin][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `auth_key`, `created_at`, `updated_at`) VALUES ('root', 'root@root.com', '$2y$13$qP4IT/mrmTngRSJNMXIhsOgO2R1KRBsZX0zpPI.rWdwPJU22DpVJ.', 10, '123456', 1446166839, 1446166839)
+    in E:\yii2\apps\console\controllers\InitController.php:26
+2015-10-30 09:00:39 [-][-][-][profile end][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `auth_key`, `created_at`, `updated_at`) VALUES ('root', 'root@root.com', '$2y$13$qP4IT/mrmTngRSJNMXIhsOgO2R1KRBsZX0zpPI.rWdwPJU22DpVJ.', 10, '123456', 1446166839, 1446166839)
+    in E:\yii2\apps\console\controllers\InitController.php:26

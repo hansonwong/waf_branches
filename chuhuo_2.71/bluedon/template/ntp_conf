@@ -1,0 +1,21 @@
+server {{ntp_server}}
+server  127.127.1.0
+fudge   127.127.1.0 stratum 10
+
+driftfile /var/lib/ntp/ntp.drift
+
+{% if is_auth == 1%}
+statistics loopstats peerstats clockstats
+filegen loopstats file loopstats type day enable
+filegen peerstats file peerstats type day enable
+filegen clockstats file clockstats type day enable
+restrict -4 default notrust
+crypto pw serverpassword
+keysdir /etc/ntp
+
+{% else %}
+restrict default kod nomodify noquery noserve
+{% for network in networks -%}
+restrict {{network[0]}} mask {{network[1]}}
+{% endfor%}
+{% endif %}

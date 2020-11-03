@@ -1,0 +1,29 @@
+/////////////////////////////////////////////////////
+/// Copyright (C) 2016, Bluedon. All rights reserved
+/// Author: Linfan Hu (hlf@chinabluedon.cn)
+/// Date: 2016/12/5
+/// Description: NGFW system update
+/////////////////////////////////////////////////////
+
+1. update tarball name
+   tarball name is bdfw-xxx.tar.gz, where xxx represents date.
+   example: bdfw-2016-12-05.tar.gz
+
+2. update steps
+    step (1) extract tarball
+        # tar -xzf bdfw-xxx.tar.gz
+    step (2) do update
+        # cd bdfw-xxx
+        # sh update_wizard.sh 
+        # input pasword (bd_0x6264 by default)
+    step (3)
+        wait until file 'update_status' created
+    step (4)
+        check 'update_status' file content. 
+        "success" means the update process succeed,
+        else means the reason why fail.
+
+3. how to check update log
+    # cat /var/log/update_system.log
+    this file contains the details of update process
+

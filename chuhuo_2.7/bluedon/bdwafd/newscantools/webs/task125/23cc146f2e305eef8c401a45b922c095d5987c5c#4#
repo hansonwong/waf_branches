@@ -1,0 +1,64 @@
+status:200
+content-length:605
+content-location:http://v.baidu.com/robots.txt
+set-cookie:BAIDUID=F7174D1B0E4067926609FFFAD3E9CA1F:FG=1; max-age=31536000; expires=Sat, 15-Oct-16 02:53:12 GMT; domain=.baidu.com; path=/; version=1
+accept-ranges:bytes
+vary:Accept-Encoding
+server:apache
+last-modified:Tue, 10 Jun 2014 02:14:43 GMT
+etag:"4283024080"
+date:Fri, 16 Oct 2015 02:53:12 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM "
+content-type:text/plain
+####################
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Baiduspider-image
+Allow: /
+
+User-agent: Baiduspider-video
+Allow: /
+
+User-agent: Baiduspider-news
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: MSNBot
+Allow: /
+
+User-agent: YoudaoBot
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: Sogou inst spider
+Allow: /
+
+User-agent: Sogou spider2
+Allow: /
+
+User-agent: Sogou blog
+Allow: /
+
+User-agent: Sogou News Spider
+Allow: /
+
+User-agent: Sogou Orion spider
+Allow: /
+
+User-agent: ChinasoSpider
+Allow: /
+
+User-agent: Sosospider
+Allow: /
+
+
+User-agent: yisouspider
+Allow: /
+
+User-agent: *
+Disallow: /

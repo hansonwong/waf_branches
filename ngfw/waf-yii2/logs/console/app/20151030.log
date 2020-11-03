@@ -1,0 +1,60 @@
+2015-10-30 09:00:30 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2015-10-30 09:00:30 [-][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2015-10-30 09:00:30 [-][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2015-10-30 09:00:30 [-][-][-][trace][yii\base\Controller::runAction] Route to run: init/admin
+2015-10-30 09:00:31 [-][-][-][trace][yii\base\InlineAction::runWithParams] Running action: apps\console\controllers\InitController::actionAdmin()
+2015-10-30 09:00:30 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PC201407311000'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PC201407311000'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;D:\\phpStudy\\php56n;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseGit2\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'PC201407311000'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\yii2\\apps\\console\\'
+    'PHP_SELF' => 'E:\\yii2\\apps\\console\\run'
+    'SCRIPT_NAME' => 'E:\\yii2\\apps\\console\\run'
+    'SCRIPT_FILENAME' => 'E:\\yii2\\apps\\console\\run'
+    'PATH_TRANSLATED' => 'E:\\yii2\\apps\\console\\run'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1446166830.9752
+    'REQUEST_TIME' => 1446166830
+    'argv' => [
+        0 => 'E:\\yii2\\apps\\console\\run'
+        1 => 'init/admin'
+    ]
+    'argc' => 2
+]

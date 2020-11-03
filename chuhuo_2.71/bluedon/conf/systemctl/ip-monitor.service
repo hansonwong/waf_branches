@@ -1,0 +1,14 @@
+[Unit]
+Description=ip monitor link
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/usr/local/bluedon
+ExecStart=/usr/bin/python -m networking.ip_monitor
+Restart=always
+#Environment=USER=git HOME=/home/git
+
+[Install]
+WantedBy=multi-user.target

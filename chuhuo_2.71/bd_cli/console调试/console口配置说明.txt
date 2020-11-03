@@ -1,0 +1,8 @@
+1.本文档主要就centos console口配置进行相关说明（不要用本目录下的grub.conf，securetty去替换，不同的版本其他先关设置可能不一样）；
+2.修改/etc/目录下的grub.conf和securetty文件（不修改grub.conf文件启动不了）；
+
+grub.conf文件修改，在kernel行最后添加console=ttyS0如：kernel /boot/vmlinuz-2.6.32-504.8.1.el6.x86_64 ro root=/dev/sda2 rd_NO_LUKS  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_MD crashkernel=auto LANG=zh_CN.UTF-8 rd_NO_LVM rd_NO_DM rhgb quiet console=ttyS0
+securetty文件修改，在securetty最后面添加ttyS0；
+
+3.在/etc/init/目录下添加ttyS0.conf文件；
+4.reboot系统就可以通过console口连接；

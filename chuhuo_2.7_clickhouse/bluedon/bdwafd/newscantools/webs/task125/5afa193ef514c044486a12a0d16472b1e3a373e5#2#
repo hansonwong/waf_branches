@@ -1,0 +1,354 @@
+status:200
+content-length:12683
+content-location:http://news.baidu.com/pianhao.html
+set-cookie:BAIDUID=EEE675B36441143DF063247ABF1EC5F2:FG=1; expires=Sat, 15-Oct-16 03:10:17 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+accept-ranges:bytes
+vary:Accept-Encoding, Accept-Encoding
+server:Apache
+last-modified:Mon, 25 Feb 2013 08:13:44 GMT
+date:Fri, 16 Oct 2015 03:10:17 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM "
+content-type:text/html
+####################
+<html><head><title>百度新闻搜索_偏好设置</title>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta http-equiv=expires content=0>
+<meta http-equiv=cache-control content=no-cache>
+<meta http-equiv=pragma content=no-cache>
+<style>
+body {font-family: 宋体;}
+td {font-size: 9pt; line-height: 18px}
+.formfont {font-size: 16px; font-family: Verdana}
+.p2 {font-size: 14px; line-height: 24px; font-family: "Arial"}
+.p3 {font-size: 13px; line-height: 24px; font-family: "Arial"}
+.t {color: #00C; text-decoration: underline}
+a.t:hover {text-decoration: underline}
+.nav {font-weight: bold; font-size: 14px; color: #FFF; line-height: 20px; text-decoration: none}
+a.nav:hover {text-decoration: underline}
+.r {font-size: 14px; text-decoration: underline}
+.cp{clear:both;text-align:center;padding-top:10px;padding-bottom:10px;border-top:1px solid #7AA9DF;color:#777;font-size:12px;font-family:Arial}
+#ft{clear:both;line-height:20px;text-align:center;padding-top:10px;padding-bottom:10px;}
+#ft,#ft *{color:#77C;font-size:12px;font-family:Arial;white-space:nowrap}
+.cy,a.cy:link,a.cy:visited{color:#77C;font-size:12px;font-family:Arial}
+a.r:hover {color: #E10900}
+.g {COLOR: #666}
+.c {color:#77C}
+.style6 {FONT-SIZE: 14px}
+.topLine {background-color:#E5ECF9;}
+.style13 {color: #333; font-size: 12px;}
+.glh {line-height:22px;}
+#rankmsg {border-collapse:collapse;border-spacing:0;margin:0px;padding:0px;border:2px solid #E5ECF9;margin:5px 5px 30px 5px;}
+#rankmsg td{padding:20px;}
+td{1border:solid 1px red;}
+</style>
+</head>
+<body onload="init();" text="#000000" bottommargin=0 link="#261CDC" bgcolor="#FFFFFF" topmargin=0>
+<table width="100%" border=0 cellspacing=0 cellpadding=0>
+<tbody>
+	<tr height=60>
+		<td valign=top width=149 height=69><a href=/view.html><img src="http://img.baidu.com/img/logo-news.gif" width=137 height=46 border=0></a></td>
+		<td height=69>
+			<table cellspacing=0 cellpadding=0 width="100%" border=0>
+			<tbody>
+			<tr><td bgcolor=#6BA1DF colspan=2 height=1></td></tr>
+			<tr><td class=p2 bgcolor=#F3F3F5 height=24><span class=style6>&nbsp;<b>偏好设置 </b></span></td>
+				<td class=p2 bgcolor=#F3F3F5 height=24><div align=right>
+				<a href="http://www.baidu.com/search/news_help.html">搜索帮助</a>&nbsp;&nbsp;<a href="/view.html">新闻首页</a>&nbsp;&nbsp;</div></td>
+			</tr>
+			</tbody>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td width=149 height=9></td>
+		<td></td>
+	</tr>
+</tbody>
+</table>
+
+<form  name="baidu" onsubmit="return false;" style="margin:0px;padding:0px;">
+
+<table bordercolor=#CCCCFF cellspacing=0 cellpadding=5 width="100%" border=0>
+<tbody>
+<tr>
+	<td nowrap>
+		<table width="100%"  border="0" align="center" cellpadding="2" cellspacing="2" class="topLine">
+		<tr>
+			<td nowrap><strong style="font-size:14px;">&nbsp;&nbsp;设置您自己的新闻默认浏览方式</strong></td>
+			<td nowrap>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr bgcolor="#FFFFFF">
+			<td colspan="3">
+				<table width="100%"  border="0" cellpadding="5" cellspacing="0">
+					<tr><td colspan=2 height="40" valign="bottom" style="font-size:13px;font-weight:bold;">&nbsp;&nbsp;请选择检索时关键词的位置：</td></tr>
+					<tr>
+						<td colspan=2>
+							<div style="float:left; padding-left:30px;">
+								<label for="news"><input type="radio" id="news" name="tn" value="news" checked><b>在全文中检索</b></label>
+							</div>
+							<div style="float:left; padding-left: 50px; line-height:26px;">搜索结果排序方式&nbsp;</div>
+							<div style="float:left;">
+								<select name="ct" size="1" style="height:18px;">
+									<option value="1">按焦点排序</option>
+									<option value="0">按时间排序</option>
+								</select>							
+							</div>
+							<div style="clear:both;"></div>
+							<div style="float:left; padding-left:30px; margin-top: 5px;">
+								<label for="newstitle"><input type="radio" id="newstitle" name="tn" value="newstitle" ><b>在标题中检索</b></label>
+							</div>
+							<div style="float:left; line-height: 26px; margin-top: 5px; padding-left: 50px;">标题检索结果会按照时间排序</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan=2 height="30">
+							<input type=hidden name=rn value=20>&nbsp;&nbsp;&nbsp;
+							<input  type=button onclick='save();' value=保存设置>
+							<input  type=button onclick='restore();' value=恢复默认>
+						</td>
+					</tr>
+					<tr>
+						<td colspan=2 height="40">&nbsp;&nbsp;<span style="font-size:13px;">请先确认您的浏览器启用了 cookie，否则无法使用偏好设置！</span><span class="style13"><a href="http://www.baidu.com/search/cookies.html">如何启用cookie?</a></span></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</tbody>
+</table>
+</form>
+
+<table bordercolor=#CCCCFF cellspacing=0 cellpadding=5 width="100%" border=0>
+<tbody>
+<tr>
+	<td nowrap>
+		<table width="100%"  border="0" align="center" cellpadding="2" cellspacing="2" class="topLine">
+			<tr>
+				<td nowrap><strong style="font-size:14px;">&nbsp;&nbsp;个性设置</strong></td>
+			</tr>
+			<tr bgcolor="#FFFFFF">
+				<td>
+					<div style="float:left;font-size:13px;font-weight:bold;width:150px;padding:20px">搜索框提示</div>
+					<div style="float:left;padding:20px">
+						<table>
+							<tr><td>
+								是否在搜索时显示搜索框提示&nbsp;&nbsp;&nbsp;&nbsp; 
+								<a href="http://www.baidu.com/search/shipin_help.html#n6" target="_blank">什么是搜索框提示？</a>
+							</td></tr>
+							<tr><td height="45" valign="top">
+								<input type="radio" name="suSwitch" checked="true" id="sOn">显示&nbsp;<input type="radio"  name="suSwitch" id="sOff">不显示
+							</td></tr>
+							<tr><td>
+								<input type="button" value="保存设置" onclick="savesug()">
+							</td></tr>
+						</table>	
+					</div>
+					<div style="clear:both"></div>
+					<div style="height:40px;line-height:40px;padding-left:20px">
+						<span style="font-size:13px;">
+							请先确认您的浏览器启用了 cookie，否则无法使用个性设置！
+						</span>
+						<span class="style13">
+							<a href="http://www.baidu.com/search/cookies.html">如何启用cookie?</a>
+						</span>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<table id=rankmsg>
+<tr bgcolor=#E5ECF9><td height="25" style="padding:0px;" colspan=2>&nbsp;&nbsp;&nbsp;<strong style="font-size:14px;">搜索结果排序方式说明</strong></td></tr>
+<tr><td colspan=2 height="80">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="style6 glh">当您在百度新闻中进行搜索时，我们为您提供了两种搜索结果的排序方法：<b>按焦点排序</b>和<b>按时间排序</b>。两种排序方式特点各异，全面满足您不同的需求。</font></td></tr>
+<tr>
+<td width=50% valign=top><b style="color:#453D93;" class="glh style6">按焦点排序</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="style6 glh">综合考虑相关性和时效性，与您搜索主题最相关且最近的新闻排在最前。让您掌握最近发生的焦点新闻。这也是我们为您推荐的默认排序。</font>
+</td><td><img src="img/focus.gif"></td></tr>
+<tr><td colspan=2><hr style="height:2px;border:1px solid #EDEDED"></td></tr>
+<tr><td valign=top><b class="style6 glh" style="color:#453D93;">按时间排序</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="style6 glh">所有包含关键词的新闻，严格按照新闻的发布时间排列，最新的新闻排在最前，让您全面的掌握最新进展。</font>
+</td><td><img src="img/time.gif"></td></tr>
+</table>
+<div id="ft">&copy;2013 Baidu</div>
+<script language=javascript>
+<!--
+
+function getCookieVal (offset)
+{
+	var endstr = document.cookie.indexOf (";", offset);
+	if (endstr == -1) endstr = document.cookie.length;
+	return unescape(document.cookie.substring(offset, endstr));
+}
+function GetCookie (name)
+{
+	var arg = name + "=";
+	var alen = arg.length;
+	var clen = document.cookie.length;
+	var i = 0;
+	while (i < clen){
+		var j = i + alen;
+		if (document.cookie.substring(i, j) == arg)
+			return getCookieVal (j);
+		i = document.cookie.indexOf(" ", i) + 1;
+		if (i == 0)
+			break;
+	}
+	return null;
+}
+
+function init(){
+    read();
+	/*注册浏览方式选择的单选钮的点击事件，确保选择标题排序时，排序方式下拉框无效*/
+	document.baidu.tn[0].onclick = function(){
+		document.baidu.ct.disabled = false;
+	};
+	document.baidu.tn[1].onclick = function(){
+		document.baidu.ct.disabled = true;
+	};
+
+	//当不存在cookie时确保状态一致性
+	if(document.baidu.tn[1].checked) document.baidu.ct.disabled=true;
+
+	var mycookie = GetCookie('BAIDUPH');
+	if(mycookie == null){
+		return;
+	}
+	else{
+		var tmp = mycookie.split("§");
+		var atn = tmp[0].split("=");
+		var arn = tmp[1].split("=");
+		var act = tmp[2].split("=");
+		var tn=atn[1];
+		var rn=arn[1];
+		var ct=act[1];
+		if(tn!=""&&tn!=null){
+			if(tn=="news"){document.baidu.tn[0].checked=true; /*确保加载时的状态正常*/document.baidu.ct.disabled=false;}
+			if(tn=="newstitle"){document.baidu.tn[1].checked=true; /*确保加载时的状态正常*/document.baidu.ct.disabled=true;}
+		}
+		if(rn!=""&&rn!=null) document.baidu.rn.value=rn;
+		if(ct!=""&&ct!=null) document.baidu.ct.value=ct;
+	}
+}
+
+function SetCookie (name, value){
+	var argv = SetCookie.arguments;
+	var argc = SetCookie.arguments.length;
+	var expires = (2 < argc) ? argv[2] : null;
+	var path = (3 < argc) ? argv[3] : null;
+	var domain = (4 < argc) ? argv[4] : null;
+	document.cookie = name + "=" + value +";expires=" + expires.toGMTString() +";path=" + path + ";domain=" + domain;
+}
+
+var referhref = eval('('+GetCookie('BDREFER')+')');
+SetCookie('BDREFER','',new Date(),'/','news.baidu.com')
+var days = 365;
+var expdate = new Date();
+expdate.setTime (expdate.getTime() + (86400 * 1000 * days));
+function save()
+{
+	var  cookieEnabled=(navigator.cookieEnabled)?  true  :  false, tn, rn, ct;
+	if(cookieEnabled == false)
+	{
+		alert("无法启用Cookie");
+		return false;
+	}
+	if(document.baidu.tn[0].checked) tn=document.baidu.tn[0].value;
+	if(document.baidu.tn[1].checked) tn=document.baidu.tn[1].value;
+	rn = (document.baidu.rn.value != "")?document.baidu.rn.value:"";
+	ct = (document.baidu.ct.value != "")?document.baidu.ct.value:"";
+	var newcookie = 'tn='+tn+'§rn='+rn+'§ct='+ct;
+	SetCookie("BAIDUPH", newcookie, expdate, "/" , "baidu.com");
+	alert('已经记录下您的使用偏好');
+	/*用户选择标题检索时，不修改cookie值，但是确保回跳时若为标题，则按时间排序*/
+	if(referhref != null){
+		if(/tn=newstitle(dy)?/i.test(referhref.url)) ct = 0;
+		location.href = referhref.url.replace(/word=[^&]*/,'word='+referhref.word).replace(/bs=[^&]*/,'bs='+referhref.word).replace(/ct=[^&]*/,'ct='+ct);
+	}else{
+	  location.href='\/view.html';
+	}
+}
+
+function restore(){
+	var  cookieEnabled=(navigator.cookieEnabled)?  true  :  false;
+	if(cookieEnabled == false){
+		alert("无法启用Cookie");
+		return false;
+	}
+	var tn,rn,ct;
+	tn=rn=ct='';
+	var newcookie = ''+tn+'§rn='+rn+'§ct='+ct;
+	SetCookie("BAIDUPH", newcookie, expdate, "/" , "baidu.com");
+	/*恢复默认设置，不再提示cookie清0。提测前，注意修改会线上地址*/
+	SetCookie("BDNOMORETIPS", "00", expdate, "/" , "news.baidu.com");
+	alert('已经恢复默认设置');
+	/*默认为焦点排序*/
+	ct=1;
+	if(referhref != null){
+		if(/tn=newstitle(dy)?/i.test(referhref.url)) ct = 0;
+		location.href = referhref.url.replace(/word=[^&]*/,'word='+referhref.word).replace(/bs=[^&]*/,'bs='+referhref.word).replace(/ct=[^&]*/,'ct='+ct);
+	}
+	else{
+		location.href='\/view.html';
+	}
+}
+
+//设置suggestion
+var iSug;
+function savesug(){
+	
+	if (!navigator.cookieEnabled){ 
+		alert("您已禁用cookie，设置修改无法生效");
+		return;	
+	}
+	if(document.getElementById("sOff").checked){
+		setCk("sug","0");
+        if (iSug == 1 ) {
+		    (new Image()).src="http://nsclick.baidu.com/v.gif?pid=107&sugst=off"+"&t="+new Date().getTime();//点击监控
+		}
+		iSug = 0;
+	}
+	else{
+		setCk("sug","1");
+		if (iSug ==0 ) {
+		    (new Image()).src="http://nsclick.baidu.com/v.gif?pid=107&sugst=on"+"&t="+new Date().getTime();//点击监控
+		}
+		iSug =1;
+		}
+	location.href="/"
+}
+function read(){
+	if (getCk("sug") == "0"){ 
+	    document.getElementById("sOff").checked = true;
+		iSug = 0;
+		}
+	else {
+	    document.getElementById("sOn").checked = true;
+		iSug =1;
+		}
+}
+function setCk(name,value){
+	document.cookie = name + "=" + escape(value) +"; expires=Thu, 08 Jul 2038 10:05:14 GMT; path=/" ;
+}
+function getCk(name){
+	var cookieValue = "";
+	var search = name + "=";
+	if(document.cookie.length > 0){
+		offset = document.cookie.indexOf(search);
+		if (offset != -1){
+			offset += search.length;
+			end = document.cookie.indexOf(";", offset);
+			if (end == -1) end = document.cookie.length;
+			cookieValue = unescape(document.cookie.substring(offset, end));
+		}
+	}
+  	return cookieValue;
+}
+//-->
+</script>
+</body></html>

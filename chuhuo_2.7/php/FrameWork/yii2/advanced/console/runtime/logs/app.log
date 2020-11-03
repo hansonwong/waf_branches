@@ -1,0 +1,2821 @@
+2017-03-15 04:52:35 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "hello".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('hello', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('hello', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "hello".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('hello', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-15 04:52:35 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489553555.6744
+    'REQUEST_TIME' => 1489553555
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'hello'
+    ]
+    'argc' => 2
+]
+2017-03-15 04:53:32 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "hello".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('hello', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('hello', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "hello".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('hello', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-15 04:53:32 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489553612.4616
+    'REQUEST_TIME' => 1489553612
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'hello'
+    ]
+    'argc' => 2
+]
+2017-03-15 05:58:03 [-][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '.7777' (T_DNUMBER), expecting ',' or ';'' in E:\FrameWork\yii2\advanced\console\controllers\TestController.php:23
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-15 05:58:03 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\FrameWork\\yii2\\advanced\\'
+    'PHP_SELF' => 'E:\\FrameWork\\yii2\\advanced\\yii'
+    'SCRIPT_NAME' => 'E:\\FrameWork\\yii2\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'E:\\FrameWork\\yii2\\advanced\\yii'
+    'PATH_TRANSLATED' => 'E:\\FrameWork\\yii2\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489557483.0563
+    'REQUEST_TIME' => 1489557483
+    'argv' => [
+        0 => 'E:\\FrameWork\\yii2\\advanced\\yii'
+        1 => 'test'
+        2 => '1'
+        3 => '2'
+        4 => '3'
+    ]
+    'argc' => 5
+]
+2017-03-15 05:59:21 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Missing required arguments: a, b, c' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php:166
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#3 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('', Array)
+#4 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test', Array)
+#5 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test', Array)
+#6 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#8 {main}
+2017-03-15 05:59:21 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489557561.1978
+    'REQUEST_TIME' => 1489557561
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'test'
+    ]
+    'argc' => 2
+]
+2017-03-16 06:36:30 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "hello/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('hello/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('hello/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "hello/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('hello/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 06:36:30 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489646190.6129
+    'REQUEST_TIME' => 1489646190
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'hello/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 06:36:43 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Missing required arguments: a, b, c' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php:166
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('index', Array)
+#3 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('index', Array)
+#4 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test/index', Array)
+#5 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test/index', Array)
+#6 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#8 {main}
+2017-03-16 06:36:43 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489646203.3566
+    'REQUEST_TIME' => 1489646203
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'test/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:18:59 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/listen".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/listen', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/listen', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/listen".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/listen', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:18:59 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489648739.6797
+    'REQUEST_TIME' => 1489648739
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/listen'
+        2 => 'default'
+        3 => '10'
+        4 => '128'
+        5 => '3'
+        6 => '0'
+    ]
+    'argc' => 7
+]
+2017-03-16 07:20:16 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:20:16 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489648816.0081
+    'REQUEST_TIME' => 1489648816
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:22:31 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:22:31 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489648951.8688
+    'REQUEST_TIME' => 1489648951
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:22:41 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:22:41 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489648961.2154
+    'REQUEST_TIME' => 1489648961
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:24:13 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:24:13 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649053.7407
+    'REQUEST_TIME' => 1489649053
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:24:39 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:24:39 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649079.7262
+    'REQUEST_TIME' => 1489649079
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:26:02 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:26:02 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649162.6379
+    'REQUEST_TIME' => 1489649162
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:26:04 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:26:04 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649164.428
+    'REQUEST_TIME' => 1489649164
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:26:05 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:26:05 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649165.083
+    'REQUEST_TIME' => 1489649165
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:26:05 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:26:05 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649165.5761
+    'REQUEST_TIME' => 1489649165
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:26:12 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:26:12 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649172.9385
+    'REQUEST_TIME' => 1489649172
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:26:25 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:26:25 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649185.3882
+    'REQUEST_TIME' => 1489649185
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:26:27 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:26:27 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649187.2503
+    'REQUEST_TIME' => 1489649187
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:26:46 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:26:46 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649206.3534
+    'REQUEST_TIME' => 1489649206
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:26:48 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:26:48 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649208.2195
+    'REQUEST_TIME' => 1489649208
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:27:10 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:27:10 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649230.7638
+    'REQUEST_TIME' => 1489649230
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:27:11 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:27:11 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649231.4688
+    'REQUEST_TIME' => 1489649231
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:27:12 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:27:12 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649232.1439
+    'REQUEST_TIME' => 1489649232
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:28:21 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "test1".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test1', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test1', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "test1".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test1', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:28:21 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649301.7629
+    'REQUEST_TIME' => 1489649301
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'test1'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:28:31 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "test1/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test1/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test1/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "test1/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test1/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:28:31 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649311.2524
+    'REQUEST_TIME' => 1489649311
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'test1/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:29:19 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "test1/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test1/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test1/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "test1/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test1/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:29:19 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649359.4902
+    'REQUEST_TIME' => 1489649359
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'test1/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:29:58 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "test-test/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test-test/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test-test/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "test-test/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test-test/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:29:58 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649398.1224
+    'REQUEST_TIME' => 1489649398
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'test-test/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:30:38 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "test-test/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test-test/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test-test/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "test-test/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test-test/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:30:38 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649438.7727
+    'REQUEST_TIME' => 1489649438
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'test-test/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:30:41 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "test-test/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test-test/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test-test/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "test-test/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test-test/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:30:41 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649441.0298
+    'REQUEST_TIME' => 1489649441
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'test-test/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:30:42 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "test-test/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test-test/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test-test/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "test-test/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test-test/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:30:42 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649442.3149
+    'REQUEST_TIME' => 1489649442
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'test-test/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:30:43 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "test-test/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test-test/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test-test/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "test-test/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test-test/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:30:43 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649443.326
+    'REQUEST_TIME' => 1489649443
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'test-test/index'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:31:37 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: test/index2' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('index2', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('index2', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test/index2', Array)
+#3 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test/index2', Array)
+#4 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#6 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "test/index2".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test/index2', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:31:37 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649497.009
+    'REQUEST_TIME' => 1489649497
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'test/index2'
+        2 => '1'
+        3 => '2'
+        4 => '3'
+    ]
+    'argc' => 5
+]
+2017-03-16 07:33:35 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:33:35 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649615.3438
+    'REQUEST_TIME' => 1489649615
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker'
+        2 => '1'
+        3 => '2'
+        4 => '3'
+    ]
+    'argc' => 5
+]
+2017-03-16 07:33:43 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "worker/index".' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/index', Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#3 {main}
+2017-03-16 07:33:43 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649623.2382
+    'REQUEST_TIME' => 1489649623
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/index'
+        2 => '1'
+        3 => '2'
+        4 => '3'
+    ]
+    'argc' => 5
+]
+2017-03-16 07:34:01 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Missing required arguments: a, b, c' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php:166
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#3 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('', Array)
+#4 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test', Array)
+#5 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test', Array)
+#6 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 E:\FrameWork\yii2\advanced\yii(27): yii\base\Application->run()
+#8 {main}
+2017-03-16 07:34:01 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\FrameWork\\yii2\\advanced\\'
+    'PHP_SELF' => 'E:\\FrameWork\\yii2\\advanced\\yii'
+    'SCRIPT_NAME' => 'E:\\FrameWork\\yii2\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'E:\\FrameWork\\yii2\\advanced\\yii'
+    'PATH_TRANSLATED' => 'E:\\FrameWork\\yii2\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649641.9653
+    'REQUEST_TIME' => 1489649641
+    'argv' => [
+        0 => 'E:\\FrameWork\\yii2\\advanced\\yii'
+        1 => 'test'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:35:30 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Missing required arguments: a, b, c' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php:166
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#3 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('', Array)
+#4 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('hello', Array)
+#5 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('hello', Array)
+#6 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 E:\FrameWork\yii2\advanced\yii(27): yii\base\Application->run()
+#8 {main}
+2017-03-16 07:35:30 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\FrameWork\\yii2\\advanced\\'
+    'PHP_SELF' => 'E:\\FrameWork\\yii2\\advanced\\yii'
+    'SCRIPT_NAME' => 'E:\\FrameWork\\yii2\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'E:\\FrameWork\\yii2\\advanced\\yii'
+    'PATH_TRANSLATED' => 'E:\\FrameWork\\yii2\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649730.9274
+    'REQUEST_TIME' => 1489649730
+    'argv' => [
+        0 => 'E:\\FrameWork\\yii2\\advanced\\yii'
+        1 => 'hello'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:37:01 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Missing required arguments: a, b, c' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php:166
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#3 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('', Array)
+#4 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('hello', Array)
+#5 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('hello', Array)
+#6 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 E:\www\phpfetcherTest\yii(28): yii\base\Application->run()
+#8 {main}
+2017-03-16 07:37:01 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489649821.1786
+    'REQUEST_TIME' => 1489649821
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'hello'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:44:16 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Missing required arguments: a, b, c' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php:166
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#3 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('', Array)
+#4 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('hello', Array)
+#5 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('hello', Array)
+#6 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 E:\www\phpfetcherTest\yii(29): yii\base\Application->run()
+#8 {main}
+2017-03-16 07:44:16 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489650256.1234
+    'REQUEST_TIME' => 1489650256
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'hello'
+    ]
+    'argc' => 2
+]
+2017-03-16 07:52:24 [-][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\console\Application::queue' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\di\ServiceLocator.php(75): yii\base\Component->__get('queue')
+#1 E:\FrameWork\yii2\advanced\console\controllers\WorkerController.php(13): yii\di\ServiceLocator->__get('queue')
+#2 [internal function]: console\controllers\WorkerController->actionListen('default', '10', '128', '3', '0')
+#3 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('listen', Array)
+#6 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('listen', Array)
+#7 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('worker/listen', Array)
+#8 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('worker/listen', Array)
+#9 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 E:\www\phpfetcherTest\yii(29): yii\base\Application->run()
+#11 {main}
+2017-03-16 07:52:24 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'GZYT2017022507'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\GZYT2017022507'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseSVN\\bin;E:\\env\\php\\php-5.6.30;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'GZYT2017022507'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1489650744.9374
+    'REQUEST_TIME' => 1489650744
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'worker/listen'
+        2 => 'default'
+        3 => '10'
+        4 => '128'
+        5 => '3'
+        6 => '0'
+    ]
+    'argc' => 7
+]
+2017-03-28 05:48:24 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Missing required arguments: a, b, c' in E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php:166
+Stack trace:
+#0 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#3 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('', Array)
+#4 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('hello', Array)
+#5 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('hello', Array)
+#6 E:\FrameWork\yii2\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 E:\www\phpfetcherTest\yii(29): yii\base\Application->run()
+#8 {main}
+2017-03-28 05:48:24 [-][-][-][info][application] $_SERVER = [
+    '#envTSLOGsss2816' => '2972880'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\BlueDon\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'BLUEDON-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\BlueDon'
+    'LOCALAPPDATA' => 'C:\\Users\\BlueDon\\AppData\\Local'
+    'LOGONSERVER' => '\\\\BLUEDON-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\Git\\cmd;D:\\Program Files\\SVN\\bin;D:\\Program Files\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\HashiCorp\\Vagrant\\bin;D:\\Program Files\\Python\\Python3\\Scripts\\;D:\\Program Files\\Python\\Python3\\;C:\\Users\\BlueDon\\AppData\\Roaming\\npm;E:\\env\\mysql-5.6.35-winx64\\bin;E:\\env\\php\\php-5.6.29-nts;C:\\Users\\BlueDon\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\BlueDon\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\BlueDon\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'BlueDon-PC'
+    'USERNAME' => 'BlueDon'
+    'USERPROFILE' => 'C:\\Users\\BlueDon'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'E:\\www\\phpfetcherTest\\'
+    'PHP_SELF' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_NAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'SCRIPT_FILENAME' => 'E:\\www\\phpfetcherTest\\yii'
+    'PATH_TRANSLATED' => 'E:\\www\\phpfetcherTest\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1490680104.4057
+    'REQUEST_TIME' => 1490680104
+    'argv' => [
+        0 => 'E:\\www\\phpfetcherTest\\yii'
+        1 => 'hello'
+    ]
+    'argc' => 2
+]

@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>蓝盾WEB应用防护系统</title>
+<link href="/waf/assets/waf/skin/blue/style/public.css" rel="stylesheet" type="text/css" />
+<link href="/waf/assets/waf/skin/blue/style/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="all">
+ <div class="error">
+  <p>Error, <b>404</b></p>
+  <h3>当你看到这个页面的时候，说明你已经走错地方了…</h3>
+  <span class="times"><span id="time">7</span> 秒后</span> 秒后页面自动跳转…， <a href="/?pgv_ref=404click">返回首页</a>
+ </div>
+</div>
+<script language="javascript">
+
+    var oTime = document.getElementById('time');
+    var oSecs = 7;
+    function time() {
+        oSecs--;
+        if (oSecs < 0) {
+            clearInterval();
+            return;
+        }
+        if (oSecs == 0) {
+            clearInterval();
+            window.location.href = '/?pgv_ref=404';
+        }
+        oTime.innerHTML = oSecs;
+    }
+    setInterval(time, 1000)
+
+</script>
+</body>
+</html>
+

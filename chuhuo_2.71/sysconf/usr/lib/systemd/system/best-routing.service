@@ -1,0 +1,15 @@
+[Unit]
+Description=best-routing
+After=rc-local.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/usr/local/bluedon
+ExecStart=/usr/bin/python -m networking.best_routing
+Restart=always
+Environment=PYTHONPATH=/usr/local/bluedon
+
+[Install]
+WantedBy=multi-user.target

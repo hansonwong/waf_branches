@@ -1,0 +1,463 @@
+status:200
+content-length:15067
+content-location:http://news.baidu.com/advanced_news.html
+set-cookie:BAIDUID=EEE675B36441143D04A971C07CA98268:FG=1; expires=Sat, 15-Oct-16 03:10:17 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+accept-ranges:bytes
+vary:Accept-Encoding, Accept-Encoding
+server:Apache
+last-modified:Thu, 06 Aug 2015 09:07:10 GMT
+date:Fri, 16 Oct 2015 03:10:17 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM "
+content-type:text/html
+####################
+<html><head><title>百度新闻搜索_高级搜索</title>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<style>body {
+    font-family:宋体;
+}
+td {
+    font-size:9pt;
+    line-height:18px;
+}
+.formfont {
+    font-size:16px;
+    font-family:Verdana;
+}
+.p2 {
+    font-size:14px;
+    line-height:24px;
+    font-family:"Arial";
+}
+.p3 {
+    font-size:13px;
+    line-height:24px;
+    font-family:"Arial";
+}
+.t {
+    color:#00C;
+    text-decoration:underline;
+}
+a.t:hover {
+    text-decoration:underline;
+}
+.nav {
+    font-weight:bold;
+    font-size:14px;
+    color:#FFF;
+    line-height:20px;
+    text-decoration:none;
+}
+a.nav:hover {
+    text-decoration:underline;
+}
+.r {
+    font-size:14px;
+    text-decoration:underline;
+}
+a.r:hover {
+    color:#E10900;
+}
+.g {
+    color:#666;
+}
+.c {
+    color:#77C;
+}
+.cp {
+    clear:both;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-top:0px solid #7AA9DF;
+    color:#777;
+    font-size:12px;
+    font-family:Arial;
+}
+.cy,a.cy:link,a.cy:visited {
+    color:#77C;
+    font-size:12px;
+    font-family:Arial;
+}
+.padl10 {
+    padding-left:10px;
+}
+#ft {
+    clear:both;
+    padding-bottom:10px;
+    line-height:20px;
+    padding-top:10px;
+    text-align:center;
+}
+#ft {
+    font-size:12px;
+    color:#77C;
+    font-family:arial;
+    white-space:nowrap;
+}
+#ft {
+    font-size:12px;
+    color:#77C;
+    font-family:arial;
+    white-space:nowrap;
+}</style>
+<link rel="stylesheet" type="text/css" media="all" href="calendar/calendar.css">
+<script type="text/javascript" src="calendar/calendar.js"></script>
+<script type="text/javascript" src="calendar/calendar-zh.js"></script>
+<script type="text/javascript" src="calendar/calendar-setup.js"></script>
+</head>
+<body text=#000000 link=#261CDC bgcolor=#FFFFFF topmargin=0 bottommargin=0>
+<table width="100%" border=0>
+    <tr height=60>
+      <td width=143 height="69" valign="top"><a href=/view.html><img src="http://img.baidu.com/img/logo-news.gif" width=137 height=46 border=0></a></td>
+      <td height="69">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td bgcolor="#E5ECF9" height="24" class="p2" nowrap>&nbsp;<b> 高级搜索</b></td>
+            <td bgcolor="#E5ECF9" height="24" class="p2" nowrap>
+              <div align="right"><a href="http://www.baidu.com/search/news_help.html">帮助</a> | <a
+            href=/view.html>新闻首页</a> &nbsp;</div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+</table>
+<table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td>
+<form name=f id=f action="/ns" onSubmit="return mysubmit(this);">
+  <input type=hidden name=from value=news>
+  <input type=hidden name=cl value=2>
+  <input type=hidden name=bt>
+  <input type="hidden" name=y0 id="y0">
+  <input type="hidden" name=m0 id="m0">
+  <input type="hidden" name=d0 id="d0">
+  <input type="hidden" name=y1 id="y1">
+  <input type="hidden" name=m1 id="m1">
+  <input type="hidden" name=d1 id="d1">
+
+  <input type=hidden name=et>
+  <table cellspacing=0 cellpadding=3 width="98%" border=0 align="center">
+    <tbody>
+    <tr >
+      <td  style="border-top:1px solid #c9d7f1;border-left:1px solid #c9d7f1;border-right:1px solid #c9d7f1;border-bottom:1px solid #c9d7f1;">
+        <table cellspacing=0 cellpadding=0 width="100%" border=0>
+          <tr bgcolor=#E6E6E6>
+            <td bgcolor="#E5ECF9">
+              <table cellspacing=0 cellpadding=2 width="100%">
+                <tbody>
+				<tr bgcolor=#E5ECF9>
+                  <td colspan="4" height="7"></td>
+                  </tr>
+                <tr>
+                  <td width="16%" height="35" class="padl10"><b>搜索结果</b></td>
+
+                  <td width="24%">包含以下<b>全部</b>的关键词</td>
+                  <td width="31%">
+                    <input size=35 name=q1>
+                  </td>
+                  <td>
+                    <input name="submit" type=submit id="submit" value=百度一下>
+                  </td>
+                </tr>
+				<tr>
+                  <td width="16%" height="35" class="padl10">　</td>
+
+                  <td width="24%">包含以下<b>任意一个</b>关键词</td>
+                  <td width="31%">
+                    <input size=35 name=q3>
+                  </td>
+                  <td>　</td>
+                </tr>
+				<tr>
+                  <td width="16%" height="35" class="padl10">　</td>
+
+                  <td width="24%"><b>不包含</b>以下关键词</td>
+                  <td width="31%">
+                    <input size=35 name=q4>
+                  </td>
+                  <td>　</td>
+                </tr>
+				<tr bgcolor=#E5ECF9>
+                  <td colspan="4" height="7"></td>
+                  </tr>
+				<tr bgcolor=#FFFFFF>
+                  <td colspan="4" height="7"></td>
+                  </tr>
+              </table>
+            </td>
+
+          </tr>
+          <tr bgcolor=#FFFFFF> </tr>
+          <tr bgcolor=#FFFFFF>
+            <td>
+              <table cellspacing=0 cellpadding=2 width="100%">
+                <tr>
+                  <td width="16%" height="35" class="padl10"><b>时间</b></td>
+
+                  <td>
+                    <p>限定要搜索的新闻的时间是</p></td>
+                  <td>
+					  <input type="radio" name="s" value="1" checked >
+                    <!--hour-->
+                    <select name="mt" onchange="changeRadio(1);">
+                      <option value="0" selected>全部时间</option>
+                      <!--<option value=1>最近一小时</option>-->
+                      <option value=24>最近一天</option>
+                      <option value=168>最近一周</option>
+                      <option value=720>最近一月</option>
+                      <option value=8640>最近一年</option>
+                    </select>
+					<input type="hidden" name="lm">
+                    </td>
+                </tr>
+                <tr>
+                  <td height="35">　</td>
+                  <td>　</td>
+                  <td>
+                    <!--second-->
+                   <input type="radio" name="s" value="2" >
+                    或
+                    <input name="begin_date" type="text" size="9"  value="2005-1-1" id="begin_date" onchange="changeRadio(2);" onClick="return showCalendar('begin_date', 'y-m-d');"><img src="calendar/rili.gif" align="absmiddle" border="0" onmouseover="this.style.cursor='pointer';" onClick="showCalendar('begin_date', 'y-m-d');" >
+                    <nobr>到 <input name="end_date" type="text" size="9"  value="2006-1-1" id="end_date" onchange="changeRadio(2);" onClick="return showCalendar('end_date', 'y-m-d');"><img src="calendar/rili.gif" align="absmiddle" border="0" onmouseover="this.style.cursor='pointer';" onClick="showCalendar('end_date', 'y-m-d');">
+					</nobr>
+                    </td>
+                </tr>
+                <tr bgcolor=#ffffff>
+                  <td colspan="3"><hr size="1" color=#c9d7f1></td>
+                  </tr>
+
+                <tr bgcolor=#ffffff>
+                  <td width="16%" height="35" class="padl10"> <b>关键词位置</b></td>
+                  <td>查询关键词位于</td>
+                  <td>
+					<label for="newsdy">
+                    <input type="radio" name="tn" id="newsdy" value="newsdy" checked>
+                    在新闻全文中</label>
+					<label for="newstitledy">
+                    <input type="radio" name="tn" id="newstitledy" value="newstitledy">
+                    仅在新闻的标题中</label></td>
+                </tr>
+				<tr bgcolor=#ffffff>
+                  <td height="35" class="padl10"><b>搜索结果排序方式</b></td>
+                  <td>限定搜索结果的排序方式是</td>
+                  <td>
+                    <select name="ct1">
+						<option value=1 selected> 按焦点排序</option>
+						<option value=0> 按时间排序</option>
+                    </select><i id="tip" style="font-style:normal; color:gray; font-size:10pt; margin-left:10px; display:none;">（标题检索会按照时间排序）</i>
+					<input type="hidden" name="ct" value="1">
+					</td>
+                </tr>
+                <tr bgcolor=#ffffff>
+                  <td width="16%" height="35" class="padl10"><b>搜索结果显示条数</b></td>
+                  <td width="24%">选择搜索结果显示的条数　</td>
+                  <td>
+                    <select name="rn">
+                      <option value=10> 每页显示10条</option>
+
+                      <option value=20 selected> 每页显示20条</option>
+                      <option value=50> 每页显示50条</option>
+                    </select>                  </td>
+                </tr>
+              </table>
+            </td>
+          <tr>
+            <td>
+              <table cellspacing=0 cellpadding=2 width="100%" border=0>
+                <!--<tr bgcolor=#ffffff>
+                  <td height="35" class="padl10"><b>新闻分类</b></td>
+                  <td> 限定要搜索的新闻分类是</td>
+
+                  <td>
+                    <select name="class" size="1" id="class">
+                      <option value="0" selected>全部新闻</option>
+                     <option value="2">国内新闻</option>
+                      <option value="1">国际新闻</option>
+                      <option value="14">军事新闻</option>
+					  <option value="6">财经新闻</option>
+					  <option value="7">互联网新闻</option>
+					  <option value="9">房产新闻</option>
+					  <option value="10">汽车新闻</option>
+                      <option value="3">体育新闻</option>
+                      <option value="4">娱乐新闻</option>
+		      <option value="13">游戏新闻</option>
+                      <option value="11">教育新闻</option>
+                      <option value="12">女人新闻</option>
+                      <option value="8">科技新闻</option>
+                      <option value="5">社会新闻</option>
+                    </select>
+                  </td>
+              </tr>-->
+                <tr bgcolor=#ffffff>
+                  <td width="16%" height="35" class="padl10"><b>新闻源</b></td>
+                  <td width="24%"> 限定要搜索的新闻源是</td>
+                  <td>
+                    <input size=35 name=q6>
+                    <i>例如：人民网 <a href="http://www.baidu.com/search/resources.html" target="_blank">部分新闻源列表</a>&nbsp;</i>
+                  </td>
+
+                </tr>
+				<tr bgcolor=#ffffff>
+                  <td colspan="4" height="7"></td>
+                  </tr>
+              </table>
+            </td>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</form></td></tr></table>
+<script language="JavaScript" >
+<!--
+function Date_Compare(asStartDate,asEndDate){
+	var miStart = Date.parse(asStartDate.replace(/\-/g, '/'));
+	var miEnd   = Date.parse(asEndDate.replace(/\-/g, '/'));
+	return (miEnd-miStart)/1000;
+}
+function changeRadio(v){
+	var f=document.f;
+	var s=f.s;
+	s[v-1].checked = true;
+}
+function init()
+{
+	var dCurDate = new Date();
+	var saveDay = null;
+	var saveMonth = null;
+	var saveYear = null;
+	document.f.begin_date.value=(dCurDate.getFullYear())+"-"+(dCurDate.getMonth()+1)+"-"+(dCurDate.getDate());
+	document.f.end_date.value=dCurDate.getFullYear()+"-"+(dCurDate.getMonth()+1)+"-"+dCurDate.getDate();
+    setCopyRight();
+}
+
+function mysubmit(f) {
+	var bd = document.f.begin_date.value.split("-");
+	f.y0.value = bd[0];
+	f.m0.value = bd[1];
+	f.d0.value = bd[2];
+	var ed = document.f.end_date.value.split("-");
+	f.y1.value = ed[0];
+	f.m1.value = ed[1];
+	f.d1.value = ed[2];
+
+	if (f.s[0].checked) {
+		f.bt.value=0;
+		f.et.value=0;
+		var mt = f.mt;
+		for(var i=0;i<mt.length;i++){ if(mt[i].selected==true) document.f.lm.value=mt[i].value;}
+	}
+	else if(f.s[1].checked)
+	{
+		f.lm.value="";
+		var s0=0,s1=0,tmp=0;
+		s0=f.y0.value+"-"+f.m0.value+"-"+f.d0.value;
+		s1=f.y1.value+"-"+f.m1.value+"-"+f.d1.value;
+		bstd = (Date_Compare('1970-01-01',s0));
+		mbstd = parseInt(bstd)-28800;
+		estd = (Date_Compare('1970-01-01',s1));
+		mestd = parseInt(estd)-28800+86399;
+		f.bt.value = mbstd;
+		f.et.value = mestd;
+		var bd = f.y0.value+"-"+f.m0.value+"-"+f.d0.value;
+		var ed = f.y1.value+"-"+f.m1.value+"-"+f.d1.value;
+		if(!isDateString(bd))
+		{
+			alert("日期格式不正确，请按照yyyy-mm-dd的格式重新填写！");
+			return false;
+		}
+		if(!isDateString(ed))
+		{
+			alert("日期格式不正确，请按照yyyy-mm-dd的格式重新填写！");
+			return false;
+		}
+			if (stringToDate(bd,true)>stringToDate(ed,true))
+		{
+			alert("您选择的时间不合理");return false;}
+		}
+
+		/*确保表单提交时包含ct字段的值 by Michael Hu 2008-12-5*/
+		//if(document.f.ct1.disabled){ document.f.ct.value = '0'; }
+		document.f.ct.value = 1 - document.f.ct1.selectedIndex;
+}
+function stringToDate(sDate, bIgnore)
+{       var bValidDate, year, month, day
+        var iaDate = new Array(3)
+
+        if (bIgnore) bValidDate = true
+        else bValidDate = isDateString(sDate)
+
+        if (bValidDate)
+        {  iaDate = sDate.toString().split("-")
+                year = parseFloat(iaDate[0])
+                month = parseFloat(iaDate[1]) - 1
+                day=parseFloat(iaDate[2])
+                return (new Date(year,month,day))
+        }
+        else return (new Date(1900,1,1))
+}
+function isDateString(sDate)
+{       var iaMonthDays = [31,28,31,30,31,30,31,31,30,31,30,31]
+        var iaDate = new Array(3)
+        var year, month, day
+
+        if (arguments.length != 1) return false
+        iaDate = sDate.toString().split("-")
+        if (iaDate.length != 3) return false
+        if (iaDate[1].length > 2 || iaDate[2].length > 2) return false
+        if (isNaN(iaDate[0])||isNaN(iaDate[1])||isNaN(iaDate[2])) return false
+
+        year = parseFloat(iaDate[0])
+        month = parseFloat(iaDate[1])
+        day=parseFloat(iaDate[2])
+
+        if (year < 1900 || year > 2100) return false
+        if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) iaMonthDays[1]=29;
+        if (month < 1 || month > 12) return false
+        if (day < 1 || day > iaMonthDays[month - 1]) return false
+        return true
+}
+
+function setCopyRight() {
+    var year = new Date().getFullYear();
+    var copyright = document.getElementById('ft');
+    
+    copyright.innerHTML = '&copy;' + year +  ' baidu';
+}
+
+function G(id){return document.getElementById(id);}
+
+window.onload=function(){
+	document.f.q1.focus();
+
+	/*防止回退时出现状态不一致的情况 by Michael Hu 2008-12-5*/
+	if(document.f.tn[1].checked){
+		document.f.ct1.selectedIndex = 1;
+		document.f.ct1.disabled = true;
+		G('tip').style.display='inline';
+	}
+
+	/*注册浏览方式选择的单选钮的点击事件，确保选择标题排序时，排序方式下拉框无效 by Michael Hu 2008-12-5*/
+	document.f.tn[0].onclick = function(){
+		document.f.ct1.selectedIndex = 0;
+		document.f.ct1.disabled = false;
+		G('tip').style.display='none';
+	};
+	document.f.tn[1].onclick = function(){
+		document.f.ct1.selectedIndex = 1;
+		document.f.ct1.disabled = true;
+		G('tip').style.display='inline';
+	};
+
+}
+//-->
+</script>
+<div id=ft>&copy;2012 baidu</div>
+<script language="javascript">init();</script>
+</body></html>

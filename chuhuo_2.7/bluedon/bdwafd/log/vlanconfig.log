@@ -1,0 +1,760 @@
+[2017-03-31 12:06:49] [INFO] ConfigAllNic Start
+[2017-03-31 12:06:50] [INFO] ConfigAllNic End
+[2017-03-31 12:06:50] [INFO] ConfigAllBridge Start
+[2017-03-31 12:06:50] [INFO] ConfigNic Start
+[2017-03-31 12:06:50] [INFO] 172.16.2.105
+[2017-03-31 12:06:50] [INFO] ConfigNic End
+[2017-03-31 12:06:50] [INFO] refresh nicinfo table
+[2017-03-31 12:06:50] [INFO] ConfigAllBridge End
+[2017-03-31 12:06:50] [INFO] ConfigAllRoute Start
+[2017-03-31 12:06:50] [INFO] ConfigAllRoute End
+[2017-03-31 12:06:53] [INFO] bdinit end.
+[2017-04-06 09:42:03] [INFO] ConfigAllNic Start
+[2017-04-06 09:42:04] [INFO] ConfigAllNic End
+[2017-04-06 09:42:04] [INFO] ConfigAllBridge Start
+[2017-04-06 09:42:04] [INFO] ConfigAllBridge End
+[2017-04-06 09:42:04] [INFO] ConfigAllRoute Start
+[2017-04-06 09:42:04] [INFO] ConfigAllRoute End
+[2017-04-06 09:42:06] [INFO] get_virtual_patch_conf siteid:158
+[2017-04-06 09:42:06] [INFO] get_virtual_patch_conf siteid:160
+[2017-04-06 09:42:06] [INFO] get_virtual_patch_conf siteid:161
+[2017-04-06 09:42:06] [INFO] get_virtual_patch_conf siteid:162
+[2017-04-06 09:42:06] [INFO] get_virtual_patch_conf siteid:164
+[2017-04-06 09:42:06] [INFO] host :www.testupload.com
+[2017-04-06 09:42:06] [INFO] host :www.haoliang.com
+[2017-04-06 09:42:06] [INFO] host :www.qq.com
+[2017-04-06 09:42:06] [INFO] host :www.test3.com
+[2017-04-06 09:42:09] [INFO] bdinit end.
+[2017-04-06 09:44:56] [INFO] ConfigAllNic Start
+[2017-04-06 09:44:57] [INFO] ConfigAllNic End
+[2017-04-06 09:44:57] [INFO] ConfigAllBridge Start
+[2017-04-06 09:44:57] [INFO] ConfigAllBridge End
+[2017-04-06 09:44:57] [INFO] ConfigAllRoute Start
+[2017-04-06 09:44:57] [INFO] ConfigAllRoute End
+[2017-04-06 09:44:59] [INFO] get_virtual_patch_conf siteid:158
+[2017-04-06 09:44:59] [INFO] get_virtual_patch_conf siteid:160
+[2017-04-06 09:44:59] [INFO] get_virtual_patch_conf siteid:161
+[2017-04-06 09:44:59] [INFO] get_virtual_patch_conf siteid:162
+[2017-04-06 09:44:59] [INFO] get_virtual_patch_conf siteid:164
+[2017-04-06 09:44:59] [INFO] host :www.testupload.com
+[2017-04-06 09:44:59] [INFO] host :www.haoliang.com
+[2017-04-06 09:44:59] [INFO] host :www.qq.com
+[2017-04-06 09:44:59] [INFO] host :www.test3.com
+[2017-04-06 09:45:03] [INFO] bdinit end.
+[2017-04-06 09:47:15] [INFO] ConfigAllNic Start
+[2017-04-06 09:47:16] [INFO] ConfigAllNic End
+[2017-04-06 09:47:16] [INFO] ConfigAllBridge Start
+[2017-04-06 09:47:16] [INFO] ConfigAllBridge End
+[2017-04-06 09:47:16] [INFO] ConfigAllRoute Start
+[2017-04-06 09:47:16] [INFO] ConfigAllRoute End
+[2017-04-06 09:47:18] [INFO] get_virtual_patch_conf siteid:158
+[2017-04-06 09:47:18] [INFO] get_virtual_patch_conf siteid:160
+[2017-04-06 09:47:18] [INFO] get_virtual_patch_conf siteid:161
+[2017-04-06 09:47:18] [INFO] get_virtual_patch_conf siteid:162
+[2017-04-06 09:47:18] [INFO] get_virtual_patch_conf siteid:164
+[2017-04-06 09:47:18] [INFO] host :www.testupload.com
+[2017-04-06 09:47:18] [INFO] host :www.haoliang.com
+[2017-04-06 09:47:18] [INFO] host :www.qq.com
+[2017-04-06 09:47:18] [INFO] host :www.test3.com
+[2017-04-06 09:47:21] [INFO] bdinit end.
+[2017-06-27 14:41:23] [INFO] ConfigAllNic Start
+[2017-06-27 14:41:24] [INFO] ConfigAllNic End
+[2017-06-27 14:41:24] [INFO] ConfigAllBridge Start
+[2017-06-27 14:41:24] [INFO] ConfigAllBridge End
+[2017-06-27 14:41:24] [INFO] ConfigAllRoute Start
+[2017-06-27 14:41:24] [INFO] ConfigAllRoute End
+[2017-06-27 14:41:26] [INFO] get_virtual_patch_conf siteid:158
+[2017-06-27 14:41:26] [INFO] get_virtual_patch_conf siteid:160
+[2017-06-27 14:41:26] [INFO] get_virtual_patch_conf siteid:161
+[2017-06-27 14:41:26] [INFO] get_virtual_patch_conf siteid:162
+[2017-06-27 14:41:26] [INFO] get_virtual_patch_conf siteid:164
+[2017-06-27 14:41:26] [INFO] host :www.testupload.com
+[2017-06-27 14:41:26] [INFO] host :www.haoliang.com
+[2017-06-27 14:41:26] [INFO] host :www.qq.com
+[2017-06-27 14:41:26] [INFO] host :www.test3.com
+[2017-06-27 14:41:28] [INFO] bdinit end.
+[2017-06-27 18:01:11] [INFO] ConfigAllNic Start
+[2017-06-27 18:01:11] [INFO] ConfigAllNic End
+[2017-06-27 18:01:11] [INFO] ConfigAllBridge Start
+[2017-06-27 18:01:11] [INFO] ConfigAllBridge End
+[2017-06-27 18:01:11] [INFO] ConfigAllRoute Start
+[2017-06-27 18:01:11] [WARNING] /sbin/route add -net 192.168.11.0 netmask 255.255.255.0 dev eth3
+[2017-06-27 18:01:11] [WARNING] /sbin/route add -net 0.0.0.0 netmask 255.255.255.0 gw 172.16.2.254 dev eth0
+[2017-06-27 18:01:11] [INFO] ConfigAllRoute End
+[2017-06-27 18:01:13] [INFO] get_virtual_patch_conf siteid:158
+[2017-06-27 18:01:14] [INFO] get_virtual_patch_conf siteid:160
+[2017-06-27 18:01:14] [INFO] get_virtual_patch_conf siteid:161
+[2017-06-27 18:01:14] [INFO] get_virtual_patch_conf siteid:162
+[2017-06-27 18:01:14] [INFO] get_virtual_patch_conf siteid:164
+[2017-06-27 18:01:14] [INFO] host :www.testupload.com
+[2017-06-27 18:01:14] [INFO] host :www.haoliang.com
+[2017-06-27 18:01:14] [INFO] host :www.qq.com
+[2017-06-27 18:01:14] [INFO] host :www.test3.com
+[2017-06-27 18:01:16] [INFO] bdinit end.
+[2017-06-27 18:12:28] [INFO] ConfigAllNic Start
+[2017-06-27 18:12:28] [INFO] ConfigAllNic End
+[2017-06-27 18:12:28] [INFO] ConfigAllBridge Start
+[2017-06-27 18:12:28] [INFO] ConfigAllBridge End
+[2017-06-27 18:12:28] [INFO] ConfigAllRoute Start
+[2017-06-27 18:12:28] [WARNING] /sbin/route add -net 192.168.11.0 netmask 255.255.255.0 dev eth3
+[2017-06-27 18:12:28] [WARNING] /sbin/route add -net 0.0.0.0 netmask 255.255.255.0 gw 172.16.2.254 dev eth0
+[2017-06-27 18:12:28] [INFO] ConfigAllRoute End
+[2017-06-27 18:12:31] [INFO] get_virtual_patch_conf siteid:158
+[2017-06-27 18:12:31] [INFO] get_virtual_patch_conf siteid:160
+[2017-06-27 18:12:31] [INFO] get_virtual_patch_conf siteid:161
+[2017-06-27 18:12:31] [INFO] get_virtual_patch_conf siteid:162
+[2017-06-27 18:12:31] [INFO] get_virtual_patch_conf siteid:164
+[2017-06-27 18:12:31] [INFO] host :www.testupload.com
+[2017-06-27 18:12:31] [INFO] host :www.haoliang.com
+[2017-06-27 18:12:31] [INFO] host :www.qq.com
+[2017-06-27 18:12:31] [INFO] host :www.test3.com
+[2017-06-27 18:12:34] [INFO] bdinit end.
+[2017-07-06 08:46:47] [INFO] ConfigAllNic Start
+[2017-07-06 09:07:38] [INFO] ConfigAllNic Start
+[2017-07-06 14:03:18] [INFO] ConfigAllNic Start
+[2017-07-07 08:38:54] [INFO] ConfigAllNic Start
+[2017-07-22 16:48:55] [INFO] ConfigAllNic Start
+[2017-07-25 15:46:22] [INFO] ConfigAllNic Start
+[2017-07-25 19:24:10] [INFO] ConfigAllNic Start
+[2017-07-29 18:17:48] [INFO] ConfigAllNic Start
+[2017-07-31 08:57:13] [INFO] ConfigAllNic Start
+[2017-08-02 15:48:54] [INFO] ConfigAllNic Start
+[2017-08-02 15:48:54] [INFO] iface `vEth4` down
+[2017-08-02 15:48:54] [INFO] iface `vEth0` down
+[2017-08-02 15:48:55] [INFO] iface `vEth1` down
+[2017-08-02 15:48:55] [INFO] iface `vEth2` down
+[2017-08-02 15:48:55] [INFO] iface `vEth3` down
+[2017-08-02 15:48:55] [INFO] ConfigAllNic End
+[2017-08-02 15:48:55] [INFO] ConfigAllBridge Start
+[2017-08-02 15:48:55] [INFO] ConfigAllBridge End
+[2017-08-02 15:48:55] [INFO] ConfigAllRoute Start
+[2017-08-02 15:48:55] [INFO] ConfigAllRoute End
+[2017-08-02 15:48:57] [INFO] get_virtual_patch_conf siteid:158
+[2017-08-02 15:48:57] [INFO] get_virtual_patch_conf siteid:160
+[2017-08-02 15:48:57] [INFO] get_virtual_patch_conf siteid:161
+[2017-08-02 15:48:57] [INFO] get_virtual_patch_conf siteid:162
+[2017-08-02 15:48:57] [INFO] get_virtual_patch_conf siteid:164
+[2017-08-02 15:48:58] [INFO] bdwaf kill
+[2017-08-02 15:49:03] [INFO] bdinit end.
+[2017-08-02 15:51:26] [INFO] ConfigAllNic Start
+[2017-08-02 15:51:26] [INFO] iface `vEth4` down
+[2017-08-02 15:51:26] [INFO] iface `vEth0` down
+[2017-08-02 15:51:27] [INFO] iface `vEth1` down
+[2017-08-02 15:51:27] [INFO] iface `vEth2` down
+[2017-08-02 15:51:27] [INFO] iface `vEth3` down
+[2017-08-02 15:51:27] [INFO] ConfigAllNic End
+[2017-08-02 15:51:27] [INFO] ConfigAllBridge Start
+[2017-08-02 15:51:27] [INFO] ConfigAllBridge End
+[2017-08-02 15:51:27] [INFO] ConfigAllRoute Start
+[2017-08-02 15:51:27] [INFO] ConfigAllRoute End
+[2017-08-02 15:51:29] [INFO] get_virtual_patch_conf siteid:158
+[2017-08-02 15:51:29] [INFO] get_virtual_patch_conf siteid:160
+[2017-08-02 15:51:29] [INFO] get_virtual_patch_conf siteid:161
+[2017-08-02 15:51:29] [INFO] get_virtual_patch_conf siteid:162
+[2017-08-02 15:51:29] [INFO] get_virtual_patch_conf siteid:164
+[2017-08-02 15:51:30] [INFO] bdwaf kill
+[2017-08-02 15:51:35] [INFO] bdinit end.
+[2017-08-02 16:10:23] [INFO] ConfigAllNic Start
+[2017-08-02 16:10:24] [INFO] iface `vEth4` down
+[2017-08-02 16:10:24] [INFO] iface `vEth0` down
+[2017-08-02 16:10:24] [INFO] iface `vEth1` down
+[2017-08-02 16:10:24] [INFO] iface `vEth2` down
+[2017-08-02 16:10:24] [INFO] iface `vEth3` down
+[2017-08-02 16:10:24] [INFO] ConfigAllNic End
+[2017-08-02 16:10:24] [INFO] ConfigAllBridge Start
+[2017-08-02 16:10:24] [INFO] ConfigAllBridge End
+[2017-08-02 16:10:24] [INFO] ConfigAllRoute Start
+[2017-08-02 16:10:24] [INFO] ConfigAllRoute End
+[2017-08-02 16:10:26] [INFO] get_virtual_patch_conf siteid:158
+[2017-08-02 16:10:26] [INFO] get_virtual_patch_conf siteid:160
+[2017-08-02 16:10:26] [INFO] get_virtual_patch_conf siteid:161
+[2017-08-02 16:10:26] [INFO] get_virtual_patch_conf siteid:162
+[2017-08-02 16:10:26] [INFO] get_virtual_patch_conf siteid:164
+[2017-08-02 16:10:28] [INFO] bdwaf kill
+[2017-08-02 16:10:32] [INFO] bdinit end.
+[2017-08-02 16:30:37] [INFO] ConfigAllNic Start
+[2017-08-02 16:30:38] [INFO] iface `vEth4` down
+[2017-08-02 16:30:38] [INFO] iface `vEth0` down
+[2017-08-02 16:30:38] [INFO] iface `vEth1` down
+[2017-08-02 16:30:38] [INFO] iface `vEth2` down
+[2017-08-02 16:30:38] [INFO] iface `vEth3` down
+[2017-08-02 16:30:38] [INFO] ConfigAllNic End
+[2017-08-02 16:30:38] [INFO] ConfigAllBridge Start
+[2017-08-02 16:30:38] [INFO] ConfigAllBridge End
+[2017-08-02 16:30:38] [INFO] ConfigAllRoute Start
+[2017-08-02 16:30:38] [INFO] ConfigAllRoute End
+[2017-08-02 16:30:40] [INFO] get_virtual_patch_conf siteid:158
+[2017-08-02 16:30:40] [INFO] get_virtual_patch_conf siteid:160
+[2017-08-02 16:30:40] [INFO] get_virtual_patch_conf siteid:161
+[2017-08-02 16:30:40] [INFO] get_virtual_patch_conf siteid:162
+[2017-08-02 16:30:40] [INFO] get_virtual_patch_conf siteid:164
+[2017-08-02 16:30:42] [INFO] bdwaf kill
+[2017-08-02 16:30:46] [INFO] bdinit end.
+[2017-08-03 16:48:43] [INFO] ConfigAllNic Start
+[2017-08-03 16:48:43] [INFO] iface `vEth4` down
+[2017-08-03 16:48:43] [INFO] iface `vEth0` down
+[2017-08-03 16:48:43] [INFO] iface `vEth1` down
+[2017-08-03 16:48:43] [INFO] iface `vEth2` down
+[2017-08-03 16:48:43] [INFO] iface `vEth3` down
+[2017-08-03 16:48:43] [INFO] ConfigAllNic End
+[2017-08-03 16:48:43] [INFO] ConfigAllBridge Start
+[2017-08-03 16:48:43] [INFO] ConfigAllBridge End
+[2017-08-03 16:48:43] [INFO] ConfigAllRoute Start
+[2017-08-03 16:48:43] [INFO] ConfigAllRoute End
+[2017-08-03 16:48:45] [INFO] get_virtual_patch_conf siteid:158
+[2017-08-03 16:48:46] [INFO] get_virtual_patch_conf siteid:160
+[2017-08-03 16:48:46] [INFO] get_virtual_patch_conf siteid:161
+[2017-08-03 16:48:46] [INFO] get_virtual_patch_conf siteid:162
+[2017-08-03 16:48:46] [INFO] get_virtual_patch_conf siteid:164
+[2017-08-03 16:48:47] [INFO] bdwaf kill
+[2017-08-03 16:48:52] [INFO] bdinit end.
+[2017-08-07 13:40:53] [INFO] ConfigAllNic Start
+[2017-08-07 13:40:54] [INFO] iface `vEth4` down
+[2017-08-07 13:40:54] [INFO] iface `vEth0` down
+[2017-08-07 13:40:54] [INFO] iface `vEth1` down
+[2017-08-07 13:40:54] [INFO] iface `vEth2` down
+[2017-08-07 13:40:54] [INFO] iface `vEth3` down
+[2017-08-07 13:40:54] [INFO] ConfigAllNic End
+[2017-08-07 13:40:54] [INFO] ConfigAllBridge Start
+[2017-08-07 13:40:54] [INFO] ConfigAllBridge End
+[2017-08-07 13:40:54] [INFO] ConfigAllRoute Start
+[2017-08-07 13:40:54] [WARNING] /sbin/route add -net 172.16.2.0 netmask 255.255.255.0 dev br1
+[2017-08-07 13:40:54] [WARNING] add route 172.16.2.0 failed
+[2017-08-07 13:40:54] [WARNING] /sbin/route add -net 192.168.100.0 netmask 255.255.255.0 dev eth0
+[2017-08-07 13:40:54] [INFO] ConfigAllRoute End
+[2017-08-07 13:40:56] [INFO] get_virtual_patch_conf siteid:158
+[2017-08-07 13:40:57] [INFO] get_virtual_patch_conf siteid:160
+[2017-08-07 13:40:57] [INFO] get_virtual_patch_conf siteid:161
+[2017-08-07 13:40:57] [INFO] get_virtual_patch_conf siteid:162
+[2017-08-07 13:40:57] [INFO] get_virtual_patch_conf siteid:164
+[2017-08-07 13:40:58] [INFO] bdwaf kill
+[2017-08-07 13:41:03] [INFO] bdinit end.
+[2017-08-09 10:55:19] [INFO] ConfigAllNic Start
+[2017-08-09 10:55:20] [INFO] ConfigAllNic End
+[2017-08-09 10:55:20] [INFO] ConfigAllBridge Start
+[2017-08-09 10:55:20] [INFO] ConfigAllBridge End
+[2017-08-09 10:55:20] [INFO] ConfigAllRoute Start
+[2017-08-09 10:55:20] [INFO] ConfigAllRoute End
+[2017-08-09 10:55:25] [INFO] get_virtual_patch_conf siteid:158
+[2017-08-09 10:55:25] [INFO] get_virtual_patch_conf siteid:160
+[2017-08-09 10:55:25] [INFO] get_virtual_patch_conf siteid:161
+[2017-08-09 10:55:25] [INFO] get_virtual_patch_conf siteid:162
+[2017-08-09 10:55:25] [INFO] get_virtual_patch_conf siteid:164
+[2017-08-09 10:55:25] [INFO] get_virtual_patch_conf siteid:165
+[2017-08-09 10:55:27] [INFO] bdwaf kill
+[2017-08-09 10:55:34] [INFO] bdinit end.
+[2017-08-12 17:14:53] [INFO] ConfigAllNic Start
+[2017-08-12 17:14:53] [INFO] iface `vEth4` down
+[2017-08-12 17:14:54] [INFO] /home/ng_platform/bd_dpdk_warper/clients/port_config vEth0 10
+[2017-08-12 17:14:54] [INFO] iface `vEth0` del_ip: set([]) ===> add_ip: set([])
+[2017-08-12 17:14:54] [INFO] /home/ng_platform/bd_dpdk_warper/clients/port_config vEth1 10
+[2017-08-12 17:14:54] [INFO] iface `vEth1` del_ip: set([]) ===> add_ip: set([])
+[2017-08-12 17:14:54] [INFO] /home/ng_platform/bd_dpdk_warper/clients/port_config vEth2 10
+[2017-08-12 17:14:54] [INFO] iface `vEth2` del_ip: set([]) ===> add_ip: set([])
+[2017-08-12 17:14:54] [INFO] /home/ng_platform/bd_dpdk_warper/clients/port_config vEth3 10
+[2017-08-12 17:14:54] [INFO] iface `vEth3` del_ip: set([]) ===> add_ip: set([])
+[2017-08-12 17:14:54] [INFO] ConfigAllNic End
+[2017-08-12 17:14:54] [INFO] ConfigAllBridge Start
+[2017-08-12 17:14:54] [INFO] ConfigAllBridge End
+[2017-08-12 17:14:54] [INFO] ConfigAllRoute Start
+[2017-08-12 17:14:54] [INFO] ConfigAllRoute End
+[2017-08-12 17:14:56] [INFO] get_virtual_patch_conf siteid:158
+[2017-08-12 17:14:56] [INFO] get_virtual_patch_conf siteid:160
+[2017-08-12 17:14:56] [INFO] get_virtual_patch_conf siteid:161
+[2017-08-12 17:14:56] [INFO] get_virtual_patch_conf siteid:162
+[2017-08-12 17:14:56] [INFO] get_virtual_patch_conf siteid:164
+[2017-08-12 17:14:56] [INFO] get_virtual_patch_conf siteid:165
+[2017-08-12 17:14:56] [INFO] get_virtual_patch_conf siteid:166
+[2017-08-12 17:14:58] [INFO] bdwaf kill
+[2017-08-12 17:15:03] [INFO] bdinit end.
+[2017-08-17 14:36:00] [INFO] ConfigAllNic Start
+[2017-08-17 14:36:01] [INFO] ConfigAllNic End
+[2017-08-17 14:36:01] [INFO] ConfigAllBridge Start
+[2017-08-17 14:36:01] [INFO] ConfigAllBridge End
+[2017-08-17 14:36:01] [INFO] ConfigAllRoute Start
+[2017-08-17 14:36:01] [INFO] ConfigAllRoute End
+[2017-08-17 14:36:07] [INFO] get_virtual_patch_conf siteid:177
+[2017-08-17 14:36:07] [INFO] get_virtual_patch_conf siteid:178
+[2017-08-17 14:36:07] [INFO] get_virtual_patch_conf siteid:179
+[2017-08-17 14:36:07] [INFO] host :www.new213.com
+[2017-08-17 14:36:07] [INFO] host :www.test213.com
+[2017-08-17 14:36:07] [INFO] host :www.mm213.com
+[2017-08-17 14:36:09] [INFO] bdwaf kill
+[2017-08-17 14:36:16] [INFO] bdinit end.
+[2017-08-21 14:05:51] [INFO] ConfigAllNic Start
+[2017-08-21 14:05:52] [INFO] ConfigAllNic End
+[2017-08-21 14:05:52] [INFO] ConfigAllBridge Start
+[2017-08-21 14:05:52] [INFO] ConfigAllBridge End
+[2017-08-21 14:05:52] [INFO] ConfigAllRoute Start
+[2017-08-21 14:05:52] [INFO] ConfigAllRoute End
+[2017-08-21 14:05:56] [INFO] get_virtual_patch_conf siteid:177
+[2017-08-21 14:05:56] [INFO] get_virtual_patch_conf siteid:178
+[2017-08-21 14:05:56] [INFO] get_virtual_patch_conf siteid:179
+[2017-08-21 14:05:56] [INFO] get_virtual_patch_conf siteid:181
+[2017-08-21 14:05:56] [INFO] get_virtual_patch_conf siteid:182
+[2017-08-21 14:05:56] [INFO] host :www.new213.com
+[2017-08-21 14:05:56] [INFO] host :www.test213.com
+[2017-08-21 14:05:56] [INFO] host :www.mm213.com
+[2017-08-21 14:05:56] [INFO] host :www.zyjtest.com
+[2017-08-21 14:05:56] [INFO] host :www.zyjtest.com
+[2017-08-21 14:05:58] [INFO] bdwaf kill
+[2017-08-21 14:06:07] [INFO] bdinit end.
+[2017-08-24 20:44:39] [INFO] ConfigAllNic Start
+[2017-08-25 14:00:54] [INFO] ConfigAllNic Start
+[2017-08-31 18:14:08] [INFO] ConfigAllNic Start
+[2017-09-15 10:17:30] [INFO] ConfigAllNic Start
+[2017-09-15 10:17:31] [INFO] ConfigAllNic End
+[2017-09-15 10:17:31] [INFO] ConfigAllBridge Start
+[2017-09-15 10:17:31] [INFO] refresh nicinfo table
+[2017-09-15 10:17:31] [INFO] ConfigAllBridge End
+[2017-09-15 10:17:31] [INFO] ConfigAllRoute Start
+[2017-09-15 10:17:31] [INFO] ConfigAllRoute End
+[2017-09-15 10:17:38] [INFO] get_virtual_patch_conf siteid:178
+[2017-09-15 10:17:38] [INFO] get_virtual_patch_conf siteid:179
+[2017-09-15 10:17:38] [INFO] get_virtual_patch_conf siteid:185
+[2017-09-15 10:17:38] [INFO] get_virtual_patch_conf siteid:186
+[2017-09-15 10:17:38] [INFO] get_virtual_patch_conf siteid:187
+[2017-09-15 10:17:38] [INFO] get_virtual_patch_conf siteid:189
+[2017-09-15 10:17:38] [INFO] get_virtual_patch_conf siteid:190
+[2017-09-15 10:17:38] [INFO] get_virtual_patch_conf siteid:191
+[2017-09-15 10:17:38] [INFO] host :www.test213.com
+[2017-09-15 10:17:38] [INFO] host :www.mm213.com
+[2017-09-15 10:17:38] [INFO] host :www.mm213.com
+[2017-09-15 10:17:38] [INFO] host :www.new213.com
+[2017-09-15 10:17:38] [INFO] host :www.zhuangji.com
+[2017-09-15 10:17:38] [INFO] host :www.test90.com
+[2017-09-15 10:17:38] [INFO] host :www.test90_3.com
+[2017-09-15 10:17:38] [INFO] host :www.test123test106.com
+[2017-09-15 10:17:40] [INFO] bdwaf kill
+[2017-09-15 10:17:52] [INFO] bdinit end.
+[2017-09-18 09:24:23] [INFO] ConfigAllNic Start
+[2017-09-18 09:24:23] [INFO] iface `vEth4` down
+[2017-09-18 09:24:23] [INFO] iface `vEth0` down
+[2017-09-18 09:24:23] [INFO] iface `vEth1` down
+[2017-09-18 09:24:23] [INFO] iface `vEth2` down
+[2017-09-18 09:24:23] [INFO] iface `vEth3` down
+[2017-09-18 09:24:23] [INFO] ConfigAllNic End
+[2017-09-18 09:24:23] [INFO] ConfigAllBridge Start
+[2017-09-18 09:24:23] [INFO] ConfigAllBridge End
+[2017-09-18 09:24:23] [INFO] ConfigAllRoute Start
+[2017-09-18 09:24:24] [INFO] ConfigAllRoute End
+[2017-09-18 09:24:26] [INFO] get_virtual_patch_conf siteid:178
+[2017-09-18 09:24:27] [INFO] get_virtual_patch_conf siteid:179
+[2017-09-18 09:24:27] [INFO] get_virtual_patch_conf siteid:185
+[2017-09-18 09:24:27] [INFO] get_virtual_patch_conf siteid:186
+[2017-09-18 09:24:27] [INFO] get_virtual_patch_conf siteid:187
+[2017-09-18 09:24:27] [INFO] get_virtual_patch_conf siteid:189
+[2017-09-18 09:24:27] [INFO] get_virtual_patch_conf siteid:190
+[2017-09-18 09:24:27] [INFO] get_virtual_patch_conf siteid:191
+[2017-09-18 09:24:27] [INFO] get_virtual_patch_conf siteid:193
+[2017-09-18 09:24:28] [INFO] bdwaf kill
+[2017-09-18 09:24:33] [INFO] bdinit end.
+[2017-09-20 11:11:45] [INFO] ConfigAllNic Start
+[2017-09-20 11:11:45] [INFO] ConfigAllNic End
+[2017-09-20 11:11:45] [INFO] ConfigAllBridge Start
+[2017-09-20 11:11:45] [INFO] refresh nicinfo table
+[2017-09-20 11:11:45] [INFO] ConfigAllBridge End
+[2017-09-20 11:11:45] [INFO] ConfigAllRoute Start
+[2017-09-20 11:11:45] [INFO] ConfigAllRoute End
+[2017-09-20 11:11:49] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-20 11:11:49] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-20 11:11:51] [INFO] bdwaf kill
+[2017-09-20 11:11:57] [INFO] bdinit end.
+[2017-09-20 15:07:43] [INFO] ConfigAllNic Start
+[2017-09-20 15:07:43] [INFO] ConfigAllNic End
+[2017-09-20 15:07:43] [INFO] ConfigAllBridge Start
+[2017-09-20 15:07:43] [INFO] ConfigAllBridge End
+[2017-09-20 15:07:43] [INFO] ConfigAllRoute Start
+[2017-09-20 15:07:43] [WARNING] /sbin/route add -net 192.168.0.0 netmask 255.255.255.0 dev eth2
+[2017-09-20 15:07:43] [WARNING] add route 192.168.0.0 failed
+[2017-09-20 15:07:43] [WARNING] /sbin/route add -net 192.168.100.0 netmask 255.255.255.0 dev eth1
+[2017-09-20 15:07:43] [WARNING] add route 192.168.100.0 failed
+[2017-09-20 15:07:43] [INFO] ConfigAllRoute End
+[2017-09-20 15:07:46] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-20 15:07:46] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-20 15:07:46] [INFO] host :www.lyx.com
+[2017-09-20 15:07:46] [INFO] host :172.16.2.105
+[2017-09-20 15:07:48] [INFO] bdwaf kill
+[2017-09-20 15:07:54] [INFO] bdinit end.
+[2017-09-21 16:46:22] [INFO] ConfigAllNic Start
+[2017-09-21 16:46:22] [INFO] ConfigAllNic End
+[2017-09-21 16:46:22] [INFO] ConfigAllBridge Start
+[2017-09-21 16:46:22] [INFO] ConfigAllBridge End
+[2017-09-21 16:46:22] [INFO] ConfigAllRoute Start
+[2017-09-21 16:46:22] [WARNING] /sbin/route add -net 192.168.0.0 netmask 255.255.255.0 dev eth2
+[2017-09-21 16:46:22] [WARNING] /sbin/route add -net 192.168.100.0 netmask 255.255.255.0 dev eth1
+[2017-09-21 16:46:22] [INFO] ConfigAllRoute End
+[2017-09-21 16:46:25] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-21 16:46:25] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-21 16:46:25] [INFO] host :www.lyx.com
+[2017-09-21 16:46:25] [INFO] host :172.16.2.105
+[2017-09-21 16:46:27] [INFO] bdwaf kill
+[2017-09-21 16:46:32] [INFO] bdinit end.
+[2017-09-21 19:41:50] [INFO] ConfigAllNic Start
+[2017-09-21 19:41:51] [INFO] ConfigAllNic End
+[2017-09-21 19:41:51] [INFO] ConfigAllBridge Start
+[2017-09-21 19:41:51] [INFO] ConfigAllBridge End
+[2017-09-21 19:41:51] [INFO] ConfigAllRoute Start
+[2017-09-21 19:41:51] [WARNING] /sbin/route add -net 192.168.0.0 netmask 255.255.255.0 dev eth2
+[2017-09-21 19:41:51] [WARNING] /sbin/route add -net 192.168.100.0 netmask 255.255.255.0 dev eth1
+[2017-09-21 19:41:51] [INFO] ConfigAllRoute End
+[2017-09-21 19:41:53] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-21 19:41:53] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-21 19:41:53] [INFO] host :www.lyx.com
+[2017-09-21 19:41:53] [INFO] host :172.16.2.105
+[2017-09-21 19:41:55] [INFO] bdwaf kill
+[2017-09-21 19:42:01] [INFO] bdinit end.
+[2017-09-22 16:38:49] [INFO] ConfigAllNic Start
+[2017-09-22 16:38:49] [WARNING] iface no found in devices
+[2017-09-22 16:38:49] [WARNING] iface no found in devices
+[2017-09-22 16:38:49] [WARNING] iface no found in devices
+[2017-09-22 16:38:49] [WARNING] iface no found in devices
+[2017-09-22 16:38:49] [WARNING] iface no found in devices
+[2017-09-22 16:38:49] [INFO] ConfigAllNic End
+[2017-09-22 16:38:49] [INFO] ConfigAllBridge Start
+[2017-09-22 16:38:49] [INFO] ConfigAllBridge End
+[2017-09-22 16:38:49] [INFO] ConfigAllRoute Start
+[2017-09-22 16:38:49] [INFO] ConfigAllRoute End
+[2017-09-22 16:39:03] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-22 16:39:03] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-22 16:39:03] [INFO] host :www.lyx.com
+[2017-09-22 16:39:03] [INFO] host :172.16.2.105
+[2017-09-22 16:39:05] [INFO] bdwaf kill
+[2017-09-22 16:39:10] [INFO] bdinit end.
+[2017-09-22 16:58:29] [INFO] ConfigAllNic Start
+[2017-09-22 16:58:29] [WARNING] iface no found in devices
+[2017-09-22 16:58:29] [WARNING] iface no found in devices
+[2017-09-22 16:58:29] [WARNING] iface no found in devices
+[2017-09-22 16:58:29] [WARNING] iface no found in devices
+[2017-09-22 16:58:29] [WARNING] iface no found in devices
+[2017-09-22 16:58:29] [INFO] ConfigAllNic End
+[2017-09-22 16:58:29] [INFO] ConfigAllBridge Start
+[2017-09-22 16:58:29] [INFO] ConfigAllBridge End
+[2017-09-22 16:58:29] [INFO] ConfigAllRoute Start
+[2017-09-22 16:58:29] [INFO] ConfigAllRoute End
+[2017-09-22 16:58:53] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-22 16:58:53] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-22 16:58:53] [INFO] host :www.lyx.com
+[2017-09-22 16:58:53] [INFO] host :172.16.2.105
+[2017-09-22 16:58:55] [INFO] bdwaf kill
+[2017-09-22 16:59:00] [INFO] bdinit end.
+[2017-09-24 09:59:13] [INFO] ConfigAllNic Start
+[2017-09-24 09:59:13] [INFO] ConfigAllNic End
+[2017-09-24 09:59:13] [INFO] ConfigAllBridge Start
+[2017-09-24 09:59:13] [INFO] ConfigAllBridge End
+[2017-09-24 09:59:13] [INFO] ConfigAllRoute Start
+[2017-09-24 09:59:13] [INFO] ConfigAllRoute End
+[2017-09-24 09:59:16] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 09:59:16] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 09:59:16] [INFO] host :www.lyx.com
+[2017-09-24 09:59:16] [INFO] host :172.16.2.105
+[2017-09-24 09:59:18] [INFO] bdwaf kill
+[2017-09-24 09:59:23] [INFO] bdinit end.
+[2017-09-24 10:54:35] [INFO] ConfigAllNic Start
+[2017-09-24 10:54:35] [INFO] ConfigAllNic End
+[2017-09-24 10:54:35] [INFO] ConfigAllBridge Start
+[2017-09-24 10:54:35] [INFO] ConfigAllBridge End
+[2017-09-24 10:54:35] [INFO] ConfigAllRoute Start
+[2017-09-24 10:54:36] [INFO] ConfigAllRoute End
+[2017-09-24 10:54:38] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 10:54:38] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 10:54:38] [INFO] host :www.lyx.com
+[2017-09-24 10:54:38] [INFO] host :172.16.2.105
+[2017-09-24 10:54:40] [INFO] bdwaf kill
+[2017-09-24 10:54:45] [INFO] bdinit end.
+[2017-09-24 12:51:57] [INFO] ConfigAllNic Start
+[2017-09-24 12:51:58] [INFO] ConfigAllNic End
+[2017-09-24 12:51:58] [INFO] ConfigAllBridge Start
+[2017-09-24 12:51:58] [INFO] ConfigAllBridge End
+[2017-09-24 12:51:58] [INFO] ConfigAllRoute Start
+[2017-09-24 12:51:58] [INFO] ConfigAllRoute End
+[2017-09-24 12:52:00] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 12:52:00] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 12:52:00] [INFO] host :www.lyx.com
+[2017-09-24 12:52:00] [INFO] host :172.16.2.105
+[2017-09-24 12:52:02] [INFO] bdwaf kill
+[2017-09-24 12:52:07] [INFO] bdinit end.
+[2017-09-24 13:00:31] [INFO] ConfigAllNic Start
+[2017-09-24 13:00:31] [INFO] ConfigAllNic End
+[2017-09-24 13:00:31] [INFO] ConfigAllBridge Start
+[2017-09-24 13:00:31] [INFO] ConfigAllBridge End
+[2017-09-24 13:00:31] [INFO] ConfigAllRoute Start
+[2017-09-24 13:00:31] [INFO] ConfigAllRoute End
+[2017-09-24 13:00:33] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 13:00:33] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 13:00:33] [INFO] host :www.lyx.com
+[2017-09-24 13:00:33] [INFO] host :172.16.2.105
+[2017-09-24 13:00:35] [INFO] bdwaf kill
+[2017-09-24 13:00:40] [INFO] bdinit end.
+[2017-09-24 13:14:55] [INFO] ConfigAllNic Start
+[2017-09-24 13:14:55] [WARNING] iface no found in devices
+[2017-09-24 13:14:55] [WARNING] iface no found in devices
+[2017-09-24 13:14:55] [WARNING] iface no found in devices
+[2017-09-24 13:14:55] [WARNING] iface no found in devices
+[2017-09-24 13:14:55] [WARNING] iface no found in devices
+[2017-09-24 13:14:55] [INFO] ConfigAllNic End
+[2017-09-24 13:14:55] [INFO] ConfigAllBridge Start
+[2017-09-24 13:14:55] [INFO] ConfigAllBridge End
+[2017-09-24 13:14:55] [INFO] ConfigAllRoute Start
+[2017-09-24 13:14:55] [INFO] ConfigAllRoute End
+[2017-09-24 13:15:18] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 13:15:18] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 13:15:18] [INFO] host :www.lyx.com
+[2017-09-24 13:15:18] [INFO] host :172.16.2.105
+[2017-09-24 13:15:20] [INFO] bdwaf kill
+[2017-09-24 13:15:25] [INFO] bdinit end.
+[2017-09-24 13:17:01] [INFO] ConfigAllNic Start
+[2017-09-24 13:17:01] [WARNING] iface no found in devices
+[2017-09-24 13:17:01] [WARNING] iface no found in devices
+[2017-09-24 13:17:01] [WARNING] iface no found in devices
+[2017-09-24 13:17:01] [WARNING] iface no found in devices
+[2017-09-24 13:17:01] [WARNING] iface no found in devices
+[2017-09-24 13:17:01] [INFO] ConfigAllNic End
+[2017-09-24 13:17:01] [INFO] ConfigAllBridge Start
+[2017-09-24 13:17:01] [INFO] ConfigAllBridge End
+[2017-09-24 13:17:01] [INFO] ConfigAllRoute Start
+[2017-09-24 13:17:01] [INFO] ConfigAllRoute End
+[2017-09-24 13:17:24] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 13:17:24] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 13:17:24] [INFO] host :www.lyx.com
+[2017-09-24 13:17:24] [INFO] host :172.16.2.105
+[2017-09-24 13:17:25] [INFO] bdwaf kill
+[2017-09-24 13:17:30] [INFO] bdinit end.
+[2017-09-24 13:21:48] [INFO] ConfigAllNic Start
+[2017-09-24 13:21:48] [WARNING] iface no found in devices
+[2017-09-24 13:21:48] [WARNING] iface no found in devices
+[2017-09-24 13:21:48] [WARNING] iface no found in devices
+[2017-09-24 13:21:48] [WARNING] iface no found in devices
+[2017-09-24 13:21:48] [WARNING] iface no found in devices
+[2017-09-24 13:21:48] [INFO] ConfigAllNic End
+[2017-09-24 13:21:48] [INFO] ConfigAllBridge Start
+[2017-09-24 13:21:48] [INFO] ConfigAllBridge End
+[2017-09-24 13:21:48] [INFO] ConfigAllRoute Start
+[2017-09-24 13:21:48] [INFO] ConfigAllRoute End
+[2017-09-24 13:22:11] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 13:22:11] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 13:22:11] [INFO] host :www.lyx.com
+[2017-09-24 13:22:11] [INFO] host :172.16.2.105
+[2017-09-24 13:22:12] [INFO] bdwaf kill
+[2017-09-24 13:22:18] [INFO] bdinit end.
+[2017-09-24 15:25:34] [INFO] ConfigAllNic Start
+[2017-09-24 15:25:35] [INFO] ConfigAllNic End
+[2017-09-24 15:25:35] [INFO] ConfigAllBridge Start
+[2017-09-24 15:25:35] [INFO] ConfigAllBridge End
+[2017-09-24 15:25:35] [INFO] ConfigAllRoute Start
+[2017-09-24 15:25:35] [INFO] ConfigAllRoute End
+[2017-09-24 15:25:36] [INFO] bdwaf start
+[2017-09-24 15:25:37] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 15:25:38] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 15:25:39] [INFO] bdwaf kill
+[2017-09-24 15:25:43] [INFO] bdwaf start
+[2017-09-24 15:25:44] [INFO] bdinit end.
+[2017-09-24 15:31:44] [INFO] ConfigAllNic Start
+[2017-09-24 15:31:44] [INFO] ConfigAllNic End
+[2017-09-24 15:31:44] [INFO] ConfigAllBridge Start
+[2017-09-24 15:31:44] [INFO] ConfigAllBridge End
+[2017-09-24 15:31:44] [INFO] ConfigAllRoute Start
+[2017-09-24 15:31:45] [INFO] ConfigAllRoute End
+[2017-09-24 15:31:46] [INFO] bdwaf start
+[2017-09-24 15:31:47] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 15:31:47] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 15:31:49] [INFO] bdwaf kill
+[2017-09-24 15:31:53] [INFO] bdwaf start
+[2017-09-24 15:31:54] [INFO] bdinit end.
+[2017-09-24 15:40:28] [INFO] ConfigAllNic Start
+[2017-09-24 15:40:28] [INFO] ConfigAllNic End
+[2017-09-24 15:40:28] [INFO] ConfigAllBridge Start
+[2017-09-24 15:40:28] [INFO] ConfigAllBridge End
+[2017-09-24 15:40:28] [INFO] ConfigAllRoute Start
+[2017-09-24 15:40:28] [INFO] ConfigAllRoute End
+[2017-09-24 15:40:30] [INFO] bdwaf start
+[2017-09-24 15:40:30] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 15:40:30] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 15:40:32] [INFO] bdwaf kill
+[2017-09-24 15:40:36] [INFO] bdwaf start
+[2017-09-24 15:40:37] [INFO] bdinit end.
+[2017-09-24 15:46:23] [INFO] ConfigAllNic Start
+[2017-09-24 15:46:23] [INFO] ConfigAllNic End
+[2017-09-24 15:46:23] [INFO] ConfigAllBridge Start
+[2017-09-24 15:46:23] [INFO] ConfigAllBridge End
+[2017-09-24 15:46:23] [INFO] ConfigAllRoute Start
+[2017-09-24 15:46:23] [INFO] ConfigAllRoute End
+[2017-09-24 15:46:25] [INFO] bdwaf start
+[2017-09-24 15:46:26] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 15:46:26] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 15:46:27] [INFO] bdwaf kill
+[2017-09-24 15:46:31] [INFO] bdwaf start
+[2017-09-24 15:46:32] [INFO] bdinit end.
+[2017-09-24 16:00:39] [INFO] ConfigAllNic Start
+[2017-09-24 16:00:40] [INFO] ConfigAllNic End
+[2017-09-24 16:00:40] [INFO] ConfigAllBridge Start
+[2017-09-24 16:00:40] [INFO] ConfigAllBridge End
+[2017-09-24 16:00:40] [INFO] ConfigAllRoute Start
+[2017-09-24 16:00:40] [INFO] ConfigAllRoute End
+[2017-09-24 16:00:41] [INFO] bdwaf start
+[2017-09-24 16:00:42] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 16:00:43] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 16:00:44] [INFO] bdwaf kill
+[2017-09-24 16:00:48] [INFO] bdwaf start
+[2017-09-24 16:00:49] [INFO] bdinit end.
+[2017-09-24 16:06:21] [INFO] ConfigAllNic Start
+[2017-09-24 16:06:22] [INFO] ConfigAllNic End
+[2017-09-24 16:06:22] [INFO] ConfigAllBridge Start
+[2017-09-24 16:06:22] [INFO] ConfigAllBridge End
+[2017-09-24 16:06:22] [INFO] ConfigAllRoute Start
+[2017-09-24 16:06:22] [INFO] ConfigAllRoute End
+[2017-09-24 16:06:23] [INFO] bdwaf start
+[2017-09-24 16:06:24] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 16:06:24] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 16:06:26] [INFO] bdwaf kill
+[2017-09-24 16:06:30] [INFO] bdwaf start
+[2017-09-24 16:06:30] [INFO] bdinit end.
+[2017-09-24 16:09:48] [INFO] ConfigAllNic Start
+[2017-09-24 16:09:48] [INFO] ConfigAllNic End
+[2017-09-24 16:09:48] [INFO] ConfigAllBridge Start
+[2017-09-24 16:09:48] [INFO] ConfigAllBridge End
+[2017-09-24 16:09:48] [INFO] ConfigAllRoute Start
+[2017-09-24 16:09:48] [INFO] ConfigAllRoute End
+[2017-09-24 16:09:50] [INFO] bdwaf start
+[2017-09-24 16:09:50] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 16:09:51] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 16:09:52] [INFO] bdwaf kill
+[2017-09-24 16:09:56] [INFO] bdwaf start
+[2017-09-24 16:09:57] [INFO] bdinit end.
+[2017-09-24 16:12:34] [INFO] ConfigAllNic Start
+[2017-09-24 16:12:35] [INFO] ConfigAllNic End
+[2017-09-24 16:12:35] [INFO] ConfigAllBridge Start
+[2017-09-24 16:12:35] [INFO] ConfigAllBridge End
+[2017-09-24 16:12:35] [INFO] ConfigAllRoute Start
+[2017-09-24 16:12:35] [INFO] ConfigAllRoute End
+[2017-09-24 16:12:36] [INFO] bdwaf start
+[2017-09-24 16:12:37] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 16:12:37] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 16:12:38] [INFO] bdwaf kill
+[2017-09-24 16:12:42] [INFO] bdwaf start
+[2017-09-24 16:12:43] [INFO] bdinit end.
+[2017-09-24 16:14:48] [INFO] ConfigAllNic Start
+[2017-09-24 16:14:49] [INFO] ConfigAllNic End
+[2017-09-24 16:14:49] [INFO] ConfigAllBridge Start
+[2017-09-24 16:14:49] [INFO] ConfigAllBridge End
+[2017-09-24 16:14:49] [INFO] ConfigAllRoute Start
+[2017-09-24 16:14:49] [INFO] ConfigAllRoute End
+[2017-09-24 16:14:50] [INFO] bdwaf start
+[2017-09-24 16:14:51] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 16:14:51] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 16:14:53] [INFO] bdwaf kill
+[2017-09-24 16:14:57] [INFO] bdwaf start
+[2017-09-24 16:14:58] [INFO] bdinit end.
+[2017-09-24 16:18:10] [INFO] ConfigAllNic Start
+[2017-09-24 16:18:11] [INFO] ConfigAllNic End
+[2017-09-24 16:18:11] [INFO] ConfigAllBridge Start
+[2017-09-24 16:18:11] [INFO] ConfigAllBridge End
+[2017-09-24 16:18:11] [INFO] ConfigAllRoute Start
+[2017-09-24 16:18:11] [INFO] ConfigAllRoute End
+[2017-09-24 16:18:12] [INFO] bdwaf start
+[2017-09-24 16:18:13] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 16:18:13] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 16:18:15] [INFO] bdwaf kill
+[2017-09-24 16:18:19] [INFO] bdwaf start
+[2017-09-24 16:18:20] [INFO] bdinit end.
+[2017-09-24 16:26:39] [INFO] ConfigAllNic Start
+[2017-09-24 16:26:39] [INFO] ConfigAllNic End
+[2017-09-24 16:26:39] [INFO] ConfigAllBridge Start
+[2017-09-24 16:26:39] [INFO] ConfigAllBridge End
+[2017-09-24 16:26:39] [INFO] ConfigAllRoute Start
+[2017-09-24 16:26:39] [INFO] ConfigAllRoute End
+[2017-09-24 16:26:41] [INFO] bdwaf start
+[2017-09-24 16:26:42] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 16:26:42] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 16:26:43] [INFO] bdwaf kill
+[2017-09-24 16:26:47] [INFO] bdwaf start
+[2017-09-24 16:26:48] [INFO] bdinit end.
+[2017-09-24 16:32:24] [INFO] ConfigAllNic Start
+[2017-09-24 16:32:25] [INFO] ConfigAllNic End
+[2017-09-24 16:32:25] [INFO] ConfigAllBridge Start
+[2017-09-24 16:32:25] [INFO] ConfigAllBridge End
+[2017-09-24 16:32:25] [INFO] ConfigAllRoute Start
+[2017-09-24 16:32:25] [INFO] ConfigAllRoute End
+[2017-09-24 16:32:26] [INFO] bdwaf start
+[2017-09-24 16:32:27] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 16:32:27] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 16:32:29] [INFO] bdwaf kill
+[2017-09-24 16:32:33] [INFO] bdwaf start
+[2017-09-24 16:32:34] [INFO] bdinit end.
+[2017-09-24 16:52:05] [INFO] ConfigAllNic Start
+[2017-09-24 16:52:05] [INFO] ConfigAllNic End
+[2017-09-24 16:52:05] [INFO] ConfigAllBridge Start
+[2017-09-24 16:52:05] [INFO] ConfigAllBridge End
+[2017-09-24 16:52:05] [INFO] ConfigAllRoute Start
+[2017-09-24 16:52:06] [INFO] ConfigAllRoute End
+[2017-09-24 16:52:07] [INFO] bdwaf start
+[2017-09-24 16:52:08] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-24 16:52:08] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-24 16:52:10] [INFO] bdwaf kill
+[2017-09-24 16:52:14] [INFO] bdwaf start
+[2017-09-24 16:52:15] [INFO] bdinit end.
+[2017-09-26 11:21:17] [INFO] ConfigAllNic Start
+[2017-09-26 11:21:18] [INFO] ConfigAllNic End
+[2017-09-26 11:21:18] [INFO] ConfigAllBridge Start
+[2017-09-26 11:21:18] [INFO] refresh nicinfo table
+[2017-09-26 11:21:18] [INFO] ConfigAllBridge End
+[2017-09-26 11:21:18] [INFO] ConfigAllRoute Start
+[2017-09-26 11:21:18] [INFO] ConfigAllRoute End
+[2017-09-26 11:21:19] [INFO] bdwaf start
+[2017-09-26 11:21:20] [INFO] [u'2005294', u'960024', u'900033', u'900034', u'960038', u'981143', u'960011', u'960017']
+[2017-09-26 11:21:20] [INFO] [u'2005292', u'2005294', u'2005432', u'960038', u'301205', u'301206', u'960017']
+[2017-09-26 11:21:20] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-26 11:21:20] [INFO] [u'960024', u'970901', u'960038', u'981143', u'960011', u'960017', u'960901']
+[2017-09-26 11:21:20] [INFO] [u'950103', u'990002', u'981044', u'960010', u'981044', u'981143', u'981173', u'981196', u'981197', u'981198', u'981199', u'981200', u'981201', u'981202', u'981203', u'981204', u'981205', u'981219', u'981220', u'981221', u'981222', u'981223', u'981224', u'981235', u'981236', u'981237', u'981238', u'981239', u'981400', u'981401', u'981402', u'981403', u'981404', u'981405', u'981406', u'981407', u'990012', u'990901', u'990902', u'999003', u'999004', u'999005', u'999006', u'999008', u'999010', u'999011', u'2001218', u'2002800', u'2002996', u'2003167', u'2003333', u'2003508', u'2003517', u'2003669', u'2003670', u'2003671', u'2003672', u'2003673', u'2003674', u'2003675', u'2003676', u'2003677', u'2003678', u'2003679', u'2003680', u'2003682', u'2003683', u'2003684', u'2003685', u'2003686', u'2003687', u'2003688', u'2003689', u'2003690', u'2003691', u'2003693', u'2003696', u'2003698', u'2003699', u'2003700', u'2003701', u'2003702', u'2003703', u'2003704', u'2003705', u'2003706', u'2003707', u'2003708', u'2003709', u'2003710', u'2003711', u'2003712', u'2003713', u'2003714', u'2003715', u'2003716', u'2003718', u'2003719', u'2003720', u'2003721', u'2003722', u'2003723', u'2003724', u'2003725', u'2003726', u'2003727', u'2003728', u'2003729', u'2003730', u'2003731', u'2003732', u'2003733', u'2003735', u'2003736', u'2003737', u'2003738', u'2003739', u'2003740', u'2003741', u'2003742', u'2003743', u'2003744', u'2003745', u'2003746', u'2003747', u'2003757', u'2003763', u'2003769', u'2003775', u'2003781', u'2003787', u'2003793', u'2003798', u'2003810', u'2003816', u'2003822', u'2003828', u'2003834', u'2003840', u'2003845', u'2003851', u'2003857', u'2003863', u'2003867', u'2003871', u'2003872', u'2003873', u'2003874', u'2003875', u'2003876', u'2003877', u'2003878', u'2003879', u'2003880', u'2003881', u'2003882', u'2003883', u'2003884', u'2003885', u'2003886', u'2003887', u'2003888', u'2003889', u'2003890', u'2003891', u'2003892', u'2003893', u'2003894', u'2003895', u'2003896', u'2003902', u'2003905', u'2003906', u'2003907', u'2003908', u'2003909', u'2003910', u'2003911', u'2003912', u'2003913', u'2003914', u'2003915', u'2003916', u'2003917', u'2003918', u'2003919', u'2003920', u'2003921', u'2003922', u'2003944', u'2003950', u'2003956', u'2003962', u'2003968', u'2003974', u'2003986', u'2003992', u'2003998', u'2004004', u'2004010', u'2004011', u'2004012', u'2004013', u'2004014', u'2004015', u'2004016', u'2004022', u'2004028', u'2004034', u'2004040', u'2004046', u'2004052', u'2004058', u'2004064', u'2004070', u'2004076', u'2004082', u'2004088', u'2004094', u'2004100', u'2004106', u'2004113', u'2004121', u'2004127', u'2004133', u'2004139', u'2004145', u'2004151', u'2004157', u'2004163', u'2004169', u'2004175', u'2004181', u'2004187', u'2004193', u'2004199', u'2004205', u'2004211', u'2004217', u'2004223', u'2004229', u'2004234', u'2004240', u'2004246', u'2004252', u'2004258', u'2004264', u'2004270', u'2004276', u'2004282', u'2004288', u'2004294', u'2004300', u'2004306', u'2004312', u'2004317', u'2004324', u'2004330', u'2004336', u'2004342', u'2004348', u'2004354', u'2004360', u'2004366', u'2004372', u'2004378', u'2004384', u'2004390', u'2004402', u'2004403', u'2004404', u'2004405', u'2004406', u'2004407', u'2004408', u'2004414', u'2004420', u'2004426', u'2004432', u'2004438', u'2004455', u'2004461', u'2004468', u'2004469', u'2004473', u'2004479', u'2004485', u'2004491', u'2004498', u'2004504', u'2004510', u'2004516', u'2004522', u'2004528', u'2004534', u'2004540', u'2004546', u'2004551', u'2004552', u'2004554', u'2004555', u'2004557', u'2004558', u'2004559', u'2004560', u'2004561', u'2004562', u'2004563', u'2004564', u'2004565', u'2004566', u'2004567', u'2004568', u'2004569', u'2004570', u'2004571', u'2004572', u'2004573', u'2004574', u'2004575', u'2004576', u'2004577', u'2004578', u'2004579', u'2004580', u'2004581', u'2004582', u'2004583', u'2004584', u'2004585', u'2004586', u'2004587', u'2004588', u'2004589', u'2004590', u'2004591', u'2004592', u'2004593', u'2004594', u'2004595', u'2004596', u'2004605', u'2004617', u'2004623', u'2004629', u'2004634', u'2004640', u'2004646', u'2004652', u'2004654', u'2004655', u'2004656', u'2004657', u'2004658', u'2004659', u'2004665', u'2004671', u'2004677', u'2004682', u'2004688', u'2004694', u'2004700', u'2004710', u'2004716', u'2004723', u'2004729', u'2004735', u'2004741', u'2004747', u'2004753', u'2004759', u'2004765', u'2004771', u'2004778', u'2004784', u'2004790', u'2004802', u'2004808', u'2004815', u'2004821', u'2004827', u'2004833', u'2004839', u'2004845', u'2004850', u'2004856', u'2004862', u'2004868', u'2004874', u'2004880', u'2004886', u'2004892', u'2004898', u'2004904', u'2004910', u'2004916', u'2004923', u'2004929', u'2004935', u'2004941', u'2004948', u'2004954', u'2004960', u'2004966', u'2004972', u'2004984', u'2004990', u'2004996', u'2005002', u'2005008', u'2005014', u'2005020', u'2005026', u'2005032', u'2005038', u'2005045', u'2005050', u'2005056', u'2005062', u'2005068', u'2005074', u'2005080', u'2005086', u'2005092', u'2005098', u'2005104', u'2005110', u'2005116', u'2005122', u'2005128', u'2005134', u'2005140', u'2005146', u'2005151', u'2005152', u'2005153', u'2005154', u'2005155', u'2005156', u'2005157', u'2005163', u'2005169', u'2005175', u'2005181', u'2005191', u'2005197', u'2005203', u'2005209', u'2005215', u'2005221', u'2005226', u'2005232', u'2005238', u'2005244', u'2005250', u'2005255', u'2005261', u'2005267', u'2005273', u'2005279', u'2005285', u'2005291', u'2005293', u'2005294', u'2005295', u'2005296', u'2005297', u'2005299', u'2005300', u'2005301', u'2005302', u'2005303', u'2005309', u'2005329', u'2005335', u'2005341', u'2005347', u'2005353', u'2005359', u'2005365', u'2005371', u'2005377', u'2005383', u'2005389', u'2005390', u'2005391', u'2005394', u'2005395', u'2005396', u'2005397', u'2005398', u'2005399', u'2005400', u'2005401', u'2005402', u'2005403', u'2005404', u'2005405', u'2005406', u'2005407', u'2005408', u'2005409', u'2005410', u'2005411', u'2005412', u'2005413', u'2005414', u'2005415', u'2005416', u'2005417', u'2005418', u'2005419', u'2005420', u'2005421', u'2005422', u'2005423', u'2005424', u'2005425', u'2005426', u'2005427', u'2005428', u'2005429', u'2005430', u'2005431', u'2005432', u'2005433', u'2005434', u'2005435', u'2005436', u'2005437', u'2005438', u'2005439', u'2005440', u'2005441', u'2005442', u'2005443', u'2005444', u'2005445', u'2005446', u'2005447', u'2005449', u'2005450', u'2005451', u'2005452', u'2005453', u'2005454', u'2005455', u'2005461', u'2005467', u'2005473', u'2005479', u'2005485', u'2005492', u'2005498', u'2005504', u'2005510', u'2005517', u'2005523', u'2005529', u'2005535', u'2005541', u'2005547', u'2005553', u'2005559', u'2005566', u'2005572', u'2005578', u'2005584', u'2005590', u'2005596', u'2005602', u'2005608', u'2005614', u'2005620', u'2005626', u'2005632', u'2005638', u'2005644', u'2005650', u'2005656', u'2005657', u'2005658', u'2005659', u'2005660', u'2005661', u'2005662', u'2005668', u'2005674', u'2005680', u'2005686', u'2005692', u'2005698', u'2005704', u'2005710', u'2005716', u'2005722', u'2005728', u'2005734', u'2005741', u'2005747', u'2005753', u'2005759', u'2005765', u'2005771', u'2005777', u'2005783', u'2005789', u'2005795', u'2005801', u'2005810', u'2005816', u'2005822', u'2005828', u'2005834', u'2005840', u'2005846', u'2005852', u'2005858', u'2005864', u'2005865', u'2005866', u'2005867', u'2005868', u'2005869', u'2005870', u'2005876', u'2005882', u'2005888', u'2005894', u'2005900', u'2005906', u'2005912', u'2005918', u'2005924', u'2005930', u'2005936', u'2005942', u'2005948', u'2005954', u'2005960', u'2005966', u'2005978', u'2005984', u'2005990', u'2005996', u'2006002', u'2006008', u'2006014', u'2006020', u'2006026', u'2006032', u'2006038', u'2006044', u'2006050', u'2006056', u'2006062', u'2006068', u'2006074', u'2006080', u'2006086', u'2006092', u'2006098', u'2006104', u'2006110', u'2006116', u'2006122', u'2006128', u'2006134', u'2006140', u'2006146', u'2006152', u'2006158', u'2006164', u'2006170', u'2006176', u'2006182', u'2006188', u'2006194', u'2006200', u'2006206', u'2006212', u'2006218', u'2006224', u'2006230', u'2006236', u'2006242', u'2006248', u'2006254', u'2006260', u'2006266', u'2006272', u'2006278', u'2006284', u'2006290', u'2006296', u'2006302', u'2006308', u'2006314', u'2006320', u'2006326', u'2006332', u'2006338', u'2006344', u'2006350', u'2006356', u'2006454', u'2006460', u'2006466', u'2006472', u'2006478', u'2006485', u'2006491', u'2006497', u'2006503', u'2006509', u'2006515', u'2006521', u'2006527', u'2006533', u'2006539', u'2006545', u'2006552', u'2006559', u'2006566', u'2006572', u'2006578', u'2006584', u'2006590', u'2006596', u'2006602', u'2006608', u'2006614', u'2006620', u'2006626', u'2006632', u'2006638', u'2006644', u'2006650', u'2006656', u'2006662', u'2006668', u'2006674', u'2006680', u'2006686', u'2006692', u'2006699', u'2006705', u'2006711', u'2006717', u'2006735', u'2006741', u'2006747', u'2006753', u'2006759', u'2006765', u'2006771', u'2006777', u'2006788', u'2006794', u'2006800', u'2006806', u'2006812', u'2006818', u'2006824', u'2006830', u'2006836', u'2006842', u'2006848', u'2006854', u'2006860', u'2006867', u'2006873', u'2006879', u'2006885', u'2006891', u'2006897', u'2006903', u'2006909', u'2006926', u'2006932', u'2006938', u'2006944', u'2006950', u'2006956', u'2006962', u'2006968', u'2006980', u'2006986', u'2006992', u'2006998', u'2007005', u'2007011', u'2007017', u'2007023', u'2007035', u'2007041', u'2007047', u'2007049', u'2007053', u'2007065', u'2007075', u'2007081', u'2007087', u'2007093', u'2007099', u'2007105', u'2007111', u'2007117', u'2007123', u'2007129', u'2007135', u'2007141', u'2007181', u'2007187', u'2007193', u'2007199', u'2007204', u'2007210', u'2007216', u'2007222', u'2007228', u'2007234', u'2007240', u'2007246', u'2007252', u'2007258', u'2007264', u'2007270', u'2007276', u'2007282', u'2007293', u'2007299', u'2007305', u'2007311', u'2007317', u'2007323', u'2007329', u'2007335', u'2007341', u'2007349', u'2007355', u'2007361', u'2007367', u'2007373', u'2007379', u'2007385', u'2007391', u'2007397', u'2007403', u'2007409', u'2007415', u'2007421', u'2007427', u'2007433', u'2007439', u'2007445', u'2007451', u'2007457', u'2007463', u'2007469', u'2007475', u'2007481', u'2007486', u'2007492', u'2007498', u'2007515', u'2007521', u'2007527', u'2007533', u'2007539', u'2007545', u'2007551', u'2007557', u'2007563', u'2007565', u'2007892', u'2007897', u'2008651', u'2008652', u'2008685', u'2008687', u'2008725', u'2008822', u'2008826', u'2008832', u'2008833', u'2008849', u'2008850', u'2008851', u'2008852', u'2008853', u'2008854', u'2008855', u'2008856', u'2008857', u'2008858', u'2008871', u'2008878', u'2008879', u'2008880', u'2008881', u'2008882', u'2008897', u'2008898', u'2008899', u'2008900', u'2008901', u'2008902', u'2008903', u'2008904', u'2008922', u'2008923', u'2008937', u'2008938', u'2008961', u'2008962', u'2008966', u'2008967', u'2008968', u'2008969', u'2008970', u'2008992', u'2008996', u'2009010', u'2009018', u'2009051', u'2009053', u'2009059', u'2009060', u'2009061', u'2009062', u'2009070', u'2009071', u'2009073', u'2009074', u'2009085', u'2009087', u'2009089', u'2009101', u'2009123', u'2009141', u'2009142', u'2009144', u'2009145', u'2009163', u'2009164', u'2009165', u'2009166', u'2009167', u'2009168', u'2009169', u'2009179', u'2009180', u'2009181', u'2009182', u'2009188', u'2009190', u'2009191', u'2009194', u'2009195', u'2009196', u'2009224', u'2009225', u'2009229', u'2009230', u'2009231', u'2009306', u'2009308', u'2009310', u'2009312', u'2009316', u'2009317', u'2009318', u'2009320', u'2009321', u'2009324', u'2009325', u'2009326', u'2009327', u'2009329', u'2009330', u'2009331', u'2009332', u'2009333', u'2009364', u'2009369', u'2009370', u'2009371', u'2009372', u'2009377', u'2009378', u'2009379', u'2009380', u'2009381', u'2009382', u'2009383', u'2009384', u'2009386', u'2009390', u'2009391', u'2009393', u'2009395', u'2009396', u'2009397', u'2009398', u'2009415', u'2009416', u'2009417', u'2009418', u'2009420', u'2009421', u'2009422', u'2009423', u'2009427', u'2009428', u'2009429', u'2009430', u'2009431', u'2009432', u'2009435', u'2009436', u'2009437', u'2009459', u'2009460', u'2009461', u'2009462', u'2009463', u'2009464', u'2009466', u'2009467', u'2009468', u'2009502', u'2009503', u'2009504', u'2009505', u'2009506', u'2009507', u'2009508', u'2009509', u'2009590', u'2009591', u'2009592', u'2009593', u'2009647', u'2009652', u'2009653', u'2009654', u'2009655', u'2009659', u'2009660', u'2009661', u'2009663', u'2009671', u'2009672', u'2009673', u'2009690', u'2009691', u'2009717', u'2009719', u'2009720', u'2009723', u'2009724', u'2009726', u'2009728', u'2009729', u'2009733', u'2009743', u'2009745', u'2009746', u'2009754', u'2009755', u'2009756', u'2009757', u'2009758', u'2009759', u'2009760', u'2009761', u'2009764', u'2009788', u'2009789', u'2009790', u'2009793', u'2009835', u'2009836', u'2009838', u'2009839', u'2009840', u'2009841', u'2009842', u'2009843', u'2009844', u'2009845', u'2009846', u'2009848', u'2009870', u'2009871', u'2009872', u'2009873', u'2009874', u'2009875', u'2009876', u'2009877', u'2009881', u'2009888', u'2009889', u'2009890', u'2009891', u'2009898', u'2009903', u'2009905', u'2009914', u'2009915', u'2009916', u'2009917', u'2009919', u'2009920', u'2009921', u'2009922', u'2009924', u'2009926', u'2009927', u'2009928', u'2009938', u'2009939', u'2009940', u'2009941', u'2009942', u'2009943', u'2009944', u'2009945', u'2009946', u'2009947', u'2009956', u'2009957', u'2009958', u'2009959', u'2009960', u'2009961', u'2009962', u'2009963', u'2009964', u'2009965', u'2009979', u'2009990', u'2010014', u'2010015', u'2010016', u'2010017', u'2010018', u'2010023', u'2010024', u'2010025', u'2010027', u'2010031', u'2010040', u'2010041', u'2010042', u'2010043', u'2010044', u'2010045', u'2010046', u'2010047', u'2010048', u'2010073', u'2010078', u'2010080', u'2010082', u'2010092', u'2010093', u'2010094', u'2010095', u'2010096', u'2010097', u'2010099', u'2010124', u'2010125', u'2010126', u'2010127', u'2010135', u'2010145', u'2010146', u'2010147', u'2010167', u'2010168', u'2010169', u'2010170', u'2010171', u'2010172', u'2010173', u'2010174', u'2010175', u'2010176', u'2010177', u'2010178', u'2010179', u'2010180', u'2010181', u'2010182', u'2010183', u'2010184', u'2010189', u'2010191', u'2010192', u'2010193', u'2010197', u'2010198', u'2010200', u'2010223', u'2010252', u'2010255', u'2010260', u'2010275', u'2010276', u'2010349', u'2010350', u'2010352', u'2010353', u'2010354', u'2010355', u'2010359', u'2010360', u'2010361', u'2010362', u'2010466', u'2010473', u'2010475', u'2010476', u'2010477', u'2010478', u'2010479', u'2010480', u'2010484', u'2010485', u'2010555', u'2010556', u'2010557', u'2010558', u'2010559', u'2010564', u'2010619', u'2010620', u'2010631', u'2010636', u'2010637', u'2010638', u'2010639', u'2010640', u'2010656', u'2010660', u'2010661', u'2010707', u'2010708', u'2010709', u'2010710', u'2010711', u'2010712', u'2010713', u'2010714', u'2010728', u'2010750', u'2010751', u'2010752', u'2010753', u'2010754', u'2010770', u'2010771', u'2010772', u'2010773', u'2010774', u'2010775', u'2010776', u'2010777', u'2010780', u'2010800', u'2010801', u'2010802', u'2010803', u'2010804', u'2010805', u'2010806', u'2010807', u'2010808', u'2010809', u'2010833', u'2010842', u'2010843', u'2010844', u'2010845', u'2010846', u'2010847', u'2010848', u'2010853', u'2010854', u'2010855', u'2010856', u'2010857', u'2010862', u'2010865', u'2010922', u'2010923', u'2010924', u'2010925', u'2010926', u'2010927', u'2010928', u'2010942', u'2010947', u'2010948', u'2010949', u'2010950', u'2010951', u'2010979', u'2010980', u'2010981', u'2010982', u'2010983', u'2010984', u'2010985', u'2010989', u'2010990', u'2010991', u'2010992', u'2010993', u'2010994', u'2010996', u'2011000', u'2011001', u'2011002', u'2011003', u'2011004', u'2011005', u'2011006', u'2011017', u'2011018', u'2011022', u'2011023', u'2011024', u'2011025', u'2011026', u'2011044', u'2011045', u'2011046', u'2011047', u'2011051', u'2011052', u'2011054', u'2011061', u'2011062', u'2011063', u'2011065', u'2011067', u'2011071', u'2011077', u'2011078', u'2011079', u'2011080', u'2011081', u'2011082', u'2011083', u'2011095', u'2011096', u'2011097', u'2011098', u'2011099', u'2011100', u'2011107', u'2011114', u'2011115', u'2011116', u'2011117', u'2011131', u'2011132', u'2011137', u'2011140', u'2011152', u'2011153', u'2011154', u'2011159', u'2011161', u'2011164', u'2011165', u'2011167', u'2011172', u'2011190', u'2011191', u'2011192', u'2011193', u'2011194', u'2011195', u'2011209', u'2011214', u'2011219', u'2011254', u'2011255', u'2011256', u'2011257', u'2011258', u'2011259', u'2011266', u'2011268', u'2011274', u'2011377', u'2011382', u'2011383', u'2011384', u'2011385', u'2011423', u'2011450', u'2011451', u'2011452', u'2011453', u'2011454', u'2011552', u'2011553', u'2011554', u'2011557', u'2011558', u'2011559', u'2011560', u'2011561', u'2011562', u'2011563', u'2011564', u'2011565', u'2011566', u'2011571', u'2011572', u'2011573', u'2011574', u'2011676', u'2011725', u'2011730', u'2011731', u'2011828', u'2011829', u'2011830', u'2011831', u'2011835', u'2011837', u'2011841', u'2011843', u'2011844', u'2011845', u'2011846', u'2011847', u'2011852', u'2011853', u'2011879', u'2011880', u'2011881', u'2011882', u'2011883', u'2011884', u'2011927', u'2011928', u'2011929', u'2011934', u'2011935', u'2011936', u'2011941', u'2011942', u'2011947', u'2011948', u'2011949', u'2011950', u'2012005', u'2012006', u'2012007', u'2012008', u'2012009', u'2012010', u'2012011', u'2012012', u'2012013', u'2012014', u'2012015', u'2012020', u'2012022', u'2012023', u'2012024', u'2012025', u'2012030', u'2012031', u'2012032', u'2012033', u'2012038', u'2012040', u'2012069', u'2012070', u'2012071', u'2012072', u'2012099', u'2012122', u'2012123', u'2012124', u'2012125', u'2012126', u'2012127', u'2012128', u'2012129', u'2012130', u'2012131', u'2012163', u'2012164', u'2012165', u'2012166', u'2012168', u'2012181', u'2012182', u'2012184', u'2012185', u'2012186', u'2012187', u'2012190', u'2012191', u'2012215', u'2012216', u'2012217', u'2012220', u'2012334', u'2012336', u'2012337', u'2012342', u'2012343', u'2012344', u'2012345', u'2012350', u'2012351', u'2012353', u'2012354', u'2012355', u'2012356', u'2012357', u'2012363', u'2012368', u'2012369', u'2012370', u'2012371', u'2012373', u'2012378', u'2012380', u'2012394', u'2012395', u'2012407', u'2012408', u'2012411', u'2012412', u'2012413', u'2012414', u'2012415', u'2012416', u'2012417', u'2012418', u'2012419', u'2012425', u'2012426', u'2012427', u'2012428', u'2012429', u'2012430', u'2012431', u'2012432', u'2012433', u'2012434', u'2012435', u'2012436', u'2012437', u'2012473', u'2012474', u'2012475', u'2012476', u'2012477', u'2012478', u'2012479', u'2012480', u'2012481', u'2012482', u'2012483', u'2012484', u'2012490', u'2012496', u'2012497', u'2012560', u'2012561', u'2012562', u'2012563', u'2012564', u'2012565', u'2012570', u'2012571', u'2012572', u'2012573', u'2012574', u'2012580', u'2012581', u'2012582', u'2012583', u'2012584', u'2012600', u'2012601', u'2012603', u'2012604', u'2012605', u'2012655', u'2012656', u'2012657', u'2012658', u'2012659', u'2012666', u'2012667', u'2012668', u'2012669', u'2012670', u'2012677', u'2012678', u'2012679', u'2012680', u'2012681', u'2012697', u'2012702', u'2012703', u'2012704', u'2012705', u'2012706', u'2012719', u'2012721', u'2012722', u'2012724', u'2012743', u'2012749', u'2012750', u'2012792', u'2012794', u'2012795', u'2012797', u'2012829', u'2012830', u'2012831', u'2012832', u'2012833', u'2012837', u'2012876', u'2012877', u'2012878', u'2012879', u'2012880', u'2012881', u'2012945', u'2012946', u'2012947', u'2012948', u'2012949', u'2012950', u'2012951', u'2012952', u'2012953', u'2012954', u'2012991', u'2012992', u'2012994', u'2012995', u'2013084', u'2013085', u'2013086', u'2013087', u'2013088', u'2013089', u'2013099', u'2013100', u'2013101', u'2013102', u'2013103', u'2013104', u'2013105', u'2013106', u'2013107', u'2013108', u'2013109', u'2013110', u'2013111', u'2013112', u'2013117', u'2013118', u'2013129', u'2013133', u'2013134', u'2013155', u'2013156', u'2013157', u'2013158', u'2013159', u'2013226', u'2013231', u'2013308', u'2013309', u'2013310', u'2013425', u'2013426', u'2013427', u'2013433', u'2013434', u'2013464', u'2013465', u'2013466', u'2013467', u'2013468', u'2013469', u'2013470', u'2013471', u'100000356', u'100000357', u'100000358', u'100000728', u'100000729', u'100000730', u'100000731', u'100000732', u'100000733', u'100000734', u'100000735', u'100000736', u'100000737', u'100000738', u'100000739', u'100000740', u'100000741', u'100000742', u'100000908']
+[2017-09-26 11:21:20] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-26 11:21:22] [INFO] bdwaf kill
+[2017-09-26 11:21:26] [INFO] bdwaf start
+[2017-09-26 11:21:27] [INFO] bdinit end.
+[2017-09-26 11:38:36] [INFO] ConfigAllNic Start
+[2017-09-26 11:38:36] [INFO] ConfigAllNic End
+[2017-09-26 11:38:36] [INFO] ConfigAllBridge Start
+[2017-09-26 11:38:36] [INFO] ConfigAllBridge End
+[2017-09-26 11:38:36] [INFO] ConfigAllRoute Start
+[2017-09-26 11:38:37] [INFO] ConfigAllRoute End
+[2017-09-26 11:38:38] [INFO] bdwaf start
+[2017-09-26 11:38:39] [INFO] [u'2005294', u'960024', u'900033', u'900034', u'960038', u'981143', u'960011', u'960017']
+[2017-09-26 11:38:39] [INFO] [u'2005292', u'2005294', u'2005432', u'960038', u'301205', u'301206', u'960017']
+[2017-09-26 11:38:39] [INFO] get_virtual_patch_conf siteid:194
+[2017-09-26 11:38:39] [INFO] [u'960024', u'970901', u'960038', u'981143', u'960011', u'960017', u'960901']
+[2017-09-26 11:38:39] [INFO] [u'950103', u'990002', u'981044', u'960010', u'981044', u'981143', u'981173', u'981196', u'981197', u'981198', u'981199', u'981200', u'981201', u'981202', u'981203', u'981204', u'981205', u'981219', u'981220', u'981221', u'981222', u'981223', u'981224', u'981235', u'981236', u'981237', u'981238', u'981239', u'981400', u'981401', u'981402', u'981403', u'981404', u'981405', u'981406', u'981407', u'990012', u'990901', u'990902', u'999003', u'999004', u'999005', u'999006', u'999008', u'999010', u'999011', u'2001218', u'2002800', u'2002996', u'2003167', u'2003333', u'2003508', u'2003517', u'2003669', u'2003670', u'2003671', u'2003672', u'2003673', u'2003674', u'2003675', u'2003676', u'2003677', u'2003678', u'2003679', u'2003680', u'2003682', u'2003683', u'2003684', u'2003685', u'2003686', u'2003687', u'2003688', u'2003689', u'2003690', u'2003691', u'2003693', u'2003696', u'2003698', u'2003699', u'2003700', u'2003701', u'2003702', u'2003703', u'2003704', u'2003705', u'2003706', u'2003707', u'2003708', u'2003709', u'2003710', u'2003711', u'2003712', u'2003713', u'2003714', u'2003715', u'2003716', u'2003718', u'2003719', u'2003720', u'2003721', u'2003722', u'2003723', u'2003724', u'2003725', u'2003726', u'2003727', u'2003728', u'2003729', u'2003730', u'2003731', u'2003732', u'2003733', u'2003735', u'2003736', u'2003737', u'2003738', u'2003739', u'2003740', u'2003741', u'2003742', u'2003743', u'2003744', u'2003745', u'2003746', u'2003747', u'2003757', u'2003763', u'2003769', u'2003775', u'2003781', u'2003787', u'2003793', u'2003798', u'2003810', u'2003816', u'2003822', u'2003828', u'2003834', u'2003840', u'2003845', u'2003851', u'2003857', u'2003863', u'2003867', u'2003871', u'2003872', u'2003873', u'2003874', u'2003875', u'2003876', u'2003877', u'2003878', u'2003879', u'2003880', u'2003881', u'2003882', u'2003883', u'2003884', u'2003885', u'2003886', u'2003887', u'2003888', u'2003889', u'2003890', u'2003891', u'2003892', u'2003893', u'2003894', u'2003895', u'2003896', u'2003902', u'2003905', u'2003906', u'2003907', u'2003908', u'2003909', u'2003910', u'2003911', u'2003912', u'2003913', u'2003914', u'2003915', u'2003916', u'2003917', u'2003918', u'2003919', u'2003920', u'2003921', u'2003922', u'2003944', u'2003950', u'2003956', u'2003962', u'2003968', u'2003974', u'2003986', u'2003992', u'2003998', u'2004004', u'2004010', u'2004011', u'2004012', u'2004013', u'2004014', u'2004015', u'2004016', u'2004022', u'2004028', u'2004034', u'2004040', u'2004046', u'2004052', u'2004058', u'2004064', u'2004070', u'2004076', u'2004082', u'2004088', u'2004094', u'2004100', u'2004106', u'2004113', u'2004121', u'2004127', u'2004133', u'2004139', u'2004145', u'2004151', u'2004157', u'2004163', u'2004169', u'2004175', u'2004181', u'2004187', u'2004193', u'2004199', u'2004205', u'2004211', u'2004217', u'2004223', u'2004229', u'2004234', u'2004240', u'2004246', u'2004252', u'2004258', u'2004264', u'2004270', u'2004276', u'2004282', u'2004288', u'2004294', u'2004300', u'2004306', u'2004312', u'2004317', u'2004324', u'2004330', u'2004336', u'2004342', u'2004348', u'2004354', u'2004360', u'2004366', u'2004372', u'2004378', u'2004384', u'2004390', u'2004402', u'2004403', u'2004404', u'2004405', u'2004406', u'2004407', u'2004408', u'2004414', u'2004420', u'2004426', u'2004432', u'2004438', u'2004455', u'2004461', u'2004468', u'2004469', u'2004473', u'2004479', u'2004485', u'2004491', u'2004498', u'2004504', u'2004510', u'2004516', u'2004522', u'2004528', u'2004534', u'2004540', u'2004546', u'2004551', u'2004552', u'2004554', u'2004555', u'2004557', u'2004558', u'2004559', u'2004560', u'2004561', u'2004562', u'2004563', u'2004564', u'2004565', u'2004566', u'2004567', u'2004568', u'2004569', u'2004570', u'2004571', u'2004572', u'2004573', u'2004574', u'2004575', u'2004576', u'2004577', u'2004578', u'2004579', u'2004580', u'2004581', u'2004582', u'2004583', u'2004584', u'2004585', u'2004586', u'2004587', u'2004588', u'2004589', u'2004590', u'2004591', u'2004592', u'2004593', u'2004594', u'2004595', u'2004596', u'2004605', u'2004617', u'2004623', u'2004629', u'2004634', u'2004640', u'2004646', u'2004652', u'2004654', u'2004655', u'2004656', u'2004657', u'2004658', u'2004659', u'2004665', u'2004671', u'2004677', u'2004682', u'2004688', u'2004694', u'2004700', u'2004710', u'2004716', u'2004723', u'2004729', u'2004735', u'2004741', u'2004747', u'2004753', u'2004759', u'2004765', u'2004771', u'2004778', u'2004784', u'2004790', u'2004802', u'2004808', u'2004815', u'2004821', u'2004827', u'2004833', u'2004839', u'2004845', u'2004850', u'2004856', u'2004862', u'2004868', u'2004874', u'2004880', u'2004886', u'2004892', u'2004898', u'2004904', u'2004910', u'2004916', u'2004923', u'2004929', u'2004935', u'2004941', u'2004948', u'2004954', u'2004960', u'2004966', u'2004972', u'2004984', u'2004990', u'2004996', u'2005002', u'2005008', u'2005014', u'2005020', u'2005026', u'2005032', u'2005038', u'2005045', u'2005050', u'2005056', u'2005062', u'2005068', u'2005074', u'2005080', u'2005086', u'2005092', u'2005098', u'2005104', u'2005110', u'2005116', u'2005122', u'2005128', u'2005134', u'2005140', u'2005146', u'2005151', u'2005152', u'2005153', u'2005154', u'2005155', u'2005156', u'2005157', u'2005163', u'2005169', u'2005175', u'2005181', u'2005191', u'2005197', u'2005203', u'2005209', u'2005215', u'2005221', u'2005226', u'2005232', u'2005238', u'2005244', u'2005250', u'2005255', u'2005261', u'2005267', u'2005273', u'2005279', u'2005285', u'2005291', u'2005293', u'2005294', u'2005295', u'2005296', u'2005297', u'2005299', u'2005300', u'2005301', u'2005302', u'2005303', u'2005309', u'2005329', u'2005335', u'2005341', u'2005347', u'2005353', u'2005359', u'2005365', u'2005371', u'2005377', u'2005383', u'2005389', u'2005390', u'2005391', u'2005394', u'2005395', u'2005396', u'2005397', u'2005398', u'2005399', u'2005400', u'2005401', u'2005402', u'2005403', u'2005404', u'2005405', u'2005406', u'2005407', u'2005408', u'2005409', u'2005410', u'2005411', u'2005412', u'2005413', u'2005414', u'2005415', u'2005416', u'2005417', u'2005418', u'2005419', u'2005420', u'2005421', u'2005422', u'2005423', u'2005424', u'2005425', u'2005426', u'2005427', u'2005428', u'2005429', u'2005430', u'2005431', u'2005432', u'2005433', u'2005434', u'2005435', u'2005436', u'2005437', u'2005438', u'2005439', u'2005440', u'2005441', u'2005442', u'2005443', u'2005444', u'2005445', u'2005446', u'2005447', u'2005449', u'2005450', u'2005451', u'2005452', u'2005453', u'2005454', u'2005455', u'2005461', u'2005467', u'2005473', u'2005479', u'2005485', u'2005492', u'2005498', u'2005504', u'2005510', u'2005517', u'2005523', u'2005529', u'2005535', u'2005541', u'2005547', u'2005553', u'2005559', u'2005566', u'2005572', u'2005578', u'2005584', u'2005590', u'2005596', u'2005602', u'2005608', u'2005614', u'2005620', u'2005626', u'2005632', u'2005638', u'2005644', u'2005650', u'2005656', u'2005657', u'2005658', u'2005659', u'2005660', u'2005661', u'2005662', u'2005668', u'2005674', u'2005680', u'2005686', u'2005692', u'2005698', u'2005704', u'2005710', u'2005716', u'2005722', u'2005728', u'2005734', u'2005741', u'2005747', u'2005753', u'2005759', u'2005765', u'2005771', u'2005777', u'2005783', u'2005789', u'2005795', u'2005801', u'2005810', u'2005816', u'2005822', u'2005828', u'2005834', u'2005840', u'2005846', u'2005852', u'2005858', u'2005864', u'2005865', u'2005866', u'2005867', u'2005868', u'2005869', u'2005870', u'2005876', u'2005882', u'2005888', u'2005894', u'2005900', u'2005906', u'2005912', u'2005918', u'2005924', u'2005930', u'2005936', u'2005942', u'2005948', u'2005954', u'2005960', u'2005966', u'2005978', u'2005984', u'2005990', u'2005996', u'2006002', u'2006008', u'2006014', u'2006020', u'2006026', u'2006032', u'2006038', u'2006044', u'2006050', u'2006056', u'2006062', u'2006068', u'2006074', u'2006080', u'2006086', u'2006092', u'2006098', u'2006104', u'2006110', u'2006116', u'2006122', u'2006128', u'2006134', u'2006140', u'2006146', u'2006152', u'2006158', u'2006164', u'2006170', u'2006176', u'2006182', u'2006188', u'2006194', u'2006200', u'2006206', u'2006212', u'2006218', u'2006224', u'2006230', u'2006236', u'2006242', u'2006248', u'2006254', u'2006260', u'2006266', u'2006272', u'2006278', u'2006284', u'2006290', u'2006296', u'2006302', u'2006308', u'2006314', u'2006320', u'2006326', u'2006332', u'2006338', u'2006344', u'2006350', u'2006356', u'2006454', u'2006460', u'2006466', u'2006472', u'2006478', u'2006485', u'2006491', u'2006497', u'2006503', u'2006509', u'2006515', u'2006521', u'2006527', u'2006533', u'2006539', u'2006545', u'2006552', u'2006559', u'2006566', u'2006572', u'2006578', u'2006584', u'2006590', u'2006596', u'2006602', u'2006608', u'2006614', u'2006620', u'2006626', u'2006632', u'2006638', u'2006644', u'2006650', u'2006656', u'2006662', u'2006668', u'2006674', u'2006680', u'2006686', u'2006692', u'2006699', u'2006705', u'2006711', u'2006717', u'2006735', u'2006741', u'2006747', u'2006753', u'2006759', u'2006765', u'2006771', u'2006777', u'2006788', u'2006794', u'2006800', u'2006806', u'2006812', u'2006818', u'2006824', u'2006830', u'2006836', u'2006842', u'2006848', u'2006854', u'2006860', u'2006867', u'2006873', u'2006879', u'2006885', u'2006891', u'2006897', u'2006903', u'2006909', u'2006926', u'2006932', u'2006938', u'2006944', u'2006950', u'2006956', u'2006962', u'2006968', u'2006980', u'2006986', u'2006992', u'2006998', u'2007005', u'2007011', u'2007017', u'2007023', u'2007035', u'2007041', u'2007047', u'2007049', u'2007053', u'2007065', u'2007075', u'2007081', u'2007087', u'2007093', u'2007099', u'2007105', u'2007111', u'2007117', u'2007123', u'2007129', u'2007135', u'2007141', u'2007181', u'2007187', u'2007193', u'2007199', u'2007204', u'2007210', u'2007216', u'2007222', u'2007228', u'2007234', u'2007240', u'2007246', u'2007252', u'2007258', u'2007264', u'2007270', u'2007276', u'2007282', u'2007293', u'2007299', u'2007305', u'2007311', u'2007317', u'2007323', u'2007329', u'2007335', u'2007341', u'2007349', u'2007355', u'2007361', u'2007367', u'2007373', u'2007379', u'2007385', u'2007391', u'2007397', u'2007403', u'2007409', u'2007415', u'2007421', u'2007427', u'2007433', u'2007439', u'2007445', u'2007451', u'2007457', u'2007463', u'2007469', u'2007475', u'2007481', u'2007486', u'2007492', u'2007498', u'2007515', u'2007521', u'2007527', u'2007533', u'2007539', u'2007545', u'2007551', u'2007557', u'2007563', u'2007565', u'2007892', u'2007897', u'2008651', u'2008652', u'2008685', u'2008687', u'2008725', u'2008822', u'2008826', u'2008832', u'2008833', u'2008849', u'2008850', u'2008851', u'2008852', u'2008853', u'2008854', u'2008855', u'2008856', u'2008857', u'2008858', u'2008871', u'2008878', u'2008879', u'2008880', u'2008881', u'2008882', u'2008897', u'2008898', u'2008899', u'2008900', u'2008901', u'2008902', u'2008903', u'2008904', u'2008922', u'2008923', u'2008937', u'2008938', u'2008961', u'2008962', u'2008966', u'2008967', u'2008968', u'2008969', u'2008970', u'2008992', u'2008996', u'2009010', u'2009018', u'2009051', u'2009053', u'2009059', u'2009060', u'2009061', u'2009062', u'2009070', u'2009071', u'2009073', u'2009074', u'2009085', u'2009087', u'2009089', u'2009101', u'2009123', u'2009141', u'2009142', u'2009144', u'2009145', u'2009163', u'2009164', u'2009165', u'2009166', u'2009167', u'2009168', u'2009169', u'2009179', u'2009180', u'2009181', u'2009182', u'2009188', u'2009190', u'2009191', u'2009194', u'2009195', u'2009196', u'2009224', u'2009225', u'2009229', u'2009230', u'2009231', u'2009306', u'2009308', u'2009310', u'2009312', u'2009316', u'2009317', u'2009318', u'2009320', u'2009321', u'2009324', u'2009325', u'2009326', u'2009327', u'2009329', u'2009330', u'2009331', u'2009332', u'2009333', u'2009364', u'2009369', u'2009370', u'2009371', u'2009372', u'2009377', u'2009378', u'2009379', u'2009380', u'2009381', u'2009382', u'2009383', u'2009384', u'2009386', u'2009390', u'2009391', u'2009393', u'2009395', u'2009396', u'2009397', u'2009398', u'2009415', u'2009416', u'2009417', u'2009418', u'2009420', u'2009421', u'2009422', u'2009423', u'2009427', u'2009428', u'2009429', u'2009430', u'2009431', u'2009432', u'2009435', u'2009436', u'2009437', u'2009459', u'2009460', u'2009461', u'2009462', u'2009463', u'2009464', u'2009466', u'2009467', u'2009468', u'2009502', u'2009503', u'2009504', u'2009505', u'2009506', u'2009507', u'2009508', u'2009509', u'2009590', u'2009591', u'2009592', u'2009593', u'2009647', u'2009652', u'2009653', u'2009654', u'2009655', u'2009659', u'2009660', u'2009661', u'2009663', u'2009671', u'2009672', u'2009673', u'2009690', u'2009691', u'2009717', u'2009719', u'2009720', u'2009723', u'2009724', u'2009726', u'2009728', u'2009729', u'2009733', u'2009743', u'2009745', u'2009746', u'2009754', u'2009755', u'2009756', u'2009757', u'2009758', u'2009759', u'2009760', u'2009761', u'2009764', u'2009788', u'2009789', u'2009790', u'2009793', u'2009835', u'2009836', u'2009838', u'2009839', u'2009840', u'2009841', u'2009842', u'2009843', u'2009844', u'2009845', u'2009846', u'2009848', u'2009870', u'2009871', u'2009872', u'2009873', u'2009874', u'2009875', u'2009876', u'2009877', u'2009881', u'2009888', u'2009889', u'2009890', u'2009891', u'2009898', u'2009903', u'2009905', u'2009914', u'2009915', u'2009916', u'2009917', u'2009919', u'2009920', u'2009921', u'2009922', u'2009924', u'2009926', u'2009927', u'2009928', u'2009938', u'2009939', u'2009940', u'2009941', u'2009942', u'2009943', u'2009944', u'2009945', u'2009946', u'2009947', u'2009956', u'2009957', u'2009958', u'2009959', u'2009960', u'2009961', u'2009962', u'2009963', u'2009964', u'2009965', u'2009979', u'2009990', u'2010014', u'2010015', u'2010016', u'2010017', u'2010018', u'2010023', u'2010024', u'2010025', u'2010027', u'2010031', u'2010040', u'2010041', u'2010042', u'2010043', u'2010044', u'2010045', u'2010046', u'2010047', u'2010048', u'2010073', u'2010078', u'2010080', u'2010082', u'2010092', u'2010093', u'2010094', u'2010095', u'2010096', u'2010097', u'2010099', u'2010124', u'2010125', u'2010126', u'2010127', u'2010135', u'2010145', u'2010146', u'2010147', u'2010167', u'2010168', u'2010169', u'2010170', u'2010171', u'2010172', u'2010173', u'2010174', u'2010175', u'2010176', u'2010177', u'2010178', u'2010179', u'2010180', u'2010181', u'2010182', u'2010183', u'2010184', u'2010189', u'2010191', u'2010192', u'2010193', u'2010197', u'2010198', u'2010200', u'2010223', u'2010252', u'2010255', u'2010260', u'2010275', u'2010276', u'2010349', u'2010350', u'2010352', u'2010353', u'2010354', u'2010355', u'2010359', u'2010360', u'2010361', u'2010362', u'2010466', u'2010473', u'2010475', u'2010476', u'2010477', u'2010478', u'2010479', u'2010480', u'2010484', u'2010485', u'2010555', u'2010556', u'2010557', u'2010558', u'2010559', u'2010564', u'2010619', u'2010620', u'2010631', u'2010636', u'2010637', u'2010638', u'2010639', u'2010640', u'2010656', u'2010660', u'2010661', u'2010707', u'2010708', u'2010709', u'2010710', u'2010711', u'2010712', u'2010713', u'2010714', u'2010728', u'2010750', u'2010751', u'2010752', u'2010753', u'2010754', u'2010770', u'2010771', u'2010772', u'2010773', u'2010774', u'2010775', u'2010776', u'2010777', u'2010780', u'2010800', u'2010801', u'2010802', u'2010803', u'2010804', u'2010805', u'2010806', u'2010807', u'2010808', u'2010809', u'2010833', u'2010842', u'2010843', u'2010844', u'2010845', u'2010846', u'2010847', u'2010848', u'2010853', u'2010854', u'2010855', u'2010856', u'2010857', u'2010862', u'2010865', u'2010922', u'2010923', u'2010924', u'2010925', u'2010926', u'2010927', u'2010928', u'2010942', u'2010947', u'2010948', u'2010949', u'2010950', u'2010951', u'2010979', u'2010980', u'2010981', u'2010982', u'2010983', u'2010984', u'2010985', u'2010989', u'2010990', u'2010991', u'2010992', u'2010993', u'2010994', u'2010996', u'2011000', u'2011001', u'2011002', u'2011003', u'2011004', u'2011005', u'2011006', u'2011017', u'2011018', u'2011022', u'2011023', u'2011024', u'2011025', u'2011026', u'2011044', u'2011045', u'2011046', u'2011047', u'2011051', u'2011052', u'2011054', u'2011061', u'2011062', u'2011063', u'2011065', u'2011067', u'2011071', u'2011077', u'2011078', u'2011079', u'2011080', u'2011081', u'2011082', u'2011083', u'2011095', u'2011096', u'2011097', u'2011098', u'2011099', u'2011100', u'2011107', u'2011114', u'2011115', u'2011116', u'2011117', u'2011131', u'2011132', u'2011137', u'2011140', u'2011152', u'2011153', u'2011154', u'2011159', u'2011161', u'2011164', u'2011165', u'2011167', u'2011172', u'2011190', u'2011191', u'2011192', u'2011193', u'2011194', u'2011195', u'2011209', u'2011214', u'2011219', u'2011254', u'2011255', u'2011256', u'2011257', u'2011258', u'2011259', u'2011266', u'2011268', u'2011274', u'2011377', u'2011382', u'2011383', u'2011384', u'2011385', u'2011423', u'2011450', u'2011451', u'2011452', u'2011453', u'2011454', u'2011552', u'2011553', u'2011554', u'2011557', u'2011558', u'2011559', u'2011560', u'2011561', u'2011562', u'2011563', u'2011564', u'2011565', u'2011566', u'2011571', u'2011572', u'2011573', u'2011574', u'2011676', u'2011725', u'2011730', u'2011731', u'2011828', u'2011829', u'2011830', u'2011831', u'2011835', u'2011837', u'2011841', u'2011843', u'2011844', u'2011845', u'2011846', u'2011847', u'2011852', u'2011853', u'2011879', u'2011880', u'2011881', u'2011882', u'2011883', u'2011884', u'2011927', u'2011928', u'2011929', u'2011934', u'2011935', u'2011936', u'2011941', u'2011942', u'2011947', u'2011948', u'2011949', u'2011950', u'2012005', u'2012006', u'2012007', u'2012008', u'2012009', u'2012010', u'2012011', u'2012012', u'2012013', u'2012014', u'2012015', u'2012020', u'2012022', u'2012023', u'2012024', u'2012025', u'2012030', u'2012031', u'2012032', u'2012033', u'2012038', u'2012040', u'2012069', u'2012070', u'2012071', u'2012072', u'2012099', u'2012122', u'2012123', u'2012124', u'2012125', u'2012126', u'2012127', u'2012128', u'2012129', u'2012130', u'2012131', u'2012163', u'2012164', u'2012165', u'2012166', u'2012168', u'2012181', u'2012182', u'2012184', u'2012185', u'2012186', u'2012187', u'2012190', u'2012191', u'2012215', u'2012216', u'2012217', u'2012220', u'2012334', u'2012336', u'2012337', u'2012342', u'2012343', u'2012344', u'2012345', u'2012350', u'2012351', u'2012353', u'2012354', u'2012355', u'2012356', u'2012357', u'2012363', u'2012368', u'2012369', u'2012370', u'2012371', u'2012373', u'2012378', u'2012380', u'2012394', u'2012395', u'2012407', u'2012408', u'2012411', u'2012412', u'2012413', u'2012414', u'2012415', u'2012416', u'2012417', u'2012418', u'2012419', u'2012425', u'2012426', u'2012427', u'2012428', u'2012429', u'2012430', u'2012431', u'2012432', u'2012433', u'2012434', u'2012435', u'2012436', u'2012437', u'2012473', u'2012474', u'2012475', u'2012476', u'2012477', u'2012478', u'2012479', u'2012480', u'2012481', u'2012482', u'2012483', u'2012484', u'2012490', u'2012496', u'2012497', u'2012560', u'2012561', u'2012562', u'2012563', u'2012564', u'2012565', u'2012570', u'2012571', u'2012572', u'2012573', u'2012574', u'2012580', u'2012581', u'2012582', u'2012583', u'2012584', u'2012600', u'2012601', u'2012603', u'2012604', u'2012605', u'2012655', u'2012656', u'2012657', u'2012658', u'2012659', u'2012666', u'2012667', u'2012668', u'2012669', u'2012670', u'2012677', u'2012678', u'2012679', u'2012680', u'2012681', u'2012697', u'2012702', u'2012703', u'2012704', u'2012705', u'2012706', u'2012719', u'2012721', u'2012722', u'2012724', u'2012743', u'2012749', u'2012750', u'2012792', u'2012794', u'2012795', u'2012797', u'2012829', u'2012830', u'2012831', u'2012832', u'2012833', u'2012837', u'2012876', u'2012877', u'2012878', u'2012879', u'2012880', u'2012881', u'2012945', u'2012946', u'2012947', u'2012948', u'2012949', u'2012950', u'2012951', u'2012952', u'2012953', u'2012954', u'2012991', u'2012992', u'2012994', u'2012995', u'2013084', u'2013085', u'2013086', u'2013087', u'2013088', u'2013089', u'2013099', u'2013100', u'2013101', u'2013102', u'2013103', u'2013104', u'2013105', u'2013106', u'2013107', u'2013108', u'2013109', u'2013110', u'2013111', u'2013112', u'2013117', u'2013118', u'2013129', u'2013133', u'2013134', u'2013155', u'2013156', u'2013157', u'2013158', u'2013159', u'2013226', u'2013231', u'2013308', u'2013309', u'2013310', u'2013425', u'2013426', u'2013427', u'2013433', u'2013434', u'2013464', u'2013465', u'2013466', u'2013467', u'2013468', u'2013469', u'2013470', u'2013471', u'100000356', u'100000357', u'100000358', u'100000728', u'100000729', u'100000730', u'100000731', u'100000732', u'100000733', u'100000734', u'100000735', u'100000736', u'100000737', u'100000738', u'100000739', u'100000740', u'100000741', u'100000742', u'100000908']
+[2017-09-26 11:38:39] [INFO] get_virtual_patch_conf siteid:195
+[2017-09-26 11:38:39] [INFO] host :www.lyx.com
+[2017-09-26 11:38:39] [INFO] host :172.16.2.105
+[2017-09-26 11:38:41] [INFO] bdwaf kill
+[2017-09-26 11:38:45] [INFO] bdwaf start
+[2017-09-26 11:38:45] [INFO] bdinit end.
+[2017-10-10 09:00:36] [INFO] ConfigAllNic Start
+[2017-10-10 09:00:36] [INFO] ConfigAllNic End
+[2017-10-10 09:00:36] [INFO] ConfigAllBridge Start
+[2017-10-10 09:00:37] [INFO] ConfigAllBridge End
+[2017-10-10 09:00:37] [INFO] ConfigAllRoute Start
+[2017-10-10 09:00:37] [INFO] ConfigAllRoute End
+[2017-10-10 09:00:39] [INFO] bdwaf start succeed
+[2017-10-10 09:00:39] [INFO] get_virtual_patch_conf siteid:194
+[2017-10-10 09:00:39] [INFO] get_virtual_patch_conf siteid:195
+[2017-10-10 09:00:39] [INFO] get_virtual_patch_conf siteid:196
+[2017-10-10 09:00:39] [INFO] host :www.lyx.com
+[2017-10-10 09:00:39] [INFO] host :172.16.2.105
+[2017-10-10 09:00:41] [INFO] bdwaf kill
+[2017-10-10 09:00:45] [INFO] bdwaf start succeed
+[2017-10-10 09:00:46] [INFO] bdinit end.
+[2017-10-10 11:23:16] [INFO] ConfigAllNic Start
+[2017-10-10 11:23:16] [INFO] ConfigAllNic End
+[2017-10-10 11:23:16] [INFO] ConfigAllBridge Start
+[2017-10-10 11:23:16] [INFO] ConfigAllBridge End
+[2017-10-10 11:23:16] [INFO] ConfigAllRoute Start
+[2017-10-10 11:23:16] [INFO] ConfigAllRoute End
+[2017-10-10 11:23:18] [INFO] bdwaf start succeed
+[2017-10-10 11:23:19] [INFO] get_virtual_patch_conf siteid:194
+[2017-10-10 11:23:19] [INFO] get_virtual_patch_conf siteid:195
+[2017-10-10 11:23:19] [INFO] get_virtual_patch_conf siteid:196
+[2017-10-10 11:23:19] [INFO] host :www.lyx.com
+[2017-10-10 11:23:19] [INFO] host :172.16.2.105
+[2017-10-10 11:23:21] [INFO] bdwaf kill
+[2017-10-10 11:23:25] [INFO] bdwaf start succeed
+[2017-10-10 11:23:26] [INFO] bdinit end.

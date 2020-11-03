@@ -1,0 +1,35 @@
+status:200
+content-length:1147
+content-location:https://www.baidu.com/home.html
+set-cookie:BAIDUID=93BE47940560555D0CB3C9626C8B4B9B:FG=1; expires=Sat, 15-Oct-16 03:12:08 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1, __bsi=2443050210933391889_00_0_I_R_1_0303_C02F_N_I_I_0; expires=Fri, 16-Oct-15 03:12:13 GMT; domain=www.baidu.com; path=/
+accept-ranges:bytes
+expires:Sat, 17 Oct 2015 03:12:08 GMT
+vary:Accept-Encoding,User-Agent
+server:bfe/1.0.8.5
+last-modified:Thu, 12 Mar 2015 07:58:59 GMT
+connection:keep-alive
+etag:"47b-51112c19e16c0"
+cache-control:max-age=86400
+date:Fri, 16 Oct 2015 03:12:08 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM "
+content-type:text/html
+####################
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>关于百度</title>
+        <META http-equiv=Expires content=0>
+        <META http-equiv=Cache-Control content=no-cache>
+        <META http-equiv=Pragma content=no-cache>
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+        <meta http-equiv="refresh" content="0;URL=http://home.baidu.com/">
+        <script type='text/javascript'>
+            (function () {var scriptSrc;if (window.location.protocol==='https:') {scriptSrc='<script language16\'javascrip27\' src33\'http://utk.baidu.com/usv/uc.sv?pe=5LMNQsRYqeji9PJsEv0r76TxdWMHj5qa1M0x4fkXebbkqQ1QxAGpruLi8mAS-A==&sn=9895&an=542586&rn=39157\'><\/script>'} else {scriptSrc='<script language16\'javascrip27\' src33\'http://utk.baidu.com/usv/uc.sv?pe=5LMNQsRYqeji9PJsEv0r76TxdWMHj5qa1M0x4fkXebbkqQ1QxAGpruLi8mAS-A==&sn=9895&an=542586&rn=39157\'><\/script>'};document.write(scriptSrc);})()
+        </script>
+    </head>
+    
+    <body></body>
+
+</html>

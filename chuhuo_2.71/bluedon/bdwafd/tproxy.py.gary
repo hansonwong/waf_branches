@@ -1,0 +1,148 @@
+import os, sys, MySQLdb
+from config import config
+import heapq
+
+filterfile = 'rp_filter'
+filterdir  = '/proc/sys/net/ipv4/conf'
+bridgedir  = '/proc/sys/net/bridge'
+tport      = '3129'
+wafmod     = ''
+ports      = ()
+innics     = []
+outnics    = []
+
+def getbridge():
+    global wafmod
+    global bridgedata
+    conn = MySQLdb.connect(**config['db'])
+    cursor = conn.cursor()
+
+    cursor.execute('select `deploy` from `t_baseconfig`')
+    for data in cursor.fetchall():
+        wafmod = data[0]
+
+    ret = cursor.execute('select `nics` from `t_bridge`')
+    if(ret == 0):
+        return 0
+    else:
+        for data in cursor.fetchall():
+            # buff = data[0].split(",")
+            # innics.append(buff[0])
+            # for name in buff[1:]:
+            #     if name[0] == 'e':
+            #         outnics.append(name)
+            if len(data[0])>2:
+               buff = data[0].split(",")
+               nic_small = heapq.nsmallest(1,buff)
+               innics.append(nic_small[0])
+               buff.remove(nic_small[0])
+               for nic_big in buff:
+                   outnics.append(nic_big) 
+
+               """for i in range(len(buff)):
+                   com2=buff[i].split('.')[-1]
+                   com1=buff[i].split('.')[0][-1]
+                   for j in range(len(buff)):
+                     if buff[j]!=buff[i]:
+                       if buff[j].split('.')[-1]==com2:
+                          print "i:",buff[i]
+                          if int(buff[j].split('.')[0][-1])>int(com1):
+                             outnics.append(buff[j])
+                          #else:
+                          #   innics.append(buff[i])
+
+               for i in range(len(buff)):
+                   if buff[i] not in ''.join(outnics):
+                      innics.append(buff[i])"""
+    print innics
+    print outnics
+    cursor.close()
+    conn.close()
+
+def delbridge():
+    # Remove the routing strategies
+    os.system('ip rule del fwmark 1 lookup 100 2>/dev/null')
+    os.system('ip -f inet route del local 0.0.0.0/0 dev lo table 100 2>/dev/null')
+
+    # Remove bridge proxy
+    for name in os.listdir(bridgedir):
+        cmdstr = 'echo 1 > %s/%s' % (bridgedir, name)
+        os.system(cmdstr)
+
+    # remove route proxy
+    # forward setting
+    for name in os.listdir(filterdir):
+        cmdstr = 'echo 1 > %s/%s/%s' % (filterdir, name, filterfile)
+        os.system(cmdstr)
+
+def get_ports():
+    length = len(ports)
+    result_list = []
+    pages = length/15
+    if length%15 != 0:
+        pages += 1
+    for i in range(pages):
+        result_list.append(ports[i*15:(i+1)*15])
+    return result_list
+
+def addbridge():
+    # add bridge proxy
+    for name in os.listdir(bridgedir):
+        cmdstr = 'echo 0 > %s/%s' % (bridgedir, name)
+        os.system(cmdstr)
+
+    # add the routing strategies
+    os.system('ip rule add fwmark 1 lookup 100 2>/dev/null')
+    os.system('ip -f inet route add local 0.0.0.0/0 dev lo table 100 2>/dev/null')
+    # enable route forward
+    os.system('echo 1 > /proc/sys/net/ipv4/ip_forward')
+
+    # Remove rever route
+    for name in os.listdir(filterdir):
+        cmdstr = 'echo 0 > %s/%s/%s' % (filterdir, name, filterfile)
+        os.system(cmdstr)
+
+    #add ebtables, iptables
+    os.system('ebtables -t broute -A BROUTING -p IPv4 -j redirect --redirect-target DROP')
+    os.system('iptables -t mangle -N DUPORT')
+    os.system('iptables -t mangle -N DIVERT')
+    os.system('iptables -t mangle -A DIVERT -j MARK --set-mark 1')
+    os.system('iptables -t mangle -A DIVERT -j ACCEPT')
+    
+    ports_data = get_ports()    
+
+    for innic in innics:
+        for tmp_ports in ports_data:
+            cmdstr = 'iptables -t mangle -A PREROUTING -i ' + innic + ' -p tcp -m multiport --dport ' + ','.join(tmp_ports) + ' -j DUPORT'
+            os.system(cmdstr)
+
+    for outnic in outnics:
+        for tmp_ports in ports_data:
+            cmdstr = 'iptables -t mangle -A PREROUTING -i ' + outnic + ' -p tcp -m multiport --sport ' + ','.join(tmp_ports) + ' -j DUPORT'
+            os.system(cmdstr)
+
+    cmdstr1 = 'iptables -t mangle -A DUPORT -p tcp -m socket -j DIVERT'
+    cmdstr2 = 'iptables -t mangle -A DUPORT -p tcp -j TPROXY --tproxy-mark 0x1/0x1 --on-port ' + tport
+    os.system(cmdstr1)
+    os.system(cmdstr2)
+
+
+if __name__ == '__main__':
+    #init mangle and broute
+    os.system('ebtables -t broute -F')
+    os.system('ebtables -t broute -X')
+    os.system('iptables -t mangle -F')
+    os.system('iptables -t mangle -X')
+
+    argvlen = len(sys.argv)
+    if(argvlen > 1 and sys.argv[1] == 'del'):
+        delbridge()
+    elif(argvlen > 1 and sys.argv[1] == 'add'):
+        getbridge()
+        if wafmod == 'bridge':
+            ports = sys.argv[2:]
+            if "443" in ports:
+               ports.remove('443')
+            if len(ports):
+                addbridge()
+

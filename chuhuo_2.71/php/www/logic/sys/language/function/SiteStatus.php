@@ -1,0 +1,21 @@
+<?php
+return [
+    'monitoringTarget' => '监控目标',
+    'monitoringFrequency' => '监控频率',
+    'theRecentExecutionTime' => '最近执行时间',
+    'responseTime' => '响应时间',
+    'noData' => '无数据',
+    'systemError' => '系统错误',
+    'normal' => '正常',
+    'hour' => '小时',
+    'minute' => '分钟',
+    'viewReport' => '查看报告',
+    'config' => '配置',
+    'fillInTheRealAndValidMonitoringAddress' => '请填写真实有效的监控地址,否则无法进行扫描',
+    'timingMonitoringFrequency' => '定时监控频率',
+    'timeFrame' => '时间范围',
+    'responseTimeDistribution' => '响应时间分布',
+    'responseTime(MS)' => '响应时间(毫秒)',
+    'monitoringTargetUrlState' => '监控目标URL状态',
+    'above' => '以上',
+];

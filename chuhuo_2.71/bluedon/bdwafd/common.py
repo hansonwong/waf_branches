@@ -1,0 +1,233 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import logging
+import os
+import MySQLdb
+import commands
+from db import session_scope,conn_scope,get_config
+from config import config
+from logging import handlers
+
+
+# return how many bytes of input
+hm = lambda x: int(x[:-1]) * pow(1024, ['B', 'K', 'M', 'G'].index(x[-1]))
+
+MAX = hm('500M')
+
+
+def logger_init(name, filepath, level=logging.DEBUG):
+    logger = logging.getLogger(name)
+    logger.setLevel(level)
+    ch = handlers.RotatingFileHandler(filepath, maxBytes=MAX, backupCount=1)
+    # ch = logging.FileHandler(filepath)
+    formatter = logging.Formatter('[%(asctime)s] [%(levelname)s] %(message)s',
+                                  datefmt='%Y-%m-%d %H:%M:%S')
+    ch.setFormatter(formatter)
+    logger.addHandler(ch)
+    return logger
+
+
+def tail(filepath, n=1000):
+    stdin, stdout = os.popen2('tail -n %s %s' % (n, filepath))
+    stdin.close()
+    lines = stdout.readlines()
+    stdout.close()
+    return lines
+
+
+def drop_ip_ctrl(ip, action):
+    rulestr = 'iptables -D BLACK_WHITE -s %s -p tcp -m multiport --dports 22,444 -j %s'
+    if ip.find("-") != -1:
+        rulestr = 'iptables -D BLACK_WHITE -m iprange --src-range %s -p tcp -m multiport --dports 22,444 -j %s'
+    os.system(rulestr % (ip, action))
+
+
+def drop_all_ip_ctrl():
+    os.popen("iptables -D BLACK_WHITE -p tcp -m multiport --dports 22,444 -j DROP")
+    with conn_scope(**config['db']) as (conn, cursor):
+        cursor = conn.cursor(cursorclass=MySQLdb.cursors.DictCursor)
+        cursor.execute("select * from waf.t_blackandwhite")
+        iplist = cursor.fetchall()
+        for ip in iplist:
+            action = "DROP"
+            ips = ip["ips"]
+            if ip["type"] == "white":
+                action = "ACCEPT"
+            drop_ip_ctrl(ips, action)
+
+
+def insert_ip_ctrl(ip, action):
+    rulestr = 'iptables -I BLACK_WHITE -s %s -p tcp -m multiport --dports 22,444 -j %s'
+    if ip.find("-") != -1:
+        rulestr = 'iptables -I BLACK_WHITE -m iprange --src-range %s -p tcp -m multiport --dports 22,444 -j %s'
+    os.system(rulestr % (ip, action))
+
+
+def blackandwhite(data=[]):
+    length = len(data)
+    bid = length >= 1 and data[0] or None
+    tag = length >= 2 and data[1] or 'I'
+    updata = length >= 3 and data[2] or None
+    with conn_scope(**config['db']) as (conn, cursor):
+        cursor = conn.cursor(cursorclass=MySQLdb.cursors.DictCursor)
+        result = get_config("BaseConfig")
+        if not bid:
+            os.system('iptables -F BLACK_WHITE')
+            # drop_all_ip_ctrl()
+            cursor.execute("select * from waf.t_blackandwhite where type='%s'" % result['blackAndWhite'])
+            ipdatalist = cursor.fetchall()
+            if ipdatalist:
+                if result['blackAndWhite'] == 'white':
+                    os.popen("iptables -I BLACK_WHITE -p tcp -m multiport --dports 22,444 -j DROP")
+                elif result['blackAndWhite'] == 'black':
+                    os.popen("iptables -I BLACK_WHITE -p tcp -m multiport --dports 22,444 -j ACCEPT")
+
+            for ipdata in ipdatalist:
+                if not ipdata:
+                    continue
+                action = ipdata["type"] == "white" and "ACCEPT" or "DROP"
+                insert_ip_ctrl(ipdata["ips"], action)
+        else:
+            cursor.execute(
+                "select * from waf.t_blackandwhite where id=%d" % int(bid))
+            ipdata = cursor.fetchone()
+            action = ipdata["type"] == "white" and "ACCEPT" or "DROP"
+            if tag == "D":
+                drop_ip_ctrl(ipdata["ips"], action)
+            if tag == "I" and ipdata["type"] == result['blackAndWhite']:
+                insert_ip_ctrl(ipdata["ips"], action)
+            if tag == "U":
+                updata = updata.split(",")
+                previousaction = updata[0] == "white" and "ACCEPT" or "DROP"
+                drop_ip_ctrl(updata[1], previousaction)
+                if ipdata["type"] == result['blackAndWhite']:
+                    insert_ip_ctrl(ipdata["ips"], action)
+
+
+def isexist_iptables_rule(table, chain, keys):
+    '''
+    规则是否存在
+    '''
+    grep_str = '|'.join(map(lambda x: 'grep %s' % x, keys))
+    cmd = "iptables -t %s -nvL %s --line-numbers|%s" % (table, chain, grep_str)
+    return True if commands.getoutput(cmd).split() else False
+
+
+def del_iptables_rule(table, chain, keys):
+    '''
+    删除iptables规则
+    '''
+    grep_str = '|'.join(map(lambda x: 'grep %s' % x, keys))
+    cmd = "iptables -t %s -nvL %s --line-numbers|%s|awk '{print $1}'" % (table, chain, grep_str)
+    output = commands.getoutput(cmd).split()
+    for i in range(len(output)-1, -1, -1):
+        print output[i], keys
+        os.system('iptables -t %s -D %s %s' % (table, chain, output[i].strip())) 
+
+
+def del_iptables_chain(table, chain, delete=True):
+    '''
+    删除iptable链
+    '''
+    if commands.getoutput('iptables -t %s -nvL|grep %s' % (table, chain)).strip():
+        os.system('iptables -t %s -F %s' % (table, chain))
+        if delete:
+            print os.system('iptables -t %s -X %s' % (table, chain))
+
+
+def insert_iptables_rule(table, chain, insert_rule, has_rule_keys, index='after'):
+    '''
+    在iptables某条规则前后插入规则(index = before/after)
+    '''
+    grep_str = '|'.join(map(lambda x: 'grep "%s"' % x, has_rule_keys))
+    cmd = "iptables -t %s -nvL %s --line-numbers|%s|awk '{print $1}'" % (table, chain, grep_str)
+    output = commands.getoutput(cmd).split()
+    if output:
+        if index == 'after':
+            insert_index = int(output[0]) + 1
+        elif index == 'before':
+            insert_index = output[0]
+    else:
+        insert_index = ''
+    os.system('iptables -t %s -I %s %s %s' % (table, chain, insert_index, insert_rule))
+
+
+def init_iptables_bridge(baseconfig, reboot=False):
+    ports = filter(lambda x: x.strip(), baseconfig.ports.split('|'))
+    if not os.path.exists('/usr/local/bdwaf_tproxy/conf/licencesforbridge'):
+        os.system('mkdir /usr/local/bdwaf_tproxy/conf/licencesforbridge')
+    if not os.path.exists('/usr/local/bdwaf_tproxy/conf/licencesforbridge/bluedon'):
+        os.system('mkdir /usr/local/bdwaf_tproxy/conf/licencesforbridge/bluedon')
+    os.system('cp /usr/local/bdwaf_tproxy/conf/licences/bluedon/ssl.pem /usr/local/bdwaf_tproxy/conf/licencesforbridge/bluedon/')
+    os.system('cp /usr/local/bdwaf_tproxy/conf/licences/bluedon/ssl.key /usr/local/bdwaf_tproxy/conf/licencesforbridge/bluedon/')
+    os.system('python /usr/local/bluedon/bdwafd/tproxy.py del')
+    command = 'python /usr/local/bluedon/bdwafd/tproxy.py add ' + ' '.join(ports)
+    os.system(command)
+    # if reboot:
+        # os.system('python /usr/local/bluedon/bdwafd/wafddos.py reboot')
+        # os.system('python /usr/local/bluedon/bdwafd/bducarp.py')
+    os.system('python /usr/local/bluedon/bdwafd/weboutlog.py')
+    bypass = get_config("ByPass")
+    if bypass["enable"]:
+        os.system('ebtables -t broute -F')
+    os.system("iptables -t mangle -N DUPORT443")
+    os.system("iptables -t mangle -A DUPORT443 -p tcp -m socket -j DIVERT")
+    os.system(
+        "iptables -t mangle -A DUPORT443 -p tcp -j TPROXY --on-port 3130 --on-ip 0.0.0.0 --tproxy-mark 0x1/0x1")
+    # os.system("iptables -t mangle -A PREROUTING -i eth1 -p tcp -m multiport --dports 443 -j DUPORT443")
+    # os.system("iptables -t mangle -A PREROUTING -i eth2 -p tcp -m multiport --dports 443 -j DUPORT443")
+    # blackandwhite()
+
+
+def init_iptables_reverseproxy(ports, reboot=False):
+    # os.system('python /usr/local/bluedon/bdwafd/tproxy.py del')
+    # if reboot:
+        # os.system('python /usr/local/bluedon/bdwafd/wafddos.py reboot')
+       # os.system('python /usr/local/bluedon/bdwafd/bducarp.py')
+    os.system('python /usr/local/bluedon/bdwafd/weboutlog.py')
+    # blackandwhite()
+
+    # add by vincent
+
+
+def init_iptables_transparentbridge(reboot=False):
+    # os.system('python /usr/local/bluedon/bdwafd/tproxy.py del')
+    # if reboot:
+        # os.system('python /usr/local/bluedon/bdwafd/wafddos.py reboot')
+        # os.system('python /usr/local/bluedon/bdwafd/bducarp.py')
+    os.system('python /usr/local/bluedon/bdwafd/weboutlog.py')
+    os.system('ebtables -t broute -F')
+    # blackandwhite()
+    # end add
+
+
+def init_iptables_nat(reboot=False):
+    os.system('python /usr/local/bluedon/bdwafd/tproxy.py del')
+    if reboot:
+        os.system('python /usr/local/bluedon/bdwafd/wafddos.py reboot')
+        os.system('python /usr/local/bluedon/bdwafd/bducarp.py')
+    os.system('python /usr/local/bluedon/bdwafd/weboutlog.py')
+    os.system('ebtables -t broute -F')
+    os.system("iptables -t nat -N FWSNAT")
+    os.system("iptables  -t nat -A POSTROUTING -j FWSNAT")
+    os.system("iptables -t nat -N FWDNAT")
+    os.system("iptables  -t nat -A PREROUTING -j FWDNAT")
+    blackandwhite()
+
+
+def init_soft_bypass(session):
+    baseconfig = get_config("BaseConfig")
+    securityset = get_config("ByPass")
+    if securityset["enable"]:
+        os.system('ebtables -t broute -F')
+    else:
+        os.system('ebtables -t broute -F')
+        if baseconfig["deploy"] not in ['transparentbridge', 'route']:
+            os.system(
+                'ebtables -t broute -A BROUTING -p IPv4 -j redirect --redirect-target DROP')
+
+
+if __name__ == '__main__':
+    # insert_iptables_rule('filter', 'INPUT', '-j ACCEPT', ('cc',), 'after')
+    print isexist_iptables_rule('filter', 'INPUT', ('BLACK_WHITE',))

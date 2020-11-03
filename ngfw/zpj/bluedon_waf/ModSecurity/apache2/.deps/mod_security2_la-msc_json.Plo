@@ -1,0 +1,6 @@
+mod_security2_la-msc_json.lo: msc_json.c /usr/include/stdc-predef.h \
+ msc_json.h
+
+/usr/include/stdc-predef.h:
+
+msc_json.h:

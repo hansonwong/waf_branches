@@ -1,0 +1,20 @@
+require-mschap-v2
+ms-dns 202.96.128.86
+ms-dns 8.8.8.8
+asyncmap 0
+auth
+crtscts
+lock
+hide-password
+modem
+debug
+name l2tpd
+proxyarp
+lcp-echo-interval 30
+lcp-echo-failure 4
+defaultroute
+idle 1800
+mtu 1200
+mru 1200
+noccp
+connect-delay 5000

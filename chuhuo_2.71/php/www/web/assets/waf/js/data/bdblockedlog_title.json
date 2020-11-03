@@ -1,0 +1,9 @@
+[
+    {"sTitle":"攻击时间","data":"time"},
+    {"sTitle":"源IP地址","data":"yuanip"},
+    {"sTitle":"目标主机","data":"zhuji"},
+    {"sTitle":"阻断持续时间(单位：秒)","data":"zdtime"},    
+    {"sClass":"btn_edit","bVisible":false,"data":""},
+    {"sClass":"btn_view","bVisible":false,"data":""},
+    {"sClass":"btn_del","bVisible":false,"data":""}
+]

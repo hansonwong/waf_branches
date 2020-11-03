@@ -1,0 +1,16 @@
+[Unit]
+Description=The BDFW Log Daemon
+After=network.target mysqld.service
+Wants=dpdk.service
+Requires=mysqld.service
+
+[Service]
+Type=forking
+PIDFile=/var/run/mysql_log_daemon.pid
+ExecStart=/usr/bin/python /usr/local/bluedon/reportlog/mysql_log_daemon.py -s start
+# ExecStop=/usr/bin/python /usr/local/bluedon/reportlog/mysql_log_daemon.py -s stop
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

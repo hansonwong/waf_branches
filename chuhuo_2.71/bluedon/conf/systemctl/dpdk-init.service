@@ -1,0 +1,12 @@
+[Unit]
+Description=Firewall dpdk init
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+ExecStart=/usr/bin/sh /home/ng_platform/sh/dpdk_init.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+if you install bdpi firstly,you should do next steps;
+
+1.install key
+  [root@localhost bdpi]#cp -f ./pem /etc/
+
+2.install bdpi lib
+  [root@localhost bdpi]#cp ./lib/*  /lib/
+  [root@localhost bdpi]#ldconfig
+

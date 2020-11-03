@@ -1,0 +1,365 @@
+# -- Rule engine initialization ----------------------------------------------
+
+# Enable ModSecurity, attaching it to every transaction. Use detection
+# only to start with, because that minimises the chances of post-installation
+# disruption.
+#
+#SecRuleEngine DetectionOnly
+SecRuleEngine {{wafengine}}
+
+# -- Request body handling ---------------------------------------------------
+
+# Allow ModSecurity to access request bodies. If you don't, ModSecurity
+# won't be able to see any POST parameters, which opens a large security
+# hole for attackers to exploit.
+#
+SecRequestBodyAccess On
+
+
+# Enable XML request body parser.
+# Initiate XML Processor in case of xml content-type
+#
+SecRule REQUEST_HEADERS:Content-Type "text/xml" \
+     "id:'200000',phase:1,t:none,t:lowercase,pass,nolog,ctl:requestBodyProcessor=XML"
+
+
+# Maximum request body size we will accept for buffering. If you support
+# file uploads then the value given on the first line has to be as large
+# as the largest file you are willing to accept. The second value refers
+# to the size of data, with files excluded. You want to keep that value as
+# low as practical.
+#
+SecRequestBodyLimit 13107200
+SecRequestBodyNoFilesLimit 131072
+
+# Store up to 128 KB of request body data in memory. When the multipart
+# parser reachers this limit, it will start using your hard disk for
+# storage. That is slow, but unavoidable.
+#
+SecRequestBodyInMemoryLimit 131072
+
+# What do do if the request body size is above our configured limit.
+# Keep in mind that this setting will automatically be set to ProcessPartial
+# when SecRuleEngine is set to DetectionOnly mode in order to minimize
+# disruptions when initially deploying ModSecurity.
+#
+SecRequestBodyLimitAction Reject
+
+# Verify that we've correctly processed the request body.
+# As a rule of thumb, when failing to process a request body
+# you should reject the request (when deployed in blocking mode)
+# or log a high-severity alert (when deployed in detection-only mode).
+#
+SecRule REQBODY_ERROR "!@eq 0" \
+"id:'200001', phase:2,t:none,log,deny,status:400,msg:'Failed to parse request body.',logdata:'%{reqbody_error_msg}',severity:2"
+
+# By default be strict with what we accept in the multipart/form-data
+# request body. If the rule below proves to be too strict for your
+# environment consider changing it to detection-only. You are encouraged
+# _not_ to remove it altogether.
+#
+SecRule MULTIPART_STRICT_ERROR "!@eq 0" \
+"id:'200002',phase:2,t:none,log,deny,status:44, \
+msg:'Multipart request body failed strict validation: \
+PE %{REQBODY_PROCESSOR_ERROR}, \
+BQ %{MULTIPART_BOUNDARY_QUOTED}, \
+BW %{MULTIPART_BOUNDARY_WHITESPACE}, \
+DB %{MULTIPART_DATA_BEFORE}, \
+DA %{MULTIPART_DATA_AFTER}, \
+HF %{MULTIPART_HEADER_FOLDING}, \
+LF %{MULTIPART_LF_LINE}, \
+SM %{MULTIPART_MISSING_SEMICOLON}, \
+IQ %{MULTIPART_INVALID_QUOTING}, \
+IP %{MULTIPART_INVALID_PART}, \
+IH %{MULTIPART_INVALID_HEADER_FOLDING}, \
+FL %{MULTIPART_FILE_LIMIT_EXCEEDED}'"
+
+# Did we see anything that might be a boundary?
+#
+SecRule MULTIPART_UNMATCHED_BOUNDARY "!@eq 0" \
+"id:'200003',phase:2,t:none,log,deny,msg:'Multipart parser detected a possible unmatched boundary.'"
+
+# PCRE Tuning
+# We want to avoid a potential RegEx DoS condition
+#
+SecPcreMatchLimit 25000
+SecPcreMatchLimitRecursion 25000
+
+# Some internal errors will set flags in TX and we will need to look for these.
+# All of these are prefixed with "MSC_".  The following flags currently exist:
+#
+# MSC_PCRE_LIMITS_EXCEEDED: PCRE match limits were exceeded.
+#
+SecRule TX:/^MSC_/ "!@streq 0" \
+        "id:'200004',phase:2,t:none,deny,msg:'ModSecurity internal error flagged: %{MATCHED_VAR_NAME}'"
+
+
+# -- Response body handling --------------------------------------------------
+
+# Allow ModSecurity to access response bodies.
+# You should have this directive enabled in order to identify errors
+# and data leakage issues.
+#
+# Do keep in mind that enabling this directive does increases both
+# memory consumption and response latency.
+#
+SecResponseBodyAccess On
+
+# Which response MIME types do you want to inspect? You should adjust the
+# configuration below to catch documents but avoid static files
+# (e.g., images and archives).
+#
+SecResponseBodyMimeType text/plain text/html text/xml
+
+# Buffer response bodies of up to 512 KB in length.
+SecResponseBodyLimit 524288
+
+# What happens when we encounter a response body larger than the configured
+# limit? By default, we process what we have and let the rest through.
+# That's somewhat less secure, but does not break any legitimate pages.
+#
+SecResponseBodyLimitAction ProcessPartial
+
+
+# -- Filesystem configuration ------------------------------------------------
+
+# The location where ModSecurity stores temporary files (for example, when
+# it needs to handle a file upload that is larger than the configured limit).
+#
+# This default setting is chosen due to all systems have /tmp available however,
+# this is less than ideal. It is recommended that you specify a location that's private.
+#
+SecTmpDir /tmp
+
+# The location where ModSecurity will keep its persistent data.  This default setting
+# is chosen due to all systems have /tmp available however, it
+# too should be updated to a place that other users can't access.
+#
+SecDataDir /tmp
+
+
+# -- File uploads handling configuration -------------------------------------
+
+# The location where ModSecurity stores intercepted uploaded files. This
+# location must be private to ModSecurity. You don't want other users on
+# the server to access the files, do you?
+#
+SecUploadDir /usr/local/bdwaf/tmp/
+
+# By default, only keep the files that were determined to be unusual
+# in some way (by an external inspection script). For this to work you
+# will also need at least one file inspection rule.
+#
+SecUploadKeepFiles RelevantOnly 
+
+# Uploaded files are by default created with permissions that do not allow
+# any other user to access them. You may need to relax that if you want to
+# interface ModSecurity to an external program (e.g., an anti-virus).
+#
+SecUploadFileMode 0600
+
+
+# -- Debug log configuration -------------------------------------------------
+
+# The default debug log configuration is to duplicate the error, warning
+# and notice messages from the error log.
+#
+SecDebugLog {{logs_path}}/modsec_debug.log
+SecDebugLogLevel 0
+
+
+    #use for logging upload file information
+# SecRule REQUEST_METHOD "POST" "chain,id:20161121,nolog,noauditlog,pass,phase:1,msg:'upload_host:%{request_headers.host}',ctl:debugLogLevel=9"
+    # SecRule REQUEST_HEADERS:Content-Type "multipart/form-data" "t:none,t:lowercase"
+
+# -- Audit log configuration -------------------------------------------------
+
+# Log the transactions that are marked by a rule, as well as those that
+# trigger a server error (determined by a 5xx or 4xx, excluding 404,
+# level response status codes).
+#
+SecAuditEngine RelevantOnly
+SecAuditLogRelevantStatus "^(?:5|4(?!04))"
+
+# Log everything we know about a transaction.
+SecAuditLogParts "ABIFHZ"
+
+# Use a single file for logging. This is much easier to look at, but
+# assumes that you will use the audit log only ocassionally.
+#
+SecAuditLogType Concurrent
+SecAuditLog {{logs_path}}/modsec_audit.log
+
+# Specify the path for concurrent audit logging.
+SecAuditLogStorageDir {{logs_path}}/audit/
+
+# -- Miscellaneous -----------------------------------------------------------
+
+# Use the most commonly used application/x-www-form-urlencoded parameter
+# separator. There's probably only one application somewhere that uses
+# something else so don't expect to change this value.
+#
+SecArgumentSeparator &
+
+# Settle on version 0 (zero) cookies, as that is what most applications
+# use. Using an incorrect cookie version may open your installation to
+# evasion attacks (against the rules that examine named cookies).
+#
+SecCookieFormat 0
+
+# Specify your Unicode Code Point.
+# This mapping is used by the t:urlDecodeUni transformation function
+# to properly map encoded data to your language. Properly setting
+# these directives helps to reduce false positives and negatives.
+#
+#SecUnicodeMapFile unicode.mapping 20127
+
+SecDefaultAction phase:1,log,auditlog,{{defaultaction}}
+
+
+#
+# -- [[ Global and IP Collections ]] -----------------------------------------------------
+#
+# Create both Global and IP collections for rules to use
+# There are some CRS rules that assume that these two collections
+# have already been initiated.
+#
+SecRule REQUEST_HEADERS:User-Agent "^(.*)$" \
+  "id:'900018', \
+  phase:1, \
+  t:none,t:sha1,t:hexEncode, \
+  setvar:tx.ua_hash=%{matched_var}, \
+  nolog, \
+  pass"
+
+
+SecRule REQUEST_HEADERS:x-forwarded-for "^\b(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\b" \
+  "id:'900019', \
+  phase:1, \
+  t:none, \
+  capture, \
+  setvar:tx.real_ip=%{tx.1}, \
+  nolog, \
+  pass"
+
+
+SecRule &TX:REAL_IP "!@eq 0" \
+  "id:'900020', \
+  phase:1, \
+  t:none, \
+  initcol:global=global, \
+  initcol:ip=%{tx.real_ip}_%{tx.ua_hash}, \
+  nolog, \
+  pass"
+
+
+SecRule &TX:REAL_IP "@eq 0" \
+  "id:'900021', \
+  phase:1, \
+  t:none, \
+  initcol:global=global, \
+  initcol:ip=%{remote_addr}_%{tx.ua_hash}, \
+  setvar:tx.real_ip=%{remote_addr}, \
+  nolog, \
+  pass"
+
+
+## -- limit request header length begin --
+
+# set max length
+{% for rule in httplimit_rules %}SecAction "id:'{{rule.id}}',phase:1,t:none,setvar:tx.{{rule.name|lower()}}_length={{rule.value}},nolog,pass"
+{% endfor %}
+
+# check max length
+{% for rule in httplimit_rules %}SecRule &TX:{{rule.name|upper()}}_LENGTH "@eq 1" "chain,phase:2,t:none,block,msg:'{{rule.name}} too long',id:'{{rule.id+1000}}',severity:'4',rev:'2',ver:'OWASP_CRS/2.2.9',maturity:'9',accuracy:'9',tag:'OWASP_BD/POLICY/{{rule.name| upper()}}_LIMIT'"
+	SecRule {{rule.secname}} "@gt %{tx.{{rule.name|lower()}}_length}" "t:none,t:length,setvar:'tx.msg=%{rule.msg}',setvar:tx.anomaly_score=+%{tx.notice_anomaly_score},setvar:tx.%{rule.id}-OWASP_BD/POLICY/{{rule.name|upper()}}_LIMIT-%{matched_var_name}=%{matched_var}"
+{% endfor %}
+
+## -- limit request header length end --
+
+## -- limit request method begin --
+
+#
+# Set the following policy settings here and they will be propagated to the 30 rules
+# file (modsecurity_crs_30_http_policy.conf) by using macro expansion.
+# If you run into false positves, you can adjust the settings here.
+#
+SecAction \
+  "id:'900012', \
+  phase:1, \
+  t:none, \
+  setvar:'tx.allowed_methods={{allowed_methods|upper()}}', \
+  setvar:'tx.allowed_request_content_type={{allowed_request_content_type}}', \
+  setvar:'tx.allowed_http_versions={{allowed_http_versions}}', \
+  setvar:'tx.restricted_extensions={{restricted_extensions}}', \
+  setvar:'tx.restricted_headers={{restricted_headers}}', \
+  nolog, \
+  pass"
+
+## -- limit request method end --
+
+
+### B&W rule
+{% for bAndw_rule in bAndw_rules %}
+SecRule REMOTE_ADDR "@ipMatch {{bAndw_rule.ip|modsec_esc1}}" {{bAndw_rule.action}},auditlog,log,id:'{{bAndw_rule.id}}',phase:1
+{% endfor %}
+
+## deny some url and some ip
+{% for basic_rule in basic_rules %}{% set chaincount = basic_rule.chain %}SecRule REQUEST_HEADERS:Host "@streq {{basic_rule.domain|modsec_esc1}}" "{% if chaincount>1 %}{% set chaincount=chaincount-1 %}chain,{%endif%}id:'{{basic_rule.id}}',phase:1,t:none,{{basic_rule.action}},severity:'4',msg:'url {{basic_rule.url|modsec_esc2}} matched.'"
+{% if basic_rule.uri %}    SecRule REQUEST_URI "@beginsWith {{basic_rule.uri|modsec_esc1}}" "{% if chaincount>1 %}{% set chaincount=chaincount-1 %}chain,{%endif%}t:none"{% endif %}
+{% if basic_rule.srcip %}    SecRule REMOTE_ADDR "@ipMatch {{basic_rule.srcip|modsec_esc1}}" "{% if chaincount>1 %}{% set chaincount=chaincount-1 %}chain,{%endif%}t:none"{% endif %}
+{% if basic_rule.dstip %}    SecRule SERVER_ADDR "@ipMatch {{basic_rule.dstip|modsec_esc1}}" "t:none"{% endif %}
+{% endfor %}
+
+Include modsecurity_filt.conf
+Include activated_rules/cusrule.conf
+Include activated_rules/selfstudyrule.conf
+
+{% for rulefile in rulefiles %}Include {{rulefile.filename}}
+{% endfor %}
+
+Include activated_rules/ccrule.conf
+
+#{% if customrules %}Include custom_rules/*{% endif %}
+
+{% if hostlinking %}SecRule REQUEST_BASENAME "\.({{hostlinking}})$" "chain,log,auditlog,phase:1,id:'350001',t:none,deny,msg:'deny host linking from: %{REQUEST_HEADERS.Referer}'"
+  SecRule &REQUEST_HEADERS:Referer "@eq 1" "chain"
+    SecRule &REQUEST_HEADERS:Host "@eq 1" "chain"
+      SecRule REQUEST_HEADERS:Referer "!@contains %{REQUEST_HEADERS.Host}" "t:none"{% endif %}
+
+# selfstudy toggle
+{% if selfstudy.is_ip_white and selfstudy.white_list and selfstudy.is_use_result %}
+SecRule REMOTE_ADDR "@pm {{selfstudy.white_list}}" "id:350100,pass,phase:1,t:none,msg:'selfstudy open.',skipAfter:END_SELFSTUDY_CHECKS"
+{% elif selfstudy.is_use %}
+SecRule &REQUEST_HEADERS:Cookie "@gt 0" "id:350100,pass,phase:1,t:none,msg:'selfstudy open.'"
+{% endif %}
+# selfstudy result
+{% if selfstudy.is_use_result %}
+{% if selfstudyresult.uri_max %}
+SecRule REQUEST_URI "@gt {{selfstudyresult.uri_max}}" "t:none,t:length,id:350110,deny,phase:1,msg:'hit SelfStudyRule. uri length more than {{selfstudyresult.uri_max}}'"
+{% endif %}
+{% if selfstudyresult.arg_name_max %}
+SecRule ARGS_GET_NAMES "@gt {{selfstudyresult.arg_name_max}}" "t:none,t:length,id:350111,deny,phase:1,msg:'hit SelfStudyRule. arg name more than {{selfstudyresult.arg_name_max}}'"
+{% endif %}
+{% if selfstudyresult.arg_content_max %}
+SecRule ARGS_GET "@gt {{selfstudyresult.arg_content_max}}" "t:none,t:length,id:350112,deny,phase:1,msg:'hit SelfStudyRule. arg value more than {{selfstudyresult.arg_content_max}}'"
+{% endif %}
+{% if selfstudyresult.arg_count_max %}
+SecRule &ARGS_GET "@gt {{selfstudyresult.arg_count_max}}" "id:350113,deny,phase:1,msg:'hit SelfStudyRule. arg count than {{selfstudyresult.arg_count_max}}'"
+{% endif %}
+{% if selfstudyresult.cookie_max %}
+SecRule REQUEST_HEADERS:Cookie "@gt {{selfstudyresult.cookie_max}}" "t:none,t:length,id:350114,deny,phase:1,msg:'hit SelfStudyRule. cookie length more than {{selfstudyresult.cookie_max}}'"
+{% endif %}
+{% if selfstudyresult.cookie_name_max %}
+SecRule REQUEST_COOKIES_NAMES "@gt {{selfstudyresult.cookie_name_max}}" "t:none,t:length,id:350115,deny,phase:1,msg:'hit SelfStudyRule. cookie name more than {{selfstudyresult.cookie_name_max}}'"
+{% endif %}
+{% if selfstudyresult.cookie_content_max %}
+SecRule REQUEST_COOKIES "@gt {{selfstudyresult.cookie_content_max}}" "t:none,t:length,id:350116,deny,phase:1,msg:'hit SelfStudyRule. cookie value more than {{selfstudyresult.cookie_content_max}}'"
+{% endif %}
+{% if selfstudyresult.cookie_count_max %}
+SecRule &REQUEST_COOKIES "@gt {{selfstudyresult.cookie_count_max}}" "id:350117,deny,phase:1,msg:'hit SelfStudyRule. cookie count than {{selfstudyresult.cookie_count_max}}'"
+{% endif %}
+{% endif %}
+SecMarker END_SELFSTUDY_CHECKS
+#{% if norevproxy %}Include activated_rules/limits.conf{% endif %}
+{% if not norevproxy %}Include activated_rules/ocr.conf{% endif %}  

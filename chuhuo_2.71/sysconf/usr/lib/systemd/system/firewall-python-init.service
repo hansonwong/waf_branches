@@ -1,0 +1,17 @@
+[Unit]
+Description=Firewall python init
+After=dpdk.service mysqld.service
+Wants=mysqld.service
+Requires=dpdk.service
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+ExecStart=/usr/bin/python /usr/local/bluedon/core/second_firewall_init.py
+Environment=PYTHONPATH=/usr/local/bluedon
+RemainAfterExit=yes
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target

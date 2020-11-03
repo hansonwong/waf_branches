@@ -1,0 +1,783 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<style type="text/css">
+*{ margin:0; padding:0;}
+body {font-family: 'Arial', 'Helvetica';background-color: white;}
+.hdr_div{font-size:12px; height:60px; text-align:left;}
+.hdr_table {float: right;border: 1px dotted #C0C000;background-color: #FFFFF0; width:99%; padding:0 0 0 5px; height:60px;}
+.hdr_table li{ list-style:none; line-height:28px;}
+.hpr{float:right; width:200px; text-align:right; }
+.hdr_tips {clear: right; float: right;font-size: 70%;color: coral;padding: 0.5em 0 0 0;}
+.summary1 {padding: 0 1em 0 1em;}
+.summary2 {color: teal;padding: 0 1em 0 0;}  
+img {vertical-align: middle;padding: 0 .5em 0 0;}
+.i2 {vertical-align: middle;padding: 0 0 0 .5em;}
+.i3 {vertical-align: middle;padding: 0 .2em 0 .2em;}
+.idupe {opacity: 0.4;filter: alpha(opacity=40);}
+.child_ctr{white-space: nowrap;}
+.child_ctr_exp {white-space: nowrap; padding:2px 0 0 20px;}
+td.child_ctr:hover {}
+.name {font-weight: bold;}
+.name_diff {font-weight: bold;color: white;background-color: red;padding: 0.2em 0.5em 0.2em 0.5em;}
+span.sum_name {font-weight: bold; font-size:14px; display:inline-block; width:670px;}
+span.sum_name:hover {font-weight: bold;cursor: pointer;/*border: 1px solid #D1E0F7;*/}
+.dupe_name {color: gray;}
+.fetch_info {font-size: 70%;color: gray;}
+.fetch_data {color: teal;}
+.issue_desc {font-weight: bold;}
+.issue_desc_diff {font-weight: bold;color: white;background-color: blue;padding: 0.2em 0.5em 0.2em 0.5em;}
+.comment {color: crimson;font-size:  70%;}
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+h2 {border-width: 0 0 1px 0;border-style: solid;border-color: crimson;}
+ol {margin: 0.5em 0 0 0;padding: 0 0 0 2em; font-size:14px;}
+ol li{ line-height:18px;}
+.issue_ctr {border-style: solid;border-color: #FFF0E0;border-width: 0px 0px 0px 10px;padding: 0 0 0 0.5em;margin: 0 0 0 0;}
+.node_ctr {padding: 0;margin: 0;}
+.issue_line {border-width: 0 0 1px 0;margin: 0.2em 0 0.2em 0;border-style: dashed;border-color: red;width: 10em;}
+.s_cnt {font-size: 80%;color: teal;}
+.req_div {position: absolute;top: 0;left: 0;width:770px; margin:0 auto;height: 80%;border: 3px outset teal;display: none;background-color: white;z-index: 10;padding: 10px;}
+.req_hdr {background-color: #FFFFE0; border: 1px outset teal;font-size: 70%;text-align: center;padding: 2px;cursor: pointer;}
+.req_txtarea {border: 1px inset teal;padding: 2px;margin: 1% 0px 0px 0px;width: 100%;height: 95%;}
+div.req_hdr:hover { border: 1px inset teal;}
+.cover {opacity: 0.7;filter: alpha(opacity=70);background-color: #F0F0F0;position: absolute;top: 0;left: 0;height: 100%;width: 100%;display: none;}
+.supp_cat {color: #606060;}
+.dh2{ height:36px; line-height:30px; font-size:18px; font-weight:bold;}
+.dh3{ height:30px; line-height:26px; font-size:18px; font-weight:bold;}
+.tbflaw{ background:#F5F8FD; width:100%; height:60px; font-size:20px;}
+#issue_types table, #doc_types table{ padding-left:20px;}
+.user_rate {font-size:14px; position:relative; padding:5px 0;}
+.user_rate div.s {font-size:24px; line-height:28px; font-weight:bold; color:#F00; float:left; width:75px;}
+.big_rate_bak {width:140px; height:28px; text-align:left; position:absolute; top:3px; display:inline-block; left:80px; background:url(../flaw/star.gif) left bottom repeat-x;}
+.big_rate_bak b {display:inline-block; width:24px; height:28px; position:relative; z-index:1000; cursor:pointer; overflow:hidden;}
+.big_rate_up {width:140px; height:28px; position:absolute; top:0; left:0; background:url(../flaw/star.gif) left top;}
+</style>
+
+<script src="summary.js"></script>
+<script src="samples.js"></script>
+<script src="../flaw/charts/jquery-1.7.2.js"></script>
+
+<script>
+var total        = 0;
+var c_count      = 0;
+var ignore_click = false;
+var max_samples  = 100;
+var diff_mode    = false;
+var img_url      = '../flaw/';
+var open_url     = '../flaw/';
+/* Descriptions for issues reported by the scanner. */
+
+var issue_desc= {
+
+  "10101": "SSL证书发行人信息",
+  "10201": "新增的HTTP cookie",
+  "10202": "发现新的'Server'头数值",
+  "10203": "发现新的’Via’头数值",
+  "10204": "发现新的'X-*'头数值",
+  "10205": "发现新的404签名",
+
+  "10401": "资源不允许直接访问",
+  "10402": "需要HTTP身份认证",
+  "10403": "引发服务器错误",
+  "10404": "启用目录列表",
+  "10405": "已发现的文件/目录",
+
+  "10501": "所有外部链接",
+  "10502": "外部URL重定向器",
+  "10503": "所有电子邮件地址",
+  "10504": "链接到未知的协议",
+  "10505": "未知的表单域（不能自动填写）",
+  "10601": "HTML 表单（否则不分类）",
+  "10602": "强力的密码输入",
+  "10603": "文件上传表单",
+  "10701": "在页面上呈现用户提供的链接",
+  "10801": "错误的或缺少MIME类型",
+  "10802": "使用泛型的MIME",
+  "10803": "字符集错误或缺少",
+  "10804": "MIME/字符集信息冲突",
+  "10901": "数值文件名采用列举的方式",
+  "10902": "类似OGNL参数行为",
+
+  "20101": "资源获取失败",
+  "20102": "超出限制，获取受抑制",
+  "20201": "目录行为检查失败（不使用强力攻击）",
+  "20202": "父类行为检查失败（不使用强力攻击）",
+  "20203": "启用IPS过滤",
+  "20204": "IPS 过滤再次失效",
+  "20205": "响应变化无常，跳过检查",
+  "20301": "节点应该是一个目录，检测错误？",
+
+  "30101": "URLs中发现HTTP认证信息",
+  "30201": "SSL证书已过期或尚未生效",
+  "30202": "自签名的SSL证书",
+  "30203": "SSL证书主机名不匹配",
+  "30204": "未发现SSL证书数据",
+  "30205": "弱SSL密码被破解",
+  "30301": "目录列表限制条件被绕过",
+  "30401": "被重定向至攻击者提供的URLs",
+  "30402": "在嵌入的内容中发现攻击者提供的URLs",
+  "30501": "页面上被嵌入外部内容",
+  "30502": "页面上被嵌入混合内容",
+  "30503": "向HTTP URL提交HTTPS表单",
+  "30601": "没有明显XSRF保护的HTML表单",
+  "30602": "没有明显的XSSI保护的JSON响应",
+  "30701": "错误的缓存指令",
+  "30801": "由用户控制的响应前缀（BOM/插件攻击）",
+  "30901": "HTTP消息头注入",
+
+  "40101": "文档正文存在XSS",
+  "40102": "XSS通过任意的URLs",
+  "40103": "HTTP响应头部分割",
+  "40104": "在嵌入的内容中发现攻击者提供的URLs",
+  "40201": "页面上被嵌入外部内容",
+  "40202": "页面上被嵌入混合内容",
+  "40301": "错误或缺失的MIME类型",
+  "40302": "泛化的MIME类型",
+  "40304": "字符集错误或缺失",
+  "40305": "MIME/字符集信息冲突",
+  "40401": "令人关注的文件",
+  "40402": "令人关注的服务器信息",
+  "40501": "可能的目录遍历/文件包含",
+  "40601": "错误的缓存指令",
+  "40701": "密码表单的提交来自或发往非HTTPS页面",
+
+  "50101": "服务器端的XML注入",
+  "50102": "Shell 注入",
+  "50103": "查询注入",
+  "50104": "格式化字符串",
+  "50105": "整数溢出",
+  "50106": "文件包含",
+  "50201": "参数中存在SQL查询语句或类似语句",
+  "50301": "PUT请求被接受"
+
+};
+
+/**获取评分*/
+function get_rate(rate){
+	rate=parseInt(rate);
+
+    var wd = parseInt(rate/10*14);
+	$(".big_rate_up").width(wd);
+}
+
+
+/* Simple HTML escaping routine. */
+function H(str) { return str.replace(/</g,'&lt;').replace(/"/g,'&quot;'); }
+
+
+/* Simple truncation routine. */
+function TRUNC(str) { if (str.length > 70) return str.substr(0,69) + "..."; else return str; }
+
+
+/* Initializes scan information, loads top-level view. */
+function initialize() {
+
+  document.getElementById('scan_date').innerHTML = getDateFormat(scan_date);
+  document.getElementById('scan_time').innerHTML =
+    Math.floor(scan_ms / 1000 / 60 / 60) + " 小时 " +
+    Math.floor((scan_ms / 1000 / 60)) % 60  + " 分钟 " +
+    Math.floor((scan_ms / 1000)) % 60  + " 秒 " +
+    (scan_ms % 1000) + " 毫秒";
+  
+  load_node('./', 'root');
+  /*load_mime_summaries();*/
+  load_issue_summaries();
+
+}
+
+function getDateFormat(day){
+	var arr,dates;
+	day = day.replace('  ', ' ');
+	arr = day.split(' ');
+	
+	arr[0] = arr[0].replace('Mon', '星期一');
+	arr[0] = arr[0].replace('Tue', '星期二');
+	arr[0] = arr[0].replace('Wed', '星期三');
+	arr[0] = arr[0].replace('Thu', '星期四');
+	arr[0] = arr[0].replace('Fri', '星期五');
+	arr[0] = arr[0].replace('Sat', '星期六');
+	arr[0] = arr[0].replace('Sun', '星期日');
+	
+	arr[1] = arr[1].replace('Jan', '1月');
+	arr[1] = arr[1].replace('Feb', '2月');
+	arr[1] = arr[1].replace('Mar', '3月');
+	arr[1] = arr[1].replace('Apr', '4月');
+	arr[1] = arr[1].replace('May', '5月');
+	arr[1] = arr[1].replace('Jun', '6月');
+	arr[1] = arr[1].replace('Jul', '7月');
+	arr[1] = arr[1].replace('Aug', '8月');
+	arr[1] = arr[1].replace('Sep', '9月');
+	arr[1] = arr[1].replace('Oct', '10月');
+	arr[1] = arr[1].replace('Nov', '11月');
+	arr[1] = arr[1].replace('Dec', '12月');
+    
+	dates = arr[4]+'年'+arr[1]+arr[2]+'日 '+arr[0]+' '+arr[3];
+	
+	return dates;
+}
+
+
+/* Implements pretty, pointless fades. */
+
+function next_opacity(tid, new_val) {
+  var t = document.getElementById(tid);
+  t.style.opacity = new_val;
+  t.style.filter = "alpha(opacity=" + (new_val * 100) + ")";
+  if (new_val < 1.0) 
+    setTimeout('next_opacity("' + tid + '", ' + (new_val + 0.1) + ')', 50);
+}
+
+
+/* Loads or toggles visibility of a node. */
+
+function toggle_node(dir, tid) {
+  var t = document.getElementById('c_' + tid);
+
+  if (ignore_click) { ignore_click = false; return; }
+
+  if (!t.loaded) {
+    
+    document.getElementById('exp_' + tid).src = 'n_expanded.png';
+    document.getElementById('exp_' + tid).title = 'Click to collapse';
+    t.loaded = true;
+    return;
+  }
+
+  if (t.style.display == 'none') {
+    document.getElementById('exp_' + tid).src = 'n_expanded.png';
+    t.style.display = 'block';
+    document.getElementById('exp_' + tid).title = 'Click to collapse';
+    next_opacity('c_' + tid, 0);
+  } else {
+    document.getElementById('exp_' + tid).src = 'n_collapsed.png';
+    t.style.display = 'none';
+    document.getElementById('exp_' + tid).title = 'Click to expand';
+  }
+
+}
+
+
+/* Displays request or response dump in a faux window. */
+var g_path = '';
+var g_ignore = 0;
+
+function show_dat(path, ignore) {
+
+  g_path = path;
+  g_ignore = ignore;
+
+  /* workaround for cases where there is no response */
+  if (typeof req !== 'undefined')
+    if (req !== null) req = null;
+  if (typeof res !== 'undefined')
+    if (res !== null) res = null;
+
+  prepare_view();
+
+  load_script(path + '/request.js', render_dat);
+  load_script(path + '/response.js', render_dat_res);
+
+}
+
+var req_text = '';
+var res_text = '';
+var finalize = 0;
+var pX = 0;
+var pY = 0;
+
+function prepare_view() {
+
+  var out = document.getElementById('req_txtarea'),
+    cov = document.getElementById('cover');
+
+  document.body.style.overflow = 'hidden';
+
+  out.value = '';
+
+  var path = g_path;
+  var ignore = g_ignore;
+
+  pX = window.scrollX ? window.scrollX : document.body.scrollLeft;
+  pY = window.scrollY ? window.scrollY : document.body.scrollTop;
+
+  out.parentNode.style.left = pX;
+  out.parentNode.style.top = pY;
+  cov.style.left = pX;
+  cov.style.top = pY;
+
+  out.parentNode.style.display = 'block';
+  cov.style.display = 'block';
+
+  req_text = '';
+  res_text = '';
+  finalize = 0;
+
+  out.focus();
+  window.scrollTo(pX, pY);
+
+  if (ignore) ignore_click = true;
+  return false;
+}
+
+function render_dat() {
+
+  if (typeof req !== 'undefined')
+    if (req != null) req_text = req.data;
+
+  if (req_text != null && finalize) finalize_view();
+
+  finalize = 1;
+}
+
+function render_dat_res() {
+
+  if (typeof res !== 'undefined')
+    if (res != null) res_text = res.data;
+
+  if (res_text != null && finalize) finalize_view();
+
+  finalize = 1;
+
+}
+
+function finalize_view() {
+
+  var out = document.getElementById('req_txtarea');
+
+  var content = '=== REQUEST ===\n\n' + req_text;
+
+  if (res_text.substr(0,5) == 'HTTP/')
+    content += '\n=== RESPONSE ===\n\n' + res_text + '\n=== END OF DATA ===\n';
+  else content += '\n=== RESPONSE NOT AVAILABLE ===\n\n=== END OF DATA ===\n';
+
+  out.value = content;
+
+  out.focus();
+  window.scrollTo(pX,pY);
+
+}
+
+/* Displays request or response dump in a proper window. */
+
+var wind = null;
+
+function show_win(path, ignore) {
+
+  g_path = path;
+  g_ignore = g_ignore;
+  wind = null;
+
+  /* workaround when there is no response */
+  if (typeof req !== 'undefined')
+    if (req !== null) req = null;
+  if (typeof res !== 'undefined')
+    if (res !== null) res = null;
+
+  prepare_win();
+
+  load_script(path + '/request.js', render_win);
+  load_script(path + '/response.js', render_win_res);
+
+}
+
+function prepare_win() {
+
+  wind = window.open('','_blank','scroll=yes,addressbar=no');
+  var out = wind;
+  var content = '';
+
+  var path = g_path;
+  var ignore = g_ignore;
+
+  req_text = '';
+  res_text = '';
+  finalize = 0;
+
+}
+
+/* Callback to render request or response dump */
+
+function render_win() {
+
+
+  req_text = '';
+  if (typeof req !== 'undefined') req_text = req.data;
+
+  if (req_text != null && finalize) finalize_win();
+
+  finalize = 1;
+}
+
+function render_win_res() {
+
+  res_text = '';
+  if (typeof res !== 'undefined')
+    if (res != null) res_text = res.data;
+
+  if (res_text != null && finalize) finalize_win();
+
+  finalize = 1;
+}
+
+function finalize_win() {
+
+  if (typeof wind == 'undefined') return;
+  if (wind == null) return;
+
+  var out = wind;
+  var content = '';
+
+  content = '=== REQUEST ===\n\n' + req_text;
+
+  if (res_text.substr(0,5) == 'HTTP/') 
+    content += '\n=== RESPONSE ===\n\n' + res_text + '\n=== END OF DATA ===\n';
+  else content += '\n=== RESPONSE NOT AVAILABLE ===\n\n=== END OF DATA ===\n';
+
+  out.document.body.innerHTML = '<pre></pre>';
+
+  out.document.body.firstChild.appendChild(out.document.createTextNode(content));
+
+  if (ignore) ignore_click = true;
+    return false;
+
+}
+
+/* Hides request view. */
+
+function hide_dat() {
+
+  /* Work around a glitch in WebKit. */
+
+  if (navigator.userAgent.indexOf('WebKit') == -1)
+    document.body.style.overflow = 'auto';
+  else
+    document.body.style.overflow = 'scroll';
+
+  document.getElementById('req_div').style.display = 'none';
+  document.getElementById('cover').style.display = 'none'
+}
+
+/* Dynamically load JavaScript files */
+
+function load_script(sname, callback) {
+
+  /* Remove previously loaded scripts */
+  var old_script = document.getElementsByName('tmp_script');
+
+  for (var i = 0; i < old_script.length; i++) {
+    document.removeChild(old_script[i]);
+  }
+
+  var head = document.getElementsByTagName('head')[0];
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.id = sname;
+  script.name = 'tmp_script';
+  
+  if (script.readyState){
+      script.onreadystatechange = function(){ 
+         if (script.readyState ==  "loaded" || script.readyState == "complete"){ 
+            script.onreadystatechange = null;
+            callback(); 
+         } 
+      }; 
+   } else {
+      script.onload = function(){ 
+          callback(); 
+      }; 
+   }
+  
+  script.src = sname;
+  head.appendChild(script);
+
+}
+
+/* Loads issues, children for a node, renders HTML. */
+
+var g_add_html = '';
+var g_tid = 0;
+var g_dir = '';
+
+function load_node(dir, tid) {
+  g_dir = dir;
+  g_tid = tid;
+  var t = document.getElementById('c_' + g_tid);
+
+  load_script(dir + 'child_index.js', function () {});
+
+  load_script(dir + 'issue_index.js', load_issues);
+
+}
+
+/**round number*/
+function roundNum(v, l){
+	var val  = '';
+	var nums = new Array();
+	
+	if(v == 0){
+	    return v;	
+	}else{
+		strv = String(v*100);
+		if(strv.indexOf('.')>0){
+			nums = strv.split('.');
+			s1   = nums[1].substring(0,1);
+			s2   = nums[1].substring(1,2);
+			val  = parseFloat(nums[0]+'.'+s1);
+			
+			if(parseInt(s2)>4){
+				val = val + 0.1;
+			}
+		}else{
+			val = parseInt(v*100);
+		}
+		return Number(val.toFixed(2));
+	}	
+}
+
+/* Function callback to render the node data */
+
+function load_issues() {
+  var sh  = sm  = sl  = sw = sn = 0;
+  var chart;
+
+  for (var cno = 0; cno < issue.length; cno++) {
+
+    for (var cno2 = cno; cno2 < issue.length; cno2++) {
+      var i2 = issue[cno2];
+      if (i2.type != i.type) break;
+    }
+
+    cno = cno2 - 1;
+
+  }
+
+  for (var cno = 0; cno < child.length; cno++) {
+    var c = child[cno];
+    var has_child = false;
+    var cstr = '';
+	var site_url = '';
+
+    if (c.issue_cnt[4] > 0){
+	  sh = c.issue_cnt[4];
+	}
+	
+    if (c.issue_cnt[3] > 0){
+      sm = c.issue_cnt[3]; 
+	}
+	
+    if (c.issue_cnt[2] > 0){
+      sl = c.issue_cnt[2];
+	}
+	
+	if (c.issue_cnt[1] > 0){
+      sw = c.issue_cnt[1];
+	}
+	
+	if (c.issue_cnt[0] > 0){
+      sn = total-sh-sm-sl-sw;
+	}
+	
+	if (!c.dupe) site_url = '<span class="name" title="' + H(c.url) + '">' + H(TRUNC(c.name)) + '</span>\n';
+	
+    c_count++;
+  }
+  
+  chart = new Highcharts.Chart({
+	  chart: {
+		  renderTo: 'container',
+		  plotBackgroundColor: null,
+		  plotBorderWidth: null,
+		  plotShadow: false
+	  },
+	  title: {
+		  text: '网站风险等级分布图'
+	  },
+	  exporting:{
+			    enabled: false
+	  },
+	  tooltip: {
+		  pointFormat: '{series.name}: <b>{point.percentage}%</b>',
+		  percentageDecimals: 1
+	  },
+	  plotOptions: {
+		  pie: {
+			  allowPointSelect: true,
+			  cursor: 'pointer',
+			  dataLabels: {
+				  enabled: true,
+				  color: '#000000',
+				  connectorColor: '#000000',
+				  formatter: function() {
+					  return '<b>'+ this.point.name +'</b>: '+ roundNum(this.percentage/100) +' %';
+				  }
+			  }
+		  }  
+	  },
+	  colors: ['#FF5C5C', '#FFA800', '#7bc2ff', '#7f7f7f', '#00ff88'],
+	  series: [{
+		  type: 'pie',
+		  name: '百分比',
+		  data: [
+			  {
+				  name: '高风险('+sh+')',
+				  y: roundNum(sh/total, 2),
+				  sliced: true,
+				  selected: true
+			  },
+			  ['中等风险('+sm+')', roundNum(sm/total,2)],
+			  ['低风险('+sl+')',  roundNum(sl/total, 2)],
+			  ['警告('+sw+')',  roundNum(sw/total, 2)],
+			  ['提示('+sn+')',  roundNum(sn/total,2)]
+		  ]
+	  }]
+  });
+  
+  var score = getScore(sh, sm, sl);
+  if(site_url != ''){
+	  site_url += '<br/><div class="user_rate"><div class="big_rate_bak"><b rate="2">&nbsp;</b><b rate="4">&nbsp;</b><b rate="6">&nbsp;</b><b rate="8">&nbsp;</b><b rate="10">&nbsp;</b><div style="width:45px;" class="big_rate_up"></div></div><div class="s">'+score+' 分</div></div>';
+  }
+  
+  document.getElementById('site_url').innerHTML = site_url;
+  get_rate(score);
+}
+
+
+/* Picks the lesser of two evils. */
+
+function MIN(a,b) { if (a > b) return b; else return a; }
+
+
+/* Toggles visibility of a summary view. */
+
+function show_sum(t) {
+  var target = t.nextSibling.nextSibling.nextSibling.nextSibling;
+  if (target.style.display == 'block') {
+    target.style.display = 'none';
+  } else {
+    next_opacity(target.id, 0);
+    target.style.display = 'block';
+  }
+}
+
+/* Loads MIME summaries. */
+
+function load_mime_summaries() {
+  var t = document.getElementById('doc_types');
+   
+  for (var cno = 0; cno < mime_samples.length; cno++) {
+    var m = mime_samples[cno], limit = MIN(max_samples, m.samples.length);
+    var add_html;
+
+    add_html = '<table><tr><td valign="top"><img src="'+img_url+'mime_entry.png"></td>\n<td valign="top">';
+    add_html += '<span class="sum_name" onclick="show_sum(this)">' + H(m.mime) + '</span>\n<span class="s_cnt">(' + 
+                m.samples.length + ')</span>\n<ol id="sum_' + (c_count++) + '" style="display: none">\n';
+
+    for (var sno = 0; sno < limit; sno++) {
+      
+      add_html += '<li>' + H(m.samples[sno].url);
+
+      if (m.samples[sno].linked == 0)
+        add_html += '<img src="'+img_url+'n_unlinked.png" title="未链接（暴力强迫）" class="i3"> ';
+
+        add_html += '<span class="s_cnt">(' + m.samples[sno].len + ' bytes)</span> <span class="fetch_info"></span>\n';
+
+    }
+    
+    add_html += '</ol></tr></td></table>\n';
+
+    t.innerHTML += add_html;
+
+  }
+
+}
+
+
+/* Loads issue summaries. */
+
+function load_issue_summaries() {
+  var t = document.getElementById('issue_types');
+
+  for (var cno = 0; cno < issue_samples.length; cno++) {
+    var i = issue_samples[cno], limit = MIN(max_samples, i.samples.length);
+    var add_html;
+    
+	color    = (cno % 2 == 0) ? '#EEF7FC' : '#DDE9F1';
+    add_html = '<table><tr><td valign="top">';
+
+    switch (i.severity) {
+      case 0:  add_html += '<img src="'+img_url+'i_note.png" title="信息提示">'; break;
+      case 1:  add_html += '<img src="'+img_url+'i_warn.png" title="内部警告">'; break;
+      case 2:  add_html += '<img src="'+img_url+'i_low.png" title="低风险">'; break;
+      case 3:  add_html += '<img src="'+img_url+'i_medium.png" title="中等风险">'; break;
+      case 4:  add_html += '<img src="'+img_url+'i_high.png" title="高风险">'; break;
+    }
+
+    add_html += '</td>\n<td valign="top" style="background-color:'+color+';"><span class="sum_name" onclick="show_sum(this)">' + 
+    issue_desc[i.type] + ' ('+ i.samples.length + ')</span>\n<span class="s_cnt"> <a href="'+open_url+'detail.html#'+i.type+'" target="_blank">详情</a></span>\n' + '<ol id="sum_' + (c_count++) + '" style="display: none">\n';
+    total += i.samples.length;
+    for (var sno = 0; sno < limit; sno++) {
+      add_html += '<li>' + H(i.samples[sno].url) + ' <span class="fetch_info"></span>\n';
+
+      if (i.samples[sno].extra && i.samples[sno].extra.length > 0) 
+        add_html += '<div class="comment">备忘: ' + H(i.samples[sno].extra) + '</div>\n';
+
+    }
+
+    add_html += '</ol></td></tr></table>\n';
+
+    t.innerHTML += add_html;
+
+  }
+
+}
+
+/**计算网站得分*/
+function getScore(h, m, l){
+	var height = 20 - h*2;
+	var middle = 10 - m*0.2;
+	var low    = 10 - l*0.1;
+	var score  = 60;
+	
+	height = height > 0 ? height : 0;
+	middle = middle > 0 ? middle : 0;
+	low    = low > 0 ? low : 0;
+	score  = score + height + middle + low;
+	return Math.floor(score);
+}
+
+</script>
+
+<script src="../flaw/charts/highcharts.js"></script>
+<script src="../flaw/charts/modules/exporting.js"></script>
+
+</head>
+<body onLoad="initialize()">
+<div style="width:770px; margin:0 auto;">
+  <div class="req_div" id="req_div">
+    <div class="req_hdr" id="req_hdr" onClick="hide_dat()">HTTP跟踪 - 单击此栏或按Esc键关闭</div>
+    <textarea class="req_txtarea" id="req_txtarea" readonly onKeyUp="if (event.keyCode == 27) hide_dat();"></textarea>
+  </div>
+  <div id="cover" class="cover"></div>
+  
+  <div class="hdr_div">
+    <div class="hdr_table">
+      <div style="float:right; width:280px;"><li><span class="hpr" id="scan_date"></span><span style=" width:60px; float:left;">扫描日期: </span></li>
+      <li><span  class="hpr" id="scan_time"></span><span style="width:60px; float:left;">扫描用时: </span></li></div>
+      <div id="site_url" style="float:left; font-size:20px;"></div>
+    </div>
+  </div>
+  <div id="container" style="min-width: 300px; height: 300px; margin: 0 auto; padding-top:25px;"></div>
+  
+  <div class="dh2"><font color="#FF0000">您的网站存在以下风险 :</font> -- <span style="font-size:14px; font-weight:normal;">单击可查看详细内容</span></div>
+  <div id="issue_types"></div>
+</div>
+
+<script>
+(function () { var ie = !!(window.attachEvent && !window.opera);var wk = /webkit\/(\d+)/i.test(navigator.userAgent) && (RegExp.$1 < 525);var fn = []; var run = function (){ for (var i = 0; i < fn.length; i++) fn[i](); }; var d = document; d.ready = function (f) { if (!ie && !wk && d.addEventListener) return d.addEventListener('DOMContentLoaded', f, false); if (fn.push(f) > 1) return; if (ie) (function () { try { d.documentElement.doScroll('left'); run(); } catch (err) { setTimeout(arguments.callee, 0); } })(); else if (wk)  var t = setInterval(function () {  if (/^(loaded|complete)$/.test(d.readyState)) clearInterval(t), run();  }, 0); }; })();  
+
+</script>
+</body>
+</html>

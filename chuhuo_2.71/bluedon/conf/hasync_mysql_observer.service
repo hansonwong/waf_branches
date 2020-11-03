@@ -1,0 +1,14 @@
+[Unit]
+Description=hasync mysql_observer deamon
+After=rc-local.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/usr/local/bluedon
+ExecStart=/usr/bin/python -m system.hasync.mysql_observer
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

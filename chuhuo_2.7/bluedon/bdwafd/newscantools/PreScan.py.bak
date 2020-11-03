@@ -1,0 +1,1075 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import sys
+import os
+import atexit
+import logging
+import thread
+import threading
+import struct
+from Queue import Queue
+from lib.common import *
+from lib.waf_netutil import *
+
+
+class PreScan_thread(threading.Thread):
+    def __init__(self, queue, task_id, task_name, hostmsg_table, asset_scan_id):
+        try:
+            threading.Thread.__init__(self)
+            self.queue = queue
+            self.task_id = str(task_id)
+            self.task_name = str(task_name)
+            self.hostmsg_table = hostmsg_table
+            self.conn = ""
+            self.cursor = ""
+            
+            self.asset_scan_id = asset_scan_id
+            
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan_thread.__init__:" + str(e) + ",task id:" + str(task_id))
+    #end def
+    
+    def mysqlConnect(self):
+        def reconnect():
+            self.conn = MySQLdb.connect(host, user, passwd , db = database, charset = "utf8")
+            self.cursor = self.conn.cursor(MySQLdb.cursors.DictCursor)
+        try:
+            
+            if self.conn == '' or self.cursor == '':
+                reconnect()
+            else:
+                try:
+                    self.conn.ping()
+                except MySQLdb.OperationalError,e:
+                    self.mysqlClose()
+                    reconnect()
+                    logging.getLogger().error("File:PreScan.py, PreScan.mysqlConnect reconnect:" + str(e) + ",task id:" + str(self.task_id))
+            #end if
+            return True
+        except Exception,e:
+            self.conn = ''
+            self.cursor = ''
+            logging.getLogger().error("File:PreScan.py, PreScan_thread.mysqlConnect:" + str(e) + ",task id:" + str(self.task_id))
+            return False
+        #end try
+    #end def
+    
+    def mysqlClose(self):
+        try:
+            if self.conn != '' and self.cursor != '':
+                self.cursor.close()
+                self.conn.close()
+            #end if
+            self.conn = ''
+            self.cursor = ''
+            return True
+        except Exception,e:
+            self.conn = ''
+            self.cursor = ''
+            logging.getLogger().error("File:PreScan.py, PreScan_thread.mysqlClose:" + str(e) + ",task id:" + str(self.task_id))
+            return False
+        #end try
+    #end def
+    
+    def sendMsg(self,ip):
+        try:
+            if checkIpv4(ip) == False:
+                return
+            #end if
+
+            if self.mysqlConnect():
+                self.cursor.execute("select * from config where Name = 'scan_enable'")
+                self.conn.commit()
+                ret = self.cursor.fetchone()
+                if ret and int(ret["Value"]) == 1:
+                    msg = "%s System - Scanning" % (SYSTEM_ENG_NAME_STR_ID)
+                    vulscan_popen("/var/waf/net.sh send " + ip + " '" + msg + "'")
+                #end if
+            #end if
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan_thread.sendMsg:" + str(e) + ",task id:" + str(self.task_id) + ",ip:" + str(ip))
+        #end try
+    #end def
+    
+    def checkIp(self,ip):
+        try:
+            iface = getIfaceByRoute(ip)
+            cmd = ""
+            cmd_iptype = ""
+            if ip.find(":") > 0 and checkIpv6(ip):
+                cmd_iptype = " -6"
+            #end if
+            if iface == '':
+                cmd = "/usr/bin/nmap %s -sP %s --host-timeout 60s" % (cmd_iptype, ip)
+            else:
+                cmd = "/usr/bin/nmap %s -sP %s --host-timeout 60s -e %s" % (cmd_iptype, ip, iface)
+            #end if
+            lines = vulscan_popen(cmd)
+            for row in lines:
+                if row.find('#') < 0:
+                    if row.find('MAC Address') >= 0 or row.find("appears to be up") >= 0 or row.find("1 host up") >= 0:
+                        return True
+                    #end if
+                #end if
+            #end for
+            '''
+            if iface == '':
+                cmd = "/usr/bin/nmap %s -Pn %s --host-timeout 60s" % (cmd_iptype, ip)
+            else:
+                cmd = "/usr/bin/nmap %s -Pn %s --host-timeout 60s -e %s" % (cmd_iptype, ip, iface)
+            #end if
+            lines = vulscan_popen(cmd)
+            for row in lines:
+                if row.find('#') < 0:
+                    #if row.find('MAC Address') >= 0 or row.find("appears to be up") >= 0 or row.find("Host is up") >= 0:
+                    if row.find('/tcp') > 0 and row.find('open') > 0:
+                        return True
+                    #end if
+                #end if
+            #end for
+            '''
+            if checkIpv6(ip):
+                if iface == "":
+                    cmd = "/usr/bin/nmap -6 %s -p 21,23,25,80,135,139,445,2121,3389,3306,1433,7777,2433,5631,4899,5800,5900,8000,8080,16433 --host-timeout 30s -P0" % (ip)
+                else:
+                    cmd = "/usr/bin/nmap -6 %s -p 21,23,25,80,135,139,445,2121,3389,3306,1433,7777,2433,5631,4899,5800,5900,8000,8080,16433 --host-timeout 30s -P0 -e %s" % (ip, iface)
+                #end if
+            else:
+                if iface == "":
+                    cmd = "/usr/bin/nmap -sS %s -p 21,23,25,80,135,139,445,2121,3389,3306,1433,7777,2433,5631,4899,5800,5900,8000,8080,16433 --host-timeout 30s -P0" % (ip)
+                else:
+                    cmd = "/usr/bin/nmap -sS %s -p 21,23,25,80,135,139,445,2121,3389,3306,1433,7777,2433,5631,4899,5800,5900,8000,8080,16433 --host-timeout 30s -P0 -e %s" % (ip, iface)
+
+            lines = vulscan_popen(cmd)
+            for row in lines:
+                if (row.find('/tcp') > 0 and row.find('open') > 0) or row.find('MAC Address') >= 0:
+                    return True
+                #end if
+            #end for
+            
+            return False
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan_thread.checkIp:" + str(e) + ",task id:" + str(self.task_id) + ",ip:" + str(ip))
+            return False
+        #end try
+    #end def
+    
+    def update_ip_range(self,list1,list2,force=False):
+        try:
+            count = len(list1) + len(list2)
+            if count < 1:
+                return False
+            #end if
+            if self.mysqlConnect():
+                if count > 2 or force:
+                    #print "update ip range"
+                    values1 = []
+                    values2 = []
+                    for ip in list1:
+                        if checkIpv6(ip):
+                            ip_full = fullIpv6(ip)
+                            ip = easyIpv6(ip_full)
+                        values1.append("'%s'" % (ip))
+                    #end for
+                    for ip in list2:
+                        if checkIpv6(ip):
+                            ip_full = fullIpv6(ip)
+                            ip = easyIpv6(ip_full)
+                        values2.append("'%s'" % (ip))
+                    #end for
+                    values1 = ','.join(values1)
+                    values2 = ','.join(values2)
+                    
+                    if values1 != '':
+                        sql = ""
+                        if self.asset_scan_id > 0:
+                            sql = "update hostmsg_%s set `state` = '1' where `ip` in (%s) and `state` = '0' and `asset_scan_id` = '%s'" % (self.task_id,values1.lower(),self.asset_scan_id)
+                        else:
+                            sql = "update hostmsg_%s set `state` = '1' where `ip` in (%s) and `state` = '0'" % (self.task_id,values1.lower())
+                        #end if
+                        self.cursor.execute(sql)
+                        self.conn.commit()
+                    #end if
+                    if values2 != '':
+                        sql = ""
+                        if self.asset_scan_id > 0:
+                            sql = "update hostmsg_%s set `state` = '2', port_state = '1', host_state = '1', web_state = '1', weak_state = '1' where `ip` in (%s) and `state` = '0' and `asset_scan_id` = '%s'" % (self.task_id,values2.lower(),self.asset_scan_id)
+                        else:
+                            sql = "update hostmsg_%s set `state` = '2', port_state = '1', host_state = '1', web_state = '1', weak_state = '1' where `ip` in (%s) and `state` = '0'" % (self.task_id,values2.lower())
+                        #end if
+                        self.cursor.execute(sql)
+                        self.conn.commit()
+                    #end if
+                    
+                    return True
+                else:
+                    return False
+                #end if
+            else:
+                return False
+            #end if
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan_thread.update_ip_range:" + str(e) + ",task id:" + self.task_id)
+            return False
+        #end try
+    #end def
+        
+    def run(self):
+        try:
+            list1 = []
+            list2 = []
+            while True:
+                if self.queue.qsize() < 1:
+                    print "prescan thread exit"
+                    break
+                #end if
+                ip = self.queue.get_nowait()
+                
+                if not ip or ip == "":
+                    print "prescan thread exit"
+                    break
+                #end if
+                
+                if self.mysqlConnect():
+                    if self.checkIp(ip):
+                        #flag = 1
+                        list1.append(ip)
+                        if self.update_ip_range(list1,list2):
+                            list1 = []
+                            list2 = []
+                        #end if
+                        #self.sendMsg(ip)
+                    else:
+                        list2.append(ip)
+                        if self.update_ip_range(list1,list2):
+                            list1 = []
+                            list2 = []
+                        #end if
+                    #end if
+                #end if
+            #end while
+            self.update_ip_range(list1, list2, True)
+            self.update_ip_range(list1, list2, True)
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan_thread.run:" + str(e) + ",task id:" + str(self.task_id))
+        #end try
+    #end def
+
+
+class PreScan:
+    def __init__(self,task_id,type):
+        try:
+            self.task_id            = str(task_id)
+            self.type               = type
+            self.task_name          = ""
+            self.init_thread        = 1
+            self.asset_scan_id      = 0
+            self.hostmsg_table      = "hostmsg_" + self.task_id
+            self.port_list_table    = "port_list_" + self.task_id
+            self.domain_list_table  = "domain_list_" + self.task_id
+            self.scan_result_table  = "scan_result_" + self.task_id
+            self.url_list_table     = "url_list_" + self.task_id
+            self.vul_details_table  = "vul_details_" + self.task_id
+            self.weak_pwd_details_table = "weak_pwd_details_" + self.task_id
+            self.conn               = ""
+            self.cursor             = ""
+            self.queue              = Queue()
+            #self.queueLock          = threading.Lock()
+            self.ip_list            = []
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.__init__:" + str(e) + ",task id:" + str(task_id))
+        #end try
+    #end def
+    
+    def mysqlConnect(self):
+        try:
+            
+            if self.conn == '' or self.cursor == '':
+                self.conn = MySQLdb.connect(host, user, passwd , db = database, charset = "utf8")
+                self.cursor = self.conn.cursor(MySQLdb.cursors.DictCursor)
+            #end if
+            return True
+        except Exception,e:
+            self.conn = ''
+            self.cursor = ''
+            logging.getLogger().error("File:PreScan.py, PreScan.mysqlConnect:" + str(e) + ",task id:" + str(self.task_id))
+            return False
+        #end try
+    #end def
+    
+    def mysqlClose(self):
+        try:
+            if self.conn != '' and self.cursor != '':
+                self.cursor.close()
+                self.conn.close()
+            #end if
+            self.conn = ''
+            self.cursor = ''
+            return True
+        except Exception,e:
+            self.conn = ''
+            self.cursor = ''
+            logging.getLogger().error("File:PreScan.py, PreScan.mysqlClose:" + str(e) + ",task id:" + str(self.task_id))
+            return False
+        #end try
+    #end def
+    
+    '''
+    def ip2int (self,addr):
+        try:
+            return struct.unpack("!I",socket.inet_aton(addr))[0]
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.ip2int:" + str(e) + ",task id:" + str(self.task_id) + ",addr:" + str(addr))
+            return ''  
+        #end try
+    #end def
+    
+    def int2ip (self,i):
+        try:
+            return socket.inet_ntoa(struct.pack("!I",i))
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.ip2int:" + str(e) + ",task id:" + str(self.task_id) + ",i:" + str(i))
+            return '' 
+        #end try
+    #end def
+    
+    def domainToip(self,domain):
+        try:
+            socket.setdefaulttimeout(30)
+            ip = socket.gethostbyname(domain)
+            return ip
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.domainToip:" + str(e) + ",task id:" + str(self.task_id) + ",domain:" + str(domain))
+            return '' 
+        #end try
+    #end def
+    '''
+    
+    def insert_ip(self,ip,isIp):
+        try:
+            self.mysqlConnect()
+            current_time = time.strftime("%Y-%m-%d %X",time.localtime())
+            ip = ip.lower()
+            if checkIpv6(ip):
+                ip_full = fullIpv6(ip)
+                ip = easyIpv6(ip_full)
+            if isIp:
+                sql = "insert into hostmsg_%s (`task_id`,`task_name`,`ip`,`state`,`port_state`,`host_state`,`web_state`,`weak_state`,`start_time`,`asset_scan_id`) values ('%s','%s','%s','0','0','0','0','0','%s','%s')" % (self.task_id,self.task_id,self.task_name,ip,current_time,self.asset_scan_id)
+            else:
+                sql = "insert into hostmsg_%s (`task_id`,`task_name`,`ip`,`state`,`port_state`,`host_state`,`web_state`,`weak_state`,`start_time`,`asset_scan_id`) values ('%s','%s','%s','1','0','0','0','0','%s','%s')" % (self.task_id,self.task_id,self.task_name,ip,current_time,self.asset_scan_id)
+            #end if
+            self.cursor.execute(sql)
+            self.conn.commit()
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.insert_ip:" + str(e) + ",task id:" + str(self.task_id) + ",ip:" + str(ip))
+        #end try
+    #end def
+    
+    def insert_ip_range(self,list,force=False):
+        try:
+            if len(list) < 1:
+                return False
+            #end if
+            if self.mysqlConnect():
+                current_time = time.strftime("%Y-%m-%d %X",time.localtime())
+                if len(list) > 1000 or force:
+                    values1 = []
+                    for ip in list:
+                        values1.append("('%s','%s','%s','0','0','0','0','0','%s','%s')" % (self.task_id,self.task_name,ip.lower(),current_time,self.asset_scan_id))
+                    #end for
+                    values1 = ','.join(values1)
+                    
+                    sql = "insert into hostmsg_%s (`task_id`,`task_name`,`ip`,`state`,`port_state`,`host_state`,`web_state`,`weak_state`,`start_time`,`asset_scan_id`) values %s" % (self.task_id,values1)
+                    self.cursor.execute(sql)
+                    self.conn.commit()
+                    return True
+                else:
+                    return False
+                #end if
+            else:
+                return False
+            #end if
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.insert_ip_range:" + str(e) + ",task id:" + str(self.task_id))
+            return False
+        #end try
+    #end def
+    
+    def CheckTask(self):
+        try:
+            if self.mysqlConnect():
+                sql = "select u.Maxtasks as max_count from task_manage t,user u where t.user_id=u.id and t.id = '%s'" % (self.task_id)
+                self.cursor.execute(sql)
+                self.conn.commit()
+                res = self.cursor.fetchone()
+                max_count = res['max_count']
+                sql = "select count(*) as c from task_manage where `state` = '2' and `id` <> '%s'" % (self.task_id)
+                self.cursor.execute(sql)
+                self.conn.commit()
+                res = self.cursor.fetchone()
+                if res and len(res) > 0 and res['c'] >= max_count:
+                    sql = "update `task_manage` set `state` = '5' where `id` = '%s'" % (self.task_id)
+                    self.cursor.execute(sql)
+                    self.conn.commit()
+                    return False
+                else:
+                    return True
+                #end if
+            #end if
+            return True
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.CheckTask:" + str(e) + ",task id:" + self.task_id)
+            return True
+        #end try
+    #end def
+
+    
+    def init(self):
+        try:
+            '''
+            if self.CheckTask() == False:
+                return
+            #end if
+            '''
+            if self.mysqlConnect():
+                if self.type == 'reinit':
+                    sql = "update `task_manage` set `state` = '1',`init_state` = '0', `prescan_state` = '0', `port_state` = '0', `host_state` = '0', `web_state` = '0', web_getdomain_state = '0', `weak_state` = '0', `start_time` = '0000-00-00 00:00:00', `end_time` = '0000-00-00 00:00:00' where id = '%s'" % (self.task_id)
+                    self.cursor.execute(sql)
+                    self.conn.commit()
+                #end if
+                current_time = time.strftime("%Y-%m-%d %X",time.localtime())
+                sql = "update `task_manage` set `state` = '2', `start_time` = now(), `end_time` = '0000-00-00 00:00:00' where `id` = '%s' and `state` = '1'" % (self.task_id)
+                self.cursor.execute(sql)
+                self.conn.commit()
+                sql = "update `task_manage` set `state` = '3', `end_time` = now() where `id` = '%s' and `init_state` = '1' and `prescan_state` = '1' and `host_state` = '1' and `web_state` = '1' and `weak_state` = '1' and `port_state` = '1'" % (self.task_id)
+                self.cursor.execute(sql)
+                self.conn.commit()
+                
+                if self.ifPreScan() == True:
+                    return
+                #end if
+                
+                sql = "select `task_name`,`target`,`asset_scan_id` from `task_manage` where `id` = '%s'" % (self.task_id)
+                self.cursor.execute(sql)
+                self.conn.commit()
+                res = self.cursor.fetchone()
+                self.asset_scan_id = res['asset_scan_id']
+                self.task_name = res['task_name']
+                target = res['target']
+                targetList = target.split(',')
+                
+                if self.update_domain_list_table() and self.update_hostmsg_table() and self.update_port_list_table() and self.update_url_list_table() and self.update_scan_result_table() and self.update_vul_details_table() and self.update_weak_pwd_details_table():
+                    if self.asset_scan_id > 0:
+                        sql = "select `ip` from hostmsg_%s where `asset_scan_id` = '%s'" % (self.task_id,self.asset_scan_id)
+                    else:
+                        sql = "select `ip` from hostmsg_%s " % (self.task_id)
+                    #end if
+                    self.cursor.execute(sql)
+                    self.conn.commit()
+                    res = self.cursor.fetchall()
+                    for r in res:
+                        if checkIpv6(r['ip']):
+                            self.ip_list.append(fullIpv6(r['ip']))
+                        else:
+                            self.ip_list.append(r['ip'])
+                        #end if
+                    #end for
+                    
+                    
+                    list = []
+                    for url in targetList:
+                        #check ipv4 or ipv6
+                        ipv4_enable = checkIpv4(url)
+                        ipv6_enable = checkIpv6(url)
+                        if ipv4_enable or ipv6_enable:
+                            ip_full = url
+                            if ipv6_enable:
+                                ip_full = fullIpv6(url)
+                            #end if
+                            if ip_full in self.ip_list:
+                                continue
+                            else:
+                                self.ip_list.append(ip_full)
+                            #end if
+                            list.append(url)
+                            if self.insert_ip_range(list):
+                                list = []
+                            #end if
+
+                            continue
+                        #end if
+                        #check ipv4 range or ipv6 range
+
+                        ipv4_range_enable = checkIpv4Range(url)
+                        ipv6_range_enable = checkIpv6Range(url)
+                        if ipv4_range_enable or ipv6_range_enable:
+                            url_list = url.split("-")
+                            ip_list = []
+                            if ipv6_range_enable:
+                                if checkIpv6(url_list[1]):
+                                    ip_list = getIpv6Range(url_list[0], url_list[1])
+                                else:
+                                    last_colon_index = 0
+                                    url_end = ''
+                                    for i in range(len(url_list[0])):
+                                        if url_list[0][i] == ':':
+                                            last_colon_index = i
+                                    url_end = url_list[0][:last_colon_index+1] + url_list[1]
+                                    ip_list = getIpv6Range(url_list[0], url_end)
+                            else:
+                                ip_list = getIpv4Range(url_list[0], url_list[1])
+                            #end if
+                            for ip in ip_list:
+                                ip_full = ip
+                                if ipv6_range_enable:
+                                    ip_full = fullIpv6(ip)
+                                    ip = easyIpv6(ip_full)
+                                #end if
+                                if ip_full in self.ip_list:
+                                    continue
+                                else:
+                                    self.ip_list.append(ip_full)
+                                #end if
+
+                                list.append(ip)
+                                if self.insert_ip_range(list):
+                                    list = []
+                                #end if
+                            #end for
+
+                            continue
+                        #end if
+                        #check domain
+                        ip = ""
+                        isIp = False
+                        domain = url
+                        if domain.find("#") >= 0:
+                            domain_list = domain.split("#")
+                            domain = domain_list[0].split("/",1)[0]
+                        #end if
+                        if len(domain_list)>5 and domain_list[4] != '':  #配置了真实IP
+                            ip = domain_list[4]
+                        else:
+                            ip = domainToip(domain)
+                            if ip == False:
+                                continue
+                        if domain.find(ip) >= 0:
+                            isIp = True
+                        #end if
+                        if ip != "":
+                            ip_full = ip
+                            if checkIpv6(ip):
+                                ip_full = fullIpv6(ip)
+                            #end if
+                            if ip_full in self.ip_list:
+                                continue
+                            else:
+                                self.ip_list.append(ip_full)
+                            #end if
+                            self.insert_ip(ip,isIp)
+                        #end if
+                    #end for
+                    self.insert_ip_range(list, True)
+                #end if
+                
+                sql = "update `task_manage` set `init_state` = '1' where `id` = '%s'" % (self.task_id)
+                self.cursor.execute(sql)
+                self.conn.commit()
+            else:
+                logging.getLogger().error("File:PreScan.py, PreScan.init: mysql connect error ,task id:" + str(self.task_id))
+            #end if
+            
+            self.mysqlClose()
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.init:" + str(e) + ",task id:" + str(self.task_id))
+        #end try
+    #end def
+    
+    def update_hostmsg_table(self):
+        try:
+            self.mysqlConnect()
+            if self.asset_scan_id <= 0:
+                if table_exists(self.hostmsg_table):
+                    sql = "drop table " + self.hostmsg_table
+                    self.cursor.execute(sql)
+                    self.conn.commit()
+                #end if
+            #end if
+            
+            if table_exists(self.hostmsg_table):
+                if self.asset_scan_id > 0:
+                    sql = "delete from %s where asset_scan_id = '%s'" % (self.hostmsg_table,self.asset_scan_id)
+                else:
+                    sql = "truncate table " + self.hostmsg_table
+                #end if
+            else:
+                sql = "create table " + self.hostmsg_table + "("
+                sql += "`id` int(11) NOT NULL AUTO_INCREMENT,"
+                sql += "`task_id` int(11) DEFAULT NULL,"
+                sql += "`task_name` varchar(256) DEFAULT NULL,"
+                sql += "`ip` varchar(45) DEFAULT NULL,"
+                sql += "`state` int(1) DEFAULT NULL,"
+                sql += "`port_state` int(1) DEFAULT NULL,"
+                sql += "`host_state` int(1) DEFAULT NULL,"
+                sql += "`web_state` int(1) DEFAULT NULL,"
+                sql += "`weak_state` int(1) DEFAULT NULL,"
+                sql += "`mac_address` varchar(128) DEFAULT '',"
+                sql += "`real_address` varchar(256) DEFAULT NULL,"
+                sql += "`os` varchar(512) DEFAULT '',"
+                sql += "`mother_board` varchar(128) DEFAULT NULL,"
+                sql += "`device_type` varchar(128) DEFAULT NULL,"
+                sql += "`net_distance` varchar(128) DEFAULT NULL,"
+                sql += "`web_server` varchar(128) DEFAULT NULL,"
+                sql += "`start_time` timestamp NULL DEFAULT NULL,"
+                sql += "`end_time` timestamp NULL DEFAULT NULL,"
+                sql += "`asset_scan_id` int(11) default 0,"
+                sql += "`host_progress` int(3) DEFAULT 0,"
+                sql += "`weak_progress` int(3) DEFAULT 0,"
+                sql += "PRIMARY KEY (`id`),"
+                sql += "KEY `asset_scan_id` (`asset_scan_id`),"
+                sql += "KEY `ip` (`ip`)"
+                sql += ")ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8"
+            #end if
+            self.cursor.execute(sql)
+            self.conn.commit()
+            return True
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.update_hostmsg_table:" + str(e) + ",task id:" + str(self.task_id))
+            return False
+        #end try 
+    #end def
+    
+    def update_port_list_table(self):
+        try:
+            self.mysqlConnect()
+            if self.asset_scan_id <= 0:
+                if table_exists(self.port_list_table):
+                    sql = "drop table " + self.port_list_table
+                    self.cursor.execute(sql)
+                    self.conn.commit()
+                #end if
+            #end if
+            if table_exists(self.port_list_table):
+                if self.asset_scan_id > 0:
+                    sql = "delete from %s where asset_scan_id = '%s'" % (self.port_list_table,self.asset_scan_id)
+                else:
+                    sql = "truncate table " + self.port_list_table
+                #end if
+            else:
+                sql = "create table " + self.port_list_table + "("
+                sql += "`id` int(11) NOT NULL auto_increment,"
+                sql += "`ip` varchar(45) default NULL,"
+                sql += "`state` varchar(50) default NULL,"
+                sql += "port int(10) default NULL,"
+                sql += "proto varchar(10) default NULL,"
+                sql += "service varchar(255) default NULL,"
+                sql += "version varchar(255) default NULL,"
+                sql += "`asset_scan_id` int(11) default 0,"
+                sql += "PRIMARY KEY  (`id`),"
+                sql += "KEY `asset_scan_id` (`asset_scan_id`),"
+                sql += "KEY `ip` (`ip`)"
+                sql += ")ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8"
+            #end if
+            self.cursor.execute(sql)
+            self.conn.commit()
+            return True
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.update_port_list_table:" + str(e) + ",task id:" + str(self.task_id))
+            return False
+        #end try 
+    #end def
+    
+    def update_domain_list_table(self):
+        try:
+            self.mysqlConnect()
+            if self.asset_scan_id <= 0:
+                if table_exists(self.domain_list_table):
+                    sql = "drop table " + self.domain_list_table
+                    self.cursor.execute(sql)
+                    self.conn.commit()
+                #end if
+            #end if
+            if table_exists(self.domain_list_table):
+                if self.asset_scan_id > 0:
+                    sql = "delete from %s where asset_scan_id = '%s'" % (self.domain_list_table,self.asset_scan_id)
+                else:
+                    sql = "truncate table " + self.domain_list_table
+                #end if
+            else:
+                sql = "create table " + self.domain_list_table + "("
+                sql += "`id` int(10) NOT NULL AUTO_INCREMENT,"
+                sql += "`task_id` int(10) DEFAULT NULL,"
+                sql += "`task_name` varchar(512) DEFAULT NULL,"
+                sql += "`scheme` varchar(6) DEFAULT 'http',"
+                sql += "`domain` varchar(500) DEFAULT NULL,"
+                sql += "`ip` varchar(45) DEFAULT NULL,"
+                sql += "`state` int(1) DEFAULT NULL,"
+                sql += "`spider_state` int(1) DEFAULT NULL,"
+                sql += "`progress` text DEFAULT NULL,"
+                sql += "`progress_status` mediumtext,"
+                sql += "`exception` varchar(512) DEFAULT NULL,"
+                sql += "`exception_count` int(1) DEFAULT NULL,"
+                sql += "`title` varchar(500) DEFAULT NULL,"
+                sql += "`base_path` varchar(500) DEFAULT NULL,"
+                sql += "`policy` int(1) DEFAULT NULL,"
+                sql += "`policy_detail` text default NULL,"
+                sql += "`service_type` varchar(255) DEFAULT NULL,"
+                sql += "`site_type` varchar(255) DEFAULT NULL,"
+                sql += "`database_type` varchar(255) DEFAULT NULL,"
+                sql += "`start_time` timestamp NULL DEFAULT NULL,"
+                sql += "`end_time` timestamp NULL DEFAULT NULL,"
+                sql += "`next_start_time` timestamp NULL DEFAULT NULL,"
+                sql += "`cookie_url` varchar(1024) DEFAULT NULL,"
+                sql += "`begin_path` varchar(500) DEFAULT NULL,"
+                sql += "`asset_scan_id` int(11) default 0,"
+                sql += "`exclude_url` text DEFAULT NULL,"
+                sql += "PRIMARY KEY (`id`),"
+                sql += "KEY `asset_scan_id` (`asset_scan_id`),"
+                sql += "KEY `ip` (`ip`)"
+                sql += ")ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8"
+            #end if
+            self.cursor.execute(sql)
+            self.conn.commit()
+            return True
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.update_domain_list_table:" + str(e) + ",task id:" + str(self.task_id))
+            return False
+        #end try
+    #end def
+    
+    def update_scan_result_table(self):
+        try:
+            self.mysqlConnect()
+            if self.asset_scan_id <= 0:
+                if table_exists(self.scan_result_table):
+                    sql = "drop table " + self.scan_result_table
+                    self.cursor.execute(sql)
+                    self.conn.commit()
+                #end if
+            #end if
+            if table_exists(self.scan_result_table):
+                if self.asset_scan_id > 0:
+                    sql = "delete from %s where asset_scan_id = '%s'" % (self.scan_result_table,self.asset_scan_id)
+                else:
+                    sql = "truncate table " + self.scan_result_table
+                #end if
+            else:
+                sql = "create table " + self.scan_result_table + "("
+                sql += "`id` int(11) NOT NULL auto_increment,"
+                sql += "`domain_id` int(11) default NULL,"
+                sql += "`url` varchar(500) default NULL,"
+                sql += "`ip` varchar(45) default NULL,"
+                sql += "`vul_type` varchar(512) default NULL,"
+                sql += "`domain` varchar(255) default NULL,"
+                sql += "`level` varchar(10) default NULL,"
+                sql += "`detail` mediumtext,"
+                sql += "`output` mediumtext,"
+                sql += "`vul_id` int(11) default NULL,"
+                sql += "`request` mediumtext,"
+                sql += "`response` mediumtext,"
+                sql += "`asset_scan_id` int(11) default 0,"
+                sql += "PRIMARY KEY (`id`),"
+                sql += "KEY `asset_scan_id` (`asset_scan_id`),"
+                sql += "KEY `vul_id` (`vul_id`),"
+                sql += "KEY `domain_id` (`domain_id`)"
+                sql += ") ENGINE=InnoDB DEFAULT CHARSET=utf8"
+            #end if
+            self.cursor.execute(sql)
+            self.conn.commit()
+            return True
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.update_scan_result_table:" + str(e) + ",task id:" + str(self.task_id))
+            return False
+        #end try
+    #end def
+    
+    def update_url_list_table(self):
+        try:
+            self.mysqlConnect()
+            if self.asset_scan_id <= 0:
+                if table_exists(self.url_list_table):
+                    sql = "drop table " + self.url_list_table
+                    self.cursor.execute(sql)
+                    self.conn.commit()
+                #end if
+            #end if
+            if table_exists(self.url_list_table):
+                if self.asset_scan_id > 0:
+                    sql = "delete from %s where asset_scan_id = '%s'" % (self.url_list_table,self.asset_scan_id)
+                else:
+                    sql = "truncate table " + self.url_list_table
+                #end if
+            else:
+                sql = "create table " + self.url_list_table + "("
+                sql += "`id` int(11) NOT NULL auto_increment,"
+                sql += "`domain_id` int(11) default NULL,"
+                sql += "`url` varchar(500) default NULL,"
+                sql += "`params` text default NULL,"
+                sql += "`method` varchar(5) default NULL,"
+                sql += "`refer` varchar(500) default NULL,"
+                sql += "`asset_scan_id` int(11) default 0,"
+                sql += "PRIMARY KEY (`id`),"
+                sql += "KEY `asset_scan_id` (`asset_scan_id`)"
+                sql += ") ENGINE=InnoDB DEFAULT CHARSET=utf8"
+            #end if
+            self.cursor.execute(sql)
+            self.conn.commit()
+            return True
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.update_url_list_table:" + str(e) + ",task id:" + str(self.task_id))
+            return False
+        #end try
+    #end def
+    
+    def update_vul_details_table(self):
+        try:
+            self.mysqlConnect()
+            if self.asset_scan_id <= 0:
+                if table_exists(self.vul_details_table):
+                    sql = "drop table " + self.vul_details_table
+                    self.cursor.execute(sql)
+                    self.conn.commit()
+                #end if
+            #end if
+            if table_exists(self.vul_details_table):
+                if self.asset_scan_id > 0:
+                    sql = "delete from %s where asset_scan_id = '%s'" % (self.vul_details_table,self.asset_scan_id)
+                else:
+                    sql = "truncate table " + self.vul_details_table
+                #end if
+            else:
+                sql = "create table " + self.vul_details_table + "("
+                sql += "`id` int(11) NOT NULL auto_increment,"
+                sql += "`ip` varchar(45) default NULL,"
+                sql += "`vul_id` int(11) default NULL,"
+                sql += "`cve` varchar(512) default NULL,"
+                sql += "`cnvd` varchar(512) default NULL,"
+                sql += "`cnnvd` varchar(512) default NULL,"
+                sql += "`risk_factor` varchar(32) default NULL,"
+                sql += "`vul_name` varchar(512) default NULL,"
+                sql += "`desc` varchar(4096) default NULL,"
+                sql += "`solution` varchar(4096) default NULL,"
+                sql += "`ref` varchar(4096) default NULL,"
+                sql += "`output` text,"
+                sql += "`family` varchar(128) default NULL,"
+                sql += "`port` int(11) default NULL,"
+                sql += "`proto` varchar(32) default NULL,"
+                sql += "`metasploit` varchar(256) default NULL,"
+                sql += "`asset_scan_id` int(11) default 0,"
+                sql += "PRIMARY KEY  (`id`),"
+                sql += "KEY `asset_scan_id` (`asset_scan_id`)"
+                sql += ")ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 "
+            #end if
+            self.cursor.execute(sql)
+            self.conn.commit()
+            return True
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.update_vul_details_table:" + str(e) + ",task id:" + str(self.task_id))
+            return False
+        #end try 
+    #end def
+    
+    def update_weak_pwd_details_table(self):
+        try:
+            self.mysqlConnect()
+            if self.asset_scan_id <= 0:
+                if table_exists(self.weak_pwd_details_table):
+                    sql = "drop table " + self.weak_pwd_details_table
+                    self.cursor.execute(sql)
+                    self.conn.commit()
+                #end if
+            #end if
+            if table_exists(self.weak_pwd_details_table):
+                if self.asset_scan_id > 0:
+                    sql = "delete from %s where asset_scan_id = '%s'" % (self.weak_pwd_details_table,self.asset_scan_id)
+                else:
+                    sql = "truncate table " + self.weak_pwd_details_table
+                #end if
+            else:
+                sql = "create table " + self.weak_pwd_details_table + "("
+                sql += "`id` int(11) NOT NULL auto_increment,"
+                sql += "`taskid` int(11) default NULL,"
+                sql += "`taskname` varchar(256) default NULL,"
+                sql += "`ip` varchar(45) default NULL,"
+                sql += "`type` varchar(32) default NULL,"
+                sql += "`username` varchar(256) default NULL,"
+                sql += "`password` varchar(256) default NULL,"
+                sql += "`asset_scan_id` int(11) default 0,"
+                sql += "`port` varchar(256) default NULL,"
+                sql += "`proto` varchar(256) default NULL,"
+                sql += "PRIMARY KEY (`id`),"
+                sql += "KEY `asset_scan_id` (`asset_scan_id`)"
+                sql += ")ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 "
+            #end if
+            self.cursor.execute(sql)
+            self.conn.commit()
+            return True
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.update_weak_pwd_details_table:" + str(e) + ",task id:" + str(self.task_id))
+            return False
+        #end try 
+    #end def
+    
+    def ifPreScan(self):
+        try:
+            if self.mysqlConnect():
+                self.cursor.execute("select `init_state` from `task_manage` where `id` = '%s'" % (self.task_id))
+                self.conn.commit()
+                ret = self.cursor.fetchone()
+                if ret and len(ret) > 0:
+                    if ret['init_state'] == 1:
+                        return True
+                    else:
+                        return False
+                    #end if
+                else:
+                    return False
+                #end if
+            else:
+                logging.getLogger().error("File:PreScan.py, PreScan.ifPreScan: mysql connect error ,task id:" + str(self.task_id))
+                return False
+            #end if
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.ifPreScan:" + str(e) + ",task id:" + str(self.task_id))
+            return False
+        #end try
+    #end def
+    
+    
+    def main(self):
+        try:
+            if self.ifPreScan() == False:
+                return
+            #end if
+            self.mysqlConnect()
+            self.cursor.execute("select `state` , `prescan_state`, `asset_scan_id` from `task_manage` where `id` = '%s'" % (self.task_id))
+            self.conn.commit()
+            ret = self.cursor.fetchone()
+            '''
+            if ret and len(ret) > 0:
+                if res['state'] != 2 or ret['prescan_state'] == 1:
+                    return
+                #end if
+            #end if
+            '''
+            if ret and len(ret) > 0:
+                if ret['prescan_state'] == 1:
+                    return
+                #end if
+            #end if
+            
+            self.asset_scan_id = ret['asset_scan_id']
+            
+            hostmsg_table = table_exists(self.hostmsg_table)
+            
+            port_list_table = table_exists(self.port_list_table)
+            
+            domain_list_table = table_exists(self.domain_list_table)
+            
+            scan_result_table = table_exists(self.scan_result_table)
+            
+            url_list_table = table_exists(self.url_list_table)
+            
+            vul_details_table = table_exists(self.vul_details_table)
+            
+            weak_pwd_details_table = table_exists(self.weak_pwd_details_table)
+            
+            if hostmsg_table and domain_list_table and scan_result_table and url_list_table and weak_pwd_details_table and port_list_table and vul_details_table:
+                
+                sql = ""
+                if self.asset_scan_id > 0:
+                    sql = "select `ip` from %s where `state` = '0' and `asset_scan_id` = '%s'" % (self.hostmsg_table,self.asset_scan_id)
+                else:
+                    sql = "select `ip` from %s where `state` = '0'" % (self.hostmsg_table)
+                #end if
+                self.cursor.execute(sql)
+                self.conn.commit()
+                ret = self.cursor.fetchall()
+                if ret and len(ret) > 0:
+                    for row in ret:
+                        ip = row['ip']
+                        print ip
+                        self.queue.put(ip)
+                    #end for
+                #end if
+                
+                self.cursor.execute("select `port_thread` from `task_manage` where `id` = '%s'" % (self.task_id))
+                self.conn.commit()
+                ret = self.cursor.fetchone()
+                if ret and len(ret) > 0:
+                    self.init_thread = ret['port_thread']
+                #end if
+                
+                if self.init_thread < 1:
+                    self.init_thread = 10
+                #end if
+                
+                self.init_thread = 30
+                
+                list = []
+                for i in range(self.init_thread):
+                    temp = PreScan_thread(self.queue,self.task_id,self.task_name,self.hostmsg_table,self.asset_scan_id)
+                    list.append(temp)
+                #end for
+                
+                for i in range(len(list)):
+                    list[i].start()
+                #end for
+                
+                for i in range(len(list)):
+                    list[i].join()
+                #end for
+            #end if
+            
+            self.cursor.execute("update `task_manage` set `prescan_state` = '1' where `id` = '%s'" % (self.task_id))
+            self.conn.commit()
+            
+            #current_time = time.strftime("%Y-%m-%d %X",time.localtime())
+            sql = "update `task_manage` set `state` = '3', `end_time` = now() where `id` = '%s' and `init_state` = '1' and `prescan_state` = '1' and `port_state` = '1' and `host_state` = '1' and `web_state` = '1' and `weak_state` = '1'" % (self.task_id)
+            self.cursor.execute(sql)
+            self.conn.commit()
+            
+            sendEmail(self.task_id)
+            
+            updateTaskManage()
+            check_if_all_end(self.task_id)
+            self.mysqlClose()
+        except Exception,e:
+            logging.getLogger().error("File:PreScan.py, PreScan.main:" + str(e) + ",task id:" + str(self.task_id))
+        #end try    
+    #end def
+#end class
+
+if __name__ == '__main__':
+    init_log(logging.ERROR, logging.ERROR, "/var/log/" + os.path.split(__file__)[1].split(".")[0] + ".log")
+    try:
+        if len(sys.argv) == 3:
+            #初始化扫描任务
+            task_id = sys.argv[1].replace("#", "")
+            type = sys.argv[2]
+            if type != 'init' and type != 'reinit':
+                type = 'init'
+            #end if
+            
+            cmd = "/usr/bin/python /var/waf/PreScan.py %s# %s" % (task_id,type)
+            res = checkProcess(cmd)
+            if res == False:
+                logging.getLogger().error("File:PreScan.py, __main__: Process: %s is exist" % (cmd))
+                sys.exit(0)
+            #end if
+            
+            prescan = PreScan(task_id,type)
+            prescan.init()
+            syslog_vul_begin(task_id, prescan.task_name.encode("utf8"))
+        elif len(sys.argv) == 2:
+            task_id = sys.argv[1].replace("#", "")
+            prescan = PreScan(task_id,'')
+            prescan.main()
+        else:
+            print "args error!"
+        #end if
+    except Exception,e:
+        logging.getLogger().error("File:PreScan.py, __main__:" + str(e) + ",task id:" + str(task_id))
+    #end try
+#end if
+

@@ -1,0 +1,20 @@
+
+    example usage:
+    #1:generate a cert,2:varify a cert,3:generate a encrypted mod rule file,option=4:initialize license table
+    option=1
+    #when option=1,file means the output encpyted cert file, the default value is bdwaf.license
+    #while option=2,means the encrypted cert file
+    #while option=3,means the file to be encrypted,it must be a tar file
+    file=bdwaf.license
+    
+    #note:feilds beneath are only need when option=1,and only serial is prerequisite,others are optional
+    #0:free,1:official,when free, serial and expire are needed too.
+    free=1
+    serial=aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    expire="2010-01-01 00:00:00"
+    name=蓝盾信息安全技术有限责任公司
+    addr=黄埔大道西御发商务中心6楼
+    email=yzg@chinabluedon.cn
+    tel=18000000000
+    
+f1e968b631c0a40cb6a4dcbdc31deb7a

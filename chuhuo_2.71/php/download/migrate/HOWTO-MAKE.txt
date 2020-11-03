@@ -1,0 +1,17 @@
+/////////////////////////////////////////////////////
+/// Copyright (C) 2016, Bluedon. All rights reserved
+/// Author: Linfan Hu (hlf@chinabluedon.cn)
+/// Date: 2016/12/19
+/// Description: 
+/////////////////////////////////////////////////////
+
+1. edit version.txt
+    comment this file if you want to use the newest source
+
+2. export source packages
+    # sh export_packages.sh
+    then copy ips, python modules, snort, sysconfig to bdfw_update
+
+3. make tar ball
+    # sh make_tar_ball.sh
+    then input password, which can be arbitrary

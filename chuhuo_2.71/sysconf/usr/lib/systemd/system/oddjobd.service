@@ -1,0 +1,11 @@
+[Unit]
+Description=privileged operations for unprivileged applications
+After=syslog.target network.target dbus.service
+
+[Service]
+Type=simple
+PIDFile=/var/run/oddjobd.pid
+ExecStart=/usr/sbin/oddjobd -n -p /var/run/oddjobd.pid -t 300
+
+[Install]
+WantedBy=multi-user.target

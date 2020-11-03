@@ -1,0 +1,12 @@
+[Unit]
+Description=Firewall statistics data service
+After=dpdk.service
+Requires=dpdk.service
+
+[Service]
+Type=simple
+ExecStart=/var/log/iptable_log/iptable-log
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+{% for app in apps -%}
+  <app name="{{ app['name'] }}" type="web">
+    <description>{{ app['description'] }}</description>
+    <location>{{ app['location'] }}</location>
+    <vlocation>{{ app['vlocation'] }}</vlocation>
+    <server>{{ app['server'] }}</server>
+    {% if app['port'] -%}
+    <port>{{ app['port'] }}</port>
+    <vport>{{ app['port'] }}</vport>
+    {% else -%}
+    <port>443</port>
+    <vport>443</vport>
+    {% endif -%}
+{% if app['icon'] -%}
+<icon>{{ app['icon'] }}</icon>
+{% endif -%}
+  </app>
+{% endfor -%}
+</config>

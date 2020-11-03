@@ -1,0 +1,17 @@
+cd apr-1.5.0
+./configure
+make
+make install
+
+cd apr-util-1.5.3
+./configure --with-apr=/usr/local/apr 
+make
+make install
+
+cp -f /usr/local/apr/lib/libapr-1.so.0.5.0 /usr/lib64/ ;
+cp -f /usr/local/apr/lib/libaprutil-1.so.0.5.3 /usr/lib64/ ;
+
+ln -sf /usr/lib64/libapr-1.so.0.5.0 /usr/lib64/libapr-1.so.0 ;
+ln -sf /usr/lib64/libaprutil-1.so.0.5.3 /usr/lib64/libaprutil-1.so.0 ;
+
+÷ÿ–¬±‡“Îmodsecurity”Înginx

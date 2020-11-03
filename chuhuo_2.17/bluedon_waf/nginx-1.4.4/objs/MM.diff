@@ -1,0 +1,12 @@
+1c1
+< BD_DPDK_WARPER = /home/zpj/bd_dpdk_warper
+---
+> 
+3c3
+< CFLAGS =  -pipe  -O -W -Wall -Wpointer-arith -Wno-unused-parameter -Werror -g       -I/usr/local/apr/include/apr-1       -I/usr/local/apr/include/apr-1      -I/usr/local/apache2/include     -I/usr/local/include/libxml2          -DWITH_PCRE_STUDY -DMODSEC_PCRE_MATCH_LIMIT=1500 -DMODSEC_PCRE_MATCH_LIMIT_RECURSION=1500  -DREQUEST_EARLY              -I/usr/local/include          -I $(BD_DPDK_WARPER)/include  -I $(BD_DPDK_WARPER)/include2
+---
+> CFLAGS =  -pipe  -O -W -Wall -Wpointer-arith -Wno-unused-parameter -Werror -g       -I/usr/local/apr/include/apr-1       -I/usr/local/apr/include/apr-1      -I/usr/local/apache2/include     -I/usr/local/include/libxml2          -DWITH_PCRE_STUDY -DMODSEC_PCRE_MATCH_LIMIT=1500 -DMODSEC_PCRE_MATCH_LIMIT_RECURSION=1500  -DREQUEST_EARLY              -I/usr/local/include          
+333c333
+< 	/home/zpj/ngx/ModSecurity_adj/nginx/modsecurity/../../standalone/.libs/standalone.a -lpthread -lcrypt -L/usr/local/apr/lib -lapr-1 -L/usr/local/apr/lib -laprutil-1 -I/usr/local/apache2/include -L/usr/local/lib -lxml2 -lz -lm -L/usr/local/lib -lpcre -L/usr/local/apache2/lib -lm -lpcre -lcrypto -lcrypto -lz -L$(BD_DPDK_WARPER)/lib2/ -ldpdk_bd  -L$(BD_DPDK_WARPER)/lib -ldpdk  -ldl   -lrt
+---
+> 	/home/zpj/ngx/ModSecurity_adj/nginx/modsecurity/../../standalone/.libs/standalone.a -lpthread -lcrypt -L/usr/local/apr/lib -lapr-1 -L/usr/local/apr/lib -laprutil-1 -I/usr/local/apache2/include -L/usr/local/lib -lxml2 -lz -lm -L/usr/local/lib -lpcre -L/usr/local/apache2/lib -lm -lpcre -lcrypto -lcrypto -lz

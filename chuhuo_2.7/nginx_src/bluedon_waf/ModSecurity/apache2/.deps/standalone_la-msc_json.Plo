@@ -1,0 +1,6 @@
+../apache2/standalone_la-msc_json.lo: ../apache2/msc_json.c \
+ /usr/include/stdc-predef.h ../apache2/msc_json.h
+
+/usr/include/stdc-predef.h:
+
+../apache2/msc_json.h:

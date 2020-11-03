@@ -1,0 +1,21 @@
+status:200
+content-length:255
+content-location:https://www.baidu.com/content-search.xml
+set-cookie:BAIDUID=987890D9E8D7CDF534399E9E405FAD40:FG=1; expires=Sat, 15-Oct-16 03:12:06 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1, __bsi=1792702083918447798_00_0_I_R_1_0303_C02F_N_I_I_0; expires=Fri, 16-Oct-15 03:12:11 GMT; domain=www.baidu.com; path=/
+accept-ranges:bytes
+expires:Fri, 16 Oct 2015 03:22:06 GMT
+vary:Accept-Encoding,User-Agent
+server:bfe/1.0.8.5
+last-modified:Tue, 28 Jul 2015 12:23:03 GMT
+connection:keep-alive
+etag:"ff-51bee881817c0"
+cache-control:max-age=600
+date:Fri, 16 Oct 2015 03:12:06 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM "
+content-type:application/xml
+####################
+<?xml version="1.0" encoding="UTF-8"?> 
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>百度搜索</ShortName>
+    <Url type="text/html" template="https://www.baidu.com/s?wd={searchTerms}"/> 
+</OpenSearchDescription>

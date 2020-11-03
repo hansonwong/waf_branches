@@ -1,0 +1,17 @@
+1. www.openssh.com
+  download openssh-7.4p1.tar.gz
+
+2.编译
+tar -xvf openssh-7.4p1.tar.gz    
+cd openssh-7.4p1  
+./configure --prefix=/usr --sysconfdir=/etc/ssh --with-md5-passwords --with-privsep-path=/var/lib/sshd  
+
+ make 
+ make install
+ 
+3.启动
+ service ssh restart
+
+4.查看版本
+ssh -V
+ OpenSSH_7.4p1, OpenSSL 1.0.1 14 Mar 2012

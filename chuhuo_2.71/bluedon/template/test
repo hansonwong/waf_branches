@@ -1,0 +1,3 @@
+{% for line in test %}
+{{line['1'].decode("gbk") }}
+{% endfor %}

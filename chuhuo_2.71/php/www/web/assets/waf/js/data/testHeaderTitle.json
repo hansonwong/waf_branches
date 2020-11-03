@@ -1,0 +1,18 @@
+[
+	{"sTitle":"ID","data":"sFrameId","bVisible":true},
+	{"sTitle":"时间","data":"sFrameName"},
+	{"sTitle":"开机时间","data":"sFrameDesc"},
+	{"sTitle":"内存利用率","data":"sFrameType"},
+	{"sTitle":"CPU利用率","data":"sFrameCPU"},
+	{"sTitle":"磁盘状态","data":"sFrameCP"},
+	{"sTitle":"镜像数据接入状态","data":"sFrameJx"},
+	{"sTitle":"镜像流量","data":"sFrameLl"},
+	{"sTitle":"内部活动主机数","data":"sFrameZj"},
+	{"sTitle":"攻击窃密监测模块","data":"sFrameMj"},
+	{"sTitle":"网络行为审计模块","data":"sFrameSj"},
+	{"sTitle":"涉密标识检测模块","data":"sFrameSm"},
+	{"sTitle":"网络窃密阻断模块","data":"sFrameQm"},
+	{"sClass":"btn_edit","bVisible":false,"data":""},
+	{"sClass":"btn_view","bVisible":false,"data":""},
+	{"sClass":"btn_del","bVisible":false,"data":""}
+]

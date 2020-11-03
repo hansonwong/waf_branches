@@ -1,0 +1,17 @@
+start {{content_ini['start']}}
+n_task {{ content_ini['task']}}
+n_queue {{content_ini['queue']}}
+f_monitor /etc/antidetect/src_file/monitor.txt
+f_leakage /etc/antidetect/src_file/info_leakage.txt
+f_invasion /etc/antidetect/src_file/invasion_protect.txt
+f_virus /etc/antidetect/src_file/virus_protect.txt
+f_scan /etc/antidetect/src_file/scan.txt
+f_ddos /etc/antidetect/src_file/ddos.txt
+f_web_attract /etc/antidetect/src_file/web_attract.txt
+f_dionaea /etc/antidetect/src_file/dionaea.txt
+{% for origin in content_ini['photo_origin'] %}{{origin}}
+{% endfor %}{% for content in content_ini['photo_content'] %}{{content}}
+{% endfor %}dbhost /tmp/mysql3307.sock
+dbusr root
+dbname db_firewall_log
+dbpw bd_123456

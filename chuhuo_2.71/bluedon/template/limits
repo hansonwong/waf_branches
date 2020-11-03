@@ -1,0 +1,4 @@
+## disable rule
+# set max length
+{% for ID in removeID %}SecRuleRemoveById {{ID}}
+{% endfor %}

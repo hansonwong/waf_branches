@@ -1,0 +1,15 @@
+SecMarker RULE_FILTER
+{% for i in range(policys|length) %}{% set policy_lst=[] %}{% if policys[i].domain %}{% do policy_lst.append('REQUEST_HEADERS:Host "@contains %s"'|format(policys[i].domain)) %}{%endif%}{% if policys[i].uri %}{% do policy_lst.append('REQUEST_URI "@streq %s"'|format(policys[i].uri)) %}{%endif%}{% if policys[i].sip %}{% do policy_lst.append('REMOTE_ADDR "%s"'|format(policys[i].sip)) %}{%endif%}{% if policys[i].dip %}{% do policy_lst.append('SERVER_ADDR "%s"'|format(policys[i].dip)) %}{%endif%}{% set policy_len=policy_lst|length %}
+{% for index in range(policy_len) %}{% if index==0 %}SecRule {{policy_lst[index]}} "{% if policy_len>1 %}chain,{%endif%}pass,nolog,id:'{{470000001+i}}',skipAfter:RULE_BASE_{{rulemodels[policys[i].rule].confName}}"{% elif index== policy_len-1 %}    SecRule {{policy_lst[index]}} "t:none"{% else %}    SecRule {{policy_lst[index]}} "chain,t:none"{% endif %}
+{% endfor %}{% endfor %}
+
+{% for i in range(websites|length) %}
+SecRule REQUEST_HEADERS:Host "@contains {{websites[i].sWebSiteName}}" "pass,nolog,id:{{410000002+i}},skipAfter:RULE_BASE_{{rulemodels[websites[i].selfRuleModelId and websites[i].selfRuleModelId or websites[i].ruleModelId].confName}}"{% endfor %}
+SecAction "pass,nolog,id:'410000001',skipAfter:RULE_BASE_{{default_conf}}"
+
+SecMarker RULE_SPEC
+#user websites
+{% for rulemodel in rulemodels|dictsort|reverse %}
+include {{conf_dir}}/{{rulemodel[1].confName}}/base.conf{% endfor %}
+
+SecMarker RULE_SPEC_END

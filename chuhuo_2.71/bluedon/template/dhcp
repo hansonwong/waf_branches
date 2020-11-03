@@ -1,0 +1,17 @@
+ddns-update-style interim;
+ignore client-updates;
+
+{% for dhcp in dhcp_data_list %}
+subnet {{dhcp['subnet']}} netmask {{dhcp['mask']}} {
+    {% for IP_range in dhcp['pool'] %}range dynamic-bootp {{IP_range.strip('\n')}};
+    {% endfor %}
+    {% if dhcp['dns'].strip() -%}
+    option domain-name-servers {{dhcp['dns']}};
+    {%- endif %}
+    option routers {{dhcp['routers']}};
+    option subnet-mask {{dhcp['mask']}};
+    default-lease-time {{dhcp['lease']}};
+    max-lease-time {{dhcp['lease']}};
+}
+{% endfor %}
+

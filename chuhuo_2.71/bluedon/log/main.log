@@ -1,0 +1,1846 @@
+[2017-06-21 09:56:53] [main] [INFO] second firewall init begine.........
+[2017-06-21 09:56:53] [main] [INFO] disable sshd...........
+[2017-06-21 09:56:53] [main] [INFO] stop sshd...........
+[2017-06-21 09:56:53] [main] [INFO] nic
+[2017-06-21 09:56:54] [main] [INFO] port_mirror
+[2017-06-21 09:56:54] [main] [INFO] virtual_line
+[2017-06-21 09:56:54] [main] [INFO] bridge
+[2017-06-21 09:56:54] [main] [INFO] ppoe
+[2017-06-21 09:56:54] [main] [INFO] port_aggregation
+[2017-06-21 09:56:55] [main] [INFO] VLAN
+[2017-06-21 09:56:55] [main] [INFO] static_route
+[2017-06-21 09:56:55] [main] [INFO] sslvpn
+[2017-06-21 09:56:55] [main] [INFO] strategy_route
+[2017-06-21 09:56:55] [main] [INFO] isp_route
+[2017-06-21 09:56:55] [main] [INFO] dynamic_route
+[2017-06-21 09:56:55] [main] [INFO] dhcp
+[2017-06-21 09:56:55] [main] [INFO] dns
+[2017-06-21 09:56:56] [main] [INFO] nginx
+[2017-06-21 09:56:56] [main] [INFO] best_routing
+[2017-06-21 09:56:56] [main] [INFO] IP_group
+[2017-06-21 09:56:56] [main] [INFO] snmp
+[2017-06-21 09:56:56] [main] [INFO] nets_within_nets
+[2017-06-21 09:56:56] [main] [INFO] multicast_route
+[2017-06-21 09:56:56] [main] [INFO] nat
+[2017-06-21 09:56:56] [main] [INFO] safetactics
+[2017-06-21 09:56:56] [main] [INFO] scm
+[2017-06-21 09:56:56] [main] [INFO] ddos
+[2017-06-21 09:56:57] [main] [INFO] connect_limit
+[2017-06-21 09:56:57] [main] [INFO] ipmac
+[2017-06-21 09:56:57] [main] [INFO] virtualfw
+[2017-06-21 09:56:57] [main] [INFO] IPS
+[2017-06-21 09:56:57] [main] [INFO] WEB
+[2017-06-21 09:56:57] [main] [INFO] url_group
+[2017-06-21 09:56:57] [main] [INFO] eml_virus
+[2017-06-21 09:56:58] [main] [INFO] file_filter
+[2017-06-21 09:56:58] [main] [INFO] keyword_filter
+[2017-06-21 09:56:58] [main] [INFO] web_keyword
+[2017-06-21 09:56:58] [main] [INFO] url_filter_strategy
+[2017-06-21 09:56:58] [main] [INFO] url_filter_list
+[2017-06-21 09:56:58] [main] [INFO] antivirus_config
+[2017-06-21 09:56:58] [main] [INFO] antivirus_strategy
+[2017-06-21 09:56:58] [main] [INFO] usergroup
+[2017-06-21 09:56:58] [main] [INFO] flowmanage
+[2017-06-21 09:56:58] [main] [INFO] system_config
+[2017-06-21 09:56:59] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-06-21 09:56:59] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-06-21 09:56:59] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-06-21 09:56:59] [main] [INFO] system_config: waf_switch | args: 
+[2017-06-21 09:56:59] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-06-21 09:56:59] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-06-21 09:56:59] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-06-21 09:56:59] [main] [INFO] system_config: dpi_switch | args: 
+[2017-06-21 09:56:59] [main] [INFO] system_config: ips_switch | args: 
+[2017-06-21 09:56:59] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-06-21 09:56:59] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-06-21 09:56:59] [main] [INFO] system_config: audit_switch | args: 0
+[2017-06-21 09:56:59] [main] [INFO] system_reboot_log
+[2017-06-21 09:56:59] [main] [INFO] ipv6
+[2017-06-21 09:56:59] [main] [INFO] ipsecvpn
+[2017-06-21 09:57:01] [main] [INFO] n2n-vpn
+[2017-06-21 09:57:01] [main] [INFO] nat64
+[2017-06-21 09:57:01] [main] [INFO] vifaces
+[2017-06-21 09:57:01] [main] [INFO] honypot
+[2017-06-21 09:57:03] [main] [INFO] second firewall init end.........
+[2017-06-21 10:01:37] [main] [WARNING] unexecute task: ['CMD_SSL_VPN_LIMIT', '{"isslLimit":"100"}']
+[2017-06-21 10:02:33] [main] [INFO] del_allow_manage and del_allow_ping
+[2017-06-21 10:02:33] [main] [INFO] config_iface: allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-06-21 10:02:33] [main] [INFO] config_iface: ipv6 allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-06-21 10:02:33] [main] [WARNING] device `enp10s0` ip config `172.16.6.142/24` failed| RTNETLINK answers: File exists
+[2017-06-21 10:02:33] [main] [WARNING] device `enp10s0` ip config `192.168.0.1/24` failed| RTNETLINK answers: File exists
+[2017-06-21 10:02:33] [main] [INFO] iface `enp10s0` del_ip: set([]) ===> add_ip: set([MyIP('172.16.6.142', '24'), MyIP('192.168.0.1', '24')])
+[2017-06-21 10:06:20] [main] [INFO] Factory Reset begin ...........
+[2017-06-21 10:06:21] [main] [INFO] disable sshd...........
+[2017-06-21 10:06:21] [main] [INFO] stop sshd...........
+[2017-06-21 10:06:21] [main] [INFO] begin to clean function
+[2017-06-21 10:06:21] [main] [INFO] packet_capture
+[2017-06-21 10:06:21] [main] [INFO] nic
+[2017-06-21 10:06:21] [main] [INFO] mirror
+[2017-06-21 10:06:22] [main] [INFO] virtual_line
+[2017-06-21 10:06:22] [main] [INFO] bridge
+[2017-06-21 10:06:22] [main] [INFO] pppoe
+[2017-06-21 10:06:22] [main] [INFO] port_aggregation
+[2017-06-21 10:06:22] [main] [INFO] VLAN
+[2017-06-21 10:06:22] [main] [INFO] static_route
+[2017-06-21 10:06:23] [main] [INFO] strategy_route
+[2017-06-21 10:06:23] [main] [INFO] ISP
+[2017-06-21 10:06:23] [main] [INFO] dynamic_route
+[2017-06-21 10:06:23] [main] [INFO] dhcp
+[2017-06-21 10:06:23] [main] [INFO] best_routing
+[2017-06-21 10:06:23] [main] [INFO] multicast_route
+[2017-06-21 10:06:23] [main] [INFO] IP_group
+[2017-06-21 10:06:23] [main] [INFO] web_define_rule
+[2017-06-21 10:06:23] [main] [INFO] ips_define_rule
+[2017-06-21 10:06:23] [main] [INFO] nets_within_nets
+[2017-06-21 10:06:23] [main] [INFO] ddos
+[2017-06-21 10:06:23] [main] [INFO] virtualfw
+[2017-06-21 10:06:23] [main] [INFO] url_filter
+[2017-06-21 10:06:23] [main] [INFO] virus_size
+[2017-06-21 10:06:23] [main] [INFO] virus_type
+[2017-06-21 10:06:23] [main] [INFO] eml_content
+[2017-06-21 10:06:23] [main] [INFO] eml_filename
+[2017-06-21 10:06:23] [main] [INFO] eml_subject
+[2017-06-21 10:06:23] [main] [INFO] keyword_filter
+[2017-06-21 10:06:23] [main] [INFO] file_filter
+[2017-06-21 10:06:23] [main] [INFO] web_keyword
+[2017-06-21 10:06:23] [main] [INFO] url_filter_strategy
+[2017-06-21 10:06:23] [main] [INFO] url_filter_black
+[2017-06-21 10:06:23] [main] [INFO] url_filter_white
+[2017-06-21 10:06:23] [main] [INFO] antivirus_config
+[2017-06-21 10:06:23] [main] [INFO] antivirus_strategy
+[2017-06-21 10:06:23] [main] [INFO] usergroup
+[2017-06-21 10:06:24] [main] [INFO] tactics
+[2017-06-21 10:06:24] [main] [INFO] flowmanage
+[2017-06-21 10:06:26] [main] [INFO] revcamera
+[2017-06-21 10:06:26] [main] [INFO] revscan
+[2017-06-21 10:06:26] [main] [INFO] ipv6tunnel
+[2017-06-21 10:06:26] [main] [INFO] sslvpn
+[2017-06-21 10:06:26] [main] [INFO] ipsecvpn
+[2017-06-21 10:06:26] [main] [INFO] n2n-vpn
+[2017-06-21 10:06:26] [main] [INFO] nat64
+[2017-06-21 10:06:26] [main] [INFO] ip_monitor
+[2017-06-21 10:06:26] [main] [INFO] finish clean function
+[2017-06-21 10:06:26] [main] [INFO] begin to clean database
+[2017-06-21 10:06:26] [main] [INFO] m_IPS_template_rules
+[2017-06-21 10:06:26] [main] [INFO] m_blacklist
+[2017-06-21 10:06:26] [main] [INFO] m_tbDnat
+[2017-06-21 10:06:26] [main] [INFO] m_tbFileFilter
+[2017-06-21 10:06:26] [main] [INFO] m_tbHoneypot
+[2017-06-21 10:06:26] [main] [INFO] m_tbKeywordFilter
+[2017-06-21 10:06:26] [main] [INFO] m_tbLocalChildNet_bac
+[2017-06-21 10:06:27] [main] [INFO] m_tbNum
+[2017-06-21 10:06:27] [main] [INFO] m_tbSearitystrate
+[2017-06-21 10:06:27] [main] [INFO] m_tbSearitystrate_address
+[2017-06-21 10:06:27] [main] [INFO] m_tbSearitystrate_scm
+[2017-06-21 10:06:27] [main] [INFO] m_tbSnat
+[2017-06-21 10:06:27] [main] [INFO] m_tbVirtualNet
+[2017-06-21 10:06:27] [main] [INFO] m_tbaddandgroup
+[2017-06-21 10:06:27] [main] [INFO] m_tbaddress_list_scm
+[2017-06-21 10:06:27] [main] [INFO] m_tbaddressgroup
+[2017-06-21 10:06:27] [main] [INFO] m_tbaddressgroup_scm
+[2017-06-21 10:06:27] [main] [INFO] m_tbaudit_app_rules
+[2017-06-21 10:06:27] [main] [INFO] m_tbaudit_rule_templates
+[2017-06-21 10:06:27] [main] [INFO] m_tbauto_strategy_exception
+[2017-06-21 10:06:27] [main] [INFO] m_tbautorqrule
+[2017-06-21 10:06:27] [main] [INFO] m_tbbackup
+[2017-06-21 10:06:27] [main] [INFO] m_tbbdvpn_l2tp_group
+[2017-06-21 10:06:27] [main] [INFO] m_tbbdvpn_l2tp_mid_group_service
+[2017-06-21 10:06:27] [main] [INFO] m_tbbdvpn_l2tp_mid_user_group
+[2017-06-21 10:06:27] [main] [INFO] m_tbbdvpn_l2tp_mid_user_service
+[2017-06-21 10:06:27] [main] [INFO] m_tbbdvpn_l2tp_monitor
+[2017-06-21 10:06:27] [main] [INFO] m_tbbdvpn_l2tp_service
+[2017-06-21 10:06:27] [main] [INFO] m_tbbdvpn_l2tp_service_port
+[2017-06-21 10:06:27] [main] [INFO] m_tbbdvpn_l2tp_user
+[2017-06-21 10:06:27] [main] [INFO] m_tbbdvpn_ssl_mid_group_service
+[2017-06-21 10:06:27] [main] [INFO] m_tbbdvpn_ssl_mid_user_service
+[2017-06-21 10:06:27] [main] [INFO] m_tbbdvpn_ssl_service
+[2017-06-21 10:06:27] [main] [INFO] m_tbbdvpn_ssl_service_port
+[2017-06-21 10:06:27] [main] [INFO] m_tbbdvpn_ssl_user
+[2017-06-21 10:06:27] [main] [INFO] m_tbbridgedevice
+[2017-06-21 10:06:27] [main] [INFO] m_tbbsservice
+[2017-06-21 10:06:27] [main] [INFO] m_tbcascade
+[2017-06-21 10:06:27] [main] [INFO] m_tbconfig_copy
+[2017-06-21 10:06:27] [main] [INFO] m_tbcustomapplication
+[2017-06-21 10:06:27] [main] [INFO] m_tbdbtype_name
+[2017-06-21 10:06:27] [main] [INFO] m_tbddos
+[2017-06-21 10:06:27] [main] [INFO] m_tbdefault_app_list
+[2017-06-21 10:06:27] [main] [INFO] m_tbdefence_rules
+[2017-06-21 10:06:27] [main] [INFO] m_tbdhcpfour
+[2017-06-21 10:06:27] [main] [INFO] m_tbdialdevice
+[2017-06-21 10:06:27] [main] [INFO] m_tbdipcon
+[2017-06-21 10:06:27] [main] [INFO] m_tbdoublehot
+[2017-06-21 10:06:27] [main] [INFO] m_tbduiduanchildnet
+[2017-06-21 10:06:27] [main] [INFO] m_tbdynamicroute_bgp_neighbor
+[2017-06-21 10:06:27] [main] [INFO] m_tbdynamicroute_bgp_net
+[2017-06-21 10:06:27] [main] [INFO] m_tbdynamicroute_bgp_port
+[2017-06-21 10:06:27] [main] [INFO] m_tbdynamicroute_ospf_area
+[2017-06-21 10:06:27] [main] [INFO] m_tbdynamicroute_ospf_net
+[2017-06-21 10:06:27] [main] [INFO] m_tbdynamicroute_ospf_port
+[2017-06-21 10:06:27] [main] [INFO] m_tbdynamicroute_ospf_v3
+[2017-06-21 10:06:27] [main] [INFO] m_tbdynamicroute_rip_net
+[2017-06-21 10:06:27] [main] [INFO] m_tbdynamicroute_rip_port
+[2017-06-21 10:06:27] [main] [INFO] m_tbecmp
+[2017-06-21 10:06:27] [main] [INFO] m_tbevil_strategy
+[2017-06-21 10:06:27] [main] [INFO] m_tbevilcode_protected
+[2017-06-21 10:06:27] [main] [INFO] m_tbevilcode_strategy
+[2017-06-21 10:06:27] [main] [INFO] m_tbexistport
+[2017-06-21 10:06:27] [main] [INFO] m_tbfirsttage
+[2017-06-21 10:06:27] [main] [INFO] m_tbflow_limit
+[2017-06-21 10:06:27] [main] [INFO] m_tbflow_socket
+[2017-06-21 10:06:27] [main] [INFO] m_tbflow_virtualline
+[2017-06-21 10:06:27] [main] [INFO] m_tbfwsessioncontrol
+[2017-06-21 10:06:27] [main] [INFO] m_tbgreipv4
+[2017-06-21 10:06:27] [main] [INFO] m_tbgroup
+[2017-06-21 10:06:27] [main] [INFO] m_tbhoneypot_detail
+[2017-06-21 10:06:27] [main] [INFO] m_tbhoneypot_log
+[2017-06-21 10:06:27] [main] [INFO] m_tbhoneypot_status
+[2017-06-21 10:06:27] [main] [INFO] m_tbidsip
+[2017-06-21 10:06:27] [main] [INFO] m_tbip_mac
+[2017-06-21 10:06:27] [main] [INFO] m_tbip_mac_defined
+[2017-06-21 10:06:27] [main] [INFO] m_tbips
+[2017-06-21 10:06:27] [main] [INFO] m_tbips_template
+[2017-06-21 10:06:27] [main] [INFO] m_tbipsec_branch
+[2017-06-21 10:06:27] [main] [INFO] m_tbipsec_perssiom
+[2017-06-21 10:06:27] [main] [INFO] m_tbipsec_user
+[2017-06-21 10:06:27] [main] [INFO] m_tbipsec_usergroup
+[2017-06-21 10:06:27] [main] [INFO] m_tbipsecclientmonitor
+[2017-06-21 10:06:27] [main] [INFO] m_tbipsecinternetport
+[2017-06-21 10:06:27] [main] [INFO] m_tbipsecoutnetport
+[2017-06-21 10:06:27] [main] [INFO] m_tbipsecstatusmonitor
+[2017-06-21 10:06:27] [main] [INFO] m_tbipsectimeset
+[2017-06-21 10:06:27] [main] [INFO] m_tbipsrules
+[2017-06-21 10:06:27] [main] [INFO] m_tbipsrules_copy
+[2017-06-21 10:06:27] [main] [INFO] m_tbipsrules_excel
+[2017-06-21 10:06:27] [main] [INFO] m_tbipv4over6
+[2017-06-21 10:06:27] [main] [INFO] m_tbipv6toipv4
+[2017-06-21 10:06:27] [main] [INFO] m_tbisatap
+[2017-06-21 10:06:27] [main] [INFO] m_tbisproute
+[2017-06-21 10:06:27] [main] [INFO] m_tbkeyword_webcontent
+[2017-06-21 10:06:27] [main] [INFO] m_tblimitip
+[2017-06-21 10:06:27] [main] [INFO] m_tblocalchildnet
+[2017-06-21 10:06:27] [main] [INFO] m_tblog_sys_admin
+[2017-06-21 10:06:27] [main] [INFO] m_tblog_sys_backup
+[2017-06-21 10:06:27] [main] [INFO] m_tblog_sys_reboot
+[2017-06-21 10:06:27] [main] [INFO] m_tbloginlog
+[2017-06-21 10:06:27] [main] [INFO] m_tbmannualset
+[2017-06-21 10:06:27] [main] [INFO] m_tbmannualtargetip
+[2017-06-21 10:06:27] [main] [INFO] m_tbmobile_message
+[2017-06-21 10:06:27] [main] [INFO] m_tbnatsetting
+[2017-06-21 10:06:27] [main] [INFO] m_tbnetinnet
+[2017-06-21 10:06:27] [main] [INFO] m_tbnetinnetip
+[2017-06-21 10:06:27] [main] [INFO] m_tbntn_center
+[2017-06-21 10:06:27] [main] [INFO] m_tbntn_edge
+[2017-06-21 10:06:27] [main] [INFO] m_tboperatelog
+[2017-06-21 10:06:27] [main] [INFO] m_tbpacket_capture
+[2017-06-21 10:06:27] [main] [INFO] m_tbpacket_group
+[2017-06-21 10:06:27] [main] [INFO] m_tbport_mirror
+[2017-06-21 10:06:27] [main] [INFO] m_tbportaggregation
+[2017-06-21 10:06:27] [main] [INFO] m_tbpredefined
+[2017-06-21 10:06:27] [main] [INFO] m_tbproduct_license
+[2017-06-21 10:06:27] [main] [INFO] m_tbrevcamera_queue
+[2017-06-21 10:06:27] [main] [INFO] m_tbrolelib
+[2017-06-21 10:06:27] [main] [INFO] m_tbrolelib_autoupdate
+[2017-06-21 10:06:27] [main] [INFO] m_tbrolelib_update_record
+[2017-06-21 10:06:27] [main] [INFO] m_tbroute
+[2017-06-21 10:06:27] [main] [INFO] m_tbsecondtageinter
+[2017-06-21 10:06:27] [main] [INFO] m_tbsecurityoptions
+[2017-06-21 10:06:27] [main] [INFO] m_tbservice_group
+[2017-06-21 10:06:27] [main] [INFO] m_tbservices
+[2017-06-21 10:06:27] [main] [INFO] m_tbservices_list
+[2017-06-21 10:06:27] [main] [INFO] m_tbsession
+[2017-06-21 10:06:27] [main] [INFO] m_tbsipcon
+[2017-06-21 10:06:27] [main] [INFO] m_tbsnmp
+[2017-06-21 10:06:27] [main] [INFO] m_tbsnortrule
+[2017-06-21 10:06:27] [main] [INFO] m_tbsslvpn_setting
+[2017-06-21 10:06:27] [main] [INFO] m_tbsslvpncsservice
+[2017-06-21 10:06:27] [main] [INFO] m_tbsslvpncsservice_port
+[2017-06-21 10:06:27] [main] [INFO] m_tbsslvpngroup_role
+[2017-06-21 10:06:27] [main] [INFO] m_tbsslvpnrole
+[2017-06-21 10:06:27] [main] [INFO] m_tbsslvpnrole_server
+[2017-06-21 10:06:27] [main] [INFO] m_tbsslvpnusergroup
+[2017-06-21 10:06:27] [main] [INFO] m_tbsslvpnusers
+[2017-06-21 10:06:27] [main] [INFO] m_tbsslvpnusers_group
+[2017-06-21 10:06:27] [main] [INFO] m_tbsslvpnusers_role
+[2017-06-21 10:06:27] [main] [INFO] m_tbstaticroute
+[2017-06-21 10:06:27] [main] [INFO] m_tbstrategyroute
+[2017-06-21 10:06:27] [main] [INFO] m_tbsystem_update_log
+[2017-06-21 10:06:27] [main] [INFO] m_tbt_rules
+[2017-06-21 10:06:27] [main] [INFO] m_tbtimeout
+[2017-06-21 10:06:27] [main] [INFO] m_tbtimeplan_loop
+[2017-06-21 10:06:27] [main] [INFO] m_tbtimeplan_loop_scm
+[2017-06-21 10:06:27] [main] [INFO] m_tbtimeplan_single
+[2017-06-21 10:06:27] [main] [INFO] m_tbtimeplan_single_scm
+[2017-06-21 10:06:27] [main] [INFO] m_tbtserules
+[2017-06-21 10:06:27] [main] [INFO] m_tburl_category
+[2017-06-21 10:06:27] [main] [INFO] m_tburl_filter
+[2017-06-21 10:06:27] [main] [INFO] m_tburl_filter_ips
+[2017-06-21 10:06:27] [main] [INFO] m_tburlblacklist
+[2017-06-21 10:06:27] [main] [INFO] m_tburlwhilelist
+[2017-06-21 10:06:27] [main] [INFO] m_tbuser_icmp_traffic
+[2017-06-21 10:06:27] [main] [INFO] m_tbuser_tcp_traffic
+[2017-06-21 10:06:27] [main] [INFO] m_tbuser_traffic_BiLevel
+[2017-06-21 10:06:27] [main] [INFO] m_tbuser_udp_traffic
+[2017-06-21 10:06:27] [main] [INFO] m_tbusers
+[2017-06-21 10:06:27] [main] [INFO] m_tbusers_authentication_tactics
+[2017-06-21 10:06:27] [main] [INFO] m_tbusers_out_authentication
+[2017-06-21 10:06:27] [main] [INFO] m_tbvirtualfw
+[2017-06-21 10:06:27] [main] [INFO] m_tbvirtualline
+[2017-06-21 10:06:27] [main] [INFO] m_tbvlandevice
+[2017-06-21 10:06:27] [main] [INFO] m_tbwebapplication_lib_bak
+[2017-06-21 10:06:27] [main] [INFO] m_tbwebapplication_lib_copy
+[2017-06-21 10:06:27] [main] [INFO] m_tbwebapplication_protected
+[2017-06-21 10:06:27] [main] [INFO] m_tbwebapplication_strategy
+[2017-06-21 10:06:27] [main] [INFO] m_tbwebrules
+[2017-06-21 10:06:27] [main] [INFO] m_tbwifi_audit
+[2017-06-21 10:06:27] [main] [INFO] se
+[2017-06-21 10:06:27] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-06-21 10:06:27] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-06-21 10:06:27] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-06-21 10:06:27] [main] [INFO] system_config: waf_switch | args: 
+[2017-06-21 10:06:27] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-06-21 10:06:27] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-06-21 10:06:27] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-06-21 10:06:27] [main] [INFO] system_config: dpi_switch | args: 
+[2017-06-21 10:06:27] [main] [INFO] system_config: ips_switch | args: 
+[2017-06-21 10:06:27] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-06-21 10:06:27] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-06-21 10:06:27] [main] [INFO] system_config: audit_switch | args: 
+[2017-06-21 10:06:28] [main] [INFO] finish clean database
+[2017-06-21 10:06:28] [main] [INFO] Factory Reset end ...........
+[2017-06-21 10:07:59] [main] [INFO] Event set!
+[2017-06-21 10:08:35] [main] [INFO] second firewall init begine.........
+[2017-06-21 10:08:35] [main] [INFO] disable sshd...........
+[2017-06-21 10:08:35] [main] [INFO] stop sshd...........
+[2017-06-21 10:08:35] [main] [INFO] nic
+[2017-06-21 10:08:36] [main] [INFO] port_mirror
+[2017-06-21 10:08:37] [main] [INFO] virtual_line
+[2017-06-21 10:08:37] [main] [INFO] bridge
+[2017-06-21 10:08:37] [main] [INFO] ppoe
+[2017-06-21 10:08:37] [main] [INFO] port_aggregation
+[2017-06-21 10:08:38] [main] [INFO] VLAN
+[2017-06-21 10:08:38] [main] [INFO] static_route
+[2017-06-21 10:08:38] [main] [INFO] sslvpn
+[2017-06-21 10:08:38] [main] [INFO] strategy_route
+[2017-06-21 10:08:38] [main] [INFO] isp_route
+[2017-06-21 10:08:38] [main] [INFO] dynamic_route
+[2017-06-21 10:08:38] [main] [INFO] dhcp
+[2017-06-21 10:08:38] [main] [INFO] dns
+[2017-06-21 10:08:38] [main] [INFO] nginx
+[2017-06-21 10:08:39] [main] [INFO] best_routing
+[2017-06-21 10:08:39] [main] [INFO] IP_group
+[2017-06-21 10:08:39] [main] [INFO] snmp
+[2017-06-21 10:08:39] [main] [INFO] nets_within_nets
+[2017-06-21 10:08:39] [main] [INFO] multicast_route
+[2017-06-21 10:08:39] [main] [INFO] nat
+[2017-06-21 10:08:39] [main] [INFO] safetactics
+[2017-06-21 10:08:39] [main] [INFO] scm
+[2017-06-21 10:08:39] [main] [INFO] ddos
+[2017-06-21 10:08:39] [main] [INFO] connect_limit
+[2017-06-21 10:08:40] [main] [INFO] ipmac
+[2017-06-21 10:08:40] [main] [INFO] virtualfw
+[2017-06-21 10:08:40] [main] [INFO] IPS
+[2017-06-21 10:08:40] [main] [INFO] WEB
+[2017-06-21 10:08:40] [main] [INFO] url_group
+[2017-06-21 10:08:40] [main] [INFO] eml_virus
+[2017-06-21 10:08:40] [main] [INFO] file_filter
+[2017-06-21 10:08:40] [main] [INFO] keyword_filter
+[2017-06-21 10:08:41] [main] [INFO] web_keyword
+[2017-06-21 10:08:41] [main] [INFO] url_filter_strategy
+[2017-06-21 10:08:41] [main] [INFO] url_filter_list
+[2017-06-21 10:08:41] [main] [INFO] antivirus_config
+[2017-06-21 10:08:41] [main] [INFO] antivirus_strategy
+[2017-06-21 10:08:41] [main] [INFO] usergroup
+[2017-06-21 10:08:41] [main] [INFO] flowmanage
+[2017-06-21 10:08:41] [main] [INFO] system_config
+[2017-06-21 10:08:41] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-06-21 10:08:41] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-06-21 10:08:41] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-06-21 10:08:41] [main] [INFO] system_config: waf_switch | args: 
+[2017-06-21 10:08:41] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-06-21 10:08:41] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-06-21 10:08:41] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-06-21 10:08:41] [main] [INFO] system_config: dpi_switch | args: 
+[2017-06-21 10:08:41] [main] [INFO] system_config: ips_switch | args: 
+[2017-06-21 10:08:41] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-06-21 10:08:41] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-06-21 10:08:41] [main] [INFO] system_config: audit_switch | args: 
+[2017-06-21 10:08:41] [main] [INFO] system_reboot_log
+[2017-06-21 10:08:42] [main] [INFO] ipv6
+[2017-06-21 10:08:42] [main] [INFO] ipsecvpn
+[2017-06-21 10:08:44] [main] [INFO] n2n-vpn
+[2017-06-21 10:08:44] [main] [INFO] nat64
+[2017-06-21 10:08:44] [main] [INFO] vifaces
+[2017-06-21 10:08:44] [main] [INFO] honypot
+[2017-06-21 10:08:45] [main] [INFO] second firewall init end.........
+[2017-06-21 10:15:25] [main] [WARNING] unexecute task: ['CMD_SSL_VPN_LIMIT', '{"isslLimit":"100"}']
+[2017-06-21 10:16:27] [main] [INFO] system_config: waf_url_filter | args: 1
+[2017-06-21 10:16:27] [main] [INFO] system_config: waf_webapp_detect | args: 1
+[2017-06-21 10:16:27] [main] [INFO] system_config: net_share_detect_switch | args: 1
+[2017-06-21 10:16:29] [main] [INFO] system_config: waf_switch | args: 1
+[2017-06-21 10:16:29] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-06-21 10:16:29] [main] [INFO] system_config: flow_manage_switch | args: 1
+[2017-06-21 10:16:30] [main] [INFO] system_config: ddos_protect_switch | args: 1
+[2017-06-21 10:16:30] [main] [INFO] system_config: dpi_switch | args: 1
+[2017-06-21 10:16:30] [main] [INFO] system_config: traffic_count | args: 1
+[2017-06-21 10:16:30] [main] [INFO] system_config: ips_switch | args: 1
+[2017-06-21 10:16:30] [main] [INFO] system_config: info_leak_switch | args: 1
+[2017-06-21 10:16:30] [main] [INFO] system_config: anti_virus_switch | args: 1
+[2017-06-21 10:16:30] [main] [INFO] system_config: audit_switch | args: 1
+[2017-06-21 10:16:30] [main] [INFO] system_config: brige_brocast_snat | args: 1
+[2017-06-21 10:21:17] [main] [INFO] system_config: waf_url_filter | args: 0
+[2017-06-21 10:21:17] [main] [INFO] system_config: waf_webapp_detect | args: 0
+[2017-06-21 10:21:17] [main] [INFO] system_config: net_share_detect_switch | args: 0
+[2017-06-21 10:21:17] [main] [INFO] system_config: waf_switch | args: 0
+[2017-06-21 10:21:17] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-06-21 10:21:17] [main] [INFO] system_config: flow_manage_switch | args: 0
+[2017-06-21 10:21:17] [main] [INFO] system_config: ddos_protect_switch | args: 0
+[2017-06-21 10:21:17] [main] [INFO] system_config: dpi_switch | args: 0
+[2017-06-21 10:21:17] [main] [INFO] system_config: traffic_count | args: 0
+[2017-06-21 10:21:17] [main] [INFO] system_config: ips_switch | args: 0
+[2017-06-21 10:21:17] [main] [INFO] system_config: info_leak_switch | args: 0
+[2017-06-21 10:21:17] [main] [INFO] system_config: anti_virus_switch | args: 0
+[2017-06-21 10:21:17] [main] [INFO] system_config: audit_switch | args: 0
+[2017-06-21 10:21:17] [main] [INFO] system_config: brige_brocast_snat | args: 1
+[2017-06-21 10:30:18] [main] [INFO] system_config: waf_url_filter | args: 0
+[2017-06-21 10:30:18] [main] [INFO] system_config: waf_webapp_detect | args: 0
+[2017-06-21 10:30:18] [main] [INFO] system_config: net_share_detect_switch | args: 0
+[2017-06-21 10:30:18] [main] [INFO] system_config: waf_switch | args: 0
+[2017-06-21 10:30:18] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-06-21 10:30:18] [main] [INFO] system_config: flow_manage_switch | args: 0
+[2017-06-21 10:30:18] [main] [INFO] system_config: ddos_protect_switch | args: 0
+[2017-06-21 10:30:18] [main] [INFO] system_config: dpi_switch | args: 0
+[2017-06-21 10:30:18] [main] [INFO] system_config: traffic_count | args: 0
+[2017-06-21 10:30:18] [main] [INFO] system_config: ips_switch | args: 0
+[2017-06-21 10:30:18] [main] [INFO] system_config: info_leak_switch | args: 0
+[2017-06-21 10:30:18] [main] [INFO] system_config: anti_virus_switch | args: 0
+[2017-06-21 10:30:18] [main] [INFO] system_config: audit_switch | args: 0
+[2017-06-21 10:30:18] [main] [INFO] system_config: brige_brocast_snat | args: 0
+[2017-06-21 10:51:42] [main] [INFO] Factory Reset begin ...........
+[2017-06-21 10:51:42] [main] [INFO] disable sshd...........
+[2017-06-21 10:51:42] [main] [INFO] stop sshd...........
+[2017-06-21 10:51:43] [main] [INFO] begin to clean function
+[2017-06-21 10:51:43] [main] [INFO] packet_capture
+[2017-06-21 10:51:44] [main] [INFO] nic
+[2017-06-21 10:51:44] [main] [INFO] mirror
+[2017-06-21 10:51:45] [main] [INFO] virtual_line
+[2017-06-21 10:51:46] [main] [INFO] bridge
+[2017-06-21 10:51:46] [main] [INFO] pppoe
+[2017-06-21 10:51:47] [main] [INFO] port_aggregation
+[2017-06-21 10:51:47] [main] [INFO] VLAN
+[2017-06-21 10:51:47] [main] [INFO] static_route
+[2017-06-21 10:51:47] [main] [INFO] strategy_route
+[2017-06-21 10:51:47] [main] [INFO] ISP
+[2017-06-21 10:51:48] [main] [INFO] dynamic_route
+[2017-06-21 10:51:48] [main] [INFO] dhcp
+[2017-06-21 10:51:48] [main] [INFO] best_routing
+[2017-06-21 10:51:48] [main] [INFO] multicast_route
+[2017-06-21 10:51:48] [main] [INFO] IP_group
+[2017-06-21 10:51:48] [main] [INFO] web_define_rule
+[2017-06-21 10:51:48] [main] [INFO] ips_define_rule
+[2017-06-21 10:51:49] [main] [INFO] nets_within_nets
+[2017-06-21 10:51:49] [main] [INFO] ddos
+[2017-06-21 10:51:49] [main] [INFO] virtualfw
+[2017-06-21 10:51:49] [main] [INFO] url_filter
+[2017-06-21 10:51:49] [main] [INFO] virus_size
+[2017-06-21 10:51:49] [main] [INFO] virus_type
+[2017-06-21 10:51:49] [main] [INFO] eml_content
+[2017-06-21 10:51:49] [main] [INFO] eml_filename
+[2017-06-21 10:51:49] [main] [INFO] eml_subject
+[2017-06-21 10:51:49] [main] [INFO] keyword_filter
+[2017-06-21 10:51:49] [main] [INFO] file_filter
+[2017-06-21 10:51:49] [main] [INFO] web_keyword
+[2017-06-21 10:51:49] [main] [INFO] url_filter_strategy
+[2017-06-21 10:51:49] [main] [INFO] url_filter_black
+[2017-06-21 10:51:49] [main] [INFO] url_filter_white
+[2017-06-21 10:51:49] [main] [INFO] antivirus_config
+[2017-06-21 10:51:49] [main] [INFO] antivirus_strategy
+[2017-06-21 10:51:50] [main] [INFO] usergroup
+[2017-06-21 10:51:50] [main] [INFO] tactics
+[2017-06-21 10:51:50] [main] [INFO] flowmanage
+[2017-06-21 10:51:52] [main] [INFO] revcamera
+[2017-06-21 10:51:52] [main] [INFO] revscan
+[2017-06-21 10:51:52] [main] [INFO] ipv6tunnel
+[2017-06-21 10:51:52] [main] [INFO] sslvpn
+[2017-06-21 10:51:53] [main] [INFO] ipsecvpn
+[2017-06-21 10:51:53] [main] [INFO] n2n-vpn
+[2017-06-21 10:51:53] [main] [INFO] nat64
+[2017-06-21 10:51:53] [main] [INFO] ip_monitor
+[2017-06-21 10:51:53] [main] [INFO] finish clean function
+[2017-06-21 10:51:53] [main] [INFO] begin to clean database
+[2017-06-21 10:51:53] [main] [INFO] m_IPS_template_rules
+[2017-06-21 10:51:53] [main] [INFO] m_blacklist
+[2017-06-21 10:51:53] [main] [INFO] m_tbDnat
+[2017-06-21 10:51:53] [main] [INFO] m_tbFileFilter
+[2017-06-21 10:51:53] [main] [INFO] m_tbHoneypot
+[2017-06-21 10:51:53] [main] [INFO] m_tbKeywordFilter
+[2017-06-21 10:51:53] [main] [INFO] m_tbLocalChildNet_bac
+[2017-06-21 10:51:53] [main] [INFO] m_tbNum
+[2017-06-21 10:51:53] [main] [INFO] m_tbSearitystrate
+[2017-06-21 10:51:53] [main] [INFO] m_tbSearitystrate_address
+[2017-06-21 10:51:53] [main] [INFO] m_tbSearitystrate_scm
+[2017-06-21 10:51:53] [main] [INFO] m_tbSnat
+[2017-06-21 10:51:53] [main] [INFO] m_tbVirtualNet
+[2017-06-21 10:51:53] [main] [INFO] m_tbaddandgroup
+[2017-06-21 10:51:53] [main] [INFO] m_tbaddress_list_scm
+[2017-06-21 10:51:53] [main] [INFO] m_tbaddressgroup
+[2017-06-21 10:51:53] [main] [INFO] m_tbaddressgroup_scm
+[2017-06-21 10:51:53] [main] [INFO] m_tbaudit_app_rules
+[2017-06-21 10:51:53] [main] [INFO] m_tbaudit_rule_templates
+[2017-06-21 10:51:53] [main] [INFO] m_tbauto_strategy_exception
+[2017-06-21 10:51:53] [main] [INFO] m_tbautorqrule
+[2017-06-21 10:51:53] [main] [INFO] m_tbbackup
+[2017-06-21 10:51:53] [main] [INFO] m_tbbdvpn_l2tp_group
+[2017-06-21 10:51:53] [main] [INFO] m_tbbdvpn_l2tp_mid_group_service
+[2017-06-21 10:51:53] [main] [INFO] m_tbbdvpn_l2tp_mid_user_group
+[2017-06-21 10:51:53] [main] [INFO] m_tbbdvpn_l2tp_mid_user_service
+[2017-06-21 10:51:53] [main] [INFO] m_tbbdvpn_l2tp_monitor
+[2017-06-21 10:51:53] [main] [INFO] m_tbbdvpn_l2tp_service
+[2017-06-21 10:51:53] [main] [INFO] m_tbbdvpn_l2tp_service_port
+[2017-06-21 10:51:53] [main] [INFO] m_tbbdvpn_l2tp_user
+[2017-06-21 10:51:53] [main] [INFO] m_tbbdvpn_ssl_mid_group_service
+[2017-06-21 10:51:53] [main] [INFO] m_tbbdvpn_ssl_mid_user_service
+[2017-06-21 10:51:53] [main] [INFO] m_tbbdvpn_ssl_service
+[2017-06-21 10:51:53] [main] [INFO] m_tbbdvpn_ssl_service_port
+[2017-06-21 10:51:53] [main] [INFO] m_tbbdvpn_ssl_user
+[2017-06-21 10:51:53] [main] [INFO] m_tbbridgedevice
+[2017-06-21 10:51:53] [main] [INFO] m_tbbsservice
+[2017-06-21 10:51:53] [main] [INFO] m_tbcascade
+[2017-06-21 10:51:53] [main] [INFO] m_tbconfig_copy
+[2017-06-21 10:51:53] [main] [INFO] m_tbcustomapplication
+[2017-06-21 10:51:53] [main] [INFO] m_tbdbtype_name
+[2017-06-21 10:51:53] [main] [INFO] m_tbddos
+[2017-06-21 10:51:53] [main] [INFO] m_tbdefault_app_list
+[2017-06-21 10:51:53] [main] [INFO] m_tbdefence_rules
+[2017-06-21 10:51:53] [main] [INFO] m_tbdhcpfour
+[2017-06-21 10:51:53] [main] [INFO] m_tbdialdevice
+[2017-06-21 10:51:53] [main] [INFO] m_tbdipcon
+[2017-06-21 10:51:53] [main] [INFO] m_tbdoublehot
+[2017-06-21 10:51:53] [main] [INFO] m_tbduiduanchildnet
+[2017-06-21 10:51:53] [main] [INFO] m_tbdynamicroute_bgp_neighbor
+[2017-06-21 10:51:53] [main] [INFO] m_tbdynamicroute_bgp_net
+[2017-06-21 10:51:53] [main] [INFO] m_tbdynamicroute_bgp_port
+[2017-06-21 10:51:53] [main] [INFO] m_tbdynamicroute_ospf_area
+[2017-06-21 10:51:53] [main] [INFO] m_tbdynamicroute_ospf_net
+[2017-06-21 10:51:53] [main] [INFO] m_tbdynamicroute_ospf_port
+[2017-06-21 10:51:53] [main] [INFO] m_tbdynamicroute_ospf_v3
+[2017-06-21 10:51:53] [main] [INFO] m_tbdynamicroute_rip_net
+[2017-06-21 10:51:53] [main] [INFO] m_tbdynamicroute_rip_port
+[2017-06-21 10:51:53] [main] [INFO] m_tbecmp
+[2017-06-21 10:51:53] [main] [INFO] m_tbevil_strategy
+[2017-06-21 10:51:53] [main] [INFO] m_tbevilcode_protected
+[2017-06-21 10:51:53] [main] [INFO] m_tbevilcode_strategy
+[2017-06-21 10:51:53] [main] [INFO] m_tbexistport
+[2017-06-21 10:51:53] [main] [INFO] m_tbfirsttage
+[2017-06-21 10:51:53] [main] [INFO] m_tbflow_limit
+[2017-06-21 10:51:53] [main] [INFO] m_tbflow_socket
+[2017-06-21 10:51:53] [main] [INFO] m_tbflow_virtualline
+[2017-06-21 10:51:53] [main] [INFO] m_tbfwsessioncontrol
+[2017-06-21 10:51:53] [main] [INFO] m_tbgreipv4
+[2017-06-21 10:51:53] [main] [INFO] m_tbgroup
+[2017-06-21 10:51:53] [main] [INFO] m_tbhoneypot_detail
+[2017-06-21 10:51:53] [main] [INFO] m_tbhoneypot_log
+[2017-06-21 10:51:53] [main] [INFO] m_tbhoneypot_status
+[2017-06-21 10:51:53] [main] [INFO] m_tbidsip
+[2017-06-21 10:51:53] [main] [INFO] m_tbip_mac
+[2017-06-21 10:51:53] [main] [INFO] m_tbip_mac_defined
+[2017-06-21 10:51:53] [main] [INFO] m_tbips
+[2017-06-21 10:51:53] [main] [INFO] m_tbips_template
+[2017-06-21 10:51:53] [main] [INFO] m_tbipsec_branch
+[2017-06-21 10:51:53] [main] [INFO] m_tbipsec_perssiom
+[2017-06-21 10:51:53] [main] [INFO] m_tbipsec_user
+[2017-06-21 10:51:53] [main] [INFO] m_tbipsec_usergroup
+[2017-06-21 10:51:53] [main] [INFO] m_tbipsecclientmonitor
+[2017-06-21 10:51:53] [main] [INFO] m_tbipsecinternetport
+[2017-06-21 10:51:53] [main] [INFO] m_tbipsecoutnetport
+[2017-06-21 10:51:53] [main] [INFO] m_tbipsecstatusmonitor
+[2017-06-21 10:51:53] [main] [INFO] m_tbipsectimeset
+[2017-06-21 10:51:53] [main] [INFO] m_tbipsrules
+[2017-06-21 10:51:53] [main] [INFO] m_tbipsrules_copy
+[2017-06-21 10:51:53] [main] [INFO] m_tbipsrules_excel
+[2017-06-21 10:51:53] [main] [INFO] m_tbipv4over6
+[2017-06-21 10:51:53] [main] [INFO] m_tbipv6toipv4
+[2017-06-21 10:51:53] [main] [INFO] m_tbisatap
+[2017-06-21 10:51:53] [main] [INFO] m_tbisproute
+[2017-06-21 10:51:53] [main] [INFO] m_tbkeyword_webcontent
+[2017-06-21 10:51:53] [main] [INFO] m_tblimitip
+[2017-06-21 10:51:53] [main] [INFO] m_tblocalchildnet
+[2017-06-21 10:51:53] [main] [INFO] m_tblog_sys_admin
+[2017-06-21 10:51:53] [main] [INFO] m_tblog_sys_backup
+[2017-06-21 10:51:53] [main] [INFO] m_tblog_sys_reboot
+[2017-06-21 10:51:53] [main] [INFO] m_tbloginlog
+[2017-06-21 10:51:53] [main] [INFO] m_tbmannualset
+[2017-06-21 10:51:53] [main] [INFO] m_tbmannualtargetip
+[2017-06-21 10:51:53] [main] [INFO] m_tbmobile_message
+[2017-06-21 10:51:53] [main] [INFO] m_tbnatsetting
+[2017-06-21 10:51:53] [main] [INFO] m_tbnetinnet
+[2017-06-21 10:51:53] [main] [INFO] m_tbnetinnetip
+[2017-06-21 10:51:53] [main] [INFO] m_tbntn_center
+[2017-06-21 10:51:53] [main] [INFO] m_tbntn_edge
+[2017-06-21 10:51:53] [main] [INFO] m_tboperatelog
+[2017-06-21 10:51:53] [main] [INFO] m_tbpacket_capture
+[2017-06-21 10:51:53] [main] [INFO] m_tbpacket_group
+[2017-06-21 10:51:53] [main] [INFO] m_tbport_mirror
+[2017-06-21 10:51:53] [main] [INFO] m_tbportaggregation
+[2017-06-21 10:51:53] [main] [INFO] m_tbpredefined
+[2017-06-21 10:51:53] [main] [INFO] m_tbproduct_license
+[2017-06-21 10:51:53] [main] [INFO] m_tbrevcamera_queue
+[2017-06-21 10:51:53] [main] [INFO] m_tbrolelib
+[2017-06-21 10:51:53] [main] [INFO] m_tbrolelib_autoupdate
+[2017-06-21 10:51:53] [main] [INFO] m_tbrolelib_update_record
+[2017-06-21 10:51:53] [main] [INFO] m_tbroute
+[2017-06-21 10:51:53] [main] [INFO] m_tbsecondtageinter
+[2017-06-21 10:51:53] [main] [INFO] m_tbsecurityoptions
+[2017-06-21 10:51:53] [main] [INFO] m_tbservice_group
+[2017-06-21 10:51:53] [main] [INFO] m_tbservices
+[2017-06-21 10:51:53] [main] [INFO] m_tbservices_list
+[2017-06-21 10:51:53] [main] [INFO] m_tbsession
+[2017-06-21 10:51:53] [main] [INFO] m_tbsipcon
+[2017-06-21 10:51:53] [main] [INFO] m_tbsnmp
+[2017-06-21 10:51:53] [main] [INFO] m_tbsnortrule
+[2017-06-21 10:51:53] [main] [INFO] m_tbsslvpn_setting
+[2017-06-21 10:51:53] [main] [INFO] m_tbsslvpncsservice
+[2017-06-21 10:51:53] [main] [INFO] m_tbsslvpncsservice_port
+[2017-06-21 10:51:53] [main] [INFO] m_tbsslvpngroup_role
+[2017-06-21 10:51:53] [main] [INFO] m_tbsslvpnrole
+[2017-06-21 10:51:53] [main] [INFO] m_tbsslvpnrole_server
+[2017-06-21 10:51:53] [main] [INFO] m_tbsslvpnusergroup
+[2017-06-21 10:51:53] [main] [INFO] m_tbsslvpnusers
+[2017-06-21 10:51:53] [main] [INFO] m_tbsslvpnusers_group
+[2017-06-21 10:51:53] [main] [INFO] m_tbsslvpnusers_role
+[2017-06-21 10:51:53] [main] [INFO] m_tbstaticroute
+[2017-06-21 10:51:53] [main] [INFO] m_tbstrategyroute
+[2017-06-21 10:51:53] [main] [INFO] m_tbsystem_update_log
+[2017-06-21 10:51:53] [main] [INFO] m_tbt_rules
+[2017-06-21 10:51:53] [main] [INFO] m_tbtimeout
+[2017-06-21 10:51:53] [main] [INFO] m_tbtimeplan_loop
+[2017-06-21 10:51:53] [main] [INFO] m_tbtimeplan_loop_scm
+[2017-06-21 10:51:53] [main] [INFO] m_tbtimeplan_single
+[2017-06-21 10:51:53] [main] [INFO] m_tbtimeplan_single_scm
+[2017-06-21 10:51:53] [main] [INFO] m_tbtserules
+[2017-06-21 10:51:53] [main] [INFO] m_tburl_category
+[2017-06-21 10:51:53] [main] [INFO] m_tburl_filter
+[2017-06-21 10:51:53] [main] [INFO] m_tburl_filter_ips
+[2017-06-21 10:51:53] [main] [INFO] m_tburlblacklist
+[2017-06-21 10:51:53] [main] [INFO] m_tburlwhilelist
+[2017-06-21 10:51:53] [main] [INFO] m_tbuser_icmp_traffic
+[2017-06-21 10:51:53] [main] [INFO] m_tbuser_tcp_traffic
+[2017-06-21 10:51:53] [main] [INFO] m_tbuser_traffic_BiLevel
+[2017-06-21 10:51:53] [main] [INFO] m_tbuser_udp_traffic
+[2017-06-21 10:51:53] [main] [INFO] m_tbusers
+[2017-06-21 10:51:53] [main] [INFO] m_tbusers_authentication_tactics
+[2017-06-21 10:51:53] [main] [INFO] m_tbusers_out_authentication
+[2017-06-21 10:51:53] [main] [INFO] m_tbvirtualfw
+[2017-06-21 10:51:53] [main] [INFO] m_tbvirtualline
+[2017-06-21 10:51:53] [main] [INFO] m_tbvlandevice
+[2017-06-21 10:51:53] [main] [INFO] m_tbwebapplication_lib_bak
+[2017-06-21 10:51:53] [main] [INFO] m_tbwebapplication_lib_copy
+[2017-06-21 10:51:53] [main] [INFO] m_tbwebapplication_protected
+[2017-06-21 10:51:53] [main] [INFO] m_tbwebapplication_strategy
+[2017-06-21 10:51:53] [main] [INFO] m_tbwebrules
+[2017-06-21 10:51:53] [main] [INFO] m_tbwifi_audit
+[2017-06-21 10:51:53] [main] [INFO] se
+[2017-06-21 10:51:54] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-06-21 10:51:54] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-06-21 10:51:54] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-06-21 10:51:54] [main] [INFO] system_config: waf_switch | args: 
+[2017-06-21 10:51:54] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-06-21 10:51:54] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-06-21 10:51:54] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-06-21 10:51:54] [main] [INFO] system_config: dpi_switch | args: 
+[2017-06-21 10:51:54] [main] [INFO] system_config: traffic_count | args: 
+[2017-06-21 10:51:54] [main] [INFO] system_config: ips_switch | args: 
+[2017-06-21 10:51:54] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-06-21 10:51:54] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-06-21 10:51:54] [main] [INFO] system_config: audit_switch | args: 
+[2017-06-21 10:51:54] [main] [INFO] system_config: brige_brocast_snat | args: 
+[2017-06-21 10:51:55] [main] [INFO] finish clean database
+[2017-06-21 10:51:55] [main] [INFO] Factory Reset end ...........
+[2017-06-21 10:53:26] [main] [INFO] Event set!
+[2017-06-21 10:54:00] [main] [INFO] second firewall init begine.........
+[2017-06-21 10:54:00] [main] [INFO] disable sshd...........
+[2017-06-21 10:54:00] [main] [INFO] stop sshd...........
+[2017-06-21 10:54:00] [main] [INFO] nic
+[2017-06-21 10:54:02] [main] [INFO] port_mirror
+[2017-06-21 10:54:02] [main] [INFO] virtual_line
+[2017-06-21 10:54:02] [main] [INFO] bridge
+[2017-06-21 10:54:02] [main] [INFO] ppoe
+[2017-06-21 10:54:03] [main] [INFO] port_aggregation
+[2017-06-21 10:54:03] [main] [INFO] VLAN
+[2017-06-21 10:54:03] [main] [INFO] static_route
+[2017-06-21 10:54:03] [main] [INFO] sslvpn
+[2017-06-21 10:54:03] [main] [INFO] strategy_route
+[2017-06-21 10:54:03] [main] [INFO] isp_route
+[2017-06-21 10:54:03] [main] [INFO] dynamic_route
+[2017-06-21 10:54:03] [main] [INFO] dhcp
+[2017-06-21 10:54:04] [main] [INFO] dns
+[2017-06-21 10:54:04] [main] [INFO] nginx
+[2017-06-21 10:54:04] [main] [INFO] best_routing
+[2017-06-21 10:54:04] [main] [INFO] IP_group
+[2017-06-21 10:54:04] [main] [INFO] snmp
+[2017-06-21 10:54:04] [main] [INFO] nets_within_nets
+[2017-06-21 10:54:04] [main] [INFO] multicast_route
+[2017-06-21 10:54:04] [main] [INFO] nat
+[2017-06-21 10:54:04] [main] [INFO] safetactics
+[2017-06-21 10:54:05] [main] [INFO] scm
+[2017-06-21 10:54:05] [main] [INFO] ddos
+[2017-06-21 10:54:05] [main] [INFO] connect_limit
+[2017-06-21 10:54:05] [main] [INFO] ipmac
+[2017-06-21 10:54:05] [main] [INFO] virtualfw
+[2017-06-21 10:54:05] [main] [INFO] IPS
+[2017-06-21 10:54:05] [main] [INFO] WEB
+[2017-06-21 10:54:05] [main] [INFO] url_group
+[2017-06-21 10:54:06] [main] [INFO] eml_virus
+[2017-06-21 10:54:06] [main] [INFO] file_filter
+[2017-06-21 10:54:06] [main] [INFO] keyword_filter
+[2017-06-21 10:54:06] [main] [INFO] web_keyword
+[2017-06-21 10:54:06] [main] [INFO] url_filter_strategy
+[2017-06-21 10:54:06] [main] [INFO] url_filter_list
+[2017-06-21 10:54:06] [main] [INFO] antivirus_config
+[2017-06-21 10:54:06] [main] [INFO] antivirus_strategy
+[2017-06-21 10:54:06] [main] [INFO] usergroup
+[2017-06-21 10:54:06] [main] [INFO] flowmanage
+[2017-06-21 10:54:06] [main] [INFO] system_config
+[2017-06-21 10:54:07] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-06-21 10:54:07] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-06-21 10:54:07] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-06-21 10:54:07] [main] [INFO] system_config: waf_switch | args: 
+[2017-06-21 10:54:07] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-06-21 10:54:07] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-06-21 10:54:07] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-06-21 10:54:07] [main] [INFO] system_config: dpi_switch | args: 
+[2017-06-21 10:54:07] [main] [INFO] system_config: traffic_count | args: 
+[2017-06-21 10:54:07] [main] [INFO] system_config: ips_switch | args: 
+[2017-06-21 10:54:07] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-06-21 10:54:07] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-06-21 10:54:07] [main] [INFO] system_config: audit_switch | args: 
+[2017-06-21 10:54:07] [main] [INFO] system_config: brige_brocast_snat | args: 
+[2017-06-21 10:54:07] [main] [INFO] system_reboot_log
+[2017-06-21 10:54:07] [main] [INFO] ipv6
+[2017-06-21 10:54:07] [main] [INFO] ipsecvpn
+[2017-06-21 10:54:09] [main] [INFO] n2n-vpn
+[2017-06-21 10:54:09] [main] [INFO] nat64
+[2017-06-21 10:54:09] [main] [INFO] vifaces
+[2017-06-21 10:54:10] [main] [INFO] honypot
+[2017-06-21 10:54:11] [main] [INFO] second firewall init end.........
+[2017-06-21 10:55:12] [main] [INFO] Event set!
+[2017-06-21 10:59:16] [main] [INFO] second firewall init begine.........
+[2017-06-21 10:59:16] [main] [INFO] disable sshd...........
+[2017-06-21 10:59:16] [main] [INFO] stop sshd...........
+[2017-06-21 10:59:16] [main] [INFO] nic
+[2017-06-21 10:59:18] [main] [INFO] port_mirror
+[2017-06-21 10:59:18] [main] [INFO] virtual_line
+[2017-06-21 10:59:18] [main] [INFO] bridge
+[2017-06-21 10:59:18] [main] [INFO] ppoe
+[2017-06-21 10:59:18] [main] [INFO] port_aggregation
+[2017-06-21 10:59:19] [main] [INFO] VLAN
+[2017-06-21 10:59:19] [main] [INFO] static_route
+[2017-06-21 10:59:19] [main] [INFO] sslvpn
+[2017-06-21 10:59:19] [main] [INFO] strategy_route
+[2017-06-21 10:59:19] [main] [INFO] isp_route
+[2017-06-21 10:59:19] [main] [INFO] dynamic_route
+[2017-06-21 10:59:19] [main] [INFO] dhcp
+[2017-06-21 10:59:19] [main] [INFO] dns
+[2017-06-21 10:59:19] [main] [INFO] nginx
+[2017-06-21 10:59:20] [main] [INFO] best_routing
+[2017-06-21 10:59:20] [main] [INFO] IP_group
+[2017-06-21 10:59:20] [main] [INFO] snmp
+[2017-06-21 10:59:20] [main] [INFO] nets_within_nets
+[2017-06-21 10:59:20] [main] [INFO] multicast_route
+[2017-06-21 10:59:20] [main] [INFO] nat
+[2017-06-21 10:59:20] [main] [INFO] safetactics
+[2017-06-21 10:59:20] [main] [INFO] scm
+[2017-06-21 10:59:20] [main] [INFO] ddos
+[2017-06-21 10:59:21] [main] [INFO] connect_limit
+[2017-06-21 10:59:21] [main] [INFO] ipmac
+[2017-06-21 10:59:21] [main] [INFO] virtualfw
+[2017-06-21 10:59:21] [main] [INFO] IPS
+[2017-06-21 10:59:21] [main] [INFO] WEB
+[2017-06-21 10:59:21] [main] [INFO] url_group
+[2017-06-21 10:59:21] [main] [INFO] eml_virus
+[2017-06-21 10:59:21] [main] [INFO] file_filter
+[2017-06-21 10:59:22] [main] [INFO] keyword_filter
+[2017-06-21 10:59:22] [main] [INFO] web_keyword
+[2017-06-21 10:59:22] [main] [INFO] url_filter_strategy
+[2017-06-21 10:59:22] [main] [INFO] url_filter_list
+[2017-06-21 10:59:22] [main] [INFO] antivirus_config
+[2017-06-21 10:59:22] [main] [INFO] antivirus_strategy
+[2017-06-21 10:59:22] [main] [INFO] usergroup
+[2017-06-21 10:59:22] [main] [INFO] flowmanage
+[2017-06-21 10:59:22] [main] [INFO] system_config
+[2017-06-21 10:59:22] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-06-21 10:59:22] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-06-21 10:59:22] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-06-21 10:59:22] [main] [INFO] system_config: waf_switch | args: 
+[2017-06-21 10:59:22] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-06-21 10:59:22] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-06-21 10:59:22] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-06-21 10:59:23] [main] [INFO] system_config: dpi_switch | args: 
+[2017-06-21 10:59:23] [main] [INFO] system_config: traffic_count | args: 
+[2017-06-21 10:59:23] [main] [INFO] system_config: ips_switch | args: 
+[2017-06-21 10:59:23] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-06-21 10:59:23] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-06-21 10:59:23] [main] [INFO] system_config: audit_switch | args: 
+[2017-06-21 10:59:23] [main] [INFO] system_config: brige_brocast_snat | args: 
+[2017-06-21 10:59:23] [main] [INFO] system_reboot_log
+[2017-06-21 10:59:23] [main] [INFO] ipv6
+[2017-06-21 10:59:23] [main] [INFO] ipsecvpn
+[2017-06-21 10:59:25] [main] [INFO] n2n-vpn
+[2017-06-21 10:59:25] [main] [INFO] nat64
+[2017-06-21 10:59:25] [main] [INFO] vifaces
+[2017-06-21 10:59:25] [main] [INFO] honypot
+[2017-06-21 10:59:27] [main] [INFO] second firewall init end.........
+[2017-06-21 11:01:26] [main] [INFO] del_allow_manage and del_allow_ping
+[2017-06-21 11:01:26] [main] [INFO] config_iface: allow_ping `1` allow_ssh `0` allow_iweb `1`
+[2017-06-21 11:01:26] [main] [INFO] config_iface: ipv6 allow_ping `1` allow_ssh `0` allow_iweb `1`
+[2017-06-21 11:01:26] [main] [WARNING] device `enp10s0` ip config `192.168.0.1/24` failed| RTNETLINK answers: File exists
+[2017-06-21 11:01:26] [main] [INFO] iface `enp10s0` del_ip: set([MyIP('172.16.6.142', '24')]) ===> add_ip: set([MyIP('192.168.0.1', '24')])
+[2017-06-21 11:01:53] [main] [INFO] Event set!
+[2017-06-26 17:15:01] [main] [INFO] second firewall init begine.........
+[2017-06-26 17:15:01] [main] [INFO] disable sshd...........
+[2017-06-26 17:15:01] [main] [INFO] stop sshd...........
+[2017-06-26 17:15:01] [main] [INFO] nic
+[2017-06-26 17:15:02] [main] [INFO] port_mirror
+[2017-06-26 17:15:03] [main] [INFO] virtual_line
+[2017-06-26 17:15:03] [main] [INFO] bridge
+[2017-06-26 17:15:03] [main] [INFO] ppoe
+[2017-06-26 17:15:03] [main] [INFO] port_aggregation
+[2017-06-26 17:15:04] [main] [INFO] VLAN
+[2017-06-26 17:15:04] [main] [INFO] static_route
+[2017-06-26 17:15:04] [main] [INFO] sslvpn
+[2017-06-26 17:15:04] [main] [INFO] strategy_route
+[2017-06-26 17:15:04] [main] [INFO] isp_route
+[2017-06-26 17:15:04] [main] [INFO] dynamic_route
+[2017-06-26 17:15:04] [main] [INFO] dhcp
+[2017-06-26 17:15:04] [main] [INFO] dns
+[2017-06-26 17:15:04] [main] [INFO] nginx
+[2017-06-26 17:15:05] [main] [INFO] best_routing
+[2017-06-26 17:15:05] [main] [INFO] IP_group
+[2017-06-26 17:15:05] [main] [INFO] snmp
+[2017-06-26 17:15:05] [main] [INFO] nets_within_nets
+[2017-06-26 17:15:05] [main] [INFO] multicast_route
+[2017-06-26 17:15:05] [main] [INFO] nat
+[2017-06-26 17:15:05] [main] [INFO] safetactics
+[2017-06-26 17:15:05] [main] [INFO] scm
+[2017-06-26 17:15:05] [main] [INFO] ddos
+[2017-06-26 17:15:05] [main] [INFO] connect_limit
+[2017-06-26 17:15:06] [main] [INFO] ipmac
+[2017-06-26 17:15:06] [main] [INFO] virtualfw
+[2017-06-26 17:15:06] [main] [INFO] IPS
+[2017-06-26 17:15:06] [main] [INFO] WEB
+[2017-06-26 17:15:06] [main] [INFO] url_group
+[2017-06-26 17:15:06] [main] [INFO] eml_virus
+[2017-06-26 17:15:06] [main] [INFO] file_filter
+[2017-06-26 17:15:07] [main] [INFO] keyword_filter
+[2017-06-26 17:15:07] [main] [INFO] web_keyword
+[2017-06-26 17:15:07] [main] [INFO] url_filter_strategy
+[2017-06-26 17:15:07] [main] [INFO] url_filter_list
+[2017-06-26 17:15:07] [main] [INFO] antivirus_config
+[2017-06-26 17:15:07] [main] [INFO] antivirus_strategy
+[2017-06-26 17:15:07] [main] [INFO] usergroup
+[2017-06-26 17:15:07] [main] [INFO] flowmanage
+[2017-06-26 17:15:07] [main] [INFO] system_config
+[2017-06-26 17:15:07] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-06-26 17:15:07] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-06-26 17:15:07] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-06-26 17:15:07] [main] [INFO] system_config: waf_switch | args: 
+[2017-06-26 17:15:07] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-06-26 17:15:07] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-06-26 17:15:08] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-06-26 17:15:08] [main] [INFO] system_config: dpi_switch | args: 
+[2017-06-26 17:15:08] [main] [INFO] system_config: traffic_count | args: 
+[2017-06-26 17:15:08] [main] [INFO] system_config: ips_switch | args: 
+[2017-06-26 17:15:08] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-06-26 17:15:08] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-06-26 17:15:08] [main] [INFO] system_config: audit_switch | args: 
+[2017-06-26 17:15:08] [main] [INFO] system_config: brige_brocast_snat | args: 
+[2017-06-26 17:15:08] [main] [INFO] system_reboot_log
+[2017-06-26 17:15:08] [main] [INFO] ipv6
+[2017-06-26 17:15:08] [main] [INFO] ipsecvpn
+[2017-06-26 17:15:10] [main] [INFO] n2n-vpn
+[2017-06-26 17:15:10] [main] [INFO] nat64
+[2017-06-26 17:15:10] [main] [INFO] vifaces
+[2017-06-26 17:15:10] [main] [INFO] honypot
+[2017-06-26 17:15:12] [main] [INFO] second firewall init end.........
+[2017-06-26 17:26:45] [main] [WARNING] unexecute task: ['CMD_SSL_VPN_LIMIT', '{"isslLimit":"100"}']
+[2017-06-26 17:27:33] [main] [INFO] del_allow_manage and del_allow_ping
+[2017-06-26 17:27:33] [main] [INFO] config_iface: allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-06-26 17:27:33] [main] [INFO] config_iface: ipv6 allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-06-26 17:27:33] [main] [WARNING] device `enp10s0` ip config `172.16.6.142/24` failed| RTNETLINK answers: File exists
+[2017-06-26 17:27:33] [main] [WARNING] device `enp10s0` ip config `192.168.0.1/24` failed| RTNETLINK answers: File exists
+[2017-06-26 17:27:33] [main] [INFO] iface `enp10s0` del_ip: set([]) ===> add_ip: set([MyIP('172.16.6.142', '24'), MyIP('192.168.0.1', '24')])
+[2017-06-26 17:33:40] [main] [INFO] system_config: waf_url_filter | args: 1
+[2017-06-26 17:33:40] [main] [INFO] system_config: waf_webapp_detect | args: 1
+[2017-06-26 17:33:40] [main] [INFO] system_config: net_share_detect_switch | args: 1
+[2017-06-26 17:33:42] [main] [INFO] system_config: waf_switch | args: 1
+[2017-06-26 17:33:42] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-06-26 17:33:42] [main] [INFO] system_config: flow_manage_switch | args: 1
+[2017-06-26 17:33:42] [main] [INFO] system_config: ddos_protect_switch | args: 1
+[2017-06-26 17:33:42] [main] [INFO] system_config: dpi_switch | args: 1
+[2017-06-26 17:33:42] [main] [INFO] system_config: traffic_count | args: 1
+[2017-06-26 17:33:42] [main] [INFO] system_config: ips_switch | args: 1
+[2017-06-26 17:33:42] [main] [INFO] system_config: info_leak_switch | args: 1
+[2017-06-26 17:33:42] [main] [INFO] system_config: anti_virus_switch | args: 1
+[2017-06-26 17:33:43] [main] [INFO] system_config: audit_switch | args: 1
+[2017-06-26 17:33:43] [main] [INFO] system_config: brige_brocast_snat | args: 1
+[2017-06-26 17:34:29] [main] [INFO] system_config: waf_url_filter | args: 0
+[2017-06-26 17:34:29] [main] [INFO] system_config: waf_webapp_detect | args: 0
+[2017-06-26 17:34:29] [main] [INFO] system_config: net_share_detect_switch | args: 0
+[2017-06-26 17:34:29] [main] [INFO] system_config: waf_switch | args: 0
+[2017-06-26 17:34:29] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-06-26 17:34:29] [main] [INFO] system_config: flow_manage_switch | args: 0
+[2017-06-26 17:34:29] [main] [INFO] system_config: ddos_protect_switch | args: 0
+[2017-06-26 17:34:29] [main] [INFO] system_config: dpi_switch | args: 0
+[2017-06-26 17:34:29] [main] [INFO] system_config: traffic_count | args: 0
+[2017-06-26 17:34:29] [main] [INFO] system_config: ips_switch | args: 0
+[2017-06-26 17:34:29] [main] [INFO] system_config: info_leak_switch | args: 0
+[2017-06-26 17:34:29] [main] [INFO] system_config: anti_virus_switch | args: 0
+[2017-06-26 17:34:29] [main] [INFO] system_config: audit_switch | args: 0
+[2017-06-26 17:34:29] [main] [INFO] system_config: brige_brocast_snat | args: 0
+[2017-06-26 17:51:49] [main] [INFO] Factory Reset begin ...........
+[2017-06-26 17:51:49] [main] [INFO] disable sshd...........
+[2017-06-26 17:51:49] [main] [INFO] stop sshd...........
+[2017-06-26 17:51:49] [main] [INFO] begin to clean function
+[2017-06-26 17:51:49] [main] [INFO] packet_capture
+[2017-06-26 17:51:50] [main] [INFO] nic
+[2017-06-26 17:51:50] [main] [INFO] mirror
+[2017-06-26 17:51:50] [main] [INFO] virtual_line
+[2017-06-26 17:51:50] [main] [INFO] bridge
+[2017-06-26 17:51:51] [main] [INFO] pppoe
+[2017-06-26 17:51:51] [main] [INFO] port_aggregation
+[2017-06-26 17:51:51] [main] [INFO] VLAN
+[2017-06-26 17:51:51] [main] [INFO] static_route
+[2017-06-26 17:51:51] [main] [INFO] strategy_route
+[2017-06-26 17:51:51] [main] [INFO] ISP
+[2017-06-26 17:51:51] [main] [INFO] dynamic_route
+[2017-06-26 17:51:51] [main] [INFO] dhcp
+[2017-06-26 17:51:51] [main] [INFO] best_routing
+[2017-06-26 17:51:51] [main] [INFO] multicast_route
+[2017-06-26 17:51:52] [main] [INFO] IP_group
+[2017-06-26 17:51:52] [main] [INFO] web_define_rule
+[2017-06-26 17:51:52] [main] [INFO] ips_define_rule
+[2017-06-26 17:51:52] [main] [INFO] nets_within_nets
+[2017-06-26 17:51:52] [main] [INFO] ddos
+[2017-06-26 17:51:52] [main] [INFO] virtualfw
+[2017-06-26 17:51:52] [main] [INFO] url_filter
+[2017-06-26 17:51:52] [main] [INFO] virus_size
+[2017-06-26 17:51:52] [main] [INFO] virus_type
+[2017-06-26 17:51:52] [main] [INFO] eml_content
+[2017-06-26 17:51:52] [main] [INFO] eml_filename
+[2017-06-26 17:51:52] [main] [INFO] eml_subject
+[2017-06-26 17:51:52] [main] [INFO] keyword_filter
+[2017-06-26 17:51:52] [main] [INFO] file_filter
+[2017-06-26 17:51:52] [main] [INFO] web_keyword
+[2017-06-26 17:51:52] [main] [INFO] url_filter_strategy
+[2017-06-26 17:51:52] [main] [INFO] url_filter_black
+[2017-06-26 17:51:52] [main] [INFO] url_filter_white
+[2017-06-26 17:51:52] [main] [INFO] antivirus_config
+[2017-06-26 17:51:52] [main] [INFO] antivirus_strategy
+[2017-06-26 17:51:52] [main] [INFO] usergroup
+[2017-06-26 17:51:52] [main] [INFO] tactics
+[2017-06-26 17:51:52] [main] [INFO] flowmanage
+[2017-06-26 17:51:54] [main] [INFO] revcamera
+[2017-06-26 17:51:54] [main] [INFO] revscan
+[2017-06-26 17:51:54] [main] [INFO] ipv6tunnel
+[2017-06-26 17:51:54] [main] [INFO] sslvpn
+[2017-06-26 17:51:55] [main] [INFO] ipsecvpn
+[2017-06-26 17:51:55] [main] [INFO] n2n-vpn
+[2017-06-26 17:51:55] [main] [INFO] nat64
+[2017-06-26 17:51:55] [main] [INFO] ip_monitor
+[2017-06-26 17:51:55] [main] [INFO] finish clean function
+[2017-06-26 17:51:55] [main] [INFO] begin to clean database
+[2017-06-26 17:51:55] [main] [INFO] m_IPS_template_rules
+[2017-06-26 17:51:55] [main] [INFO] m_blacklist
+[2017-06-26 17:51:55] [main] [INFO] m_tbDnat
+[2017-06-26 17:51:55] [main] [INFO] m_tbFileFilter
+[2017-06-26 17:51:55] [main] [INFO] m_tbHoneypot
+[2017-06-26 17:51:55] [main] [INFO] m_tbKeywordFilter
+[2017-06-26 17:51:55] [main] [INFO] m_tbLocalChildNet_bac
+[2017-06-26 17:51:55] [main] [INFO] m_tbNum
+[2017-06-26 17:51:55] [main] [INFO] m_tbSearitystrate
+[2017-06-26 17:51:55] [main] [INFO] m_tbSearitystrate_address
+[2017-06-26 17:51:55] [main] [INFO] m_tbSearitystrate_scm
+[2017-06-26 17:51:55] [main] [INFO] m_tbSnat
+[2017-06-26 17:51:55] [main] [INFO] m_tbVirtualNet
+[2017-06-26 17:51:55] [main] [INFO] m_tbaddandgroup
+[2017-06-26 17:51:55] [main] [INFO] m_tbaddress_list_scm
+[2017-06-26 17:51:55] [main] [INFO] m_tbaddressgroup
+[2017-06-26 17:51:55] [main] [INFO] m_tbaddressgroup_scm
+[2017-06-26 17:51:55] [main] [INFO] m_tbaudit_app_rules
+[2017-06-26 17:51:55] [main] [INFO] m_tbaudit_rule_templates
+[2017-06-26 17:51:55] [main] [INFO] m_tbauto_strategy_exception
+[2017-06-26 17:51:55] [main] [INFO] m_tbautorqrule
+[2017-06-26 17:51:55] [main] [INFO] m_tbbackup
+[2017-06-26 17:51:55] [main] [INFO] m_tbbdvpn_l2tp_group
+[2017-06-26 17:51:55] [main] [INFO] m_tbbdvpn_l2tp_mid_group_service
+[2017-06-26 17:51:55] [main] [INFO] m_tbbdvpn_l2tp_mid_user_group
+[2017-06-26 17:51:55] [main] [INFO] m_tbbdvpn_l2tp_mid_user_service
+[2017-06-26 17:51:55] [main] [INFO] m_tbbdvpn_l2tp_monitor
+[2017-06-26 17:51:55] [main] [INFO] m_tbbdvpn_l2tp_service
+[2017-06-26 17:51:55] [main] [INFO] m_tbbdvpn_l2tp_service_port
+[2017-06-26 17:51:55] [main] [INFO] m_tbbdvpn_l2tp_user
+[2017-06-26 17:51:55] [main] [INFO] m_tbbdvpn_ssl_mid_group_service
+[2017-06-26 17:51:55] [main] [INFO] m_tbbdvpn_ssl_mid_user_service
+[2017-06-26 17:51:55] [main] [INFO] m_tbbdvpn_ssl_service
+[2017-06-26 17:51:55] [main] [INFO] m_tbbdvpn_ssl_service_port
+[2017-06-26 17:51:55] [main] [INFO] m_tbbdvpn_ssl_user
+[2017-06-26 17:51:55] [main] [INFO] m_tbbridgedevice
+[2017-06-26 17:51:55] [main] [INFO] m_tbbsservice
+[2017-06-26 17:51:55] [main] [INFO] m_tbcascade
+[2017-06-26 17:51:55] [main] [INFO] m_tbconfig_copy
+[2017-06-26 17:51:55] [main] [INFO] m_tbcustomapplication
+[2017-06-26 17:51:55] [main] [INFO] m_tbdbtype_name
+[2017-06-26 17:51:55] [main] [INFO] m_tbddos
+[2017-06-26 17:51:55] [main] [INFO] m_tbdefault_app_list
+[2017-06-26 17:51:55] [main] [INFO] m_tbdefence_rules
+[2017-06-26 17:51:55] [main] [INFO] m_tbdhcpfour
+[2017-06-26 17:51:55] [main] [INFO] m_tbdialdevice
+[2017-06-26 17:51:55] [main] [INFO] m_tbdipcon
+[2017-06-26 17:51:55] [main] [INFO] m_tbdoublehot
+[2017-06-26 17:51:55] [main] [INFO] m_tbduiduanchildnet
+[2017-06-26 17:51:55] [main] [INFO] m_tbdynamicroute_bgp_neighbor
+[2017-06-26 17:51:55] [main] [INFO] m_tbdynamicroute_bgp_net
+[2017-06-26 17:51:55] [main] [INFO] m_tbdynamicroute_bgp_port
+[2017-06-26 17:51:55] [main] [INFO] m_tbdynamicroute_ospf_area
+[2017-06-26 17:51:55] [main] [INFO] m_tbdynamicroute_ospf_net
+[2017-06-26 17:51:55] [main] [INFO] m_tbdynamicroute_ospf_port
+[2017-06-26 17:51:55] [main] [INFO] m_tbdynamicroute_ospf_v3
+[2017-06-26 17:51:55] [main] [INFO] m_tbdynamicroute_rip_net
+[2017-06-26 17:51:55] [main] [INFO] m_tbdynamicroute_rip_port
+[2017-06-26 17:51:55] [main] [INFO] m_tbecmp
+[2017-06-26 17:51:55] [main] [INFO] m_tbevil_strategy
+[2017-06-26 17:51:55] [main] [INFO] m_tbevilcode_protected
+[2017-06-26 17:51:55] [main] [INFO] m_tbevilcode_strategy
+[2017-06-26 17:51:55] [main] [INFO] m_tbexistport
+[2017-06-26 17:51:55] [main] [INFO] m_tbfirsttage
+[2017-06-26 17:51:55] [main] [INFO] m_tbflow_limit
+[2017-06-26 17:51:55] [main] [INFO] m_tbflow_socket
+[2017-06-26 17:51:55] [main] [INFO] m_tbflow_virtualline
+[2017-06-26 17:51:55] [main] [INFO] m_tbfwsessioncontrol
+[2017-06-26 17:51:55] [main] [INFO] m_tbgreipv4
+[2017-06-26 17:51:55] [main] [INFO] m_tbgroup
+[2017-06-26 17:51:55] [main] [INFO] m_tbhoneypot_detail
+[2017-06-26 17:51:55] [main] [INFO] m_tbhoneypot_log
+[2017-06-26 17:51:55] [main] [INFO] m_tbhoneypot_status
+[2017-06-26 17:51:55] [main] [INFO] m_tbidsip
+[2017-06-26 17:51:55] [main] [INFO] m_tbip_mac
+[2017-06-26 17:51:55] [main] [INFO] m_tbip_mac_defined
+[2017-06-26 17:51:55] [main] [INFO] m_tbips
+[2017-06-26 17:51:55] [main] [INFO] m_tbips_template
+[2017-06-26 17:51:55] [main] [INFO] m_tbipsec_branch
+[2017-06-26 17:51:55] [main] [INFO] m_tbipsec_perssiom
+[2017-06-26 17:51:55] [main] [INFO] m_tbipsec_user
+[2017-06-26 17:51:55] [main] [INFO] m_tbipsec_usergroup
+[2017-06-26 17:51:55] [main] [INFO] m_tbipsecclientmonitor
+[2017-06-26 17:51:55] [main] [INFO] m_tbipsecinternetport
+[2017-06-26 17:51:55] [main] [INFO] m_tbipsecoutnetport
+[2017-06-26 17:51:55] [main] [INFO] m_tbipsecstatusmonitor
+[2017-06-26 17:51:55] [main] [INFO] m_tbipsectimeset
+[2017-06-26 17:51:55] [main] [INFO] m_tbipsrules
+[2017-06-26 17:51:55] [main] [INFO] m_tbipsrules_copy
+[2017-06-26 17:51:55] [main] [INFO] m_tbipsrules_excel
+[2017-06-26 17:51:55] [main] [INFO] m_tbipv4over6
+[2017-06-26 17:51:55] [main] [INFO] m_tbipv6toipv4
+[2017-06-26 17:51:55] [main] [INFO] m_tbisatap
+[2017-06-26 17:51:55] [main] [INFO] m_tbisproute
+[2017-06-26 17:51:55] [main] [INFO] m_tbkeyword_webcontent
+[2017-06-26 17:51:55] [main] [INFO] m_tblimitip
+[2017-06-26 17:51:55] [main] [INFO] m_tblocalchildnet
+[2017-06-26 17:51:55] [main] [INFO] m_tblog_sys_admin
+[2017-06-26 17:51:55] [main] [INFO] m_tblog_sys_backup
+[2017-06-26 17:51:55] [main] [INFO] m_tblog_sys_reboot
+[2017-06-26 17:51:55] [main] [INFO] m_tbloginlog
+[2017-06-26 17:51:55] [main] [INFO] m_tbmannualset
+[2017-06-26 17:51:55] [main] [INFO] m_tbmannualtargetip
+[2017-06-26 17:51:55] [main] [INFO] m_tbmobile_message
+[2017-06-26 17:51:55] [main] [INFO] m_tbnatsetting
+[2017-06-26 17:51:55] [main] [INFO] m_tbnetinnet
+[2017-06-26 17:51:55] [main] [INFO] m_tbnetinnetip
+[2017-06-26 17:51:55] [main] [INFO] m_tbntn_center
+[2017-06-26 17:51:55] [main] [INFO] m_tbntn_edge
+[2017-06-26 17:51:55] [main] [INFO] m_tboperatelog
+[2017-06-26 17:51:55] [main] [INFO] m_tbpacket_capture
+[2017-06-26 17:51:55] [main] [INFO] m_tbpacket_group
+[2017-06-26 17:51:55] [main] [INFO] m_tbport_mirror
+[2017-06-26 17:51:55] [main] [INFO] m_tbportaggregation
+[2017-06-26 17:51:55] [main] [INFO] m_tbpredefined
+[2017-06-26 17:51:55] [main] [INFO] m_tbproduct_license
+[2017-06-26 17:51:55] [main] [INFO] m_tbrevcamera_queue
+[2017-06-26 17:51:55] [main] [INFO] m_tbrolelib
+[2017-06-26 17:51:55] [main] [INFO] m_tbrolelib_autoupdate
+[2017-06-26 17:51:55] [main] [INFO] m_tbrolelib_update_record
+[2017-06-26 17:51:55] [main] [INFO] m_tbroute
+[2017-06-26 17:51:55] [main] [INFO] m_tbsecondtageinter
+[2017-06-26 17:51:55] [main] [INFO] m_tbsecurityoptions
+[2017-06-26 17:51:55] [main] [INFO] m_tbservice_group
+[2017-06-26 17:51:55] [main] [INFO] m_tbservices
+[2017-06-26 17:51:55] [main] [INFO] m_tbservices_list
+[2017-06-26 17:51:55] [main] [INFO] m_tbsession
+[2017-06-26 17:51:55] [main] [INFO] m_tbsipcon
+[2017-06-26 17:51:55] [main] [INFO] m_tbsnmp
+[2017-06-26 17:51:55] [main] [INFO] m_tbsnortrule
+[2017-06-26 17:51:55] [main] [INFO] m_tbsslvpn_setting
+[2017-06-26 17:51:55] [main] [INFO] m_tbsslvpncsservice
+[2017-06-26 17:51:55] [main] [INFO] m_tbsslvpncsservice_port
+[2017-06-26 17:51:55] [main] [INFO] m_tbsslvpngroup_role
+[2017-06-26 17:51:55] [main] [INFO] m_tbsslvpnrole
+[2017-06-26 17:51:55] [main] [INFO] m_tbsslvpnrole_server
+[2017-06-26 17:51:55] [main] [INFO] m_tbsslvpnusergroup
+[2017-06-26 17:51:55] [main] [INFO] m_tbsslvpnusers
+[2017-06-26 17:51:55] [main] [INFO] m_tbsslvpnusers_group
+[2017-06-26 17:51:55] [main] [INFO] m_tbsslvpnusers_role
+[2017-06-26 17:51:55] [main] [INFO] m_tbstaticroute
+[2017-06-26 17:51:55] [main] [INFO] m_tbstrategyroute
+[2017-06-26 17:51:55] [main] [INFO] m_tbsystem_update_log
+[2017-06-26 17:51:55] [main] [INFO] m_tbt_rules
+[2017-06-26 17:51:55] [main] [INFO] m_tbtimeout
+[2017-06-26 17:51:55] [main] [INFO] m_tbtimeplan_loop
+[2017-06-26 17:51:55] [main] [INFO] m_tbtimeplan_loop_scm
+[2017-06-26 17:51:55] [main] [INFO] m_tbtimeplan_single
+[2017-06-26 17:51:55] [main] [INFO] m_tbtimeplan_single_scm
+[2017-06-26 17:51:55] [main] [INFO] m_tbtserules
+[2017-06-26 17:51:55] [main] [INFO] m_tburl_category
+[2017-06-26 17:51:55] [main] [INFO] m_tburl_filter
+[2017-06-26 17:51:55] [main] [INFO] m_tburl_filter_ips
+[2017-06-26 17:51:55] [main] [INFO] m_tburlblacklist
+[2017-06-26 17:51:55] [main] [INFO] m_tburlwhilelist
+[2017-06-26 17:51:55] [main] [INFO] m_tbuser_icmp_traffic
+[2017-06-26 17:51:55] [main] [INFO] m_tbuser_tcp_traffic
+[2017-06-26 17:51:55] [main] [INFO] m_tbuser_traffic_BiLevel
+[2017-06-26 17:51:55] [main] [INFO] m_tbuser_udp_traffic
+[2017-06-26 17:51:55] [main] [INFO] m_tbusers
+[2017-06-26 17:51:55] [main] [INFO] m_tbusers_authentication_tactics
+[2017-06-26 17:51:55] [main] [INFO] m_tbusers_out_authentication
+[2017-06-26 17:51:55] [main] [INFO] m_tbvirtualfw
+[2017-06-26 17:51:55] [main] [INFO] m_tbvirtualline
+[2017-06-26 17:51:55] [main] [INFO] m_tbvlandevice
+[2017-06-26 17:51:55] [main] [INFO] m_tbwebapplication_lib_bak
+[2017-06-26 17:51:55] [main] [INFO] m_tbwebapplication_lib_copy
+[2017-06-26 17:51:55] [main] [INFO] m_tbwebapplication_protected
+[2017-06-26 17:51:55] [main] [INFO] m_tbwebapplication_strategy
+[2017-06-26 17:51:55] [main] [INFO] m_tbwebrules
+[2017-06-26 17:51:55] [main] [INFO] m_tbwifi_audit
+[2017-06-26 17:51:55] [main] [INFO] se
+[2017-06-26 17:51:56] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-06-26 17:51:56] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-06-26 17:51:56] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-06-26 17:51:56] [main] [INFO] system_config: waf_switch | args: 
+[2017-06-26 17:51:56] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-06-26 17:51:56] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-06-26 17:51:56] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-06-26 17:51:56] [main] [INFO] system_config: dpi_switch | args: 
+[2017-06-26 17:51:56] [main] [INFO] system_config: traffic_count | args: 
+[2017-06-26 17:51:56] [main] [INFO] system_config: ips_switch | args: 
+[2017-06-26 17:51:56] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-06-26 17:51:56] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-06-26 17:51:56] [main] [INFO] system_config: audit_switch | args: 
+[2017-06-26 17:51:56] [main] [INFO] system_config: brige_brocast_snat | args: 
+[2017-06-26 17:51:56] [main] [INFO] finish clean database
+[2017-06-26 17:51:57] [main] [INFO] Factory Reset end ...........
+[2017-06-26 17:53:28] [main] [INFO] Event set!
+[2017-06-26 17:54:04] [main] [INFO] second firewall init begine.........
+[2017-06-26 17:54:04] [main] [INFO] disable sshd...........
+[2017-06-26 17:54:04] [main] [INFO] stop sshd...........
+[2017-06-26 17:54:04] [main] [INFO] nic
+[2017-06-26 17:54:05] [main] [INFO] port_mirror
+[2017-06-26 17:54:05] [main] [INFO] virtual_line
+[2017-06-26 17:54:06] [main] [INFO] bridge
+[2017-06-26 17:54:06] [main] [INFO] ppoe
+[2017-06-26 17:54:06] [main] [INFO] port_aggregation
+[2017-06-26 17:54:06] [main] [INFO] VLAN
+[2017-06-26 17:54:06] [main] [INFO] static_route
+[2017-06-26 17:54:06] [main] [INFO] sslvpn
+[2017-06-26 17:54:07] [main] [INFO] strategy_route
+[2017-06-26 17:54:07] [main] [INFO] isp_route
+[2017-06-26 17:54:07] [main] [INFO] dynamic_route
+[2017-06-26 17:54:07] [main] [INFO] dhcp
+[2017-06-26 17:54:07] [main] [INFO] dns
+[2017-06-26 17:54:07] [main] [INFO] nginx
+[2017-06-26 17:54:07] [main] [INFO] best_routing
+[2017-06-26 17:54:07] [main] [INFO] IP_group
+[2017-06-26 17:54:08] [main] [INFO] snmp
+[2017-06-26 17:54:08] [main] [INFO] nets_within_nets
+[2017-06-26 17:54:08] [main] [INFO] multicast_route
+[2017-06-26 17:54:08] [main] [INFO] nat
+[2017-06-26 17:54:08] [main] [INFO] safetactics
+[2017-06-26 17:54:08] [main] [INFO] scm
+[2017-06-26 17:54:08] [main] [INFO] ddos
+[2017-06-26 17:54:08] [main] [INFO] connect_limit
+[2017-06-26 17:54:08] [main] [INFO] ipmac
+[2017-06-26 17:54:08] [main] [INFO] virtualfw
+[2017-06-26 17:54:08] [main] [INFO] IPS
+[2017-06-26 17:54:09] [main] [INFO] WEB
+[2017-06-26 17:54:09] [main] [INFO] url_group
+[2017-06-26 17:54:09] [main] [INFO] eml_virus
+[2017-06-26 17:54:09] [main] [INFO] file_filter
+[2017-06-26 17:54:09] [main] [INFO] keyword_filter
+[2017-06-26 17:54:09] [main] [INFO] web_keyword
+[2017-06-26 17:54:09] [main] [INFO] url_filter_strategy
+[2017-06-26 17:54:10] [main] [INFO] url_filter_list
+[2017-06-26 17:54:10] [main] [INFO] antivirus_config
+[2017-06-26 17:54:10] [main] [INFO] antivirus_strategy
+[2017-06-26 17:54:10] [main] [INFO] usergroup
+[2017-06-26 17:54:10] [main] [INFO] flowmanage
+[2017-06-26 17:54:10] [main] [INFO] system_config
+[2017-06-26 17:54:10] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-06-26 17:54:10] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-06-26 17:54:10] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-06-26 17:54:10] [main] [INFO] system_config: waf_switch | args: 
+[2017-06-26 17:54:10] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-06-26 17:54:10] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-06-26 17:54:10] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-06-26 17:54:10] [main] [INFO] system_config: dpi_switch | args: 
+[2017-06-26 17:54:10] [main] [INFO] system_config: traffic_count | args: 
+[2017-06-26 17:54:10] [main] [INFO] system_config: ips_switch | args: 
+[2017-06-26 17:54:10] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-06-26 17:54:10] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-06-26 17:54:10] [main] [INFO] system_config: audit_switch | args: 
+[2017-06-26 17:54:10] [main] [INFO] system_config: brige_brocast_snat | args: 
+[2017-06-26 17:54:10] [main] [INFO] system_reboot_log
+[2017-06-26 17:54:10] [main] [INFO] ipv6
+[2017-06-26 17:54:10] [main] [INFO] ipsecvpn
+[2017-06-26 17:54:13] [main] [INFO] n2n-vpn
+[2017-06-26 17:54:13] [main] [INFO] nat64
+[2017-06-26 17:54:13] [main] [INFO] vifaces
+[2017-06-26 17:54:13] [main] [INFO] honypot
+[2017-06-26 17:54:14] [main] [INFO] second firewall init end.........
+[2017-06-26 18:19:25] [main] [INFO] Event set!
+[2017-07-13 10:07:44] [main] [INFO] Factory Reset begin ...........
+[2017-07-13 10:07:44] [main] [INFO] disable sshd...........
+[2017-07-13 10:07:44] [main] [INFO] stop sshd...........
+[2017-07-13 10:07:45] [main] [INFO] begin to clean function
+[2017-07-13 10:07:45] [main] [INFO] packet_capture
+[2017-07-13 10:07:45] [main] [INFO] nic
+[2017-07-13 10:07:46] [main] [INFO] mirror
+[2017-07-13 10:07:46] [main] [INFO] virtual_line
+[2017-07-13 10:07:46] [main] [INFO] bridge
+[2017-07-13 10:07:47] [main] [INFO] pppoe
+[2017-07-13 10:07:47] [main] [INFO] port_aggregation
+[2017-07-13 10:07:47] [main] [INFO] VLAN
+[2017-07-13 10:07:47] [main] [INFO] static_route
+[2017-07-13 10:07:47] [main] [INFO] strategy_route
+[2017-07-13 10:07:47] [main] [INFO] ISP
+[2017-07-13 10:07:47] [main] [INFO] dynamic_route
+[2017-07-13 10:07:47] [main] [INFO] dhcp
+[2017-07-13 10:07:47] [main] [INFO] best_routing
+[2017-07-13 10:07:48] [main] [INFO] multicast_route
+[2017-07-13 10:07:48] [main] [INFO] IP_group
+[2017-07-13 10:07:48] [main] [INFO] web_define_rule
+[2017-07-13 10:07:48] [main] [INFO] ips_define_rule
+[2017-07-13 10:07:48] [main] [INFO] nets_within_nets
+[2017-07-13 10:07:48] [main] [INFO] ddos
+[2017-07-13 10:07:48] [main] [INFO] virtualfw
+[2017-07-13 10:07:48] [main] [INFO] url_filter
+[2017-07-13 10:07:48] [main] [INFO] virus_size
+[2017-07-13 10:07:48] [main] [INFO] virus_type
+[2017-07-13 10:07:48] [main] [INFO] eml_content
+[2017-07-13 10:07:48] [main] [INFO] eml_filename
+[2017-07-13 10:07:48] [main] [INFO] eml_subject
+[2017-07-13 10:07:48] [main] [INFO] keyword_filter
+[2017-07-13 10:07:48] [main] [INFO] file_filter
+[2017-07-13 10:07:48] [main] [INFO] web_keyword
+[2017-07-13 10:07:48] [main] [INFO] url_filter_strategy
+[2017-07-13 10:07:48] [main] [INFO] url_filter_black
+[2017-07-13 10:07:48] [main] [INFO] url_filter_white
+[2017-07-13 10:07:48] [main] [INFO] antivirus_config
+[2017-07-13 10:07:48] [main] [INFO] antivirus_strategy
+[2017-07-13 10:07:48] [main] [INFO] usergroup
+[2017-07-13 10:07:48] [main] [INFO] tactics
+[2017-07-13 10:07:48] [main] [INFO] flowmanage
+[2017-07-13 10:07:50] [main] [INFO] revcamera
+[2017-07-13 10:07:51] [main] [INFO] revscan
+[2017-07-13 10:07:51] [main] [INFO] ipv6tunnel
+[2017-07-13 10:07:51] [main] [INFO] sslvpn
+[2017-07-13 10:07:51] [main] [INFO] ipsecvpn
+[2017-07-13 10:07:51] [main] [INFO] n2n-vpn
+[2017-07-13 10:07:51] [main] [INFO] nat64
+[2017-07-13 10:07:51] [main] [INFO] ip_monitor
+[2017-07-13 10:07:51] [main] [INFO] finish clean function
+[2017-07-13 10:07:51] [main] [INFO] begin to clean database
+[2017-07-13 10:07:51] [main] [INFO] m_IPS_template_rules
+[2017-07-13 10:07:52] [main] [INFO] m_blacklist
+[2017-07-13 10:07:52] [main] [INFO] m_tbDnat
+[2017-07-13 10:07:52] [main] [INFO] m_tbFileFilter
+[2017-07-13 10:07:52] [main] [INFO] m_tbHoneypot
+[2017-07-13 10:07:52] [main] [INFO] m_tbKeywordFilter
+[2017-07-13 10:07:52] [main] [INFO] m_tbLocalChildNet_bac
+[2017-07-13 10:07:52] [main] [INFO] m_tbNum
+[2017-07-13 10:07:52] [main] [INFO] m_tbSearitystrate
+[2017-07-13 10:07:52] [main] [INFO] m_tbSearitystrate_address
+[2017-07-13 10:07:52] [main] [INFO] m_tbSearitystrate_scm
+[2017-07-13 10:07:52] [main] [INFO] m_tbSnat
+[2017-07-13 10:07:52] [main] [INFO] m_tbVirtualNet
+[2017-07-13 10:07:52] [main] [INFO] m_tbaddandgroup
+[2017-07-13 10:07:52] [main] [INFO] m_tbaddress_list_scm
+[2017-07-13 10:07:52] [main] [INFO] m_tbaddressgroup
+[2017-07-13 10:07:52] [main] [INFO] m_tbaddressgroup_scm
+[2017-07-13 10:07:52] [main] [INFO] m_tbaudit_app_rules
+[2017-07-13 10:07:52] [main] [INFO] m_tbaudit_rule_templates
+[2017-07-13 10:07:52] [main] [INFO] m_tbauto_strategy_exception
+[2017-07-13 10:07:52] [main] [INFO] m_tbautorqrule
+[2017-07-13 10:07:52] [main] [INFO] m_tbbackup
+[2017-07-13 10:07:52] [main] [INFO] m_tbbdvpn_l2tp_group
+[2017-07-13 10:07:52] [main] [INFO] m_tbbdvpn_l2tp_mid_group_service
+[2017-07-13 10:07:52] [main] [INFO] m_tbbdvpn_l2tp_mid_user_group
+[2017-07-13 10:07:52] [main] [INFO] m_tbbdvpn_l2tp_mid_user_service
+[2017-07-13 10:07:52] [main] [INFO] m_tbbdvpn_l2tp_monitor
+[2017-07-13 10:07:52] [main] [INFO] m_tbbdvpn_l2tp_service
+[2017-07-13 10:07:52] [main] [INFO] m_tbbdvpn_l2tp_service_port
+[2017-07-13 10:07:52] [main] [INFO] m_tbbdvpn_l2tp_user
+[2017-07-13 10:07:52] [main] [INFO] m_tbbdvpn_ssl_mid_group_service
+[2017-07-13 10:07:52] [main] [INFO] m_tbbdvpn_ssl_mid_user_service
+[2017-07-13 10:07:52] [main] [INFO] m_tbbdvpn_ssl_service
+[2017-07-13 10:07:52] [main] [INFO] m_tbbdvpn_ssl_service_port
+[2017-07-13 10:07:52] [main] [INFO] m_tbbdvpn_ssl_user
+[2017-07-13 10:07:52] [main] [INFO] m_tbbridgedevice
+[2017-07-13 10:07:52] [main] [INFO] m_tbbsservice
+[2017-07-13 10:07:52] [main] [INFO] m_tbcascade
+[2017-07-13 10:07:52] [main] [INFO] m_tbconfig_copy
+[2017-07-13 10:07:52] [main] [INFO] m_tbcustomapplication
+[2017-07-13 10:07:52] [main] [INFO] m_tbdbtype_name
+[2017-07-13 10:07:52] [main] [INFO] m_tbddos
+[2017-07-13 10:07:52] [main] [INFO] m_tbdefault_app_list
+[2017-07-13 10:07:52] [main] [INFO] m_tbdefence_rules
+[2017-07-13 10:07:52] [main] [INFO] m_tbdhcpfour
+[2017-07-13 10:07:52] [main] [INFO] m_tbdialdevice
+[2017-07-13 10:07:52] [main] [INFO] m_tbdipcon
+[2017-07-13 10:07:52] [main] [INFO] m_tbdoublehot
+[2017-07-13 10:07:52] [main] [INFO] m_tbduiduanchildnet
+[2017-07-13 10:07:52] [main] [INFO] m_tbdynamicroute_bgp_neighbor
+[2017-07-13 10:07:52] [main] [INFO] m_tbdynamicroute_bgp_net
+[2017-07-13 10:07:52] [main] [INFO] m_tbdynamicroute_bgp_port
+[2017-07-13 10:07:52] [main] [INFO] m_tbdynamicroute_ospf_area
+[2017-07-13 10:07:52] [main] [INFO] m_tbdynamicroute_ospf_net
+[2017-07-13 10:07:52] [main] [INFO] m_tbdynamicroute_ospf_port
+[2017-07-13 10:07:52] [main] [INFO] m_tbdynamicroute_ospf_v3
+[2017-07-13 10:07:52] [main] [INFO] m_tbdynamicroute_rip_net
+[2017-07-13 10:07:52] [main] [INFO] m_tbdynamicroute_rip_port
+[2017-07-13 10:07:52] [main] [INFO] m_tbecmp
+[2017-07-13 10:07:52] [main] [INFO] m_tbevil_strategy
+[2017-07-13 10:07:52] [main] [INFO] m_tbevilcode_protected
+[2017-07-13 10:07:52] [main] [INFO] m_tbevilcode_strategy
+[2017-07-13 10:07:52] [main] [INFO] m_tbexistport
+[2017-07-13 10:07:52] [main] [INFO] m_tbfirsttage
+[2017-07-13 10:07:52] [main] [INFO] m_tbflow_limit
+[2017-07-13 10:07:52] [main] [INFO] m_tbflow_socket
+[2017-07-13 10:07:52] [main] [INFO] m_tbflow_virtualline
+[2017-07-13 10:07:52] [main] [INFO] m_tbfwsessioncontrol
+[2017-07-13 10:07:52] [main] [INFO] m_tbgreipv4
+[2017-07-13 10:07:53] [main] [INFO] m_tbgroup
+[2017-07-13 10:07:53] [main] [INFO] m_tbhoneypot_detail
+[2017-07-13 10:07:53] [main] [INFO] m_tbhoneypot_log
+[2017-07-13 10:07:53] [main] [INFO] m_tbhoneypot_status
+[2017-07-13 10:07:53] [main] [INFO] m_tbidsip
+[2017-07-13 10:07:53] [main] [INFO] m_tbip_mac
+[2017-07-13 10:07:53] [main] [INFO] m_tbip_mac_defined
+[2017-07-13 10:07:53] [main] [INFO] m_tbips
+[2017-07-13 10:07:53] [main] [INFO] m_tbips_template
+[2017-07-13 10:07:53] [main] [INFO] m_tbipsec_branch
+[2017-07-13 10:07:53] [main] [INFO] m_tbipsec_perssiom
+[2017-07-13 10:07:53] [main] [INFO] m_tbipsec_user
+[2017-07-13 10:07:53] [main] [INFO] m_tbipsec_usergroup
+[2017-07-13 10:07:53] [main] [INFO] m_tbipsecclientmonitor
+[2017-07-13 10:07:53] [main] [INFO] m_tbipsecinternetport
+[2017-07-13 10:07:53] [main] [INFO] m_tbipsecoutnetport
+[2017-07-13 10:07:53] [main] [INFO] m_tbipsecstatusmonitor
+[2017-07-13 10:07:53] [main] [INFO] m_tbipsectimeset
+[2017-07-13 10:07:53] [main] [INFO] m_tbipsrules
+[2017-07-13 10:07:53] [main] [INFO] m_tbipsrules_copy
+[2017-07-13 10:07:53] [main] [INFO] m_tbipsrules_excel
+[2017-07-13 10:07:53] [main] [INFO] m_tbipv4over6
+[2017-07-13 10:07:53] [main] [INFO] m_tbipv6toipv4
+[2017-07-13 10:07:53] [main] [INFO] m_tbisatap
+[2017-07-13 10:07:53] [main] [INFO] m_tbisproute
+[2017-07-13 10:07:53] [main] [INFO] m_tbkeyword_webcontent
+[2017-07-13 10:07:53] [main] [INFO] m_tblimitip
+[2017-07-13 10:07:53] [main] [INFO] m_tblocalchildnet
+[2017-07-13 10:07:54] [main] [INFO] m_tblog_sys_admin
+[2017-07-13 10:07:54] [main] [INFO] m_tblog_sys_backup
+[2017-07-13 10:07:54] [main] [INFO] m_tblog_sys_reboot
+[2017-07-13 10:07:54] [main] [INFO] m_tbloginlog
+[2017-07-13 10:07:54] [main] [INFO] m_tbmannualset
+[2017-07-13 10:07:54] [main] [INFO] m_tbmannualtargetip
+[2017-07-13 10:07:54] [main] [INFO] m_tbmobile_message
+[2017-07-13 10:07:54] [main] [INFO] m_tbnatsetting
+[2017-07-13 10:07:54] [main] [INFO] m_tbnetinnet
+[2017-07-13 10:07:54] [main] [INFO] m_tbnetinnetip
+[2017-07-13 10:07:54] [main] [INFO] m_tbntn_center
+[2017-07-13 10:07:54] [main] [INFO] m_tbntn_edge
+[2017-07-13 10:07:54] [main] [INFO] m_tboperatelog
+[2017-07-13 10:07:54] [main] [INFO] m_tbpacket_capture
+[2017-07-13 10:07:54] [main] [INFO] m_tbpacket_group
+[2017-07-13 10:07:54] [main] [INFO] m_tbport_mirror
+[2017-07-13 10:07:54] [main] [INFO] m_tbportaggregation
+[2017-07-13 10:07:54] [main] [INFO] m_tbpredefined
+[2017-07-13 10:07:54] [main] [INFO] m_tbproduct_license
+[2017-07-13 10:07:54] [main] [INFO] m_tbrevcamera_queue
+[2017-07-13 10:07:54] [main] [INFO] m_tbrolelib
+[2017-07-13 10:07:54] [main] [INFO] m_tbrolelib_autoupdate
+[2017-07-13 10:07:54] [main] [INFO] m_tbrolelib_update_record
+[2017-07-13 10:07:54] [main] [INFO] m_tbroute
+[2017-07-13 10:07:54] [main] [INFO] m_tbsecondtageinter
+[2017-07-13 10:07:54] [main] [INFO] m_tbsecurityoptions
+[2017-07-13 10:07:54] [main] [INFO] m_tbservice_group
+[2017-07-13 10:07:54] [main] [INFO] m_tbservices
+[2017-07-13 10:07:54] [main] [INFO] m_tbservices_list
+[2017-07-13 10:07:54] [main] [INFO] m_tbsession
+[2017-07-13 10:07:54] [main] [INFO] m_tbsipcon
+[2017-07-13 10:07:54] [main] [INFO] m_tbsnmp
+[2017-07-13 10:07:54] [main] [INFO] m_tbsnortrule
+[2017-07-13 10:07:54] [main] [INFO] m_tbsslvpn_setting
+[2017-07-13 10:07:54] [main] [INFO] m_tbsslvpncsservice
+[2017-07-13 10:07:54] [main] [INFO] m_tbsslvpncsservice_port
+[2017-07-13 10:07:54] [main] [INFO] m_tbsslvpngroup_role
+[2017-07-13 10:07:54] [main] [INFO] m_tbsslvpnrole
+[2017-07-13 10:07:54] [main] [INFO] m_tbsslvpnrole_server
+[2017-07-13 10:07:54] [main] [INFO] m_tbsslvpnusergroup
+[2017-07-13 10:07:54] [main] [INFO] m_tbsslvpnusers
+[2017-07-13 10:07:54] [main] [INFO] m_tbsslvpnusers_group
+[2017-07-13 10:07:54] [main] [INFO] m_tbsslvpnusers_role
+[2017-07-13 10:07:54] [main] [INFO] m_tbstaticroute
+[2017-07-13 10:07:54] [main] [INFO] m_tbstrategyroute
+[2017-07-13 10:07:54] [main] [INFO] m_tbsystem_update_log
+[2017-07-13 10:07:54] [main] [INFO] m_tbt_rules
+[2017-07-13 10:07:54] [main] [INFO] m_tbtimeout
+[2017-07-13 10:07:54] [main] [INFO] m_tbtimeplan_loop
+[2017-07-13 10:07:54] [main] [INFO] m_tbtimeplan_loop_scm
+[2017-07-13 10:07:54] [main] [INFO] m_tbtimeplan_single
+[2017-07-13 10:07:54] [main] [INFO] m_tbtimeplan_single_scm
+[2017-07-13 10:07:54] [main] [INFO] m_tbtserules
+[2017-07-13 10:07:54] [main] [INFO] m_tburl_category
+[2017-07-13 10:07:54] [main] [INFO] m_tburl_filter
+[2017-07-13 10:07:54] [main] [INFO] m_tburl_filter_ips
+[2017-07-13 10:07:54] [main] [INFO] m_tburlblacklist
+[2017-07-13 10:07:54] [main] [INFO] m_tburlwhilelist
+[2017-07-13 10:07:54] [main] [INFO] m_tbuser_icmp_traffic
+[2017-07-13 10:07:54] [main] [INFO] m_tbuser_tcp_traffic
+[2017-07-13 10:07:54] [main] [INFO] m_tbuser_traffic_BiLevel
+[2017-07-13 10:07:55] [main] [INFO] m_tbuser_udp_traffic
+[2017-07-13 10:07:55] [main] [INFO] m_tbusers
+[2017-07-13 10:07:55] [main] [INFO] m_tbusers_authentication_tactics
+[2017-07-13 10:07:55] [main] [INFO] m_tbusers_out_authentication
+[2017-07-13 10:07:55] [main] [INFO] m_tbvirtualfw
+[2017-07-13 10:07:55] [main] [INFO] m_tbvirtualline
+[2017-07-13 10:07:55] [main] [INFO] m_tbvlandevice
+[2017-07-13 10:07:55] [main] [INFO] m_tbwebapplication_lib_bak
+[2017-07-13 10:07:55] [main] [INFO] m_tbwebapplication_lib_copy
+[2017-07-13 10:07:55] [main] [INFO] m_tbwebapplication_protected
+[2017-07-13 10:07:55] [main] [INFO] m_tbwebapplication_strategy
+[2017-07-13 10:07:55] [main] [INFO] m_tbwebrules
+[2017-07-13 10:07:55] [main] [INFO] m_tbwifi_audit
+[2017-07-13 10:07:55] [main] [INFO] se
+[2017-07-13 10:07:55] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-07-13 10:07:55] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-07-13 10:07:55] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-07-13 10:07:55] [main] [INFO] system_config: waf_switch | args: 
+[2017-07-13 10:07:55] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-07-13 10:07:56] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-07-13 10:07:56] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-07-13 10:07:56] [main] [INFO] system_config: dpi_switch | args: 
+[2017-07-13 10:07:56] [main] [INFO] system_config: traffic_count | args: 
+[2017-07-13 10:07:56] [main] [INFO] system_config: ips_switch | args: 
+[2017-07-13 10:07:56] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-07-13 10:07:56] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-07-13 10:07:56] [main] [INFO] system_config: audit_switch | args: 
+[2017-07-13 10:07:56] [main] [INFO] system_config: brige_brocast_snat | args: 
+[2017-07-13 10:07:57] [main] [INFO] finish clean database
+[2017-07-13 10:07:57] [main] [INFO] Factory Reset end ...........
+[2017-07-13 10:08:39] [main] [INFO] second firewall init begine.........
+[2017-07-13 10:08:40] [main] [INFO] disable sshd...........
+[2017-07-13 10:08:40] [main] [INFO] stop sshd...........
+[2017-07-13 10:08:40] [main] [INFO] nic
+[2017-07-13 10:08:41] [main] [INFO] port_mirror
+[2017-07-13 10:08:41] [main] [INFO] virtual_line
+[2017-07-13 10:08:41] [main] [INFO] bridge
+[2017-07-13 10:08:42] [main] [INFO] ppoe
+[2017-07-13 10:08:42] [main] [INFO] port_aggregation
+[2017-07-13 10:08:42] [main] [INFO] VLAN
+[2017-07-13 10:08:42] [main] [INFO] static_route
+[2017-07-13 10:08:42] [main] [INFO] sslvpn
+[2017-07-13 10:08:42] [main] [INFO] strategy_route
+[2017-07-13 10:08:43] [main] [INFO] isp_route
+[2017-07-13 10:08:43] [main] [INFO] dynamic_route
+[2017-07-13 10:08:43] [main] [INFO] dhcp
+[2017-07-13 10:08:43] [main] [INFO] dns
+[2017-07-13 10:08:43] [main] [INFO] nginx
+[2017-07-13 10:08:43] [main] [INFO] best_routing
+[2017-07-13 10:08:43] [main] [INFO] IP_group
+[2017-07-13 10:08:43] [main] [INFO] snmp
+[2017-07-13 10:08:43] [main] [INFO] nets_within_nets
+[2017-07-13 10:08:44] [main] [INFO] multicast_route
+[2017-07-13 10:08:44] [main] [INFO] nat
+[2017-07-13 10:08:44] [main] [INFO] safetactics
+[2017-07-13 10:08:44] [main] [INFO] scm
+[2017-07-13 10:08:44] [main] [INFO] ddos
+[2017-07-13 10:08:44] [main] [INFO] connect_limit
+[2017-07-13 10:08:44] [main] [INFO] ipmac
+[2017-07-13 10:08:44] [main] [INFO] virtualfw
+[2017-07-13 10:08:44] [main] [INFO] IPS
+[2017-07-13 10:08:45] [main] [INFO] WEB
+[2017-07-13 10:08:45] [main] [INFO] url_group
+[2017-07-13 10:08:45] [main] [INFO] eml_virus
+[2017-07-13 10:08:45] [main] [INFO] file_filter
+[2017-07-13 10:08:45] [main] [INFO] keyword_filter
+[2017-07-13 10:08:45] [main] [INFO] web_keyword
+[2017-07-13 10:08:45] [main] [INFO] url_filter_strategy
+[2017-07-13 10:08:45] [main] [INFO] url_filter_list
+[2017-07-13 10:08:46] [main] [INFO] antivirus_config
+[2017-07-13 10:08:46] [main] [INFO] antivirus_strategy
+[2017-07-13 10:08:46] [main] [INFO] usergroup
+[2017-07-13 10:08:46] [main] [INFO] flowmanage
+[2017-07-13 10:08:46] [main] [INFO] system_config
+[2017-07-13 10:08:46] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-07-13 10:08:46] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-07-13 10:08:46] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-07-13 10:08:46] [main] [INFO] system_config: waf_switch | args: 
+[2017-07-13 10:08:46] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-07-13 10:08:46] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-07-13 10:08:46] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-07-13 10:08:46] [main] [INFO] system_config: dpi_switch | args: 
+[2017-07-13 10:08:46] [main] [INFO] system_config: traffic_count | args: 
+[2017-07-13 10:08:46] [main] [INFO] system_config: ips_switch | args: 
+[2017-07-13 10:08:46] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-07-13 10:08:46] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-07-13 10:08:46] [main] [INFO] system_config: audit_switch | args: 
+[2017-07-13 10:08:47] [main] [INFO] system_config: brige_brocast_snat | args: 
+[2017-07-13 10:08:47] [main] [INFO] system_reboot_log
+[2017-07-13 10:08:47] [main] [INFO] ipv6
+[2017-07-13 10:08:47] [main] [INFO] ipsecvpn
+[2017-07-13 10:08:49] [main] [INFO] n2n-vpn
+[2017-07-13 10:08:49] [main] [INFO] nat64
+[2017-07-13 10:08:49] [main] [INFO] vifaces
+[2017-07-13 10:08:50] [main] [INFO] honypot
+[2017-07-13 10:08:51] [main] [INFO] second firewall init end.........
+[2017-07-13 10:46:42] [main] [WARNING] unexecute task: ['CMD_SSL_VPN_LIMIT', '{"isslLimit":"100"}']
+[2017-07-13 10:46:36] [main] [INFO] del_allow_manage and del_allow_ping
+[2017-07-13 10:46:36] [main] [INFO] config_iface: allow_ping `0` allow_ssh `0` allow_iweb `1`
+[2017-07-13 10:46:36] [main] [INFO] config_iface: ipv6 allow_ping `0` allow_ssh `0` allow_iweb `1`
+[2017-07-13 10:46:36] [main] [WARNING] device `enp8s0` ip config `192.168.0.1/24` failed| RTNETLINK answers: File exists
+[2017-07-13 10:46:36] [main] [INFO] iface `enp8s0` del_ip: set([MyIP('172.16.6.79', '24')]) ===> add_ip: set([MyIP('192.168.0.1', '24')])
+[2017-07-13 10:46:45] [main] [INFO] Event set!
+[2017-07-13 11:03:18] [main] [INFO] second firewall init begine.........
+[2017-07-13 11:03:18] [main] [INFO] disable sshd...........
+[2017-07-13 11:03:18] [main] [INFO] stop sshd...........
+[2017-07-13 11:03:19] [main] [INFO] nic
+[2017-07-13 11:03:19] [main] [INFO] port_mirror
+[2017-07-13 11:03:20] [main] [INFO] virtual_line
+[2017-07-13 11:03:20] [main] [INFO] bridge
+[2017-07-13 11:03:20] [main] [INFO] ppoe
+[2017-07-13 11:03:20] [main] [INFO] port_aggregation
+[2017-07-13 11:03:20] [main] [INFO] VLAN
+[2017-07-13 11:03:21] [main] [INFO] static_route
+[2017-07-13 11:03:21] [main] [INFO] sslvpn
+[2017-07-13 11:03:21] [main] [INFO] strategy_route
+[2017-07-13 11:03:21] [main] [INFO] isp_route
+[2017-07-13 11:03:21] [main] [INFO] dynamic_route
+[2017-07-13 11:03:21] [main] [INFO] dhcp
+[2017-07-13 11:03:21] [main] [INFO] dns
+[2017-07-13 11:03:21] [main] [INFO] nginx
+[2017-07-13 11:03:21] [main] [INFO] best_routing
+[2017-07-13 11:03:22] [main] [INFO] IP_group
+[2017-07-13 11:03:22] [main] [INFO] snmp
+[2017-07-13 11:03:22] [main] [INFO] nets_within_nets
+[2017-07-13 11:03:22] [main] [INFO] multicast_route
+[2017-07-13 11:03:22] [main] [INFO] nat
+[2017-07-13 11:03:22] [main] [INFO] safetactics
+[2017-07-13 11:03:22] [main] [INFO] scm
+[2017-07-13 11:03:22] [main] [INFO] ddos
+[2017-07-13 11:03:22] [main] [INFO] connect_limit
+[2017-07-13 11:03:22] [main] [INFO] ipmac
+[2017-07-13 11:03:22] [main] [INFO] virtualfw
+[2017-07-13 11:03:23] [main] [INFO] IPS
+[2017-07-13 11:03:23] [main] [INFO] WEB
+[2017-07-13 11:03:23] [main] [INFO] url_group
+[2017-07-13 11:03:23] [main] [INFO] eml_virus
+[2017-07-13 11:03:23] [main] [INFO] file_filter
+[2017-07-13 11:03:23] [main] [INFO] keyword_filter
+[2017-07-13 11:03:23] [main] [INFO] web_keyword
+[2017-07-13 11:03:23] [main] [INFO] url_filter_strategy
+[2017-07-13 11:03:24] [main] [INFO] url_filter_list
+[2017-07-13 11:03:24] [main] [INFO] antivirus_config
+[2017-07-13 11:03:24] [main] [INFO] antivirus_strategy
+[2017-07-13 11:03:24] [main] [INFO] usergroup
+[2017-07-13 11:03:24] [main] [INFO] flowmanage
+[2017-07-13 11:03:24] [main] [INFO] system_config
+[2017-07-13 11:03:24] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-07-13 11:03:24] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-07-13 11:03:24] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-07-13 11:03:24] [main] [INFO] system_config: waf_switch | args: 
+[2017-07-13 11:03:24] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-07-13 11:03:24] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-07-13 11:03:24] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-07-13 11:03:24] [main] [INFO] system_config: dpi_switch | args: 
+[2017-07-13 11:03:24] [main] [INFO] system_config: traffic_count | args: 
+[2017-07-13 11:03:24] [main] [INFO] system_config: ips_switch | args: 
+[2017-07-13 11:03:24] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-07-13 11:03:24] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-07-13 11:03:24] [main] [INFO] system_config: audit_switch | args: 
+[2017-07-13 11:03:24] [main] [INFO] system_config: brige_brocast_snat | args: 
+[2017-07-13 11:03:24] [main] [INFO] system_reboot_log
+[2017-07-13 11:03:24] [main] [INFO] ipv6
+[2017-07-13 11:03:25] [main] [INFO] ipsecvpn
+[2017-07-13 11:03:27] [main] [INFO] n2n-vpn
+[2017-07-13 11:03:27] [main] [INFO] nat64
+[2017-07-13 11:03:27] [main] [INFO] vifaces
+[2017-07-13 11:03:27] [main] [INFO] honypot
+[2017-07-13 11:03:28] [main] [INFO] second firewall init end.........
+[2017-07-13 12:53:42] [main] [INFO] Event set!
+[2017-07-13 13:39:50] [main] [INFO] second firewall init begine.........
+[2017-07-13 13:39:50] [main] [INFO] disable sshd...........
+[2017-07-13 13:39:50] [main] [INFO] stop sshd...........
+[2017-07-13 13:39:50] [main] [INFO] nic
+[2017-07-13 13:39:51] [main] [INFO] port_mirror
+[2017-07-13 13:39:51] [main] [INFO] virtual_line
+[2017-07-13 13:39:51] [main] [INFO] bridge
+[2017-07-13 13:39:52] [main] [INFO] ppoe
+[2017-07-13 13:39:52] [main] [INFO] port_aggregation
+[2017-07-13 13:39:52] [main] [INFO] VLAN
+[2017-07-13 13:39:52] [main] [INFO] static_route
+[2017-07-13 13:39:52] [main] [INFO] sslvpn
+[2017-07-13 13:39:52] [main] [INFO] strategy_route
+[2017-07-13 13:39:52] [main] [INFO] isp_route
+[2017-07-13 13:39:53] [main] [INFO] dynamic_route
+[2017-07-13 13:39:53] [main] [INFO] dhcp
+[2017-07-13 13:39:53] [main] [INFO] dns
+[2017-07-13 13:39:53] [main] [INFO] nginx
+[2017-07-13 13:39:53] [main] [INFO] best_routing
+[2017-07-13 13:39:53] [main] [INFO] IP_group
+[2017-07-13 13:39:53] [main] [INFO] snmp
+[2017-07-13 13:39:53] [main] [INFO] nets_within_nets
+[2017-07-13 13:39:53] [main] [INFO] multicast_route
+[2017-07-13 13:39:54] [main] [INFO] nat
+[2017-07-13 13:39:54] [main] [INFO] safetactics
+[2017-07-13 13:39:54] [main] [INFO] scm
+[2017-07-13 13:39:54] [main] [INFO] ddos
+[2017-07-13 13:39:54] [main] [INFO] connect_limit
+[2017-07-13 13:39:54] [main] [INFO] ipmac
+[2017-07-13 13:39:54] [main] [INFO] virtualfw
+[2017-07-13 13:39:54] [main] [INFO] IPS
+[2017-07-13 13:39:54] [main] [INFO] WEB
+[2017-07-13 13:39:55] [main] [INFO] url_group
+[2017-07-13 13:39:55] [main] [INFO] eml_virus
+[2017-07-13 13:39:55] [main] [INFO] file_filter
+[2017-07-13 13:39:55] [main] [INFO] keyword_filter
+[2017-07-13 13:39:55] [main] [INFO] web_keyword
+[2017-07-13 13:39:55] [main] [INFO] url_filter_strategy
+[2017-07-13 13:39:55] [main] [INFO] url_filter_list
+[2017-07-13 13:39:55] [main] [INFO] antivirus_config
+[2017-07-13 13:39:55] [main] [INFO] antivirus_strategy
+[2017-07-13 13:39:55] [main] [INFO] usergroup
+[2017-07-13 13:39:56] [main] [INFO] flowmanage
+[2017-07-13 13:39:56] [main] [INFO] system_config
+[2017-07-13 13:39:56] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-07-13 13:39:56] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-07-13 13:39:56] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-07-13 13:39:56] [main] [INFO] system_config: waf_switch | args: 
+[2017-07-13 13:39:56] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-07-13 13:39:56] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-07-13 13:39:56] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-07-13 13:39:56] [main] [INFO] system_config: dpi_switch | args: 
+[2017-07-13 13:39:56] [main] [INFO] system_config: traffic_count | args: 
+[2017-07-13 13:39:56] [main] [INFO] system_config: ips_switch | args: 
+[2017-07-13 13:39:56] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-07-13 13:39:56] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-07-13 13:39:56] [main] [INFO] system_config: audit_switch | args: 
+[2017-07-13 13:39:56] [main] [INFO] system_config: brige_brocast_snat | args: 
+[2017-07-13 13:39:56] [main] [INFO] system_reboot_log
+[2017-07-13 13:39:56] [main] [INFO] ipv6
+[2017-07-13 13:39:56] [main] [INFO] ipsecvpn
+[2017-07-13 13:39:58] [main] [INFO] n2n-vpn
+[2017-07-13 13:39:58] [main] [INFO] nat64
+[2017-07-13 13:39:58] [main] [INFO] vifaces
+[2017-07-13 13:39:59] [main] [INFO] honypot
+[2017-07-13 13:40:00] [main] [INFO] second firewall init end.........
+[2017-07-13 13:49:05] [main] [WARNING] unexecute task: ['CMD_SSL_VPN_LIMIT', '{"isslLimit":"100"}']
+[2017-07-13 13:49:52] [main] [WARNING] unexecute task: ['CMD_SSL_VPN_LIMIT', '{"isslLimit":"100"}']
+[2017-07-13 13:52:48] [main] [WARNING] unexecute task: ['CMD_SSL_VPN_LIMIT', '{"isslLimit":"100"}']
+[2017-07-13 13:53:19] [main] [WARNING] unexecute task: ['CMD_SSL_VPN_LIMIT', '{"isslLimit":"100"}']
+[2017-07-13 13:54:03] [main] [WARNING] unexecute task: ['CMD_SSL_VPN_LIMIT', '{"isslLimit":"100"}']
+[2017-07-13 13:54:11] [main] [WARNING] unexecute task: ['CMD_SSL_VPN_LIMIT', '{"isslLimit":"100"}']
+[2017-07-13 13:59:49] [main] [INFO] del_allow_manage and del_allow_ping
+[2017-07-13 13:59:49] [main] [INFO] config_iface: allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-07-13 13:59:49] [main] [INFO] config_iface: ipv6 allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-07-13 13:59:49] [main] [WARNING] device `enp8s0` ip config `172.16.6.79/24` failed| RTNETLINK answers: File exists
+[2017-07-13 13:59:49] [main] [WARNING] device `enp8s0` ip config `192.168.0.1/24` failed| RTNETLINK answers: File exists
+[2017-07-13 13:59:49] [main] [INFO] iface `enp8s0` del_ip: set([]) ===> add_ip: set([MyIP('172.16.6.79', '24'), MyIP('192.168.0.1', '24')])
+[2017-07-13 14:09:08] [main] [WARNING] unexecute task: ['CMD_SSL_VPN_LIMIT', '{"isslLimit":"100"}']
+[2017-07-13 14:34:32] [main] [INFO] del_allow_manage and del_allow_ping
+[2017-07-13 14:34:32] [main] [INFO] config_iface: allow_ping `0` allow_ssh `0` allow_iweb `1`
+[2017-07-13 14:34:32] [main] [INFO] config_iface: ipv6 allow_ping `0` allow_ssh `0` allow_iweb `1`
+[2017-07-13 14:34:32] [main] [WARNING] device `enp8s0` ip config `192.168.0.1/24` failed| RTNETLINK answers: File exists
+[2017-07-13 14:34:32] [main] [INFO] iface `enp8s0` del_ip: set([MyIP('172.16.6.79', '24')]) ===> add_ip: set([MyIP('192.168.0.1', '24')])
+[2017-07-13 14:38:45] [main] [INFO] Event set!
+[2017-07-14 09:19:50] [main] [INFO] second firewall init begine.........
+[2017-07-14 09:19:50] [main] [INFO] disable sshd...........
+[2017-07-14 09:19:50] [main] [INFO] stop sshd...........
+[2017-07-14 09:19:51] [main] [INFO] nic
+[2017-07-14 09:19:52] [main] [INFO] port_mirror
+[2017-07-14 09:19:52] [main] [INFO] virtual_line
+[2017-07-14 09:19:52] [main] [INFO] bridge
+[2017-07-14 09:19:52] [main] [INFO] ppoe
+[2017-07-14 09:19:52] [main] [INFO] port_aggregation
+[2017-07-14 09:19:53] [main] [INFO] VLAN
+[2017-07-14 09:19:53] [main] [INFO] static_route
+[2017-07-14 09:19:53] [main] [INFO] sslvpn
+[2017-07-14 09:19:53] [main] [INFO] strategy_route
+[2017-07-14 09:19:53] [main] [INFO] isp_route
+[2017-07-14 09:19:53] [main] [INFO] dynamic_route
+[2017-07-14 09:19:53] [main] [INFO] dhcp
+[2017-07-14 09:19:53] [main] [INFO] dns
+[2017-07-14 09:19:54] [main] [INFO] nginx
+[2017-07-14 09:19:54] [main] [INFO] best_routing
+[2017-07-14 09:19:54] [main] [INFO] IP_group
+[2017-07-14 09:19:54] [main] [INFO] snmp
+[2017-07-14 09:19:54] [main] [INFO] nets_within_nets
+[2017-07-14 09:19:54] [main] [INFO] multicast_route
+[2017-07-14 09:19:54] [main] [INFO] nat
+[2017-07-14 09:19:54] [main] [INFO] safetactics
+[2017-07-14 09:19:54] [main] [INFO] scm
+[2017-07-14 09:19:54] [main] [INFO] ddos
+[2017-07-14 09:19:55] [main] [INFO] connect_limit
+[2017-07-14 09:19:55] [main] [INFO] ipmac
+[2017-07-14 09:19:55] [main] [INFO] virtualfw
+[2017-07-14 09:19:55] [main] [INFO] IPS
+[2017-07-14 09:19:55] [main] [INFO] WEB
+[2017-07-14 09:19:55] [main] [INFO] url_group
+[2017-07-14 09:19:55] [main] [INFO] eml_virus
+[2017-07-14 09:19:55] [main] [INFO] file_filter
+[2017-07-14 09:19:56] [main] [INFO] keyword_filter
+[2017-07-14 09:19:56] [main] [INFO] web_keyword
+[2017-07-14 09:19:56] [main] [INFO] url_filter_strategy
+[2017-07-14 09:19:56] [main] [INFO] url_filter_list
+[2017-07-14 09:19:56] [main] [INFO] antivirus_config
+[2017-07-14 09:19:56] [main] [INFO] antivirus_strategy
+[2017-07-14 09:19:56] [main] [INFO] usergroup
+[2017-07-14 09:19:56] [main] [INFO] flowmanage
+[2017-07-14 09:19:56] [main] [INFO] system_config
+[2017-07-14 09:19:56] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-07-14 09:19:56] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-07-14 09:19:56] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-07-14 09:19:56] [main] [INFO] system_config: waf_switch | args: 
+[2017-07-14 09:19:56] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-07-14 09:19:56] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-07-14 09:19:56] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-07-14 09:19:56] [main] [INFO] system_config: dpi_switch | args: 
+[2017-07-14 09:19:56] [main] [INFO] system_config: ips_switch | args: 
+[2017-07-14 09:19:56] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-07-14 09:19:56] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-07-14 09:19:56] [main] [INFO] system_config: audit_switch | args: 0
+[2017-07-14 09:19:56] [main] [INFO] system_reboot_log
+[2017-07-14 09:19:57] [main] [INFO] ipv6
+[2017-07-14 09:19:57] [main] [INFO] ipsecvpn
+[2017-07-14 09:19:59] [main] [INFO] n2n-vpn
+[2017-07-14 09:19:59] [main] [INFO] nat64
+[2017-07-14 09:19:59] [main] [INFO] vifaces
+[2017-07-14 09:19:59] [main] [INFO] honypot
+[2017-07-14 09:20:01] [main] [INFO] second firewall init end.........
+[2017-07-14 09:47:54] [main] [INFO] del_allow_manage and del_allow_ping
+[2017-07-14 09:47:54] [main] [INFO] config_iface: allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-07-14 09:47:54] [main] [INFO] config_iface: ipv6 allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-07-14 09:47:54] [main] [WARNING] device `enp8s0` ip config `172.16.2.193/24` failed| RTNETLINK answers: File exists
+[2017-07-14 09:47:54] [main] [INFO] iface `enp8s0` del_ip: set([]) ===> add_ip: set([MyIP('172.16.2.193', '24')])
+[2017-07-14 09:48:01] [main] [INFO] del_allow_manage and del_allow_ping
+[2017-07-14 09:48:01] [main] [INFO] config_iface: allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-07-14 09:48:01] [main] [INFO] config_iface: ipv6 allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-07-14 09:48:01] [main] [WARNING] device `enp9s0` ip config `192.168.1.1/24` failed| RTNETLINK answers: File exists
+[2017-07-14 09:48:01] [main] [INFO] iface `enp9s0` del_ip: set([]) ===> add_ip: set([MyIP('192.168.1.1', '24')])
+[2017-07-14 09:51:31] [main] [INFO] del_allow_manage and del_allow_ping
+[2017-07-14 09:51:31] [main] [INFO] config_iface: allow_ping `0` allow_ssh `0` allow_iweb `0`
+[2017-07-14 09:51:31] [main] [INFO] config_iface: ipv6 allow_ping `0` allow_ssh `0` allow_iweb `0`
+[2017-07-14 09:51:31] [main] [INFO] /home/ng_platform/bd_dpdk_warper/clients/port_config vEth0 10
+[2017-07-14 09:51:31] [main] [INFO] iface `vEth0` del_ip: set([]) ===> add_ip: set([])
+[2017-07-14 09:51:31] [main] [INFO] iface `vEth0` down
+[2017-07-14 09:51:36] [main] [INFO] del_allow_manage and del_allow_ping
+[2017-07-14 09:51:36] [main] [INFO] config_iface: allow_ping `0` allow_ssh `0` allow_iweb `0`
+[2017-07-14 09:51:36] [main] [INFO] config_iface: ipv6 allow_ping `0` allow_ssh `0` allow_iweb `0`
+[2017-07-14 09:51:36] [main] [INFO] /home/ng_platform/bd_dpdk_warper/clients/port_config vEth1 10
+[2017-07-14 09:51:36] [main] [INFO] iface `vEth1` del_ip: set([]) ===> add_ip: set([])
+[2017-07-14 09:51:36] [main] [INFO] iface `vEth1` down
+[2017-07-14 10:41:12] [main] [INFO] del_allow_manage and del_allow_ping
+[2017-07-14 10:41:12] [main] [INFO] config_iface: allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-07-14 10:41:12] [main] [INFO] config_iface: ipv6 allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-07-14 10:41:12] [main] [INFO] iface `enp8s0` del_ip: set([MyIP('172.16.2.193', '24')]) ===> add_ip: set([MyIP('172.16.2.252', '24')])
+[2017-07-14 10:45:08] [main] [INFO] del_allow_manage and del_allow_ping
+[2017-07-14 10:45:08] [main] [INFO] config_iface: allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-07-14 10:45:08] [main] [INFO] config_iface: ipv6 allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-07-14 10:45:08] [main] [WARNING] device `enp8s0` ip config `172.16.2.252/24` failed| RTNETLINK answers: File exists
+[2017-07-14 10:45:08] [main] [INFO] iface `enp8s0` del_ip: set([]) ===> add_ip: set([MyIP('172.16.2.252', '24')])
+[2017-07-14 10:49:26] [main] [INFO] ip -4 route add 0.0.0.0/0  via 172.16.2.254   dev enp8s0  
+[2017-07-14 10:59:20] [main] [INFO] del_allow_manage and del_allow_ping
+[2017-07-14 10:59:20] [main] [INFO] config_iface: allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-07-14 10:59:20] [main] [INFO] config_iface: ipv6 allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-07-14 10:59:20] [main] [WARNING] device `enp8s0` ip config `172.16.2.107/24` failed| RTNETLINK answers: File exists
+[2017-07-14 10:59:20] [main] [INFO] iface `enp8s0` del_ip: set([]) ===> add_ip: set([MyIP('172.16.2.107', '24')])
+[2017-07-14 10:59:20] [main] [INFO] ip -4 route add 0.0.0.0/0  via 172.16.2.254   dev enp8s0  
+[2017-07-14 10:59:20] [main] [INFO] ip -4 route del 0.0.0.0/0  via 172.16.2.254   dev enp8s0  
+[2017-07-14 10:59:20] [main] [INFO] ip -4 route add 0.0.0.0/0  via 172.16.2.254   dev enp8s0  
+[2017-07-14 11:02:02] [main] [INFO] Event set!
+[2017-07-14 11:02:58] [main] [INFO] second firewall init begine.........
+[2017-07-14 11:02:59] [main] [INFO] nic
+[2017-07-14 11:03:00] [main] [INFO] port_mirror
+[2017-07-14 11:03:00] [main] [INFO] virtual_line
+[2017-07-14 11:03:00] [main] [INFO] bridge
+[2017-07-14 11:03:00] [main] [INFO] ppoe
+[2017-07-14 11:03:01] [main] [INFO] port_aggregation
+[2017-07-14 11:03:01] [main] [INFO] VLAN
+[2017-07-14 11:03:01] [main] [INFO] static_route
+[2017-07-14 11:03:01] [main] [INFO] sslvpn
+[2017-07-14 11:03:01] [main] [INFO] strategy_route
+[2017-07-14 11:03:01] [main] [INFO] isp_route
+[2017-07-14 11:03:01] [main] [INFO] dynamic_route
+[2017-07-14 11:03:02] [main] [INFO] dhcp
+[2017-07-14 11:03:02] [main] [INFO] dns
+[2017-07-14 11:03:02] [main] [INFO] nginx
+[2017-07-14 11:03:02] [main] [INFO] best_routing
+[2017-07-14 11:03:02] [main] [INFO] IP_group
+[2017-07-14 11:03:02] [main] [INFO] snmp
+[2017-07-14 11:03:02] [main] [INFO] nets_within_nets
+[2017-07-14 11:03:02] [main] [INFO] multicast_route
+[2017-07-14 11:03:02] [main] [INFO] nat
+[2017-07-14 11:03:02] [main] [INFO] safetactics
+[2017-07-14 11:03:03] [main] [INFO] scm
+[2017-07-14 11:03:03] [main] [INFO] ddos
+[2017-07-14 11:03:03] [main] [INFO] connect_limit
+[2017-07-14 11:03:03] [main] [INFO] ipmac
+[2017-07-14 11:03:03] [main] [INFO] virtualfw
+[2017-07-14 11:03:03] [main] [INFO] IPS
+[2017-07-14 11:03:03] [main] [INFO] WEB
+[2017-07-14 11:03:03] [main] [INFO] url_group
+[2017-07-14 11:03:04] [main] [INFO] eml_virus
+[2017-07-14 11:03:04] [main] [INFO] file_filter
+[2017-07-14 11:03:04] [main] [INFO] keyword_filter
+[2017-07-14 11:03:04] [main] [INFO] web_keyword
+[2017-07-14 11:03:04] [main] [INFO] url_filter_strategy
+[2017-07-14 11:03:04] [main] [INFO] url_filter_list
+[2017-07-14 11:03:04] [main] [INFO] antivirus_config
+[2017-07-14 11:03:04] [main] [INFO] antivirus_strategy
+[2017-07-14 11:03:04] [main] [INFO] usergroup
+[2017-07-14 11:03:04] [main] [INFO] flowmanage
+[2017-07-14 11:03:05] [main] [INFO] system_config
+[2017-07-14 11:03:05] [main] [INFO] system_config: waf_url_filter | args: 
+[2017-07-14 11:03:05] [main] [INFO] system_config: waf_webapp_detect | args: 
+[2017-07-14 11:03:05] [main] [INFO] system_config: net_share_detect_switch | args: 
+[2017-07-14 11:03:05] [main] [INFO] system_config: waf_switch | args: 
+[2017-07-14 11:03:05] [main] [INFO] system_config: smart_protect_switch | args: 1
+[2017-07-14 11:03:05] [main] [INFO] system_config: flow_manage_switch | args: 
+[2017-07-14 11:03:05] [main] [INFO] system_config: ddos_protect_switch | args: 
+[2017-07-14 11:03:05] [main] [INFO] system_config: dpi_switch | args: 
+[2017-07-14 11:03:05] [main] [INFO] system_config: ips_switch | args: 
+[2017-07-14 11:03:05] [main] [INFO] system_config: info_leak_switch | args: 
+[2017-07-14 11:03:05] [main] [INFO] system_config: anti_virus_switch | args: 
+[2017-07-14 11:03:05] [main] [INFO] system_config: audit_switch | args: 0
+[2017-07-14 11:03:05] [main] [INFO] system_reboot_log
+[2017-07-14 11:03:05] [main] [INFO] ipv6
+[2017-07-14 11:03:05] [main] [INFO] ipsecvpn
+[2017-07-14 11:03:07] [main] [INFO] n2n-vpn
+[2017-07-14 11:03:07] [main] [INFO] nat64
+[2017-07-14 11:03:07] [main] [INFO] vifaces
+[2017-07-14 11:03:08] [main] [INFO] honypot
+[2017-07-14 11:03:09] [main] [INFO] second firewall init end.........
+[2017-07-14 11:24:23] [main] [INFO] del_allow_manage and del_allow_ping
+[2017-07-14 11:24:23] [main] [INFO] config_iface: allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-07-14 11:24:23] [main] [INFO] config_iface: ipv6 allow_ping `1` allow_ssh `1` allow_iweb `1`
+[2017-07-14 11:24:23] [main] [WARNING] device `enp8s0` ip config `172.16.2.170/24` failed| RTNETLINK answers: File exists
+[2017-07-14 11:24:23] [main] [INFO] iface `enp8s0` del_ip: set([]) ===> add_ip: set([MyIP('172.16.2.170', '24')])
+[2017-07-14 11:24:23] [main] [INFO] ip -4 route add 0.0.0.0/0  via 172.16.2.254   dev enp8s0  
+[2017-07-14 11:24:23] [main] [INFO] ip -4 route del 0.0.0.0/0  via 172.16.2.254   dev enp8s0  
+[2017-07-14 11:24:23] [main] [INFO] ip -4 route add 0.0.0.0/0  via 172.16.2.254   dev enp8s0  

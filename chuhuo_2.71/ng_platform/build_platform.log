@@ -1,0 +1,8 @@
+/home/ng_platform/dpdk-1.8.0/examples/multi_process/wh_works/lib/dpdk_frame.c: In function ‘filter_parse’:
+/home/ng_platform/dpdk-1.8.0/examples/multi_process/wh_works/lib/dpdk_frame.c:201:4: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+    res=sscanf(buf[1],fomat[type],buf[2],buf[3]);
+    ^
+/home/ng_platform/dpdk-1.8.0/examples/multi_process/wh_works/lib/dpdk_frame.c: In function ‘client_register’:
+/home/ng_platform/dpdk-1.8.0/examples/multi_process/wh_works/lib/dpdk_frame.c:1145:18: warning: cast discards ‘__attribute__((const))’ qualifier from pointer target type [-Wcast-qual]
+  filter.userconf=(char **)(reginfo->filter);
+                  ^

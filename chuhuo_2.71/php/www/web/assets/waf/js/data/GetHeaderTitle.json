@@ -1,0 +1,6 @@
+[
+	{"sTitle":"ID","data":"sFrameId","bVisible":true, "width": "120"},
+	{"sTitle":"用户姓名","data":"sFrameName"},
+	{"sTitle":"目的端口","data":"sFrameDesc"},
+	{"sTitle":"警报类型","data":"sFrameType"}
+]

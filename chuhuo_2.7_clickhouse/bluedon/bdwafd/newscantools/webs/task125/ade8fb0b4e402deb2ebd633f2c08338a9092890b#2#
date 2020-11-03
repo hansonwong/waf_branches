@@ -1,0 +1,607 @@
+status:200
+content-location:http://news.baidu.com/n?cmd=6&loc=0&name=港澳台&locname=港澳台
+transfer-encoding:chunked
+set-cookie:BAIDUID=25B754973EE96D1258391AB7DF75D66A:FG=1; expires=Sat, 15-Oct-16 03:12:47 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+vary:Accept-Encoding, Accept-Encoding
+server:Apache
+date:Fri, 16 Oct 2015 03:12:47 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM "
+content-type:text/html
+####################
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!--STATUS OK-->
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<title>百度新闻搜索      </title>
+<meta name="description" content="百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展。" >
+<!--ecombegin-->
+<link rel="alternate" type="application/rss+xml" title="百度上海新闻（RSS 2.0）" href="http://news.baidu.com/n?cmd=7&loc=0&name=上海&tn=rss"><!--ecomend-->
+<script type="text/javascript" src="resource/js/perf_monitor.js"></script>
+<script src="/resource/js/news.js?v=20150508"></script>
+<script src="resource/js/usertrack.js?v=20100409"></script>
+<script src="resource/js/newsb.js?v=20150512"></script>
+<link href="resource/css/search_box.css?v=201301051533" rel="stylesheet" type="text/css"></link>
+
+
+
+<link href="resource/css/local_hot.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body >
+<script type="text/javascript" language="javascript">
+
+var PAGE_DATA = {
+
+    locid : 0
+
+}
+
+    ClickMonitor.init('LOCAL_TOP', 'cy=0');
+</script>
+
+<div id="usrbar"></div>
+<form action="http://news.baidu.com/ns" style="postion:relative;" name="fbaidu" class="sbox">
+	<table class="sbox" style="position:relative;">
+		<tr>
+            <td class="logo">
+                <div class="logo"><a href="http://news.baidu.com/view.html"><img src="/resource/img/logo_news_137_46.png" alt="百度新闻"></a></div>
+                <div class="date"><!--datebegin--><!--dateend--></div>
+            </td>
+            <td class="search" style="position:relative;">
+                <div class="tab">
+                    <span class="cur">新闻</span><a href="http://www.baidu.com/" title="web"  mon="col=502&pn=0" onclick="queryTab(this);">网页</a><a href="http://tieba.baidu.com/" title="tieba" mon="col=502&pn=1" onclick="queryTab(this);">贴吧</a><a href="http://zhidao.baidu.com/" title="zhidao" mon="col=502&pn=2" onclick="queryTab(this);">知道</a><a href="http://music.baidu.com/" title="music"  mon="col=502&pn=3" onclick="queryTab(this);">音乐</a><a href="http://image.baidu.com/" title="image" mon="col=502&pn=4" onclick="queryTab(this);">图片</a><a href="http://video.baidu.com/" title="video"  mon="col=502&pn=5" onclick="queryTab(this);">视频</a><a href="http://map.baidu.com/" title="map" mon="col=502&pn=6" onclick="queryTab(this);">地图</a><a href="http://baike.baidu.com/" title="baike" mon="col=502&pn=7" onclick="queryTab(this);">百科</a><a href="http://wenku.baidu.com/" title="wenku"  mon="col=502&pn=8" onclick="queryTab(this);">文库</a></div>
+                </div>
+                <table>
+                    <tr>
+                        <td class="box"><div id="sugarea"><span class="s_ipt_wr" id="s_ipt_wr"><input class="word" id="ww" name="word" size="42"  maxlength="100" tabindex="1"></span><span class="s_btn_wr"><input class="btn" type="submit" value="百度一下" onmousedown="this.className='btn s_btn_h'" onmouseout="this.className='btn'"></span></div></td>
+                        <td class="help" id="top-for-ipad"><a href="http://www.baidu.com/search/news_help.html">帮助</a><span class="sep">|</span><a href="http://news.baidu.com/advanced_news.html">高级搜索</a><span class="sep">|</span><a href="http://news.baidu.com/pianhao.html">设置</a></td>
+                    </tr>
+                </table>
+                <!--ecombegin-->
+                <!--ecomend-->
+                <p class="search-radios">
+					<input type="radio" name="tn" value="news" checked id="news"><label for="news">新闻全文</label>
+					<input type="radio" name="tn" value="newstitle" id="newstitle"><label for="newstitle" style="padding:0px;">新闻标题</label>
+                </p>
+				<input type="hidden" name="from" value="news">
+                <input type="hidden" name="cl" value="2">
+
+                <input type="hidden" name="rn" value="20">
+                <input type="hidden" name="ct" value="1">
+            </td></tr>
+	</table>
+    <a id="searchbox_tuiguang" href="http://app.news.baidu.com/?src=yetou" target="_blank"></a>
+    </form>
+<div id="identifier-pannel" style="display:none"><a href="http://app.news.baidu.com/?src=erweima" target="_blank">百度新闻客户端<img src="http://news.baidu.com/resource/img/video_app_tuiguang/erweima.png" height="90" width="90"/>点击或扫描下载</a></div>
+<style type="text/css">
+#header.for-ipad-style{
+    background:url(http://news.baidu.com/resource/img/video_app_tuiguang/video_ipadapp_header_bg.png) no-repeat right bottom;
+    background-size:210px 68px;
+    -webkit-background-size:210px 68px;
+}
+#identifier-pannel{
+    position:fixed;
+    left: 50%;
+    bottom:0;
+    z-index:9999;
+    width:110px;
+    margin-left:517px;
+	height:156px;
+}
+#identifier-pannel a:link,#identifier-pannel a:visited{
+    display:block;
+    padding:10px;
+    line-height:18px;
+    font-size:12px;
+    color:#333;
+    text-decoration:none;
+    white-space:nowrap;
+    text-align:center;
+    background:#f9f9f9;
+}
+#identifier-pannel a:hover{
+    background:#ccd8db;
+    color:#000;
+}
+#identifier-pannel img{
+    display:block;
+    margin:5px auto;
+    border:none;
+}
+
+
+</style>
+
+<script type="text/javascript" src="resource/js/tangram-1.5.2.2.js?v=20130128"></script>
+<script type="text/javascript">
+(function (){
+    /*temp for ad-for-ipad*/
+    if(navigator.userAgent.match(/(iPad).*OS\s([\d_]+)/)){
+        document.getElementById('header').className = 'for-ipad-style';
+        document.getElementById('searchbox_tuiguang').setAttribute('mon' , 'col=504');
+        document.getElementById('searchbox_tuiguang').href='http://itunes.apple.com/cn/app/bai-du-shi-pinhd/id573885698?mt=8';
+
+    }
+    function __getScrollTop(){
+        var d = document;
+            return window.pageYOffset || d.documentElement.scrollTop || d.body.scrollTop;
+    }
+    function __getHeight() {
+        var doc = document,
+            client = doc.compatMode == 'BackCompat' ? doc.body : doc.documentElement;
+            return client.clientHeight;
+    }
+    function __on(obj, type, func){
+        var t = type.replace(/^on/, '');
+        if(window.attachEvent){
+            obj.attachEvent('on' + t, func);
+        }
+        else if(window.addEventListener){
+            obj.addEventListener(t, func, false);
+        }
+    }
+    function __g(id){
+        return document.getElementById(id);
+        
+    }
+
+   __on(window , 'load', function(){
+    function fixedBar(id, options){
+                /*temp
+                {
+                    addclass : 'string',
+                    top : number,
+                    autoHidden : true,
+                    show : true
+                }
+                */
+         var ele = __g(id);
+             if(!ele) return;
+            var pageHeight=__getHeight();
+            var ieScrollTop=__getScrollTop();
+             if(/msie (\d+\.\d+)/i.test(navigator.userAgent)){
+                    if(options.addclass) ele.className = options.addclass;
+                    ele.style.position= 'absolute';
+                    if(options.show){
+                        ele.style.top = ieScrollTop+pageHeight-options.top + "px";
+                        ele.style.display= 'block';
+                    }
+
+                    __on(window,'scroll' , function (){
+
+                            var ieScrollTop=__getScrollTop();
+                            ele.style.top = ieScrollTop+pageHeight - options.top + "px";
+                            if(options.autoHidden){
+                                    if(ieScrollTop==0){
+                                            ele.style.display="none";
+                                    }else{
+                                            ele.style.display="block";
+                                    }
+                            }
+                    });
+            }else{
+                if(options.show) ele.style.display= 'block';
+                ele.style.top = pageHeight-options.top+'px';
+                __on(window,'scroll',function (){
+                    if(options.autoHidden){
+                            if(__getScrollTop()==0){
+                                    ele.style.display="none";
+                            }else{
+                                    ele.style.display="block";
+                            }
+                    }
+                },false);
+            }
+    }
+
+    fixedBar('backTopBtn' , {autoHidden: true, top : 186});
+    fixedBar('identifier-pannel' , {autoHidden: false , top : 386 , show : true});
+    });
+})();
+</script>
+
+<script src="http://cbjs.baidu.com/js/m.js"></script>
+<script>
+    BAIDU_CLB_addOrientation('newschn', '');
+</script>
+
+<script language="JavaScript">document.fbaidu.word.focus();</script>
+<div style="position:relative">
+    <table width="100%" height="22" border=0 cellpadding=0 cellspacing=0 valign="top" class="navTb" >
+      <tr height="22">
+        <td>&nbsp;&nbsp;&nbsp;<b><span id="city_name">地区</span>新闻</b><b>&nbsp;</b><a id="change_city" href="javascript:void(0);">[更换城市]</a></td>
+        <td class="visit" align="right" ><nobr><span ><a href="http://news.baidu.com/view.html">返回首页</a></span>&nbsp;&nbsp;&nbsp;&nbsp;</nobr></td>
+      </tr>
+    </table>
+
+    <div id="city_view_bg" class="view_bg"></div>
+    <div id="city_view" class="city_view">
+        <div class="city_list"></div>
+        <div id="btn_back" class="btn_back">返回上一层</div>
+        <div id="btn_close" class="btn_close"></div>
+        <div class="up_triangle"></div>
+    </div>
+    <div id="status" class="loading">正在加载，请稍候...</div>
+</div>
+
+<div id="con">
+<div id="local_news">
+    <!--默认显示港澳台新闻-->
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td style="padding:0 10px 5px 0px" align=center valign=top>
+                <a class=r href="http://news.hsw.cn/system/2015/1016/314572.shtml" mon="ph&locname=港澳台" target=_blank><img src="http://t2.baidu.com/it/u=http%3A%2F%2Fimg2.myhsw.cn%2F2015-10-16%2Fqczy2za0.jpg&fm=30"></a>
+            </td>
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://news.hsw.cn/system/2015/1016/314572.shtml" mon="ph&locname=港澳台" target=_blank><b>重庆“森林”</b></a>
+                <font color="#6f6f6f">华商网&nbsp;1444960500</font><br>
+                <font style=font-size:13px>重庆大厦，曾经作为尖沙咀地区最高的“豪宅”，后沦为世界中心的贫民窟，被学者称作另类“联合国”大厦，大概是最能体现香港多元文化的地标建筑。许多香港人对它望而怯步，大量各色人群仍选择在这座“森林”里逗留，因它“便利”和“廉价”，也因它是非法活... </font>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://www.chinanews.com/ga/2015/10-16/7572919.shtml" mon="ph&locname=港澳台" target=_blank><b>报告：香港连续三年蝉联全球写字楼租金最贵城市 </b></a>
+                <font color="#6f6f6f">中国新闻网&nbsp;1444961940</font><br>
+                <font style=font-size:13px>中新网10月16日电 据香港《大公报》报道，随着中资机构积极到港设立办事处，香港甲级商厦租金持续上涨，莱坊发表报告指，香港连续三年蝉联全球写字楼租金最贵城市，上半年租金再升1.9%至每月平均呎租166元(港元，下同)，比第二位的美国纽约9... </font>
+                    <a href="http://news.baidu.com/n?cmd=8&page=http%3A%2F%2Fwww.chinanews.com%2Fga%2F2015%2F10-16%2F7572919.shtml" target=_blank class="rnews"><font color="#008000">7条相同新闻&gt;&gt;</font></a><br>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://www.chinanews.com/ga/2015/10-16/7572629.shtml" mon="ph&locname=港澳台" target=_blank><b>女住持涉假结婚 香港入境处：假结婚可取消居留权 </b></a>
+                <font color="#6f6f6f">中国新闻网&nbsp;1444961460</font><br>
+                <font style=font-size:13px>中新网10月16日电 据香港《文汇报》报道，香港大埔定慧寺女住持释智定，被指控敛财、两度与内地和尚假结婚及雇用黑工，释智定及其现任丈夫如智、一名尼姑及一名印佣前日(14日)被香港入境处拘捕后，至前日深夜11时才陆续获准保释候查，下周二须返... </font>
+                    <a href="http://news.baidu.com/n?cmd=8&page=http%3A%2F%2Fwww.chinanews.com%2Fga%2F2015%2F10-16%2F7572629.shtml" target=_blank class="rnews"><font color="#008000">11条相同新闻&gt;&gt;</font></a><br>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td style="padding:0 10px 5px 0px" align=center valign=top>
+                <a class=r href="http://politics.gmw.cn/2015-10/16/content_17368505.htm" mon="ph&locname=港澳台" target=_blank><img src="http://t2.baidu.com/it/u=http%3A%2F%2Fimgpolitics.gmw.cn%2Fattachement%2Fjpg%2Fsite2%2F20151016%2Fd02788d8dd6b178aa1302b.jpg&fm=30"></a>
+            </td>
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://politics.gmw.cn/2015-10/16/content_17368505.htm" mon="ph&locname=港澳台" target=_blank><b>香港零售业状况恶化最贵铺王空置 多家店铺关门 </b></a>
+                <font color="#6f6f6f">光明网&nbsp;1444961220</font><br>
+                <font style=font-size:13px>铜锣湾罗素街曾连续几年成为全球最贵零售地段，远超美国纽约第五大道及法国巴黎香榭丽舍大道，但这一排名恐怕不久后将被取代，因为铜锣湾这种空荡荡的场景已经持续好几个月了，曾经的“铺王”上月租约到期后，已经空置了一个月。   估计连陈浩南（电影《... </font>
+                    <a href="http://news.baidu.com/n?cmd=8&page=http%3A%2F%2Fpolitics.gmw.cn%2F2015-10%2F16%2Fcontent_17368505.htm" target=_blank class="rnews"><font color="#008000">4条相同新闻&gt;&gt;</font></a><br>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://news.hexun.com/2015-10-16/179870342.html" mon="ph&locname=港澳台" target=_blank><b>西部司与香港特区政府官员代表团共商推进“一带..</b></a>
+                <font color="#6f6f6f">和讯网&nbsp;1444960440</font><br>
+                <font style=font-size:13px>10月13日，西部司司长田锦尘应约会见了香港特区政府政制及内地事务局局长谭志源一行。双方就发挥香港优势，积极推进“一带一路”建设进行了座谈。谭志源局长表示希望深入了解推进“一带一路”建设有关情况，充分发挥香港优势，积极参与“一带一路”建设... </font>
+                    <a href="http://news.baidu.com/n?cmd=8&page=http%3A%2F%2Fnews.hexun.com%2F2015-10-16%2F179870342.html" target=_blank class="rnews"><font color="#008000">7条相同新闻&gt;&gt;</font></a><br>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://www.chinanews.com/ga/2015/10-16/7572593.shtml" mon="ph&locname=港澳台" target=_blank><b>香港消委会指航空公司不主动退还离境税 问题多多 </b></a>
+                <font color="#6f6f6f">中国新闻网&nbsp;1444958400</font><br>
+                <font style=font-size:13px>中新网10月16日电 据香港《大公报》报道，香港消委会踢爆航空公司退还离境税问题多多，包括收取手续费、设退税时限、不独立显示收费，以及不主动退还等。   按现行条例规定，市民乘搭飞机外游，购买机票时需要支付120元(港元，下同)机场离境税... </font>
+                    <a href="http://news.baidu.com/n?cmd=8&page=http%3A%2F%2Fwww.chinanews.com%2Fga%2F2015%2F10-16%2F7572593.shtml" target=_blank class="rnews"><font color="#008000">7条相同新闻&gt;&gt;</font></a><br>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://www.cenews.com.cn/xwzx2013/bwdt/201510/t20151016_798198.html" mon="ph&locname=港澳台" target=_blank><b>潘岳会见香港特别行政区环境局常任秘书长 </b></a>
+                <font color="#6f6f6f">中国环境报&nbsp;1444958706</font><br>
+                <font style=font-size:13px>本报记者王昆婷10月15日北京报道 环境保护部副部长潘岳今日在京会见了香港特别行政区环境局常任秘书长、环境保护署署长王倩仪女士，双方就环保领域共同关心的问题交换了意见。   潘岳首先代表环境保护部对王倩仪女士一行的来访表示欢迎，并简要介绍... </font>
+                    <a href="http://news.baidu.com/n?cmd=8&page=http%3A%2F%2Fwww.cenews.com.cn%2Fxwzx2013%2Fbwdt%2F201510%2Ft20151016_798198.html" target=_blank class="rnews"><font color="#008000">2条相同新闻&gt;&gt;</font></a><br>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://www.chinastock.com.cn/yhwz_about.do?methodCall=getDetailInfo&docId=5062898" mon="ph&locname=港澳台" target=_blank><b>梁振英:对香港与以色列合作有信心 </b></a>
+                <font color="#6f6f6f">中国银河证券&nbsp;1444956855</font><br>
+                <font style=font-size:13px>香港中通社10月15日电 15日，刚完成在以色列访问的香港特区行政长官梁振英表示，香港和以色列在社会和经济发展问题上有共同语言，对香港和以色列的合作很有信心，回港后有跟进工作要做。   梁振英在15日发表的网志中表示，以色列政府对这次访问... </font>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://news.takungpao.com/hkol/politics/2015-10/3218412.html" mon="ph&locname=港澳台" target=_blank><b>陈光南：黄之锋乱港 背后显见美国身影</b></a>
+                <font color="#6f6f6f">大公网&nbsp;1444942740</font><br>
+                <font style=font-size:13px>文/陈光南   黄之锋提出司法覆核，要求立法会议员参选年龄从二十一岁降低到十八岁，以便明年可参选立法会。他野心很大，口气也很大，说参加选举是准备扫除立法会民主派的老人政治，让他这个美国全力吹捧的“学运领袖”、“街头革命搞手”在立法会一枝独... </font>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://politics.people.com.cn/n/2015/1016/c70731-27703811.html" mon="ph&locname=港澳台" target=_blank><b>香港杭州政协之友联谊会在港成立</b></a>
+                <font color="#6f6f6f">人民网&nbsp;1444934520</font><br>
+                <font style=font-size:13px>本报讯（记者李宏）10月15日，香港杭州政协之友联谊会在香港成立。该联谊会的成立将为香港和杭州两地的经济、文化搭建一个有影响的平台。   联谊会由杭州市政协发起。市委、市政府历来重视和支持市政协对香港团结联谊工作。本届市政协于2014年初... </font>
+                    <a href="http://news.baidu.com/n?cmd=8&page=http%3A%2F%2Fpolitics.people.com.cn%2Fn%2F2015%2F1016%2Fc70731-27703811.html" target=_blank class="rnews"><font color="#008000">4条相同新闻&gt;&gt;</font></a><br>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td style="padding:0 10px 5px 0px" align=center valign=top>
+                <a class=r href="http://www.chinadaily.com.cn/micro-reading/politics/2015-10-15/content_14259624.html" mon="ph&locname=港澳台" target=_blank><img src="http://t2.baidu.com/it/u=http%3A%2F%2Fgb.cri.cn%2Fmmsource%2Fimages%2F2015%2F10%2F15%2F4974a74a7c14488fad20ad1e28cd0a7e.jpg&fm=30"></a>
+            </td>
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://www.chinadaily.com.cn/micro-reading/politics/2015-10-15/content_14259624.html" mon="ph&locname=港澳台" target=_blank><b>香港地震活动评级为“低至中度”</b></a>
+                <font color="#6f6f6f">中国日报网&nbsp;1444922160</font><br>
+                <font style=font-size:13px>香港断层的分布   原标题：香港地震活动评级为“低至中度”   国际在线消息（记者 李晶）：根据香港土木工程拓展署的最新评估，香港的地震活动程度为“低至中度”，但不能完全忽视地震风险，因此香港天文台将继续加强地震监测并及时向公众发布消息。... </font>
+                    <a href="http://news.baidu.com/n?cmd=8&page=http%3A%2F%2Fwww.chinadaily.com.cn%2Fmicro-reading%2Fpolitics%2F2015-10-15%2Fcontent_14259624.html" target=_blank class="rnews"><font color="#008000">6条相同新闻&gt;&gt;</font></a><br>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://www.chinanews.com/shipin/2015/10-15/news603582.shtml" mon="ph&locname=港澳台" target=_blank><b>香港学者：中英加强合作不会弱化香港桥梁作用</b></a>
+                <font color="#6f6f6f">中国新闻网&nbsp;1444912080</font><br>
+                <font style=font-size:13px>【解说】近期，中国国家主席习近平即将开展的访英行程受到香港学界和商界的广泛关注，香港浸会大学工商管理学院经济学系副教授巫伯雄认为，香港作为中英两国金融贸易的桥梁，可以发挥重要的作用。   【同期】巫伯雄 香港浸会大学经济学系副教授 </font>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://www.chinanews.com/ga/2015/10-15/7571929.shtml" mon="ph&locname=港澳台" target=_blank><b>中英合作制衡全球经济体系 香港地位难取代 </b></a>
+                <font color="#6f6f6f">中国新闻网&nbsp;1444911840</font><br>
+                <font style=font-size:13px>中新社香港10月15日电 (陈逸舟)在内地对外开放的过程中，香港因熟悉欧洲的商业网络和法律系统，一直担任内地与外界联系的“桥头堡”角色。香港经济学专家表示，中英加强经贸活动对两国来说是互利共赢，香港也可以从中受益，其“中间人”作用和地位难... </font>
+                    <a href="http://news.baidu.com/n?cmd=8&page=http%3A%2F%2Fwww.chinanews.com%2Fga%2F2015%2F10-15%2F7571929.shtml" target=_blank class="rnews"><font color="#008000">8条相同新闻&gt;&gt;</font></a><br>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://www.chinanews.com/gn/2015/10-15/7571462.shtml" mon="ph&locname=港澳台" target=_blank><b>专家：中英关系历史渊源深厚 香港等特殊因素可成..</b></a>
+                <font color="#6f6f6f">中国新闻网&nbsp;1444891080</font><br>
+                <font style=font-size:13px>中新社北京10月15日电 (记者 石龙洪)北京专家认为，中英关系历史渊源深厚，在迎来“黄金时代”之际，香港等特殊因素可成助推动力。   中国国家主席习近平即将访英。中国社科院欧洲研究所所长、全国港澳研究会副会长黄平近日接受中新社记者专访，... </font>
+                    <a href="http://news.baidu.com/n?cmd=8&page=http%3A%2F%2Fwww.chinanews.com%2Fgn%2F2015%2F10-15%2F7571462.shtml" target=_blank class="rnews"><font color="#008000">7条相同新闻&gt;&gt;</font></a><br>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://www.chinanews.com/ga/2015/10-15/7571865.shtml" mon="ph&locname=港澳台" target=_blank><b>第八届香港国际美酒展11月初举行 </b></a>
+                <font color="#6f6f6f">中国新闻网&nbsp;1444907940</font><br>
+                <font style=font-size:13px>中新社香港10月15日电 (曾平)由香港贸易发展局主办的第八届香港国际美酒展将于11月5日至7日在香港会议展览中心举行。今届展览聚集来自31个国家和地区超过1000家参展商参展，首次有爱尔兰和哈萨克斯坦的商家参展。   香港贸发局署理总裁... </font>
+                    <a href="http://news.baidu.com/n?cmd=8&page=http%3A%2F%2Fwww.chinanews.com%2Fga%2F2015%2F10-15%2F7571865.shtml" target=_blank class="rnews"><font color="#008000">8条相同新闻&gt;&gt;</font></a><br>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://www.cqn.com.cn/news/zjpd/dfdt/1085146.html" mon="ph&locname=港澳台" target=_blank><b>葫芦岛地区急冻银鱼首次出口香港</b></a>
+                <font color="#6f6f6f">中国质量新闻网&nbsp;1444901580</font><br>
+                <font style=font-size:13px>从辽宁出入境检验检疫局官网获悉，近日，由葫芦岛某公司生产的20吨、货值5.2万美元的急冻银鱼，在香港顺利通关。这是葫芦岛地区首次对香港出口急冻银鱼。 </font>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://news.hexun.com/2015-10-15/179846850.html" mon="ph&locname=港澳台" target=_blank><b>民政部副部长会见香港东华三院董事局访京团</b></a>
+                <font color="#6f6f6f">和讯网&nbsp;1444879560</font><br>
+                <font style=font-size:13px>2015年10月13日上午，民政部副部长顾朝曦会见了何超蕸主席率领的香港东华三院董事局访京团。顾朝曦充分肯定了东华三院作为香港规模最大的慈善服务机构，为促进内地的社会福利服务、慈善、社会工作、医疗服务等工作的发展提供的支持。双方还就感兴趣... </font>
+                    <a href="http://news.baidu.com/n?cmd=8&page=http%3A%2F%2Fnews.hexun.com%2F2015-10-15%2F179846850.html" target=_blank class="rnews"><font color="#008000">2条相同新闻&gt;&gt;</font></a><br>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td style="padding:0 10px 5px 0px" align=center valign=top>
+                <a class=r href="http://www.whnews.cn/news/node/2015-10/15/content_6612000.htm" mon="ph&locname=港澳台" target=_blank><img src="http://t2.baidu.com/it/u=http%3A%2F%2Fwww.whnews.cn%2Fnews%2Fdata%2Fattachement%2Fjpg%2Fsite2%2F20151015%2Fc81f661f9fa41789a79039.jpg&fm=30"></a>
+            </td>
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://www.whnews.cn/news/node/2015-10/15/content_6612000.htm" mon="ph&locname=港澳台" target=_blank><b>香港定慧寺女住持释智定被捕现场照片曝光(图)</b></a>
+                <font color="#6f6f6f">威海新闻网&nbsp;1444897620</font><br>
+                <font style=font-size:13px>香港定慧寺女住持释智定被捕现场照片曝光(图)。香港入境处人员14日掩至定慧寺调查近4小时，拘捕三女一男，据悉包括该寺女住持释智定，以及和尚如智，两人涉嫌在法定声明中作虚假申述，被捕人士的“夫妻关系”将是入境处调查重点。   入境处行动中共... </font>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://www.chinanews.com/ga/2015/10-15/7571383.shtml" mon="ph&locname=港澳台" target=_blank><b>香港为什么叫“香港” </b></a>
+                <font color="#6f6f6f">中国新闻网&nbsp;1444890240</font><br>
+                <font style=font-size:13px>早在六千多年以前，香港的沿海地区已经出现了人类活动，他们以捕鱼为生，并且懂得使用石器。秦始皇统一中国后，先后在南方建立了南海、桂林、象郡三个郡，香港隶属南海郡番禺县，由此开始，香港便完全置于中央政权的管辖之内了。   不过，在宋代之前，香... </font>
+                    <a href="http://news.baidu.com/n?cmd=8&page=http%3A%2F%2Fwww.chinanews.com%2Fga%2F2015%2F10-15%2F7571383.shtml" target=_blank class="rnews"><font color="#008000">6条相同新闻&gt;&gt;</font></a><br>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+    <table width="70%" border=0 align=left cellpadding=5 cellspacing=0>
+        <tr>
+                    <!--1张头条新闻图片-->
+                <td style="padding:0 10px 5px 0px" align=center valign=top>
+                <a class=r href="http://www.sc.xinhuanet.com/content/2015-10/15/c_1116833451.htm" mon="ph&locname=港澳台" target=_blank><img src="http://t2.baidu.com/it/u=http%3A%2F%2Fnews.xinhuanet.com%2Ffashion%2F2015-10%2F15%2F128299750_14443529952851n.jpg&fm=30"></a>
+            </td>
+                <td valign="top">
+                    <!--1条地区头条新闻-->
+                <a class=r href="http://www.sc.xinhuanet.com/content/2015-10/15/c_1116833451.htm" mon="ph&locname=港澳台" target=_blank><b>香港表展上那些被设计师“玩坏了”的新款女表 </b></a>
+                <font color="#6f6f6f">新华网四川频道&nbsp;1444890420</font><br>
+                <font style=font-size:13px>靛青色羽翼的蜂鸟在花丛中起舞，与时间的流逝形成鲜明的对比，仿佛凝固在表盘上的蜂鸟代表着时间的暂停。如今品牌更藉由其引人入胜的超凡创意镂空腕表，为Excalibur系列创造出新奇巧妙的珠宝时计，也为镂空技艺演绎出展现绝然女性风华的全新面貌。... </font>
+                                </td>
+        </tr>
+    </table>
+    <br clear=all>
+    <br>
+</div>
+
+<script type="text/javascript" language="javascript">
+<!--
+var LocalNewsConfig = {
+        cookieName: 'LOCALGX',
+        cookieDomain: 'baidu.com',
+        defaultFailedLocalCity: '港澳台',
+        htmlTpl: {
+            city_list: '<a href="javascript:void(0);" mon="col=10&locname=#{city_name}&locid=#{locID}" prop="#{prop}">#{title}</a> ',
+            local_news: '<table width="70%" border=0 align=left cellpadding=5 cellspacing=0><tr><td class="img_td" align=center valign=top><a class=r href="#{url}" mon="ph&locname=#{city_name}" target=_blank><img src="#{imgUrl}"></a></td><td valign="top"><a class=r href="#{url}" mon="ph&locname=#{city_name}" target=_blank><b>#{title}</b></a> <font color="#6f6f6f">#{source}&nbsp;#{time}</font><br><font style="font-size:13px">  #{abs} </font><br> </td></tr></table><br clear="all"><br>',
+            local_news_no_same: '<table width="70%" border=0 align=left cellpadding=5 cellspacing=0><tr><td class="img_td" align=center valign=top><a class=r href="#{url}" mon="ph&locname=#{city_name}" target=_blank><img src="#{imgUrl}" ></a></td><td valign="top"><a class=r href="#{url}" mon="ph&locname=#{city_name}" target=_blank><b>#{title}</b></a> <font color="#6f6f6f">#{source}&nbsp;#{time}</font><br><font style="font-size:13px">  #{abs} </font><br> </td></tr></table><br clear="all"><br>',
+            local_news_no_img_no_same: '<table width="70%" border=0 align=left cellpadding=5 cellspacing=0><tr><td valign="top"><a class=r href="#{url}" mon="ph&locname=#{city_name}" target=_blank><b>#{title}</b></a> <font color="#6f6f6f">#{source}&nbsp;#{time}</font><br><font style="font-size:13px">  #{abs} </font><br> </td></tr></table><br clear="all"><br>',
+            local_news_no_img: '<table width="70%" border=0 align=left cellpadding=5 cellspacing=0><tr><td valign="top"><a class=r href="#{url}" mon="ph&locname=#{city_name}" target=_blank><b>#{title}</b></a><font color="#6f6f6f">#{source}&nbsp;#{time}</font><br><font style="font-size:13px">  #{abs} </font><br> </td></tr></table><br clear="all"><br>'
+        },
+        timeout: 5000
+    },
+
+    localnews_options = {
+        pageType: 'LOCAL_TOP',
+        request: {
+             url: '/n?m=rddata&v=index_data&fr=list&cookie=0&rn1=20',
+             callback : 'bdNewsJsonCallBack',
+             locID : PAGE_DATA.locid
+        },
+        data: local_cities,
+        triggerLevel: 2,
+        statusID: 'status',
+        cityNameID: 'city_name',
+        cityViewID: 'city_view',
+        cityViewBgID: 'city_view_bg',
+        changeCityID: 'change_city',
+        closeBtnID: 'btn_close',
+        backBtnID: 'btn_back',
+        localNewsID: 'local_news',
+        maxItemsShown: 20,
+        rssSectionID: 'rss_section',
+        rssOrderID: 'rss_order',
+        rssOrderID_1: 'rss_order_1',
+        rssOrderCityNameID: 'order_city_name',
+        moreLocalNewsID: 'more_local_news',
+        moreLocalNewsCityNameID: 'more_news_city_name',
+        timeout: LocalNewsConfig.timeout
+    };
+on(window, 'load', function(){
+    initLocalHotNews(localnews_options);
+});
+//-->
+</script>
+
+<br>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0" id="rss_section">
+    <tr valign="top">
+        <td>
+            <span class="p2">
+                <a id="rss_order" href=/n?cmd=7&loc=2354&name=上海&tn=rss target="_blank">
+                    <img class="b0" src="http://www.baidu.com/search/img/rss.gif" width="32" height="32"  align="absmiddle">
+                </a>&nbsp;&nbsp;
+                <span class="f14">
+
+                    <a id="rss_order_1" href=/n?cmd=7&loc=2354&name=上海&tn=rss target="_blank">RSS订阅<b><span id="order_city_name">上海</span>地区</b>新闻</a>
+                </span>&nbsp;&nbsp;
+            </span>
+            <span class="visit">
+                <a href="http://www.baidu.com/search/rss.html#02" target=_blank  >→更多RSS订阅</a>
+            </span>
+            <p></p>
+
+        </td>
+        <td align="right">
+            <a id="more_local_news" href="http://news.baidu.com/n?cmd=7&loc=2354&name=上海&pn=1">
+                <b><font color="#261cdc" class=p21>最新<span id="more_news_city_name">上海</span>新闻&gt;&gt;</font></b>
+            </a>&nbsp;&nbsp;
+        </td>
+  </tr>
+</table>
+</div>
+
+<script>
+document.write("<img src='http://news.baidu.com/mp/b.jpg?cmd=6&cy=0&"+Math.random()+"' style='display:none;'>");
+</script>
+
+<div id="ft" >
+<p>百度新闻搜索源于互联网新闻网站和频道，系自动分类排列，百度不刊登或转载任何完整的新闻内容</p>
+<font style="color:#7777CC;">&copy;2015 Baidu</font> <a href="http://www.baidu.com/duty/" class="cy">使用百度前必读</a> <a href="http://net.china.cn/chinese/index.htm" target=_blank><img src="http://gimg.baidu.com/img/net.gif"></a>&nbsp;<a href="http://www.bj.cyberpolice.cn/index.htm" target=_blank><img src="http://gimg.baidu.com/img/110.gif" alt="首都网络110报警服务"></a></div>
+</div>
+</body>
+</html>
+<!--ecombegin--><script type="text/javascript">enterState("", "");</script><!--ecomend-->

@@ -1,0 +1,1 @@
+cmd_/home/ng_platform/dpdk-1.8.0/x86_64-native-linuxapp-gcc/build/lib/librte_eal/linuxapp/kni/built-in.o :=  rm -f /home/ng_platform/dpdk-1.8.0/x86_64-native-linuxapp-gcc/build/lib/librte_eal/linuxapp/kni/built-in.o; ar rcsD /home/ng_platform/dpdk-1.8.0/x86_64-native-linuxapp-gcc/build/lib/librte_eal/linuxapp/kni/built-in.o

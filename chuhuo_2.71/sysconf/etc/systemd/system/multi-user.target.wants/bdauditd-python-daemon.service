@@ -1,0 +1,16 @@
+[Unit]
+Description=BDWAF_LOG Python Daemon
+After=mysqld.service bdwafd-python-init.service
+Requires=mysqld.service
+
+[Service]
+Type=forking
+PIDFile=/var/run/bdauditd.pid
+ExecStart=/usr/bin/python /usr/local/bluedon/bdwafd/bdauditd.py -s start
+ExecStop=/usr/bin/python /usr/local/bluedon/bdwafd/bdauditd.py -s stop
+Restart=always
+RestartSec=30
+Environment=PYTHONPATH=/usr/local/bluedon
+
+[Install]
+WantedBy=multi-user.target

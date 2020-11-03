@@ -1,0 +1,2196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>MaxMind GeoIP2 Python API &mdash; geoip2 2.2.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="geoip2 2.2.0 documentation" href="#" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">geoip2 2.2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">MaxMind GeoIP2 Python API</a><ul>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#installation">Installation</a><ul>
+<li><a class="reference internal" href="#database-reader-extension">Database Reader Extension</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#web-service-example">Web Service Example</a></li>
+<li><a class="reference internal" href="#web-service-client-exceptions">Web Service Client Exceptions</a></li>
+<li><a class="reference internal" href="#database-example">Database Example</a><ul>
+<li><a class="reference internal" href="#city-database">City Database</a></li>
+<li><a class="reference internal" href="#anonymous-ip-database">Anonymous IP Database</a></li>
+<li><a class="reference internal" href="#connection-type-database">Connection-Type Database</a></li>
+<li><a class="reference internal" href="#domain-database">Domain Database</a></li>
+<li><a class="reference internal" href="#isp-database">ISP Database</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#database-reader-exceptions">Database Reader Exceptions</a></li>
+<li><a class="reference internal" href="#what-data-is-returned">What data is returned?</a></li>
+<li><a class="reference internal" href="#integration-with-geonames">Integration with GeoNames</a></li>
+<li><a class="reference internal" href="#reporting-data-problems">Reporting Data Problems</a></li>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#versioning">Versioning</a></li>
+<li><a class="reference internal" href="#support">Support</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-geoip2">Modules</a><ul>
+<li><a class="reference internal" href="#geoip2-database-reader">GeoIP2 Database Reader</a></li>
+<li><a class="reference internal" href="#webservices-client-api">WebServices Client API</a><ul>
+<li><a class="reference internal" href="#ssl">SSL</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#models">Models</a></li>
+<li><a class="reference internal" href="#records">Records</a></li>
+<li><a class="reference internal" href="#errors">Errors</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<div class="section" id="maxmind-geoip2-python-api">
+<h1>MaxMind GeoIP2 Python API<a class="headerlink" href="#maxmind-geoip2-python-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This package provides an API for the GeoIP2 <a class="reference external" href="http://dev.maxmind.com/geoip/geoip2/web-services">web services</a> and <a class="reference external" href="http://dev.maxmind.com/geoip/geoip2/downloadable">databases</a>. The API also works with
+MaxMind&#8217;s free <a class="reference external" href="http://dev.maxmind.com/geoip/geoip2/geolite2/">GeoLite2 databases</a>.</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>To install the <code class="docutils literal"><span class="pre">geoip2</span></code> module, type:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>pip install geoip2
+</pre></div>
+</div>
+<p>If you are not able to use pip, you may also use easy_install from the
+source directory:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>easy_install .
+</pre></div>
+</div>
+<div class="section" id="database-reader-extension">
+<h3>Database Reader Extension<a class="headerlink" href="#database-reader-extension" title="Permalink to this headline">¶</a></h3>
+<p>If you wish to use the C extension for the database reader, you must first
+install the <a class="reference external" href="https://github.com/maxmind/libmaxminddb">libmaxminddb C API</a>.
+Please <a class="reference external" href="https://github.com/maxmind/libmaxminddb/blob/master/README.md">see the instructions distributed with it</a>.</p>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>To use this API, you first create either a web service object with your
+MaxMind <code class="docutils literal"><span class="pre">user_id</span></code> and <code class="docutils literal"><span class="pre">license_key</span></code> or a database reader object with the
+path to your database file. After doing this, you may call the method
+corresponding to request type (e.g., <code class="docutils literal"><span class="pre">city</span></code> or <code class="docutils literal"><span class="pre">country</span></code>), passing it the
+IP address you want to look up.</p>
+<p>If the request succeeds, the method call will return a model class for the
+end point you called. This model in turn contains multiple record classes,
+each of which represents part of the data returned by the web service.</p>
+<p>If the request fails, the client class throws an exception.</p>
+</div>
+<div class="section" id="web-service-example">
+<h2>Web Service Example<a class="headerlink" href="#web-service-example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-pycon"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">geoip2.webservice</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># This creates a Client object that can be reused across requests.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Replace &quot;42&quot; with your user ID and &quot;license_key&quot; with your license</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># key.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">client</span> <span class="o">=</span> <span class="n">geoip2</span><span class="o">.</span><span class="n">webservice</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="mi">42</span><span class="p">,</span> <span class="s">&#39;license_key&#39;</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Replace &quot;insights&quot; with the method corresponding to the web service</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># that you are using, e.g., &quot;country&quot;, &quot;city&quot;.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">insights</span><span class="p">(</span><span class="s">&#39;128.101.101.101&#39;</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">country</span><span class="o">.</span><span class="n">iso_code</span>
+<span class="go">&#39;US&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">country</span><span class="o">.</span><span class="n">name</span>
+<span class="go">&#39;United States&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">country</span><span class="o">.</span><span class="n">names</span><span class="p">[</span><span class="s">&#39;zh-CN&#39;</span><span class="p">]</span>
+<span class="go">u&#39;美国&#39;</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">subdivisions</span><span class="o">.</span><span class="n">most_specific</span><span class="o">.</span><span class="n">name</span>
+<span class="go">&#39;Minnesota&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">subdivisions</span><span class="o">.</span><span class="n">most_specific</span><span class="o">.</span><span class="n">iso_code</span>
+<span class="go">&#39;MN&#39;</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">city</span><span class="o">.</span><span class="n">name</span>
+<span class="go">&#39;Minneapolis&#39;</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">postal</span><span class="o">.</span><span class="n">code</span>
+<span class="go">&#39;55455&#39;</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">latitude</span>
+<span class="go">44.9733</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">longitude</span>
+<span class="go">-93.2323</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="web-service-client-exceptions">
+<h2>Web Service Client Exceptions<a class="headerlink" href="#web-service-client-exceptions" title="Permalink to this headline">¶</a></h2>
+<p>For details on the possible errors returned by the web service itself, see
+<a class="reference external" href="http://dev.maxmind.com/geoip/geoip2/web-services">http://dev.maxmind.com/geoip/geoip2/web-services</a> for the GeoIP2 Precision web
+service docs.</p>
+<p>If the web service returns an explicit error document, this is thrown as a
+<code class="docutils literal"><span class="pre">AddressNotFoundError</span></code>, <code class="docutils literal"><span class="pre">AuthenticationError</span></code>, <code class="docutils literal"><span class="pre">InvalidRequestError</span></code>, or
+<code class="docutils literal"><span class="pre">OutOfQueriesError</span></code> as appropriate. These all subclass <code class="docutils literal"><span class="pre">GeoIP2Error</span></code>.</p>
+<p>If some other sort of error occurs, this is thrown as an <code class="docutils literal"><span class="pre">HTTPError</span></code>. This
+is thrown when some sort of unanticipated error occurs, such as the web
+service returning a 500 or an invalid error document. If the web service
+returns any status code besides 200, 4xx, or 5xx, this also becomes an
+<code class="docutils literal"><span class="pre">HTTPError</span></code>.</p>
+<p>Finally, if the web service returns a 200 but the body is invalid, the client
+throws a <code class="docutils literal"><span class="pre">GeoIP2Error</span></code>.</p>
+</div>
+<div class="section" id="database-example">
+<h2>Database Example<a class="headerlink" href="#database-example" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="city-database">
+<h3>City Database<a class="headerlink" href="#city-database" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-pycon"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">geoip2.database</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># This creates a Reader object. You should use the same object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># across multiple requests as creation of it is expensive.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reader</span> <span class="o">=</span> <span class="n">geoip2</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">Reader</span><span class="p">(</span><span class="s">&#39;/path/to/GeoLite2-City.mmdb&#39;</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Replace &quot;city&quot; with the method corresponding to the database</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># that you are using, e.g., &quot;country&quot;.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">city</span><span class="p">(</span><span class="s">&#39;128.101.101.101&#39;</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">country</span><span class="o">.</span><span class="n">iso_code</span>
+<span class="go">&#39;US&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">country</span><span class="o">.</span><span class="n">name</span>
+<span class="go">&#39;United States&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">country</span><span class="o">.</span><span class="n">names</span><span class="p">[</span><span class="s">&#39;zh-CN&#39;</span><span class="p">]</span>
+<span class="go">u&#39;美国&#39;</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">subdivisions</span><span class="o">.</span><span class="n">most_specific</span><span class="o">.</span><span class="n">name</span>
+<span class="go">&#39;Minnesota&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">subdivisions</span><span class="o">.</span><span class="n">most_specific</span><span class="o">.</span><span class="n">iso_code</span>
+<span class="go">&#39;MN&#39;</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">city</span><span class="o">.</span><span class="n">name</span>
+<span class="go">&#39;Minneapolis&#39;</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">postal</span><span class="o">.</span><span class="n">code</span>
+<span class="go">&#39;55455&#39;</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">latitude</span>
+<span class="go">44.9733</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">longitude</span>
+<span class="go">-93.2323</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reader</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="anonymous-ip-database">
+<h3>Anonymous IP Database<a class="headerlink" href="#anonymous-ip-database" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-pycon"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">geoip2.database</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># This creates a Reader object. You should use the same object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># across multiple requests as creation of it is expensive.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reader</span> <span class="o">=</span> <span class="n">geoip2</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">Reader</span><span class="p">(</span><span class="s">&#39;/path/to/GeoIP2-Anonymous-IP.mmdb&#39;</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">anonymous_ip</span><span class="p">(</span><span class="s">&#39;85.25.43.84&#39;</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">is_anonymous</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">is_anonymous_vpn</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">is_hosting_provider</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">is_public_proxy</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">is_tor_exit_node</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">ip_address</span>
+<span class="go">&#39;128.101.101.101&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reader</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="connection-type-database">
+<h3>Connection-Type Database<a class="headerlink" href="#connection-type-database" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-pycon"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">geoip2.database</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># This creates a Reader object. You should use the same object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># across multiple requests as creation of it is expensive.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reader</span> <span class="o">=</span> <span class="n">geoip2</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">Reader</span><span class="p">(</span><span class="s">&#39;/path/to/GeoIP2-Connection-Type.mmdb&#39;</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">connection_type</span><span class="p">(</span><span class="s">&#39;128.101.101.101&#39;</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">connection_type</span>
+<span class="go">&#39;Corporate&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">ip_address</span>
+<span class="go">&#39;128.101.101.101&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reader</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="domain-database">
+<h3>Domain Database<a class="headerlink" href="#domain-database" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-pycon"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">geoip2.database</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># This creates a Reader object. You should use the same object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># across multiple requests as creation of it is expensive.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reader</span> <span class="o">=</span> <span class="n">geoip2</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">Reader</span><span class="p">(</span><span class="s">&#39;/path/to/GeoIP2-Domain.mmdb&#39;</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">domain</span><span class="p">(</span><span class="s">&#39;128.101.101.101&#39;</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">domain</span>
+<span class="go">&#39;umn.edu&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">ip_address</span>
+<span class="go">&#39;128.101.101.101&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reader</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="isp-database">
+<h3>ISP Database<a class="headerlink" href="#isp-database" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-pycon"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">geoip2.database</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># This creates a Reader object. You should use the same object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># across multiple requests as creation of it is expensive.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reader</span> <span class="o">=</span> <span class="n">geoip2</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">Reader</span><span class="p">(</span><span class="s">&#39;/path/to/GeoIP2-ISP.mmdb&#39;</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">isp</span><span class="p">(</span><span class="s">&#39;1.128.0.0&#39;</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">autonomous_system_number</span>
+<span class="go">1221</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">autonomous_system_organization</span>
+<span class="go">&#39;Telstra Pty Ltd&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">isp</span>
+<span class="go">&#39;Telstra Internet&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">organization</span>
+<span class="go">&#39;Telstra Internet&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">ip_address</span>
+<span class="go">&#39;128.101.101.101&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reader</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="database-reader-exceptions">
+<h2>Database Reader Exceptions<a class="headerlink" href="#database-reader-exceptions" title="Permalink to this headline">¶</a></h2>
+<p>If the database file does not exist or is not readable, a <code class="docutils literal"><span class="pre">ValueError</span></code> will
+be thrown. If the file is invalid or there is a bug in the reader, a
+<code class="docutils literal"><span class="pre">maxminddb.InvalidDatabaseError</span></code> will be thrown with a description of the
+problem. If an IP address is not in the database, a <code class="docutils literal"><span class="pre">AddressNotFoundError</span></code>
+exception will be thrown.</p>
+</div>
+<div class="section" id="what-data-is-returned">
+<h2>What data is returned?<a class="headerlink" href="#what-data-is-returned" title="Permalink to this headline">¶</a></h2>
+<p>While many of the models contain the same basic records, the attributes which
+can be populated vary between web service end points or databases. In
+addition, while a model may offer a particular piece of data, MaxMind does not
+always have every piece of data for any given IP address.</p>
+<p>Because of these factors, it is possible for any request to return a record
+where some or all of the attributes are unpopulated.</p>
+<p>The only piece of data which is always returned is the <cite>ip_address</cite> attribute
+in the <code class="docutils literal"><span class="pre">geoip2.records.Traits</span></code> record.</p>
+</div>
+<div class="section" id="integration-with-geonames">
+<h2>Integration with GeoNames<a class="headerlink" href="#integration-with-geonames" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://www.geonames.org/">GeoNames</a> offers web services and downloadable
+databases with data on geographical features around the world, including
+populated places. They offer both free and paid premium data. Each feature is
+uniquely identified by a <code class="docutils literal"><span class="pre">geoname_id</span></code>, which is an integer.</p>
+<p>Many of the records returned by the GeoIP web services and databases include a
+<code class="docutils literal"><span class="pre">geoname_id</span></code> field. This is the ID of a geographical feature (city, region,
+country, etc.) in the GeoNames database.</p>
+<p>Some of the data that MaxMind provides is also sourced from GeoNames. We
+source things like place names, ISO codes, and other similar data from the
+GeoNames premium data set.</p>
+</div>
+<div class="section" id="reporting-data-problems">
+<h2>Reporting Data Problems<a class="headerlink" href="#reporting-data-problems" title="Permalink to this headline">¶</a></h2>
+<p>If the problem you find is that an IP address is incorrectly mapped, please
+<a class="reference external" href="http://www.maxmind.com/en/correction">submit your correction to MaxMind</a>.</p>
+<p>If you find some other sort of mistake, like an incorrect spelling, please
+check the <a class="reference external" href="http://www.geonames.org/">GeoNames site</a> first. Once you&#8217;ve
+searched for a place and found it on the GeoNames map view, there are a
+number of links you can use to correct data (&#8220;move&#8221;, &#8220;edit&#8221;, &#8220;alternate
+names&#8221;, etc.). Once the correction is part of the GeoNames data set, it
+will be automatically incorporated into future MaxMind releases.</p>
+<p>If you are a paying MaxMind customer and you&#8217;re not sure where to submit a
+correction, please <a class="reference external" href="http://www.maxmind.com/en/support">contact MaxMind support</a> for help.</p>
+</div>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<p>This code requires Python 2.6+ or 3.3+. Older versions are not supported.
+This library has been tested with CPython and PyPy.</p>
+<p>The Requests HTTP library is also required. See
+&lt;<a class="reference external" href="http://python-requests.org">http://python-requests.org</a>&gt; for details.</p>
+</div>
+<div class="section" id="versioning">
+<h2>Versioning<a class="headerlink" href="#versioning" title="Permalink to this headline">¶</a></h2>
+<p>The GeoIP2 Python API uses <a class="reference external" href="http://semver.org/">Semantic Versioning</a>.</p>
+</div>
+<div class="section" id="support">
+<h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
+<p>Please report all issues with this code using the <a class="reference external" href="https://github.com/maxmind/GeoIP2-python/issues">GitHub issue tracker</a></p>
+<p>If you are having an issue with a MaxMind service that is not specific to the
+client API, please contact <a class="reference external" href="http://www.maxmind.com/en/support">MaxMind support</a> for assistance.</p>
+</div>
+</div>
+<div class="section" id="module-geoip2">
+<span id="modules"></span><h1>Modules<a class="headerlink" href="#module-geoip2" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-geoip2.database"></span><div class="section" id="geoip2-database-reader">
+<h2>GeoIP2 Database Reader<a class="headerlink" href="#geoip2-database-reader" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="geoip2.database.Reader">
+<em class="property">class </em><code class="descclassname">geoip2.database.</code><code class="descname">Reader</code><span class="sig-paren">(</span><em>filename</em>, <em>locales=None</em>, <em>mode=0</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.database.Reader" title="Permalink to this definition">¶</a></dt>
+<dd><p>GeoIP2 database Reader object.</p>
+<p>Instances of this class provide a reader for the GeoIP2 database format.
+IP addresses can be looked up using the <code class="docutils literal"><span class="pre">country</span></code> and <code class="docutils literal"><span class="pre">city</span></code> methods.</p>
+<p>The basic API for this class is the same for every database. First, you
+create a reader object, specifying a file name. You then call the method
+corresponding to the specific database, passing it the IP address you want
+to look up.</p>
+<p>If the request succeeds, the method call will return a model class for the
+method you called. This model in turn contains multiple record classes,
+each of which represents part of the data returned by the database. If the
+database does not contain the requested information, the attributes on the
+record class will have a <code class="docutils literal"><span class="pre">None</span></code> value.</p>
+<p>If the address is not in the database, an
+<code class="docutils literal"><span class="pre">geoip2.errors.AddressNotFoundError</span></code> exception will be thrown. If the
+database is corrupt or invalid, a <code class="docutils literal"><span class="pre">maxminddb.InvalidDatabaseError</span></code> will
+be thrown.</p>
+<dl class="method">
+<dt id="geoip2.database.Reader.anonymous_ip">
+<code class="descname">anonymous_ip</code><span class="sig-paren">(</span><em>ip_address</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.database.Reader.anonymous_ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the AnonymousIP object for the IP address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ip_address</strong> &#8211; IPv4 or IPv6 address as a string.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#geoip2.models.AnonymousIP" title="geoip2.models.AnonymousIP"><code class="xref py py-class docutils literal"><span class="pre">geoip2.models.AnonymousIP</span></code></a> object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geoip2.database.Reader.city">
+<code class="descname">city</code><span class="sig-paren">(</span><em>ip_address</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.database.Reader.city" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the City object for the IP address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ip_address</strong> &#8211; IPv4 or IPv6 address as a string.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#geoip2.models.City" title="geoip2.models.City"><code class="xref py py-class docutils literal"><span class="pre">geoip2.models.City</span></code></a> object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geoip2.database.Reader.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.database.Reader.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the GeoIP2 database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geoip2.database.Reader.connection_type">
+<code class="descname">connection_type</code><span class="sig-paren">(</span><em>ip_address</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.database.Reader.connection_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the ConnectionType object for the IP address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ip_address</strong> &#8211; IPv4 or IPv6 address as a string.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#geoip2.models.ConnectionType" title="geoip2.models.ConnectionType"><code class="xref py py-class docutils literal"><span class="pre">geoip2.models.ConnectionType</span></code></a> object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geoip2.database.Reader.country">
+<code class="descname">country</code><span class="sig-paren">(</span><em>ip_address</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.database.Reader.country" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the Country object for the IP address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ip_address</strong> &#8211; IPv4 or IPv6 address as a string.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#geoip2.models.Country" title="geoip2.models.Country"><code class="xref py py-class docutils literal"><span class="pre">geoip2.models.Country</span></code></a> object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geoip2.database.Reader.domain">
+<code class="descname">domain</code><span class="sig-paren">(</span><em>ip_address</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.database.Reader.domain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the Domain object for the IP address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ip_address</strong> &#8211; IPv4 or IPv6 address as a string.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#geoip2.models.Domain" title="geoip2.models.Domain"><code class="xref py py-class docutils literal"><span class="pre">geoip2.models.Domain</span></code></a> object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geoip2.database.Reader.isp">
+<code class="descname">isp</code><span class="sig-paren">(</span><em>ip_address</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.database.Reader.isp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the ISP object for the IP address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ip_address</strong> &#8211; IPv4 or IPv6 address as a string.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#geoip2.models.ISP" title="geoip2.models.ISP"><code class="xref py py-class docutils literal"><span class="pre">geoip2.models.ISP</span></code></a> object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geoip2.database.Reader.metadata">
+<code class="descname">metadata</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.database.Reader.metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>The metadata for the open database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">maxminddb.reader.Metadata</span></code> object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<span class="target" id="module-geoip2.webservice"></span><div class="section" id="webservices-client-api">
+<h2>WebServices Client API<a class="headerlink" href="#webservices-client-api" title="Permalink to this headline">¶</a></h2>
+<p>This class provides a client API for all the GeoIP2 Precision web service end
+points. The end points are Country, City, and Insights. Each end point returns
+a different set of data about an IP address, with Country returning the least
+data and Insights the most.</p>
+<p>Each web service end point is represented by a different model class, and
+these model classes in turn contain multiple record classes. The record
+classes have attributes which contain data about the IP address.</p>
+<p>If the web service does not return a particular piece of data for an IP
+address, the associated attribute is not populated.</p>
+<p>The web service may not return any information for an entire record, in which
+case all of the attributes for that record class will be empty.</p>
+<div class="section" id="ssl">
+<h3>SSL<a class="headerlink" href="#ssl" title="Permalink to this headline">¶</a></h3>
+<p>Requests to the GeoIP2 Precision web service are always made with SSL.</p>
+<dl class="class">
+<dt id="geoip2.webservice.Client">
+<em class="property">class </em><code class="descclassname">geoip2.webservice.</code><code class="descname">Client</code><span class="sig-paren">(</span><em>user_id</em>, <em>license_key</em>, <em>host='geoip.maxmind.com'</em>, <em>locales=None</em>, <em>timeout=None</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.webservice.Client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new client object.</p>
+<p>It accepts the following required arguments:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>user_id</strong> &#8211; Your MaxMind User ID.</li>
+<li><strong>license_key</strong> &#8211; Your MaxMind license key.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Go to <a class="reference external" href="https://www.maxmind.com/en/my_license_key">https://www.maxmind.com/en/my_license_key</a> to see your MaxMind
+User ID and license key.</p>
+<p>The following keyword arguments are also accepted:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>host</strong> &#8211; The hostname to make a request against. This defaults to
+&#8220;geoip.maxmind.com&#8221;. In most cases, you should not need to set this
+explicitly.</li>
+<li><strong>locales</strong> &#8211; <p>This is list of locale codes. This argument will be
+passed on to record classes to use when their name properties are
+called. The default value is [&#8216;en&#8217;].</p>
+<p>The order of the locales is significant. When a record class has
+multiple names (country, city, etc.), its name property will return
+the name in the first locale that has one.</p>
+<p>Note that the only locale which is always present in the GeoIP2
+data is &#8220;en&#8221;. If you do not include this locale, the name property
+may end up returning None even when the record has an English name.</p>
+<p>Currently, the valid locale codes are:</p>
+<ul>
+<li>de &#8211; German</li>
+<li>en &#8211; English names may still include accented characters if that is
+the accepted spelling in English. In other words, English does not
+mean ASCII.</li>
+<li>es &#8211; Spanish</li>
+<li>fr &#8211; French</li>
+<li>ja &#8211; Japanese</li>
+<li>pt-BR &#8211; Brazilian Portuguese</li>
+<li>ru &#8211; Russian</li>
+<li>zh-CN &#8211; Simplified Chinese.</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="geoip2.webservice.Client.city">
+<code class="descname">city</code><span class="sig-paren">(</span><em>ip_address='me'</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.webservice.Client.city" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method calls the GeoIP2 Precision City endpoint.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ip_address</strong> &#8211; IPv4 or IPv6 address as a string. If no
+address is provided, the address that the web service is
+called from will be used.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#geoip2.models.City" title="geoip2.models.City"><code class="xref py py-class docutils literal"><span class="pre">geoip2.models.City</span></code></a> object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geoip2.webservice.Client.country">
+<code class="descname">country</code><span class="sig-paren">(</span><em>ip_address='me'</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.webservice.Client.country" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method calls the GeoIP2 Country endpoint.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ip_address</strong> &#8211; IPv4 or IPv6 address as a string. If no address
+is provided, the address that the web service is called from will
+be used.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#geoip2.models.Country" title="geoip2.models.Country"><code class="xref py py-class docutils literal"><span class="pre">geoip2.models.Country</span></code></a> object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geoip2.webservice.Client.insights">
+<code class="descname">insights</code><span class="sig-paren">(</span><em>ip_address='me'</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.webservice.Client.insights" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method calls the GeoIP2 Precision: Insights endpoint.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ip_address</strong> &#8211; IPv4 or IPv6 address as a string. If no address
+is provided, the address that the web service is called from will
+be used.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#geoip2.models.Insights" title="geoip2.models.Insights"><code class="xref py py-class docutils literal"><span class="pre">geoip2.models.Insights</span></code></a> object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<span class="target" id="module-geoip2.models"></span><div class="section" id="models">
+<h2>Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h2>
+<p>These classes provide models for the data returned by the GeoIP2
+web service and databases.</p>
+<p>The only difference between the City and Insights model classes is which
+fields in each record may be populated. See
+<a class="reference external" href="http://dev.maxmind.com/geoip/geoip2/web-services">http://dev.maxmind.com/geoip/geoip2/web-services</a> for more details.</p>
+<dl class="class">
+<dt id="geoip2.models.AnonymousIP">
+<em class="property">class </em><code class="descclassname">geoip2.models.</code><code class="descname">AnonymousIP</code><span class="sig-paren">(</span><em>raw</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.models.AnonymousIP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model class for the GeoIP2 Anonymous IP</p>
+<p>This class provides the following attribute:</p>
+<dl class="attribute">
+<dt id="geoip2.models.AnonymousIP.is_anonymous">
+<code class="descname">is_anonymous</code><a class="headerlink" href="#geoip2.models.AnonymousIP.is_anonymous" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is true if the IP address belongs to any sort of anonymous network.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.AnonymousIP.is_anonymous_vpn">
+<code class="descname">is_anonymous_vpn</code><a class="headerlink" href="#geoip2.models.AnonymousIP.is_anonymous_vpn" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is true if the IP address belongs to an anonymous VPN system.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.AnonymousIP.is_hosting_provider">
+<code class="descname">is_hosting_provider</code><a class="headerlink" href="#geoip2.models.AnonymousIP.is_hosting_provider" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is true if the IP address belongs to a hosting provider.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.AnonymousIP.is_public_proxy">
+<code class="descname">is_public_proxy</code><a class="headerlink" href="#geoip2.models.AnonymousIP.is_public_proxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is true if the IP address belongs to a public proxy.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.AnonymousIP.is_tor_exit_node">
+<code class="descname">is_tor_exit_node</code><a class="headerlink" href="#geoip2.models.AnonymousIP.is_tor_exit_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is true if the IP address is a Tor exit node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.AnonymousIP.ip_address">
+<code class="descname">ip_address</code><a class="headerlink" href="#geoip2.models.AnonymousIP.ip_address" title="Permalink to this definition">¶</a></dt>
+<dd><p>The IP address used in the lookup.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.models.City">
+<em class="property">class </em><code class="descclassname">geoip2.models.</code><code class="descname">City</code><span class="sig-paren">(</span><em>raw_response</em>, <em>locales=None</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.models.City" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model for the GeoIP2 Precision: City and the GeoIP2 City database
+.. attribute:: city</p>
+<blockquote>
+<div><p>City object for the requested IP address.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.City" title="geoip2.records.City"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.City</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="attribute">
+<dt id="geoip2.models.City.continent">
+<code class="descname">continent</code><a class="headerlink" href="#geoip2.models.City.continent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Continent object for the requested IP address.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Continent" title="geoip2.records.Continent"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.Continent</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.City.country">
+<code class="descname">country</code><a class="headerlink" href="#geoip2.models.City.country" title="Permalink to this definition">¶</a></dt>
+<dd><p>Country object for the requested IP address. This record represents the
+country where MaxMind believes the IP is located.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Country" title="geoip2.records.Country"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.Country</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.City.location">
+<code class="descname">location</code><a class="headerlink" href="#geoip2.models.City.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Location object for the requested IP address.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.City.maxmind">
+<code class="descname">maxmind</code><a class="headerlink" href="#geoip2.models.City.maxmind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Information related to your MaxMind account.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.MaxMind" title="geoip2.records.MaxMind"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.MaxMind</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.City.registered_country">
+<code class="descname">registered_country</code><a class="headerlink" href="#geoip2.models.City.registered_country" title="Permalink to this definition">¶</a></dt>
+<dd><p>The registered country object for the requested IP address. This record
+represents the country where the ISP has registered a given IP block in
+and may differ from the user&#8217;s country.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Country" title="geoip2.records.Country"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.Country</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.City.represented_country">
+<code class="descname">represented_country</code><a class="headerlink" href="#geoip2.models.City.represented_country" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object for the country represented by the users of the IP address
+when that country is different than the country in <code class="docutils literal"><span class="pre">country</span></code>. For
+instance, the country represented by an overseas military base.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.RepresentedCountry" title="geoip2.records.RepresentedCountry"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.RepresentedCountry</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.City.subdivisions">
+<code class="descname">subdivisions</code><a class="headerlink" href="#geoip2.models.City.subdivisions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object (tuple) representing the subdivisions of the country to which
+the location of the requested IP address belongs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Subdivisions" title="geoip2.records.Subdivisions"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.Subdivisions</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.City.traits">
+<code class="descname">traits</code><a class="headerlink" href="#geoip2.models.City.traits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object with the traits of the requested IP address.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Traits" title="geoip2.records.Traits"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.Traits</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.models.ConnectionType">
+<em class="property">class </em><code class="descclassname">geoip2.models.</code><code class="descname">ConnectionType</code><span class="sig-paren">(</span><em>raw</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.models.ConnectionType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model class for the GeoIP2 Connection-Type</p>
+<p>This class provides the following attribute:</p>
+<dl class="attribute">
+<dt id="geoip2.models.ConnectionType.connection_type">
+<code class="descname">connection_type</code><a class="headerlink" href="#geoip2.models.ConnectionType.connection_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>The connection type may take the following values:</p>
+<ul class="simple">
+<li>Dialup</li>
+<li>Cable/DSL</li>
+<li>Corporate</li>
+<li>Cellular</li>
+</ul>
+<p>Additional values may be added in the future.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.ConnectionType.ip_address">
+<code class="descname">ip_address</code><a class="headerlink" href="#geoip2.models.ConnectionType.ip_address" title="Permalink to this definition">¶</a></dt>
+<dd><p>The IP address used in the lookup.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.models.Country">
+<em class="property">class </em><code class="descclassname">geoip2.models.</code><code class="descname">Country</code><span class="sig-paren">(</span><em>raw_response</em>, <em>locales=None</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.models.Country" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model for the GeoIP2 Precision: Country and the GeoIP2 Country database</p>
+<p>This class provides the following attributes:</p>
+<dl class="attribute">
+<dt id="geoip2.models.Country.continent">
+<code class="descname">continent</code><a class="headerlink" href="#geoip2.models.Country.continent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Continent object for the requested IP address.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Continent" title="geoip2.records.Continent"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.Continent</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.Country.country">
+<code class="descname">country</code><a class="headerlink" href="#geoip2.models.Country.country" title="Permalink to this definition">¶</a></dt>
+<dd><p>Country object for the requested IP address. This record represents the
+country where MaxMind believes the IP is located.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Country" title="geoip2.records.Country"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.Country</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.Country.maxmind">
+<code class="descname">maxmind</code><a class="headerlink" href="#geoip2.models.Country.maxmind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Information related to your MaxMind account.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.MaxMind" title="geoip2.records.MaxMind"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.MaxMind</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.Country.registered_country">
+<code class="descname">registered_country</code><a class="headerlink" href="#geoip2.models.Country.registered_country" title="Permalink to this definition">¶</a></dt>
+<dd><p>The registered country object for the requested IP address. This record
+represents the country where the ISP has registered a given IP block in
+and may differ from the user&#8217;s country.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Country" title="geoip2.records.Country"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.Country</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.Country.represented_country">
+<code class="descname">represented_country</code><a class="headerlink" href="#geoip2.models.Country.represented_country" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object for the country represented by the users of the IP address
+when that country is different than the country in <code class="docutils literal"><span class="pre">country</span></code>. For
+instance, the country represented by an overseas military base.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.RepresentedCountry" title="geoip2.records.RepresentedCountry"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.RepresentedCountry</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.Country.traits">
+<code class="descname">traits</code><a class="headerlink" href="#geoip2.models.Country.traits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object with the traits of the requested IP address.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Traits" title="geoip2.records.Traits"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.Traits</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.models.Domain">
+<em class="property">class </em><code class="descclassname">geoip2.models.</code><code class="descname">Domain</code><span class="sig-paren">(</span><em>raw</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.models.Domain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model class for the GeoIP2 Domain</p>
+<p>This class provides the following attribute:</p>
+<dl class="attribute">
+<dt id="geoip2.models.Domain.domain">
+<code class="descname">domain</code><a class="headerlink" href="#geoip2.models.Domain.domain" title="Permalink to this definition">¶</a></dt>
+<dd><p>The domain associated with the IP address.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.Domain.ip_address">
+<code class="descname">ip_address</code><a class="headerlink" href="#geoip2.models.Domain.ip_address" title="Permalink to this definition">¶</a></dt>
+<dd><p>The IP address used in the lookup.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.models.ISP">
+<em class="property">class </em><code class="descclassname">geoip2.models.</code><code class="descname">ISP</code><span class="sig-paren">(</span><em>raw</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.models.ISP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model class for the GeoIP2 ISP</p>
+<p>This class provides the following attribute:</p>
+<dl class="attribute">
+<dt id="geoip2.models.ISP.autonomous_system_number">
+<code class="descname">autonomous_system_number</code><a class="headerlink" href="#geoip2.models.ISP.autonomous_system_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>The autonomous system number associated with the IP address.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.ISP.autonomous_system_organization">
+<code class="descname">autonomous_system_organization</code><a class="headerlink" href="#geoip2.models.ISP.autonomous_system_organization" title="Permalink to this definition">¶</a></dt>
+<dd><p>The organization associated with the registered autonomous system number
+for the IP address.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.ISP.isp">
+<code class="descname">isp</code><a class="headerlink" href="#geoip2.models.ISP.isp" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the ISP associated with the IP address.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.ISP.organization">
+<code class="descname">organization</code><a class="headerlink" href="#geoip2.models.ISP.organization" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the organization associated with the IP address.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.ISP.ip_address">
+<code class="descname">ip_address</code><a class="headerlink" href="#geoip2.models.ISP.ip_address" title="Permalink to this definition">¶</a></dt>
+<dd><p>The IP address used in the lookup.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.models.Insights">
+<em class="property">class </em><code class="descclassname">geoip2.models.</code><code class="descname">Insights</code><span class="sig-paren">(</span><em>raw_response</em>, <em>locales=None</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.models.Insights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model for the GeoIP2 Precision: Insights web service endpoint</p>
+<dl class="attribute">
+<dt id="geoip2.models.Insights.city">
+<code class="descname">city</code><a class="headerlink" href="#geoip2.models.Insights.city" title="Permalink to this definition">¶</a></dt>
+<dd><p>City object for the requested IP address.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.City" title="geoip2.records.City"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.City</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.Insights.continent">
+<code class="descname">continent</code><a class="headerlink" href="#geoip2.models.Insights.continent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Continent object for the requested IP address.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Continent" title="geoip2.records.Continent"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.Continent</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.Insights.country">
+<code class="descname">country</code><a class="headerlink" href="#geoip2.models.Insights.country" title="Permalink to this definition">¶</a></dt>
+<dd><p>Country object for the requested IP address. This record represents the
+country where MaxMind believes the IP is located.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Country" title="geoip2.records.Country"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.Country</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.Insights.location">
+<code class="descname">location</code><a class="headerlink" href="#geoip2.models.Insights.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Location object for the requested IP address.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.Insights.maxmind">
+<code class="descname">maxmind</code><a class="headerlink" href="#geoip2.models.Insights.maxmind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Information related to your MaxMind account.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.MaxMind" title="geoip2.records.MaxMind"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.MaxMind</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.Insights.registered_country">
+<code class="descname">registered_country</code><a class="headerlink" href="#geoip2.models.Insights.registered_country" title="Permalink to this definition">¶</a></dt>
+<dd><p>The registered country object for the requested IP address. This record
+represents the country where the ISP has registered a given IP block in
+and may differ from the user&#8217;s country.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Country" title="geoip2.records.Country"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.Country</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.Insights.represented_country">
+<code class="descname">represented_country</code><a class="headerlink" href="#geoip2.models.Insights.represented_country" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object for the country represented by the users of the IP address
+when that country is different than the country in <code class="docutils literal"><span class="pre">country</span></code>. For
+instance, the country represented by an overseas military base.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.RepresentedCountry" title="geoip2.records.RepresentedCountry"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.RepresentedCountry</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.Insights.subdivisions">
+<code class="descname">subdivisions</code><a class="headerlink" href="#geoip2.models.Insights.subdivisions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object (tuple) representing the subdivisions of the country to which
+the location of the requested IP address belongs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Subdivisions" title="geoip2.records.Subdivisions"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.Subdivisions</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.models.Insights.traits">
+<code class="descname">traits</code><a class="headerlink" href="#geoip2.models.Insights.traits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object with the traits of the requested IP address.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Traits" title="geoip2.records.Traits"><code class="xref py py-class docutils literal"><span class="pre">geoip2.records.Traits</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.models.SimpleModel">
+<em class="property">class </em><code class="descclassname">geoip2.models.</code><code class="descname">SimpleModel</code><a class="headerlink" href="#geoip2.models.SimpleModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides basic methods for non-location models</p>
+</dd></dl>
+
+</div>
+<span class="target" id="module-geoip2.records"></span><div class="section" id="records">
+<h2>Records<a class="headerlink" href="#records" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="geoip2.records.City">
+<em class="property">class </em><code class="descclassname">geoip2.records.</code><code class="descname">City</code><span class="sig-paren">(</span><em>locales=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.records.City" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains data for the city record associated with an IP address</p>
+<p>This class contains the city-level data associated with an IP address.</p>
+<p>This record is returned by <code class="docutils literal"><span class="pre">city</span></code> and <code class="docutils literal"><span class="pre">insights</span></code>.</p>
+<p>Attributes:</p>
+<dl class="attribute">
+<dt id="geoip2.records.City.confidence">
+<code class="descname">confidence</code><a class="headerlink" href="#geoip2.records.City.confidence" title="Permalink to this definition">¶</a></dt>
+<dd><p>A value from 0-100 indicating MaxMind&#8217;s
+confidence that the city is correct. This attribute is only available
+from the Insights end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.City.geoname_id">
+<code class="descname">geoname_id</code><a class="headerlink" href="#geoip2.records.City.geoname_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>The GeoName ID for the city.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.City.name">
+<code class="descname">name</code><a class="headerlink" href="#geoip2.records.City.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the city based on the locales list passed to the
+constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.City.names">
+<code class="descname">names</code><a class="headerlink" href="#geoip2.records.City.names" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary where the keys are locale codes
+and the values are names.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.records.Continent">
+<em class="property">class </em><code class="descclassname">geoip2.records.</code><code class="descname">Continent</code><span class="sig-paren">(</span><em>locales=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.records.Continent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains data for the continent record associated with an IP address</p>
+<p>This class contains the continent-level data associated with an IP
+address.</p>
+<p>Attributes:</p>
+<dl class="attribute">
+<dt id="geoip2.records.Continent.code">
+<code class="descname">code</code><a class="headerlink" href="#geoip2.records.Continent.code" title="Permalink to this definition">¶</a></dt>
+<dd><p>A two character continent code like &#8220;NA&#8221; (North America)
+or &#8220;OC&#8221; (Oceania).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Continent.geoname_id">
+<code class="descname">geoname_id</code><a class="headerlink" href="#geoip2.records.Continent.geoname_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>The GeoName ID for the continent.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Continent.name">
+<code class="descname">name</code><a class="headerlink" href="#geoip2.records.Continent.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the name of the continent based on the locales list passed to
+the constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Continent.names">
+<code class="descname">names</code><a class="headerlink" href="#geoip2.records.Continent.names" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary where the keys are locale codes
+and the values are names.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.records.Country">
+<em class="property">class </em><code class="descclassname">geoip2.records.</code><code class="descname">Country</code><span class="sig-paren">(</span><em>locales=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.records.Country" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains data for the country record associated with an IP address</p>
+<p>This class contains the country-level data associated with an IP address.</p>
+<p>Attributes:</p>
+<dl class="attribute">
+<dt id="geoip2.records.Country.confidence">
+<code class="descname">confidence</code><a class="headerlink" href="#geoip2.records.Country.confidence" title="Permalink to this definition">¶</a></dt>
+<dd><p>A value from 0-100 indicating MaxMind&#8217;s confidence that
+the country is correct. This attribute is only available from the
+Insights end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Country.geoname_id">
+<code class="descname">geoname_id</code><a class="headerlink" href="#geoip2.records.Country.geoname_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>The GeoName ID for the country.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Country.iso_code">
+<code class="descname">iso_code</code><a class="headerlink" href="#geoip2.records.Country.iso_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>The two-character <a class="reference external" href="http://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</a> alpha code for the
+country.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Country.name">
+<code class="descname">name</code><a class="headerlink" href="#geoip2.records.Country.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the country based on the locales list passed to the
+constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Country.names">
+<code class="descname">names</code><a class="headerlink" href="#geoip2.records.Country.names" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary where the keys are locale codes and the values
+are names.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.records.Location">
+<em class="property">class </em><code class="descclassname">geoip2.records.</code><code class="descname">Location</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.records.Location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains data for the location record associated with an IP address</p>
+<p>This class contains the location data associated with an IP address.</p>
+<p>This record is returned by <cite>city</cite> and <cite>insights</cite>.</p>
+<p>Attributes:</p>
+<dl class="attribute">
+<dt id="geoip2.records.Location.average_income">
+<code class="descname">average_income</code><a class="headerlink" href="#geoip2.records.Location.average_income" title="Permalink to this definition">¶</a></dt>
+<dd><p>The average income in US dollars associated with the requested IP address
+This attribute is only available from the Insights end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Location.accuracy_radius">
+<code class="descname">accuracy_radius</code><a class="headerlink" href="#geoip2.records.Location.accuracy_radius" title="Permalink to this definition">¶</a></dt>
+<dd><p>The radius in kilometers around the
+specified location where the IP address is likely to be. This attribute
+is only available from the Insights end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Location.latitude">
+<code class="descname">latitude</code><a class="headerlink" href="#geoip2.records.Location.latitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>The latitude of the location as a floating point number.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Location.longitude">
+<code class="descname">longitude</code><a class="headerlink" href="#geoip2.records.Location.longitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>The longitude of the location as a
+floating point number.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Location.metro_code">
+<code class="descname">metro_code</code><a class="headerlink" href="#geoip2.records.Location.metro_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>The metro code of the location if the
+location is in the US. MaxMind returns the same metro codes as the
+<a class="reference external" href="https://developers.google.com/adwords/api/docs/appendix/cities-DMAregions">Google AdWords API</a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="geoip2.records.Location.population_density">
+<code class="descname">population_density</code><a class="headerlink" href="#geoip2.records.Location.population_density" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>The estimated population per square kilometer associated with the IP
+address. This attribute is only available from the Insights end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Location.time_zone">
+<code class="descname">time_zone</code><a class="headerlink" href="#geoip2.records.Location.time_zone" title="Permalink to this definition">¶</a></dt>
+<dd><p>The time zone associated with location, as
+specified by the <a class="reference external" href="http://www.iana.org/time-zones">IANA Time Zone Database</a>, e.g., &#8220;America/New_York&#8221;.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.records.MaxMind">
+<em class="property">class </em><code class="descclassname">geoip2.records.</code><code class="descname">MaxMind</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.records.MaxMind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains data related to your MaxMind account</p>
+<p>Attributes:</p>
+<dl class="attribute">
+<dt id="geoip2.records.MaxMind.queries_remaining">
+<code class="descname">queries_remaining</code><a class="headerlink" href="#geoip2.records.MaxMind.queries_remaining" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of remaining queries you have
+for the end point you are calling.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.records.PlaceRecord">
+<em class="property">class </em><code class="descclassname">geoip2.records.</code><code class="descname">PlaceRecord</code><span class="sig-paren">(</span><em>locales=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.records.PlaceRecord" title="Permalink to this definition">¶</a></dt>
+<dd><p>All records with <code class="xref py py-attr docutils literal"><span class="pre">names</span></code> subclass <a class="reference internal" href="#geoip2.records.PlaceRecord" title="geoip2.records.PlaceRecord"><code class="xref py py-class docutils literal"><span class="pre">PlaceRecord</span></code></a></p>
+<dl class="attribute">
+<dt id="geoip2.records.PlaceRecord.name">
+<code class="descname">name</code><a class="headerlink" href="#geoip2.records.PlaceRecord.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dict with locale codes as keys and localized name as value</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.records.Postal">
+<em class="property">class </em><code class="descclassname">geoip2.records.</code><code class="descname">Postal</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.records.Postal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains data for the postal record associated with an IP address</p>
+<p>This class contains the postal data associated with an IP address.</p>
+<p>This attribute is returned by <code class="docutils literal"><span class="pre">city</span></code> and <code class="docutils literal"><span class="pre">insights</span></code>.</p>
+<p>Attributes:</p>
+<dl class="attribute">
+<dt id="geoip2.records.Postal.code">
+<code class="descname">code</code><a class="headerlink" href="#geoip2.records.Postal.code" title="Permalink to this definition">¶</a></dt>
+<dd><p>The postal code of the location. Postal
+codes are not available for all countries. In some countries, this will
+only contain part of the postal code.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Postal.confidence">
+<code class="descname">confidence</code><a class="headerlink" href="#geoip2.records.Postal.confidence" title="Permalink to this definition">¶</a></dt>
+<dd><p>A value from 0-100 indicating
+MaxMind&#8217;s confidence that the postal code is correct. This attribute is
+only available from the Insights end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.records.Record">
+<em class="property">class </em><code class="descclassname">geoip2.records.</code><code class="descname">Record</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.records.Record" title="Permalink to this definition">¶</a></dt>
+<dd><p>All records are subclasses of the abstract class <code class="docutils literal"><span class="pre">Record</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.records.RepresentedCountry">
+<em class="property">class </em><code class="descclassname">geoip2.records.</code><code class="descname">RepresentedCountry</code><span class="sig-paren">(</span><em>locales=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.records.RepresentedCountry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains data for the represented country associated with an IP address</p>
+<p>This class contains the country-level data associated with an IP address
+for the IP&#8217;s represented country. The represented country is the country
+represented by something like a military base.</p>
+<p>Attributes:</p>
+<dl class="attribute">
+<dt id="geoip2.records.RepresentedCountry.confidence">
+<code class="descname">confidence</code><a class="headerlink" href="#geoip2.records.RepresentedCountry.confidence" title="Permalink to this definition">¶</a></dt>
+<dd><p>A value from 0-100 indicating MaxMind&#8217;s confidence that
+the country is correct. This attribute is only available from the
+Insights end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.RepresentedCountry.geoname_id">
+<code class="descname">geoname_id</code><a class="headerlink" href="#geoip2.records.RepresentedCountry.geoname_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>The GeoName ID for the country.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.RepresentedCountry.iso_code">
+<code class="descname">iso_code</code><a class="headerlink" href="#geoip2.records.RepresentedCountry.iso_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>The two-character <a class="reference external" href="http://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</a> alpha code for the country.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.RepresentedCountry.name">
+<code class="descname">name</code><a class="headerlink" href="#geoip2.records.RepresentedCountry.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the country based on the locales list passed to the
+constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.RepresentedCountry.names">
+<code class="descname">names</code><a class="headerlink" href="#geoip2.records.RepresentedCountry.names" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary where the keys are locale codes and the values
+are names.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.RepresentedCountry.type">
+<code class="descname">type</code><a class="headerlink" href="#geoip2.records.RepresentedCountry.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>A string indicating the type of entity that is representing the
+country. Currently we only return <code class="docutils literal"><span class="pre">military</span></code> but this could expand to
+include other types in the future.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.records.Subdivision">
+<em class="property">class </em><code class="descclassname">geoip2.records.</code><code class="descname">Subdivision</code><span class="sig-paren">(</span><em>locales=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.records.Subdivision" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains data for the subdivisions associated with an IP address</p>
+<p>This class contains the subdivision data associated with an IP address.</p>
+<p>This attribute is returned by <code class="docutils literal"><span class="pre">city</span></code> and <code class="docutils literal"><span class="pre">insights</span></code>.</p>
+<p>Attributes:</p>
+<dl class="attribute">
+<dt id="geoip2.records.Subdivision.confidence">
+<code class="descname">confidence</code><a class="headerlink" href="#geoip2.records.Subdivision.confidence" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a value from 0-100 indicating MaxMind&#8217;s
+confidence that the subdivision is correct. This attribute is only
+available from the Insights end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Subdivision.geoname_id">
+<code class="descname">geoname_id</code><a class="headerlink" href="#geoip2.records.Subdivision.geoname_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a GeoName ID for the subdivision.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Subdivision.iso_code">
+<code class="descname">iso_code</code><a class="headerlink" href="#geoip2.records.Subdivision.iso_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a string up to three characters long
+contain the subdivision portion of the <a class="reference external" href="http://en.wikipedia.org/wiki/ISO_3166-2">ISO 3166-2 code</a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Subdivision.name">
+<code class="descname">name</code><a class="headerlink" href="#geoip2.records.Subdivision.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the subdivision based on the locales list passed to the
+constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Subdivision.names">
+<code class="descname">names</code><a class="headerlink" href="#geoip2.records.Subdivision.names" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary where the keys are locale codes and the
+values are names</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.records.Subdivisions">
+<em class="property">class </em><code class="descclassname">geoip2.records.</code><code class="descname">Subdivisions</code><span class="sig-paren">(</span><em>locales</em>, <em>*subdivisions</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.records.Subdivisions" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple-like collection of subdivisions associated with an IP address</p>
+<p>This class contains the subdivisions of the country associated with the
+IP address from largest to smallest.</p>
+<p>For instance, the response for Oxford in the United Kingdom would have
+England as the first element and Oxfordshire as the second element.</p>
+<p>This attribute is returned by <code class="docutils literal"><span class="pre">city</span></code> and <code class="docutils literal"><span class="pre">insights</span></code>.</p>
+<dl class="attribute">
+<dt id="geoip2.records.Subdivisions.most_specific">
+<code class="descname">most_specific</code><a class="headerlink" href="#geoip2.records.Subdivisions.most_specific" title="Permalink to this definition">¶</a></dt>
+<dd><p>The most specific (smallest) subdivision available.</p>
+<p>If there are no <a class="reference internal" href="#geoip2.records.Subdivision" title="geoip2.records.Subdivision"><code class="xref py py-class docutils literal"><span class="pre">Subdivision</span></code></a> objects for the response,
+this returns an empty <a class="reference internal" href="#geoip2.records.Subdivision" title="geoip2.records.Subdivision"><code class="xref py py-class docutils literal"><span class="pre">Subdivision</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#geoip2.records.Subdivision" title="geoip2.records.Subdivision"><code class="xref py py-class docutils literal"><span class="pre">Subdivision</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geoip2.records.Traits">
+<em class="property">class </em><code class="descclassname">geoip2.records.</code><code class="descname">Traits</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.records.Traits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains data for the traits record associated with an IP address</p>
+<p>This class contains the traits data associated with an IP address.</p>
+<p>This class has the following attributes:</p>
+<dl class="attribute">
+<dt id="geoip2.records.Traits.autonomous_system_number">
+<code class="descname">autonomous_system_number</code><a class="headerlink" href="#geoip2.records.Traits.autonomous_system_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference external" href="http://en.wikipedia.org/wiki/Autonomous_system_(Internet)">autonomous system
+number</a>
+associated with the IP address. This attribute is only available from
+the City and Insights web service end points.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Traits.autonomous_system_organization">
+<code class="descname">autonomous_system_organization</code><a class="headerlink" href="#geoip2.records.Traits.autonomous_system_organization" title="Permalink to this definition">¶</a></dt>
+<dd><p>The organization associated with the registered <a class="reference external" href="http://en.wikipedia.org/wiki/Autonomous_system_(Internet)">autonomous system
+number</a> for
+the IP address. This attribute is only available from the City and
+Insights web service end points.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Traits.domain">
+<code class="descname">domain</code><a class="headerlink" href="#geoip2.records.Traits.domain" title="Permalink to this definition">¶</a></dt>
+<dd><p>The second level domain associated with the
+IP address. This will be something like &#8220;example.com&#8221; or
+&#8220;example.co.uk&#8221;, not &#8220;foo.example.com&#8221;. This attribute is only available
+from the City and Insights web service end points.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Traits.ip_address">
+<code class="descname">ip_address</code><a class="headerlink" href="#geoip2.records.Traits.ip_address" title="Permalink to this definition">¶</a></dt>
+<dd><p>The IP address that the data in the model
+is for. If you performed a &#8220;me&#8221; lookup against the web service, this
+will be the externally routable IP address for the system the code is
+running on. If the system is behind a NAT, this may differ from the IP
+address locally assigned to it.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Traits.is_anonymous_proxy">
+<code class="descname">is_anonymous_proxy</code><a class="headerlink" href="#geoip2.records.Traits.is_anonymous_proxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is true if the IP is an anonymous
+proxy. See <a class="reference external" href="http://dev.maxmind.com/faq/geoip#anonproxy">http://dev.maxmind.com/faq/geoip#anonproxy</a> for further
+details.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.2.0: </span>Use our our <a class="reference external" href="https://www.maxmind.com/en/geoip2-anonymous-ip-databaseGeoIP2">GeoIP2 Anonymous IP database</a>
+instead.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Traits.is_satellite_provider">
+<code class="descname">is_satellite_provider</code><a class="headerlink" href="#geoip2.records.Traits.is_satellite_provider" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is true if the IP address is from a satellite provider that
+provides service to multiple countries.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version 2.2.0: </span>Use our our <a class="reference external" href="https://www.maxmind.com/en/geoip2-anonymous-ip-databaseGeoIP2">GeoIP2 Anonymous IP database</a>
+instead.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Traits.isp">
+<code class="descname">isp</code><a class="headerlink" href="#geoip2.records.Traits.isp" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the ISP associated with the IP address. This attribute is
+only available from the City and Insights web service end points.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Traits.organization">
+<code class="descname">organization</code><a class="headerlink" href="#geoip2.records.Traits.organization" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the organization associated with the IP address. This
+attribute is only available from the City and Insights web service end
+points.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geoip2.records.Traits.user_type">
+<code class="descname">user_type</code><a class="headerlink" href="#geoip2.records.Traits.user_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>The user type associated with the IP
+address. This can be one of the following values:</p>
+<ul class="simple">
+<li>business</li>
+<li>cafe</li>
+<li>cellular</li>
+<li>college</li>
+<li>content_delivery_network</li>
+<li>dialup</li>
+<li>government</li>
+<li>hosting</li>
+<li>library</li>
+<li>military</li>
+<li>residential</li>
+<li>router</li>
+<li>school</li>
+<li>search_engine_spider</li>
+<li>traveler</li>
+</ul>
+<p>This attribute is only available from the Insights end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<span class="target" id="module-geoip2.errors"></span><div class="section" id="errors">
+<h2>Errors<a class="headerlink" href="#errors" title="Permalink to this headline">¶</a></h2>
+<dl class="exception">
+<dt id="geoip2.errors.AddressNotFoundError">
+<em class="property">exception </em><code class="descclassname">geoip2.errors.</code><code class="descname">AddressNotFoundError</code><a class="headerlink" href="#geoip2.errors.AddressNotFoundError" title="Permalink to this definition">¶</a></dt>
+<dd><p>The address you were looking up was not found.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="geoip2.errors.AuthenticationError">
+<em class="property">exception </em><code class="descclassname">geoip2.errors.</code><code class="descname">AuthenticationError</code><a class="headerlink" href="#geoip2.errors.AuthenticationError" title="Permalink to this definition">¶</a></dt>
+<dd><p>There was a problem authenticating the request.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="geoip2.errors.GeoIP2Error">
+<em class="property">exception </em><code class="descclassname">geoip2.errors.</code><code class="descname">GeoIP2Error</code><a class="headerlink" href="#geoip2.errors.GeoIP2Error" title="Permalink to this definition">¶</a></dt>
+<dd><p>There was a generic error in GeoIP2.</p>
+<p>This class represents a generic error. It extends <code class="xref py py-exc docutils literal"><span class="pre">RuntimeError</span></code>
+and does not add any additional attributes.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="geoip2.errors.HTTPError">
+<em class="property">exception </em><code class="descclassname">geoip2.errors.</code><code class="descname">HTTPError</code><span class="sig-paren">(</span><em>message</em>, <em>http_status=None</em>, <em>uri=None</em><span class="sig-paren">)</span><a class="headerlink" href="#geoip2.errors.HTTPError" title="Permalink to this definition">¶</a></dt>
+<dd><p>There was an error when making your HTTP request.</p>
+<p>This class represents an HTTP transport error. It extends
+<a class="reference internal" href="#geoip2.errors.GeoIP2Error" title="geoip2.errors.GeoIP2Error"><code class="xref py py-exc docutils literal"><span class="pre">GeoIP2Error</span></code></a> and adds attributes of its own.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>http_status</strong> &#8211; The HTTP status code returned</li>
+<li><strong>uri</strong> &#8211; The URI queried</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="exception">
+<dt id="geoip2.errors.InvalidRequestError">
+<em class="property">exception </em><code class="descclassname">geoip2.errors.</code><code class="descname">InvalidRequestError</code><a class="headerlink" href="#geoip2.errors.InvalidRequestError" title="Permalink to this definition">¶</a></dt>
+<dd><p>The request was invalid.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="geoip2.errors.OutOfQueriesError">
+<em class="property">exception </em><code class="descclassname">geoip2.errors.</code><code class="descname">OutOfQueriesError</code><a class="headerlink" href="#geoip2.errors.OutOfQueriesError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Your account is out of funds for the service queried.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span>Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
+</ul>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body"><ol class="first loweralpha simple" start="3">
+<li>2014 by MaxMind, Inc.</li>
+</ol>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">license:</th><td class="field-body"><p class="first last">Apache License, Version 2.0</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">geoip2 2.2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014, MaxMind, Inc..
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

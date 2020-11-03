@@ -1,0 +1,22 @@
+{
+	"data":[
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"检测请求行中是否包含/models/category.php并且catid 参数中是否带有 SQL语句（select from）如果是，则判断为 Joomla! SQL注入尝试。将会阻断并设置相关参数","type":"CM漏洞攻击","iStatus":"1","time":"2016-01-30 10:00:00","rulesName":"Joomla! SQL注入尝试（1）","sTypeName":"CMS漏洞攻击 (387个规则集)"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"2","time":"2016-01-30 10:00:00","rulesName":"规则名称1","sTypeName":"组1"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"1","time":"2016-01-30 10:00:00","rulesName":"规则名称2","sTypeName":"组2"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"2","time":"2016-01-30 10:00:00","rulesName":"规则名称2","sTypeName":"组2"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"1","time":"2016-01-30 10:00:00","rulesName":"规则名称2","sTypeName":"组2"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"1","time":"2016-01-30 10:00:00","rulesName":"规则名称2","sTypeName":"组2"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"1","time":"2016-01-30 10:00:00","rulesName":"规则名称2","sTypeName":"组2"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"1","time":"2016-01-30 10:00:00","rulesName":"规则名称2","sTypeName":"组2"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"1","time":"2016-01-30 10:00:00","rulesName":"规则名称2","sTypeName":"组2"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"1","time":"2016-01-30 10:00:00","rulesName":"规则名称2","sTypeName":"组2"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"1","time":"2016-01-30 10:00:00","rulesName":"规则名称2","sTypeName":"组2"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"1","time":"2016-01-30 10:00:00","rulesName":"规则名称2","sTypeName":"组2"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"1","time":"2016-01-30 10:00:00","rulesName":"规则名称2","sTypeName":"组2"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"1","time":"2016-01-30 10:00:00","rulesName":"规则名称3","sTypeName":"组3"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"1","time":"2016-01-30 10:00:00","rulesName":"规则名称3","sTypeName":"组3"},
+	{"rulesID":"2005190","way":"默认动作","grade":"高危","beizhu":"站点组","type":"CM漏洞攻击","iStatus":"1","time":"2016-01-30 10:00:00","rulesName":"规则名称3","sTypeName":"组3"}
+					
+	],
+	"Total":"32"
+}

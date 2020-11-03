@@ -1,0 +1,7 @@
+
+## self study rules
+
+{% for ssrule in ssrules %}SecRule REQUEST_HEADERS:Host "@contains {{ssrule.host}}" "id:{{ssrule.id}},pass,chain,nolog,noauditlog"
+    SecRule REQUEST_URI "@contains {{ssrule.uri}}" "t:none,ctl:ruleRemoveById={{ssrule.realruleid}}"
+{% endfor %}
+

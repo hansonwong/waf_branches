@@ -1,0 +1,202 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+
+from logging import getLogger
+from sqlalchemy import func,and_
+from sqlalchemy.sql import func
+import datetime,time
+from db import WafSysInfo,WafNicsFlow,WafNicSet,WafBridge,License,WafRoute,WafNetflowHistory,WafScanTask,engine,Session,BaseConfig, row2dict
+
+class WafSessionManager():
+    #if tables not exist, create them
+    #WafSysInfo_base.metadata.create_all(engine)
+    def __init__(self):
+        self.sysSession = Session()
+
+    def __del__(self):
+        self.sysSession.close()
+        #getLogger("main").info("session closed")
+
+    """add a record to table t_nicset """
+    def AddNicInfo(self,nicinfo):
+        self.sysSession.merge(nicinfo)
+        self.sysSession.commit()
+
+    def AddNetFlowHistory(self,info):
+        self.sysSession.merge(info)
+        self.sysSession.commit()
+
+    def GetDaysFromYears(self,years):
+        ys = years/4
+        tmpdate= datetime.datetime.now()
+        days = 0
+        if ys < 1:
+            if tmpdate.year % 4 == 0:
+                days = 366
+            else:
+                days = 365
+        else:
+            if tmpdate.year % 4 == 0:               #
+                if years % 4 > 0:
+                    days = ys*(365*3 + 366)+ 366 + 365*(years % 4 - 1)
+                else:
+                    days = ys*(365*3 + 366)
+            else:
+                oneyear = datetime.timedelta(days=365)
+                t = 1
+                for i in range(1,4):
+                    tmp = tmpdate - oneyear
+                    if tmp.year % 4 == 0:
+                        t = i
+                        break
+                    else:
+                        tmpdate = tmpdate - oneyear
+                if (years - t) % 4 > 0:
+                    days = t*365 + (years - t)/4*(365*3 + 366)+ 366 + 365*((years - t) % 4 - 1)
+                else:
+                    days = t*365 + (years - t)/4*(365*3 + 366)
+        return days
+
+    def GetNicIpSetInfo(self,nicn):
+        tmpdic = {}
+        for instance in self.sysSession.query(WafNicSet).filter_by(nic = nicn) :
+            #if instance.ip or instance.gateway:  #nicn may be a bridge without setting ip
+            tmpdic[instance.nic] = (instance.ip,instance.mask,instance.gateway,instance.isstart)
+        return tmpdic
+
+    def GetBaseConfig(self):
+        baseconfig = self.sysSession.query(BaseConfig).first()
+        return row2dict(baseconfig)
+
+    def GetNicName(self):
+        tmplist = []
+        for instance in self.sysSession.query(WafNicSet):
+            tmplist.append(instance.nic)
+        return tmplist
+
+    def GetAllNicIpSetInfo(self):
+        tmpdic = {}
+        for instance in self.sysSession.query(WafNicSet):
+            tmpdic[instance.nic] = (instance.ip,instance.mask,instance.gateway,instance.isstart)
+        return tmpdic
+
+    def GetAllBridgeInfo(self):
+        tmpdic = {}
+        for ins in self.sysSession.query(WafBridge):
+            tmpdic[ins.name] = (ins.nics,ins.ageingtime,ins.stp,ins.forwarddelay,ins.maxage,ins.hellotime,ins.level)
+        return tmpdic
+
+    def GetAllBridgeNameInfo(self):
+        tmplist = []
+        for ins in self.sysSession.query(WafBridge.name):
+            #ins is a tuple
+            tmplist.append(ins[0])
+        return tmplist
+
+    def GetDefaultAdminNic(self):   # get default admin nic name such as 'eth0'
+        nicset = self.sysSession.query(WafNicSet).filter(WafNicSet.lan_type=='default_admin').first()
+        if nicset:
+            return nicset.nic
+        else:
+            return 'eth0'
+
+    def AddBridge(self,brg):
+        self.sysSession.merge(brg)
+        self.sysSession.commit()
+
+    def ClearAllBridge(self):
+        self.sysSession.query(WafBridge).delete()
+        self.sysSession.commit()
+
+    def GetBridgeInfo(self,brgname):
+        tmpdic = {}
+        for ins in self.sysSession.query(WafBridge).filter_by(name=brgname):
+            tmpdic[ins.name] = (ins.nics,ins.ageingtime,ins.stp,ins.forwarddelay,ins.maxage,ins.hellotime,ins.level)
+        return tmpdic
+
+    def AddLicense(self,lcs):
+        lcs_oldinfo = self.sysSession.query(License).order_by(License.sn).first()
+        if not lcs_oldinfo:
+            return
+        if lcs.sn != lcs_oldinfo.sn:
+            return
+        else:
+            self.sysSession.merge(lcs)
+            self.sysSession.commit()
+
+    def UpdateLicenseFile(self,filepath):
+        lcs = self.sysSession.query(License).order_by(License.sn).first()
+        if not lcs:
+            return
+        lcs.licensefile=filepath
+        self.sysSession.commit()
+
+    def AddRoute(self,routeinfo):
+        self.sysSession.merge(routeinfo)
+        self.sysSession.commit()
+
+    def GetRouteInfo(self,nicname,ipstr,maskstr,gtw):
+        tmplist = []
+        route = self.sysSession.query(WafRoute).filter(and_(WafRoute.nic == nicname,WafRoute.dest == ipstr,WafRoute.mask == maskstr,WafRoute.gateway == gtw))
+        for info in route:
+            tmplist.append(info)
+        return tmplist
+
+    def GetAllRouteInfo(self):
+        tmplist = []
+        route = self.sysSession.query(WafRoute)
+        for info in route:
+            tmplist.append(info)
+        return tmplist
+
+    def ClearAllRouteInfo(self):
+        self.sysSession.query(WafRoute).delete()
+        self.sysSession.commit()
+
+    def ClearAllNicInfo(self):
+        self.sysSession.query(WafNicSet).delete()
+        self.sysSession.commit()
+    
+    def ClearNicInfo(self, nicname):
+        self.sysSession.query(WafNicSet).filter(WafNicSet.nic == nicname).delete()
+        self.sysSession.commit()
+
+    def ClearAllBrgInfo(self):
+        self.sysSession.query(WafBridge).delete()
+        self.sysSession.commit()
+
+    def UpdateNicInfo(self, nicinfo, isall = True):
+        niset = self.sysSession.query(WafNicSet).filter(WafNicSet.nic == nicinfo.nic).first()
+        niset.nic = nicinfo.nic
+        niset.ip = nicinfo.ip
+        niset.mask = nicinfo.mask
+        niset.gateway = nicinfo.gateway
+        # edit by DDjian. to refresh nicset but not 'isstart'
+        if isall:
+            niset.isstart = nicinfo.isstart
+        niset.islink = nicinfo.islink
+        niset.workmode = nicinfo.workmode
+        niset.desc = nicinfo.desc
+        niset.brgname = nicinfo.brgname
+        niset.workpattern = niset.workpattern or "route"
+        self.sysSession.commit()
+
+    def GetAllNicset(self):
+        '''
+        获取所有网卡对象
+        '''
+        return self.sysSession.query(WafNicSet).all()
+
+    def GetNicNameByLan(self, lan_port):
+        nicset = self.sysSession.query(WafNicSet).filter(WafNicSet.lan_port == lan_port).first()
+        return nicset.nic
+
+    def GetNicNameByType(self, lan_type):
+        nic_names = []
+        for nicset in self.sysSession.query(WafNicSet).filter(WafNicSet.lan_type == lan_type):
+            nic_names.append(nicset.nic)
+        return nic_names
+    
+    def UpdateBridgeStatus(self, brgname, status):
+        self.sysSession.query(WafBridge).filter(WafBridge.name == brgname).update({WafBridge.status: status})
+        self.sysSession.commit()

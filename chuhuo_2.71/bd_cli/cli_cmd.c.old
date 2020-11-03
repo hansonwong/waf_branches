@@ -1,0 +1,1100 @@
+/***********************************************************************
+ *
+ *   Created on: May 4, 2016
+ *   Author: Gaobo
+ *
+ *		
+ ************************************************************************/
+
+/** bd cli cmd  code goes into this file */
+
+#include <arpa/inet.h>
+#include <net/if_arp.h>
+#include <sys/ioctl.h>
+#include <sys/socket.h>
+
+#include "cli.h"
+#include "cli_log.h"
+
+#include "inifile.h"
+
+#include <sys/types.h>
+#include <sys/wait.h>
+
+/* processing commands that are implemented in this file can be declared here */
+static void process_help_cmd(char *cmd_line);
+static void process_logout_cmd(char *cmd_line);
+static void process_reboot_cmd(char *cmd_line);
+static void process_shutdown_cmd(char *cmd_line);
+static void process_passwd_cmd(char *cmd_line);
+static void process_reset_cmd(char *cmd_line);
+static void process_factoryreset(char *cmd_line);
+static void process_ifconfig_cmd(char *cmd_line);
+static void process_arp_cmd(char *cmd_line);
+static void process_route_cmd(char *cmd_line);
+static void process_exit_on_idle_cmd(char *cmd_line);
+
+typedef void (*cli_cmd_fnc) (char *cmd_line);
+
+typedef struct {
+	char *cmd_name;
+	char *cmd_help;
+	unsigned char is_lock_needed;  /**< Framework will acquire lock before calling processing func */
+	cli_cmd_fnc cli_processing_func;
+} cli_cmd_item;
+
+#define LOCK_NEEDED TRUE
+
+#define USEPRINTF 0
+
+char *g_sql = NULL;
+MYSQL g_conn;
+int g_daemon = 0;
+
+char g_bddb_ip[64];
+int g_bddb_port = 3306;
+char g_bddb_user[64];
+char g_bddb_password[64];
+char g_bddb_name[64];
+char *inifile="/home/admin/bd_cli/config.ini";
+char *g_fileBuf = NULL;
+int g_fileBufLen = 0;
+int g_filesize = 0;
+int bInitMySQL = 0;
+
+static void trim_line_end(char *line);
+
+int initMySQL()
+{
+	if( bInitMySQL == 1 )
+		return 1;
+
+	if( !mysql_init( &g_conn ) )
+	{
+		if( g_daemon == 0 )
+			if( USEPRINTF ) printf("init mysql failed! no free memory!\n");
+		return 0;
+	}
+	if( g_daemon == 0 )
+		if( USEPRINTF ) printf("init mysql succeed!\n");
+
+	if( !mysql_real_connect(&g_conn, g_bddb_ip, g_bddb_user, g_bddb_password, g_bddb_name, g_bddb_port, NULL, 0) )
+	{
+		if( g_daemon == 0 )
+			if( USEPRINTF ) printf("mysql connect failed!: Error %u(%s)\n", mysql_errno(&g_conn), mysql_error(&g_conn));
+		mysql_close( &g_conn );
+		return 0;
+	}
+	if( g_daemon == 0 )
+		if( USEPRINTF ) printf("mysql connect succeed!\nversion=%d\n", (int)mysql_get_server_version(&g_conn));
+	mysql_set_character_set(&g_conn, "utf8");
+
+	if( mysql_select_db(&g_conn, g_bddb_name) )
+	{
+		if( g_daemon == 0 )
+			if( USEPRINTF ) printf("use database failed!: Error %u(%s)\n", mysql_errno(&g_conn), mysql_error(&g_conn));
+		mysql_close(&g_conn);
+		return 0;
+	}
+	if( g_daemon == 0 )
+		if( USEPRINTF ) printf("use database succeed!\n");
+
+	bInitMySQL = 1;
+	return 1;
+}
+
+void uinitMySQL()
+{
+	if( bInitMySQL == 1 )
+	{
+		mysql_close( &g_conn );
+		mysql_library_end();
+	}
+	bInitMySQL = 0;
+}
+
+
+int vas_bd_mysql_exec(char *sql)
+{
+	MYSQL mysql, *sock;
+
+	if( !mysql_init( &mysql ) )
+		return 0;
+
+	if( !(sock = mysql_real_connect(&mysql, g_bddb_ip, g_bddb_user, g_bddb_password, g_bddb_name, g_bddb_port, NULL, 0)) )
+	{
+		//fprintf(stderr, "Couldn't connect to engine!\n%s\n\n", mysql_error(&mysql));
+		return 0;
+	}
+
+	if( mysql_query(sock, sql) )
+	{
+		mysql_close( sock );
+		return 0;
+	}
+	else
+	{
+		mysql_close( sock );
+		return 1;
+	}
+}
+
+static const cli_cmd_item cli_cmd_table[] = {
+   { "?", "List of all commands.",     0,           process_help_cmd },
+   { "listcmd", "List of all commands.",  0,           process_help_cmd },
+   { "mgmtipconfig", "Config network", 0,        process_ifconfig_cmd },
+   { "adminpwdreset", "Change passwd.",   0, process_passwd_cmd },
+   { "ping", "ping",                     0,        NULL },
+   { "traceroute", "traceroute",                     0,        NULL },
+   { "arp", "arp",                      0,           process_arp_cmd },     
+   { "route", "route",                  LOCK_NEEDED, process_route_cmd },
+   { "reset", " Reset user data and config.",   0, process_reset_cmd },
+   { "factoryset", "Do factory reset",   0, process_factoryreset },
+   { "reboot", "Reboot the system.",   LOCK_NEEDED, process_reboot_cmd },
+   { "halt", "Shutdown the system.",   LOCK_NEEDED, process_shutdown_cmd },
+   { "exit", "Logout from CLI.",       0,           process_logout_cmd },
+   { "exitOnIdle", "get/set exit-on-idle timeout value (in seconds)", 0, process_exit_on_idle_cmd },
+};
+
+#define NUM_CLI_CMDS (sizeof(cli_cmd_table) / sizeof(cli_cmd_item))
+
+unsigned char cli_process_cmd(const char *cmd_line)
+{
+	int found=FALSE;
+	char compat_line[CLI_MAX_BUF_SZ] = {0};
+	int i, cmd_name_len, compat_line_len;
+
+	read_profile_string("database", "bddb_ip", g_bddb_ip, 64, "127.0.0.1", inifile);
+	g_bddb_port = read_profile_int("database", "bddb_port", 3306, inifile);
+	read_profile_string("database", "bddb_user", g_bddb_user, 64, "root", inifile);
+	read_profile_string("database", "bddb_password", g_bddb_password, 64, "bd123456", inifile);
+	read_profile_string("database", "bddb_name", g_bddb_name, 64, "db_firewall", inifile);
+	
+    strcpy(compat_line, cmd_line);
+
+   	/*
+    	* Figure out the length of the command (the first word).
+    	*/
+	compat_line_len = strlen(compat_line);
+	cmd_name_len = compat_line_len;
+	for (i=0; i < compat_line_len; i++)
+	{
+		if (compat_line[i] == ' ')
+		{
+			cmd_name_len = i;
+			break;
+		}
+	}
+
+	for (i=0; i < NUM_CLI_CMDS; i++)
+	{
+      /*
+       * Note that strcasecmp is used here, which means a command should not differ from
+       * another command only in capitalization.
+       */
+		if ((cmd_name_len == strlen(cli_cmd_table[i].cmd_name)) &&
+			(!strncasecmp(compat_line, cli_cmd_table[i].cmd_name, cmd_name_len)))
+      		{
+			if (cli_cmd_table[i].is_lock_needed) 
+			{
+		            
+			}
+
+			if (cli_cmd_table[i].cli_processing_func != NULL)
+			{
+				if (compat_line_len == cmd_name_len)
+				{
+					/* there is no additional args, just pass in null terminator */
+					(*(cli_cmd_table[i].cli_processing_func))(&(compat_line[cmd_name_len]));
+				}
+				else
+				{
+					/* pass the additional args to the processing func */
+					(*(cli_cmd_table[i].cli_processing_func))(&(compat_line[cmd_name_len + 1]));
+				}
+
+			}
+			else
+			{
+/*				if (!strncmp(cmd_line, "ifconfig", 8))
+				{
+					pid_t status;  
+	
+					fprintf(stderr,"cmd_line=%s\n",cmd_line);
+
+					status = system(cmd_line); 
+				}*/
+//				else
+//				{
+					system(compat_line);
+//				}
+			}
+
+			if (cli_cmd_table[i].is_lock_needed)
+			{
+			
+			}
+		 
+			found = TRUE;
+			break;
+		}
+	}
+	return found;
+}
+
+/*******************************************************************
+ *
+ * Command processing commands start here.
+ *
+ *******************************************************************
+ */
+
+void process_help_cmd(char *cmd_line __attribute((unused)))
+{
+	int i;
+
+	for (i=0; i < NUM_CLI_CMDS; i++)
+	{
+		printf("%s\r\n", cli_cmd_table[i].cmd_name);
+	}
+
+	return;
+}
+
+void process_logout_cmd(char *cmd_line __attribute__((unused)))
+{
+	cli_keep_looping = FALSE;
+	system("exit");	
+	return;
+
+}
+
+void process_reboot_cmd(char *cmd_line __attribute__((unused)))
+{
+	printf("\r\nThe system is being reboot. Please wait...\r\n");
+	fflush(stdout);
+	system("reboot");
+   	return;
+}
+
+void process_shutdown_cmd(char *cmd_line __attribute__((unused)))
+{
+	printf("\r\nThe system is being shutdown. Please wait...\r\n");
+	fflush(stdout);
+	system("shutdown -h now");
+   	return;
+}
+
+int cmd_user_check(char *username)
+{
+	char sql[512];
+	MYSQL_RES *res;
+	MYSQL_ROW row;
+	int ret = 0;
+	
+	if( initMySQL() == 0 )
+	{	
+		return 0;
+	}
+
+	sprintf(sql, "select sLoginAccount from m_tbaccount");
+	if( mysql_query(&g_conn, sql) )
+	{
+		uinitMySQL();
+		return 0;
+	}
+
+	res = mysql_store_result( &g_conn );
+	while( (row = mysql_fetch_row( res )) )
+	{
+		char *userName = row[0];
+
+		if( strcmp(userName, username) == 0 )
+		{
+			ret = 1;
+			break;
+		}				
+	}
+
+	mysql_free_result( res );
+	uinitMySQL();
+
+	return ret;
+}
+
+static int cli_isPasswd(const char *passwd)
+{
+    // weak password check
+    return 1;
+}
+
+static int safe_exec(const char *cmd)
+{
+    char currdir[512];
+
+    getcwd(currdir, 512);
+
+    system(cmd);
+
+    chdir(currdir);
+
+    return 1;
+}
+
+/***************************************************************************
+// Function Name: cmd_passwd_change
+// Description  : change passwd for user
+// Parameters   : userName - user.
+//                      passwd - passwd
+//                      msg - return error message
+// Returns      : 0 - failed.
+//                      1 -  success.
+****************************************************************************/
+int cmd_passwd_change(char *userName, char *passwd, char *msg) 
+{
+	char sql[512] = {'\0'}, cmd[512] = {'\0'};
+    char passWord[64] = "2334";
+
+	/*int i;
+	unsigned char md[16] = {0};
+	char tmp[3] = {'\0'},buf[33] = {'\0'};
+	
+	if (!cli_isPasswd(passwd))
+    {   
+      	strcpy(msg, "Invalid passwd.");
+      	return 0;
+    }
+
+    strcat(passWord, passwd);
+
+	MD5(passWord, strlen(passWord), md);
+	
+	for (i = 0; i < 16; i++)
+	{
+		sprintf(tmp, "%2.2x", md[i]);
+		strcat(buf, tmp);
+	}
+
+	sprintf(cmd, "\\php /home/admin/bd_cli/mdpass.php '%s' '%s'", userName, passwd);
+	system(cmd);*/
+
+    sprintf(cmd, "cd /Data/apps/wwwroot/firewall/apps/admin; /usr/bin/php "
+                 "/Data/apps/wwwroot/firewall/apps/admin/start loaddata getpasswd --username=\"%s\" --passwd=\"%s\"", userName, passwd);
+    safe_exec(cmd);
+
+	FILE *fp = fopen("/home/admin/bd_cli/passwd", "rb");
+    if (!fp)
+    {   
+      	strcpy(msg, "No passwd file.");
+        return 0;
+    }
+
+    memset(passWord, 0, sizeof(passWord));
+	fgets(passWord, 64, fp);
+	fclose(fp);
+    
+    trim_line_end(passWord);
+    
+	sprintf(sql, "update m_tbaccount set sPasswd='%s' where sLoginAccount='%s'", passWord, userName);
+	return vas_bd_mysql_exec( sql );
+}
+
+void cmd_passwd_help(int argc)
+{
+	if ( argc <= 1 )
+		fprintf(stdout,
+			"\nUsage: passwd <user name> <password>\n"
+			"       passwd --help\n");
+	else
+		fprintf(stderr, "passwd: invalid number of parameters " \
+		"for option '--help'\n");
+}
+
+void process_passwd_cmd(char *cmd_line)
+{
+	const int maxOpt=2;
+	signed int argc = 0;
+	char *argv[maxOpt];
+	char *last = NULL;
+	char msg[BUFLEN_64];
+
+	/* parse the command line and build the argument vector */
+	argv[0] = strtok_r(cmd_line, " ", &last);
+	if (argv[0] != NULL)
+	{
+		for (argc = 1; argc < maxOpt; argc++)
+		{
+			argv[argc] = strtok_r(NULL, " ", &last);
+			if (argv[argc] == NULL)
+				break;
+		}
+	}
+
+	if (argv[0] == NULL || argc != 2)
+	{
+		cmd_passwd_help(argc);
+	}
+	else if (cmd_user_check(argv[0]))
+	{  
+		if (cmd_passwd_change(argv[0], argv[1], msg) == 0)
+		{
+			fprintf(stderr, "passwd: %s\n", msg);
+		}
+	}
+	else if (strcasecmp(argv[0], "--help") == 0)
+	{
+		cmd_passwd_help(argc);
+	}
+	else 
+	{
+		fprintf(stderr, "\nInvalid user '%s'\n", argv[0]);
+	}
+	
+   return;
+}
+
+void process_datareset(char *cmd_line)
+{
+    char input;
+	char cmd[256];
+
+    printf("Are you sure you want to reset work data ?(y/n) ");
+
+    scanf("%c", &input);
+    if (input != 'y' && input != 'Y')
+        return;
+
+    printf("Please wait...\n");
+
+	sprintf(cmd, "\\cp -rf  /var/log/mysql/default-data/db_firewall_log/* /var/log/mysql/data/db_firewall_log/");
+	system(cmd);
+
+	sprintf(cmd, "\\cp -rf  /usr/local/mysql/default-data/db_firewall/* /usr/local/mysql/data/db_firewall/");
+	system(cmd);
+}
+
+void process_factoryreset(char *cmd_line)
+{
+    char input;
+	char cmd[256];
+
+    printf("Are you sure you want to reset the system ?(y/n) ");
+
+    scanf("%c", &input);
+    if (input != 'y' && input != 'Y')
+        return;
+
+    /* Also reset all working data */
+    //process_datareset(cmd_line);
+
+	sprintf(cmd, "\\python /usr/local/bluedon/backup_recover.py");
+	system(cmd);
+}
+
+void cmd_reset_data()
+{
+	if( initMySQL() == 0 )
+	{	
+		return;
+	}
+
+	char sql[512];
+	MYSQL_RES *res;
+	MYSQL_ROW row;
+	MYSQL_RES *rest;
+	MYSQL_ROW rowt;
+
+	sprintf(sql, "SELECT id FROM task_manage");
+	if( mysql_query(&g_conn, sql) )
+	{
+		if( g_daemon == 0 )
+			if( USEPRINTF ) printf("Can't get task_manage\n");
+		uinitMySQL();
+		return;
+	}
+	res = mysql_store_result( &g_conn );
+	while( (row = mysql_fetch_row( res )) )
+	{
+		printf("id=%s\n", row[0]);
+		char *taskid = row[0];
+					
+		//clear host and weak report
+		sprintf(sql, "drop table if exists `vul_details_%s`, `vul_details_%s_en`, `weak_pwd_details_%s`, `weak_pwd_details_%s_en`", taskid, taskid, taskid, taskid); 	
+		mysql_query(&g_conn, sql);	
+					
+		//clear web report
+		sprintf(sql, "drop table if exists `scan_result_%s`, `scan_result_%s_en`, `domain_list_%s`, `hostmsg_%s`, `url_list_%s`", taskid, taskid, taskid, taskid, taskid);		
+		mysql_query(&g_conn, sql);	
+					
+		//clear host msg report
+		sprintf(sql, "drop table if exists `task_%s`, `task_msg_%s`, `task_port_%s`", taskid, taskid, taskid);		
+		mysql_query(&g_conn, sql);	
+
+	}
+	
+	//clear task_manage
+	sprintf(sql, "delete from task_manage");		
+	mysql_query(&g_conn, sql);	
+
+	//clear template_manage
+	sprintf(sql, "delete from template_manage");		
+	mysql_query(&g_conn, sql);	
+	
+	//clear host_policy
+	sprintf(sql, "delete from host_policy where preset=0");		
+	mysql_query(&g_conn, sql);	
+	//clear web_policy
+	sprintf(sql, "delete from web_policy where preset=0");		
+	mysql_query(&g_conn, sql);	
+	//clear weak_policy
+	sprintf(sql, "delete from weak_policy where preset=0");		
+	mysql_query(&g_conn, sql);	
+	//clear port_manage
+	sprintf(sql, "delete from port_manage where preset=0");		
+	mysql_query(&g_conn, sql);	
+
+	//clear s_user
+	sprintf(sql, "delete from s_user where username<>'root' and username<>'admin' and username<>'sys_admin' and usename<>'sec_admin' and usename<>'sec_audit'");		
+	mysql_query(&g_conn, sql);	
+
+	//clear s_operatelog
+	sprintf(sql, "delete from s_operatelog");		
+	mysql_query(&g_conn, sql);	
+
+	//clear s_loglist
+	sprintf(sql, "delete from s_loglist");		
+	mysql_query(&g_conn, sql);	
+	
+	mysql_free_result( res );
+	uinitMySQL();
+}
+
+void cmd_reset_default()
+{
+	char sql[512];
+	char cmd[256];
+
+	//clear user data
+	cmd_reset_data();
+
+	//default passwd setting
+	sprintf(sql, "UPDATE s_user SET password='b466bf60ca64843e82349135c6d6a05a' WHERE username='admin'");
+	vas_bd_mysql_exec( sql );
+
+	sprintf(sql, "UPDATE s_user SET password='ab45b530205df9d2a92f612693849c25' WHERE username='root'");
+	vas_bd_mysql_exec( sql );
+	
+	sprintf(sql, "UPDATE s_user SET password='53298964771eac01bed423ea4e2fffec' WHERE username='sys_admin'");
+	vas_bd_mysql_exec( sql );
+
+	sprintf(sql, "UPDATE s_user SET password='75c3c7f0ef9954b9e361ff3a2a14c629' WHERE username='sec_admin'");
+	vas_bd_mysql_exec( sql );
+
+	sprintf(sql, "UPDATE s_user SET password='8a3e1de2f2350fcd85d2764e756458a5' WHERE username='sec_audit'");
+	vas_bd_mysql_exec( sql );
+
+	//reset login failed config
+	sprintf(sql, "UPDATE s_userconfig SET maxError=5, lockTime=15, iSessionTimeout=30 WHERE iId=1");
+	vas_bd_mysql_exec( sql );
+
+	//reset scan config
+	sprintf(sql, "UPDATE s_scanset SET allowIPs='', allow_login_ips='', smrws=0 WHERE iId=1");
+	vas_bd_mysql_exec( sql );
+
+	//reset network config
+	sprintf(sql, "delete from s_netport");
+	vas_bd_mysql_exec( sql );
+	
+	sprintf(sql, "INSERT INTO s_netport (ipaddress,subnetmask,netname,status) VALUES ('%s','%s','%s','%s')", "192.168.0.1", "255.255.255.0", "eth0", "UP");
+	vas_bd_mysql_exec( sql );
+
+	sprintf(sql, "INSERT INTO s_netport (ipaddress,subnetmask,netname,status) VALUES ('%s','%s','%s','%s')", "172.16.3.253", "255.255.255.0", "eth1", "UP");
+	vas_bd_mysql_exec( sql );
+
+	sprintf(sql, "INSERT INTO s_netport (ipaddress,subnetmask,netname,status) VALUES ('%s','%s','%s','%s')", "0.0.0.0", "255.255.255.0", "eth2", "DOWN");
+	vas_bd_mysql_exec( sql );
+	sprintf(sql, "INSERT INTO s_netport (ipaddress,subnetmask,netname,status) VALUES ('%s','%s','%s','%s')", "0.0.0.0", "255.255.255.0", "eth3", "DOWN");
+	vas_bd_mysql_exec( sql );
+	sprintf(sql, "INSERT INTO s_netport (ipaddress,subnetmask,netname,status) VALUES ('%s','%s','%s','%s')", "0.0.0.0", "255.255.255.0", "eth4", "DOWN");
+	vas_bd_mysql_exec( sql );
+	sprintf(sql, "INSERT INTO s_netport (ipaddress,subnetmask,netname,status) VALUES ('%s','%s','%s','%s')", "0.0.0.0", "255.255.255.0", "eth5", "DOWN");
+	vas_bd_mysql_exec( sql );
+
+	//reset static route config
+	sprintf(sql, "delete from s_staticroute2");
+	vas_bd_mysql_exec( sql );
+
+	//reset dns config
+	sprintf(cmd, "\\cp -rf /usr/local/nginx/html/config/data/system/default-cfg/dns.config /usr/local/nginx/html/config/data/system/");
+	system(cmd);
+
+	//reset log config
+	sprintf(cmd, "\\cp -rf /usr/local/nginx/html/config/data/system/default-cfg/lognum.config /usr/local/nginx/html/config/data/system/");
+	system(cmd);
+	
+	//reset passwd config
+	sprintf(cmd, "\\cp -rf /usr/local/nginx/html/config/data/system/default-cfg/pswstrategy.config /usr/local/nginx/html/config/data/system/");
+	system(cmd);
+
+	//reset mail config
+	sprintf(cmd, "\\cp -rf /usr/local/nginx/html/config/data/system/default-cfg/stmp.config /usr/local/nginx/html/config/data/system/");
+	system(cmd);
+
+	//reset weakpasswd config
+	//ftp weakpasswd
+	sprintf(cmd, "\\cp -rf /usr/local/nginx/html/config/weakpwdparam/ftp.dic /usr/local/nginx/html/config/weakpwdparam/ftp.config");
+	system(cmd);
+
+	//mysql weakpasswd
+	sprintf(cmd, "\\cp -rf /usr/local/nginx/html/config/weakpwdparam/mysql.dic /usr/local/nginx/html/config/weakpwdparam/mysql.config");
+	system(cmd);
+
+	//mssql weakpasswd
+	sprintf(cmd, "\\cp -rf /usr/local/nginx/html/config/weakpwdparam/mssql.dic /usr/local/nginx/html/config/weakpwdparam/mssql.config");
+	system(cmd);
+
+	//oracle weakpasswd
+	sprintf(cmd, "\\cp -rf /usr/local/nginx/html/config/weakpwdparam/oracle.dic /usr/local/nginx/html/config/weakpwdparam/oracle.config");
+	system(cmd);
+
+	//rdp weakpasswd
+	sprintf(cmd, "\\cp -rf /usr/local/nginx/html/config/weakpwdparam/rdp.dic /usr/local/nginx/html/config/weakpwdparam/rdp.config");
+	system(cmd);
+
+	//telnet weakpasswd
+	sprintf(cmd, "\\cp -rf /usr/local/nginx/html/config/weakpwdparam/telnet.dic /usr/local/nginx/html/config/weakpwdparam/telnet.config");
+	system(cmd);
+
+	//smb weakpasswd
+	sprintf(cmd, "\\cp -rf /usr/local/nginx/html/config/weakpwdparam/smb.dic /usr/local/nginx/html/config/weakpwdparam/smb.config");
+	system(cmd);
+
+	//ssh weakpasswd
+	sprintf(cmd, "\\cp -rf /usr/local/nginx/html/config/weakpwdparam/ssh.dic /usr/local/nginx/html/config/weakpwdparam/ssh.config");
+	system(cmd);
+
+	//vnc weakpasswd
+	sprintf(cmd, "\\cp -rf /usr/local/nginx/html/config/weakpwdparam/vnc.dic /usr/local/nginx/html/config/weakpwdparam/vnc.config");
+	system(cmd);
+
+}
+
+void cmd_reset_help(int argc)
+{
+	if ( argc <= 1 )
+		fprintf(stdout,
+		"\nUsage: reset data (Remove all working data)\n"
+		"       reset default (Do factory reset and the system will reboot)\n"
+		"       reset --help\n");
+	else
+		fprintf(stderr, "reset: invalid number of parameters " \
+		"for option '--help'\n");
+}
+
+void process_reset_cmd(char *cmd_line)
+{
+	const int maxOpt=1;
+	int argc = 0;
+	char *argv[maxOpt];
+	char *last = NULL;
+	int ret = 0;
+
+	/* parse the command line and build the argument vector */
+	argv[0] = strtok_r(cmd_line, " ", &last);
+	if (argv[0] != NULL)
+	{
+		for (argc = 1; argc < maxOpt; argc++)
+		{
+			argv[argc] = strtok_r(NULL, " ", &last);
+			if (argv[argc] == NULL)
+				break;
+		}
+	}
+
+    if (argv[0] == NULL)
+    {
+		cmd_reset_help(argc);
+    }
+    else if (strcasecmp(argv[0], "data") == 0)
+    {  
+		//cmd_reset_data();
+    }		 
+    else if (strcasecmp(argv[0], "default") == 0)
+    {  
+		cmd_reset_default();
+		system("reboot");
+    }
+    else if (strcasecmp(argv[0], "--help") == 0)
+    {
+		cmd_reset_help(argc);
+    }
+    else 
+    {
+         printf("\nInvalid option '%s'\n", argv[0]);
+    }
+	
+    return;
+}
+
+char *cmd_get_ipaddr(char *eth)
+{
+	FILE *fp;
+	char cmd[128], buf[1024];
+	char *pLine;
+	char *ipaddr = NULL;
+
+	//sprintf(cmd, "ifconfig %s|grep inet| sed -n '1p'|awk '{print $2}'|awk -F ':' '{print $2}'", eth);
+	sprintf(cmd, "ifconfig %s|grep inet| sed -n '1p'|awk '{print $2}'", eth);
+	fp = popen(cmd, "r");
+	if( fgets(buf, sizeof(buf), fp) != NULL )
+	{
+		ipaddr = strdup( buf );
+	}
+	
+	pclose( fp );
+	return ipaddr;
+}
+
+char *cmd_get_mask(char *eth)
+{
+	FILE *fp;
+	char cmd[128], buf[1024];
+	char *pLine;
+	char *mask = NULL;
+
+	//sprintf(cmd, "ifconfig %s|grep inet| sed -n '1p'|awk '{print $4}'|awk -F ':' '{print $2}'", eth);
+	sprintf(cmd, "ifconfig %s|grep inet| sed -n '1p'|awk '{print $4}'", eth);
+	fp = popen(cmd, "r");
+	if( fgets(buf, sizeof(buf), fp) != NULL )
+	{
+		mask = strdup( buf );
+	}
+	
+	pclose( fp );
+	return mask;
+}
+
+int cmd_get_eth_status(char *eth)
+{
+	FILE *fp;
+	char cmd[128], buf[1024];
+	char *pLine;
+
+	sprintf(cmd, "ifconfig %s | grep 'UP'", eth);
+	fp = popen(cmd, "r");
+	if( fgets(buf, sizeof(buf), fp) != NULL )
+	{
+		if( strstr(buf, "UP"))
+		{
+			pclose( fp );
+			return 1;
+		}
+	}
+	
+	pclose( fp );
+	return 0;
+}
+
+static void trim_line_end(char *line)
+{
+    size_t n;
+
+    if (!line)
+        return;
+
+    n = strlen(line);
+
+    while ((n-- > 0) && (line[n] == '\r' || line[n] == '\n'))
+    {
+        line[n] = '\0';
+    }
+}
+
+static int calc_ip_bits(const char *ip)
+{
+    int ret;
+    struct in_addr s;
+    int i, netmask_bits = 0;
+
+    ret = inet_pton(AF_INET, ip, (void *)&s);
+
+    for (i = 0; i < 32; i++)
+    {
+        if ((s.s_addr >> i) & 0x01)
+            netmask_bits++;
+    }
+
+    return  netmask_bits;
+}
+
+int cmd_set_ifeth(char *eth)
+{
+	char sql[512];
+	MYSQL_RES *res;
+	MYSQL_ROW row;
+	int ret = 0;
+	int ifstatus;
+
+	char *ipbuf = cmd_get_ipaddr( eth );
+	char *mkbuf = cmd_get_mask( eth );
+	int ifon = cmd_get_eth_status( eth );
+
+    trim_line_end(ipbuf);
+    trim_line_end(mkbuf);
+
+	if(ifon)
+	{
+		ifstatus = 1;
+	}
+	else
+	{
+		ifstatus = 0;
+	}
+	
+	if( initMySQL() == 0 )
+	{	
+		goto err0;
+	}
+
+	sprintf(sql, "SELECT id FROM m_tbnetport WHERE sPortName='%s'", eth);
+	
+	if( mysql_query(&g_conn, sql) )
+	{
+		goto err1;
+	}
+	
+	res = mysql_store_result( &g_conn );
+	if(! (row = mysql_fetch_row( res )) )
+	{
+		sprintf(sql, "INSERT INTO m_tbnetport (sIPV4Address,sPortName,iStatus) VALUES ('%s/%d','%s','%d')", ipbuf, calc_ip_bits(mkbuf), eth, ifstatus);
+	}
+	else
+	{
+		sprintf(sql, "Update m_tbnetport set sIPV4Address='%s/%d', iStatus='%d' WHERE sPortName='%s'", ipbuf, calc_ip_bits(mkbuf), ifstatus, eth);
+	}
+	
+	if (mysql_query(&g_conn, sql))
+    {
+        printf("failed to update netport table\n");
+    }
+	
+	mysql_free_result( res );
+    ret = 1;
+
+err1:
+	uinitMySQL();
+err0:
+    if (ipbuf)
+        free(ipbuf);
+    if (mkbuf)
+        free(mkbuf);
+
+	return ret;
+}
+
+void process_ifconfig_cmd(char *cmd_line)
+{
+	 const int maxOpt=4;
+	 signed int argc = 0;
+	 char *argv[maxOpt];
+	 char *last = NULL;
+	 char msg[BUFLEN_64];
+	 char cmdstr_line[CLI_MAX_BUF_SZ] = {0};
+
+     for (argc = 0; argc < maxOpt; argc++)
+     {
+         argv[argc] = NULL;
+     }
+	
+	 sprintf(cmdstr_line, "ifconfig %s" , cmd_line ? cmd_line : "");
+
+	 /* parse the command line and build the argument vector */
+	 argv[0] = strtok_r(cmd_line, " ", &last);
+	 if (argv[0] != NULL)
+	 {
+		 for (argc = 1; argc < maxOpt; argc++)
+		 {
+			 argv[argc] = strtok_r(NULL, " ", &last);
+			 if (argv[argc] == NULL)
+				 break;
+		 }
+	 }
+	 
+	 pid_t status = system(cmdstr_line); 
+					
+	if(status == -1)
+	{
+		fprintf(stderr, "system error\n");
+	}
+	else
+	{
+		if(WIFEXITED(status))
+		{
+			if(0 == WEXITSTATUS(status))
+			{
+//				fprintf(stderr, "run  successfully\n");
+				
+				if(argv[1] != NULL)
+				{
+					cmd_set_ifeth(argv[0]);
+				}
+			}
+			else
+			{
+				fprintf(stderr, "run failed %d \n",WEXITSTATUS(status));
+			}
+		}
+		else
+		{
+			fprintf(stderr, "exit code %d \n",WEXITSTATUS(status));
+		}					
+	}
+ 
+	return;
+}
+
+void cmd_arp_help(int argc)
+{
+	if ( argc <= 1 )
+		fprintf(stdout,
+		"\nUsage: arp show\n"
+		"       arp --help\n");
+	else
+		fprintf(stderr, "arp: invalid number of parameters " \
+		"for option '--help'\n");
+}
+void process_arp_cmd(char *cmd_line)
+{
+	const int maxOpt = 1;
+	signed int argc = 0;
+	char *argv[maxOpt];
+	char *last = NULL;
+	char msg[BUFLEN_64];
+
+	/* parse the command line and build the argument vector */
+	argv[0] = strtok_r(cmd_line, " ", &last);
+	if (argv[0] != NULL)
+	{
+		for (argc = 1; argc < maxOpt; argc++)
+		{
+			argv[argc] = strtok_r(NULL, " ", &last);
+			if (argv[argc] == NULL)
+				break;
+		}
+	}
+
+	if (argv[0] == NULL)
+	{
+		cmd_arp_help(argc);
+	}
+	else if (strcasecmp(argv[0], "show") == 0)
+	{  
+		if(argc != 1)
+			fprintf(stderr, "arp: invalid number of parameters " \
+			"for option 'show'\n");
+		else
+		{
+			printf("\n");
+			system("cat /proc/net/arp");
+			printf("\n");
+		}	
+	}
+	else if (strcasecmp(argv[0], "--help") == 0)
+	{
+		cmd_arp_help(argc);
+	}
+	else 
+	{
+		fprintf(stderr, "\nInvalid option '%s'\n", argv[0]);
+	}
+	return;
+}
+
+void process_route_cmd(char *cmd_line)
+{
+	char *pToken = NULL, *pLast = NULL;;
+	char argument[1][BUFLEN_32];
+	int i = 0;
+	unsigned char isGW = FALSE;
+	unsigned char isDEV = FALSE;
+	int isMetric = 0;
+	int ret = 0;
+
+	argument[0][0] = argument[1][0] = argument[2][0] = argument[3][0] = argument[4][0] = argument[5][0] = '\0';
+   
+	pToken = strtok_r(cmd_line, ", ", &pLast);
+	while ( pToken != NULL ) 
+	{
+		if (!strcmp(pToken, "gw"))
+		{
+			isGW = TRUE;
+		}
+		else if (!strcmp(pToken, "dev"))
+		{
+			isDEV = TRUE;
+		}
+		else if (!strcmp(pToken, "metric"))
+		{
+			isMetric = 1;
+		}
+		else
+		{
+			strcpy(&argument[i][0], pToken);
+			i++;
+		}
+	
+		pToken = strtok_r(NULL, ", ", &pLast);
+	}
+
+	if (!strcasecmp(&argument[0][0], "help") || !strcasecmp(&argument[0][0], "--help") || argument[0][0] == '\0')
+	{
+		printf("Usage: route show\n");
+		printf("       route --help\n");
+		return;
+	}
+
+	if(!strcasecmp(&argument[0][0], "show"))
+	{
+		FILE* fs = NULL;
+
+		/* execute command with err output to rterr */
+		system("route 2> /var/rterr");
+	  
+		fs = fopen("/var/rterr", "r");
+		if (fs != NULL) 
+		{
+			system("cat /var/rterr");
+			fclose(fs);
+			system("rm /var/rterr");
+		}
+
+		return;
+	}  
+	else 
+	{
+		printf("Invalid route command.\n");
+		return;
+	}
+		
+	return;
+}
+
+void process_exit_on_idle_cmd(char *cmd_line)
+{
+	if (!strncasecmp(cmd_line, "get", 3))
+	{
+		printf("current timout is %d seconds\n", exit_on_timeout);
+	}
+	else if (!strncasecmp(cmd_line, "set", 3))
+	{
+		exit_on_timeout = atoi(&(cmd_line[4]));
+		printf("timeout is set to %d seconds (for this session only, not saved to config)\n", exit_on_timeout);
+	}
+	else
+	{
+		printf("usage: exitOnIdle get\n");
+		printf("       exitOnIdle set <seconds>\n\n");
+	}
+
+	return;
+}

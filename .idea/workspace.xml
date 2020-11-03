@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="451df1b1-81b3-43be-8216-dc4b5de019b2" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/autom4te.cache/output.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/autom4te.cache/requests" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/autom4te.cache/traces.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/.deps/msc_test-config.Po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/.deps/msc_test-regex.Po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/.deps/msc_test-server.Po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/.deps/standalone_la-api.Plo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/.deps/standalone_la-buckets.Plo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/.deps/standalone_la-config.Plo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/.deps/standalone_la-filters.Plo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/.deps/standalone_la-hooks.Plo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/.deps/standalone_la-regex.Plo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/.deps/standalone_la-server.Plo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/Makefile.am" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/Makefile.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/api.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/config.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/ModSecurity/standalone/standalone.vcxproj.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/CHANGES" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/CHANGES.ru" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/configure" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/man/nginx.8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/premake.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/premake.sh.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/sftp-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/.tags" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/.tags_sorted_by_file" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/nginx.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/nginx.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_array.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_array.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_buf.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_buf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_conf_file.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_conf_file.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_connection.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_connection.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_core.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_cpuinfo.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_crc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_crc32.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_crc32.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_crypt.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_crypt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_cycle.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_cycle.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_file.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_file.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_hash.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_hash.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_inet.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_inet.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_list.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_list.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_log.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_log.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_md5.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_md5.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_murmurhash.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_murmurhash.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_open_file_cache.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_open_file_cache.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_output_chain.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_palloc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_palloc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_parse.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_parse.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_queue.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_queue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_radix_tree.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_radix_tree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_rbtree.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_rbtree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_regex.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_regex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_resolver.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_resolver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_sha1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_shmtx.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_shmtx.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_slab.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_slab.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_spinlock.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_string.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_string.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_tcputils.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_tcputils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_times.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/ngx_times.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/core/uthash.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_access_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_addition_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_auth_basic_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_autoindex_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_browser_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_charset_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_chunked_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_dav_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_degradation_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_empty_gif_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_fastcgi_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_flv_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_geo_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_geoip_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_gunzip_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_gzip_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_gzip_static_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_headers_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_image_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_index_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_limit_conn_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_limit_req_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_log_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_map_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_memcached_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_mp4_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_not_modified_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_proxy_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_random_index_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_range_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_realip_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_referer_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_rewrite_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_scgi_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_secure_link_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_split_clients_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_ssi_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_ssi_filter_module.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_ssl_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_ssl_module.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_static_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_stub_status_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_sub_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_upstream_ip_hash_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_upstream_keepalive_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_upstream_least_conn_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_userid_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_uwsgi_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/ngx_http_xslt_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/perl/Makefile.PL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/perl/nginx.pm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/perl/nginx.xs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/perl/ngx_http_perl_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/perl/ngx_http_perl_module.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/modules/perl/typemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_busy_lock.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_busy_lock.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_cache.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_copy_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_core_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_core_module.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_file_cache.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_header_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_parse.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_parse_time.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_postpone_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_request.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_request.c_bak_20170511" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_request.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_request_body.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_script.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_script.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_spdy.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_spdy.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_spdy_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_spdy_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_spdy_module.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_special_response.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_special_response.c_bak_20170511" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_upstream.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_upstream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_upstream_round_robin.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_upstream_round_robin.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_variables.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_variables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/http/ngx_http_write_filter_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/mail/ngx_mail.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/mail/ngx_mail_auth_http_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/mail/ngx_mail_core_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/mail/ngx_mail_imap_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/mail/ngx_mail_imap_module.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/mail/ngx_mail_parse.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/mail/ngx_mail_pop3_handler.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/mail/ngx_mail_pop3_module.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/mail/ngx_mail_proxy_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/mail/ngx_mail_smtp_handler.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/mail/ngx_mail_smtp_module.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/mail/ngx_mail_ssl_module.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/mail/ngx_mail_ssl_module.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_aio_read.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_aio_read_chain.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_aio_write.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_aio_write_chain.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_alloc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_alloc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_atomic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_channel.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_channel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_daemon.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_darwin.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_darwin_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_darwin_init.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_darwin_sendfile_chain.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_errno.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_errno.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_file_aio_read.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_files.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_files.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_freebsd.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_freebsd_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_freebsd_init.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_freebsd_rfork_thread.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_freebsd_rfork_thread.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_freebsd_sendfile_chain.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_gcc_atomic_amd64.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_gcc_atomic_ppc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_gcc_atomic_sparc64.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_gcc_atomic_x86.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_linux.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_linux_aio_read.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_linux_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_linux_init.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_linux_sendfile_chain.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_os.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_posix_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_posix_init.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_process.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_process.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_process_cycle.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_process_cycle.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_pthread_thread.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_readv_chain.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_recv.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_send.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_setaffinity.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_setaffinity.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_setproctitle.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_setproctitle.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_shmem.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_shmem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_socket.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_socket.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_solaris.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_solaris_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_solaris_init.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_solaris_sendfilev_chain.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_sunpro_amd64.il" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_sunpro_atomic_sparc64.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_sunpro_sparc64.il" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_sunpro_x86.il" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_thread.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_time.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_time.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_udp_recv.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_user.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_user.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/ngx_writev_chain.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/os/unix/rfork_thread.S" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.17/bluedon_waf/nginx-1.4.4/src/todo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/ByteStream/AbstractFilterableInputStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/ByteStream/ArrayByteStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/ByteStream/FileByteStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/ByteStream/TemporaryFileByteStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterReader/GenericFixedWidthReader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterReader/UsAsciiReader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterReader/Utf8Reader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterReaderFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterReaderFactory/SimpleCharacterReaderFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterStream/ArrayCharacterStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterStream/NgCharacterStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/EmbeddedFile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Encoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Encoder/Base64Encoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Encoder/QpEncoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Encoder/Rfc2231Encoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/CommandEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/CommandListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/Event.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/EventDispatcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/EventListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/EventObject.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/ResponseEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/ResponseListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/SendEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/SendListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/SimpleEventDispatcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/TransportChangeEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/TransportChangeListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/TransportExceptionEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/TransportExceptionListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/FailoverTransport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/ArrayKeyCache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/DiskKeyCache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/KeyCacheInputStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/NullKeyCache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/SimpleKeyCacheInputStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/LoadBalancedTransport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer/ArrayRecipientIterator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer/RecipientIterator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Attachment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/CharsetObserver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder/Base64ContentEncoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder/NativeQpContentEncoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder/PlainContentEncoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder/QpContentEncoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder/QpContentEncoderProxy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder/RawContentEncoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/EmbeddedFile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/EncodingObserver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Grammar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/HeaderEncoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/HeaderEncoder/Base64HeaderEncoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/HeaderEncoder/QpHeaderEncoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/HeaderFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/HeaderSet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/AbstractHeader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/DateHeader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/OpenDKIMHeader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/ParameterizedHeader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/PathHeader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/UnstructuredHeader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/MimeEntity.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/MimePart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ParameterizedHeader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/MimePart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/NullTransport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/AntiFloodPlugin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/BandwidthMonitorPlugin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Decorator/Replacements.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/DecoratorPlugin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/ImpersonatePlugin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Logger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/LoggerPlugin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Loggers/ArrayLogger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Loggers/EchoLogger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/MessageLogger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Pop/Pop3Connection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Pop/Pop3Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/PopBeforeSmtpPlugin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/RedirectingPlugin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Reporter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/ReporterPlugin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Reporters/HitReporter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Reporters/HtmlReporter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Sleeper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/ThrottlerPlugin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Timer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Preferences.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/ReplacementFilterFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/SignedMessage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/BodySigner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/DKIMSigner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/DomainKeySigner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/HeaderSigner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/OpenDKIMSigner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/SMimeSigner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/StreamFilters/ByteArrayReplacementFilter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/StreamFilters/StringReplacementFilter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/StreamFilters/StringReplacementFilterFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/CramMd5Authenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/LoginAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/NTLMAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/PlainAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/XOAuth2Authenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/AuthHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Authenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpTransport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/FailoverTransport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/IoBuffer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/LoadBalancedTransport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/MailInvoker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/MailTransport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/NullTransport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/SendmailTransport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/SimpleMailInvoker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/SmtpAgent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/SpoolTransport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/StreamBuffer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/dependency_maps/cache_deps.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/dependency_maps/message_deps.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/dependency_maps/mime_deps.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/lib/dependency_maps/transport_deps.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/IdenticalBinaryConstraint.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/StreamCollector.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/SwiftMailerSmokeTestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/SwiftMailerTestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/_samples/dkim/dkim.test.pub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/_samples/smime/create-cert.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/_samples/smime/encrypt2.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/_samples/smime/sign.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/_samples/smime/sign2.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/acceptance.conf.php.default" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug111Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug118Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug206Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug274Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug34Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug35Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug38Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug518Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug51Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug534Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug650Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug71Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug76Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/bug/Swift/BugFileByteStreamConsecutiveReadCallsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/smoke.conf.php.default" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/smoke/Swift/Smoke/AttachmentSmokeTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/smoke/Swift/Smoke/BasicSmokeTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/smoke/Swift/Smoke/HtmlWithAttachmentSmokeTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/smoke/Swift/Smoke/InternationalSmokeTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/ByteStream/ArrayByteStreamTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/CharacterReader/GenericFixedWidthReaderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/CharacterReader/UsAsciiReaderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/CharacterReader/Utf8ReaderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/CharacterStream/ArrayCharacterStreamTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/DependencyContainerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Encoder/Base64EncoderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Encoder/QpEncoderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Encoder/Rfc2231EncoderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Events/CommandEventTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Events/EventObjectTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Events/ResponseEventTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Events/SendEventTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Events/SimpleEventDispatcherTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Events/TransportChangeEventTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Events/TransportExceptionEventTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/KeyCache/ArrayKeyCacheTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/KeyCache/SimpleKeyCacheInputStreamTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mailer/ArrayRecipientIteratorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/MailerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/MessageTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/AbstractMimeEntityTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/AttachmentTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/ContentEncoder/Base64ContentEncoderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/ContentEncoder/PlainContentEncoderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/ContentEncoder/QpContentEncoderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/EmbeddedFileTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/HeaderEncoder/Base64HeaderEncoderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/HeaderEncoder/QpHeaderEncoderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/Headers/DateHeaderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/Headers/IdentificationHeaderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/Headers/MailboxHeaderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/Headers/ParameterizedHeaderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/Headers/PathHeaderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/Headers/UnstructuredHeaderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/MimePartTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/SimpleHeaderFactoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/SimpleHeaderSetTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/SimpleMessageTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/SimpleMimeEntityTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Plugins/AntiFloodPluginTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Plugins/BandwidthMonitorPluginTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Plugins/DecoratorPluginTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Plugins/LoggerPluginTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Plugins/Loggers/ArrayLoggerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Plugins/Loggers/EchoLoggerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Plugins/PopBeforeSmtpPluginTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Plugins/RedirectingPluginTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Plugins/ReporterPluginTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Plugins/Reporters/HitReporterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Plugins/Reporters/HtmlReporterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Plugins/ThrottlerPluginTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Signers/DKIMSignerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Signers/OpenDKIMSignerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Signers/SMimeSignerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/StreamFilters/ByteArrayReplacementFilterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/StreamFilters/StringReplacementFilterFactoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/StreamFilters/StringReplacementFilterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/AbstractSmtpEventSupportTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/AbstractSmtpTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/CramMd5AuthenticatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/LoginAuthenticatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/NTLMAuthenticatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/PlainAuthenticatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/AuthHandlerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/EsmtpTransport/ExtensionSupportTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/EsmtpTransportTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/FailoverTransportTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/LoadBalancedTransportTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/MailTransportTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/SendmailTransportTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuhuo_2.7/php/FrameWork/yii2/advanced/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/StreamBufferTest.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jlhedZpjgzXqeXiPOSDsZsl5of" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="451df1b1-81b3-43be-8216-dc4b5de019b2" name="默认的" comment="" />
+      <created>1604384681216</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604384681216</updated>
+      <workItem from="1604384682445" duration="337000" />
+      <workItem from="1604385028115" duration="1349000" />
+    </task>
+    <task id="LOCAL-00001" summary="first">
+      <created>1604385146838</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604385146838</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604384982902">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1604384982902" />
+    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1604385146816">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1604385146816" />
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1604384713844">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1604384713844" />
+    <state x="613" y="146" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1604385090182">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="613" y="146" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1604385090182" />
+    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604384760823">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1604384760823" />
+    <state x="570" y="319" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604384754443">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="570" y="319" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1604384754443" />
+  </component>
+</project>

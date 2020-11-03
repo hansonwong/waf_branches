@@ -1,0 +1,11 @@
+[Unit]
+Description=ipa-otpd socket
+
+[Socket]
+ListenStream=/var/run/krb5kdc/DEFAULT.socket
+ExecStopPre=/usr/bin/unlink /var/run/krb5kdc/DEFAULT.socket
+SocketMode=0600
+Accept=true
+
+[Install]
+WantedBy=krb5kdc.service

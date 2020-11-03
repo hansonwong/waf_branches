@@ -1,0 +1,14 @@
+[Unit]
+Description=Firewall bdwaf proxy service
+
+[Service]
+Type=forking
+User=root
+Group=root
+ExecStart=/usr/local/bdwaf/sbin/bdwaf.proxy -c /usr/local/bdwaf/conf_proxy/nginx.conf
+ExecReload=/usr/local/bdwaf/sbin/bdwaf.proxy -s reload -c /usr/local/bdwaf/conf_proxy/nginx.conf
+RestartSec=5
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

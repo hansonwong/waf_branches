@@ -1,0 +1,11 @@
+[
+    {"sTitle":"站点","data":"website"},
+    {"sTitle":"端口","data":"websiteport"},
+    {"sTitle":"站点组","data":"websitegroup"},
+    {"sTitle":"服务器数量","data":"fwqsl","width":100},    
+    {"sTitle":"是否是反向代理","data":"websitesl"},
+    {"sClass":"btn_edit","bVisible":false,"data":""},
+    {"sClass":"btn_view","bVisible":false,"data":""},
+    {"sClass":"btn_del","bVisible":false,"data":""},
+    {"sClass":"btn_setting","bVisible":false,"data":""}
+]

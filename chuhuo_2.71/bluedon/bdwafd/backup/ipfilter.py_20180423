@@ -1,0 +1,21 @@
+# !/usr/bin/env python
+# -*- coding:utf8 -*-
+
+from db import session_scope, IpFilterSet
+
+
+def ipfilter_set(args):
+    with open('/usr/local/bdwaf/conf/server_ip.conf', 'w') as f:
+        if not args:
+            with session_scope() as sess:
+                allip = sess.query(IpFilterSet.ip_addr_start, IpFilterSet.ip_addr_end).all()
+            for sip, eip in allip:
+                if eip:
+                    ipstr, _, sip_num = sip.rpartition('.')
+                    _, _, eip_num = eip.rpartition('.')
+                    for i in range(int(sip_num), int(eip_num)+1):
+                        f.write('{}.{}\n'.format(ipstr, i))
+                else:
+                    f.write('{}\n'.format(sip))
+        elif args[0] == 'EMPTY':
+            pass

@@ -1,0 +1,23 @@
+<?php
+return [
+    'notificationConfig' => '通知设置',
+    'addressor' => '发件人名称',
+    'addressorAccount' => '登录的帐号',
+    'addressorEmail' => '发件人邮箱',
+    'addressorEmailTips' => '以该名称发送,格式为EMAIL(可以和发件人邮箱相同)',
+    'addressorPwd' => '发件人密码',
+    'addressorLoginPwd' => '登录的密码',
+    'smtpServerAddr' => 'SMTP服务器地址',
+    'sendServer' => '发送服务器',
+    'smtpServerPort' => 'SMTP服务器端口',
+    'smtpServerAddrError' => 'SMTP服务器地址无效',
+    'sendPort' => '发送端口',
+    'addresseeEmail' => '收件人邮箱',
+    'receptionEmail' => '接收邮件的email',
+    'addresseePhone' => '收件人手机号码',
+    'receptionAlertPhone' => '接收报警的手机号码',
+    'notificationConfigTips' => '以上信息非常重要,请确保所填信息均无错误,否则无法发送/接收邮件、短信',
+    'addressorNameNotLoginAccount' => '发件人名称非登录帐号',
+    'enableGatewayEmailFunction' => '启用网关邮件功能',
+    'enablePhoneAlertFunction' => '启用手机报警功能',
+];

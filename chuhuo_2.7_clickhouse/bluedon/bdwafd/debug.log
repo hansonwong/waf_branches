@@ -1,0 +1,6 @@
+Wed Jan 21 11:12:38 2015 - 40003 - DEBUG 1 -  Plugin geoip: InitParams=GEOIP_STANDARD /usr/local/bluedon/awstats/etc/GeoIP.dat
+Wed Jan 21 11:12:38 2015 - 40003 - DEBUG 1 -  Plugin geoip: GeoIP initialized type=geoip mode=0 override=
+Wed Jan 21 11:12:38 2015 - 40003 - DEBUG 1 -  Plugin geoip_city_maxmind: InitParams=GEOIP_STANDARD /usr/local/bluedon/awstats/etc/GeoLiteCity.dat
+Wed Jan 21 11:12:38 2015 - 40003 - DEBUG 1 -  Plugin geoip_city_maxmind: GeoIP initialized type=geoip mode=0 override=
+Wed Jan 21 11:12:38 2015 - 40003 - DEBUG 1 -  Plugin geoip_org_maxmind: InitParams=GEOIP_STANDARD /usr/local/bluedon/awstats/etc/GeoIPASNum.dat
+Wed Jan 21 11:12:38 2015 - 40003 - DEBUG 1 -  Plugin geoip_org_maxmind: GeoIP initialized type=geoip mode=0

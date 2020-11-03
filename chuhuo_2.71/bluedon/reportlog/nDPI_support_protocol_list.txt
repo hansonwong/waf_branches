@@ -1,0 +1,215 @@
+  0,Others
+  1,FTP_CONTROL
+  2,POP3
+  3,SMTP
+  4,IMAP
+  5,DNS
+  6,youku
+  7,HTTP
+  8,MDNS
+  9,tonghuashun
+ 10,NetBIOS
+ 11,NFS
+ 12,SSDP
+ 13,BGP
+ 14,SNMP
+ 15,XDMCP
+ 16,SMB
+ 17,Syslog
+ 18,DHCP
+ 19,PostgreSQL
+ 20,MySQL
+ 21,TDS
+ 22,Direct_Download_Link
+ 23,POPS
+ 24,AppleJuice
+ 25,DirectConnect
+ 26,Socrates
+ 27,WinMX
+ 28,VMware
+ 29,SMTPS
+ 30,Filetopia
+ 31,iMESH
+ 32,Kontiki
+ 33,OpenFT
+ 34,FastTrack
+ 35,Gnutella
+ 36,eDonkey
+ 37,BitTorrent
+ 38,EPP
+ 39,AVI
+ 40,Flash
+ 41,OggVorbis
+ 42,MPEG
+ 43,QuickTime
+ 44,RealMedia
+ 45,WindowsMedia
+ 46,MMS
+ 47,Xbox
+ 48,QQ
+ 49,qqgame
+ 50,RTSP
+ 51,IMAPS
+ 52,IceCast
+ 53,PPLive
+ 54,PPStream
+ 55,Zattoo
+ 56,ShoutCast
+ 57,Sopcast
+ 58,Tvants
+ 59,TVUplayer
+ 60,HTTP_APPLICATION_VEOHTV
+ 61,QQLive
+ 62,Thunder
+ 63,Soulseek
+ 64,SSL_No_Cert
+ 65,IRC
+ 66,Ayiya
+ 67,Unencryped_Jabber
+ 68,MSN
+ 69,Oscar
+ 70,Yahoo
+ 71,BattleField
+ 72,Quake
+ 73,VRRP
+ 74,Steam
+ 75,HalfLife2
+ 76,WorldOfWarcraft
+ 77,Telnet
+ 78,STUN
+ 79,IPsec
+ 80,GRE
+ 81,ICMP
+ 82,IGMP
+ 83,EGP
+ 84,SCTP
+ 85,OSPF
+ 86,IP_in_IP
+ 87,RTP
+ 88,RDP
+ 89,VNC
+ 90,PcAnywhere
+ 91,SSL
+ 92,SSH
+ 93,Usenet
+ 94,MGCP
+ 95,IAX
+ 96,TFTP
+ 97,AFP
+ 98,Stealthnet
+ 99,Aimini
+100,SIP
+101,TruPhone
+102,ICMPV6
+103,DHCPV6
+104,Armagetron
+105,Crossfire
+106,Dofus
+107,Fiesta
+108,Florensia
+109,Guildwars
+110,HTTP_Application_ActiveSync
+111,Kerberos
+112,LDAP
+113,MapleStory
+114,MsSQL
+115,PPTP
+116,Warcraft3
+117,WorldOfKungFu
+118,Meebo
+119,Facebook
+120,Twitter
+121,DropBox
+122,GMail
+123,GoogleMaps
+124,YouTube
+125,Skype
+126,Google
+127,DCE_RPC
+128,NetFlow
+129,sFlow
+130,HTTP_Connect
+131,HTTP_Proxy
+132,Citrix
+133,NetFlix
+134,LastFM
+135,Waze
+136,SkyFile_PrePaid
+137,SkyFile_Rudics
+138,SkyFile_PostPaid
+139,Citrix_Online
+140,Apple
+141,Webex
+142,WhatsApp
+143,AppleiCloud
+144,Viber
+145,AppleiTunes
+146,Radius
+147,WindowsUpdate
+148,TeamViewer
+149,Tuenti
+150,LotusNotes
+151,SAP
+152,GTP
+153,UPnP
+154,LLMNR
+155,RemoteScan
+156,Spotify
+157,WebM
+158,H323
+159,OpenVPN
+160,NOE
+161,CiscoVPN
+162,TeamSpeak
+163,Tor
+164,CiscoSkinny
+165,RTCP
+166,RSYNC
+167,Oracle
+168,Corba
+169,UbuntuONE
+170,Whois-DAS
+171,Collectd
+172,SOCKS5
+173,SOCKS4
+174,RTMP
+175,FTP_DATA
+176,Wikipedia
+177,ZeroMQ
+178,Amazon
+179,eBay
+180,CNN
+181,Megaco
+182,Redis
+183,Pando_Media_Booster
+184,VHUA
+185,Telegram
+186,Vevo
+187,Pandora
+188,Quic
+189,WhatsAppVoice
+190,EAQ
+191,TIM_Meu
+192,Torcedor
+193,KakaoTalk
+194,KakaoTalk Voice
+195,Twitch
+196,QuickPlay
+197,TIM
+198,Mpegts
+199,Snapchat
+200,Simet
+201,OpenSignal
+202,99Taxi
+203,EasyTaxi
+204,GloboTV
+205,SomDeChamada
+206,TIM_Menu
+207,TIM_PortasAbertas
+208,TIM_Recarga
+209,TIM_Beta
+210,Deezer
+211,Instagram
+212,Microsoft
+213,Stracraft
+214,Teredo

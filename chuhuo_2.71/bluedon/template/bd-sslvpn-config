@@ -1,0 +1,32 @@
+proto tcp
+port {{ port }}
+dev tun
+ca /usr/local/sslvpn-1.0/sslvpn-main-components/cert-files/ca.crt
+cert /usr/local/sslvpn-1.0/sslvpn-main-components/cert-files/server.crt
+key /usr/local/sslvpn-1.0/sslvpn-main-components/cert-files/server.key
+dh /usr/local/sslvpn-1.0/sslvpn-main-components/cert-files/dh1024.pem
+
+server {{ config['server_addr'] }} {{ mask_str }}
+
+ifconfig-pool-persist /usr/local/sslvpn-1.0/sslvpn-main-components/server_config/ipp
+
+comp-lzo
+
+persist-key
+persist-tun
+
+management localhost 8010
+management-hold
+management-signal
+management-client
+management-client-auth
+management-query-passwords
+keepalive 10 60
+username-as-common-name
+
+client-config-dir /usr/local/sslvpn-1.0/sslvpn-main-components/ccd
+client-to-client
+reneg-sec 3600
+tran-window 300
+verb 3
+client-cert-not-required

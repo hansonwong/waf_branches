@@ -1,0 +1,24 @@
+[Unit]
+Description=bd_dropcaches
+After=rc-local.service
+#After=postgresql.service
+#After=memcached.service
+#After=redis.service
+
+[Service]
+# Modify these two values and uncomment them if you have
+# repos with lots of files and get an HTTP error 500 because
+# of that
+###
+#LimitMEMLOCK=infinity
+#LimitNOFILE=65535
+Type=simple
+User=root
+Group=root
+#WorkingDirectory=/usr/local/bluedon
+ExecStart=/home/ng_platform/sh/drop_cache.sh
+Restart=always
+#Environment=USER=git HOME=/home/git
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,42 @@
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+
+# For details see man 4 crontabs
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name  command to be executed
+
+# disable oom killer to kill server
+*/1  *  *  *  *   root    pgrep -f "/home/ng_platform/bd_dpdk_warper/server/mp_server" | while read PID;do echo -17 > /proc/$PID/oom_adj;done
+
+# clean cache, not use any more, modified 16-10-31
+# */1  *  *  *  *   root    sync && echo 3 > /proc/sys/vm/drop_caches
+
+# restart mp_server
+# */1  *  *  *  *   root    sh /home/ng_platform/sh/restart_server.sh &
+# */1  *  *  *  *   root    sh /home/ng_platform/sh/start_wifi_audit.sh
+# 0    0  *  *  *   root    python /usr/local/bluedon/mysql_log_backup.py
+
+# */1  *  *  *  *   root    python /usr/local/bluedon/cron_del_user.py
+
+# log_arch
+# 0    0  *  *  *   root    sh /usr/local/bluedon/log_bak.sh
+# 0    0  *  *  *   root    python /usr/local/bluedon/system/clearlog.py  
+# 0    1  *  *  *   root    /home/bdwaf/bdwaf_restart.sh
+# 0    1  *  *  *   root    /usr/local/bluedon/mysql_daemon_restart.sh
+03   *  *  *  *   root    python /usr/local/bluedon/monitor/sbin/checkproc.py
+*/10 *  *  *  *   root    python /usr/local/bluedon/bdwafd/cleardisk.py
+05   4  *  *  *   root    python /usr/local/bluedon/bdwafd/clogtable.py
+*/1  *  *  *  0   root    python /usr/local/bluedon/bdwafd/bdntpdate.py
+0    0  *  *  *   root    python /usr/local/bluedon/bdwafd/assetDiscovery.py
+1    0  *  *  *   root    python /usr/local/bluedon/bdwafd/write_record_log.py
+10   0  *  *  *   root    python /usr/local/bluedon/bdwafd/backupeveryday.py
+#* */6 * * *        root /home/cyren/src/avdeff_update_online/avdeff_update_online
+*/10   *  *  *  *   root    python /usr/local/bluedon/bdwafd/invadeinfo.py

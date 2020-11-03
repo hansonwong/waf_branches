@@ -1,0 +1,1203 @@
+2015-11-02 14:31:51 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:31:51 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:31:51 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:31:51 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:31:51 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:31:51 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:31:51 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:31:51 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:31:51 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:31:51 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:31:51 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:31:51 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:04 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:04 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:04 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:04 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:04 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:04 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:04 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:04 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:04 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:04 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:04 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:04 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:20 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:20 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:20 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:20 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:20 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:20 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:20 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:20 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:20 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:20 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:20 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:20 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:28 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:28 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:28 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:28 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:28 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:28 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:28 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:28 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:28 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:28 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:28 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:28 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:29 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:29 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:29 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:29 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:29 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:29 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:29 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:29 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:29 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:29 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:29 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:29 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:39 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:39 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:39 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:39 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:39 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:39 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:39 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:39 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:39 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:39 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:39 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:39 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:41 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:41 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:41 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:41 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:41 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:41 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:41 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:41 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:41 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:41 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:41 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:41 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:42 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:42 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:42 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:42 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:42 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:42 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:42 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:42 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:42 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:42 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:42 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:42 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:48 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:48 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:48 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:48 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:33:48 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:48 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:33:48 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:48 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:48 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:33:48 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:48 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:33:48 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:34:04 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:04 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:04 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:04 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:04 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:04 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:04 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:04 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:04 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:04 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:34:04 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:34:04 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:34:05 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:05 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:05 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:05 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:05 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:05 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:05 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:05 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:05 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:05 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:34:05 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:34:05 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:34:10 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:10 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:10 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:10 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:10 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:10 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:10 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:10 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:10 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:10 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='2'
+2015-11-02 14:34:10 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='2'
+2015-11-02 14:34:10 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='2'
+2015-11-02 14:34:20 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:20 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:20 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:20 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:20 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:20 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:20 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:20 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:20 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:20 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='2'
+2015-11-02 14:34:20 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='2'
+2015-11-02 14:34:20 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='2'
+2015-11-02 14:34:36 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:36 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:36 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:36 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:34:36 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:36 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:34:36 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:36 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:36 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:34:36 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='2'
+2015-11-02 14:34:36 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='2'
+2015-11-02 14:34:36 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='2'
+2015-11-02 14:40:47 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:47 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:47 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:47 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:47 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:47 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:47 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:47 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:47 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:47 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:47 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:47 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:48 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:48 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:48 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:48 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:48 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:48 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:48 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:48 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:48 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:48 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:48 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:48 [127.0.0.1][1][450dnbgjll0r55g0bd4s4q4l77][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\api\views\layouts\main.php:40
+2015-11-02 14:40:53 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:40:53 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:40:53 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:40:53 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:40:53 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:40:53 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:40:53 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:40:53 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:40:53 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:40:53 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:40:53 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:40:53 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:40:53 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:40:53 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:40:53 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:40:59 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:40:59 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:40:59 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:40:59 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:40:59 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:40:59 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:40:59 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:40:59 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:40:59 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:40:59 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:40:59 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:40:59 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:41:02 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:02 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:02 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:02 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:02 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:02 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:02 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:02 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:02 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:02 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:02 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:02 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:02 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:41:02 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:41:02 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:41:15 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:15 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:15 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:15 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:15 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:15 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:15 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:15 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:15 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:15 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:15 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:15 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:15 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:41:15 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:41:15 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:41:16 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:16 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:16 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:16 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:16 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:16 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:16 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:16 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:16 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:16 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:16 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:16 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:16 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:41:16 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:41:16 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:41:22 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:22 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:22 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:22 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:22 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:22 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:22 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:22 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:22 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:22 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:22 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:22 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:22 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:41:22 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:41:22 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:41:24 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:24 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:24 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:24 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:41:24 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:24 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:41:25 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:25 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:25 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:41:25 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:25 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:25 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:41:25 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:41:25 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:41:25 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:42:01 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:42:01 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:42:01 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:42:01 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:42:01 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:42:01 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:42:01 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:42:01 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:42:01 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:42:01 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:42:01 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:42:01 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:42:01 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:42:01 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:42:01 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:42:04 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:42:04 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:42:04 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:42:04 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:42:04 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:42:04 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:42:04 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:42:04 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:42:04 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:42:04 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:42:04 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:42:04 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:42:04 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:42:04 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:42:04 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:42:11 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:42:11 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:42:11 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:42:11 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:42:11 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:42:11 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:42:11 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:42:11 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:42:11 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:42:11 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:42:11 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:42:11 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:42:11 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:42:11 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:42:11 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:48:40 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:48:40 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:48:40 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:48:40 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:48:40 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:48:40 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:48:40 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:48:40 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:48:40 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:48:40 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:48:40 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:48:40 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:48:40 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:48:40 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:48:40 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:48:43 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:48:43 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:48:43 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:48:43 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:48:43 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:48:43 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:48:43 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:48:43 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:48:43 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:48:43 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:48:43 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:48:43 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:48:43 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:48:43 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:48:43 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:50:46 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:50:46 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:50:46 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:50:46 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:50:46 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:50:46 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:50:46 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:50:46 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:50:46 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:50:46 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:50:46 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:50:46 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:50:46 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:50:46 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:50:46 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:50:49 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:50:49 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:50:49 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:50:49 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:50:49 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:50:49 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:50:49 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:50:49 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:50:49 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 14:50:54 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:50:54 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:50:54 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:50:54 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:50:54 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:50:54 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:50:54 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:50:54 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:50:54 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:50:54 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:50:54 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:50:54 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:50:54 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:50:54 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:50:54 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:54:00 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:54:00 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:54:00 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:54:00 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:54:00 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:54:00 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:54:00 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:54:00 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:54:00 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:54:00 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:54:00 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:54:00 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:54:00 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:54:00 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:54:00 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:54:06 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:54:06 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:54:06 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:54:06 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:54:06 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:54:06 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:54:06 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:54:06 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:54:06 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:54:06 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:54:06 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:59:57 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:59:57 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:59:57 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:59:57 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 14:59:57 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:59:57 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 14:59:57 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:59:57 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:59:57 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 14:59:57 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:59:57 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:59:57 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 14:59:57 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:59:57 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 14:59:57 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:18:17 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:18:17 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:18:17 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:18:17 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:18:17 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:18:17 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:18:17 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:18:17 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:18:17 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:18:17 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:18:17 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:18:17 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:18:17 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:18:17 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:18:17 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:25:53 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:25:53 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:25:53 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:25:53 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:25:53 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:25:53 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:25:53 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:25:53 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:25:53 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:25:53 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:25:53 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:25:53 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:25:53 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:25:53 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:25:53 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:28:35 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:28:35 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:28:35 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:28:35 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:28:35 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:28:35 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:28:35 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:28:35 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:28:35 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:28:35 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:28:35 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:28:35 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:28:35 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:28:35 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:28:35 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:29:33 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:29:33 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:29:33 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:29:33 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:29:33 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:29:33 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:29:33 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:29:33 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:29:33 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:29:33 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:29:33 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:29:33 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:29:33 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:29:33 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:29:33 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:29:36 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:29:36 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:29:36 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:29:36 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:29:36 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:29:36 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:29:36 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:29:36 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:29:36 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:29:36 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:29:36 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:29:36 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:29:36 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:29:36 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:29:36 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:29:40 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:29:40 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:29:40 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:29:40 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:29:40 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:29:40 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:29:40 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:29:40 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:29:40 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:29:40 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 15:29:40 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 15:29:40 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 15:29:54 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:29:54 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:29:54 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:29:54 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:29:54 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:29:54 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:29:54 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:29:54 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:29:54 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:29:54 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 15:29:54 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 15:29:54 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 15:38:21 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:38:21 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:38:21 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:38:21 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:38:21 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:38:21 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:38:21 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:38:21 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:38:21 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:38:21 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 15:38:21 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 15:38:21 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 15:38:26 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:38:26 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:38:26 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:38:26 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:38:26 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:38:26 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:38:26 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:38:26 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:38:26 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:38:26 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:38:26 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:38:26 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:38:26 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:38:26 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:38:26 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:38:36 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:38:36 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:38:36 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:38:36 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:38:36 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:38:36 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:38:36 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:38:36 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:38:36 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:38:36 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:38:36 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:38:36 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:38:36 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:38:36 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:38:36 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:42:34 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:42:34 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:42:34 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:42:34 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:42:34 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:42:34 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:42:34 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:42:34 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:42:34 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:42:34 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:42:34 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:42:34 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:42:34 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:42:34 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:42:34 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:46:48 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:46:48 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:46:48 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:46:48 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 15:46:48 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:46:48 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 15:46:48 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:46:48 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:46:48 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 15:46:48 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:46:48 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:46:48 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 15:46:48 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:46:48 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 15:46:48 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:23:49 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:23:49 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:23:49 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:23:49 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:23:49 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:23:49 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:23:49 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:23:49 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:23:49 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:23:49 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:23:49 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:23:49 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:23:49 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:23:49 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:23:49 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:24:39 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:24:39 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:24:39 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:24:39 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:24:39 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:24:39 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:24:39 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:24:39 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:24:39 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:24:39 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:24:39 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:24:39 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:24:50 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:24:50 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:24:50 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:24:50 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:24:50 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:24:50 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:24:50 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:24:50 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:24:50 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:24:50 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:24:50 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:24:50 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:24:56 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:24:56 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:24:56 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:24:56 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:24:56 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:24:56 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:24:56 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:24:56 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:24:56 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:24:56 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:24:56 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:24:56 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:30:03 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:30:03 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:30:03 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:30:03 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:30:03 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:30:03 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:30:03 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:30:03 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:30:03 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:30:03 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:30:03 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:30:03 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:30:21 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:30:21 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:30:21 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:30:21 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:30:21 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:30:21 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:30:21 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:30:21 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:30:21 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:30:21 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:30:21 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:30:21 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:43:56 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:43:56 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:43:56 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:43:56 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:43:56 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:43:56 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:43:56 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:43:56 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:43:56 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:43:56 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:43:56 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:43:56 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:43:56 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:43:56 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:43:56 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:49:29 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:49:29 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:49:29 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:49:29 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:49:29 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:49:29 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:49:29 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:49:29 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:49:29 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:49:29 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:49:29 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:49:29 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:49:29 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:49:29 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:49:29 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:52:40 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:52:40 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:52:40 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:52:40 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-11-02 16:52:40 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:52:40 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:52:40 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:52:40 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:52:40 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+2015-11-02 16:52:40 [127.0.0.1][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:52:40 [127.0.0.1][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:52:40 [127.0.0.1][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+2015-11-02 16:52:40 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:52:40 [127.0.0.1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:52:40 [127.0.0.1][-][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:52:50 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:191
+2015-11-02 16:52:50 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:191
+2015-11-02 16:52:50 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:191
+2015-11-02 16:52:50 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:191
+2015-11-02 16:52:50 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:191
+2015-11-02 16:52:50 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:191
+2015-11-02 16:52:50 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:191
+2015-11-02 16:52:50 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:191
+2015-11-02 16:52:50 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:191
+2015-11-02 16:52:50 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:191
+2015-11-02 16:52:50 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:191
+2015-11-02 16:52:50 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:191
+2015-11-02 16:52:50 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:52:50 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:52:50 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `m_tbUser`
+2015-11-02 16:52:50 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:52:50 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:52:50 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` LIMIT 20
+2015-11-02 16:53:09 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:191
+2015-11-02 16:53:09 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:191
+2015-11-02 16:53:09 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:191
+2015-11-02 16:53:09 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:191
+2015-11-02 16:53:09 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:191
+2015-11-02 16:53:09 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:191
+2015-11-02 16:53:09 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:191
+2015-11-02 16:53:09 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:191
+2015-11-02 16:53:09 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:191
+2015-11-02 16:53:09 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:191
+2015-11-02 16:53:09 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:191
+2015-11-02 16:53:09 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:191
+2015-11-02 16:53:09 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:53:09 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:53:09 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:58:23 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 16:58:23 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 16:58:23 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 16:58:23 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 16:58:23 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 16:58:23 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 16:58:23 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 16:58:23 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 16:58:23 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 16:58:23 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 16:58:23 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 16:58:23 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 16:58:23 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:58:23 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:58:23 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:59:55 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 16:59:55 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 16:59:55 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 16:59:55 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 16:59:55 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 16:59:55 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 16:59:55 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 16:59:55 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 16:59:55 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 16:59:55 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 16:59:55 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 16:59:55 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 16:59:55 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:59:55 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 16:59:55 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:07:27 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:27 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:27 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:27 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:27 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:27 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:27 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:27 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:27 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:27 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:27 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:27 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:27 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:07:27 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:07:27 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:07:29 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:29 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:29 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:29 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:29 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:29 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:29 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:29 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:29 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:29 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:29 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:29 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:07:29 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:07:29 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:07:29 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:08:17 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:17 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:17 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:17 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:17 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:17 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:17 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:17 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:17 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:17 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:17 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:17 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:17 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:08:17 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:08:17 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:08:22 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:22 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:22 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:22 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:22 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:22 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:22 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:22 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:22 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:22 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:22 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:22 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:22 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:08:22 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:08:22 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:08:33 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:33 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:33 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:33 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:33 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:33 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:33 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:33 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:33 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:33 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:33 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:33 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:33 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:08:33 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:08:33 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:08:36 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:36 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:36 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:36 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:36 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:36 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:36 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:36 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:36 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:36 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:36 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:36 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:08:36 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:08:36 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:08:36 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:09:13 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:13 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:13 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:13 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:13 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:13 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:13 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:13 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:13 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:13 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:13 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:13 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:13 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:09:13 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:09:13 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:09:40 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:40 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:40 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:40 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:40 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:40 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:40 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:40 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:40 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:40 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:40 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:40 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:40 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:09:40 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:09:40 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:09:56 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:56 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:56 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:56 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:56 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:56 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:56 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:56 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:56 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:56 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:56 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:56 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:09:56 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:09:56 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:09:56 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:12:21 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:12:21 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:12:21 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:197
+2015-11-02 17:12:21 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:12:21 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:12:21 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `auth_key`='123456'
+    in E:\yii2\models\User.php:197
+2015-11-02 17:12:21 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:12:21 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:12:21 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:12:21 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:12:21 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:12:21 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:197
+2015-11-02 17:12:21 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:12:21 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'
+2015-11-02 17:12:21 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE `id`='1'

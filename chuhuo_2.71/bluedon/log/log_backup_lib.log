@@ -1,0 +1,4 @@
+[2017-07-16 00:05:01] [log_backup_lib] [DEBUG] [datetime.datetime(2017, 7, 15, 0, 5, 1, 399969), datetime.datetime(2017, 7, 14, 0, 5, 1, 399969), datetime.datetime(2017, 7, 13, 0, 5, 1, 399969), datetime.datetime(2017, 7, 12, 0, 5, 1, 399969), datetime.datetime(2017, 7, 11, 0, 5, 1, 399969), datetime.datetime(2017, 7, 10, 0, 5, 1, 399969), datetime.datetime(2017, 7, 9, 0, 5, 1, 399969)]
+[2017-07-16 00:05:01] [log_backup_lib] [DEBUG] ['', '/var/log/log_tables_backup/m_tblog_firewall/m_tblog_firewall_20170714.sql', '/var/log/log_tables_backup/m_tblog_firewall/m_tblog_firewall_20170713.sql', '/var/log/log_tables_backup/m_tbfwsessionstatus/m_tbfwsessionstatus_20170713.sql', '', '', '', '']
+[2017-07-16 00:05:01] [log_backup_lib] [DEBUG] log_backup_lib:invalid conf
+[2017-07-16 00:05:01] [log_backup_lib] [DEBUG] 0

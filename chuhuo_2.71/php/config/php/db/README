@@ -1,0 +1,18 @@
+备份防火墙菜单/权限
+mysqldump -uroot -p db_firewall m_tbnavtree m_tbrolenavtree > firewall_menu_authority.sql
+
+备份菜单
+mysqldump -uroot -p waf sys_user_menu > waf_menu.sql
+
+备份菜单权限
+mysqldump -uroot -p waf sys_user_menu_enable > waf_menu_enable.sql
+
+备份用户菜单权限
+mysqldump -uroot -p waf sys_user_group sys_user_authority > waf_authority.sql
+
+备份语言包
+mysqldump -uroot -p waf sys_language_source sys_language_en_us > waf_translation.sql
+
+
+备份配置
+mysqldump -uroot -p waf config > waf_config.sql

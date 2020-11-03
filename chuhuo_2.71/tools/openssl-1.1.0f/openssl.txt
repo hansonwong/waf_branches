@@ -1,0 +1,24 @@
+wget https://www.openssl.org/source/openssl-1.0.2j.tar.gz
+tar zxvf openssl-1.0.2j.tar.gz
+cd openssl-1.0.2j
+ 
+./config shared zlib
+make -j 2 && make install
+ 
+rm -rf /usr/local/bin/openssl
+rm -rf /usr/include/openssl 
+ln -sf /usr/local/ssl/bin/openssl /usr/bin/openssl
+ln -sf /usr/local/ssl/include/openssl /usr/include/openssl
+echo "/usr/local/ssl/lib" >> /etc/ld.so.conf
+
+rm -f  /usr/lib64/libcrypto.so.1.0.1e
+rm -f /usr/lib64/libssl.so.1.0.1e
+cp -f /usr/local/ssl/lib/libcrypto.so.1.0.0 /usr/lib64/
+cp -f /usr/local/ssl/lib/libssl.so.1.0.0 /usr/lib64/
+cp -f /usr/local/ssl/lib/libcrypto.so.1.0.0 /usr/local/lib/
+cp -f /usr/local/ssl/lib/libssl.so.1.0.0 /usr/local/lib/
+ln -sf /usr/lib64/libssl.so.1.0.0 /usr/lib64/libssl.so.10
+ln -sf /usr/lib64/libcrypto.so.1.0.0 /usr/lib64/libcrypto.so.10  
+
+ldconfig -v
+openssl version -v

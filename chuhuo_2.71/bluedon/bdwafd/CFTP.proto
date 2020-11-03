@@ -1,0 +1,448 @@
+/**
+ * @file   CFTP.proto
+ *
+ * @brief  Cloudfence Transport Protocol Description
+ *
+ * usage: protoc --cpp_out=. CFTP.proto
+ */
+
+package CFTP;
+
+// 主机节点类型
+enum HostNodeType {
+
+    // 管理中心
+    HOST_NODE_TYPE_MANAGER = 0;
+
+    // CDN节点
+    HOST_NODE_TYPE_AGENT = 1;
+
+    // 漏洞扫描节点
+    HOST_NODE_TYPE_VSCANNER = 2;
+
+    // 生成白名单节点
+    HOST_NODE_TYPE_WL_SCANNER = 3;
+
+    // DDOS检测节点
+    HOST_NODE_TYPE_DDOS_MONITOR = 4;
+
+    // DDOS清洗管理中心
+    HOST_NODE_TYPE_DDOS_WASH_MANAGER = 5;
+
+    // waf抗DDos
+    HOST_NODE_TYPE_WAF_DDOS = 6;
+}
+
+// message列表，每一项对应一个message项
+enum MessageList {
+    // 登录
+    MESS_LOGIN = 1;
+
+    // 登出
+    MESS_LOGOUT = 2;
+
+    // 响应命令/请求
+    MESS_RES_SIMPLE = 101;
+
+    // 响应'列出域名'
+    MESS_RES_LS_DOMAIN = 102;
+
+    // 响应'获取白名单'
+    MESS_RES_GET_WL = 103;
+
+    // 响应'waf DDos请求'
+    MESS_RES_WAF_DDOS = 104;
+
+    // 响应'waf网站状态'
+    MESS_RES_WAF_DOMAIN_STATUS = 105;
+
+    // 添加域名
+    MESS_CMD_ADD_DOMAIN = 1001;
+
+    // 删除域名
+    MESS_CMD_DEL_DOMAIN = 1002;
+
+    // 列出域名
+    MESS_CMD_LS_DOMAIN = 1003;
+
+    // 删除域名缓存
+    MESS_CMD_DEL_DOMAIN_CACHE = 1004;
+
+    // 永远在线文件内容
+    MESS_CMD_DOMAIN_ONLINE_CONTEXT = 1005;
+
+    // 扫描指定网站
+    MESS_CMD_VSCAN_DOMAIN = 1006;
+
+    // 启动生成白名单模式
+    MESS_CMD_START_GEN_WL = 1007;
+
+    // 关闭生成白名单模式
+    MESS_CMD_STOP_GEN_WL = 1008;
+
+    // 获取网站白名单
+    MESS_CMD_GET_WL = 1009;
+
+    // waf抗DDos请求 
+    MESS_CMD_WAF_DDOS = 1010;
+    /*
+         以下为DDOS防护新加消息类型,为做到格式统一，请统一采用这份,需要添加时请协商添加
+    */
+	// 节点DDOS状态, Add by Eddy
+	MESS_CDN_DDOS_STATUS = 2000;
+
+	// 节点网络信息
+	MESS_CDN_NETWORK_INFO = 2001;
+}
+
+// 协议限制
+enum MessageConst{
+
+    // 包最大值(10 * 1024 * 1024 + 8 + 1024 * 1024)
+    CONST_MESS_MAX_SIZE      = 11534344;
+
+    // 包最小值
+    CONST_MESS_MIN_SIZE      = 8;
+
+    // 包体最大值(10 * 1024 * 1024 + 1024 * 1024)
+    CONST_MESS_BODY_MAX_SIZE = 11534336;
+
+    // 文件块最大值(10 * 1024 * 1024)
+    CONST_MESS_FILE_BLOCK_MAX_SIZE = 10485760;
+
+    // 包头长度
+    CONST_MESS_HEADER_SIZE = 8;
+}
+
+// 域名设置记录类型
+enum RecordType {
+    A_RECORD = 0;            // A记录
+    CNAME_RECORD = 1;        // CNAME记录
+    NS_RECORD = 2;           // Ns记录
+    AAAA_RECORD= 3;          // AAAA记录
+}
+
+// 应答结果
+enum ResResult {
+    RES_RESULT_SUCCESS = 0;            // 成功
+    RES_RESULT_DOING = 1;              // 未完成
+    RES_RESULT_FALSE = 2;              // 失败
+    RES_RESULT_FALSE_INTER = 3;        // 接收方内部出错
+    RES_RESULT_FALSE_PACK_SIZE = 4;    // 数据大小出错
+    RES_RESULT_FALSE_UNEXPECT_ID = 5;  // 非预期的命令ID
+    RES_RESULT_FALSE_AUTH_FALSE = 6;   // 登录验证出错
+}
+
+// 登录
+message ReqLogin {
+
+    // 用户名
+    required string user = 1;
+
+    // 密码
+    required string passwd = 2;
+
+    // 主机类型（1 CDN节点，2 漏扫节点）
+    required int32 type = 3;
+}
+
+// 应答
+message ResSimple {
+
+    // 应答结果(必选)
+    required ResResult result = 1;
+
+    // 结果描述
+    optional string description = 2 [default = ''];
+}
+
+// 应答
+message ResLsDomain {
+
+    // 应答结果(必选)
+    required ResResult result = 1;
+
+    // 域名列表
+    repeated string domain = 2;
+}
+
+// 应答
+message ResGetWL {
+
+    // 应答结果(必选)
+    required ResResult result = 1;
+
+    // 白名单（文本）
+    required bytes wl = 2;
+}
+
+message CmdAddDomain {
+
+    // 应答
+    message ReplacingPair {
+
+        // 要替换的内容
+        required string src = 1;
+
+        // 替换成的内容
+        required string dest = 2;
+    }
+
+    // 域名（如bluedon.com）
+    required string domain = 1;
+
+    // 域名前缀（如www，可为空）
+    required string prefix = 2;
+
+    // 页面缓存
+    required bool cache = 3;
+
+    // 缓存大小（单位M）
+    required int32 cache_size = 4;
+
+    // 磁盘缓存大小（单位M）
+    required int32 disk_cache_size = 5;
+
+    // 页面压缩
+    required bool compress = 6;
+
+    // 盗链保护
+    required bool link_protect = 7;
+
+    // 永远在线
+    required bool always_online = 8;
+
+    // WEB防火墙
+    required bool waf = 9;
+
+    // https
+    required int32 ssl = 10;
+
+    // 爬虫
+    required bool spider = 11;
+
+    // 黑白名单
+    required bool black_white = 12;
+
+    // 字符串替换
+    required bool sub = 13;
+
+    // 多字符串替换
+    required bool subs = 14;
+
+    // js最小化
+    required bool js_minify = 15;
+
+    // css最小化
+    required bool css_minify = 16;
+
+    // 删除html空格
+    required bool strip = 17;
+
+    // 提高本地缓存时间
+    required bool expires_max = 18;
+
+    // DDOS攻击
+    required bool ddos = 19;
+
+    // 网站配置信息
+    required bytes website_config = 20;
+
+    // A记录
+    repeated string a_record = 21;
+
+    // 白名单列表
+    repeated string white_list = 22;
+
+    // 黑名单列表
+    repeated string black_list = 23;
+
+    // '字符串替换'要替换的内容
+    optional string sub_src = 24;
+
+    // '字符串替换'替换成的内容
+    optional string sub_dest = 25;
+
+    // '多字符串替换'列表
+    repeated ReplacingPair subs_pairs = 26;
+
+    // '删除缓存'允许IP列表
+    repeated string cache_purge_ip_list = 27;
+
+    // 'waf'白名单
+    repeated string waf_white_list = 28;
+}
+
+message CmdDelDomain {
+
+    // 域名（如bluedon.com）
+    required string domain = 1;
+
+    // 域名前缀（如www，可为空）
+    required string prefix = 2;
+}
+
+message CmdLsDomain {
+
+    // 域名（如bluedon.com）
+    required string domain = 1;
+
+    // 域名前缀（如www，可为空）
+    required string prefix = 2;
+}
+
+message CmdDelDomainCache {
+
+    // 域名（如bluedon.com）
+    required string domain = 1;
+
+    // 域名前缀（如www，可为空）
+    required string prefix = 2;
+}
+
+message CmdDomainOnlineContext {
+
+    // 域名（如bluedon.com）
+    required string domain = 1;
+
+    // 域名前缀（如www，可为空）
+    required string prefix = 2;
+
+    // 永远在线文件内容
+    required string context = 3;
+}
+
+message CmdVScanDomain {
+
+    // 域名（如bluedon.com）
+    required string domain = 1;
+
+    // 域名前缀（如www，可为空）
+    required string prefix = 2;
+
+    //
+    required string url = 3;
+}
+
+message CmdStartGenWL {
+
+    // 域名（如bluedon.com）
+    required string domain = 1;
+
+    // 域名前缀（如www，可为空）
+    required string prefix = 2;
+
+    // 网站配置信息
+    required bytes website_config = 3;
+}
+
+message CmdStopGenWL {
+
+    // 域名（如bluedon.com）
+    required string domain = 1;
+
+    // 域名前缀（如www，可为空）
+    required string prefix = 2;
+}
+
+message CmdGetWL {
+
+    // 域名（如bluedon.com）
+    required string domain = 1;
+
+    // 域名前缀（如www，可为空）
+    required string prefix = 2;
+}
+
+message CmdWafDDos {
+
+    // 请求类型（type：1[请求对域名进行DDos防护]    2[询问域名处理状态]    3[主动请求撤销防护]）
+    required int32 type = 1;
+
+    // 用户名
+    required string username = 2;
+
+    // 域名（如bluedon.com）
+    repeated string domain = 3;
+}
+
+message ResDomainStatus {
+
+    // 域名（如bluedon.com）
+    required string domain = 1;
+
+    // 网站状态
+    required int32 status = 2;
+}
+
+message ResWafDDos {
+
+    // 请求类型（type：1[请求对域名进行DDos防护]    2[询问域名处理状态]    3[主动请求撤销防护]）
+    required int32 type = 1;
+
+    // 网站状态
+    repeated ResDomainStatus domainStatus = 2;
+}
+
+/*
+    以下为DDOS防护新加消息类型,为做到格式统一，请统一采用这份
+*/
+// 网站流量
+message WebsiteInfo{
+
+    // 域名（如bluedon.com）
+	required string domain = 1;
+
+    // 域名前缀（如www，可为空）
+	required string prefix = 2;
+
+	// 下行流量
+    required uint32 in_flow  = 3;
+
+	// 上行流量
+    required uint32 out_flow = 4;
+}
+
+// 节点DDos状态
+message CDNDDosStatus {
+
+	// CDN id
+	required uint32 cdn_id                = 1;
+
+	// 节点IP
+	repeated string cdns_ip              = 2;
+
+	// 收到DDos攻击次数
+    required uint32 ddos_times            = 3;
+
+	// 网卡下行流量
+    required uint32 network_card_in_flow  = 4;
+
+	// 网卡上行流量
+    required uint32 network_card_out_flow = 5;
+
+	// 网站流量
+	repeated WebsiteInfo web_flow        = 6;
+
+	// 开启清洗
+	optional bool start_wash             = 7;
+
+    //描述信息，可作为扩展
+    optional string  description         = 8;
+}
+
+// 节点网络信息
+message CDNNetworkInfo {
+
+	// CDN id
+	required uint32 cdn_id                = 1;
+
+	// DDos阈值
+    required uint32 ddos_threshold_times = 2;
+
+    // 上行带宽
+    required string bandwidth_up        = 3;
+
+    // 下行带宽
+    required string bandwidth_down      = 4;
+}

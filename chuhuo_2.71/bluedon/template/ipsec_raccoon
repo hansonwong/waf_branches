@@ -1,0 +1,81 @@
+path pre_shared_key "/usr/local/ipsec-vpn/etc/psk.txt";
+path certificate "/usr/local/ipsec-vpn/etc/x509";
+
+listen {
+{% for addr in listen_addrs %}
+        isakmp {{ addr }} [500];
+        isakmp_natt {{ addr }} [4500];
+{% endfor %}
+}
+
+timer
+{
+    natt_keepalive 10 sec;
+}
+
+{% for info in data %}
+remote {{ info.f_sAddress }} {
+        exchange_mode {{ info.f_iNegotMode }};
+        {% if info.f_iAuthType == "pre_shared_key" -%}
+        my_identifier address;
+        nat_traversal {{ info.f_iNatThrough }};
+        {% else -%}
+        {# 加密证书和加密私钥 #}
+        certificate_type x509 "{{ pem_files[1] }}" "{{ pem_files[2] }}";
+        {% if len1 == 5 -%}
+        certificate_type x509_enc "{{ pem_files[3] }}" "{{ pem_files[4] }}";
+        {% endif -%}
+        ca_type x509 "{{ pem_files[0] }}";
+        verify_cert on;
+        {# 关闭证书请求的发送， 当“关”时写入， 当不关时不写入或注释 #}
+        {% if info.f_iAuthStatus == '0' -%}
+        send_cr off;
+        {% else -%}
+        # send_cr;
+        {% endif -%}
+
+        my_identifier asn1dn;
+        peers_identifier asn1dn ;
+        verify_identifier on ;
+        nat_traversal {{ info.f_iNatThrough }};
+        {% endif -%}
+        proposal {
+                lifetime time {{ info.f_iKeyTime }} sec;
+                encryption_algorithm {{ info.f_sEncryAlgo }};
+                hash_algorithm {{ info.f_sCertAlgo }};
+                {% if info.f_iAuthType == "pre_shared_key" -%}
+                authentication_method pre_shared_key;
+                {% else -%}
+                {% if len1 == 5 -%}
+                authentication_method {{ info.f_iAuthType }};
+                {% else -%}
+                authentication_method rasing;
+                {% endif -%}
+                {% endif -%}
+                dh_group {{ info.f_sKeyAlgo }};
+        }
+}
+
+
+{% for local in info.s_iLocal -%}
+{% for addr in info.s_iTarget -%}
+sainfo address {{ local }} any address {{ addr }} any
+{
+        {% if info.pfs_group=='2' -%}
+        # pfs_group {{ info.pfs_group }};
+        {% endif -%}
+        lifetime time {{ info.s_iIpsecTime }} sec;
+        encryption_algorithm {{ info.s_sEncryAlgo }};
+        authentication_algorithm {{ info.s_sCertAlgo }};
+        compression_algorithm deflate;
+}
+{% endfor %}
+{% endfor %}
+
+{% endfor %}
+{# 对称加密的填充字节，关闭随机数的填充 #}
+
+padding
+{
+    randomize off;
+}

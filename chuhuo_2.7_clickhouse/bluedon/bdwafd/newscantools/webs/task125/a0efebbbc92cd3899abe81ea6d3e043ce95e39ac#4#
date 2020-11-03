@@ -1,0 +1,294 @@
+status:200
+content-location:http://v.baidu.com/hotvideos/
+x-powered-by:PHP/5.2.17
+transfer-encoding:chunked
+set-cookie:BAIDUID=A5E907DC3F1D05538E6C7404B9DB5965:FG=1; max-age=31536000; expires=Sat, 15-Oct-16 03:05:22 GMT; domain=.baidu.com; path=/; version=1
+server:apache
+date:Fri, 16 Oct 2015 03:05:22 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM "
+content-type:text/html
+####################
+<!DOCTYPE html>
+<!--STATUS OK-->
+<html>
+<head>
+	<meta charset="gb2312" />
+	<title>热搜词_百度视频</title>
+	<meta name="keywords" content="最热视频" />
+	<meta name="description" content="百度视频搜索是全球最大的中文视频搜索引擎，拥有最多的中文视频资源，提供用户最完美的观看体验。在百度视频，您可以便捷地找到最新、最热的互联网视频，更有丰富的视频榜单、多样的视频专题满足您不同的视频观看需求。百度视频，你的视界。" />
+			
+
+
+
+
+<script type="text/javascript" src="http://vs1.bdstatic.com/browse_static/widget/common/base_js/base_js_d253931d.js"></script>
+
+<script type="text/javascript">
+F._fileMap({'http://vs1.bdstatic.com/browse_static/widget/common/framework_static/framework_static_a85a3c55.js' : ['/browse_static/common/lib/tangram/base/base.js',
+'/browse_static/common/lib/tangram/fx/create/create.js',
+'/browse_static/common/lib/tangram/fx/Timeline/Timeline.js',
+'/browse_static/common/lib/tangram/fx/fx.js',
+'/browse_static/common/lib/tangram/fx/expand/expand.js',
+'/browse_static/common/lib/tangram/fx/opacity/opacity.js',
+'/browse_static/common/lib/tangram/fx/fadeIn/fadeIn.js',
+'/browse_static/common/lib/tangram/fx/pulsate/pulsate.js',
+'/browse_static/common/lib/tangram/fx/fadeOut/fadeOut.js',
+'/browse_static/common/lib/tangram/fx/remove/remove.js',
+'/browse_static/common/lib/tangram/fx/scale/scale.js',
+'/browse_static/common/lib/tangram/fx/zoomOut/zoomOut.js',
+'/browse_static/common/lib/tangram/fx/move/move.js',
+'/browse_static/common/lib/tangram/fx/moveTo/moveTo.js',
+'/browse_static/common/lib/tangram/fx/moveBy/moveBy.js',
+'/browse_static/common/lib/tangram/fx/getTransition/getTransition.js',
+'/browse_static/common/lib/tangram/fx/shake/shake.js',
+'/browse_static/common/lib/tangram/fx/scrollBy/scrollBy.js',
+'/browse_static/common/lib/tangram/fx/current/current.js',
+'/browse_static/common/lib/tangram/fx/mask/mask.js',
+'/browse_static/common/lib/tangram/fx/puff/puff.js',
+'/browse_static/common/lib/tangram/fx/highlight/highlight.js',
+'/browse_static/common/lib/tangram/fx/scrollTo/scrollTo.js',
+'/browse_static/common/lib/tangram/fx/collapse/collapse.js',
+'/browse_static/common/lib/tangram/fx/zoomIn/zoomIn.js']});
+</script>
+
+
+
+<script type="text/javascript">
+F._fileMap({'http://vs1.bdstatic.com/browse_static/widget/common/module_static/module_static_4b2f8d71.js' : ['/browse_static/common/ui/magic/Mask/Mask.js',
+'/browse_static/common/ui/magic/Background/Background.js',
+'/browse_static/common/ui/magic/Background/$styleBox/$styleBox.js',
+'/browse_static/common/ui/magic/Pager/Pager.js',
+'/browse_static/common/ui/magic/setup/slider/slider.js',
+'/browse_static/common/ui/magic/setup/pager/pager.js',
+'/browse_static/common/ui/magic/setup/setup.js',
+'/browse_static/common/ui/magic/setup/tab/tab.js',
+'/browse_static/common/ui/magic/setup/suggestion/suggestion.js',
+'/browse_static/common/ui/magic/setup/dialog/dialog.js',
+'/browse_static/common/ui/magic/setup/carousel/carousel.js',
+'/browse_static/common/ui/magic/setup/background/background.js',
+'/browse_static/common/ui/magic/Popup/Popup.js',
+'/browse_static/common/ui/magic/_query/_query.js',
+'/browse_static/common/ui/magic/Base/Base.js',
+'/browse_static/common/ui/magic/Tab/Tab.js',
+'/browse_static/common/ui/magic/Slider/Slider.js',
+'/browse_static/common/ui/magic/Tooltip/Tooltip.js',
+'/browse_static/common/ui/magic/Carousel/Carousel.js',
+'/browse_static/common/ui/magic/Carousel/$button/$button.js',
+'/browse_static/common/ui/magic/control/Layer/Layer.js',
+'/browse_static/common/ui/magic/control/Popup/Popup.js',
+'/browse_static/common/ui/magic/control/Suggestion/Suggestion.js',
+'/browse_static/common/ui/magic/control/control.js',
+'/browse_static/common/ui/magic/control/Tab/Tab.js',
+'/browse_static/common/ui/magic/control/Slider/$fx/$fx.js',
+'/browse_static/common/ui/magic/control/Slider/$cache/$cache.js',
+'/browse_static/common/ui/magic/control/Slider/Slider.js',
+'/browse_static/common/ui/magic/control/Tooltip/Tooltip.js',
+'/browse_static/common/ui/magic/control/Carousel/Carousel.js',
+'/browse_static/common/ui/magic/control/Carousel/$itemModify/$itemModify.js',
+'/browse_static/common/ui/magic/control/Carousel/$button/$button.js',
+'/browse_static/common/ui/magic/control/Carousel/$fx/$fx.js',
+'/browse_static/common/ui/magic/control/Carousel/$autoScroll/$autoScroll.js',
+'/browse_static/common/ui/magic/control/Dialog/Dialog.js',
+'/browse_static/common/ui/magic/control/Dialog/$mask/$mask.js',
+'/browse_static/common/ui/magic/Dialog/Dialog.js',
+'/browse_static/common/ui/magic/magic.js',
+'/browse_static/common/ui/eventcenter/eventcenter.js',
+'/browse_static/common/ui/baidutemplate/baidutemplate.js',
+'/browse_static/common/ui/vs/tmpl/tmpl.js',
+'/browse_static/common/ui/vs/bdPassPop/bdPassPop.js',
+'/browse_static/common/ui/vs/statistics/statistics.js',
+'/browse_static/common/ui/vs/lazyload/lazyload.js',
+'/browse_static/common/ui/vs/ABTest/ABTest.js',
+'/browse_static/common/ui/vs/showFeedBack/showFeedBack.js',
+'/browse_static/common/ui/vs/vs.js',
+'/browse_static/common/ui/vs/DetailTip/DetailTip.js',
+'/browse_static/common/ui/vs/scrolling/scrolling.js',
+'/browse_static/common/ui/vs/SiteList/SiteList.js',
+'/browse_static/common/ui/vs/loginCheck/loginCheck.js',
+'/browse_static/common/ui/vs/client/client.js',
+'/browse_static/common/ui/vs/log/log.js',
+'/browse_static/common/ui/vs/vipPlayPortal/vipPlayPortal.js',
+'/browse_static/common/ui/vs/quicksearch/quicksearch.js',
+'/browse_static/common/ui/vs/loadimg/loadimg.js',
+'/browse_static/common/ui/vs/search_placeholder/search_placeholder.js',
+'/browse_static/common/ui/vs/bdvTrace/config/config.js',
+'/browse_static/common/ui/vs/bdvTrace/ugcRpTrack/ugcRpTrack.js',
+'/browse_static/common/ui/vs/bdvTrace/core/core.js',
+'/browse_static/common/ui/vs/vipRegisterPopup/vipRegisterPopup.js',
+'/browse_static/common/ui/vs/utility/mask/mask.js',
+'/browse_static/common/ui/vs/utility/dialog/dialog.js',
+'/browse_static/common/ui/vs/imgPlus/imgPlus.js',
+'/browse_static/common/ui/vs/admis/admis.js',
+'/browse_static/common/ui/vs/subDetailTip/subDetailTip.js',
+'/browse_static/common/ui/vs/vipConfig/vipConfig.js',
+'/browse_static/common/ui/vs/cutdown/cutdown.js',
+'/browse_static/common/lib/tangram/plugin/fx/fx.js',
+'/browse_static/common/lib/tangram/plugin/sortable/sortable.js',
+'/browse_static/common/lib/tangram/plugin/selectable/selectable.js',
+'/browse_static/common/lib/tangram/plugin/draggable/draggable.js',
+'/browse_static/common/lib/tangram/core/core.js',
+'/browse_static/widget/common/bdv_login/bdv_login.js',
+'/browse_static/widget/common/tabtoplist/tabtoplist.js',
+'/browse_static/widget/common/header_hao123/header_hao123.js',
+'/browse_static/widget/common/userbar/userbar.js',
+'/browse_static/widget/common/userinfo_hao123/userinfo_hao123.js',
+'/browse_static/widget/common/backtop/backtop.js',
+'/browse_static/widget/common/userinfo/userinfo.js',
+'/browse_static/widget/common/bdv_trace_carousel/bdv_trace_carousel.js',
+'/browse_static/widget/common/bdv_trace/bdv_trace.js',
+'/browse_static/widget/common/navGuider/navGuider.js',
+'/browse_static/widget/common/header_baoku/header_baoku.js',
+'/browse_static/widget/common/ui_searchbox/ui_searchbox.js',
+'/browse_static/widget/common/focuscarousel/focuscarousel.js',
+'/browse_static/widget/common/feedback/feedback.js',
+'/browse_static/widget/common/searchbox/searchbox.js',
+'/browse_static/widget/common/gamepromo/gamepromo.js',
+'/browse_static/widget/common/navbar/navbar.js',
+'/browse_static/widget/common/tabpicarea/tabpicarea.js',
+'/browse_static/widget/common/header_baoku_player/header_baoku_player.js',
+'/browse_static/widget/common/tabtoplist_worldcup_ajax/tabtoplist_worldcup_ajax.js',
+'/browse_static/widget/common/searchKeyword/searchKeyword.js',
+'/browse_static/widget/common/focuslayer/focuslayer.js']});
+</script>
+<link type="text/css" rel="stylesheet" href="http://vs0.bdstatic.com/browse_static/widget/common/module_static/module_static_54518bc7.css"/>
+
+
+<script type="text/javascript">
+F._fileMap({'http://vs0.bdstatic.com/browse_static/widget/hotword/module_static/module_static_5e562310.js' : ['/browse_static/widget/hotword/tagstage/tagstage.js',
+'/browse_static/widget/hotword/ver_tabs/ver_tabs.js']});
+</script>
+<link type="text/css" rel="stylesheet" href="http://vs1.bdstatic.com/browse_static/widget/hotword/module_static/module_static_f092ec6d.css"/>
+
+<link href="http://vs1.bdstatic.com/browse_static/hotword/index/index_d646043e.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+	<div class="loading"></div>
+	<div class="wrapper">
+		<div class="head">
+			<h1 class="headl"><a href="http://v.baidu.com" title="百度视频">百度视频</a></h1>
+			<div class="headr">
+				<div class="headrdiv"><a href="http://v.baidu.com/">百度视频首页</a></div>
+			</div>
+		</div>
+	
+		<div class="middle">
+			
+
+												
+	
+	<ul class="ver_tabs_ul" static="tn=hotvideos&bl=page_nav">
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="0">全部</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="2">国内</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="1">国际</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="5">社会</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="14">军事</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="6">财经</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="10">汽车</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="8">科技</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="4">娱乐</a>
+		</li>
+				<li class="ver_tabs_li">
+			<a href="javascript:void(0);" data-hash="3">体育</a>
+		</li>
+			</ul>
+
+	<script type="text/javascript">
+		F.use("/browse_static/widget/hotword/ver_tabs/ver_tabs.js");
+	</script>
+
+
+			
+<form action="http://v.baidu.com/v" method="get" name="f1" class="mini-search">
+	<span class="inputs">
+		<input type="text" maxlength="120" name="word" value="" />
+	</span>
+	<span class="btns">
+		<input type="submit" value="" onmousedown="this.className='btn-down'" onmouseout="this.className=''" />
+	</span>
+	<input name="ct" type="hidden" value="301989888" />
+	<input name="rn" type="hidden" value="20" />
+	<input name="pn" type="hidden" value="0" />
+	<input name="db" type="hidden" value="0" />
+	<input name="s" type="hidden" value="0" />
+	<input name="fbl" type="hidden" value="800" />
+	<input name="oq" type="hidden"  disabled="disabled" />
+	<input name="f" type="hidden" value="3"  disabled="disabled" />
+	<input name="rsp" type="hidden"  disabled="disabled" />
+</form>
+
+		</div>
+		
+		<div class="main">
+			<div class="content">
+				
+	<div class="content_tagstage" static="tn=hotvideos&bl=words"></div>
+	<script type="text/javascript">
+		F.use("/browse_static/widget/hotword/tagstage/tagstage.js");
+	</script>
+
+
+			</div>
+		</div>
+		
+		<div class="bottom"></div>
+	</div>
+	<div class="foot">
+		
+	<ul class="date" static="tn=hotvideos&bl=date_nav">
+		<li><a href="javascript:void(0);" data-date="20151012">10-12</a></li>
+		<li><a href="javascript:void(0);" data-date="20151013">10-13</a></li>
+		<li><a href="javascript:void(0);" data-date="20151014">10-14</a></li>
+		<li><a href="javascript:void(0);" data-date="20151015">10-15</a></li>
+		<li><a href="javascript:void(0);" data-date="20151016" class="active">10-16</a></li>
+	</ul>
+
+
+	</div>
+	
+<script>
+	F.use('/browse_static/common/lib/tangram/core/core.js', function(T) {
+				
+			T.sio.log('http://nsclick.baidu.com/p.gif?pid=104&tn=hotvideos');
+			});
+</script>
+
+
+	
+<script type="text/javascript">
+F.use(['/browse_static/common/lib/tangram/base/base.js', '/browse_static/common/ui/vs/loginCheck/loginCheck.js', '/browse_static/common/ui/vs/statistics/statistics.js'], function(T, loginCheck) {
+	if ( location.hostname.match(/(?:\.baidu\.com$)|(?:\.hao123\.com$)/) ) {
+		var bdvref = T.cookie.get('bdvref');
+		if ( bdvref ) {
+			V.nsclick.setParam('VIDEO_FR', bdvref);
+		}
+	} else {
+		loginCheck(function(userinfo) {
+			if ( userinfo && userinfo.cookie && userinfo.cookie.bdvref ) {
+				V.nsclick.setParam('VIDEO_FR', userinfo.cookie.bdvref);
+			}
+		});
+	}
+						});
+</script>
+
+	
+</body>
+</html>

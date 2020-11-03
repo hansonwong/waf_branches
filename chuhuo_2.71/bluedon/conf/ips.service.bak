@@ -1,0 +1,14 @@
+[Unit]
+Description=Firewall IPS service
+
+[Service]
+Type=forking
+User=root
+Group=root
+PIDFile=/var/run/suricata.pid
+ExecStart=/usr/local/bdips/bin/bdips -c /etc/suricata/suricata.yaml -D --dpdk --pidfile /var/run/suricata.pid
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

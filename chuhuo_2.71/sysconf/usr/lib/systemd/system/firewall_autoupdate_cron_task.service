@@ -1,0 +1,11 @@
+[Unit]
+Description=Firewall Auto Update
+Requires=rc-local.service
+After=rc-local.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python /usr/local/bluedon/rulebase/ftp_update_rules.py
+
+[Install]
+WantedBy=multi-user.target

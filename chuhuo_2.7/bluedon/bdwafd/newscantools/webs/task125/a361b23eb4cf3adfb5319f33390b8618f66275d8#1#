@@ -1,0 +1,26 @@
+status:200
+content-length:194
+content-location:http://www.baidu.com/forbiddenip/forbidden.html
+set-cookie:BAIDUID=A97DDCBD50BC53C9A1CC3EBCC6E66E38:FG=1; expires=Sat, 15-Oct-16 02:58:06 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+accept-ranges:bytes
+expires:Sat, 17 Oct 2015 02:58:06 GMT
+vary:Accept-Encoding,User-Agent
+server:Apache
+last-modified:Thu, 12 Mar 2015 07:28:08 GMT
+connection:Keep-Alive
+etag:"c2-51112534a1200"
+cache-control:max-age=86400
+date:Fri, 16 Oct 2015 02:58:06 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM "
+content-type:text/html
+####################
+<html>
+    
+    <head>
+        <title>您访问的页面不存在!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+    
+    <body></body>
+
+</html>

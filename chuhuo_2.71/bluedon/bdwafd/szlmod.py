@@ -1,0 +1,428 @@
+# -*- coding: utf-8 -*-
+# created by szl 2014-03-14
+
+import re, os, time, pygeoip, MySQLdb
+from db import AlertLogSet,get_config
+from MySQLdb import escape_string
+from config import config
+from logging import getLogger
+
+#access log REXP
+rexpFront       = re.compile(r'^--([0-9a-fA-F]{8,})-([A-Z])--')
+rexpHeader      = re.compile(r'^\[(.+) (.+)\] (\S+) ([.:0-9a-f]+) (\d+) ([.:0-9a-f]+) (\d+)')
+rexpPattern     = re.compile(r'^(\S+) (.+)')
+rexpUserAgent   = re.compile(r'^User-Agent\s*:\s*(.+)')
+rexpHost        = re.compile(r'^Host\s*:\s*(.+)')
+rexpReferer     = re.compile(r'^Referer\s*:\s*(.+)')
+rexpRequestCT   = re.compile(r'^Accept\s*:\s*(.+)')
+rexpStatusCode  = re.compile(r'^(HTTP\/\d\.\d) (\d{3}) (.+)')
+rexpResponseCT  = re.compile(r'^Content\-Type\s*:\s*(.+)')
+rexpMessageHead = re.compile(r'^Message\s*:\s*([^\.]+)\. ([^\.]+)')
+rexpMessageAll  = re.compile(r'\[(\w+?) "(.+?)"\]')
+rexpdallowed    = re.compile(r'Access allowed')
+rexpdenied      = re.compile(r'denied with code')
+rexpclosed      = re.compile(r'denied with connection close')
+rexpwaring      = re.compile(r'Warning')
+rexpcheckurl    = re.compile(r'(http://[^/]+)(\S+)')
+rexpCookie      = re.compile(r'^Cookie:\s*(.+)')
+
+def taskszl(fdir, ccruleids):
+    try:
+        count  = 0
+        dtime  = fdir[45:53]
+        conn   = MySQLdb.connect(**config['dbacc'])
+        cursor = conn.cursor()
+
+        alertlog = AlertLogSet()
+        sqlstr = alertlog.sqlact()
+        for name in os.listdir(fdir):
+            parser = AuditParser(os.path.join(fdir, name), sqlstr, ccruleids)
+            if not parser.parse():
+                continue
+
+            '''count += 1
+            if(count >= 200):
+                count = 0
+                sqlstr[0] = sqlstr[0][0:-1] + ';'
+                sqlstr[1] = sqlstr[1][0:-1] + ';'
+                if len(sqlstr[0]) > 400:
+                    count = 1
+                    cursor.execute(sqlstr[0])
+                if len(sqlstr[1]) > 400:
+                    count = 1
+                    cursor.execute(sqlstr[1])
+                if count:
+                    counturi(cursor, sqlstr[4], dtime)
+                    countruleid(cursor, sqlstr[3], dtime)
+                    countseverity(cursor, sqlstr[2], dtime)
+                    countsourceip(cursor, sqlstr[5], dtime)
+                count = 0
+                selfstudyrule(sqlstr[6])
+                sqlstr = alertlog.sqlact()
+                break
+
+        if(count):
+            count = 0
+            sqlstr[0] = sqlstr[0][0:-1] + ';'
+            sqlstr[1] = sqlstr[1][0:-1] + ';'
+            if len(sqlstr[0]) > 400:
+                count = 1
+                cursor.execute(sqlstr[0])
+            if len(sqlstr[1]) > 400:
+                count = 1
+                cursor.execute(sqlstr[1])
+            if count:
+                counturi(cursor, sqlstr[4], dtime)
+                countruleid(cursor, sqlstr[3], dtime)
+                countseverity(cursor, sqlstr[2], dtime)
+                countsourceip(cursor, sqlstr[5], dtime)
+            selfstudyrule(sqlstr[6])
+'''
+    except Exception, e:
+        getLogger('audit').exception(e)
+    finally:
+        #upsql = "UPDATE t_fileseat SET Sdate='%s', Stime='%s';" % (fdir[45:53], fdir[45:])
+        #cursor.execute(upsql)
+        conn.commit()
+        cursor.close()
+        conn.close()
+
+def selfstudyrule(srules):
+    db = MySQLdb.connect(**config['db'])
+    cursor = db.cursor()
+
+    flag = 0
+    selfstudy = []
+    if len(srules):
+        flag += 1
+        selfstudy = get_config("SelfStudyResult")
+
+    for srule in srules:
+        flag += 1
+        if len(srule[0]):
+            selfstudy["uriMax"] = max(selfstudy["uriMax"], len(srule[0])) if selfstudy["uriMax"] != "" else len(srule[0])
+            buff = srule[0].split("?")
+            if len(buff) > 1:
+                buff = buff[1].split("&")
+                selfstudy["argCountMax"] = max(selfstudy["argCountMax"], len(buff)) if selfstudy["argCountMax"] != "" else len(buff)
+                for argname in buff:
+                    buf = argname.split("=")
+                    selfstudy["argNameMax"] = max(selfstudy["argNameMax"], len(buf[0])) if selfstudy["argNameMax"] != "" else len(buf[0])
+                    if len(buf) > 1:
+                        selfstudy["argContentMax"] = max(selfstudy["argContentMax"], len(buf[1])) if selfstudy["argContentMax"] != "" else len(buf[1])
+        if len(srule[1]):
+            selfstudy["cookieMax"] = max(selfstudy["cookieMax"], len(srule[1])) if selfstudy["cookieMax"] != "" else len(srule[1])
+            buff = srule[1].split(";")
+            selfstudy["cookieCountMax"] = max(selfstudy["cookieCountMax"], len(buff)) if selfstudy["cookieCountMax"] != "" else len(buff)
+            for argname in buff:
+                buf = argname.split("=")
+                selfstudy["cookieNameMax"] = max(selfstudy["cookieNameMax"], len(buf[0])) if selfstudy["cookieNameMax"] != "" else len(buf[0])
+                if len(buf) > 1:
+                        selfstudy["cookieContentMax"] = max(selfstudy["cookieContentMax"], len(buf[1])) if selfstudy["cookieContentMax"] != "" else len(buf[1])
+
+    if flag:
+        json = "{'uriMax':'%s','argNameMax':'%s','argContentMax':'%s','argCountMax':'%s','cookieMax':'%s',\
+                'cookieNameMax':'%s','cookieContentMax':'%s','cookieCountMax':'%s'}" % (selfstudy['uriMax'], selfstudy['argNameMax'], \
+                selfstudy['argContentMax'], selfstudy['argCountMax'], selfstudy['cookieMax'], selfstudy['cookieNameMax'], \
+                selfstudy['cookieContentMax'], selfstudy['cookieCountMax'])
+        sqlstr = "update config set json='%s' where symbol='SelfStudyResult'" % json
+        cursor.execute(sqlstr)
+        db.commit()
+    cursor.close()
+    db.close()
+
+def counturi(cursor, uridata, dtime):
+    for data in uridata:
+        ct = "logdate='%s' and Host='%s' and Uri='%s' and \
+              QueryString='%s'" % (dtime, data[0], data[1], data[2])
+        getsql = "select * from t_counturi where %s" % ct
+        count = cursor.execute(getsql)
+        if(count == 1):
+            getsql = "UPDATE t_counturi SET Hits = Hits+1 where %s" % ct
+        else:
+            if(count > 1):
+                getsql = "DELETE FROM t_counturi where %s" % ct
+                cursor.execute(getsql)
+            getsql = "insert into t_counturi(logdate, Host, Uri, QueryString, Hits) values\
+                     ('%s', '%s', '%s', '%s', '1');" % (dtime, data[0], data[1], data[2])
+        cursor.execute(getsql)
+
+def countruleid(cursor, ruleid, dtime):
+    for (k,v) in  ruleid.items():
+        ct = "logdate='%s' and ruleid='%s'" % (dtime, k)
+        getsql = "select * from t_ruleid where %s" % ct
+        count = cursor.execute(getsql)
+        if(count == 1):
+            getsql = "UPDATE t_ruleid SET hits = hits+%d where %s" % (v, ct)
+        else:
+            if(count > 1):
+                getsql = "DELETE FROM t_ruleid where %s" % ct
+                cursor.execute(getsql)
+            getsql = "insert into t_ruleid(logdate, ruleid, hits) values\
+                     ('%s', '%s', '%d');" % (dtime, k, v)
+        cursor.execute(getsql)
+
+def countseverity(cursor, severity, dtime):
+    getsql = "select * from t_countsety where logdate = '%s'" % dtime
+    count = cursor.execute(getsql)
+    if(count == 1):
+        getsql = "UPDATE t_countsety SET emergency=emergency+%d, alert=alert+%d, \
+                  critical=critical+%d,error=error+%d,warning=warning+%d,notice=notice+%d, \
+                  info=info+%d,debug=debug+%d where logdate = '%s'" % (severity['EMERGENCY'],
+                  severity['ALERT'],severity['CRITICAL'],severity['ERROR'],severity['WARNING'],
+                  severity['NOTICE'], severity['INFO'], severity['DEBUG'], dtime)
+    else:
+        if(count > 1):
+            getsql = "DELETE FROM t_countsety where logdate = '%s'" % dtime
+            cursor.execute(getsql)
+        getsql = "insert t_countsety(logdate, emergency, alert, critical, error, warning, \
+                  notice, info, debug) values('%s', %d, %d, %d, %d, %d, %d, %d, %d);" % \
+                  (dtime, severity['EMERGENCY'], severity['ALERT'], severity['CRITICAL'], \
+                   severity['ERROR'], severity['WARNING'], severity['NOTICE'], severity['INFO'],
+                   severity['DEBUG'])
+    cursor.execute(getsql)
+
+def countsourceip(cursor, ipdata, dtime):
+    for data in ipdata:
+        ct = "logdate='%s' and SourceIP='%s'" % (dtime, data[3])
+        getsql = "select * from t_sourceip where %s" % ct
+        count = cursor.execute(getsql)
+        if(count == 1):
+            getsql = "UPDATE t_sourceip SET Hits = Hits+1 where %s" % ct
+        else:
+            if(count > 1):
+                getsql = "DELETE FROM t_sourceip where %s" % ct
+                cursor.execute(getsql)
+            getsql = "insert into t_sourceip(logdate, CountryCode, RegionCode, City, SourceIP, Hits) \
+                      values('%s', '%s', '%s', '%s', '%s', '1');" % (dtime, data[0], data[1], data[2], data[3])
+        cursor.execute(getsql)
+
+class AuditParser:
+    def __init__(self, fpath, sqlstr, ccruleids):
+        self.flag      = 0
+        self.uricheck  = ''
+        self.cookie    = ''
+        self.uri       = ''
+        self.querystr  = ''
+        self.sqlstr    = sqlstr
+        self.ccruleids = ccruleids
+        self.alertlog  = AlertLogSet()
+        self.gic       = pygeoip.GeoIP('data/GeoLiteCity.dat')
+        self.fd        = open(fpath, 'r')
+        self.lines     = self.fd.readlines()
+        self.len       = len(self.lines)
+        self.fd.close()
+
+    def parse(self):
+        id = 0
+        while(id < self.len):
+            match = rexpFront.search(self.lines[id])
+            if not match:
+                pass
+            elif match.group(2) == 'A':
+                id = self.parse_header(id)
+            elif match.group(2) == 'B':
+                id = self.parse_request_headers(id)
+            elif match.group(2) == 'F':
+                id = self.parse_response_headers(id)
+            elif match.group(2) == 'H':
+                id = self.parse_message(id)
+            elif match.group(2) == 'Z':
+                break
+            id += 1
+        return self.flag
+
+    def parse_header(self, id):
+        id += 1
+        match = rexpHeader.search(self.lines[id])
+        if(not match):
+            return id
+
+        tFomat = time.strptime(match.group(1), "%d/%b/%Y:%H:%M:%S")
+        self.alertlog.LogDateTime      = time.strftime("%Y-%m-%d %H:%M:%S",tFomat)
+        self.alertlog.AuditLogUniqueID = match.group(3)
+        self.alertlog.SourceIP         = match.group(4)
+        self.alertlog.SourcePort       = match.group(5)
+        self.alertlog.DestinationIP    = match.group(6)
+        self.alertlog.DestinationPort  = match.group(7)
+        self.alertlog.CountryCode = 'CN'
+        self.alertlog.RegionCode  = 'unknown'
+        self.alertlog.City        = 'unknown'
+            
+        getaddrs = self.gic.record_by_addr(self.alertlog.SourceIP)
+        if getaddrs:
+            self.alertlog.CountryCode = getaddrs['country_code']
+            self.alertlog.RegionCode  = getaddrs['region_code']
+            self.alertlog.City        = getaddrs['city']
+        return id
+
+    def parse_request_headers(self, id):
+        self.alertlog.Referer = ''
+        self.alertlog.UserAgent = ''
+        flag1, flag2, flag3, flag4, flag5, flag6 = True, True, True, True, True, True
+        while(id < self.len):
+            id += 1
+            match = rexpFront.search(self.lines[id])
+            if(match):
+                id -= 1
+                break
+
+            if flag1:
+                match = rexpPattern.search(self.lines[id])
+                if match:
+                    self.alertlog.HttpMethod = match.group(1)
+                    buf = match.group(2).split(' ')
+                    self.uricheck = buf[0]
+                    self.alertlog.HttpProtocol = buf[-1]
+                    strlen = len(match.group(2)) - len(buf[-1]) - 1
+                    self.alertlog.Url = match.group(2)[0:strlen]
+
+                    # if contain http:// ?
+                    match = rexpcheckurl.search(self.alertlog.Url)
+                    if match:
+                        self.alertlog.Url = match.group(1)
+
+                    buf = self.alertlog.Url.split('?')
+                    self.uri = buf[0][:512]
+                    if(len(buf) > 1):
+                        self.querystr = buf[1][:512]
+                    flag1 = False
+                    continue
+
+            if flag2:
+                match = rexpHost.search(self.lines[id])
+                if(match):
+                    self.alertlog.Url = match.group(1) + self.alertlog.Url
+                    self.alertlog.Url = escape_string(self.alertlog.Url[:512])
+                    buf = match.group(1).split(':')
+                    self.alertlog.Host = escape_string(buf[0][:255])
+                    if(len(buf) > 1):
+                        self.alertlog.DestinationPort = buf[1]
+                    flag2 = False
+                    continue
+
+            if flag3:
+                match = rexpUserAgent.search(self.lines[id])
+                if(match):
+                    self.alertlog.UserAgent = escape_string(match.group(1)[:255])
+                    flag3 = False
+                    continue
+
+            if flag4:
+                match = rexpReferer.search(self.lines[id])
+                if(match):
+                    self.alertlog.Referer = escape_string(match.group(1)[:255])
+                    flag4 = False
+                    continue
+
+            if flag5:
+                match = rexpRequestCT.search(self.lines[id])
+                if(match):
+                    self.alertlog.RequestContentType = match.group(1)[:255]
+                    flag5 = False
+                    continue
+
+            if flag6:
+                match = rexpCookie.search(self.lines[id])
+                if(match):
+                    self.cookie = match.group(1)
+                    flag6 = False
+                    continue
+        return id
+
+    def parse_response_headers(self, id):
+        flag1, flag2 = True, True
+        while(id < self.len):
+            id += 1
+            match = rexpFront.search(self.lines[id])
+            if(match):
+                id -= 1
+                break
+
+            if(flag1):
+                match = rexpStatusCode.search(self.lines[id])
+                if(match):
+                    self.alertlog.HttpStatusCode = match.group(2)
+                    flag1 = False
+                    continue
+          
+            if(flag2):
+                match = rexpResponseCT.search(self.lines[id])
+                if(match):
+                    self.alertlog.ResponseContentType = match.group(1)[:255]
+                    flag2 = False
+                    continue
+        return id
+
+    def parse_message(self, id):
+        while(id < self.len):
+            id += 1
+            match = rexpFront.search(self.lines[id])
+            if(match):
+                id -= 1
+                break
+
+            match = rexpMessageHead.search(self.lines[id])
+            if(match):
+                self.alertlog.MatchData = ''
+                self.alertlog.Rev = ''
+                self.alertlog.Msg = ''
+                self.alertlog.Tag = ''
+                self.alertlog.Severity = 'WARNING'
+                self.alertlog.Status = 'warning'
+                if rexpdallowed.search(match.group(1)):
+                    self.alertlog.Status = 'allow'
+                elif rexpdenied.search(match.group(1)):
+                    self.alertlog.Status = 'deny'
+                elif rexpclosed.search(match.group(1)):
+                    self.alertlog.Status = 'drop'
+                elif rexpwaring.search(match.group(1)):
+                    self.alertlog.Status = 'warning'
+
+                self.alertlog.GeneralMsg = escape_string(match.group(2)[:512])
+                m = re.search('code\s*(\d+)', match.group(1))
+                if(m):
+                    self.alertlog.HttpStatusCode = m.group(1)
+    
+                count = 0
+                for m in rexpMessageAll.finditer(self.lines[id]):
+                    if(m.group(1) == 'file'):
+                        self.alertlog.Rulefile = m.group(2)[:255]
+                    elif(m.group(1) == 'id'):
+                        self.alertlog.RuleID = m.group(2)
+                    elif(m.group(1) == 'rev'):
+                        self.alertlog.Rev = escape_string(m.group(2)[:128])
+                    elif(m.group(1) == 'msg'):
+                        self.alertlog.Msg = escape_string(m.group(2)[:128])
+                    elif(m.group(1) == 'severity'):
+                        self.alertlog.Severity = m.group(2)
+                    elif(m.group(1) == 'data'):
+                        self.alertlog.MatchData = escape_string(m.group(2)[:255])
+                    elif(m.group(1) == 'tag'):
+                        self.alertlog.Tag = m.group(2)[:64]
+
+                self.flag += 1
+                self.setattrsql()
+        return id
+
+    def setattrsql(self):
+        if self.alertlog.RuleID == '350100':
+            self.sqlstr[6].append([self.uricheck, self.cookie])
+            return 1
+
+        self.sqlstr[2][self.alertlog.Severity] += 1
+        if self.alertlog.RuleID in self.sqlstr[3]:
+            self.sqlstr[3][self.alertlog.RuleID] += 1
+        else:
+            self.sqlstr[3][self.alertlog.RuleID] = 1
+
+        if int(self.alertlog.RuleID) in self.ccruleids:
+            self.sqlstr[0] += self.alertlog.retvalues()
+        else:
+            self.sqlstr[1] += self.alertlog.retvalues()
+
+        if self.flag == 1:
+            self.sqlstr[4].append([self.alertlog.Host, self.uri, self.querystr])
+            self.sqlstr[5].append([self.alertlog.CountryCode, self.alertlog.RegionCode, 
+                                   self.alertlog.City, self.alertlog.SourceIP])
+

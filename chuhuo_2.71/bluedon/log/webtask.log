@@ -1,0 +1,124 @@
+[2017-06-21 09:57:06] [webtask] [INFO] 
+[2017-06-21 10:01:36] [webtask] [INFO] CMD_SSL_VPN_LIMIT|{"isslLimit":"100"}
+[2017-06-21 10:02:12] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-06-21 10:02:33] [webtask] [INFO] CMD_CONIFG_INTERFACE|add|{"id":1,"sPortName":"enp10s0","sNetMask":"","sWorkMode":"route","iByManagement":"","iAllowPing":1,"iAllowTraceRoute":"0","iAllowFlow":"0","iIPV4ConnectionType":1,"sIPV4Address":"192.168.0.1\/24,172.16.6.142\/24","sIPV4NextJump":"","iIPV6ConnectionType":1,"sIPV6Address":"","sIPV6NextJump":"","iStatus":1,"exStatus":"0","iMAC":"00:90:27:e0:01:48","sPortMode":1,"sLan":"enp10s0","iAllowLog":"0","iSSH":1,"iWeb":1}
+[2017-06-21 10:02:33] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-06-21 10:06:20] [webtask] [INFO] CMD_RECOVER|{"iType":"3","iUserId":"","sIp":"172.16.6.58"}
+[2017-06-21 10:08:48] [webtask] [INFO] 
+[2017-06-21 10:14:45] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-06-21 10:15:25] [webtask] [INFO] CMD_SSL_VPN_LIMIT|{"isslLimit":"100"}
+[2017-06-21 10:15:34] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-06-21 10:16:27] [webtask] [INFO] CMD_SYS_CONFIG|{"iDeepEngine":"1","iFLOW":"1","iDDOS":"1","iDPI":"1","iFlowAccount":"1","iWAF":"1","iShare":"1","iWeburl":"1","iWebeng":"1","iIPS":"1","iLEAK":"1","iVIRUES":"1","iAudit":"1","iNSNAT":"1","iCasca":"0"}
+[2017-06-21 10:21:16] [webtask] [INFO] CMD_SYS_CONFIG|{"iDeepEngine":"1","iNSNAT":"1","iFlowAccount":"0","iWAF":"0","iIPS":"0","iFLOW":"0","iDDOS":"0","iDPI":"0","iVIRUES":"0","iLEAK":"0","iShare":"0","iWebeng":"0","iWeburl":"0","iCasca":"0","iAudit":"0"}
+[2017-06-21 10:23:30] [webtask] [INFO] CMD_HONEYPOT|refresh|
+[2017-06-21 10:23:33] [webtask] [INFO] CMD_REVCAMERA|refresh|
+[2017-06-21 10:24:05] [webtask] [INFO] CMD_REVCAMERA|start|{"state":0,"src":"2,4,8","queue_num":"1","task_num":"5","content":"1","Revcamerafile":"revcamera_1498011845.conf"}
+[2017-06-21 10:24:06] [webtask] [INFO] CMD_REVCAMERA|refresh|
+[2017-06-21 10:24:28] [webtask] [INFO] CMD_REVSCAN|refresh|
+[2017-06-21 10:24:31] [webtask] [INFO] CMD_REVSCAN|start|{"des_ip":"","protocol":"","level":"","stop_src":0,"src_ip":"","state":0,"stop_time":"","way":"","check_ip":"","Revscanfile":"revscanfile_1498011871.conf"}
+[2017-06-21 10:24:32] [webtask] [INFO] CMD_REVSCAN|refresh|
+[2017-06-21 10:30:18] [webtask] [INFO] CMD_SYS_CONFIG|{"iDeepEngine":"1","iFlowAccount":"0","iWAF":"0","iIPS":"0","iFLOW":"0","iDDOS":"0","iDPI":"0","iVIRUES":"0","iLEAK":"0","iShare":"0","iWebeng":"0","iWeburl":"0","iCasca":"0","iAudit":"0","iNSNAT":"0"}
+[2017-06-21 10:33:44] [webtask] [INFO] CMD_REVCAMERA|refresh|
+[2017-06-21 10:33:48] [webtask] [INFO] CMD_REVCAMERA|restart|{"state":0,"src":"2,4,8","queue_num":"1","task_num":"5","content":"1","Revcamerafile":"revcamera_1498012428.conf"}
+[2017-06-21 10:33:49] [webtask] [INFO] CMD_REVCAMERA|refresh|
+[2017-06-21 10:38:36] [webtask] [INFO] CMD_REVCAMERA|restart|{"state":0,"src":"2,4,8","queue_num":"1","task_num":"5","content":"1","Revcamerafile":"revcamera_1498012716.conf"}
+[2017-06-21 10:38:38] [webtask] [INFO] CMD_REVCAMERA|refresh|
+[2017-06-21 10:41:46] [webtask] [INFO] CMD_REVCAMERA|stop|{"state":0,"src":"2,4,8","queue_num":"1","task_num":"5","content":"1","Revcamerafile":"revcamera_1498012905.conf"}
+[2017-06-21 10:41:48] [webtask] [INFO] CMD_REVCAMERA|refresh|
+[2017-06-21 10:41:51] [webtask] [INFO] CMD_REVCAMERA|start|{"state":0,"src":"2,4,8","queue_num":"1","task_num":"5","content":"1","Revcamerafile":"revcamera_1498012910.conf"}
+[2017-06-21 10:41:52] [webtask] [INFO] CMD_REVCAMERA|refresh|
+[2017-06-21 10:42:10] [webtask] [INFO] CMD_REVCAMERA|stop|{"state":0,"src":"2,4,8","queue_num":"1","task_num":"5","content":"1","Revcamerafile":"revcamera_1498012929.conf"}
+[2017-06-21 10:42:14] [webtask] [INFO] CMD_REVCAMERA|refresh|
+[2017-06-21 10:51:40] [webtask] [INFO] CMD_RECOVER|{"iType":"3","iUserId":"","sIp":"172.16.6.58"}
+[2017-06-21 10:54:14] [webtask] [INFO] 
+[2017-06-21 10:59:30] [webtask] [INFO] 
+[2017-06-21 10:59:57] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-06-21 11:01:26] [webtask] [INFO] CMD_CONIFG_INTERFACE|add|{"id":1,"sPortName":"enp10s0","sNetMask":"","sWorkMode":"route","iByManagement":"","iAllowPing":1,"iAllowTraceRoute":"0","iAllowFlow":"0","iIPV4ConnectionType":1,"sIPV4Address":"192.168.0.1\/24","sIPV4NextJump":"","iIPV6ConnectionType":1,"sIPV6Address":"","sIPV6NextJump":"","iStatus":1,"exStatus":"0","iMAC":"00:90:27:e0:01:48","sPortMode":1,"sLan":"enp10s0","iAllowLog":"0","iSSH":"0","iWeb":1}
+[2017-06-21 11:01:26] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-06-26 17:15:15] [webtask] [INFO] 
+[2017-06-26 17:26:44] [webtask] [INFO] CMD_SSL_VPN_LIMIT|{"isslLimit":"100"}
+[2017-06-26 17:27:19] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-06-26 17:27:33] [webtask] [INFO] CMD_CONIFG_INTERFACE|add|{"id":1,"sPortName":"enp10s0","sNetMask":"","sWorkMode":"route","iByManagement":"","iAllowPing":1,"iAllowTraceRoute":"0","iAllowFlow":"0","iIPV4ConnectionType":1,"sIPV4Address":"192.168.0.1\/24,172.16.6.142\/24","sIPV4NextJump":"","iIPV6ConnectionType":1,"sIPV6Address":"","sIPV6NextJump":"","iStatus":1,"exStatus":"0","iMAC":"00:90:27:e0:01:48","sPortMode":1,"sLan":"enp10s0","iAllowLog":"0","iSSH":1,"iWeb":1}
+[2017-06-26 17:27:33] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-06-26 17:33:40] [webtask] [INFO] CMD_SYS_CONFIG|{"iDeepEngine":"1","iFLOW":"1","iDDOS":"1","iDPI":"1","iFlowAccount":"1","iWAF":"1","iShare":"1","iWeburl":"1","iWebeng":"1","iIPS":"1","iLEAK":"1","iVIRUES":"1","iAudit":"1","iNSNAT":"1","iCasca":"0"}
+[2017-06-26 17:34:28] [webtask] [INFO] CMD_SYS_CONFIG|{"iDeepEngine":"1","iFlowAccount":"0","iWAF":"0","iIPS":"0","iFLOW":"0","iDDOS":"0","iDPI":"0","iVIRUES":"0","iLEAK":"0","iShare":"0","iWebeng":"0","iWeburl":"0","iCasca":"0","iAudit":"0","iNSNAT":"0"}
+[2017-06-26 17:51:41] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-06-26 17:51:49] [webtask] [INFO] CMD_RECOVER|{"iType":"3","iUserId":"","sIp":"172.16.6.58"}
+[2017-06-26 17:54:17] [webtask] [INFO] 
+[2017-07-13 10:08:54] [webtask] [INFO] 
+[2017-07-13 10:46:00] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 10:46:02] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 10:46:02] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 10:46:02] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 10:46:42] [webtask] [INFO] CMD_SSL_VPN_LIMIT|{"isslLimit":"100"}
+[2017-07-13 10:46:50] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 10:46:51] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 10:46:52] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 10:46:52] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 10:47:01] [webtask] [INFO] CMD_TIMESET|{"setType":"1","sDateTime":"2017-07-13 10:46:10"}
+[2017-07-13 10:46:35] [webtask] [INFO] CMD_CONIFG_INTERFACE|add|{"id":47,"sPortName":"enp8s0","sNetMask":"","sWorkMode":"route","iByManagement":"","iAllowPing":"0","iAllowTraceRoute":"0","iAllowFlow":"0","iIPV4ConnectionType":1,"sIPV4Address":"192.168.0.1\/24","sIPV4NextJump":"","iIPV6ConnectionType":1,"sIPV6Address":"","sIPV6NextJump":"","iStatus":1,"exStatus":"0","iMAC":"00:13:32:0e:7e:30","sPortMode":1,"sLan":"enp8s0","iAllowLog":"0","iSSH":"0","iWeb":1}
+[2017-07-13 10:46:35] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 11:03:31] [webtask] [INFO] 
+[2017-07-13 13:40:03] [webtask] [INFO] 
+[2017-07-13 13:49:04] [webtask] [INFO] CMD_SSL_VPN_LIMIT|{"isslLimit":"100"}
+[2017-07-13 13:49:51] [webtask] [INFO] CMD_SSL_VPN_LIMIT|{"isslLimit":"100"}
+[2017-07-13 13:52:47] [webtask] [INFO] CMD_SSL_VPN_LIMIT|{"isslLimit":"100"}
+[2017-07-13 13:53:18] [webtask] [INFO] CMD_SSL_VPN_LIMIT|{"isslLimit":"100"}
+[2017-07-13 13:54:02] [webtask] [INFO] CMD_SSL_VPN_LIMIT|{"isslLimit":"100"}
+[2017-07-13 13:54:10] [webtask] [INFO] CMD_SSL_VPN_LIMIT|{"isslLimit":"100"}
+[2017-07-13 13:59:42] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 13:59:43] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 13:59:44] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 13:59:49] [webtask] [INFO] CMD_CONIFG_INTERFACE|add|{"id":47,"sPortName":"enp8s0","sNetMask":"","sWorkMode":"route","iByManagement":"","iAllowPing":1,"iAllowTraceRoute":1,"iAllowFlow":"0","iIPV4ConnectionType":1,"sIPV4Address":"192.168.0.1\/24,172.16.6.79\/24","sIPV4NextJump":"","iIPV6ConnectionType":1,"sIPV6Address":"","sIPV6NextJump":"","iStatus":1,"exStatus":"0","iMAC":"00:13:32:0e:7e:30","sPortMode":1,"sLan":"enp8s0","iAllowLog":"0","iSSH":1,"iWeb":1}
+[2017-07-13 13:59:49] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 14:04:35] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 14:05:54] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 14:08:54] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 14:08:56] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 14:09:07] [webtask] [INFO] CMD_SSL_VPN_LIMIT|{"isslLimit":"100"}
+[2017-07-13 14:09:41] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 14:09:44] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 14:09:45] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 14:09:45] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 14:09:46] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 14:10:10] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 14:34:28] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-13 14:34:32] [webtask] [INFO] CMD_CONIFG_INTERFACE|add|{"id":1,"sPortName":"enp8s0","sNetMask":"","sWorkMode":"route","iByManagement":"","iAllowPing":"0","iAllowTraceRoute":"0","iAllowFlow":"0","iIPV4ConnectionType":1,"sIPV4Address":"192.168.0.1\/24","sIPV4NextJump":"","iIPV6ConnectionType":1,"sIPV6Address":"","sIPV6NextJump":"","iStatus":1,"exStatus":"0","iMAC":"00:13:32:0e:7e:30","sPortMode":1,"sLan":"enp8s0","iAllowLog":"0","iSSH":"0","iWeb":1}
+[2017-07-13 14:34:32] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 09:20:04] [webtask] [INFO] 
+[2017-07-14 09:47:46] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 09:47:54] [webtask] [INFO] CMD_CONIFG_INTERFACE|add|{"id":1,"sPortName":"enp8s0","sNetMask":"","sWorkMode":"route","iByManagement":"","iAllowPing":1,"iAllowTraceRoute":1,"iAllowFlow":"0","iIPV4ConnectionType":1,"sIPV4Address":"172.16.2.193\/24","sIPV4NextJump":"","iIPV6ConnectionType":1,"sIPV6Address":"","sIPV6NextJump":"","iStatus":1,"exStatus":"0","iMAC":"00:13:32:0e:7e:30","sPortMode":1,"sLan":"enp8s0","iAllowLog":"0","iSSH":1,"iWeb":1}
+[2017-07-14 09:47:54] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 09:48:01] [webtask] [INFO] CMD_CONIFG_INTERFACE|add|{"id":2,"sPortName":"enp9s0","sNetMask":"","sWorkMode":"route","iByManagement":"","iAllowPing":1,"iAllowTraceRoute":1,"iAllowFlow":"0","iIPV4ConnectionType":1,"sIPV4Address":"192.168.1.1\/24","sIPV4NextJump":"","iIPV6ConnectionType":1,"sIPV6Address":"","sIPV6NextJump":"","iStatus":1,"exStatus":"0","iMAC":"00:13:32:0e:7e:31","sPortMode":1,"sLan":"enp9s0","iAllowLog":"0","iSSH":1,"iWeb":1}
+[2017-07-14 09:48:01] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 09:48:03] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 09:48:03] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 09:48:03] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 09:48:03] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 09:48:04] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 09:48:04] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 09:51:17] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 09:51:30] [webtask] [INFO] CMD_CONIFG_INTERFACE|add|{"id":3,"sPortName":"vEth0","sNetMask":"","sWorkMode":"virtual","iByManagement":"","iAllowPing":"0","iAllowTraceRoute":"0","iAllowFlow":"0","iIPV4ConnectionType":1,"sIPV4Address":"","sIPV4NextJump":"","iIPV6ConnectionType":1,"sIPV6Address":"","sIPV6NextJump":"","iStatus":"0","exStatus":"0","iMAC":"00:00:00:00:00:00","sPortMode":1,"sLan":"Lan1","iAllowLog":"0","iSSH":"0","iWeb":"0"}
+[2017-07-14 09:51:30] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 09:51:35] [webtask] [INFO] CMD_CONIFG_INTERFACE|add|{"id":4,"sPortName":"vEth1","sNetMask":"","sWorkMode":"virtual","iByManagement":"","iAllowPing":"0","iAllowTraceRoute":"0","iAllowFlow":"0","iIPV4ConnectionType":1,"sIPV4Address":"","sIPV4NextJump":"","iIPV6ConnectionType":1,"sIPV6Address":"","sIPV6NextJump":"","iStatus":"0","exStatus":"0","iMAC":"00:00:00:00:00:00","sPortMode":1,"sLan":"Lan2","iAllowLog":"0","iSSH":"0","iWeb":"0"}
+[2017-07-14 09:51:35] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 09:52:24] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 10:41:03] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 10:41:11] [webtask] [INFO] CMD_CONIFG_INTERFACE|add|{"id":1,"sPortName":"enp8s0","sNetMask":"","sWorkMode":"route","iByManagement":"","iAllowPing":1,"iAllowTraceRoute":1,"iAllowFlow":"0","iIPV4ConnectionType":1,"sIPV4Address":"172.16.2.252\/24","sIPV4NextJump":"","iIPV6ConnectionType":1,"sIPV6Address":"","sIPV6NextJump":"","iStatus":1,"exStatus":"0","iMAC":"00:13:32:0e:7e:30","sPortMode":1,"sLan":"enp8s0","iAllowLog":"0","iSSH":1,"iWeb":1}
+[2017-07-14 10:41:11] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 10:44:56] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 10:45:07] [webtask] [INFO] CMD_CONIFG_INTERFACE|add|{"id":1,"sPortName":"enp8s0","sNetMask":"","sWorkMode":"route","iByManagement":"","iAllowPing":1,"iAllowTraceRoute":1,"iAllowFlow":"0","iIPV4ConnectionType":1,"sIPV4Address":"172.16.2.252\/24","sIPV4NextJump":"","iIPV6ConnectionType":1,"sIPV6Address":"","sIPV6NextJump":"","iStatus":1,"exStatus":"0","iMAC":"00:13:32:0e:7e:30","sPortMode":1,"sLan":"enp8s0","iAllowLog":"0","iSSH":1,"iWeb":1}
+[2017-07-14 10:45:07] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 10:49:25] [webtask] [INFO] CMD_STATICROUTE|add|{"id":1,"sName":"gw","sTargetAddress":"0.0.0.0","sMask":"0.0.0.0","sNextJumpIP":"172.16.2.254","sPort":"enp8s0","sIPV":"ipv4","iStatus":1}
+[2017-07-14 10:59:06] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 10:59:19] [webtask] [INFO] CMD_CONIFG_INTERFACE|add|{"id":1,"sPortName":"enp8s0","sNetMask":"","sWorkMode":"route","iByManagement":"","iAllowPing":1,"iAllowTraceRoute":1,"iAllowFlow":"0","iIPV4ConnectionType":1,"sIPV4Address":"172.16.2.107\/24","sIPV4NextJump":"","iIPV6ConnectionType":1,"sIPV6Address":"","sIPV6NextJump":"","iStatus":1,"exStatus":"0","iMAC":"00:13:32:0e:7e:30","sPortMode":1,"sLan":"enp8s0","iAllowLog":"0","iSSH":1,"iWeb":1}
+[2017-07-14 10:59:19] [webtask] [INFO] CMD_STATICROUTE|del|{"id":"1","sName":"gw","sTargetAddress":"0.0.0.0","sMask":"0.0.0.0","sNextJumpIP":"172.16.2.254","sPort":"enp8s0","sIPV":"ipv4","iStatus":"1"}
+[2017-07-14 10:59:19] [webtask] [INFO] CMD_STATICROUTE|add|{"id":"1","sName":"gw","sTargetAddress":"0.0.0.0","sMask":"0.0.0.0","sNextJumpIP":"172.16.2.254","sPort":"enp8s0","sIPV":"ipv4","iStatus":"1"}
+[2017-07-14 10:59:19] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 11:03:11] [webtask] [INFO] 
+[2017-07-14 11:17:06] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 11:24:17] [webtask] [INFO] CMD_NIC_FLUSH
+[2017-07-14 11:24:23] [webtask] [INFO] CMD_CONIFG_INTERFACE|add|{"id":1,"sPortName":"enp8s0","sNetMask":"","sWorkMode":"route","iByManagement":"","iAllowPing":1,"iAllowTraceRoute":1,"iAllowFlow":"0","iIPV4ConnectionType":1,"sIPV4Address":"172.16.2.170\/24","sIPV4NextJump":"","iIPV6ConnectionType":1,"sIPV6Address":"","sIPV6NextJump":"","iStatus":1,"exStatus":"0","iMAC":"00:13:32:0e:7e:30","sPortMode":1,"sLan":"enp8s0","iAllowLog":"0","iSSH":1,"iWeb":1}
+[2017-07-14 11:24:23] [webtask] [INFO] CMD_STATICROUTE|del|{"id":"1","sName":"gw","sTargetAddress":"0.0.0.0","sMask":"0.0.0.0","sNextJumpIP":"172.16.2.254","sPort":"enp8s0","sIPV":"ipv4","iStatus":"1"}
+[2017-07-14 11:24:23] [webtask] [INFO] CMD_STATICROUTE|add|{"id":"1","sName":"gw","sTargetAddress":"0.0.0.0","sMask":"0.0.0.0","sNextJumpIP":"172.16.2.254","sPort":"enp8s0","sIPV":"ipv4","iStatus":"1"}
+[2017-07-14 11:24:23] [webtask] [INFO] CMD_NIC_FLUSH

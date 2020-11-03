@@ -1,0 +1,5 @@
+## disable rule
+# set max length
+{% for i in range(ruleids|length) %}
+secAction pass,nolog,id:{{430000001+index+i}}{% for ruleid in ruleids[i] %},ctl:ruleRemoveById={{ruleid}}{% endfor %}
+{% endfor %}

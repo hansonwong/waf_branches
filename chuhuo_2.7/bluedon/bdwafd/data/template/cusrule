@@ -1,0 +1,6 @@
+
+## custom rules
+
+{% for cusrule in cusrules %}SecRule {{cusrule.matchdata}} "@{{cusrule.matchalgorithm}} {{cusrule.keywords|modsec_esc1}}" "{% if cusrule.httptype != '*' %}chain,{% endif %}id:{{cusrule.realid}},{{cusrule.action}},phase:{% if "REQUEST_BODY" in cusrule.matchdata %}2{% else %}1{% endif %},t:none,severity:'{{cusrule.severity}}', msg:'custom rule {{ cusrule.realid }} match.', logdata:'{{cusrule.keywords|modsec_esc2}}'"
+    {% if cusrule.httptype != '*' %}SecRule REQUEST_METHOD "^{{cusrule.httptype}}$" "t:none"{% endif %}
+{% endfor %}

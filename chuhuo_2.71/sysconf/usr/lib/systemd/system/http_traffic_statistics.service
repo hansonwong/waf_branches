@@ -1,0 +1,16 @@
+[Unit]
+Description=Firewall Http Traffic Statistics
+After=mysqld.service
+Wants=mysqld.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/usr/local/bluedon
+ExecStart=/usr/bin/python -m reportlog.http_traffic_statistic
+Restart=always
+KillSignal=SIGTERM
+
+[Install]
+WantedBy=multi-user.target

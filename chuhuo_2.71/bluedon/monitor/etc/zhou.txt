@@ -1,0 +1,156 @@
+﻿AF=Asia=阿富汗=Afghanistan=
+BD=Asia=孟加拉国=Bangladesh=
+BT=Asia=不丹=Bhutan=
+KH=Asia=柬埔寨=Cambodia=
+CN=Asia=中国=China=
+IN=Asia=印度=India=
+ID=Asia=印度尼西亚=Indonesia=
+JP=Asia=日本=Japan=
+LA=Asia=老挝=LAO PEOPLE'S DEMOCRATIC REPUBLIC=
+MY=Asia=马来西亚=Malaysia=
+MV=Asia=马尔代夫=Maldives=
+MN=Asia=蒙古=Mongolia=
+NP=Asia=尼泊尔=Nepal=
+KP=Asia=朝鲜=Democratic People's Republic of Korea=
+PK=Asia=巴基斯坦=Pakistan=
+PH=Asia=菲律宾共和国=Philippines=
+SG=Asia=新加坡=Singapore=
+KR=Asia=韩国=KOREA, REPUBLIC OF=
+LK=Asia=斯里兰卡=Sri Lanka=
+TH=Asia=泰国=Thailand=
+TR=Asia=土耳其=Turkey=
+VN=Asia=越南=Socialist Republic of Vietnam=
+PS=Asia=巴勒斯坦=Palestine=
+SK=Asia=锡金=Sikkim=
+BN=Asia=文莱=Brunei Darussalam=
+AL=Europe=阿尔巴尼亚=Albania=
+AT=Europe=奥地利=Austria=
+BE=Europe=比利时=Belgium=
+BG=Europe=保加利亚=Bulgaria=
+HR=Europe=克罗地亚=Croatia=
+CY=Europe=塞浦路斯=Cyprus=
+DK=Europe=丹麦=Denmark=
+FI=Europe=芬兰=Finland=
+FR=Europe=法国=France=
+DE=Europe=德国=Germany=
+GR=Europe=希腊=Greece=
+HU=Europe=匈牙利=Hungary=
+IS=Europe=冰岛=Iceland=
+IE=Europe=爱尔兰=Ireland=
+IT=Europe=意大利=Italy=
+LI=Europe=列支敦士登=Liechtenstein=
+LU=Europe=卢森堡=Luxembourg=
+MK=Europe=马其顿=Macedonia Skopje=
+MT=Europe=马耳他=Malta=
+MC=Europe=摩纳哥=Monaco=
+NL=Europe=荷兰=Netherlands=
+NO=Europe=挪威=Norway=
+PL=Europe=波兰=Poland=
+PT=Europe=葡萄牙=Portugal=
+RO=Europe=罗马尼亚=Romania=
+RU=Europe=俄罗斯=Russia=
+SM=Europe=圣马利诺=San Marino=
+SI=Europe=斯洛文尼亚=Slovenia Ljubljana=
+ES=Europe=西班牙=Spain=
+SE=Europe=瑞典=Sweden=
+CH=Europe=瑞士=Switzerland=
+GB=Europe=大不列颠联合王国=United Kingdom=
+AU=Oceania=澳大利亚=Australia=
+KI=Oceania=基里巴斯=Kiribati=
+NR=Oceania=瑙鲁=Nauru=
+TO=Oceania=汤加=Tonga=
+VU=Oceania=瓦努阿图=Vanuatu=
+AI=America=安圭拉岛=Anguilla The Valley=
+AG=America=安提瓜岛=Antigua and Barbuda=
+AR=America=阿根廷=Argentina=
+BS=America=巴哈马=The Bahamas=
+BB=America=巴巴多斯岛=Barbados=
+BZ=America=伯利兹=Belize=
+BM=America=百慕大群岛=Bermuda=
+BO=America=玻利维亚=Bolivia=
+BR=America=巴西=Brazil=
+VG=America=英属维尔京群岛=VIRGIN ISLANDS (BRITISH)=
+CA=America=加拿大=Canada=
+CL=America=智利=Chile=
+CO=America=哥伦比亚=Colombia=
+CR=America=哥斯达黎加=Costa Rica=
+CU=America=古巴=Cuba=
+DO=America=多米尼加=Dominican Republic=
+EC=America=厄瓜多尔=Ecuador=
+SV=America=萨尔瓦多=El Salvador=
+GL=America=格陵兰=Greenland Nuuk (Godthab)=
+GD=America=格林纳达=Grenada=
+GP=America=瓜德罗普岛=Guadeloupe=
+GT=America=危地马拉=Guatemala=
+GY=America=圭亚那=Guyana=
+HT=America=海地=Haiti=
+HN=America=洪都拉斯=Honduras=
+JM=America=牙买加=Jamaica=
+MQ=America=马提尼克岛=Martinique=
+MX=America=墨西哥=Mexico=
+MS=America=蒙特塞拉特岛=Montserrat=
+NI=America=尼加拉瓜=Nicaragua=
+PA=America=巴拿马=Panama=
+PY=America=巴拉圭=Paraguay=
+PE=America=秘鲁=Peru=
+PR=America=波多黎各岛=Puerto Rico=
+LC=America=圣卢西亚岛=St. Lucia=
+VC=America=圣文森特岛=SAINT VINCENT AND THE GRENADINES=
+SR=America=苏里南=Suriname=
+TT=America=特立尼达和多巴哥=Trinidad and Tobago=
+TC=America=特克斯群岛和凯科斯群岛=TURKS AND CAICOS ISLANDS=
+US=America=美国=United States=
+UY=America=乌拉圭=Uruguay=
+VE=America=委内瑞拉=Venezuela=
+VI=America=美属维尔京群岛=VIRGIN ISLANDS (U.S.)=
+DZ=Africa=阿尔及利亚=Algeria=
+AO=Africa=安哥拉=Angola=
+BJ=Africa=贝宁=Benin=
+BW=Africa=博茨瓦纳=Botswana=
+BI=Africa=布隆迪=Burundi=
+CM=Africa=喀麦隆=Cameroon=
+CF=Africa=中非=Central African Republic=
+TD=Africa=乍得=Chad=
+CG=Africa=刚果共和国=CONGO, Republic of=
+DJ=Africa=吉布提共和国=Djibouti=
+EG=Africa=埃及=Egypt=
+GQ=Africa=赤道几内亚=Equatorial=
+ER=Africa=厄立特里亚=Eritrea=
+ET=Africa=埃塞俄比亚=Ethiopia=
+GA=Africa=加蓬=Gabon=
+GM=Africa=冈比亚=The Gambia=
+GH=Africa=加纳=Ghana=
+GN=Africa=几内亚=Guinea=
+GW=Africa=几内亚比绍共和国=Guinea-Bissau=
+KE=Africa=肯尼亚=Kenya=
+LS=Africa=莱索托=Lesotho=
+LR=Africa=利比里亚=Liberia=
+LY=Africa=利比亚=Libya=
+MG=Africa=马达加斯加=Madagasca=
+MW=Africa=马拉维=Malawi=
+ML=Africa=马里=Mali=
+MU=Africa=毛里求斯=Mauritius=
+MR=Africa=毛里塔尼亚=Mauritania=
+MA=Africa=摩洛哥=Morocco=
+MZ=Africa=莫桑比克=Mozambique=
+NA=Africa=纳米比亚=Namibia=
+NE=Africa=尼日尔=Niger=
+NG=Africa=尼日利亚=Nigeria=
+RE=Africa=留尼旺岛=Reunion=
+CD=Africa=刚果民主共和国=CONGO, Democratic Republic of (was Zaire)=
+RW=Africa=卢旺达=Rwanda=
+ST=Africa=圣多美及普林西比民主共和国=Sao Tome and Principe=
+SN=Africa=塞内加尔=Senegal=
+SC=Africa=塞舌尔=Seychelles=
+SL=Africa=塞拉里昂=Sierra Leone=
+SO=Africa=索马里=Somalia=
+ZA=Africa=南非=South Africa=
+SD=Africa=苏丹=Sudan=
+SZ=Africa=斯威士兰=Swaziland=
+TZ=Africa=坦桑尼亚=Tanzania=
+TG=Africa=多哥=Togo=
+TN=Africa=突尼斯=Tunisia=
+UG=Africa=乌干达=Uganda=
+EH=Africa=西撒哈拉=Western Sahara=
+ZM=Africa=赞比亚=Zambia=
+ZW=Africa=津巴布韦=Zimbabwe=

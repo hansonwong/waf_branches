@@ -1,0 +1,21 @@
+#flush SAD entries
+flush;
+
+#flush SPD entries
+spdflush;
+
+#add SPD entries
+
+{% for info in data -%}
+{% for local in info.s_iLocal -%}
+{% for addr in info.s_iTarget -%}
+{% if info.s_iSessionMode == 'tunnel' -%}
+spdadd {{ addr }} {{ local }} any -P in ipsec {{ info.s_iSessionProtocol}}/{{ info.s_iSessionMode }}/{{ info.f_sAddress }}-{{ info.local_ip }}/require;
+spdadd {{ local }} {{ addr }} any -P out ipsec {{ info.s_iSessionProtocol}}/{{ info.s_iSessionMode }}/{{ info.local_ip }}-{{ info.f_sAddress }}/require;
+{% elif info.s_iSessionMode == 'transport' -%}
+spdadd {{ addr }} {{ local }} any -P in ipsec {{ info.s_iSessionProtocol}}/{{ info.s_iSessionMode }}//require;
+spdadd {{ local }} {{ addr }} any -P out ipsec {{ info.s_iSessionProtocol}}/{{ info.s_iSessionMode }}//require;
+{% endif -%}
+{% endfor -%}
+{% endfor -%}
+{% endfor -%}

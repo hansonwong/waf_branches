@@ -1,0 +1,7 @@
+
+## custom rules
+
+
+{% for cusrule in cusrules %}SecRule {{cusrule.matchdata}} "@{{cusrule.matchalgorithm}} {{cusrule.keywords}}" "id:{{cusrule.realid}},{{cusrule.action}},chain,phase:1,t:none,severity:'{{cusrule.severity}}', msg:'custom rule {{ cusrule.realid }} match.', logdata:'{{cusrule.keywords}}'"
+     SecRule REQUEST_METHOD "^{{cusrule.httptype}}$" "t:none"
+{% endfor %}

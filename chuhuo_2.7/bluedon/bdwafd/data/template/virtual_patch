@@ -1,0 +1,11 @@
+
+#虚拟补丁
+#id:700001+
+
+{% for rule in virtuals %}
+SecRule REQUEST_FILENAME "@contains {{rule.path}}" "t:none,chain,t:lowercase,phase:2,id:'{{rule.rid}}',deny,log,auditlog,msg:'rule was made by web scanner in waf',tag:'Vulnerability patch',tag:'host:{{rule.host}}'"
+    SecRule REQUEST_HEADERS:HOST "{{rule.host}}" "chain,t:none,t:lowercase"
+        SecRule REQUEST_METHOD "{{rule.method}}" "t:none{% if rule.path_query %},chain{% endif %}"
+            {% for query in rule.path_query %}SecRule ARGS:{{query[0]}}  "{{query[1]}}" "t:none,t:lowercase{% if loop.index != loop.length %},chain{% endif %}"
+            {% endfor %}
+{% endfor %}

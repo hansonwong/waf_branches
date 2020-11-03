@@ -1,0 +1,30 @@
+local {{ config['vpn_addr'] }}
+port {{config['http_port']}}
+proto udp
+dev tun
+ca /etc/openvpn/server/ca.crt
+cert /etc/openvpn/server/server.crt
+key /etc/openvpn/server/server.key
+dh /etc/openvpn/server/dh.pem
+
+server {{ config['server_addr'] }} {{ mask_str }}
+client-config-dir /etc/openvpn/ccd
+{% for push_data in push_route %}push "route {{ push_data['ip'] }} {{ push_data['mask'] }}"
+{% endfor %}
+
+verb 3
+{% if config['zip'] == '1'%}comp-lzo{% endif %}
+persist-tun
+persist-key
+keepalive 10 120
+status openvpn-status.log
+ifconfig-pool-persist ipp.txt
+
+management 127.0.0.1 8010
+management-hold
+management-signal
+management-client
+management-client-auth
+management-query-passwords
+username-as-common-name
+cipher BF-CBC

@@ -1,0 +1,3213 @@
+2016-04-07 11:42:53 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:42:53 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:42:53 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:42:53 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:42:53 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:42:53 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:42:53 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Controller::runAction] Route to run: site/error
+2016-04-07 11:42:53 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Action::runWithParams] Running action: yii\web\ErrorAction::run()
+2016-04-07 11:42:53 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\site\error.php
+2016-04-07 11:42:53 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\layouts\main.php
+2016-04-07 11:42:53 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][info][yii\web\Session::open] Session started
+    in D:\phpStudy\WWW\yii2\apps\backend\themes\default\layouts\main.php:40
+2016-04-07 11:42:53 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][info][application] $_COOKIE = [
+    '_identity' => 'bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda:2:{i:0;s:9:\"_identity\";i:1;s:13:\"[5,5,2592000]\";}'
+    '_csrf' => '50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri\";}'
+    'PHPSESSID' => 'o6p7gt030rb6ue82p0njb7s2u1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+    '__returnUrl' => '//yii2/admin.php/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_identity=bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A13%3A%22%5B5%2C5%2C2592000%5D%22%3B%7D; _csrf=50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri%22%3B%7D; PHPSESSID=o6p7gt030rb6ue82p0njb7s2u1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63737'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'DOCUMENT_URI' => '/yii2/admin/index.php/test/index'
+    'REQUEST_URI' => '/yii2/admin/index.php/test/index'
+    'SCRIPT_NAME' => '/yii2/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/phpStudy/WWW/test/index'
+    'PATH_INFO' => '/test/index'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/yii2/admin/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/admin/index.php/test/index'
+    'REQUEST_TIME_FLOAT' => 1460029373.8282
+    'REQUEST_TIME' => 1460029373
+]
+2016-04-07 11:43:28 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:43:28 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:43:28 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:43:28 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:43:28 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:43:28 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:43:28 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Controller::runAction] Route to run: site/error
+2016-04-07 11:43:28 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Action::runWithParams] Running action: yii\web\ErrorAction::run()
+2016-04-07 11:43:28 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\site\error.php
+2016-04-07 11:43:28 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\layouts\main.php
+2016-04-07 11:43:28 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][info][yii\web\Session::open] Session started
+    in D:\phpStudy\WWW\yii2\apps\backend\themes\default\layouts\main.php:40
+2016-04-07 11:43:28 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][info][application] $_COOKIE = [
+    '_identity' => 'bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda:2:{i:0;s:9:\"_identity\";i:1;s:13:\"[5,5,2592000]\";}'
+    '_csrf' => '50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri\";}'
+    'PHPSESSID' => 'o6p7gt030rb6ue82p0njb7s2u1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+    '__returnUrl' => '//yii2/admin.php/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_identity=bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A13%3A%22%5B5%2C5%2C2592000%5D%22%3B%7D; _csrf=50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri%22%3B%7D; PHPSESSID=o6p7gt030rb6ue82p0njb7s2u1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63730'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'DOCUMENT_URI' => '/yii2/admin/index.php/Test/Index'
+    'REQUEST_URI' => '/yii2/admin/index.php/Test/Index'
+    'SCRIPT_NAME' => '/yii2/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/phpStudy/WWW/Test/Index'
+    'PATH_INFO' => '/Test/Index'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/yii2/admin/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/admin/index.php/Test/Index'
+    'REQUEST_TIME_FLOAT' => 1460029408.753
+    'REQUEST_TIME' => 1460029408
+]
+2016-04-07 11:45:12 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:45:12 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:45:12 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:45:12 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:45:12 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:45:12 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:45:12 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Controller::runAction] Route to run: site/error
+2016-04-07 11:45:12 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Action::runWithParams] Running action: yii\web\ErrorAction::run()
+2016-04-07 11:45:12 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\site\error.php
+2016-04-07 11:45:12 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\layouts\main.php
+2016-04-07 11:45:12 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][info][yii\web\Session::open] Session started
+    in D:\phpStudy\WWW\yii2\apps\backend\themes\default\layouts\main.php:40
+2016-04-07 11:45:12 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][info][application] $_COOKIE = [
+    '_identity' => 'bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda:2:{i:0;s:9:\"_identity\";i:1;s:13:\"[5,5,2592000]\";}'
+    '_csrf' => '50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri\";}'
+    'PHPSESSID' => 'o6p7gt030rb6ue82p0njb7s2u1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+    '__returnUrl' => '//yii2/admin.php/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_identity=bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A13%3A%22%5B5%2C5%2C2592000%5D%22%3B%7D; _csrf=50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri%22%3B%7D; PHPSESSID=o6p7gt030rb6ue82p0njb7s2u1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63850'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'DOCUMENT_URI' => '/yii2/admin/index.php/Test/Index'
+    'REQUEST_URI' => '/yii2/admin/index.php/Test/Index'
+    'SCRIPT_NAME' => '/yii2/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/phpStudy/WWW/Test/Index'
+    'PATH_INFO' => '/Test/Index'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/yii2/admin/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/admin/index.php/Test/Index'
+    'REQUEST_TIME_FLOAT' => 1460029512.6198
+    'REQUEST_TIME' => 1460029512
+]
+2016-04-07 11:45:39 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:45:39 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:45:39 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:45:39 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:45:39 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:45:39 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:45:39 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Controller::runAction] Route to run: site/error
+2016-04-07 11:45:39 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Action::runWithParams] Running action: yii\web\ErrorAction::run()
+2016-04-07 11:45:39 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\site\error.php
+2016-04-07 11:45:39 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\layouts\main.php
+2016-04-07 11:45:39 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][info][yii\web\Session::open] Session started
+    in D:\phpStudy\WWW\yii2\apps\backend\themes\default\layouts\main.php:40
+2016-04-07 11:45:39 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][info][application] $_COOKIE = [
+    '_identity' => 'bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda:2:{i:0;s:9:\"_identity\";i:1;s:13:\"[5,5,2592000]\";}'
+    '_csrf' => '50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri\";}'
+    'PHPSESSID' => 'o6p7gt030rb6ue82p0njb7s2u1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+    '__returnUrl' => '//yii2/admin.php/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_identity=bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A13%3A%22%5B5%2C5%2C2592000%5D%22%3B%7D; _csrf=50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri%22%3B%7D; PHPSESSID=o6p7gt030rb6ue82p0njb7s2u1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63850'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'DOCUMENT_URI' => '/yii2/admin/index.php/Test/Index'
+    'REQUEST_URI' => '/yii2/admin/index.php/Test/Index'
+    'SCRIPT_NAME' => '/yii2/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/phpStudy/WWW/Test/Index'
+    'PATH_INFO' => '/Test/Index'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/yii2/admin/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/admin/index.php/Test/Index'
+    'REQUEST_TIME_FLOAT' => 1460029539.9236
+    'REQUEST_TIME' => 1460029539
+]
+2016-04-07 11:45:41 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:45:41 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:45:41 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:45:41 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:45:41 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:45:41 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:45:41 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Controller::runAction] Route to run: site/error
+2016-04-07 11:45:41 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Action::runWithParams] Running action: yii\web\ErrorAction::run()
+2016-04-07 11:45:41 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\site\error.php
+2016-04-07 11:45:41 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\layouts\main.php
+2016-04-07 11:45:41 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][info][yii\web\Session::open] Session started
+    in D:\phpStudy\WWW\yii2\apps\backend\themes\default\layouts\main.php:40
+2016-04-07 11:45:41 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][info][application] $_COOKIE = [
+    '_identity' => 'bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda:2:{i:0;s:9:\"_identity\";i:1;s:13:\"[5,5,2592000]\";}'
+    '_csrf' => '50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri\";}'
+    'PHPSESSID' => 'o6p7gt030rb6ue82p0njb7s2u1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+    '__returnUrl' => '//yii2/admin.php/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_identity=bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A13%3A%22%5B5%2C5%2C2592000%5D%22%3B%7D; _csrf=50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri%22%3B%7D; PHPSESSID=o6p7gt030rb6ue82p0njb7s2u1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63850'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'DOCUMENT_URI' => '/yii2/admin/index.php/Test/Index'
+    'REQUEST_URI' => '/yii2/admin/index.php/Test/Index'
+    'SCRIPT_NAME' => '/yii2/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/phpStudy/WWW/Test/Index'
+    'PATH_INFO' => '/Test/Index'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/yii2/admin/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/admin/index.php/Test/Index'
+    'REQUEST_TIME_FLOAT' => 1460029541.1842
+    'REQUEST_TIME' => 1460029541
+]
+2016-04-07 11:46:02 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:46:02 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:46:02 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:46:02 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:46:02 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:46:02 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:46:02 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Controller::runAction] Route to run: site/error
+2016-04-07 11:46:02 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\Action::runWithParams] Running action: yii\web\ErrorAction::run()
+2016-04-07 11:46:02 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\site\error.php
+2016-04-07 11:46:02 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\layouts\main.php
+2016-04-07 11:46:02 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][info][yii\web\Session::open] Session started
+    in D:\phpStudy\WWW\yii2\apps\backend\themes\default\layouts\main.php:40
+2016-04-07 11:46:02 [127.0.0.1][-][o6p7gt030rb6ue82p0njb7s2u1][info][application] $_COOKIE = [
+    '_identity' => 'bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda:2:{i:0;s:9:\"_identity\";i:1;s:13:\"[5,5,2592000]\";}'
+    '_csrf' => '50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri\";}'
+    'PHPSESSID' => 'o6p7gt030rb6ue82p0njb7s2u1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+    '__returnUrl' => '//yii2/admin.php/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_identity=bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A13%3A%22%5B5%2C5%2C2592000%5D%22%3B%7D; _csrf=50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri%22%3B%7D; PHPSESSID=o6p7gt030rb6ue82p0njb7s2u1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63877'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'DOCUMENT_URI' => '/yii2/admin/index.php/Test/Index'
+    'REQUEST_URI' => '/yii2/admin/index.php/Test/Index'
+    'SCRIPT_NAME' => '/yii2/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/phpStudy/WWW/Test/Index'
+    'PATH_INFO' => '/Test/Index'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/yii2/admin/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/admin/index.php/Test/Index'
+    'REQUEST_TIME_FLOAT' => 1460029562.735
+    'REQUEST_TIME' => 1460029562
+]
+2016-04-07 11:46:05 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:46:05 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:46:05 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:46:05 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:46:05 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:46:05 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => 'bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda:2:{i:0;s:9:\"_identity\";i:1;s:13:\"[5,5,2592000]\";}'
+    '_csrf' => '50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri\";}'
+    'PHPSESSID' => 'o6p7gt030rb6ue82p0njb7s2u1'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_identity=bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A13%3A%22%5B5%2C5%2C2592000%5D%22%3B%7D; _csrf=50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri%22%3B%7D; PHPSESSID=o6p7gt030rb6ue82p0njb7s2u1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63850'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'DOCUMENT_URI' => '/yii2/admin/index.php'
+    'REQUEST_URI' => '/yii2/admin/index.php'
+    'SCRIPT_NAME' => '/yii2/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/phpStudy/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/yii2/admin/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029565.8649
+    'REQUEST_TIME' => 1460029565
+]
+2016-04-07 11:46:09 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:46:09 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:46:09 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:46:09 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:46:09 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:46:09 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:46:09 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-04-07 11:46:09 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-04-07 11:46:09 [127.0.0.1][-][-][info][yii\web\Session::open] Session started
+2016-04-07 11:46:09 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => 'bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda:2:{i:0;s:9:\"_identity\";i:1;s:13:\"[5,5,2592000]\";}'
+    '_csrf' => '50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri\";}'
+    'PHPSESSID' => 'o6p7gt030rb6ue82p0njb7s2u1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+    '__returnUrl' => '/yii2/admin/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_identity=bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A13%3A%22%5B5%2C5%2C2592000%5D%22%3B%7D; _csrf=50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri%22%3B%7D; PHPSESSID=o6p7gt030rb6ue82p0njb7s2u1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63850'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'DOCUMENT_URI' => '/yii2/admin/index.php'
+    'REQUEST_URI' => '/yii2/admin/'
+    'SCRIPT_NAME' => '/yii2/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/phpStudy/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/yii2/admin/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029569.2894
+    'REQUEST_TIME' => 1460029569
+]
+2016-04-07 11:46:19 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:46:19 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:46:19 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:46:19 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:46:19 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:46:19 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:46:19 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-04-07 11:46:19 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-04-07 11:46:19 [127.0.0.1][-][-][info][yii\web\Session::open] Session started
+2016-04-07 11:46:19 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => 'bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda:2:{i:0;s:9:\"_identity\";i:1;s:13:\"[5,5,2592000]\";}'
+    '_csrf' => '50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri\";}'
+    'PHPSESSID' => 'o6p7gt030rb6ue82p0njb7s2u1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+    '__returnUrl' => '/yii2/admin/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_identity=bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A13%3A%22%5B5%2C5%2C2592000%5D%22%3B%7D; _csrf=50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri%22%3B%7D; PHPSESSID=o6p7gt030rb6ue82p0njb7s2u1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63850'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'DOCUMENT_URI' => '/yii2/admin/index.php'
+    'REQUEST_URI' => '/yii2/admin/'
+    'SCRIPT_NAME' => '/yii2/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/phpStudy/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/yii2/admin/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029579.7536
+    'REQUEST_TIME' => 1460029579
+]
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-04-07 11:46:52 [127.0.0.1][-][-][info][yii\web\Session::open] Session started
+2016-04-07 11:46:51 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => 'bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda:2:{i:0;s:9:\"_identity\";i:1;s:13:\"[5,5,2592000]\";}'
+    '_csrf' => '50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri\";}'
+    'PHPSESSID' => 'o6p7gt030rb6ue82p0njb7s2u1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+    '__returnUrl' => '/yii2/admin/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_identity=bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A13%3A%22%5B5%2C5%2C2592000%5D%22%3B%7D; _csrf=50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri%22%3B%7D; PHPSESSID=o6p7gt030rb6ue82p0njb7s2u1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63850'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'DOCUMENT_URI' => '/yii2/admin/index.php'
+    'REQUEST_URI' => '/yii2/admin/'
+    'SCRIPT_NAME' => '/yii2/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/phpStudy/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/yii2/admin/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029611.9857
+    'REQUEST_TIME' => 1460029611
+]
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 11:46:52 [127.0.0.1][-][-][info][yii\web\Session::open] Session started
+    in D:\phpStudy\WWW\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\site\login.php
+    in D:\phpStudy\WWW\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:46:52 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\layouts\main.php
+    in D:\phpStudy\WWW\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:46:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_identity' => 'bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda:2:{i:0;s:9:\"_identity\";i:1;s:13:\"[5,5,2592000]\";}'
+    '_csrf' => '50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri\";}'
+    'PHPSESSID' => 'o6p7gt030rb6ue82p0njb7s2u1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+    '__returnUrl' => '/yii2/admin/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_identity=bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A13%3A%22%5B5%2C5%2C2592000%5D%22%3B%7D; _csrf=50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri%22%3B%7D; PHPSESSID=o6p7gt030rb6ue82p0njb7s2u1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63850'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'DOCUMENT_URI' => '/yii2/admin/index.php'
+    'REQUEST_URI' => '/yii2/admin/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/yii2/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'PATH_TRANSLATED' => 'D:/phpStudy/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/yii2/admin/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029612.0465
+    'REQUEST_TIME' => 1460029612
+]
+2016-04-07 11:47:00 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:47:00 [127.0.0.1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:47:00 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:47:00 [127.0.0.1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:47:00 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:47:00 [127.0.0.1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+2016-04-07 11:47:00 [127.0.0.1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 11:47:00 [127.0.0.1][1][-][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 11:47:00 [127.0.0.1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 11:47:00 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+    in D:\phpStudy\WWW\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 11:47:01 [127.0.0.1][1][-][info][yii\web\User::login] User '1' logged in from 127.0.0.1 with duration 2592000.
+    in D:\phpStudy\WWW\yii2\models\LoginForm.php:59
+    in D:\phpStudy\WWW\yii2\apps\backend\controllers\SiteController.php:71
+2016-04-07 11:47:00 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'dGtITDhXM1QjMh8CTzQAEg4GGwINDX8FJCgee3McdDsmPQ0ZXA1BPQ=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_identity' => 'bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda:2:{i:0;s:9:\"_identity\";i:1;s:13:\"[5,5,2592000]\";}'
+    '_csrf' => '50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri\";}'
+    'PHPSESSID' => 'o6p7gt030rb6ue82p0njb7s2u1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_identity=bdf220f4e8c2f4c204ef17ea9d558c73d2e97ea9422798cf8efc2ce418da98eda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A13%3A%22%5B5%2C5%2C2592000%5D%22%3B%7D; _csrf=50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri%22%3B%7D; PHPSESSID=o6p7gt030rb6ue82p0njb7s2u1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://127.0.0.1/yii2/admin/index.php?r=site%2Flogin'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '196'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63861'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'DOCUMENT_URI' => '/yii2/admin/index.php'
+    'REQUEST_URI' => '/yii2/admin/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/yii2/admin/index.php'
+    'CONTENT_LENGTH' => '196'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'PATH_TRANSLATED' => 'D:/phpStudy/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/yii2/admin/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029620.7899
+    'REQUEST_TIME' => 1460029620
+]
+2016-04-07 11:47:01 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:47:01 [127.0.0.1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:47:01 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:47:01 [127.0.0.1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:47:01 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:47:01 [127.0.0.1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+2016-04-07 11:47:01 [127.0.0.1][1][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-04-07 11:47:01 [127.0.0.1][1][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-04-07 11:47:01 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2016-04-07 11:47:01 [127.0.0.1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionIndex()
+2016-04-07 11:47:01 [127.0.0.1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\site\index.php
+    in D:\phpStudy\WWW\yii2\apps\backend\controllers\SiteController.php:58
+2016-04-07 11:47:01 [127.0.0.1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\phpStudy\WWW\yii2\apps\backend\themes\default\layouts\main.php
+    in D:\phpStudy\WWW\yii2\apps\backend\controllers\SiteController.php:58
+2016-04-07 11:47:01 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri\";}'
+    '_identity' => '55c7ab862667139488fed9b1b1c5b8640ce48aad0826d084ed003f378e599b0ba:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[1,\"123456\",2592000]\";}'
+    'PHPSESSID' => 'lbrfcb47tq6q4copehivkqodu0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=50634fe442b7ffb066043e4ef667f06a926e762c3a051f116f15314777091602a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WYWNwc3FzmSN5ZLQPCV7KKGoRVEUdZri%22%3B%7D; _identity=55c7ab862667139488fed9b1b1c5b8640ce48aad0826d084ed003f378e599b0ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B1%2C%22123456%22%2C2592000%5D%22%3B%7D; PHPSESSID=lbrfcb47tq6q4copehivkqodu0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://127.0.0.1/yii2/admin/index.php?r=site%2Flogin'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63861'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'DOCUMENT_URI' => '/yii2/admin/index.php'
+    'REQUEST_URI' => '/yii2/admin/'
+    'SCRIPT_NAME' => '/yii2/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'D:/phpStudy/WWW'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/yii2/admin/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029621.4607
+    'REQUEST_TIME' => 1460029621
+]
+2016-04-07 11:49:40 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:49:40 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:49:40 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:49:40 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:49:40 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:49:40 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:49:40 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-04-07 11:49:40 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-04-07 11:49:40 [127.0.0.1][-][-][info][yii\web\Session::open] Session started
+2016-04-07 11:49:40 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => '7d1oothla4t732qvpu4l7fbqg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=7d1oothla4t732qvpu4l7fbqg3'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64034'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029780.1473
+    'REQUEST_TIME' => 1460029780
+]
+2016-04-07 11:49:40 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:49:40 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:49:40 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:49:40 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:49:40 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:49:40 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:49:40 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 11:49:40 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 11:49:40 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 11:49:40 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][yii\web\Session::open] Session started
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 11:49:40 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\login.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:49:40 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => '7d1oothla4t732qvpu4l7fbqg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=7d1oothla4t732qvpu4l7fbqg3'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64034'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login.html5'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029780.1909
+    'REQUEST_TIME' => 1460029780
+]
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][yii\web\Session::open] Session started
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\login.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => '7d1oothla4t732qvpu4l7fbqg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=7d1oothla4t732qvpu4l7fbqg3'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64143'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login.html5'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029995.0548
+    'REQUEST_TIME' => 1460029995
+]
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][yii\web\Session::open] Session started
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\login.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => '7d1oothla4t732qvpu4l7fbqg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=7d1oothla4t732qvpu4l7fbqg3'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64143'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login.html5'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029995.6766
+    'REQUEST_TIME' => 1460029995
+]
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][yii\web\Session::open] Session started
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\login.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:53:15 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => '7d1oothla4t732qvpu4l7fbqg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=7d1oothla4t732qvpu4l7fbqg3'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64143'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login.html5'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029995.9427
+    'REQUEST_TIME' => 1460029995
+]
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][yii\web\Session::open] Session started
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\login.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => '7d1oothla4t732qvpu4l7fbqg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=7d1oothla4t732qvpu4l7fbqg3'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64143'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login.html5'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029996.229
+    'REQUEST_TIME' => 1460029996
+]
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][yii\web\Session::open] Session started
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\login.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:53:16 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => '7d1oothla4t732qvpu4l7fbqg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=7d1oothla4t732qvpu4l7fbqg3'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64143'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login.html5'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029996.7182
+    'REQUEST_TIME' => 1460029996
+]
+2016-04-07 11:53:16 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:53:16 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:53:16 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:53:16 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:53:16 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:53:16 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:53:16 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 11:53:16 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 11:53:16 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 11:53:16 [127.0.0.1][-][-][info][yii\web\Session::open] Session started
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 11:53:17 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\login.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:53:16 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => '7d1oothla4t732qvpu4l7fbqg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=7d1oothla4t732qvpu4l7fbqg3'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64143'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login.html5'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029996.9693
+    'REQUEST_TIME' => 1460029996
+]
+2016-04-07 11:53:17 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:53:17 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:53:17 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:53:17 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:53:17 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:53:17 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:53:17 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 11:53:17 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 11:53:17 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 11:53:17 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][yii\web\Session::open] Session started
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 11:53:17 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\login.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:53:17 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => '7d1oothla4t732qvpu4l7fbqg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=7d1oothla4t732qvpu4l7fbqg3'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64151'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login.html5'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460029997.0364
+    'REQUEST_TIME' => 1460029997
+]
+2016-04-07 11:53:39 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:53:39 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:53:39 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:53:39 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:53:39 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:53:39 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:53:39 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 11:53:39 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 11:53:39 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 11:53:39 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][yii\web\Session::open] Session started
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 11:53:39 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\login.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:53:39 [127.0.0.1][-][7d1oothla4t732qvpu4l7fbqg3][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => '7d1oothla4t732qvpu4l7fbqg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=7d1oothla4t732qvpu4l7fbqg3'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64151'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login.html5'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460030019.1181
+    'REQUEST_TIME' => 1460030019
+]
+2016-04-07 11:54:44 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:54:44 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:54:44 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:54:44 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:54:44 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:54:44 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:54:44 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 11:54:44 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 11:54:44 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 11:54:44 [127.0.0.1][-][-][info][yii\web\Session::open] Session started
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 11:54:44 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\login.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:54:44 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\layouts\main.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:54:44 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => '7d1oothla4t732qvpu4l7fbqg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=7d1oothla4t732qvpu4l7fbqg3'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64195'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login.html5'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460030084.4775
+    'REQUEST_TIME' => 1460030084
+]
+2016-04-07 11:54:45 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:54:45 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:54:45 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:54:45 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:54:45 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:54:45 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:54:45 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 11:54:45 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 11:54:45 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 11:54:45 [127.0.0.1][-][-][info][yii\web\Session::open] Session started
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 11:54:45 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\login.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:54:45 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\layouts\main.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 11:54:45 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => '7d1oothla4t732qvpu4l7fbqg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=7d1oothla4t732qvpu4l7fbqg3'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64206'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login.html5'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460030085.2795
+    'REQUEST_TIME' => 1460030085
+]
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 11:54:49 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 11:54:49 [127.0.0.1][1][-][info][yii\web\User::login] User '1' logged in from 127.0.0.1 with duration 2592000.
+    in E:\wwwroot\yii2\models\LoginForm.php:59
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:71
+2016-04-07 11:54:49 [127.0.0.1][1][-][info][application] $_POST = [
+    '_csrf' => 'VWQxakZhamt4XAghHw0fHQYRUDAUGwIEeFFhDT8kMx0zJn8kJzQBMg=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => '7d1oothla4t732qvpu4l7fbqg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=7d1oothla4t732qvpu4l7fbqg3'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://127.0.0.22/site/login.html5'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://127.0.0.22'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '196'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64203'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login.html5'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '196'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460030089.1926
+    'REQUEST_TIME' => 1460030089
+]
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-04-07 11:54:49 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionIndex()
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\index.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:58
+2016-04-07 11:54:49 [127.0.0.1][1][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\layouts\main.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:58
+2016-04-07 11:54:49 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    '_identity' => '55c7ab862667139488fed9b1b1c5b8640ce48aad0826d084ed003f378e599b0ba:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[1,\"123456\",2592000]\";}'
+    'PHPSESSID' => 'a816ie1428jrc60vgu9berpk80'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; _identity=55c7ab862667139488fed9b1b1c5b8640ce48aad0826d084ed003f378e599b0ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B1%2C%22123456%22%2C2592000%5D%22%3B%7D; PHPSESSID=a816ie1428jrc60vgu9berpk80'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://127.0.0.22/site/login.html5'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64203'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460030089.8722
+    'REQUEST_TIME' => 1460030089
+]
+2016-04-07 11:59:34 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:59:34 [127.0.0.1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:59:34 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:59:34 [127.0.0.1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:59:34 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:59:34 [127.0.0.1][1][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:59:34 [127.0.0.1][1][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-04-07 11:59:34 [127.0.0.1][1][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-04-07 11:59:34 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2016-04-07 11:59:34 [127.0.0.1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionIndex()
+2016-04-07 11:59:34 [127.0.0.1][1][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\index.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:58
+2016-04-07 11:59:34 [127.0.0.1][1][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\layouts\main.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:58
+2016-04-07 11:59:34 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => 'a816ie1428jrc60vgu9berpk80'
+    '_identity' => '55c7ab862667139488fed9b1b1c5b8640ce48aad0826d084ed003f378e599b0ba:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[1,\"123456\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=a816ie1428jrc60vgu9berpk80; _identity=55c7ab862667139488fed9b1b1c5b8640ce48aad0826d084ed003f378e599b0ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B1%2C%22123456%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://127.0.0.22/site/login.html5'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64608'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460030374.5992
+    'REQUEST_TIME' => 1460030374
+]
+2016-04-07 11:59:35 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 11:59:35 [127.0.0.1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 11:59:35 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 11:59:35 [127.0.0.1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 11:59:35 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 11:59:35 [127.0.0.1][1][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 11:59:35 [127.0.0.1][1][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-04-07 11:59:35 [127.0.0.1][1][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-04-07 11:59:35 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2016-04-07 11:59:35 [127.0.0.1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionIndex()
+2016-04-07 11:59:35 [127.0.0.1][1][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\index.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:58
+2016-04-07 11:59:35 [127.0.0.1][1][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\layouts\main.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:58
+2016-04-07 11:59:35 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => 'a816ie1428jrc60vgu9berpk80'
+    '_identity' => '55c7ab862667139488fed9b1b1c5b8640ce48aad0826d084ed003f378e599b0ba:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[1,\"123456\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=a816ie1428jrc60vgu9berpk80; _identity=55c7ab862667139488fed9b1b1c5b8640ce48aad0826d084ed003f378e599b0ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B1%2C%22123456%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://127.0.0.22/site/login.html5'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '64615'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460030375.1029
+    'REQUEST_TIME' => 1460030375
+]
+2016-04-07 12:23:16 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 12:23:16 [127.0.0.1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 12:23:16 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 12:23:16 [127.0.0.1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 12:23:16 [127.0.0.1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 12:23:16 [127.0.0.1][1][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 12:23:16 [127.0.0.1][1][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-04-07 12:23:16 [127.0.0.1][1][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-04-07 12:23:16 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2016-04-07 12:23:16 [127.0.0.1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionIndex()
+2016-04-07 12:23:16 [127.0.0.1][1][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\index.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:58
+2016-04-07 12:23:16 [127.0.0.1][1][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\layouts\main.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:58
+2016-04-07 12:23:16 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => 'a816ie1428jrc60vgu9berpk80'
+    '_identity' => '55c7ab862667139488fed9b1b1c5b8640ce48aad0826d084ed003f378e599b0ba:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[1,\"123456\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=a816ie1428jrc60vgu9berpk80; _identity=55c7ab862667139488fed9b1b1c5b8640ce48aad0826d084ed003f378e599b0ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B1%2C%22123456%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '50041'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460031796.8569
+    'REQUEST_TIME' => 1460031796
+]
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'site/logout'
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/logout
+2016-04-07 12:23:18 [127.0.0.1][-][-][info][yii\web\Session::open] Session started
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogout()
+2016-04-07 12:23:18 [127.0.0.1][-][-][info][yii\web\User::logout] User '1' logged out from 127.0.0.1.
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:82
+2016-04-07 12:23:18 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'MnhBR3l5djUfQHgMIBUDQ2ENIB0rAx5aH00RIAA8L0NUOg8JGCwdbA=='
+]
+
+$_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => 'a816ie1428jrc60vgu9berpk80'
+    '_identity' => '55c7ab862667139488fed9b1b1c5b8640ce48aad0826d084ed003f378e599b0ba:2:{i:0;s:9:\"_identity\";i:1;s:20:\"[1,\"123456\",2592000]\";}'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=a816ie1428jrc60vgu9berpk80; _identity=55c7ab862667139488fed9b1b1c5b8640ce48aad0826d084ed003f378e599b0ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A20%3A%22%5B1%2C%22123456%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://127.0.0.22/'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://127.0.0.22'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '66'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '50041'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/logout.html5'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '66'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460031798.3434
+    'REQUEST_TIME' => 1460031798
+]
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-04-07 12:23:18 [127.0.0.1][-][-][info][yii\web\Session::open] Session started
+2016-04-07 12:23:18 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => 'iat7erp3jbtumj0garfo9ls662'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=iat7erp3jbtumj0garfo9ls662'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://127.0.0.22/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '50041'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460031798.4152
+    'REQUEST_TIME' => 1460031798
+]
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'site/login'
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/login
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: apps\backend\controllers\SiteController::actionLogin()
+2016-04-07 12:23:18 [127.0.0.1][-][-][info][yii\web\Session::open] Session started
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:66
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\site\login.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 12:23:18 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: E:\wwwroot\yii2\apps\backend\themes\default\layouts\main.php
+    in E:\wwwroot\yii2\apps\backend\controllers\SiteController.php:75
+2016-04-07 12:23:18 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-89KYluvSuaZRzho-5PgyEYvfBNNaUkY\";}'
+    'PHPSESSID' => 'iat7erp3jbtumj0garfo9ls662'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mallor\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-K7N6M8L'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mallor'
+    'LOCALAPPDATA' => 'C:\\Users\\mallor\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-K7N6M8L'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mallor\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-K7N6M8L'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-K7N6M8L'
+    'USERNAME' => 'mallor'
+    'USERPROFILE' => 'C:\\Users\\mallor'
+    'windir' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf=09e90ac616232010a0238eba14d00c65524ee57ab359be66223b52fd801f0d45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-89KYluvSuaZRzho-5PgyEYvfBNNaUkY%22%3B%7D; PHPSESSID=iat7erp3jbtumj0garfo9ls662'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://127.0.0.22/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.22'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '127.0.0.22'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.22'
+    'REMOTE_PORT' => '50041'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/login.html5'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\wwwroot\\yii2\\apps\\backend\\web\\/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1460031798.4671
+    'REQUEST_TIME' => 1460031798
+]

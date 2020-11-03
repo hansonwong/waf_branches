@@ -1,0 +1,12 @@
+[Unit]
+Description=Firewall nginx for php
+
+[Service]
+Type=forking
+User=root
+Group=root
+ExecStart=/Data/apps/nginx/sbin/nginx
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

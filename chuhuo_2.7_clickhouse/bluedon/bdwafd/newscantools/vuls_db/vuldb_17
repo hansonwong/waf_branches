@@ -1,0 +1,8 @@
+16158#d9Fa0j#LOW#d9Fa0j#XML信息#d9Fa0j#/site.xml#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+16159#d9Fa0j#LOW#d9Fa0j#XML信息#d9Fa0j#/resin-doc/viewfile/?contextpath=/&servletpath=&file=WEB-INF/web.xml#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+16160#d9Fa0j#LOW#d9Fa0j#XML信息#d9Fa0j#/../../template/shared/indexTemplate.xml#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+16161#d9Fa0j#LOW#d9Fa0j#XML信息#d9Fa0j#/./WEB-INF/web.xml#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+16162#d9Fa0j#LOW#d9Fa0j#XML信息#d9Fa0j#//WEB-INF/web.xml#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+16163#d9Fa0j#LOW#d9Fa0j#XML信息#d9Fa0j#/8000/./WEB-INF/web.xml#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+16164#d9Fa0j#LOW#d9Fa0j#XML信息#d9Fa0j#/8100/WEB-INF/web.xml#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#
+16167#d9Fa0j#LOW#d9Fa0j#XML信息#d9Fa0j#/servlet/oracle.xml.xsql.XSQLServlet/soapdocs/webapps/soap/WEB-INF/config/soapConfig.xml#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#发现文件路径信息#d9Fa0j#

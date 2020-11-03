@@ -1,0 +1,2 @@
+0   7  *  *  *   root    /usr/local/bluedon/bdwafd/setebtables.sh stop
+0   19  *  *  *   root   /usr/local/bluedon/bdwafd/setebtables.sh start

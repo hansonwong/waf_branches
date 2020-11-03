@@ -1,0 +1,2 @@
+ModSecurityEnabled {{enable}};
+ModSecurityConfig modsecurity.conf;

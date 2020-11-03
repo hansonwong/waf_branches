@@ -1,0 +1,6 @@
+13#d9Fa0j#LOW#d9Fa0j#ColdFusion信息#d9Fa0j#/cfappman/index.cfm#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可疑的ODBC/pipe-style漏洞利用，参考RFP9901 http://www.wiretrip.net/rfp/p/doc.asp/i2/d3.htm#d9Fa0j#
+14#d9Fa0j#LOW#d9Fa0j#ColdFusion信息#d9Fa0j#/cfdocs/examples/cvbeans/beaninfo.cfm#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可疑的ODBC漏洞利用，参考RFP9901 http://www.wiretrip.net/rfp/p/doc.asp/i2/d3.htm#d9Fa0j#
+15#d9Fa0j#LOW#d9Fa0j#ColdFusion信息#d9Fa0j#/cfdocs/examples/parks/detail.cfm#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可疑的ODBC漏洞利用，参考RFP9901 http://www.wiretrip.net/rfp/p/doc.asp/i2/d3.htm#d9Fa0j#
+92#d9Fa0j#LOW#d9Fa0j#ColdFusion信息#d9Fa0j#/cfdocs/expeval/openfile.cfm#d9Fa0j#GET#d9Fa0j#200#d9Fa0j#可能被使用来曝露系统/服务的路径#d9Fa0j#
+270#d9Fa0j#LOW#d9Fa0j#ColdFusion信息#d9Fa0j#/CFIDE/probe.cfm#d9Fa0j#GET#d9Fa0j#coldfusion.tagext.lang#d9Fa0j#Cold Fusion文件probe.cfm泄露系统信息，例如到web服务的路径。在管理员控制台的'Debugging Settings'页面，撤销在错误消息中显示安装路径的方法是选择'Enable Robust Exception Info'#d9Fa0j#
+3476#d9Fa0j#LOW#d9Fa0j#ColdFusion信息#d9Fa0j#/junk.cfm#d9Fa0j#GET#d9Fa0j#BlueDragon Time#d9Fa0j#服务器上运行着 BlueDragon from New Atlanta for CFML 程序。#d9Fa0j#

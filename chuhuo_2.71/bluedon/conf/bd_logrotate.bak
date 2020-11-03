@@ -1,0 +1,256 @@
+/var/log/fw/iptables-ng.log
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/fw/iptables-ng.log
+    rm -f /var/log/fw/iptables-ng.log.*
+    endscript
+    postrotate
+    endscript
+}
+
+/var/log/apply_controls/app_mgt_.log
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/apply_controls/app_mgt_.log
+    rm -f /var/log/apply_controls/app_mgt_.log.*
+    endscript
+    postrotate
+    endscript
+}
+
+
+/var/log/ddos/bd_ddos.log
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/ddos/bd_ddos.log
+    rm -f /var/log/ddos/bd_ddos.log.*
+    endscript
+    postrotate
+    endscript
+}
+
+
+/var/log/suricata/AvScan.log
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/suricata/AvScan.log
+    rm -f /var/log/suricata/AvScan.log.*
+    endscript
+    postrotate
+    endscript
+}
+
+
+/var/log/suricata/fast.log
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/suricata/fast.log
+    rm -f /var/log/suricata/fast.log.*
+    endscript
+    postrotate
+    endscript
+}
+
+
+/var/log/suricata/smtp.log
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/suricata/smtp.log
+    rm -f /var/log/suricata/smtp.log.*
+    endscript
+    postrotate
+    endscript
+}
+
+
+/var/log/bdwaf/logs/url_filter.log
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/bdwaf/logs/url_filter.log
+    rm -f /var/log/bdwaf/logs/url_filter.log.*
+    endscript
+    postrotate
+    endscript
+}
+
+
+/var/log/bdwaf/logs/access.log
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/bdwaf/logs/access.log
+    rm -f /var/log/bdwaf/logs/access.log.*
+    endscript
+    postrotate
+    endscript
+}
+
+
+/var/log/bdwaf/logs/error.log
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/bdwaf/logs/error.log
+    rm -f /var/log/bdwaf/logs/error.log.*
+    endscript
+    postrotate
+    endscript
+}
+
+
+/var/log/wifi_audit.log
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/wifi_audit.log
+    rm -f /var/log/wifi_audit.log.*
+    endscript
+    postrotate
+    endscript
+}
+
+
+/var/log/messages
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/messages
+    rm -f /var/log/messages.*
+    endscript
+    postrotate
+    endscript
+}
+
+
+
+/var/log/mp_server/mp_server.log
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/mp_server/mp_server.log
+    rm -f /var/log/mp_server/mp_server.log.*
+    endscript
+    postrotate
+    endscript
+}
+
+
+/var/log/dionaea/dionaea.log
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/dionaea/dionaea.log
+    rm -f /var/log/dionaea/dionaea.log.*
+    endscript
+    postrotate
+    endscript
+}
+
+
+/var/log/dionaea/dionaea-erors.log
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/dionaea/dionaea-errors.log
+    rm -f /var/log/dionaea/dionaea-errors.log.*
+    endscript
+    postrotate
+    endscript
+}
+
+
+/var/log/dionaea/p0f.log
+{
+    size=500M	
+    rotate 0
+    copytruncate
+    nocreate
+    missingok
+    notifempty
+    prerotate
+    echo > /var/log/dionaea/p0f.log
+    rm -f /var/log/dionaea/p0f.log.*
+    endscript
+    postrotate
+    endscript
+}
+
+
+

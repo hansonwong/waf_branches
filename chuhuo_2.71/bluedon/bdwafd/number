@@ -1,0 +1,14 @@
+if [ "$#" -ne 1 ]
+then
+  echo "123123"
+  exit 1
+fi
+
+case "$1"
+  in
+  0) echo zero;;
+  1) echo one;;
+  2) echo two;;
+  *) echo "ERROR"
+esac
+

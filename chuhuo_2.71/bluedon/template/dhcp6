@@ -1,0 +1,9 @@
+{% for name_sever in dhcp['dns'] -%}
+{% if name_sever %}option dhcp6.name-servers {{name_sever}};{% endif %}
+{% endfor %}
+
+subnet6 {{dhcp['network']}} {
+    {% for ip_range in dhcp['pool'] -%}
+    range6 {{ip_range}};
+    {% endfor %}
+}

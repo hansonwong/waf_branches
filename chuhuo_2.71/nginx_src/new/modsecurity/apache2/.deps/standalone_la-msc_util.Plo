@@ -1,0 +1,620 @@
+../apache2/standalone_la-msc_util.lo: ../apache2/msc_util.c \
+ /usr/include/stdc-predef.h ../apache2/modsecurity.h /usr/include/stdio.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/byteswap-16.h \
+ /usr/include/xlocale.h /usr/include/sys/types.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib-float.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/local/include/libxml2/libxml/tree.h \
+ /usr/local/include/libxml2/libxml/xmlversion.h \
+ /usr/local/include/libxml2/libxml/xmlexports.h \
+ /usr/local/include/libxml2/libxml/xmlstring.h \
+ /usr/local/include/libxml2/libxml/xmlregexp.h \
+ /usr/local/include/libxml2/libxml/dict.h \
+ /usr/local/include/libxml2/libxml/xmlmemory.h \
+ /usr/local/include/libxml2/libxml/threads.h \
+ /usr/local/include/libxml2/libxml/globals.h \
+ /usr/local/include/libxml2/libxml/parser.h \
+ /usr/local/include/libxml2/libxml/hash.h \
+ /usr/local/include/libxml2/libxml/valid.h \
+ /usr/local/include/libxml2/libxml/xmlerror.h \
+ /usr/local/include/libxml2/libxml/list.h \
+ /usr/local/include/libxml2/libxml/xmlautomata.h \
+ /usr/local/include/libxml2/libxml/entities.h \
+ /usr/local/include/libxml2/libxml/encoding.h /usr/local/include/iconv.h \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/bits/wchar.h /usr/local/include/libxml2/libxml/xmlIO.h \
+ /usr/local/include/libxml2/libxml/SAX.h \
+ /usr/local/include/libxml2/libxml/xlink.h \
+ /usr/local/include/libxml2/libxml/SAX2.h \
+ /usr/local/include/libxml2/libxml/HTMLparser.h ../apache2/msc_release.h \
+ /usr/include/string.h /usr/include/bits/string.h \
+ /usr/include/bits/string2.h ../apache2/msc_logging.h \
+ /usr/local/apr/include/apr-1/apr_pools.h \
+ /usr/local/apr/include/apr-1/apr.h /usr/include/sys/socket.h \
+ /usr/include/sys/uio.h /usr/include/bits/uio.h \
+ /usr/include/bits/socket.h /usr/include/bits/socket_type.h \
+ /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/sys/wait.h /usr/include/signal.h \
+ /usr/include/bits/signum.h /usr/include/bits/siginfo.h \
+ /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
+ /usr/include/bits/sigstack.h /usr/include/sys/ucontext.h \
+ /usr/include/bits/sigthread.h /usr/local/apr/include/apr-1/apr_errno.h \
+ /usr/local/apr/include/apr-1/apr_general.h \
+ /usr/local/apr/include/apr-1/apr_pools.h \
+ /usr/local/apr/include/apr-1/apr_want.h \
+ /usr/local/apr/include/apr-1/apr_allocator.h \
+ /usr/local/apr/include/apr-1/apr_thread_mutex.h \
+ ../apache2/msc_multipart.h /usr/local/apr/include/apr-1/apr_general.h \
+ /usr/local/apr/include/apr-1/apr_tables.h ../apache2/msc_pcre.h \
+ /usr/local/pcre/include/pcre.h ../apache2/msc_util.h \
+ /usr/local/apr/include/apr-1/apr_file_info.h \
+ /usr/local/apr/include/apr-1/apr_user.h \
+ /usr/local/apr/include/apr-1/apr_tables.h \
+ /usr/local/apr/include/apr-1/apr_time.h ../apache2/re.h \
+ ../apache2/msc_tree.h ../apache2/persist_dbm.h ../apache2/apache2.h \
+ /usr/local/apache2/include/http_core.h /usr/local/apache2/include/apr.h \
+ /usr/local/apache2/include/apr_hash.h \
+ /usr/local/apache2/include/apr_pools.h \
+ /usr/local/apache2/include/apr_optional.h \
+ /usr/local/apache2/include/apu.h \
+ /usr/local/apache2/include/util_filter.h \
+ /usr/local/apache2/include/apr_buckets.h \
+ /usr/local/apache2/include/apr_network_io.h \
+ /usr/local/apache2/include/apr_file_io.h \
+ /usr/local/apache2/include/apr_time.h \
+ /usr/local/apache2/include/apr_errno.h \
+ /usr/local/apache2/include/apr_file_info.h \
+ /usr/local/apache2/include/apr_inherit.h \
+ /usr/local/apache2/include/apr_want.h /usr/include/netinet/in.h \
+ /usr/include/bits/in.h /usr/local/apache2/include/apr_general.h \
+ /usr/local/apache2/include/apr_mmap.h \
+ /usr/local/apache2/include/apr_ring.h /usr/local/apache2/include/httpd.h \
+ /usr/local/apache2/include/ap_config.h \
+ /usr/local/apache2/include/apr_hooks.h \
+ /usr/local/apache2/include/apr_tables.h \
+ /usr/local/apache2/include/apr_optional_hooks.h \
+ /usr/local/apache2/include/os.h \
+ /usr/local/apache2/include/ap_config_auto.h \
+ /usr/local/apache2/include/ap_config_layout.h \
+ /usr/local/apache2/include/ap_mmn.h \
+ /usr/local/apache2/include/ap_release.h \
+ /usr/local/apache2/include/apr_poll.h \
+ /usr/local/apache2/include/ap_regex.h \
+ /usr/local/apache2/include/apr_uri.h /usr/include/sys/time.h \
+ /usr/include/sys/resource.h /usr/include/bits/resource.h \
+ /usr/local/apache2/include/http_request.h \
+ /usr/local/apache2/include/httpd.h \
+ /usr/local/apache2/include/ap_release.h \
+ /usr/local/apr/include/apr-1/apr_optional.h \
+ /usr/local/apache2/include/http_config.h \
+ /usr/local/apache2/include/util_cfgtree.h ../apache2/msc_json.h \
+ ../apache2/msc_xml.h /usr/local/include/libxml2/libxml/xmlschemas.h \
+ /usr/local/include/libxml2/libxml/xpath.h ../apache2/msc_geo.h \
+ /usr/local/apr/include/apr-1/apr_file_io.h ../apache2/msc_gsb.h \
+ /usr/local/apr/include/apr-1/apr_hash.h ../apache2/msc_unicode.h \
+ ../apache2/msc_crypt.h ../apache2/msc_remote_rules.h \
+ /usr/local/apr/include/apr-1/apr_thread_pool.h \
+ /usr/local/apr/include/apr-1/apu.h \
+ /usr/local/apr/include/apr-1/apr_thread_proc.h \
+ /usr/local/apr/include/apr-1/apr_file_io.h \
+ /usr/local/apr/include/apr-1/apr_sha1.h \
+ /usr/local/apache2/include/ap_config.h \
+ /usr/local/apr/include/apr-1/apr_md5.h \
+ /usr/local/apr/include/apr-1/apr_xlate.h \
+ /usr/local/apr/include/apr-1/apr_strings.h \
+ /usr/local/apache2/include/http_log.h \
+ /usr/local/apache2/include/apr_thread_proc.h /usr/include/syslog.h \
+ /usr/include/sys/syslog.h /usr/include/bits/syslog-path.h \
+ /usr/local/apache2/include/http_protocol.h \
+ /usr/local/apache2/include/apr_portable.h \
+ /usr/local/apache2/include/apr_global_mutex.h \
+ /usr/local/apache2/include/apr_proc_mutex.h \
+ /usr/local/apache2/include/apr_dso.h \
+ /usr/local/apache2/include/apr_shm.h /usr/include/dirent.h \
+ /usr/include/bits/dirent.h /usr/include/fcntl.h \
+ /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
+ /usr/include/bits/stat.h /usr/include/pthread.h /usr/include/sched.h \
+ /usr/include/bits/sched.h /usr/include/bits/timex.h \
+ /usr/include/bits/setjmp.h /usr/local/apache2/include/unixd.h \
+ /usr/local/apache2/include/http_config.h \
+ /usr/local/apache2/include/ap_listen.h /usr/include/pwd.h \
+ /usr/include/grp.h /usr/include/sys/ipc.h /usr/include/bits/ipctypes.h \
+ /usr/include/bits/ipc.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/getopt.h /usr/include/ctype.h \
+ /usr/include/sys/stat.h /usr/local/apr/include/apr-1/apr_lib.h \
+ ../apache2/modsecurity_config.h ../apache2/modsecurity_config_auto.h \
+ /usr/include/curl/curl.h /usr/include/curl/curlver.h \
+ /usr/include/curl/curlbuild.h /usr/include/curl/curlbuild-64.h \
+ /usr/include/curl/curlrules.h /usr/include/curl/easy.h \
+ /usr/include/curl/multi.h /usr/include/curl/curl.h \
+ /usr/include/curl/typecheck-gcc.h
+
+/usr/include/stdc-predef.h:
+
+../apache2/modsecurity.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/limits.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/local/include/libxml2/libxml/tree.h:
+
+/usr/local/include/libxml2/libxml/xmlversion.h:
+
+/usr/local/include/libxml2/libxml/xmlexports.h:
+
+/usr/local/include/libxml2/libxml/xmlstring.h:
+
+/usr/local/include/libxml2/libxml/xmlregexp.h:
+
+/usr/local/include/libxml2/libxml/dict.h:
+
+/usr/local/include/libxml2/libxml/xmlmemory.h:
+
+/usr/local/include/libxml2/libxml/threads.h:
+
+/usr/local/include/libxml2/libxml/globals.h:
+
+/usr/local/include/libxml2/libxml/parser.h:
+
+/usr/local/include/libxml2/libxml/hash.h:
+
+/usr/local/include/libxml2/libxml/valid.h:
+
+/usr/local/include/libxml2/libxml/xmlerror.h:
+
+/usr/local/include/libxml2/libxml/list.h:
+
+/usr/local/include/libxml2/libxml/xmlautomata.h:
+
+/usr/local/include/libxml2/libxml/entities.h:
+
+/usr/local/include/libxml2/libxml/encoding.h:
+
+/usr/local/include/iconv.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/local/include/libxml2/libxml/xmlIO.h:
+
+/usr/local/include/libxml2/libxml/SAX.h:
+
+/usr/local/include/libxml2/libxml/xlink.h:
+
+/usr/local/include/libxml2/libxml/SAX2.h:
+
+/usr/local/include/libxml2/libxml/HTMLparser.h:
+
+../apache2/msc_release.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+../apache2/msc_logging.h:
+
+/usr/local/apr/include/apr-1/apr_pools.h:
+
+/usr/local/apr/include/apr-1/apr.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/sys/uio.h:
+
+/usr/include/bits/uio.h:
+
+/usr/include/bits/socket.h:
+
+/usr/include/bits/socket_type.h:
+
+/usr/include/bits/sockaddr.h:
+
+/usr/include/asm/socket.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/asm/sockios.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/sys/wait.h:
+
+/usr/include/signal.h:
+
+/usr/include/bits/signum.h:
+
+/usr/include/bits/siginfo.h:
+
+/usr/include/bits/sigaction.h:
+
+/usr/include/bits/sigcontext.h:
+
+/usr/include/bits/sigstack.h:
+
+/usr/include/sys/ucontext.h:
+
+/usr/include/bits/sigthread.h:
+
+/usr/local/apr/include/apr-1/apr_errno.h:
+
+/usr/local/apr/include/apr-1/apr_general.h:
+
+/usr/local/apr/include/apr-1/apr_pools.h:
+
+/usr/local/apr/include/apr-1/apr_want.h:
+
+/usr/local/apr/include/apr-1/apr_allocator.h:
+
+/usr/local/apr/include/apr-1/apr_thread_mutex.h:
+
+../apache2/msc_multipart.h:
+
+/usr/local/apr/include/apr-1/apr_general.h:
+
+/usr/local/apr/include/apr-1/apr_tables.h:
+
+../apache2/msc_pcre.h:
+
+/usr/local/pcre/include/pcre.h:
+
+../apache2/msc_util.h:
+
+/usr/local/apr/include/apr-1/apr_file_info.h:
+
+/usr/local/apr/include/apr-1/apr_user.h:
+
+/usr/local/apr/include/apr-1/apr_tables.h:
+
+/usr/local/apr/include/apr-1/apr_time.h:
+
+../apache2/re.h:
+
+../apache2/msc_tree.h:
+
+../apache2/persist_dbm.h:
+
+../apache2/apache2.h:
+
+/usr/local/apache2/include/http_core.h:
+
+/usr/local/apache2/include/apr.h:
+
+/usr/local/apache2/include/apr_hash.h:
+
+/usr/local/apache2/include/apr_pools.h:
+
+/usr/local/apache2/include/apr_optional.h:
+
+/usr/local/apache2/include/apu.h:
+
+/usr/local/apache2/include/util_filter.h:
+
+/usr/local/apache2/include/apr_buckets.h:
+
+/usr/local/apache2/include/apr_network_io.h:
+
+/usr/local/apache2/include/apr_file_io.h:
+
+/usr/local/apache2/include/apr_time.h:
+
+/usr/local/apache2/include/apr_errno.h:
+
+/usr/local/apache2/include/apr_file_info.h:
+
+/usr/local/apache2/include/apr_inherit.h:
+
+/usr/local/apache2/include/apr_want.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/bits/in.h:
+
+/usr/local/apache2/include/apr_general.h:
+
+/usr/local/apache2/include/apr_mmap.h:
+
+/usr/local/apache2/include/apr_ring.h:
+
+/usr/local/apache2/include/httpd.h:
+
+/usr/local/apache2/include/ap_config.h:
+
+/usr/local/apache2/include/apr_hooks.h:
+
+/usr/local/apache2/include/apr_tables.h:
+
+/usr/local/apache2/include/apr_optional_hooks.h:
+
+/usr/local/apache2/include/os.h:
+
+/usr/local/apache2/include/ap_config_auto.h:
+
+/usr/local/apache2/include/ap_config_layout.h:
+
+/usr/local/apache2/include/ap_mmn.h:
+
+/usr/local/apache2/include/ap_release.h:
+
+/usr/local/apache2/include/apr_poll.h:
+
+/usr/local/apache2/include/ap_regex.h:
+
+/usr/local/apache2/include/apr_uri.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/sys/resource.h:
+
+/usr/include/bits/resource.h:
+
+/usr/local/apache2/include/http_request.h:
+
+/usr/local/apache2/include/httpd.h:
+
+/usr/local/apache2/include/ap_release.h:
+
+/usr/local/apr/include/apr-1/apr_optional.h:
+
+/usr/local/apache2/include/http_config.h:
+
+/usr/local/apache2/include/util_cfgtree.h:
+
+../apache2/msc_json.h:
+
+../apache2/msc_xml.h:
+
+/usr/local/include/libxml2/libxml/xmlschemas.h:
+
+/usr/local/include/libxml2/libxml/xpath.h:
+
+../apache2/msc_geo.h:
+
+/usr/local/apr/include/apr-1/apr_file_io.h:
+
+../apache2/msc_gsb.h:
+
+/usr/local/apr/include/apr-1/apr_hash.h:
+
+../apache2/msc_unicode.h:
+
+../apache2/msc_crypt.h:
+
+../apache2/msc_remote_rules.h:
+
+/usr/local/apr/include/apr-1/apr_thread_pool.h:
+
+/usr/local/apr/include/apr-1/apu.h:
+
+/usr/local/apr/include/apr-1/apr_thread_proc.h:
+
+/usr/local/apr/include/apr-1/apr_file_io.h:
+
+/usr/local/apr/include/apr-1/apr_sha1.h:
+
+/usr/local/apache2/include/ap_config.h:
+
+/usr/local/apr/include/apr-1/apr_md5.h:
+
+/usr/local/apr/include/apr-1/apr_xlate.h:
+
+/usr/local/apr/include/apr-1/apr_strings.h:
+
+/usr/local/apache2/include/http_log.h:
+
+/usr/local/apache2/include/apr_thread_proc.h:
+
+/usr/include/syslog.h:
+
+/usr/include/sys/syslog.h:
+
+/usr/include/bits/syslog-path.h:
+
+/usr/local/apache2/include/http_protocol.h:
+
+/usr/local/apache2/include/apr_portable.h:
+
+/usr/local/apache2/include/apr_global_mutex.h:
+
+/usr/local/apache2/include/apr_proc_mutex.h:
+
+/usr/local/apache2/include/apr_dso.h:
+
+/usr/local/apache2/include/apr_shm.h:
+
+/usr/include/dirent.h:
+
+/usr/include/bits/dirent.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/bits/fcntl.h:
+
+/usr/include/bits/fcntl-linux.h:
+
+/usr/include/bits/stat.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/local/apache2/include/unixd.h:
+
+/usr/local/apache2/include/http_config.h:
+
+/usr/local/apache2/include/ap_listen.h:
+
+/usr/include/pwd.h:
+
+/usr/include/grp.h:
+
+/usr/include/sys/ipc.h:
+
+/usr/include/bits/ipctypes.h:
+
+/usr/include/bits/ipc.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/ctype.h:
+
+/usr/include/sys/stat.h:
+
+/usr/local/apr/include/apr-1/apr_lib.h:
+
+../apache2/modsecurity_config.h:
+
+../apache2/modsecurity_config_auto.h:
+
+/usr/include/curl/curl.h:
+
+/usr/include/curl/curlver.h:
+
+/usr/include/curl/curlbuild.h:
+
+/usr/include/curl/curlbuild-64.h:
+
+/usr/include/curl/curlrules.h:
+
+/usr/include/curl/easy.h:
+
+/usr/include/curl/multi.h:
+
+/usr/include/curl/curl.h:
+
+/usr/include/curl/typecheck-gcc.h:

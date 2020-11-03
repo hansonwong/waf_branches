@@ -1,0 +1,336 @@
+[2017-06-21 10:06:28] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:06:28] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:06:28] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:06:28] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:06:28] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:06:28] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:06:28] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:06:28] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:06:28] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:06:28] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:06:28] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:06:28] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth9 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth9 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth8 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth8 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:38] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:08:39] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:08:39] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:51:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:51:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:51:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:51:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:51:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:51:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:51:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:51:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:51:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:51:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:51:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:51:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth9 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth9 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth8 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth8 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:54:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth9 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth9 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth8 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth8 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-21 10:59:20] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth9 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth9 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth8 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth8 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:04] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:15:05] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:51:56] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:51:56] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:51:56] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:51:56] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:51:56] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:51:56] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:51:56] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:51:56] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:51:56] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:51:56] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:51:56] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:51:56] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth9 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth9 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth8 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth8 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp10s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-06-26 17:54:07] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp11s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp5s0f1 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp5s0f1 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp5s0f2 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp5s0f2 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp5s0f3 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp5s0f3 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i ens69f3 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i ens69f3 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i ens69f2 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i ens69f2 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i ens69f0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i ens69f0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i ens69f1 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i ens69f1 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp5s0f0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp5s0f0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 10:08:43] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 11:03:21] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-13 13:39:53] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 09:19:54] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth1 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth2 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth3 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth4 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth5 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth6 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i vEth7 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp8s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -I FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j ACCEPT
+[2017-07-14 11:03:02] [cmd] [DEBUG] [set_nginx.py] /usr/sbin/iptables -D FWINPUT -i enp9s0 -p tcp -m multiport --dport 444,80 -j LOG --log-prefix "ipt_log=ACCEPT "

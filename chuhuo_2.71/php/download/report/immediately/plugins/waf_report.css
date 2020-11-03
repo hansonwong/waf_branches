@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document 2017-10-10 linfang*/
+/*公共*/
+  body {margin:0; padding:0; font-size:14px;font-family:  \5FAE\8F6F\96C5\9ED1, \5b8b\4f53,Arial,sans-serif; color:#555;}
+  div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}
+  ol,ul {list-style:none;padding:0; margin:0;}
+  li{list-style-type:none;}
+  img{vertical-align:middle;border:0;}
+  h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:normal;}
+  address,cite,code,em,th,i{font-weight:normal; font-style:normal;}
+  i, b{font-weight: normal;}
+  input{border:none;}
+  input:focus{outline: 0;}
+  .clearfix{ *zoom:1;}
+  .clearfix::after{content:'';display:block;clear:both;height:0;overflow:hidden;}
+  .float_l,.fl{float:left;}
+  .float_r,.fr{float:right;}
+  .mt20{margin-top:20px;}
+  .mb60{margin-bottom:60px;}
+  .mt25{margin-top:25px;}
+  .pl50{padding-left:50px;}
+  .pl10{padding-left:10px;}
+
+/*布局*/
+  .chart_wrap{margin:0 auto;width:1200px;background:#ecf2fb;}
+  .chart_wrap .chart_header{margin:0 auto;min-height:48px;padding:10px 20px;background:#fbfcfd;box-shadow: 0 0 2px rgba(0,0,0,.15);position:relative;}
+  .chart_header .title{font-size: 18px;color:#515974;font-weight: bold;}
+  .chart_header .item{font-size: 12px;color:#95a4b1;line-height:24px;}
+  .chart_header .pl50{padding-left:50px;}
+  .chart_header .btn_down{position:absolute;right:20px;top:15px;height:32px;width:100px;text-align:center;color:#20abff;border:1px solid #20abff;border-radius: 2px;background:none;}
+  .chart_header .btn_down:hover{color:#fff;background-color:#20abff;}
+/*图表*/
+  .chart_wrap .chart_main{margin:0 auto;padding-bottom: 60px;}
+  .chart_main .chart_box{padding:20px;margin: 20px auto 0;width:1120px;height:auto;border-radius: 6px;box-shadow: 0 0 2px rgba(0,0,0,.15);background-color:#fff;}
+  .chart_title{font-size:16px;color:#515974;font-weight: bold;margin-bottom: 20px;}
+  .chart{height:300px;width:100%;}
+
+/*表格*/
+    .list-content {overflow: hidden; height: auto; } 
+    .list-content .list-conhead {height:26px;line-height:26px;background:#ecf2f5; color: #474d64;overflow: hidden; } 
+    .list-content .list-conbody {overflow: hidden; height: auto; padding: 0; margin: 0; } 
+    .list-content .list-ul , .list-content .table-head tr{height: 26px; line-height: 26px; padding: 0; margin: 0; } 
+    .list-content li,.list-content .table-head td {float: left; font-weight: bold;} 
+    .list-content .table-con, .list-content .table-head {width: 100%; } 
+    .list-content .table-head{height:26px;}
+    .list-content .table-con td {word-break: break-all; } 
+    .list-conbody .list-ul {display: block; } 
+    .list-conbody .list-ul:first-child {border-top: 0; } 
+    .list-conhead .list-ul li, .list-conbody .list-ul li,.list-content .table-head td {text-indent: 10px; } 
+    .list-conbody .table-con td {border-bottom: 1px solid #e4e4e4; padding: 5px 10px; }
+    .list-conhead .table-con td {padding: 0 10px; } 
+    .table-con {border-collapse: collapse; } 
+    .table-con td {empty-cells: show; }
+    .table-con td.t_c{text-align: center;}
+    .table-con td.t_r{text-align: right;}
+
+ 

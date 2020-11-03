@@ -1,0 +1,17 @@
+status:200
+content-length:614
+content-location:http://www.baidu.com/cache/hps/js/hps-1.1.js
+set-cookie:BAIDUID=52BE8E4BC7A2DD8AF270DDCAC833AFC1:FG=1; expires=Sat, 15-Oct-16 03:12:28 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+accept-ranges:bytes
+expires:Mon, 13 Oct 2025 03:12:28 GMT
+vary:Accept-Encoding,User-Agent
+server:Apache
+last-modified:Thu, 14 Jul 2011 10:08:11 GMT
+connection:Keep-Alive
+etag:"266-4a804b5d7d8c0"
+cache-control:max-age=315360000
+date:Fri, 16 Oct 2015 03:12:28 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM "
+content-type:application/javascript
+####################
+(function(){var H="http://www.baidu.com/";var D=navigator.userAgent.indexOf("MSIE")!=-1&&!window.opera;var E=Math.random()*100;if(D){try{var I=document.createElement("span");I.style.behavior="url(#default#homepage)";I.style.display="none";document.body.appendChild(I);var C=I.isHomePage(H);if(!C){var A=document.getElementById("seth");if(A){A.style.display="inline"}}if(E<=1){var B=encodeURIComponent(window.document.location.href),F=window["BD_PS_C"+(new Date()).getTime()]=new Image();F.src="http://nsclick.baidu.com/v.gif?pid=201&pj=hps&hp="+C+"&path="+B+"&t="+new Date().getTime();return true}}catch(G){}}})();

@@ -1,0 +1,638 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import os, re, time, json, sys
+import time
+import commands
+from urlparse import urlparse
+from logging import getLogger
+from urllib import quote
+from MySQL import MySQL
+from config import config
+from copy import deepcopy
+from jinja2 import Environment, PackageLoader, FileSystemLoader, ext
+from sqlalchemy import and_
+from db import (session_scope, OverFlowSet, Rules, 
+    Dns, HttpTypeSet, BaseConfig, BaseAccessCtrl,
+    HttpTypeSet, HttpRequestType, HttpVer, RestrictExt, 
+    RestrictHeaders, RuleSet, RuleFiles, ReverseProxy, 
+    CCSet, CustomRules, row2dict, rows2list, SecuritySet, 
+    SelfStudyRule, SelfStudySetting, SelfStudyIPWhite, 
+    SelfStudyResult, conn_scope, Ocr, Website, RuleModel,
+    RuleCustomDefendPolicy,
+)
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+tenv = None
+rep1 = {'"': '\\"',}
+rep1 = dict((re.escape(k), v) for k, v in rep1.iteritems())
+pattern1 = re.compile("|".join(rep1.keys()))
+
+rep2 = {"\\": "\\\\\\", "'": "\\'"}
+rep2 = dict((re.escape(k), v) for k, v in rep2.iteritems())
+pattern2 = re.compile("|".join(rep2.keys()))
+
+spiders = [
+    'grabber',
+    'cgichk',
+    'bsqlbf',
+    'mozilla/4.0 (compatible)',
+    'sqlmap',
+    'mozilla/4.0 (compatible; msie 6.0; win32)',
+    'mozilla/5.0 sf//',
+    'nessus',
+    'arachni',
+    'metis',
+    'sql power injector',
+    'bilbo',
+    'absinthe',
+    'black widow',
+    'n-stealth',
+    'brutus',
+    'webtrends security analyzer',
+    'netsparker',
+    'python-httplib2',
+    'jaascois',
+    'pmafind',
+    '.nasl',
+    'nsauditor',
+    'paros',
+    'dirbuster',
+    'pangolin',
+    'nmap nse',
+    'sqlninja',
+    'nikto',
+    'webinspect',
+    'blackwidow',
+    'grendel-scan',
+    'havij',
+    'w3af',
+    'hydra',
+    ]
+
+def write_spdier_data(s, path):
+    spiders2 = spiders[:]
+    for item in filter(lambda x: x, s.split('|')):
+        spiders2.append(item)
+    with open(os.path.join(path, 'modsecurity_35_scanners.data'), 'w') as fp:
+        for item in spiders2:
+            fp.write(item)
+            fp.write('\n')
+
+def write_ocrwords_data(s):
+    ocrwords = []
+    for item in filter(lambda x: x, s.split('|')):
+        ocrwords.append(item)
+    with open('/usr/local/bdwaf/conf_proxy/activated_rules/modsecurity_ocr_scanners.data', 'w') as fp:
+        if not item:
+            fp.write('')
+        for item in ocrwords:
+            fp.write(item)
+            fp.write('\n')
+            
+
+def write_iprange_data(iprange, path):
+    with open(os.path.join(path, 'modsecurity_filter_iprange.data'), 'w') as fp:
+        ipstr, _, sip_num = iprange[0].rpartition('.')
+        _, _, eip_num = iprange[-1].rpartition('.')
+        for n in range(int(sip_num), int(eip_num) + 1):
+            fp.write('{}.{}\n'.format(ipstr, n))
+
+
+def modsec_escape1(s):
+    return pattern1.sub(lambda m: rep1[re.escape(m.group(0))], s)
+
+def modsec_escape2(s):
+    return pattern2.sub(lambda m: rep2[re.escape(m.group(0))], s)
+
+def init_tenv():
+    global tenv
+    tenv = Environment(loader=FileSystemLoader('/usr/local/bluedon/bdwafd/data/template/'), extensions=[ext.do])
+    tenv.filters['modsec_esc1'] = modsec_escape1
+    tenv.filters['modsec_esc2'] = modsec_escape2
+
+
+class NginxConfGenerator():
+    ''' nginx 配置文件产生器 '''
+
+    nginx_dir = ''
+    activated_rules_dir = ''
+    base_rules_dir = ''
+    sites_dir = ''
+
+    def __init__(self, installed_dir='/usr/local/bdwaf/conf'):
+        self.nginx_dir = installed_dir
+        self.activated_rules_dir = os.path.join(self.nginx_dir, 'activated_rules/')
+        self.base_rules_dir = os.path.join(self.nginx_dir, 'base_rules/')
+        self.custom_rules_dir = os.path.join(self.nginx_dir, 'custom_rules/')
+        self.sites_dir = os.path.join(self.nginx_dir, 'sites/')
+        self.modsecurity_sites_conf_dir = os.path.join(self.nginx_dir, 'modsecurity_sites_conf/')
+        self.mod_rule_template_dir= os.path.join(self.nginx_dir, 'mod_rule_template/')
+        init_tenv()
+
+    def genSecConf(self, session, norevproxy=True):
+        d = {}
+        baseconfig = session.query(BaseConfig).one()
+        securityset = session.query(SecuritySet).one()
+        selfstudyrules = rows2list(session.query(SelfStudyRule).filter(SelfStudyRule.is_use==1).all())
+        selfstudysetting = row2dict(session.query(SelfStudySetting).one())
+        selfstudyresult = session.query(SelfStudyResult).one()
+        selfstudyips = rows2list(session.query(SelfStudyIPWhite).filter(SelfStudyIPWhite.is_use==1).all())
+        selfstudysetting['white_list'] = ' '.join([ip['ip'] for ip in selfstudyips])
+        d['selfstudy'] = selfstudysetting
+        d['selfstudyresult'] = selfstudyresult
+        def myzip(pair):
+            pair[0]['id'] = pair[1]
+            return pair[0]
+        selfstudyrules = map(myzip, zip(selfstudyrules, range(400000, 400000+len(selfstudyrules))))
+        write_spdier_data(securityset.spider_list, self.base_rules_dir)
+        d['hostlinking'] = securityset.hostlinking_list
+        d['httplimit_rules'] = session.query(OverFlowSet).all()
+        disable_rules = session.query(Rules).filter(Rules.status==0).all()
+
+        ocr = row2dict(session.query(Ocr).one())
+        if len(ocr['urls']) > 0:
+            ocr['urls'] = '#' + '# #'.join(ocr['urls'].split('|')) + '#'
+        else:
+            ocr['urls'] = ''
+        ocr['exts'] = ocr.get('exts','')
+        write_ocrwords_data(ocr['words'])
+
+        ccset = row2dict(session.query(CCSet).one())
+        ccset['broutetimes'] = ccset['broutetimes'] - 1
+        urllist = ccset['brouteurls'].split(';')
+        id = 900301
+        ccurls = {}
+        for url in urllist:
+            ccurls[id] = url
+            id += 6
+        ccset['brouteurls'] = '#' + '# #'.join(ccset['brouteurls'].split(';')) + '#'
+        cusrules = rows2list(session.query(CustomRules).filter(CustomRules.status==1
+                            ).order_by(CustomRules.priority,CustomRules.realid).all())
+        for cusrule in cusrules:
+            if cusrule['matchalgorithm'] == 1:
+                cusrule['matchalgorithm'] = 'rx'
+            else:
+                cusrule['matchalgorithm'] = 'contains'
+            dump = []
+            if 'URI' in cusrule['matchdata']:
+                dump.append('REQUEST_URI')
+            if 'POST' in cusrule['matchdata']:
+                dump.append('REQUEST_BODY')
+            if 'COOKIE' in cusrule['matchdata']:
+                dump.append('REQUEST_COOKIES|REQUEST_COOKIES_NAMES')
+            cusrule['matchdata'] = '|'.join(dump)
+        d['basic_rules'] = []
+        d['rulefiles'] = []
+        d['bAndw_rules'] = []
+        fileids = session.query(RuleSet).filter(RuleSet.id==3).one().selectedfiles.split(',')
+        for i in fileids:
+            if i:
+                d['rulefiles'].append(session.query(RuleFiles).filter(RuleFiles.id==i).one())
+        for basic_rule in session.query(BaseAccessCtrl).filter(
+                BaseAccessCtrl.status=='1', BaseAccessCtrl.type!='B&W').order_by(BaseAccessCtrl.id).all():
+            br = {'chain': 1,}
+            up = urlparse(basic_rule.url)
+            if not up.netloc:
+                getLogger('main').info('urlparse false:' + basic_rule.url)
+                continue
+            if not re.match(r'[\w\-\.]+(:\d*)?$', up.netloc):
+                getLogger('main').error('url not valid: ' + basic_rule.url)
+                continue
+            br['domain'] = up.netloc
+            if up.path and up.path != '/' :
+                br['uri'] = quote(up.path.encode('utf8'))
+                br['chain'] += 1
+            else:
+                br['uri'] = ''
+            if basic_rule.src_ips:
+                br['chain'] += 1
+            if basic_rule.dest_ips:
+                br['chain'] += 1
+            br['srcip'] = basic_rule.src_ips
+            br['dstip'] = basic_rule.dest_ips
+            br['id'] = basic_rule.realid
+            br['action'] = basic_rule.action
+            br['url'] = up.scheme + "://" + up.netloc + br['uri']
+            d['basic_rules'].append(br)
+        for basic_rule in session.query(BaseAccessCtrl).filter(
+                BaseAccessCtrl.status=='1', BaseAccessCtrl.type=='B&W').order_by(BaseAccessCtrl.id).all():
+            br = {'ip': basic_rule.src_ips,
+                  'id': basic_rule.realid,
+                  'action': basic_rule.action,
+                  }
+            d['bAndw_rules'].append(br)
+
+        d['allowed_methods'] = ' '.join(map(lambda x: x.name.strip(), 
+                    session.query(HttpTypeSet).filter(HttpTypeSet.selected==1).all()))
+        d['allowed_request_content_type'] = ' '.join(map(lambda x: x.name.strip(), 
+                    session.query(HttpRequestType).filter(HttpRequestType.status==1).all()))
+        d['allowed_http_versions'] = ' '.join(map(lambda x: x.name.strip(), 
+                    session.query(HttpVer).filter(HttpVer.status==1).all()))
+        d['restricted_extensions'] = ' '.join(map(lambda x: x.name.strip()+'/', 
+                    session.query(RestrictExt).filter(RestrictExt.status==1).all()))
+        d['restricted_headers'] = ' '.join(map(lambda x: x.name.strip(), 
+                    session.query(RestrictHeaders).filter(RestrictHeaders.status==1).all()))
+
+        d['wafengine'] = baseconfig.wafengine
+        d['defaultaction'] = baseconfig.defaultaction
+        d['norevproxy'] = norevproxy
+        if os.path.isdir(self.custom_rules_dir) and os.listdir(self.custom_rules_dir):
+            d['customrules'] = True
+        for deploy in ('reverseproxy', 'bridge', 'tproxy'):
+            if self.nginx_dir == config[deploy]['conf_path']:
+                d['logs_path'] = config[deploy]['logs_path']
+                break
+        tenv.get_template('modsecurity').stream(d).dump(os.path.join(self.nginx_dir, 'modsecurity.conf'))
+        tenv.get_template('ocr').stream(ocr=ocr).dump(os.path.join(self.activated_rules_dir, 'ocr.conf'))
+        tenv.get_template('modsecurity_crs_11_brute_force_new').stream(ccurls=ccurls).dump(os.path.join(self.activated_rules_dir, 'modsecurity_crs_11_brute_force_new.conf'))
+        tenv.get_template('modsecurity_crs_30_http_policy').stream(d).dump(
+            os.path.join(self.base_rules_dir, 'modsecurity_crs_30_http_policy.conf'))
+        tenv.get_template('limits').stream(disable_rules=disable_rules).dump(
+            os.path.join(self.activated_rules_dir, 'limits.conf'))
+        tenv.get_template('ccrule').stream(ccrule=ccset).dump(
+            os.path.join(self.activated_rules_dir, 'ccrule.conf'))
+        tenv.get_template('cusrule').stream(cusrules=cusrules).dump(
+            os.path.join(self.activated_rules_dir, 'cusrule.conf'))
+        tenv.get_template('selfstudyrule').stream(ssrules=selfstudyrules).dump(
+            os.path.join(self.activated_rules_dir, 'selfstudyrule.conf'))
+
+    def get_ports(self, session):
+        sites = session.query(ReverseProxy).all()
+        ports = set()
+        for site in sites:
+            ports.add(site.locals)
+        return ports
+
+    def gen_nginx_bridge_proxy_conf(self):
+        db = MySQL(config['db'])
+        db.query("SELECT * FROM t_baseconfig")
+        baseconfig = db.fetchOneRow()
+        db.query("SELECT * FROM t_securityset")
+        securityset = db.fetchOneRow()
+        headers = securityset['header_hide_list'] if securityset['header_hide_list'] else ''
+        words = securityset['sensitive_words'] if securityset['sensitive_words'] else ''
+        ports = filter(lambda x: x.strip(), baseconfig['ports'].split('|'))
+        db.query("SELECT * FROM t_website")
+        sites = db.fetchAllRows()
+        db.query("SELECT * FROM t_errorlist where status = 1")
+        errorlist = db.fetchAllRows()
+        g = {'ports': ports,
+             'sites': sites,
+             'is_sensitive': securityset["is_sensitive"],
+             'header_hide_list': [ x.strip() for x in headers.split('|') if x.strip() ],
+             'sensitive_words': [ x.strip() for x in words.split('|') if x.strip() and "'" not in x],
+             'errorlist': errorlist,
+             }
+        tenv.get_template('bridge_proxy').stream(g).dump(os.path.join(self.sites_dir, 'proxy.conf'), encoding='utf8')
+        tenv.get_template('subs_filter').stream(g).dump(os.path.join(self.sites_dir, 'subs_filter_utf8.conf'), encoding='utf8')
+        tenv.get_template('subs_filter').stream(g).dump(os.path.join(self.sites_dir, 'subs_filter_gbk.conf'), encoding='gbk')
+        # self.set_default_modef_conf_file()
+        db.close()
+
+    def gen_nginx_reverseproxy_conf(self):
+        db = MySQL(config['db'])
+        # db.query("SELECT * from t_website WHERE type=2")
+        db.query("SELECT * from t_website WHERE isproxy=1")
+        sites = db.fetchAllRows()
+        for site in sites:
+            getLogger('main').info('host: %s'%site['sWebSiteName'])
+
+        db.query("SELECT * from t_securityset")
+        securityset = db.fetchOneRow()
+        headers = securityset['header_hide_list'] if securityset['header_hide_list'] else ''
+        words = securityset['sensitive_words'] if securityset['sensitive_words'] else ''
+        ports_dict = {}
+        db.query("SELECT * FROM t_errorlist where status = 1")
+        errorlist = db.fetchAllRows()
+        for site in sites:
+            db.query("SELECT * FROM t_website_servers WHERE webSiteId=%d"%site['id'])
+            servers = db.fetchAllRows()
+            site['servers'] = servers or []
+            ports_dict[site['iWebSitePort']] = site
+
+        g = {'sites': sites,
+             'is_sensitive': securityset['is_sensitive'],
+             'header_hide_list': [ x.strip() for x in headers.split('|') if x.strip() ],
+             'sensitive_words': [ x.strip() for x in words.split('|') if x.strip() and "'" not in x ],
+             'ports_dict': ports_dict,
+             'errorlist': errorlist,
+             'is_bypass': securityset['is_bypass'],
+             }
+        tenv.get_template('reverse-proxy').stream(g).dump(os.path.join(self.sites_dir, 'proxy.conf'), encoding='utf8')
+        tenv.get_template('subs_filter').stream(g).dump(os.path.join(self.sites_dir, 'subs_filter_utf8.conf'), encoding='utf8')
+        tenv.get_template('subs_filter').stream(g).dump(os.path.join(self.sites_dir, 'subs_filter_gbk.conf'), encoding='gbk')
+        self.set_default_modef_conf_file()
+        db.close()
+
+    def gen_nginx_transparentbridge_proxy_conf(self):
+        db = MySQL(config['db'])
+        db.query("SELECT * FROM t_baseconfig")
+        baseconfig = db.fetchOneRow()
+        db.query("SELECT * FROM t_securityset")
+        securityset = db.fetchOneRow()
+        headers = securityset['header_hide_list'] if securityset['header_hide_list'] else ''
+        words = securityset['sensitive_words'] if securityset['sensitive_words'] else ''
+        ports = filter(lambda x: x.strip(), baseconfig['ports'].split('|'))
+        db.query("SELECT * FROM waf.t_website")
+        sites = db.fetchAllRows()
+        g = {'ports': ports,
+             'sites': sites,
+             'is_sensitive': securityset["is_sensitive"],
+             'header_hide_list': [ x.strip() for x in headers.split('|') if x.strip() ],
+             'sensitive_words': [ x.strip() for x in words.split('|') if x.strip() and "'" not in x]}
+        #创建基础模板
+        for site in sites:
+            #getLogger("main").info("gen_nginx_transparentbridge_proxy_conf sites:%s"%site)
+            path = '/usr/local/bluedon/bdwaf/conf/modsecurity_sites_conf/%s_%s'%(site['sWebSiteName'], site['iWebSitePort'])
+            filename = '%s/%s_%s.conf'%(path, site['sWebSiteName'], site['iWebSitePort'])
+            self.set_base_model_conf_file(path, filename)
+        tenv.get_template('transparentbridge_proxy').stream(g).dump(os.path.join(self.sites_dir, 'proxy.conf'), encoding='utf8')
+        tenv.get_template('subs_filter').stream(g).dump(os.path.join(self.sites_dir, 'subs_filter_utf8.conf'), encoding='utf8')
+        tenv.get_template('subs_filter').stream(g).dump(os.path.join(self.sites_dir, 'subs_filter_gbk.conf'), encoding='gbk')
+        self.set_default_modef_conf_file()
+        db.close()
+
+    def set_base_model_conf_file(self, path, filename):
+        if not os.path.exists(filename):
+            os.popen('mkdir %s'%path)
+            os.popen("echo 'Include /usr/local/bdwaf/conf_proxy/modsecurity.conf\n"
+                     "Include %s/limits.conf\nInclude %s/virtual_patch.conf' > %s"
+                     % (path, path, filename))
+
+    def set_default_modef_conf_file(self):
+        path = os.path.join(self.modsecurity_sites_conf_dir, 'default')
+        filename = '%s/default.conf'%(path)
+        self.set_base_model_conf_file(path, filename)
+        tenv = Environment(loader=FileSystemLoader('/usr/local/bluedon/bdwafd/data/template/'))
+        limits = self.get_limits_conf()
+        tenv.get_template('limits-new').stream(limits=limits).dump(
+                os.path.join(self.modsecurity_sites_conf_dir, 'default/limits.conf'), encoding='utf8')
+        tenv.get_template('virtual_patch').stream(virtuals=[]).dump(
+                os.path.join(self.modsecurity_sites_conf_dir, 'default/virtual_patch.conf'), encoding='utf8')
+
+    def get_modeling_conf(self, websiteid, host):
+        """动态建模配置"""
+        db = MySQL(config['db'])
+        sql_str = ("SELECT t_modeling.host, t_modeling.path, t_modeling_detail.minlength, "
+                   "t_modeling_detail.maxlength, t_modeling_detail.name from t_modeling_detail "
+                   "JOIN t_modeling ON t_modeling_detail.modelingid=t_modeling.id WHERE "
+                   "t_modeling.websiteId=%d AND t_modeling_detail.is_use=1" % websiteid)
+        db.query(sql_str)
+        data= {'rules': [], 'fwbrules': []}
+        num = 800000
+        for line in db.fetchAllRows():
+            if line['maxlength'] == line['minlength']:
+                num += 1
+                line['tag'] = 'eq'
+                line['ruleid'] = num
+            else:
+                line_bck = deepcopy(line)
+                num += 1
+                line['tag'] = 'gt'
+                line['ruleid'] = num
+                num += 1
+                line_bck['tag'] = 'lt'
+                line_bck['ruleid'] = num
+                data['rules'].append(line_bck)
+            data['rules'].append(line)
+        
+        sql_str = ("SELECT t_modeling_detail_rule.realRuleId, t_modeling.path, t_modeling.host, "
+                   "t_modeling_detail.name FROM t_modeling_detail_rule JOIN t_modeling ON "
+                   "t_modeling_detail_rule.websiteId=t_modeling.websiteId AND "
+                   "t_modeling_detail_rule.modelingId=t_modeling.id JOIN t_modeling_detail "
+                   "ON t_modeling_detail.id=t_modeling_detail_rule.modelingDetailId WHERE "
+                   "t_modeling_detail_rule.websiteId=%d AND t_modeling_detail_rule.is_use=1" % websiteid)
+        db.query(sql_str)
+        fwbrules = []
+        fwbnum = 500000
+        for line in db.fetchAllRows():
+            fwbnum += 1
+            line['ruleid'] = fwbnum
+            data['fwbrules'].append(line)
+        db.close()
+        return data
+
+    def get_limits_conf(self, mid=None):
+        """从站点规则模板数据库中获取站点规则模板"""
+        db = MySQL(config['db'])
+        defaultsqlstr = sqlstr = "SELECT * FROM t_rule_model WHERE type=3 and isDefault=1"
+        if mid:
+            sqlstr = "SELECT * FROM t_rule_model WHERE id=%d"%mid
+        db.query(sqlstr)
+        result = db.fetchOneRow()
+        if not result:
+            db.query(defaultsqlstr)
+            result = db.fetchOneRow()
+        rules = json.loads(result['rule']) or []
+        db.close()
+        return rules
+
+    def get_virtual_patch_conf(self, siteid):
+        '''获取虚拟补丁配置'''
+        db = MySQL(config['dbsecurity'])
+        getLogger("main").info("get_virtual_patch_conf siteid:%s"%siteid)
+        # waf_website_id 数据库无此字段，先注释
+        # db.query("SELECT * FROM security.task_manage WHERE waf_website_id=%d"%siteid)
+        # task_manage = db.fetchOneRow()
+        # getLogger("main").info("get_virtual_patch_conf task_manage:%s"%task_manage)
+        rules = []
+        task_manage = False
+        if task_manage:
+            table_name = "security.scan_result_%s"%task_manage['id']
+            getLogger("main").info("get_virtual_patch_conf table_name:%s"%table_name)
+            db.query("SELECT * FROM %s"%table_name)
+            scan_result = db.fetchAllRows()
+            rid = 700001
+            for result in scan_result:
+                if result["is_use"] == 0:
+                    continue
+                getLogger("main").info("get_virtual_patch_conf data:%s"%result)
+                data = result["request"].split("\n")
+
+                host = ""
+                for i in data:
+                    if i.find("Host:") != -1:
+                        host = i.split()[1]
+
+                method = data[0].split()[0]
+
+                pathobj = urlparse(data[0].split()[1])
+                path = pathobj.path
+                path_query = []
+                if pathobj.query:
+                    pathdata = pathobj.query
+                    pathobj_query_list = pathdata.split("&")
+                    for path_data in pathobj_query_list:
+                        tmp_path_query = path_data.split("=")
+                        tmp_path_query[0] = tmp_path_query[0].upper()
+                        path_query.append(tmp_path_query)
+
+                data = {"host": host,
+                        "method": method,
+                        "path_query": path_query,
+                        "path": path,
+                        "rid": rid
+                        }
+                rules.append(data)     
+                rid += 1
+        db.close()
+        return rules
+
+    def set_model_different(self, mid):
+        """检查并更新站点及其站点组配置的不同规则"""
+        db = MySQL(config['db'])
+        if not mid:
+            return False
+        sqlstr = "SELECT * from t_rule_model WHERE id=%d"
+        db.query(sqlstr % mid)
+        rulemodel = db.fetchOneRow()
+        different = {}
+        if not rulemodel or not rulemodel['groupModelId']:
+            return False
+        db.query(sqlstr % rulemodel['groupModelId'])
+        groupmodel = db.fetchOneRow()
+        selfrule = json.loads(rulemodel['rule']) or set([])
+        grouprule = json.loads(groupmodel['rule']) or set([])
+        different['onlyself'] = list(set(selfrule) - set(grouprule))
+        different['onlygroup'] = list(set(grouprule) - set(selfrule))
+        db.update("UPDATE t_rule_model SET different='%s' WHERE id=%d"%(json.dumps(different), mid))
+        db.close()
+        return True
+
+    #TODO(peixu):配置了动态建模、虚拟补丁、站点组的规则
+    def gen_modsecurity_conf(self):
+        os.system("rm -rf /usr/local/bdwaf/conf_proxy/modsecurity_sites_conf/*")
+        db = MySQL(config['db'])
+        db.query("SELECT * FROM t_website")
+        tenv = Environment(loader=FileSystemLoader('/usr/local/bluedon/bdwafd/data/template/'))
+        for site in db.fetchAllRows():
+            path = os.path.join(self.modsecurity_sites_conf_dir, 
+                                '%s_%s'%(site['sWebSiteName'], site['iWebSitePort']))
+            filename = '%s/%s_%s.conf' % (path, site['sWebSiteName'], site['iWebSitePort'])
+            self.set_base_model_conf_file(path, filename)
+
+            # if site['mstatus'] == 2:
+                # modelingdata = self.get_modeling_conf(site['id'], site['sWebSiteName'])
+                # modelingdata['host'] = site['sWebSiteName']
+                # modelingdata['port'] = site['iWebSitePort']
+                # tenv.get_template('modeling').stream(ruledata=modelingdata).dump(
+                                                        # filename, encoding='utf8')
+            mid = site['selfRuleModelId'] and site['selfRuleModelId'] or site['ruleModelId']
+            limits = self.get_limits_conf(mid)
+
+            tenv.get_template('limits-new').stream(limits=limits).dump(
+                        os.path.join(path, "limits.conf"), encoding='utf8')
+            tenv.get_template('virtual_patch').stream(virtuals=[]).dump(
+                        os.path.join(path, "virtual_patch.conf"), encoding='utf8')
+        db.close()
+
+    def get_limit_ruleids(self, rulemodel, session):
+        if rulemodel.type == 2:
+            group_ruleid = json.loads(session.query(RuleModel.rule).filter(
+                                RuleModel.id==rulemodel.groupModelId).one()[0]) or []
+            return list(set(group_ruleid + json.loads(rulemodel.rule or "[]")) - set(
+                                                json.loads(rulemodel.different or "[]")))
+        else:
+            return json.loads(rulemodel.rule)
+
+    def gen_mod_rule_template(self, session):
+        '''配置站点组规则'''
+        os.system("rm -rf {}/*".format(self.mod_rule_template_dir))
+        session.query(RuleModel).filter(RuleModel.type!=3).update({RuleModel.confName:RuleModel.id})
+        rulemodels = session.query(RuleModel).all()
+        l = {'index': 0}
+        default_conf = ''
+        rulemodels_id = {}
+        for i, rulemodel in enumerate(rulemodels):
+            if rulemodel.isDefault == 1:
+                default_conf = rulemodel.confName
+            website_dir = os.path.join(self.mod_rule_template_dir, rulemodel.confName)
+            os.system('mkdir -p {}'.format(website_dir))
+            base = {'conf_name': rulemodel.confName,
+                    'index': i,
+                    'conf_dir': self.mod_rule_template_dir,
+                    }
+            limit_ruleids = self.get_limit_ruleids(rulemodel, session)
+            limit_ids = [limit_ruleids[ri:ri+200] for ri in range(0, len(limit_ruleids), 200)]
+            l['ruleids'] = limit_ids
+            tenv.get_template('website_base').stream(base).dump(os.path.join(website_dir, 'base.conf'))
+            tenv.get_template('website_limit').stream(l).dump(os.path.join(website_dir, 'limits.conf'))
+            l['index'] += len(limit_ids)
+            rulemodels_id[rulemodel.id] = rulemodel
+
+        policys = []
+        for policy in session.query(RuleCustomDefendPolicy).filter(RuleCustomDefendPolicy.status=='1').all():
+            up = urlparse(policy.destination_url)
+            p = {}
+            if up.netloc:
+                p['domain'] = up.netloc
+                if up.path and up.path != '/':
+                    p['uri'] = up.path
+            sip = policy.source_ip.partition('-')
+            if sip[1]:
+                write_iprange_data(sip, self.activated_rules_dir)
+                p['sip'] = '@pmFromFile activated_rules/modsecurity_filter_iprange.data'
+            elif sip[0]:
+                p['sip'] = '@ipMatch {}'.format(policy.source_ip)
+            dip = policy.destination_ip.partition('-')
+            if dip[1]:
+                write_iprange_data(dip, self.activated_rules_dir)
+                p['dip'] = '@pmFromFile activated_rules/modsecurity_filter_iprange.data'
+            elif dip[0]:
+                p['dip'] = '@ipMatch {}'.format(policy.destination_ip)
+            p['rule'] = policy.rule
+            policys.append(p)
+            
+        d = {'websites': session.query(Website).all(),
+             'conf_dir': self.mod_rule_template_dir,
+             'default_conf': default_conf,
+             'rulemodels': rulemodels_id,
+             'policys': policys,
+            }
+        tenv.get_template('modsecurity_filt').stream(d).dump(
+            os.path.join(self.nginx_dir, 'modsecurity_filt.conf'))
+
+
+class NginxController():
+    ''' nginx 控制器 '''
+
+    def __init__(self):
+        pass
+
+    def is_active(self, bdwaf):
+        cmd = 'systemctl is-active {}'.format(config[bdwaf]['service'])
+        return 'active' == commands.getoutput(cmd).strip()
+
+    def start(self, bdwaf):
+        cmd = 'systemctl start {}'.format(config[bdwaf]['service'])
+        os.system(cmd)
+
+    def stop(self, bdwaf):
+        cmd = 'systemctl stop {}'.format(config[bdwaf]['service'])
+        os.system(cmd)
+
+    def restart(self, bdwaf):
+        cmd = 'systemctl restart {}'.format(config[bdwaf]['service'])
+        ret = os.system(cmd)
+        getLogger('main').info('restart {} {}'.format(bdwaf, ret))
+
+    def reload(self, bdwaf):
+        cmd = 'systemctl reload {}'.format(config[bdwaf]['service'])
+        ret = os.system(cmd)
+        getLogger('main').info('reload {} {}'.format(bdwaf, ret))
+
+
+
+
+if __name__ == '__main__':
+    init_tenv()
+    with session_scope() as session:
+        securityset = session.query(SecuritySet).one()
+        g = {'is_sensitive': securityset.is_sensitive,
+             u'test': securityset.sensitive_words.split('|')[2],
+             # 'sensitive_words': [ x for x in securityset.sensitive_words.split('|') if x ],
+             }
+        tenv.get_template('test').stream(g).dump('test.txt')

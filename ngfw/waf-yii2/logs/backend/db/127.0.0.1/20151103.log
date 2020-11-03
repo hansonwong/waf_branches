@@ -1,0 +1,1404 @@
+2015-11-03 08:57:52 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:52 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:52 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:52 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:52 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:52 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:52 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:52 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:52 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:52 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:52 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:52 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:52 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:57:52 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:57:52 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:57:52 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:57:52 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:57:52 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:57:52 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:57:52 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:57:52 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:57:52 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:57:52 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:57:52 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:57:59 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:59 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:59 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:59 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:59 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:59 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:59 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:59 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:59 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:59 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:59 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:57:59 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:01 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:02 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:02 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:02 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:02 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:02 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:02 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:02 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:02 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:02 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:02 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:02 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 08:58:02 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:06 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:08 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:08 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:08 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:08 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:08 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:08 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:08 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:08 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:08 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:08 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:08 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:08 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:11 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:11 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:11 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:11 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:11 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:11 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:11 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:11 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:11 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:11 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:11 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:11 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:13 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:13 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:13 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:13 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:13 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:13 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:13 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:13 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:13 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:13 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:13 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:13 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:00:14 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:14 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:14 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:14 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:14 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:14 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:14 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:14 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:14 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:14 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:14 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:00:14 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:01:08 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:08 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:08 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:08 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:08 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:08 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:08 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:08 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:08 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:08 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:08 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:08 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:01:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:01:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:01:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:01:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:01:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:01:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:01:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:01:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:01:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:01:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:01:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:01:11 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:11 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:11 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:11 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:11 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:11 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:11 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:11 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:11 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:11 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:11 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:11 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:54 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:54 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:54 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:54 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:54 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:54 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:54 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:54 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:54 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:54 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:54 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:54 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:56 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:56 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:56 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:56 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:56 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:56 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:56 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:56 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:56 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:56 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:56 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:56 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:57 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:57 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:57 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:57 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:57 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:57 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:57 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:57 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:57 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:57 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:57 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:57 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:58 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:58 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:58 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:58 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:58 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:58 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:58 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:58 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:58 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:58 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:58 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:01:58 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:22
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:08 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:08 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:08 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:08 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:08 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:08 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:08 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:08 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:08 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:08 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:08 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:08 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:09 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:10 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:10 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:10 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:10 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:10 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:10 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:10 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:10 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:10 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:10 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:10 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:02:10 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-11-03 09:10:21 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:21 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:21 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:21 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:21 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:21 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:21 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:21 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:21 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:21 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:21 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:21 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:24 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:24 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:24 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:24 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:24 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:24 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:24 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:24 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:24 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:24 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:24 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:24 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:38 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:38 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:38 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:38 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:38 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:38 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:38 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:38 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:38 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:38 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:38 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:10:38 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-11-03 09:11:03 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 09:11:03 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 09:11:03 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 09:11:03 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 09:11:03 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 09:11:03 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 09:11:03 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 09:11:03 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 09:11:03 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 09:11:03 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 09:11:03 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 09:11:03 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 09:11:07 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:07 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:07 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:07 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:07 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:07 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:07 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:07 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:07 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:07 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:07 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:07 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:11 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:11 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:11 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:11 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:11 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:11 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:11 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:11 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:11 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:11 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:11 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:11:11 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:20
+2015-11-03 09:14:01 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:01 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:01 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:01 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:01 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:01 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:01 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:01 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:01 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:01 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:01 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:01 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:05 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:05 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:05 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:05 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:05 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:05 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:05 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:05 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:05 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:05 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:05 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:14:05 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:16:56 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:16:56 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:16:56 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:16:56 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:16:56 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:16:56 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:16:56 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:16:56 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:16:56 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:16:56 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:16:56 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 09:16:56 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+    in E:\yii2\apps\backend\controllers\TestController.php:14
+2015-11-03 15:18:13 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:13 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:13 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:13 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:13 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:13 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:13 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:13 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:13 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:13 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:13 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:13 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:21 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:21 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:21 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:21 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:21 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:21 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:21 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:21 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:21 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:21 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:21 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:18:21 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:19:20 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:19:20 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:19:20 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:19:20 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:19:20 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:19:20 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:19:20 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:19:20 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:19:20 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:19:20 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:19:20 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:19:20 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:20:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:20:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:20:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:20:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:20:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:20:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:20:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:20:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:20:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:20:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:20:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40
+2015-11-03 15:20:07 [127.0.0.1][1][3602tqlkggcdedr0dp3trc2r73][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\layouts\main.php:40

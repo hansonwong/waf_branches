@@ -1,0 +1,12 @@
+[Unit]
+Description=Firewall statistics data service
+After=dpdk.service
+Requires=dpdk.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/taskset -c 1 /home/ng_platform/bd_dpdk_warper/clients/get_statistics_data
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

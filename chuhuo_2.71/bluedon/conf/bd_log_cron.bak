@@ -1,0 +1,17 @@
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# m h dom mon dow user	command
+#*/1 * * * * root python /usr/local/bluedon/cron_del_user.py
+1 0  *  *  *   root python /usr/local/bluedon/reportlog/mysql_log_backup.py
+
+
+#log_arch
+5 0 * * 0 root python /usr/local/bluedon/reportlog/log_backup_lib.py
+

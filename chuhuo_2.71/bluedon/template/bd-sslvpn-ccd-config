@@ -1,0 +1,9 @@
+ifconfig-push {{ pre_ip }} {{ fin_ip }}
+{% for push_data in push_route -%}
+
+push "route {{ push_data['ip'] }} {{ push_data['mask'] }}"
+{% endfor -%}
+
+{% if iBan== '1' -%}
+push "redirect-gateway def1 "
+{% endif -%}

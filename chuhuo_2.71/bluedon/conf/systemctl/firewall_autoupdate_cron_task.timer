@@ -1,0 +1,11 @@
+[Unit]
+Description=Firewall Auto Update
+Requires=rc-local.service
+After=rc-local.service
+
+[Install]
+WantedBy=multi-user.target
+
+[Timer]
+Unit=firewall_autoupdate_cron_task.service
+OnCalendar=*-*-* *:01/1:00

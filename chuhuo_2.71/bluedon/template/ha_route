@@ -1,0 +1,18 @@
+#!/bin/sh
+# keepalived route config
+case "$1" in
+  add)
+     sleep 2
+     {% for hotStandby in add_hot %}
+     {% if hotStandby['targetip']!='' %}route add -net {{ hotStandby['targetip']}} netmask {{ hotStandby['mask'] }} gw {{ hotStandby['gateway']}}
+     {% for ip in hotStandby['OUTIP'] %}
+     /sbin/arping -I {{ hotStandby['NIC'] }} -c 5 -s {{ ip }} {{ hotStandby['gateway'] }} &>/dev/null{% endfor %}
+     {% endif %}
+     {% endfor %}
+     ;;
+  del)
+     {% for hotStandby in del_hot %}{% if hotStandby['targetip']!='' %}route del -net {{ hotStandby['targetip']}} netmask {{ hotStandby['mask'] }} gw {{ hotStandby['gateway']}}{% endif %}
+     {% endfor %}
+     ;;
+esac
+exit 0

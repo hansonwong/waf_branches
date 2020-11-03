@@ -1,0 +1,13 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Wed May  4 15:20:11 2016
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/sda2 /                       ext4    defaults        0 1
+/dev/sda1 /boot                   ext4    defaults        0 2
+/dev/sda3 /var                    ext4    defaults        1 2
+
+/dev/sda4 none                    swap    sw              0 0

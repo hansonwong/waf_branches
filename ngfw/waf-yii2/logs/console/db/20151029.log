@@ -1,0 +1,303 @@
+2015-10-29 20:13:24 [-][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_migration`)
+2015-10-29 20:13:24 [-][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-10-29 20:13:24 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-10-29 20:13:24 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+2015-10-29 20:13:24 [-][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_migration`)
+2015-10-29 20:13:24 [-][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_migration`)
+2015-10-29 20:13:24 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `m_migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` integer
+)
+2015-10-29 20:13:24 [-][-][-][profile begin][yii\db\Command::execute] CREATE TABLE `m_migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` integer
+)
+2015-10-29 20:13:24 [-][-][-][profile end][yii\db\Command::execute] CREATE TABLE `m_migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` integer
+)
+2015-10-29 20:13:24 [-][-][-][info][yii\db\Command::execute] INSERT INTO `m_migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1446120804)
+2015-10-29 20:13:24 [-][-][-][profile begin][yii\db\Command::execute] INSERT INTO `m_migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1446120804)
+2015-10-29 20:13:24 [-][-][-][profile end][yii\db\Command::execute] INSERT INTO `m_migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1446120804)
+2015-10-29 20:13:24 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `m_migration` ORDER BY `apply_time` DESC, `version` DESC
+2015-10-29 20:13:24 [-][-][-][profile begin][yii\db\Command::query] SELECT `version`, `apply_time` FROM `m_migration` ORDER BY `apply_time` DESC, `version` DESC
+2015-10-29 20:13:24 [-][-][-][profile end][yii\db\Command::query] SELECT `version`, `apply_time` FROM `m_migration` ORDER BY `apply_time` DESC, `version` DESC
+2015-10-29 20:13:47 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `m_tbUser` (
+	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	`username` varchar(255) NOT NULL UNIQUE,
+	`auth_key` varchar(32) NOT NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`password_reset_token` varchar(255) UNIQUE,
+	`email` varchar(255) NOT NULL UNIQUE,
+	`status` smallint NOT NULL DEFAULT 10,
+	`created_at` integer NOT NULL,
+	`updated_at` integer NOT NULL
+)
+    in E:\yii2\apps\console\migrations\m130524_201442_init.php:27
+2015-10-29 20:13:47 [-][-][-][profile begin][yii\db\Command::execute] CREATE TABLE `m_tbUser` (
+	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	`username` varchar(255) NOT NULL UNIQUE,
+	`auth_key` varchar(32) NOT NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`password_reset_token` varchar(255) UNIQUE,
+	`email` varchar(255) NOT NULL UNIQUE,
+	`status` smallint NOT NULL DEFAULT 10,
+	`created_at` integer NOT NULL,
+	`updated_at` integer NOT NULL
+)
+    in E:\yii2\apps\console\migrations\m130524_201442_init.php:27
+2015-10-29 20:13:47 [-][-][-][profile end][yii\db\Command::execute] CREATE TABLE `m_tbUser` (
+	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	`username` varchar(255) NOT NULL UNIQUE,
+	`auth_key` varchar(32) NOT NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`password_reset_token` varchar(255) UNIQUE,
+	`email` varchar(255) NOT NULL UNIQUE,
+	`status` smallint NOT NULL DEFAULT 10,
+	`created_at` integer NOT NULL,
+	`updated_at` integer NOT NULL
+)
+    in E:\yii2\apps\console\migrations\m130524_201442_init.php:27
+2015-10-29 20:13:47 [-][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_migration`)
+2015-10-29 20:13:47 [-][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_migration`)
+2015-10-29 20:13:47 [-][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_migration`)
+2015-10-29 20:13:47 [-][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_migration`)
+2015-10-29 20:13:47 [-][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_migration`)
+2015-10-29 20:13:47 [-][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_migration`)
+2015-10-29 20:13:47 [-][-][-][info][yii\db\Command::execute] INSERT INTO `m_migration` (`version`, `apply_time`) VALUES ('m130524_201442_init', 1446120827)
+2015-10-29 20:13:47 [-][-][-][profile begin][yii\db\Command::execute] INSERT INTO `m_migration` (`version`, `apply_time`) VALUES ('m130524_201442_init', 1446120827)
+2015-10-29 20:13:47 [-][-][-][profile end][yii\db\Command::execute] INSERT INTO `m_migration` (`version`, `apply_time`) VALUES ('m130524_201442_init', 1446120827)
+2015-10-29 20:45:16 [-][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:19
+2015-10-29 20:45:16 [-][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:19
+2015-10-29 20:45:16 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:19
+2015-10-29 20:45:16 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:19
+2015-10-29 20:45:16 [-][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:19
+2015-10-29 20:45:16 [-][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:19
+2015-10-29 20:45:16 [-][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:19
+2015-10-29 20:45:16 [-][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:19
+2015-10-29 20:45:16 [-][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:19
+2015-10-29 20:45:17 [-][-][-][info][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `created_at`, `updated_at`) VALUES ('admin', 'admin@admin.com', '$2y$13$6aIar2WquQ8t6YdwZgxYouVmsdpYNQfr2S2ltq1mRPP5BXivAuPbq', 10, 1446122717, 1446122717)
+    in E:\yii2\apps\console\controllers\InitController.php:22
+2015-10-29 20:45:17 [-][-][-][profile begin][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `created_at`, `updated_at`) VALUES ('admin', 'admin@admin.com', '$2y$13$6aIar2WquQ8t6YdwZgxYouVmsdpYNQfr2S2ltq1mRPP5BXivAuPbq', 10, 1446122717, 1446122717)
+    in E:\yii2\apps\console\controllers\InitController.php:22
+2015-10-29 20:45:17 [-][-][-][profile end][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `created_at`, `updated_at`) VALUES ('admin', 'admin@admin.com', '$2y$13$6aIar2WquQ8t6YdwZgxYouVmsdpYNQfr2S2ltq1mRPP5BXivAuPbq', 10, 1446122717, 1446122717)
+    in E:\yii2\apps\console\controllers\InitController.php:22
+2015-10-29 20:45:17 [-][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: m_tbUser.auth_key' in E:\yii2\vendor\yiisoft\yii2\db\Command.php:781
+Stack trace:
+#0 E:\yii2\vendor\yiisoft\yii2\db\Command.php(781): PDOStatement->execute()
+#1 E:\yii2\vendor\yiisoft\yii2\db\Schema.php(448): yii\db\Command->execute()
+#2 E:\yii2\vendor\yiisoft\yii2\db\ActiveRecord.php(454): yii\db\Schema->insert('{{%tbUser}}', Array)
+#3 E:\yii2\vendor\yiisoft\yii2\db\ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\yii2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\yii2\apps\console\controllers\InitController.php(22): yii\db\BaseActiveRecord->save()
+#6 [internal function]: apps\console\controllers\InitController->actionAdmin()
+#7 E:\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\yii2\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\yii2\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('admin', Array)
+#10 E:\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('admin', Array)
+#11 E:\yii2\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('init/admin', Array)
+#12 E:\yii2\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('init/admin', Array)
+#13 E:\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 E:\yii2\apps\console\run(8): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: m_tbUser.auth_key
+The SQL being executed was: INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `created_at`, `updated_at`) VALUES ('admin', 'admin@admin.com', '$2y$13$6aIar2WquQ8t6YdwZgxYouVmsdpYNQfr2S2ltq1mRPP5BXivAuPbq', 10, 1446122717, 1446122717)' in E:\yii2\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 E:\yii2\vendor\yiisoft\yii2\db\Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `m_...')
+#1 E:\yii2\vendor\yiisoft\yii2\db\Schema.php(448): yii\db\Command->execute()
+#2 E:\yii2\vendor\yiisoft\yii2\db\ActiveRecord.php(454): yii\db\Schema->insert('{{%tbUser}}', Array)
+#3 E:\yii2\vendor\yiisoft\yii2\db\ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\yii2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\yii2\apps\console\controllers\InitController.php(22): yii\db\BaseActiveRecord->save()
+#6 [internal function]: apps\console\controllers\InitController->actionAdmin()
+#7 E:\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\yii2\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\yii2\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('admin', Array)
+#10 E:\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('admin', Array)
+#11 E:\yii2\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('init/admin', Array)
+#12 E:\yii2\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('init/admin', Array)
+#13 E:\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 E:\yii2\apps\console\run(8): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 19
+    [2] => NOT NULL constraint failed: m_tbUser.auth_key
+)
+
+2015-10-29 20:50:26 [-][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:26 [-][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:26 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:26 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:26 [-][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:26 [-][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:26 [-][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:26 [-][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:26 [-][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:27 [-][-][-][info][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `created_at`, `updated_at`) VALUES ('', '', '$2y$13$emb6rADgm0euC/K85YQPJeIFPz6PwYVrscPQ8MtYIxhqwN5BX7Crq', 10, 1446123027, 1446123027)
+    in E:\yii2\apps\console\controllers\InitController.php:26
+2015-10-29 20:50:27 [-][-][-][profile begin][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `created_at`, `updated_at`) VALUES ('', '', '$2y$13$emb6rADgm0euC/K85YQPJeIFPz6PwYVrscPQ8MtYIxhqwN5BX7Crq', 10, 1446123027, 1446123027)
+    in E:\yii2\apps\console\controllers\InitController.php:26
+2015-10-29 20:50:27 [-][-][-][profile end][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `created_at`, `updated_at`) VALUES ('', '', '$2y$13$emb6rADgm0euC/K85YQPJeIFPz6PwYVrscPQ8MtYIxhqwN5BX7Crq', 10, 1446123027, 1446123027)
+    in E:\yii2\apps\console\controllers\InitController.php:26
+2015-10-29 20:50:27 [-][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: m_tbUser.auth_key' in E:\yii2\vendor\yiisoft\yii2\db\Command.php:781
+Stack trace:
+#0 E:\yii2\vendor\yiisoft\yii2\db\Command.php(781): PDOStatement->execute()
+#1 E:\yii2\vendor\yiisoft\yii2\db\Schema.php(448): yii\db\Command->execute()
+#2 E:\yii2\vendor\yiisoft\yii2\db\ActiveRecord.php(454): yii\db\Schema->insert('{{%tbUser}}', Array)
+#3 E:\yii2\vendor\yiisoft\yii2\db\ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\yii2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\yii2\apps\console\controllers\InitController.php(26): yii\db\BaseActiveRecord->save()
+#6 [internal function]: apps\console\controllers\InitController->actionAdmin()
+#7 E:\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\yii2\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\yii2\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('admin', Array)
+#10 E:\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('admin', Array)
+#11 E:\yii2\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('init/admin', Array)
+#12 E:\yii2\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('init/admin', Array)
+#13 E:\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 E:\yii2\apps\console\run(8): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: m_tbUser.auth_key
+The SQL being executed was: INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `created_at`, `updated_at`) VALUES ('', '', '$2y$13$emb6rADgm0euC/K85YQPJeIFPz6PwYVrscPQ8MtYIxhqwN5BX7Crq', 10, 1446123027, 1446123027)' in E:\yii2\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 E:\yii2\vendor\yiisoft\yii2\db\Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `m_...')
+#1 E:\yii2\vendor\yiisoft\yii2\db\Schema.php(448): yii\db\Command->execute()
+#2 E:\yii2\vendor\yiisoft\yii2\db\ActiveRecord.php(454): yii\db\Schema->insert('{{%tbUser}}', Array)
+#3 E:\yii2\vendor\yiisoft\yii2\db\ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\yii2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\yii2\apps\console\controllers\InitController.php(26): yii\db\BaseActiveRecord->save()
+#6 [internal function]: apps\console\controllers\InitController->actionAdmin()
+#7 E:\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\yii2\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\yii2\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('admin', Array)
+#10 E:\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('admin', Array)
+#11 E:\yii2\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('init/admin', Array)
+#12 E:\yii2\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('init/admin', Array)
+#13 E:\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 E:\yii2\apps\console\run(8): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 19
+    [2] => NOT NULL constraint failed: m_tbUser.auth_key
+)
+
+2015-10-29 20:50:36 [-][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:36 [-][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:36 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:36 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:36 [-][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:36 [-][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:36 [-][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:36 [-][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:36 [-][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:50:37 [-][-][-][info][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `created_at`, `updated_at`) VALUES ('admin', 'admin@admin.com', '$2y$13$fBdi9gpShIdnVD6cKFOO7OZyg2zdK/pOs5am57rBygpuLaORVkqmW', 10, 1446123037, 1446123037)
+    in E:\yii2\apps\console\controllers\InitController.php:26
+2015-10-29 20:50:37 [-][-][-][profile begin][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `created_at`, `updated_at`) VALUES ('admin', 'admin@admin.com', '$2y$13$fBdi9gpShIdnVD6cKFOO7OZyg2zdK/pOs5am57rBygpuLaORVkqmW', 10, 1446123037, 1446123037)
+    in E:\yii2\apps\console\controllers\InitController.php:26
+2015-10-29 20:50:37 [-][-][-][profile end][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `created_at`, `updated_at`) VALUES ('admin', 'admin@admin.com', '$2y$13$fBdi9gpShIdnVD6cKFOO7OZyg2zdK/pOs5am57rBygpuLaORVkqmW', 10, 1446123037, 1446123037)
+    in E:\yii2\apps\console\controllers\InitController.php:26
+2015-10-29 20:50:37 [-][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: m_tbUser.auth_key' in E:\yii2\vendor\yiisoft\yii2\db\Command.php:781
+Stack trace:
+#0 E:\yii2\vendor\yiisoft\yii2\db\Command.php(781): PDOStatement->execute()
+#1 E:\yii2\vendor\yiisoft\yii2\db\Schema.php(448): yii\db\Command->execute()
+#2 E:\yii2\vendor\yiisoft\yii2\db\ActiveRecord.php(454): yii\db\Schema->insert('{{%tbUser}}', Array)
+#3 E:\yii2\vendor\yiisoft\yii2\db\ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\yii2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\yii2\apps\console\controllers\InitController.php(26): yii\db\BaseActiveRecord->save()
+#6 [internal function]: apps\console\controllers\InitController->actionAdmin()
+#7 E:\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\yii2\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\yii2\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('admin', Array)
+#10 E:\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('admin', Array)
+#11 E:\yii2\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('init/admin', Array)
+#12 E:\yii2\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('init/admin', Array)
+#13 E:\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 E:\yii2\apps\console\run(8): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: m_tbUser.auth_key
+The SQL being executed was: INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `created_at`, `updated_at`) VALUES ('admin', 'admin@admin.com', '$2y$13$fBdi9gpShIdnVD6cKFOO7OZyg2zdK/pOs5am57rBygpuLaORVkqmW', 10, 1446123037, 1446123037)' in E:\yii2\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 E:\yii2\vendor\yiisoft\yii2\db\Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `m_...')
+#1 E:\yii2\vendor\yiisoft\yii2\db\Schema.php(448): yii\db\Command->execute()
+#2 E:\yii2\vendor\yiisoft\yii2\db\ActiveRecord.php(454): yii\db\Schema->insert('{{%tbUser}}', Array)
+#3 E:\yii2\vendor\yiisoft\yii2\db\ActiveRecord.php(424): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\yii2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\yii2\apps\console\controllers\InitController.php(26): yii\db\BaseActiveRecord->save()
+#6 [internal function]: apps\console\controllers\InitController->actionAdmin()
+#7 E:\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\yii2\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\yii2\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('admin', Array)
+#10 E:\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('admin', Array)
+#11 E:\yii2\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('init/admin', Array)
+#12 E:\yii2\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('init/admin', Array)
+#13 E:\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 E:\yii2\apps\console\run(8): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 19
+    [2] => NOT NULL constraint failed: m_tbUser.auth_key
+)
+
+2015-10-29 20:51:16 [-][-][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:51:16 [-][-][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:51:16 [-][-][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:51:16 [-][-][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:51:16 [-][-][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:51:16 [-][-][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:51:16 [-][-][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:51:16 [-][-][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:51:16 [-][-][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\apps\console\controllers\InitController.php:23
+2015-10-29 20:51:17 [-][-][-][info][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `auth_key`, `created_at`, `updated_at`) VALUES ('admin', 'admin@admin.com', '$2y$13$dK2spwpITqXOpbnFHoAXY.tAvoSgZE0RdySvMbUVSBh0S3I.0VrZK', 10, '123456', 1446123077, 1446123077)
+    in E:\yii2\apps\console\controllers\InitController.php:26
+2015-10-29 20:51:17 [-][-][-][profile begin][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `auth_key`, `created_at`, `updated_at`) VALUES ('admin', 'admin@admin.com', '$2y$13$dK2spwpITqXOpbnFHoAXY.tAvoSgZE0RdySvMbUVSBh0S3I.0VrZK', 10, '123456', 1446123077, 1446123077)
+    in E:\yii2\apps\console\controllers\InitController.php:26
+2015-10-29 20:51:17 [-][-][-][profile end][yii\db\Command::execute] INSERT INTO `m_tbUser` (`username`, `email`, `password_hash`, `status`, `auth_key`, `created_at`, `updated_at`) VALUES ('admin', 'admin@admin.com', '$2y$13$dK2spwpITqXOpbnFHoAXY.tAvoSgZE0RdySvMbUVSBh0S3I.0VrZK', 10, '123456', 1446123077, 1446123077)
+    in E:\yii2\apps\console\controllers\InitController.php:26

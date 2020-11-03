@@ -1,0 +1,21 @@
+1.通过更新OPENSSH版本，修补漏洞。下载openssh安装包 www.openssh.com
+download openssh-7.4p1.tar.gz
+配置和编译
+tar -xvf openssh-7.4p1.tar.gz
+cd openssh-7.4p1/
+./configure --prefix=/usr --sysconfdir=/etc/ssh --with-md5-passwords --with-privsep-path=/var/lib/sshd
+make
+make instal
+注如果是CENTOS系统，make install之前作如下操作：
+chmod 600 /etc/ssh/* 
+sed -i '/GSSAPICleanupCredentials/s/GSSAPICleanupCredentials yes/#GSSAPICleanupCredentials yes/' /etc/ssh/sshd_config
+sed -i '/GSSAPIAuthentication/s/GSSAPIAuthentication yes/#GSSAPIAuthentication yes/' /etc/ssh/sshd_config
+sed -i '/GSSAPIAuthentication/s/GSSAPIAuthentication no/#GSSAPIAuthentication no/' /etc/ssh/sshd_config
+sed -i '/#PermitRootLogin?/s/#PermitRootLogin? yes/PermitRootLogin yes/' /etc/ssh/sshd_config
+3.重启ssh服务
+service ssh restart (ubuntu系统）
+或者，systemctl restart sshd (centos系统）
+
+4.验证是否修改成功
+# ssh -V
+OpenSSH_7.4p1, OpenSSL 1.0.1 14 Mar 2012

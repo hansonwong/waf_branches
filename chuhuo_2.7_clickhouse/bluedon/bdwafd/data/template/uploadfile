@@ -1,0 +1,7 @@
+SecRule REQUEST_METHOD "!^POST$" "phase:2,id:'900902',t:none,nolog,pass,skipAfter:END_UPLOAD_PROTECTION_CHECK"
+
+SecRule FILES "\.({{test}})$" "phase:2,id:'900903',t:none,log,deny,msg:'uploadfile block:time=%{time}|::|uri=%{request_uri}|::|tmpname=%{files_tmpnames}|::|realname=%{files}|::|size=%{files_sizes} '"
+
+SecRule &FILES "@eq 1" "phase:2,id:'900904',t:none,log,pass,msg:'uploadfile block:time=%{time}|::|uri=%{request_uri}|::|tmpname=%{files_tmpnames}|::|realname=%{files}|::|size=%{files_sizes} '"
+
+SecMarker END_UPLOAD_PROTECTION_CHECK

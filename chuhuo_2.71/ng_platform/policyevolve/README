@@ -1,0 +1,14 @@
+策略演进部署
+1、cd policyevolve
+2、make
+3、修改配置文件tse.ini mysql连接参数
+4、chmod 776 tsecheck.sh
+5、建立iptables链
+   iptables -N TSE_CHAIN
+   iptables -A FORWARD -j TSE_CHAIN
+6、启动
+   iptables -t filter -N NF_QUEUE_CHAIN
+   iptables -t filter -I FORWARD -j NF_QUEUE_CHAIN //优先级最高
+   eg:上面两条部署是建立，下面一条仅供参考，程序会自动配置
+   iptables -t filter -I NF_QUEUE_CHAIN -j NFQUEUE --queue-balance 12:14   //queue是配置文件标签default queue 
+7、可以参照nftse -h 使用命令 或者 修改默认值

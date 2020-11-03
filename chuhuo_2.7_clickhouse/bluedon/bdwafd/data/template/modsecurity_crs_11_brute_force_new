@@ -1,0 +1,33 @@
+
+
+# skip
+SecRule &TX:BRUTE_FORCE_PROTECTED_URLS "@eq 0" "phase:1,id:'900200',t:none,nolog,pass,skipAfter:END_BRUTE_FORCE_PROTECTION_CHECKS"
+SecRule REQUEST_FILENAME ".*" "chain,phase:1,id:'900201',t:none,nolog,pass,setvar:'tx.filename=#%{request_filename}#',skipAfter:END_BRUTE_FORCE_PROTECTION_CHECKS"
+  SecRule TX:FILENAME "!@within %{tx.brute_force_protected_urls}"
+
+SecRule REQUEST_FILENAME ".*" "phase:1,id:'900202',t:none,nolog,pass,setvar:'tx.filename=#%{request_filename}#'"
+
+{% for id in ccurls %}
+# ---------- {{id}} ---- {{ccurls[id]}} ------
+
+SecRule TX:FILENAME "!@streq #{{ccurls[id]}}#" "phase:1,id:'{{id+5}}',t:none,nolog,pass,skipAfter:END_BRUTE_FORCE_PROTECTION_CHECKS_{{id}}"
+
+SecRule IP:BRUTE_FORCE_BLOCK_{{id}} "@eq 1" "chain,phase:1,id:'{{id}}',block,msg:'Brute Force Attack Identified from %{tx.real_ip} (%{tx.brute_force_block_counter_{{id}}} hits since last alert)',setvar:ip.brute_force_block_counter_{{id}}=+1"
+  SecRule &IP:BRUTE_FORCE_BLOCK_FLAG_{{id}} "@eq 0" "setvar:ip.brute_force_block_flag_{{id}}=1,expirevar:ip.brute_force_block_flag_{{id}}=60,setvar:tx.brute_force_block_counter_{{id}}=%{ip.brute_force_block_counter_{{id}}},setvar:ip.brute_force_block_counter_{{id}}=0"
+
+SecRule IP:BRUTE_FORCE_BLOCK_{{id}} "@eq 1" "phase:1,id:'{{id+1}}',block,nolog,setvar:ip.brute_force_block_counter_{{id}}=+1"
+
+SecAction "phase:1,id:'{{id+2}}',t:none,nolog,pass,setvar:ip.brute_force_counter_{{id}}=+1"
+
+SecRule IP:BRUTE_FORCE_COUNTER_{{id}} "@gt 0" "chain,phase:1,id:'{{id+3}}',t:none,nolog,pass,expirevar:ip.brute_force_counter_{{id}}=%{tx.brute_force_burst_time_slice}"
+  SecRule &IP:BRUTE_FORCE_COUNTER_FLAG_{{id}} "@eq 0" "t:none,setvar:ip.brute_force_counter_flag_{{id}}=1,expirevar:ip.dos_counter_flag=%{tx.dos_burst_time_slice}"
+
+
+SecRule IP:BRUTE_FORCE_COUNTER_{{id}} "@ge %{tx.brute_force_counter_threshold}" "phase:1,id:'{{id+4}}',t:none,nolog,pass,setvar:ip.brute_force_block_{{id}}=1,expirevar:ip.brute_force_block_{{id}}=%{tx.brute_force_block_timeout},setvar:ip.brute_force_counter_{{id}}=0"
+
+
+SecMarker END_BRUTE_FORCE_PROTECTION_CHECKS_{{id}}
+
+# ---------------------------------- end ----------------------------------
+{% endfor %}
+SecMarker END_BRUTE_FORCE_PROTECTION_CHECKS

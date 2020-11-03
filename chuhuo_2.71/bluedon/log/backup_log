@@ -1,0 +1,6 @@
+[2017-07-16 00:01:01] [BACKUP] [DEBUG] file /var/log/log_tables_backup/m_tbfwsessionstatus/m_tbfwsessionstatus_20170713.sql is exists, removed
+[2017-07-16 00:01:01] [BACKUP] [DEBUG] file /var/log/log_tables_backup/m_tblog_firewall/m_tblog_firewall_20170713.sql is exists, removed
+[2017-07-16 00:01:02] [BACKUP] [DEBUG] file /var/log/log_tables_backup/m_tblog_firewall/m_tblog_firewall_20170714.sql is exists, removed
+[2017-07-17 00:01:01] [BACKUP] [DEBUG] file /var/log/log_tables_backup/m_tbfwsessionstatus/m_tbfwsessionstatus_20170713.sql is exists, removed
+[2017-07-17 00:01:01] [BACKUP] [DEBUG] file /var/log/log_tables_backup/m_tblog_firewall/m_tblog_firewall_20170713.sql is exists, removed
+[2017-07-17 00:01:02] [BACKUP] [DEBUG] file /var/log/log_tables_backup/m_tblog_firewall/m_tblog_firewall_20170714.sql is exists, removed

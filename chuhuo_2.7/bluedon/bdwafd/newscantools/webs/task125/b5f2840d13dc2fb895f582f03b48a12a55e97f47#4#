@@ -1,0 +1,2449 @@
+status:200
+content-location:http://v.baidu.com/infoindex/
+x-powered-by:HPHP
+transfer-encoding:chunked
+set-cookie:BAIDUID=E8B8AA3455921ABE216F331900478565:FG=1; max-age=31536000; expires=Sat, 15-Oct-16 03:11:03 GMT; domain=.baidu.com; path=/; version=1, BAIDUID=4D55EC4082F840573F0DABE0E18D8A1B:FG=1; expires=Sat, 15-Oct-16 03:11:03 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1, BAIDUID=3F7598E664D6F59363B4E664DFD13EF5:FG=1; expires=Sat, 15-Oct-16 03:11:03 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+vary:Accept-Encoding, Accept-Encoding
+server:Apache
+tracecode:06636367840490062602101611
+date:Fri, 16 Oct 2015 03:11:03 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM ", CP=" OTI DSP COR IVA OUR IND COM ", CP=" OTI DSP COR IVA OUR IND COM "
+content-type:text/html; charset=UTF-8
+####################
+<!DOCTYPE html><!--STATUS OK-->
+<html>
+<head>
+
+<meta charset="utf-8" /><title>资讯频道_百度视频</title><script>__header_start = +new Date;if (document.documentElement.clientWidth < 1245) {document.getElementsByTagName('html')[0].className = 'w1024';}</script>
+<link rel="stylesheet" type="text/css" href="http://vs5.bdstatic.com/browse_static/v3/common/pkg/common_sync_css_0_f2a7259b.css" /><link rel="stylesheet" type="text/css" href="http://vs5.bdstatic.com/browse_static/v3/newinfo/pkg/newinfo_sync_css_0_7b07914.css" /><link rel="stylesheet" type="text/css" href="http://vs5.bdstatic.com/browse_static/v3/common/pkg/common_ui_video_dca1ecf0.css" /></head>
+<body>
+<div id="header" monkey="header" alog-alias="header"><div class="hd-inner">
+<div class="hd-inner2 ">
+<div id="userbar" static="bl=userbar" monkey="userbar" alog-alias="userbar"></div>
+<div id="logo">
+<a href="http://v.baidu.com/" class="link-home">
+<img src="http://img.baidu.com/video/img/video_logo_new.gif" alt="百度视频" />
+</a>
+</div><div class="hd-nav">
+<div id="navmini">
+<a href="javascript:void(0)" class="link-toggle">导航<i></i></a>
+<div class="bd" static="bl=float_nav_list"><ul></ul></div>
+</div>
+</div>
+<div id="tabsearch">
+<div class="tabs">
+<a href="http://news.baidu.com/" data-product="news">新闻</a><a href="http://www.baidu.com/" data-product="ps">网页</a><a href="http://tieba.baidu.com/" data-product="tieba">贴吧</a><a href="http://zhidao.baidu.com/" data-product="zhidao">知道</a><a href="http://music.baidu.com/" data-product="music">音乐</a><a href="http://image.baidu.com/" data-product="image">图片</a><strong>视频</strong><a href="http://map.baidu.com/" data-product="map">地图</a><a href="http://baike.baidu.com/" data-product="baike">百科</a><a href="http://www.hao123.com/" target="_blank">hao123</a>
+</div>
+<div class="bd">
+<form action="/v" method="get" name="f1" id="bdvSearch" class="bdv-search" target="_blank">
+<span class="bdv-search-inputs">
+<input type="text" maxlength="120" id="bdvSearchInput" name="word" value="驴友被救遇罚" data-prekey="驴友被救遇罚" class="place-holder" autocomplete="off" />
+</span>
+<span class="bdv-search-btns">
+<input type="submit" value="百度一下" id="bdvSearchBtn" />
+</span>
+<input name="ct" type="hidden" value="301989888" />
+<input name="rn" type="hidden" value="20" />
+<input name="pn" type="hidden" value="0" />
+<input name="db" type="hidden" value="0" />
+<input name="s" type="hidden" value="0" />
+<input name="fbl" type="hidden" value="800" />
+<input name="ie" type="hidden" value="utf-8" />
+<input name="oq" type="hidden"  disabled="disabled" />
+<input name="f" type="hidden" value="3"  disabled="disabled" />
+<input name="rsp" type="hidden"  disabled="disabled" />
+</form>
+</div>
+</div>
+<div class="hd-trace">
+<div id="bdvTrace" class="bdv-trace" static="tn=info&bl=bdvTrace">
+<a href="javascript:;" class="bdv-trace-toggle" title="追剧" static="stp=toggle&toggle=1">追剧<i></i></a>
+<span class="bdv-trace-icons bdv-trace-notify"></span>
+<div class="bdv-trace-main" style="display: none">
+<div class="bdv-trace-arrow"><em>◆</em><i>◆</i></div>
+<div class="bdv-trace-content bdv-trace-none">
+<p>订阅精彩视频，请<a href="javascript:;" class="bdv-trace-login" title="登录" static="stp=login">登录</a></p>
+</div>
+</div>
+</div>
+<script type="text/html" id="bdvTraceNoneTpl">
+<p>您最近没有任何订阅</p>
+<a href="/tv" target="_blank" title="去电视剧频道随便看看" static="stp=toTv">去电视剧频道随便看看&gt;&gt;</a>
+</script>
+<script type="text/html" id="bdvTraceBdTpl">
+<div class="bdv-trace-bd"></div>
+<div class="bdv-trace-ft clearfix">
+    <a href="javascript:;" class="bdv-trace-pager bdv-trace-pager-left" data-page="prev" title="上一页" static="stp=prev">&lt;上一页</a>
+    <span class="bdv-trace-pager-no"></span>
+    <a href="javascript:;" class="bdv-trace-pager bdv-trace-pager-right" data-page="next" title="下一页" static="stp=next">下一页&gt;</a>
+</div>
+</script>
+<script type="text/html" id="bdvTraceItemTpl">
+<% var suffix = frp ? '?frp=' + frp : '';
+for (var i = 0, item; item = pageData[i]; i += 1) {
+    item.cur_episode *= 1;
+    item.max_episode *= 1;
+    var introUrl = ['/', item.works_type, '/', item.works_id, '.htm', suffix].join(''),
+        itemTitle = item.title + (item.season > 0 ? (' 第' + item.season + '季') : '');
+%>
+<dl class="bdv-trace-item">
+    <% if (item.works_type !== 'show') { %>
+    <dt>
+        <h3><a href="<%=introUrl%>" title="<%=itemTitle%>" target="_blank" static="stp=ti&to=search"><%=itemTitle%></a></h3>
+        <span class="bdv-trace-item-update">&nbsp;
+        <% if (item.cur_episode > 0 && (item.max_episode == 0 || item.cur_episode < item.max_episode)) { %>
+            更新至<b><%=item.cur_episode%></b>集
+            <% if (item.max_episode > 0) { %>&nbsp;|&nbsp;<% } %>
+        <% } %>
+        <% if (item.max_episode > 0) { %>全<%=item.max_episode%>集<% } %>
+        </span>
+    </dt>
+    <dd class="bdv-trace-item-episodes">
+        <ol data-id="<%=item.works_id%>" data-type="<%=item.works_type%>">
+        <% for (var epIndex = 0, len = item.episodes.length; epIndex < len && epIndex < 5; epIndex += 1) {
+            var ep = item.episodes[epIndex];
+        %>
+            <li>
+            <% if (len === 1 && item.last_view == ep.episode) { %>
+                <div class="bdv-trace-item-episode-latest">已看到最新集</div>
+            </li>
+            <% break; %>
+            <% } %>
+            <% if (epIndex === 3 && (ep.episode * 1 - item.episodes[epIndex - 1].episode * 1 !== 1)) { %>
+                <div class="bdv-trace-item-episode-holder">...</div>
+            </li>
+            <li>
+            <% } %>
+            <% if (item.last_view == ep.episode) { %>
+                <i class="bdv-trace-icons bdv-trace-record"></i>
+            <% } %>
+            <% if (ep.is_new == 1 && item.last_view != ep.episode) { %>
+                <i class="bdv-trace-icons bdv-trace-new"></i>
+            <% } %>
+            <% if (ep.is_play == 1) { %>
+                <a href="<%=func.getPlayUrl(item, ep)%>" target="_blank" title="<%=ep.title%>"
+                 static="stp=jp&to=play" data-ep="<%=ep.episode%>" data-new="<%=ep.is_new%>"
+                ><%=ep.episode%></a>
+            <% } else { %>
+                <a href="javascript:;" title="暂无资源">暂无</a>
+            <% } %>
+            </li>
+        <% } %>
+        </ol>
+    </dd>
+    <% } else { %>
+    <dt>
+        <h3><a href="<%=introUrl%>" title="<%=itemTitle%>" target="_blank" static="stp=ti&to=search"><%=itemTitle%></a></h3>
+        <% if (item.max_episode > 0) { %>
+        <span class="bdv-trace-item-update">&nbsp;更新至<b><%=item.max_episode%></b>期</span>
+        <% } %>
+    </dt>
+    <dd class="bdv-trace-item-episodes bdv-trace-item-episodes-show">
+        <ol data-id="<%=item.works_id%>" data-type="<%=item.works_type%>">
+        <% for (var epIndex = 0, len = item.episodes.length; epIndex < len && epIndex < 3; epIndex += 1) {
+            var ep = item.episodes[epIndex];
+        %>
+            <li>
+            <% if (len === 1 && item.last_view == ep.episode) { %>
+                <div class="bdv-trace-item-episode-latest">已看到最新集</div>
+            </li>
+            <% break; %>
+            <% } %>
+            <% if (epIndex === 2 && (item.episodes[epIndex - 1].episode * 1 - ep.episode * 1 !== 1)) { %>
+                <div class="bdv-trace-item-episode-holder">...</div>
+            </li>
+            <li>
+            <% } %>
+            <% if (item.last_view == ep.episode) { %>
+                <i class="bdv-trace-icons bdv-trace-record"></i>
+            <% } %>
+            <% if (ep.is_new == 1 && item.last_view != ep.episode) { %>
+                <i class="bdv-trace-icons bdv-trace-new"></i>
+            <% } %>
+            <% if (ep.is_play == 1) { %>
+                <a href="<%=func.getPlayUrl(item, ep)%>" target="_blank" title="<%=ep.title%>"
+                 static="stp=jp&to=play" data-ep="<%=ep.episode%>" data-new="<%=ep.is_new%>"
+                ><span><%=ep.episode%>：</span><%=ep.title%></a>
+            <% } else { %>
+                <a href="javascript:;" title="暂无资源">暂无资源</a>
+            <% } %>
+            </li>
+        <% } %>
+        </ol>
+    </dd>
+    <% } %>
+
+    <dd class="bdv-trace-item-ft">
+        <a href="<%=introUrl%>" title="查看全部" target="_blank" class="bdv-trace-item-all" static="stp=all&to=search">查看全部</a>
+        <a href="javascript:;" title="删除" class="bdv-trace-item-del" data-id="<%=item.works_id%>" data-type="<%=item.works_type%>" static="stp=del&id=<%=item.works_id%>&type=<%=item.works_type%>">删除</a>
+    </dd>
+</dl>
+<% } %>
+</script>
+</div>
+<div class="hd-record">
+<div id="bdvRecord" class="bdv-record with-bdv-trace">
+<a href="javascript:;" class="bdv-record-toggle" data-event="click" hidefocus="true">记录<i></i></a>
+<span class="bdv-record-num" style="display:none"></span>
+<div class="bdv-record-arrow"><em>◆</em><i>◆</i></div>
+<div class="bdv-record-main"></div>
+</div>
+<script id="bdvrecord_js" charset="utf-8"></script>
+</div>
+<div class="hd-paopao">
+<div id="index_right_shixiao" static="bl=index_right_qipao"></div>
+<script type="text/template" id="index_right_shixiao_tpl">
+        <% if (data && data.is_hd == 1){ %>
+            <% var item = data; %>
+            <% var isClose = item.hot_week == 1; %>
+        <div class="pop-wrap-big<% if (isClose){ %> hide<% } %>">
+            <a href="#" class="pop-close" static="stp=close"></a>
+            <div class="pop-inner">
+                <span class="label">热点：</span>
+                <p class="big"><a href="<%=item.url%>" target="_blank" static="stp=pop_content"><%=item.intro%></a></p>
+            </div>
+        </div>
+        <div class="pop-wrap-small<% if (isClose){ %> show<% } %>"><span class="label">· 热点：</span><a href="<%=item.url%>" target="_blank" static="stp=normal_content"><%=item.title%></a></div>
+        <% } %>
+    </script>
+</div>
+<div class="hd-keyword">
+<div id="searchKeyword" class="search-keyword" static="bl=top_search_Keyword">
+<ul>
+<li>
+<a href="http://v.baidu.com/show/12492.htm?frp=browse" target="_blank" class="hot">新老学员荣誉之战</a>
+</li>
+<li>
+<a href="http://v.baidu.com/tv/22506.htm?frp=bdbrand" target="_blank">琅琊榜大结局</a>
+</li>
+<li>
+<a href="http://v.baidu.com/movie/120179.htm?frp=browse" target="_blank">明日世界</a>
+</li>
+<li>
+<a href="http://v.baidu.com/movie/120438.htm?frp=browse" target="_blank">新步步惊心</a>
+</li>
+<li>
+<a href="http://v.baidu.com/movie/120459.htm?frp=browse" target="_blank">太平轮</a>
+</li>
+<li>
+<a href="http://v.baidu.com/show/12062.htm?frp=browse" target="_blank">极限挑战番外篇</a>
+</li>
+<li>
+<a href="http://v.baidu.com/tv/20690.htm?frp=browse" target="_blank">云中歌</a>
+</li>
+<li>
+<a href="http://v.baidu.com/hotvideos/" target="_blank">更多&gt;&gt;</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="index-right-top" id="index_right_top" static="bl=adv_float_top" monkey="adv_float_top"></div>
+</div></div></div>
+<div id="nav" monkey="nav" alog-alias="nav" static="bl=nav_list"><div class="nav-inner ">
+<ul class="menu-main">
+<li>
+<a href="http://v.baidu.com/">
+首页
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/tv">
+电视剧
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/movie">
+电影
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/show">
+综艺
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/comic">
+动漫
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/entindex/">
+娱乐
+</a>
+</li>
+<li class="current">
+<a href="http://v.baidu.com/infoindex/">
+资讯
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/sportindex/">
+体育
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/gameindex/">
+游戏
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/eduindex/">
+教育
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/live/">
+卫视
+</a>
+</li>
+</ul>
+<ul class="menu-sub">
+<li>
+<a href="http://v.baidu.com/square/">
+随心看
+</a>
+</li>
+<li>
+<a href="http://yb.baidu.com/" target="_blank">
+影棒
+</a>
+</li>
+<li>
+<a href="http://spread.xiu8.com/spreed!baiduGo.jspa?pid=1070&sid=7&t=1" target="_blank">
+互动
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/car">
+汽车
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/musicindex/">
+音乐
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/amuseindex/">
+搞笑
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/fashion/index">
+时尚
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/gcdance/index">
+广场舞
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/child/index">
+亲子
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/cooperate/qt/nvxing">
+女性
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/page/jiankang">
+健康
+<img src="http://list.video.baidu.com/pc_static/common/blank.gif" style="bottom:30px;left:0px" />
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/cooperate/qt/keji">
+科技
+</a>
+</li>
+<li>
+<a href="http://v.baidu.com/top/">
+排行榜
+</a>
+</li>
+</ul>
+</div></div>
+<div id="content">
+<div class="foucs">
+<div class="foucs-left">
+<div class="video-focus">
+<div class="focus-carousel-images video" id='focusCarousel' monkey="focusCarousel" monkeyconfig="event=click&to=play">
+<div id="focusCarouselList">
+<ul class="bdv-carousel-list" static="bl=focus_area_poster_big&to=play">
+<li class="bdv-carousel-item" alog-alias="focusCarousel__0">
+<a href="http://baidu.v.ifeng.com/kan/a2K73?fr=v.baidu.com/browse" target="_blank" title='希拉里：我和奥巴马曾“捕猎”中国人'>
+<img src="http://hiphotos.baidu.com/baidu/pic/item/6c224f4a20a446239ce530f59e22720e0cf3d77e.jpg" alt="希拉里：我和奥巴马曾“捕猎”中国人" />
+<span class='gradient-bg'></span>
+<span class='carousel-play'></span>
+<p class='carousel-title'>希拉里：我和奥巴马曾“捕猎”中国人</p>
+<p class='carousel-sub-title'>民主党辩论</p></a>
+</li>
+<li class="bdv-carousel-item" alog-alias="focusCarousel__1">
+<a href="http://baidu.v.ifeng.com/kan/a2PvV?fr=v.baidu.com/browse" target="_blank" title='韩剧播出未成年少女遭性侵戏份惹争议'>
+<img src="http://hiphotos.baidu.com/baidu/pic/item/902397dda144ad349e9d1210d6a20cf431ad8503.jpg" alt="韩剧播出未成年少女遭性侵戏份惹争议" />
+<span class='gradient-bg'></span>
+<span class='carousel-play'></span>
+<p class='carousel-title'>韩剧播出未成年少女遭性侵戏份惹争议</p>
+<p class='carousel-sub-title'>观众难以接受</p></a>
+</li>
+<li class="bdv-carousel-item" alog-alias="focusCarousel__2">
+<a href="http://baidu.v.ifeng.com/kan/a2POc?fr=v.baidu.com/browse" target="_blank" title='《花花公子》“从良”：停止发模特裸图'>
+<img src="http://hiphotos.baidu.com/baidu/pic/item/7af40ad162d9f2d3d709b178afec8a136327cc09.jpg" alt="《花花公子》“从良”：停止发模特裸图" />
+<span class='gradient-bg'></span>
+<span class='carousel-play'></span>
+<p class='carousel-title'>《花花公子》“从良”：停止发模特裸图</p>
+<p class='carousel-sub-title'>为什么转型</p></a>
+</li>
+<li class="bdv-carousel-item" alog-alias="focusCarousel__3">
+<a href="http://baidu.v.ifeng.com/kan/a2PPY?fr=v.baidu.com/browse" target="_blank" title='20分钟内男子不停换装 女营业员被连骗5次'>
+<img src="http://hiphotos.baidu.com/baidu/pic/item/8b13632762d0f70316a4004b0efa513d2697c517.jpg" alt="20分钟内男子不停换装 女营业员被连骗5次" />
+<span class='gradient-bg'></span>
+<span class='carousel-play'></span>
+<p class='carousel-title'>20分钟内男子不停换装 女营业员被连骗5次</p>
+<p class='carousel-sub-title'>姑娘长点心吧</p></a>
+</li>
+<li class="bdv-carousel-item" alog-alias="focusCarousel__4">
+<a href="http://baidu.hz.letv.com/kan/a2Gn2?fr=v.baidu.com" target="_blank" title='医生手术台上要加价'>
+<img src="http://hiphotos.baidu.com/baidu/pic/item/a71ea8d3fd1f41349c7993e9231f95cad0c85ede.jpg" alt="医生手术台上要加价" />
+<span class='gradient-bg'></span>
+<span class='carousel-play'></span>
+<p class='carousel-title'>医生手术台上要加价</p>
+<p class='carousel-sub-title'>记者现场采访遭暴打</p></a>
+</li>
+</ul>
+</div>
+<div class="bdv-carousel-control">
+<ul class="bdv-carousel-dot">
+<li class="dot-selected"></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<a class="bdv-carousel-prev" href="javascript:void(0)" static="bl=focus_area_poster_tab"></a>
+<a class="bdv-carousel-next" href="javascript:void(0)" static="bl=focus_area_poster_tab"></a></div>
+</div>
+<div class="focus-images-block" static="bl=focus_area_poster_small&to=play" monkey="focusPicarea" monkeyconfig="event=click&to=play">
+<div class="focus-videos">
+<div class="item item1 lastEdge">
+<div class="video h-item">
+<a class='active' target="_blank" href="http://baidu.v.ifeng.com/kan/a2PKI?fr=v.baidu.com/browse" title='算笔账：你的身体值多少钱' static='1'>
+<img class='vid-cover' src="http://hiphotos.baidu.com/baidu/pic/item/a5c27d1ed21b0ef4351a0dc9dbc451da80cb3eb2.jpg" alt="算笔账：你的身体值多少钱" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="s-play-icon"></span>
+<span class='vid-info'>算笔账：你的身体值多少钱</span>
+</a>
+</div>
+</div>
+<div class="item item2 ">
+<div class="video h-item">
+<a class='active' target="_blank" href="http://baidu.v.ifeng.com/kan/a2PKB?fr=v.baidu.com/browse" title='海滩巨蟒吞食巨型负鼠画面' static='2'>
+<img class='vid-cover' src="http://hiphotos.baidu.com/baidu/pic/item/8b13632762d0f703165b004b0efa513d2797c5b8.jpg" alt="海滩巨蟒吞食巨型负鼠画面" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="s-play-icon"></span>
+<span class='vid-info'>海滩巨蟒吞食巨型负鼠画面</span>
+</a>
+</div>
+</div>
+<div class="item item3 ">
+<div class="video h-item">
+<a class='active' target="_blank" href="http://baidu.v.ifeng.com/kan/a2Pv7?fr=v.baidu.com/browse" title='95岁老人打小偷:骨头都断了' static='3'>
+<img class='vid-cover' src="http://hiphotos.baidu.com/baidu/pic/item/f7246b600c3387444888bbeb570fd9f9d62aa0dc.jpg" alt="95岁老人打小偷:骨头都断了" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="s-play-icon"></span>
+<span class='vid-info'>95岁老人打小偷:骨头都断了</span>
+</a>
+</div>
+</div>
+<div class="item item4 lastEdge">
+<div class="video h-item">
+<a class='active' target="_blank" href="http://baidu.v.ifeng.com/kan/a2PKf?fr=v.baidu.com/browse" title='两女一男开房被拒暴打收银员' static='4'>
+<img class='vid-cover' src="http://hiphotos.baidu.com/baidu/pic/item/08f790529822720e94e4766d7dcb0a46f21fab7b.jpg" alt="两女一男开房被拒暴打收银员" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="s-play-icon"></span>
+<span class='vid-info'>两女一男开房被拒暴打收银员</span>
+</a>
+</div>
+</div>
+<div class="item item5 ">
+<div class="video h-item">
+<a class='active' target="_blank" href="http://baidu.hz.letv.com/kan/a2PKt?fr=v.baidu.com/browse" title='男子公交车猥亵女乘客被制服' static='5'>
+<img class='vid-cover' src="http://hiphotos.baidu.com/baidu/pic/item/11385343fbf2b211297114d9cc8065380dd78ece.jpg" alt="男子公交车猥亵女乘客被制服" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="s-play-icon"></span>
+<span class='vid-info'>男子公交车猥亵女乘客被制服</span>
+</a>
+</div>
+</div>
+<div class="item item6 ">
+<div class="video h-item">
+<a class='active' target="_blank" href="http://baidu.hz.letv.com/kan/a2PKM?fr=v.baidu.com/browse" title='女子美容院去黑头被按颗计算' static='6'>
+<img class='vid-cover' src="http://hiphotos.baidu.com/baidu/pic/item/0dd7912397dda1446f38fd25b4b7d0a20cf48670.jpg" alt="女子美容院去黑头被按颗计算" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="s-play-icon"></span>
+<span class='vid-info'>女子美容院去黑头被按颗计算</span>
+</a>
+</div>
+</div>
+<div class="item item7 lastEdge">
+<div class="video h-item">
+<a class='active' target="_blank" href="http://baidu.hz.letv.com/kan/a2PKU?fr=v.baidu.com/browse" title='暗拍城管豪赌 丰满女子发牌' static='7'>
+<img class='vid-cover' src="http://g.hiphotos.baidu.com/video/pic/item/2f738bd4b31c8701fdbb3671217f9e2f0708ff1c.jpg" alt="暗拍城管豪赌 丰满女子发牌" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="s-play-icon"></span>
+<span class='vid-info'>暗拍城管豪赌 丰满女子发牌</span>
+</a>
+</div>
+</div>
+<div class="item item8 ">
+<div class="video h-item">
+<a class='active' target="_blank" href="http://baidu.hz.letv.com/kan/a2PKc?fr=v.baidu.com/browse" title='女司机突发精神病逆行20公里' static='8'>
+<img class='vid-cover' src="http://hiphotos.baidu.com/baidu/pic/item/7dd98d1001e93901f3891ca97dec54e737d1969a.jpg" alt="女司机突发精神病逆行20公里" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="s-play-icon"></span>
+<span class='vid-info'>女司机突发精神病逆行20公里</span>
+</a>
+</div>
+</div>
+<div class="item item9 ">
+<div class="video h-item">
+<a class='active' target="_blank" href="http://baidu.hz.letv.com/kan/a2bRR?fr=v.baidu.com/browse" title='智障女被囚养猪场供挑选' static='9'>
+<img class='vid-cover' src="http://hiphotos.baidu.com/baidu/pic/item/4bed2e738bd4b31c7989af2d81d6277f9f2ff8eb.jpg" alt="智障女被囚养猪场供挑选" />
+<span class='gradient-bg'>&nbsp;</span>
+<span class="s-play-icon"></span>
+<span class='vid-info'>智障女被囚养猪场供挑选</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="focus-list-block" static="bl=focus_area_text_list&to=play" monkey="focusList" monkeyconfig="event=click&to=play">
+<ul>
+<li><a href="http://baidu.v.ifeng.com/kan/a2PaN?fr=v.baidu.com/browse"  target="_blank" title='韩军队节目遭吐槽 女艺人涉嫌骚扰军队教官' static='1'>韩军队节目遭吐槽 女艺人涉嫌骚扰军队教官</a></li>
+<li><a href="http://baidu.v.ifeng.com/kan/a2PaV?fr=v.baidu.com/browse"  target="_blank" title='男子偷窥女子半小时欲劫色 女子一句话令其放弃' static='2'>男子偷窥女子半小时欲劫色 女子一句话令其放弃</a></li>
+<li><a href="http://baidu.v.ifeng.com/kan/a2PtH?fr=v.baidu.com/browse"  target="_blank" title='43岁大姐网聊恋上29岁小伙 发去裸照反遭勒索' static='3'>43岁大姐网聊恋上29岁小伙 发去裸照反遭勒索</a></li>
+<li><a href="http://baidu.v.ifeng.com/kan/a2VpZ?fr=v.baidu.com/browse"  target="_blank" title='广东大学生虐猫残忍血腥：下油锅烫下体舌头穿孔' static='4'>广东大学生虐猫残忍血腥：下油锅烫下体舌头穿孔</a></li>
+<li><a href="http://baidu.v.ifeng.com/kan/a2sPA?fr=v.baidu.com/browse"  target="_blank" title='青海破获男同性恋特大卖淫案：卖淫网站遍布全国' static='5'>青海破获男同性恋特大卖淫案：卖淫网站遍布全国</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="foucs-right">
+<div id="news_hot_click" static="bl=news_hot_click&to=play" monkey="news_hot_click" monkeyconfig="event=click&to=play">
+<h3>热门点击</h3>
+<ul>
+<li class="list first">
+<a href="http://baidu.v.ifeng.com/kan/a2Qoi?fr=v.baidu.com/browse" target="_blank" title="女子胸砸啤酒罐失败 看着好痛" static="stp=title&no=1">
+<i>1</i>
+<span>女子胸砸啤酒罐失败 看着好痛</span>
+</a>
+</li>
+<li class="list">
+<a href="http://baidu.v.ifeng.com/kan/a2Qlu?fr=v.baidu.com/browse" target="_blank" title="男子离奇死亡尸体被宠物吃掉" static="stp=title&no=2">
+<i>2</i>
+<span>男子离奇死亡尸体被宠物吃掉</span>
+</a>
+</li>
+<li class="list">
+<a href="http://baidu.v.ifeng.com/kan/a2TL9?fr=v.baidu.com/browse" target="_blank" title="三猛女穿着清凉街头凶狠肉搏" static="stp=title&no=3">
+<i>3</i>
+<span>三猛女穿着清凉街头凶狠肉搏</span>
+</a>
+</li>
+<li class="list">
+<a href="http://baidu.v.ifeng.com/kan/a2TLf?fr=v.baidu.com/browse" target="_blank" title="渔民捕到“海怪”血液呈蓝色" static="stp=title&no=4">
+<i>4</i>
+<span>渔民捕到“海怪”血液呈蓝色</span>
+</a>
+</li>
+<li class="list">
+<a href="http://baidu.v.ifeng.com/kan/a24DU?fr=v.baidu.com/browse" target="_blank" title="美女问路被扯掉裙子大泄春光" static="stp=title&no=5">
+<i>5</i>
+<span>美女问路被扯掉裙子大泄春光</span>
+</a>
+</li>
+</ul>
+</div><div class="hot-tags" id="modHotKeyword" monkey="modHotKeyword">
+<h3>热搜</h3>
+<ul monkeyconfig="event=click&to=play">
+<li>
+<a class="keyW0" href="http://v.baidu.com/v?word=女子去黑头&amp;ct=301989888&amp;rn=20&amp;pn=0&amp;db=0&amp;s=0&amp;fbl=800&amp;ie=utf-8" title="黑头按颗算" target="_blank" static="stp=title&no=1">黑头按颗算</a>
+</li>
+<li>
+<a class="keyW1" href="http://v.baidu.com/v?word=女孩给老人喂饭&amp;ct=301989888&amp;rn=20&amp;pn=0&amp;db=0&amp;s=0&amp;fbl=800&amp;ie=utf-8" title="女孩喂老人" target="_blank" static="stp=title&no=2">女孩喂老人</a>
+</li>
+<li>
+<a class="keyW2" href="http://v.baidu.com/v?word=曹云金被开除&amp;ct=301989888&amp;rn=20&amp;pn=0&amp;db=0&amp;s=0&amp;fbl=800&amp;ie=utf-8" title="开除曹云金" target="_blank" static="stp=title&no=3">开除曹云金</a>
+</li>
+<li>
+<a class="keyW3" href="http://v.baidu.com/v?word=文章探班马伊琍&amp;ct=301989888&amp;pn=0&amp;db=0&amp;s=18&amp;ie=utf-8" title="文章探班" target="_blank" static="stp=title&no=4">文章探班</a>
+</li>
+<li>
+<a class="keyW4" href="http://v.baidu.com/v?word=69000罚单&amp;ct=301989888&amp;rn=20&amp;pn=0&amp;db=0&amp;s=0&amp;fbl=800&amp;ie=utf-8" title="69000罚单" target="_blank" static="stp=title&no=5">69000罚单</a>
+</li>
+<li>
+<a class="keyW5" href="http://v.baidu.com/v?word=张惠妹男友要分手&amp;ct=301989888&amp;rn=20&amp;pn=0&amp;db=0&amp;s=0&amp;fbl=800&amp;ie=utf-8" title="张惠妹分手" target="_blank" static="stp=title&no=6">张惠妹分手</a>
+</li>
+<li>
+<a class="keyW0" href="http://v.baidu.com/v?word=驴友被罚&amp;ct=301989888&amp;rn=20&amp;pn=0&amp;db=0&amp;s=0&amp;fbl=800&amp;ie=utf-8" title="驴友被罚" target="_blank" static="stp=title&no=7">驴友被罚</a>
+</li>
+<li>
+<a class="keyW1" href="http://v.baidu.com/v?word=昆凌晒女儿照&amp;ct=301989888&amp;rn=20&amp;pn=0&amp;db=0&amp;s=0&amp;fbl=800&amp;ie=utf-8" title="小周周新照" target="_blank" static="stp=title&no=8">小周周新照</a>
+</li>
+<li>
+<a class="keyW2" href="http://v.baidu.com/v?word=黄晓明绝密婚照&amp;ct=301989888&amp;rn=20&amp;pn=0&amp;db=0&amp;s=0&amp;fbl=800&amp;ie=utf-8" title="绝密婚照" target="_blank" static="stp=title&no=9">绝密婚照</a>
+</li>
+</ul>
+</div></div>
+</div>
+<div class="con-sec" id="sec-news">
+<div class="sec-left" id="sec-news">
+<div id="news_important_news_01" class="news_important_news"  static="bl=news_important_news_01" alog-alias="news_important_news_item_01" monkey="news_important_news_01" monkeyconfig="event=click&to=play" style="display:block;">
+<div class="hd">
+<h3>要闻</h3>
+</div>
+<div class="bd">
+<ul static="bl=news_important_news_01">
+<li class="large">
+<a href="http://baidu.v.ifeng.com/kan/a2fDf?fr=v.baidu.com/browse" target="_blank" title="黄晓明卖婚礼创新高 众星为挣钱婚宴频出糗" static="stp=title&no=1">黄晓明卖婚礼创新高 众星为挣钱婚宴频出糗</a>
+</li>
+<li class="small">
+<a href="http://baidu.v.ifeng.com/kan/a2fyQ?fr=v.baidu.com/browse" target="_blank" title="金星爆粗口怒斥黄晓明婚礼" static="stp=title&no=2">金星爆粗口怒斥黄晓明婚礼</a>
+</li>
+<li class="small">
+<a href="http://baidu.v.ifeng.com/kan/a2fK2?fr=v.baidu.com/browse" target="_blank" title="小S大尺度提问新人" static="stp=title&no=3">小S大尺度提问新人</a>
+</li>
+<li class="large">
+<a href="http://baidu.v.ifeng.com/kan/a2fKl?fr=v.baidu.com/browse" target="_blank" title="十一黄金周全国各省区市旅游收入排行榜出炉" static="stp=title&no=4">十一黄金周全国各省区市旅游收入排行榜出炉</a>
+</li>
+<li class="small">
+<a href="http://baidu.v.ifeng.com/kan/a2Jzs?fr=v.baidu.com/browse" target="_blank" title="青岛：38元天价虾事件调查" static="stp=title&no=5">青岛：38元天价虾事件调查</a>
+</li>
+<li class="small">
+<a href="http://baidu.v.ifeng.com/kan/a2JMV?fr=v.baidu.com/browse" target="_blank" title="烧烤店被罚九万元" static="stp=title&no=6">烧烤店被罚九万元</a>
+</li>
+<li class="small">
+<a href="http://baidu.v.ifeng.com/kan/a2fG1?fr=v.baidu.com/browse" target="_blank" title="游客再投诉拔腿称重天价蟹" static="stp=title&no=7">游客再投诉拔腿称重天价蟹</a>
+</li>
+<li class="small">
+<a href="http://baidu.v.ifeng.com/kan/a2fXp?fr=v.baidu.com/browse" target="_blank" title="蘑菇炖鸡894元" static="stp=title&no=8">蘑菇炖鸡894元</a>
+</li>
+<li class="large">
+<a href="http://baidu.v.ifeng.com/kan/ag6Sd?fr=v.baidu.com/browse" target="_blank" title="实拍老汉堵浴场出口狂揩油 见女就上见男就躲" static="stp=title&no=9">实拍老汉堵浴场出口狂揩油 见女就上见男就躲</a>
+</li>
+<li class="small">
+<a href="http://baidu.v.ifeng.com/kan/a5XkE?fr=v.baidu.com/browse" target="_blank" title="老汉要钱遭拒向妻女怒泼盐酸" static="stp=title&no=10">老汉要钱遭拒向妻女怒泼盐酸</a>
+</li>
+<li class="small">
+<a href="http://baidu.v.ifeng.com/kan/a5MLY?fr=v.baidu.com/browse" target="_blank" title="老汉撒泼拽起不让座女孩狂骂" static="stp=title&no=11">老汉撒泼拽起不让座女孩狂骂</a>
+</li>
+<li class="small">
+<a href="http://baidu.v.ifeng.com/kan/a5Meo?fr=v.baidu.com/browse" target="_blank" title="老汉频频偷盗 竟是为了找小姐" static="stp=title&no=12">老汉频频偷盗 竟是为了找小姐</a>
+</li>
+<li class="small">
+<a href="http://baidu.v.ifeng.com/kan/a5MLn?fr=v.baidu.com/browse" target="_blank" title="老汉公交对美女耍流氓遭围攻" static="stp=title&no=13">老汉公交对美女耍流氓遭围攻</a>
+</li>
+<li class="large">
+<a href="http://baidu.v.ifeng.com/kan/a5DS3?fr=v.baidu.com/browse" target="_blank" title="从被骂到入狱 郭美美这4年干了多少恶心事？" static="stp=title&no=14">从被骂到入狱 郭美美这4年干了多少恶心事？</a>
+</li>
+<li class="small">
+<a href="http://baidu.v.ifeng.com/kan/a5Cnt?fr=v.baidu.com/browse" target="_blank" title="郭美美：我犯了错但不认罪" static="stp=title&no=15">郭美美：我犯了错但不认罪</a>
+</li>
+<li class="small">
+<a href="http://baidu.v.ifeng.com/kan/a5DSL?fr=v.baidu.com/browse" target="_blank" title="郭美美一审获判五年" static="stp=title&no=16">郭美美一审获判五年</a>
+</li>
+<li class="small">
+<a href="http://baidu.v.ifeng.com/kan/a5Xbq?fr=v.baidu.com/browse" target="_blank" title="干爹挑错女儿的下场" static="stp=title&no=17">干爹挑错女儿的下场</a>
+</li>
+<li class="small">
+<a href="http://baidu.v.ifeng.com/kan/a5ZKk?fr=v.baidu.com/browse" target="_blank" title="郭美美母亲伤心欲绝抹泪" static="stp=title&no=18">郭美美母亲伤心欲绝抹泪</a>
+</li>
+<li class="line"></li><li class="large">
+<a href="http://baidu.kankanews.com/kan/a5w1o?fr=v.baidu.com/browse" target="_blank" title="李克强：让互联网引领创新创业新潮流" static="stp=title&no=19">李克强：让互联网引领创新创业新潮流</a>
+</li>
+<li class="small long">
+<a href="http://baidu.kankanews.com/kan/PvKa?fr=v.baidu.com/browse" target="_blank" title="互联网大会 大佬集体发声" static="stp=title&no=20">互联网大会 大佬集体发声</a>
+</li>
+<li class="small long">
+<a href="http://baidu.kankanews.com/kan/PvKh?fr=v.baidu.com/browse" target="_blank" title="移动互联网或成未来发展重点" static="stp=title&no=21">移动互联网或成未来发展重点</a>
+</li>
+</ul>
+</div>
+</div></div>
+<div class="sec-midle">
+<div id="news_society_news" static="bl=news_society_news&to=play"  monkey="news_society_news" monkeyconfig="event=click&to=play">
+<div class="hd">
+<h3>社会新闻</h3>
+</div>
+<ul class="bd">
+<li class="poster li1 li-edge">
+<a href="http://baidu.hz.letv.com/kan/aIdZb?fr=v.baidu.com/browse" class="poster" target="_blank" title="美女扮嫦娥街头洗澡 “八戒”偷窥众人围观" static="stp=hb&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/4610b912c8fcc3ce7157ee8f9445d688d53f20f2.jpg">
+<span class="playicon"></span></a>
+<a href="http://baidu.hz.letv.com/kan/aIdZb?fr=v.baidu.com/browse" target="_blank" class="title" title="美女扮嫦娥街头洗澡 “八戒”偷窥众人围观" static="stp=title&no=1">美女扮嫦娥街头洗澡 “八戒”偷窥众人围观</a>
+</li>
+<li class="poster li2">
+<a href="http://baidu.hz.letv.com/kan/aIdFw?fr=v.baidu.com/browse" class="poster" target="_blank" title="福利！网曝翘臀女王火辣私照" static="stp=hb&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/86d6277f9e2f0708d7840cbcef24b899a801f28d.jpg">
+<span class="playicon"></span></a>
+<a href="http://baidu.hz.letv.com/kan/aIdFw?fr=v.baidu.com/browse" target="_blank" class="title" title="福利！网曝翘臀女王火辣私照" static="stp=title&no=2">福利！网曝翘臀女王火辣私照</a>
+</li>
+<li class="poster li3">
+<a href="http://baidu.hz.letv.com/kan/aIChq?fr=v.baidu.com/browse" class="poster" target="_blank" title="女生街头遭群殴路人起哄拦不住" static="stp=hb&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/b151f8198618367a98358f6d28738bd4b21ce5c6.jpg">
+<span class="playicon"></span></a>
+<a href="http://baidu.hz.letv.com/kan/aIChq?fr=v.baidu.com/browse" target="_blank" class="title" title="女生街头遭群殴路人起哄拦不住" static="stp=title&no=3">女生街头遭群殴路人起哄拦不住</a>
+</li>
+<li class="poster li4 li-edge">
+<a href="http://baidu.hz.letv.com/kan/aIgWs?fr=v.baidu.com/browse" class="poster" target="_blank" title="女子勒索中年男称其强奸未成年" static="stp=hb&no=4">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/b17eca8065380cd7f8026da4a744ad345982815f.jpg">
+<span class="playicon"></span></a>
+<a href="http://baidu.hz.letv.com/kan/aIgWs?fr=v.baidu.com/browse" target="_blank" class="title" title="女子勒索中年男称其强奸未成年" static="stp=title&no=4">女子勒索中年男称其强奸未成年</a>
+</li>
+<li class="poster li5">
+<a href="http://baidu.hz.letv.com/kan/aIOjy?fr=v.baidu.com/browse" class="poster" target="_blank" title="25岁女子吃排卵药怀上9胞胎" static="stp=hb&no=5">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/3801213fb80e7bec8cbc9754292eb9389b506b25.jpg">
+<span class="playicon"></span></a>
+<a href="http://baidu.hz.letv.com/kan/aIOjy?fr=v.baidu.com/browse" target="_blank" class="title" title="25岁女子吃排卵药怀上9胞胎" static="stp=title&no=5">25岁女子吃排卵药怀上9胞胎</a>
+</li>
+<li class="poster li6">
+<a href="http://baidu.hz.letv.com/kan/aIChE?fr=v.baidu.com/browse" class="poster" target="_blank" title="实拍赛车遭撞飞连翻十个跟头" static="stp=hb&no=6">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/838ba61ea8d3fd1fa607518a364e251f95ca5f70.jpg">
+<span class="playicon"></span></a>
+<a href="http://baidu.hz.letv.com/kan/aIChE?fr=v.baidu.com/browse" target="_blank" class="title" title="实拍赛车遭撞飞连翻十个跟头" static="stp=title&no=6">实拍赛车遭撞飞连翻十个跟头</a>
+</li>
+<li class="poster li7 li-edge">
+<a href="http://baidu.hz.letv.com/kan/aIChf?fr=v.baidu.com/browse" class="poster" target="_blank" title="迎新典礼 学长给学妹当牛做马" static="stp=hb&no=7">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/472309f7905298220009ca73d1ca7bcb0a46d44c.jpg">
+<span class="playicon"></span></a>
+<a href="http://baidu.hz.letv.com/kan/aIChf?fr=v.baidu.com/browse" target="_blank" class="title" title="迎新典礼 学长给学妹当牛做马" static="stp=title&no=7">迎新典礼 学长给学妹当牛做马</a>
+</li>
+<li class="poster li8">
+<a href="http://baidu.hz.letv.com/kan/aIATN?fr=v.baidu.com/browse" class="poster" target="_blank" title="比基尼美女骑牛大赛格外妖娆" static="stp=hb&no=8">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/09fa513d269759ee9dafd879b4fb43166c22df81.jpg">
+<span class="playicon"></span></a>
+<a href="http://baidu.hz.letv.com/kan/aIATN?fr=v.baidu.com/browse" target="_blank" class="title" title="比基尼美女骑牛大赛格外妖娆" static="stp=title&no=8">比基尼美女骑牛大赛格外妖娆</a>
+</li>
+<li class="poster li9">
+<a href="http://baidu.hz.letv.com/kan/aIMiG?fr=v.baidu.com/browse" class="poster" target="_blank" title="土豪街头撒钱引诱路人脱光衣服" static="stp=hb&no=9">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/838ba61ea8d3fd1f60421b88364e251f95ca5f3c.jpg">
+<span class="playicon"></span></a>
+<a href="http://baidu.hz.letv.com/kan/aIMiG?fr=v.baidu.com/browse" target="_blank" class="title" title="土豪街头撒钱引诱路人脱光衣服" static="stp=title&no=9">土豪街头撒钱引诱路人脱光衣服</a>
+</li>
+</ul>
+</div></div>
+<div class="sec-right">
+<div class="header">
+<h3>热门资讯</h3>
+</div>
+<ul id="info_hot_info" class="smallVideos" static="bl=info_hot_info&to=play"  monkey="info_hot_info" monkeyconfig="event=click&amp;to=play">
+<li class="item first">
+<a href="http://baidu.v.ifeng.com/kan/a2Pt9?fr=v.baidu.com/browse" class="hb" target="_blank" title="恶作剧：坏爸爸之男人带孩子" static="stp=title&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/2fdda3cc7cd98d10d21d98a6273fb80e7aec9058.jpg" alt="恶作剧：坏爸爸之男人带孩子" />
+<span class="top-playicon"></span>
+<span class="title">恶作剧：坏爸爸之男人带孩子</span>
+</a>
+</li>
+<li class="item ">
+<a href="http://baidu.v.ifeng.com/kan/a2Pti?fr=v.baidu.com/browse" class="hb" target="_blank" title="实拍男子掉入虎山被老虎啃食" static="stp=title&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/38dbb6fd5266d0163c3409bf912bd40735fa3573.jpg" alt="实拍男子掉入虎山被老虎啃食" />
+<span class="top-playicon"></span>
+<span class="title">实拍男子掉入虎山被老虎啃食</span>
+</a>
+</li>
+<li class="item ">
+<a href="http://baidu.v.ifeng.com/kan/a2Ptv?fr=v.baidu.com/browse" class="hb" target="_blank" title="陌生男女蒙眼接吻再自我介绍" static="stp=title&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/63d0f703918fa0ec8f72f39a209759ee3c6ddbf4.jpg" alt="陌生男女蒙眼接吻再自我介绍" />
+<span class="top-playicon"></span>
+<span class="title">陌生男女蒙眼接吻再自我介绍</span>
+</a>
+</li>
+<li class="item ">
+<a href="http://baidu.v.ifeng.com/kan/a2Pvq?fr=v.baidu.com/browse" class="hb" target="_blank" title="男子挂老婆电话后将女路人强奸" static="stp=title&no=4">
+<img src="http://b.hiphotos.baidu.com/video/pic/item/71cf3bc79f3df8dcdd300a06cb11728b47102813.jpg" alt="男子挂老婆电话后将女路人强奸" />
+<span class="top-playicon"></span>
+<span class="title">男子挂老婆电话后将女路人强奸</span>
+</a>
+</li>
+<li class="item ">
+<a href="http://baidu.v.ifeng.com/kan/a2sPS?fr=v.baidu.com/browse" class="hb" target="_blank" title="太拼了！女老师脱衣服讲人体器官" static="stp=title&no=5">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/42166d224f4a20a402faf95596529822730ed0b8.jpg" alt="太拼了！女老师脱衣服讲人体器官" />
+<span class="top-playicon"></span>
+<span class="title">太拼了！女老师脱衣服讲人体器官</span>
+</a>
+</li>
+</ul></div>
+</div>
+<div class="con-sec" id="sec-unionAd">
+<div class="sec-main">
+<div class="union-ad">
+<script type="text/javascript" >BAIDU_CLB_SLOT_ID = "639771";</script>
+<script type="text/javascript" src="http://cbjs.baidu.com/js/o.js"></script>
+</div></div>
+<div class="sec-right">
+<div id="info_special" class="specialWrap" static="bl=info_special&to=play"  monkey="info_special" monkeyconfig="event=click&amp;to=play">
+<a href="http://v.baidu.com/topic/gaokao" class="poster" target="_blank" title="盘点高考那些事儿" static="stp=hb"><img src="http://a.hiphotos.baidu.com/video/pic/item/94cad1c8a786c917f4734ccacc3d70cf3ac757d4.jpg" alt="盘点高考那些事儿"/>
+</a>
+</div></div>
+</div>
+<div class="con-sec" id="sec-china">
+<div class="sec-main">
+<div class="tabMode tang-tab" id="info_china_info_videos" static="bl=info_china_info_videos&to=play" monkey="info_china_info_videos" monkeyconfig="event=click&amp;to=play">
+<div class="hd">
+<h3>国内</h3>
+<ul class="tang-title bdv-tabslider-dot">
+<li class="tang-title-item dot-selected">
+<a>内地</a>
+</li>
+<li class="tang-title-item">
+<a>港澳</a>
+</li>
+<li class="tang-title-item">
+<a>台湾</a>
+</li>
+</ul>
+</div>
+<ul class="bd tang-body bdv-tabslider-list">
+<li class="tang-body-item item-selected" monkey="info_china_info_videos_0">
+<div class="picarea"  monkeyconfig="event=click&amp;to=play">
+<ul class="bd" static="bl=info_china_mainland&to=play"  monkey="info_china_mainland" monkeyconfig="event=click&amp;to=play">
+<li class="poster li1 li-edge">
+<a href="http://baidu.v.ifeng.com/kan/a520l?fr=v.baidu.com/browse" class="hb" target="_blank" title="中国为何此时实施特赦？" static="stp=hb&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/ac345982b2b7d0a2826bedcdcdef76094a369ac4.jpg" alt="中国为何此时实施特赦？" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a520l?fr=v.baidu.com/browse" class="title" target="_blank" title="中国为何此时实施特赦？" static="stp=hb&no=1">
+中国为何此时实施特赦？
+</a>
+</li>
+<li class="poster li2">
+<a href="http://baidu.v.ifeng.com/kan/a5NqX?fr=v.baidu.com/browse" class="hb" target="_blank" title="中国军方痛批日敏感期挑衅" static="stp=hb&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/b3fb43166d224f4a78d59d430ff790529822d116.jpg" alt="中国军方痛批日敏感期挑衅" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5NqX?fr=v.baidu.com/browse" class="title" target="_blank" title="中国军方痛批日敏感期挑衅" static="stp=hb&no=2">
+中国军方痛批日敏感期挑衅
+</a>
+</li>
+<li class="poster li3">
+<a href="http://baidu.v.ifeng.com/kan/a5NJD?fr=v.baidu.com/browse" class="hb" target="_blank" title="大妈火车狂笑不止“笑掉”下巴" static="stp=hb&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/54fbb2fb43166d221f93c2c4402309f79152d2fe.jpg" alt="大妈火车狂笑不止“笑掉”下巴" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5NJD?fr=v.baidu.com/browse" class="title" target="_blank" title="大妈火车狂笑不止“笑掉”下巴" static="stp=hb&no=3">
+大妈火车狂笑不止“笑掉”下巴
+</a>
+</li>
+<li class="poster li4">
+<a href="http://baidu.v.ifeng.com/kan/a5NpY?fr=v.baidu.com/browse" class="hb" target="_blank" title="男子180度旋转脑袋到背后" static="stp=hb&no=4">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/eac4b74543a98226d853fc778c82b9014b90ebd4.jpg" alt="男子180度旋转脑袋到背后" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5NpY?fr=v.baidu.com/browse" class="title" target="_blank" title="男子180度旋转脑袋到背后" static="stp=hb&no=4">
+男子180度旋转脑袋到背后
+</a>
+</li>
+<li class="poster li5">
+<a href="http://v.ifeng.com/vblog/dv/201509/044c044f-92d2-4b40-9240-aae07111774d.shtml" class="hb" target="_blank" title="女主人眼睛里爬出虫子" static="stp=hb&no=5">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/5366d0160924ab186341316733fae6cd7b890b0f.jpg" alt="女主人眼睛里爬出虫子" />
+<span class="playicon"></span>
+</a>
+<a href="http://v.ifeng.com/vblog/dv/201509/044c044f-92d2-4b40-9240-aae07111774d.shtml" class="title" target="_blank" title="女主人眼睛里爬出虫子" static="stp=hb&no=5">
+女主人眼睛里爬出虫子
+</a>
+</li>
+<li class="poster li6 li-edge">
+<a href="http://baidu.v.ifeng.com/kan/a5NpF?fr=v.baidu.com/browse" class="hb" target="_blank" title="猴子！放开那个妹子" static="stp=hb&no=6">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/b2de9c82d158ccbfacab636a1fd8bc3eb135414f.jpg" alt="猴子！放开那个妹子" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5NpF?fr=v.baidu.com/browse" class="title" target="_blank" title="猴子！放开那个妹子" static="stp=hb&no=6">
+猴子！放开那个妹子
+</a>
+</li>
+<li class="poster li7">
+<a href="http://baidu.v.ifeng.com/kan/a52Pk?fr=v.baidu.com/browse" class="hb" target="_blank" title="24岁儿子哽咽追忆父亲傅彪" static="stp=hb&no=7">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/f9dcd100baa1cd11ae1ca470bf12c8fcc3ce2d3c.jpg" alt="24岁儿子哽咽追忆父亲傅彪" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a52Pk?fr=v.baidu.com/browse" class="title" target="_blank" title="24岁儿子哽咽追忆父亲傅彪" static="stp=hb&no=7">
+24岁儿子哽咽追忆父亲傅彪
+</a>
+</li>
+<li class="poster li8">
+<a href="http://baidu.v.ifeng.com/kan/a52GB?fr=v.baidu.com/browse" class="hb" target="_blank" title="78岁风流大少庆生众美女作陪" static="stp=hb&no=8">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/5243fbf2b2119313cb3a2ee063380cd791238d61.jpg" alt="78岁风流大少庆生众美女作陪" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a52GB?fr=v.baidu.com/browse" class="title" target="_blank" title="78岁风流大少庆生众美女作陪" static="stp=hb&no=8">
+78岁风流大少庆生众美女作陪
+</a>
+</li>
+<li class="poster li9">
+<a href="http://baidu.v.ifeng.com/kan/a5NWx?fr=v.baidu.com/browse" class="hb" target="_blank" title="实拍小山村突现数百条大王蛇" static="stp=hb&no=9">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/1b4c510fd9f9d72a04dbc04dd22a2834349bbb27.jpg" alt="实拍小山村突现数百条大王蛇" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5NWx?fr=v.baidu.com/browse" class="title" target="_blank" title="实拍小山村突现数百条大王蛇" static="stp=hb&no=9">
+实拍小山村突现数百条大王蛇
+</a>
+</li>
+<li class="poster li10">
+<a href="http://baidu.kankanews.com/kan/PthC?fr=v.baidu.com/browse" class="hb" target="_blank" title="沈颢等人被批捕" static="stp=hb&no=10">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/730e0cf3d7ca7bcb14ccd375bd096b63f624a830.jpg" alt="沈颢等人被批捕" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.kankanews.com/kan/PthC?fr=v.baidu.com/browse" class="title" target="_blank" title="沈颢等人被批捕" static="stp=hb&no=10">
+沈颢等人被批捕
+</a>
+</li>
+</ul>
+</div></li>
+<li class="tang-body-item" monkey="info_china_info_videos_1">
+<div class="picarea"  monkeyconfig="event=click&amp;to=play">
+<ul class="bd" static="bl=info_china_hk&to=play"  monkey="info_china_hk" monkeyconfig="event=click&amp;to=play">
+<li class="poster li1 li-edge">
+<a href="http://baidu.v.ifeng.com/kan/a5N5w?fr=v.baidu.com/browse" class="hb" target="_blank" title="学霸麦明诗登顶港姐冠军宝座" static="stp=hb&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/7af40ad162d9f2d349b613beafec8a136327cc3f.jpg" alt="学霸麦明诗登顶港姐冠军宝座" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5N5w?fr=v.baidu.com/browse" class="title" target="_blank" title="学霸麦明诗登顶港姐冠军宝座" static="stp=hb&no=1">
+学霸麦明诗登顶港姐冠军宝座
+</a>
+</li>
+<li class="poster li2">
+<a href="http://baidu.v.ifeng.com/kan/a5NTy?fr=v.baidu.com/browse" class="hb" target="_blank" title="盘点历届知名香港小姐风采" static="stp=hb&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/08f790529822720e3bf7d5ab7dcb0a46f21faba1.jpg" alt="盘点历届知名香港小姐风采" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5NTy?fr=v.baidu.com/browse" class="title" target="_blank" title="盘点历届知名香港小姐风采" static="stp=hb&no=2">
+盘点历届知名香港小姐风采
+</a>
+</li>
+<li class="poster li3">
+<a href="http://baidu.v.ifeng.com/kan/a5nC0?fr=v.baidu.com/browse" class="hb" target="_blank" title="香港大学生到内地体验企业文化" static="stp=hb&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/7aec54e736d12f2ec37c993149c2d56285356861.jpg" alt="香港大学生到内地体验企业文化" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5nC0?fr=v.baidu.com/browse" class="title" target="_blank" title="香港大学生到内地体验企业文化" static="stp=hb&no=3">
+香港大学生到内地体验企业文化
+</a>
+</li>
+<li class="poster li4">
+<a href="http://baidu.v.ifeng.com/kan/a5NTz?fr=v.baidu.com/browse" class="hb" target="_blank" title="女警风范宣萱出任香港禁毒大使" static="stp=hb&no=4">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/d52a2834349b033b16ffcb8b13ce36d3d539bd6f.jpg" alt="女警风范宣萱出任香港禁毒大使" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5NTz?fr=v.baidu.com/browse" class="title" target="_blank" title="女警风范宣萱出任香港禁毒大使" static="stp=hb&no=4">
+女警风范宣萱出任香港禁毒大使
+</a>
+</li>
+<li class="poster li5">
+<a href="http://baidu.kankanews.com/kan/PRSQ?fr=v.baidu.com/browse" class="hb" target="_blank" title="WTCC澳门站收官" static="stp=hb&no=5">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/77094b36acaf2edd6b8bd0bf8e1001e93901936a.jpg" alt="WTCC澳门站收官" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.kankanews.com/kan/PRSQ?fr=v.baidu.com/browse" class="title" target="_blank" title="WTCC澳门站收官" static="stp=hb&no=5">
+WTCC澳门站收官
+</a>
+</li>
+<li class="poster li6 li-edge">
+<a href="http://baidu.v.ifeng.com/kan/a5N0w?fr=v.baidu.com/browse" class="hb" target="_blank" title="探寻香港乌蛟腾抗战纪念遗址" static="stp=hb&no=6">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/6a600c338744ebf8599c536edff9d72a6159a7f5.jpg" alt="探寻香港乌蛟腾抗战纪念遗址" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5N0w?fr=v.baidu.com/browse" class="title" target="_blank" title="探寻香港乌蛟腾抗战纪念遗址" static="stp=hb&no=6">
+探寻香港乌蛟腾抗战纪念遗址
+</a>
+</li>
+<li class="poster li7">
+<a href="http://baidu.kankanews.com/kan/PrZS?fr=v.baidu.com/browse" class="hb" target="_blank" title="铜锣湾街头地面塌陷" static="stp=hb&no=7">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/bd3eb13533fa828bbda23ab4fe1f4134960a5ae7.jpg" alt="铜锣湾街头地面塌陷" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.kankanews.com/kan/PrZS?fr=v.baidu.com/browse" class="title" target="_blank" title="铜锣湾街头地面塌陷" static="stp=hb&no=7">
+铜锣湾街头地面塌陷
+</a>
+</li>
+<li class="poster li8">
+<a href="http://baidu.v.ifeng.com/kan/a5N03?fr=v.baidu.com/browse" class="hb" target="_blank" title="捐器官者生前患癌手术半路中止" static="stp=hb&no=8">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/9a504fc2d56285359bcce47096ef76c6a7ef63b6.jpg" alt="捐器官者生前患癌手术半路中止" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5N03?fr=v.baidu.com/browse" class="title" target="_blank" title="捐器官者生前患癌手术半路中止" static="stp=hb&no=8">
+捐器官者生前患癌手术半路中止
+</a>
+</li>
+<li class="poster li9">
+<a href="http://baidu.v.ifeng.com/kan/a5N0J?fr=v.baidu.com/browse" class="hb" target="_blank" title="香港奢侈品业疲弱名店提早退租" static="stp=hb&no=9">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/03087bf40ad162d9eec5544d17dfa9ec8a13cdb3.jpg" alt="香港奢侈品业疲弱名店提早退租" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5N0J?fr=v.baidu.com/browse" class="title" target="_blank" title="香港奢侈品业疲弱名店提早退租" static="stp=hb&no=9">
+香港奢侈品业疲弱名店提早退租
+</a>
+</li>
+<li class="poster li10">
+<a href="http://baidu.kankanews.com/kan/anhST?fr=v.baidu.com/browse" class="hb" target="_blank" title="香港人结婚平均花费31万" static="stp=hb&no=10">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/94cad1c8a786c91742571c61ca3d70cf3bc75715.jpg" alt="香港人结婚平均花费31万" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.kankanews.com/kan/anhST?fr=v.baidu.com/browse" class="title" target="_blank" title="香港人结婚平均花费31万" static="stp=hb&no=10">
+香港人结婚平均花费31万
+</a>
+</li>
+</ul>
+</div></li>
+<li class="tang-body-item" monkey="info_china_info_videos_2">
+<div class="picarea"  monkeyconfig="event=click&amp;to=play">
+<ul class="bd" static="bl=info_china_taiwan&to=play"  monkey="info_china_taiwan" monkeyconfig="event=click&amp;to=play">
+<li class="poster li1 li-edge">
+<a href="http://baidu.v.ifeng.com/kan/a5Nka?fr=v.baidu.com/browse" class="hb" target="_blank" title="连战访问大陆出席抗战纪念活动" static="stp=hb&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/adaf2edda3cc7cd9e04007883f01213fb80e9175.jpg" alt="连战访问大陆出席抗战纪念活动" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5Nka?fr=v.baidu.com/browse" class="title" target="_blank" title="连战访问大陆出席抗战纪念活动" static="stp=hb&no=1">
+连战访问大陆出席抗战纪念活动
+</a>
+</li>
+<li class="poster li2">
+<a href="http://baidu.v.ifeng.com/kan/a5Nkw?fr=v.baidu.com/browse" class="hb" target="_blank" title="台抗战老兵后代：两岸一家亲" static="stp=hb&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/b03533fa828ba61e0df3fb7e4734970a304e5945.jpg" alt="台抗战老兵后代：两岸一家亲" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5Nkw?fr=v.baidu.com/browse" class="title" target="_blank" title="台抗战老兵后代：两岸一家亲" static="stp=hb&no=2">
+台抗战老兵后代：两岸一家亲
+</a>
+</li>
+<li class="poster li3">
+<a href="http://baidu.v.ifeng.com/kan/a5Nk9?fr=v.baidu.com/browse" class="hb" target="_blank" title="台系列活动纪念抗战胜利70周年" static="stp=hb&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/3b87e950352ac65c44105522fdf2b21193138a4d.jpg" alt="台系列活动纪念抗战胜利70周年" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5Nk9?fr=v.baidu.com/browse" class="title" target="_blank" title="台系列活动纪念抗战胜利70周年" static="stp=hb&no=3">
+台系列活动纪念抗战胜利70周年
+</a>
+</li>
+<li class="poster li4">
+<a href="http://baidu.v.ifeng.com/kan/a5NkB?fr=v.baidu.com/browse" class="hb" target="_blank" title="男子在超市持刀劫持顾客被释放" static="stp=hb&no=4">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/dbb44aed2e738bd4b6878160a78b87d6277ff938.jpg" alt="男子在超市持刀劫持顾客被释放" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5NkB?fr=v.baidu.com/browse" class="title" target="_blank" title="男子在超市持刀劫持顾客被释放" static="stp=hb&no=4">
+男子在超市持刀劫持顾客被释放
+</a>
+</li>
+<li class="poster li5">
+<a href="http://baidu.v.ifeng.com/kan/a5Nkx?fr=v.baidu.com/browse" class="hb" target="_blank" title="台民航放宽禁令可全程使用手机" static="stp=hb&no=5">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/4ec2d5628535e5dd9b8f968e70c6a7efce1b623b.jpg" alt="台民航放宽禁令可全程使用手机" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5Nkx?fr=v.baidu.com/browse" class="title" target="_blank" title="台民航放宽禁令可全程使用手机" static="stp=hb&no=5">
+台民航放宽禁令可全程使用手机
+</a>
+</li>
+<li class="poster li6 li-edge">
+<a href="http://baidu.v.ifeng.com/kan/a5Nks?fr=v.baidu.com/browse" class="hb" target="_blank" title="台湾学校开学花招百出迎返校" static="stp=hb&no=6">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/8d5494eef01f3a29a4c6e79f9f25bc315c607c50.jpg" alt="台湾学校开学花招百出迎返校" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/a5Nks?fr=v.baidu.com/browse" class="title" target="_blank" title="台湾学校开学花招百出迎返校" static="stp=hb&no=6">
+台湾学校开学花招百出迎返校
+</a>
+</li>
+<li class="poster li7">
+<a href="http://baidu.kankanews.com/kan/ancea?fr=v.baidu.com/browse" class="hb" target="_blank" title="郭台铭64岁再得千金晒小女儿照" static="stp=hb&no=7">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/95eef01f3a292df56f3d9c41bf315c6035a873e3.jpg" alt="郭台铭64岁再得千金晒小女儿照" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.kankanews.com/kan/ancea?fr=v.baidu.com/browse" class="title" target="_blank" title="郭台铭64岁再得千金晒小女儿照" static="stp=hb&no=7">
+郭台铭64岁再得千金晒小女儿照
+</a>
+</li>
+<li class="poster li8">
+<a href="http://baidu.v.ifeng.com/kan/cOKs?fr=v.baidu.com/browse" class="hb" target="_blank" title="台金门600人祭祖场面壮观" static="stp=hb&no=8">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/4d086e061d950a7b3619923e0ed162d9f2d3c918.jpg" alt="台金门600人祭祖场面壮观" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/cOKs?fr=v.baidu.com/browse" class="title" target="_blank" title="台金门600人祭祖场面壮观" static="stp=hb&no=8">
+台金门600人祭祖场面壮观
+</a>
+</li>
+<li class="poster li9">
+<a href="http://baidu.v.ifeng.com/kan/dbHA?fr=v.baidu.com/browse" class="hb" target="_blank" title="台湾美女蒙眼弹吉他" static="stp=hb&no=9">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/060828381f30e92463f093344a086e061d95f75b.jpg" alt="台湾美女蒙眼弹吉他" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/dbHA?fr=v.baidu.com/browse" class="title" target="_blank" title="台湾美女蒙眼弹吉他" static="stp=hb&no=9">
+台湾美女蒙眼弹吉他
+</a>
+</li>
+<li class="poster li10">
+<a href="http://baidu.v.ifeng.com/kan/anfAH?fr=v.baidu.com/browse" class="hb" target="_blank" title="台湾失业男没钱 砸提款机出气" static="stp=hb&no=10">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/95eef01f3a292df5b7d5a310ba315c6034a873a4.jpg" alt="台湾失业男没钱 砸提款机出气" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.v.ifeng.com/kan/anfAH?fr=v.baidu.com/browse" class="title" target="_blank" title="台湾失业男没钱 砸提款机出气" static="stp=hb&no=10">
+台湾失业男没钱 砸提款机出气
+</a>
+</li>
+</ul>
+</div></li>
+</ul>
+</div>
+</div>
+<div class="sec-right">
+<div id="info_china_hot" class="hotNews" static="bl=info_china_hot&to=play"  monkey="info_china_hot" monkeyconfig="event=click&amp;to=play">
+<div class="head">
+<h3>热门新闻</h3>
+</div>
+<ul class="bd">
+<li class="pic-item pic-current">
+<div class="video-cover-wrap">
+<a href="http://baidu.v.ifeng.com/kan/a5icT?fr=v.baidu.com/browse" static="stp=hb&to=play&bl=info_china_hot&no=1" target="_blank" title="日本节目谈中国游客不文明行为" >
+<img src="http://hiphotos.baidu.com/baidu/pic/item/023b5bb5c9ea15ce6d902251b0003af33a87b268.jpg" alt="日本节目谈中国游客不文明行为">
+<span class="play-icon-s">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://baidu.v.ifeng.com/kan/a5icT?fr=v.baidu.com/browse" target="_blank" class="current-title" title="日本节目谈中国游客不文明行为" >
+<span class="number">1</span>
+<span class="title">日本节目谈中国游客不文明行为</span>
+</a>
+</li>
+<li class="pic-item ">
+<div class="video-cover-wrap">
+<a href="http://baidu.v.ifeng.com/kan/a5rZw?fr=v.baidu.com/browse" static="stp=hb&to=play&bl=info_china_hot&no=2" target="_blank" title="少年遗书：下辈子不做穷人家孩子" >
+<img src="http://hiphotos.baidu.com/baidu/pic/item/86d6277f9e2f07083378e858ef24b899a901f26d.jpg" alt="少年遗书：下辈子不做穷人家孩子">
+<span class="play-icon-s">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://baidu.v.ifeng.com/kan/a5rZw?fr=v.baidu.com/browse" target="_blank" class="current-title" title="少年遗书：下辈子不做穷人家孩子" >
+<span class="number">2</span>
+<span class="title">少年遗书：下辈子不做穷人家孩子</span>
+</a>
+</li>
+<li class="pic-item ">
+<div class="video-cover-wrap">
+<a href="http://baidu.v.ifeng.com/kan/a5rZf?fr=v.baidu.com/browse" static="stp=hb&to=play&bl=info_china_hot&no=3" target="_blank" title="疯传南田路女丧尸吃人视频" >
+<img src="http://hiphotos.baidu.com/baidu/pic/item/00e93901213fb80ef992a28f30d12f2eb9389423.jpg" alt="疯传南田路女丧尸吃人视频">
+<span class="play-icon-s">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://baidu.v.ifeng.com/kan/a5rZf?fr=v.baidu.com/browse" target="_blank" class="current-title" title="疯传南田路女丧尸吃人视频" >
+<span class="number">3</span>
+<span class="title">疯传南田路女丧尸吃人视频</span>
+</a>
+</li>
+<li class="pic-item ">
+<div class="video-cover-wrap">
+<a href="http://baidu.v.ifeng.com/kan/a5rZC?fr=v.baidu.com/browse" static="stp=hb&to=play&bl=info_china_hot&no=4" target="_blank" title="街头女模当街更衣 市民批不雅" >
+<img src="http://hiphotos.baidu.com/baidu/pic/item/f3d3572c11dfa9eca791954f64d0f703918fc12f.jpg" alt="街头女模当街更衣 市民批不雅">
+<span class="play-icon-s">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://baidu.v.ifeng.com/kan/a5rZC?fr=v.baidu.com/browse" target="_blank" class="current-title" title="街头女模当街更衣 市民批不雅" >
+<span class="number">4</span>
+<span class="title">街头女模当街更衣 市民批不雅</span>
+</a>
+</li>
+<li class="pic-item ">
+<div class="video-cover-wrap">
+<a href="http://baidu.v.ifeng.com/kan/a5rZS?fr=v.baidu.com/browse" static="stp=hb&to=play&bl=info_china_hot&no=5" target="_blank" title="实拍聪明虎鲸以鱼作诱饵捕鸟" >
+<img src="http://hiphotos.baidu.com/baidu/pic/item/63d0f703918fa0ec3ad4a655209759ee3d6ddb53.jpg" alt="实拍聪明虎鲸以鱼作诱饵捕鸟">
+<span class="play-icon-s">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://baidu.v.ifeng.com/kan/a5rZS?fr=v.baidu.com/browse" target="_blank" class="current-title" title="实拍聪明虎鲸以鱼作诱饵捕鸟" >
+<span class="number">5</span>
+<span class="title">实拍聪明虎鲸以鱼作诱饵捕鸟</span>
+</a>
+</li>
+<li class="pic-item ">
+<div class="video-cover-wrap">
+<a href="http://baidu.v.ifeng.com/kan/a5rZc?fr=v.baidu.com/browse" static="stp=hb&to=play&bl=info_china_hot&no=6" target="_blank" title="男子一夫多妻每人一张卖身契" >
+<img src="http://hiphotos.baidu.com/baidu/pic/item/3801213fb80e7becd6d4c1b9292eb9389b506b58.jpg" alt="男子一夫多妻每人一张卖身契">
+<span class="play-icon-s">&nbsp;</span><span class="gradient-bg"></span>
+</a>
+</div>
+<a href="http://baidu.v.ifeng.com/kan/a5rZc?fr=v.baidu.com/browse" target="_blank" class="current-title" title="男子一夫多妻每人一张卖身契" >
+<span class="number">6</span>
+<span class="title">男子一夫多妻每人一张卖身契</span>
+</a>
+</li>
+</ul>
+</div></div>
+</div>
+<div class="con-sec" id="sec-ent">
+<div class="sec-main">
+<div class="tabMode tang-tab" id="info_ent_info_videos" static="bl=info_ent_info_videos&to=play" monkey="info_ent_info_videos" monkeyconfig="event=click&amp;to=play">
+<div class="hd">
+<h3>娱乐</h3>
+<ul class="tang-title bdv-tabslider-dot">
+<li class="tang-title-item dot-selected">
+<a>明星八卦</a>
+</li>
+<li class="tang-title-item">
+<a>影视资讯</a>
+</li>
+<li class="tang-title-item">
+<a>综艺劲爆</a>
+</li>
+</ul>
+</div>
+<ul class="bd tang-body bdv-tabslider-list">
+<li class="tang-body-item item-selected" monkey="info_ent_info_videos_0">
+<div class="picarea"  monkeyconfig="event=click&amp;to=play">
+<ul class="bd" static="bl=info_ent_star&to=play"  monkey="info_ent_star" monkeyconfig="event=click&amp;to=play">
+<li class="poster li1 li-edge">
+<a href="http://baidu.hz.letv.com/kan/a2bj9?fr=v.baidu.com/browse" class="hb" target="_blank" title="杨子姗晒结婚证宣布婚讯" static="stp=hb&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/267f9e2f070828381016ed82be99a9014c08f108.gif" alt="杨子姗晒结婚证宣布婚讯" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2bj9?fr=v.baidu.com/browse" class="title" target="_blank" title="杨子姗晒结婚证宣布婚讯" static="stp=hb&no=1">
+杨子姗晒结婚证宣布婚讯
+</a>
+</li>
+<li class="poster li2">
+<a href="http://baidu.hz.letv.com/kan/a2Pzy?fr=v.baidu.com/browse" class="hb" target="_blank" title="陈赫前妻披肩长发变粉色短发" static="stp=hb&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/d000baa1cd11728bae9d6eb5cefcc3cec2fd2cf1.gif" alt="陈赫前妻披肩长发变粉色短发" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Pzy?fr=v.baidu.com/browse" class="title" target="_blank" title="陈赫前妻披肩长发变粉色短发" static="stp=hb&no=2">
+陈赫前妻披肩长发变粉色短发
+</a>
+</li>
+<li class="poster li3">
+<a href="http://baidu.hz.letv.com/kan/a2GjY?fr=v.baidu.com/browse" class="hb" target="_blank" title="胡歌骑白马“走”红毯" static="stp=hb&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/80cb39dbb6fd52662fe4de83ad18972bd507365e.gif" alt="胡歌骑白马“走”红毯" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2GjY?fr=v.baidu.com/browse" class="title" target="_blank" title="胡歌骑白马“走”红毯" static="stp=hb&no=3">
+胡歌骑白马“走”红毯
+</a>
+</li>
+<li class="poster li4">
+<a href="http://baidu.hz.letv.com/kan/a2Paq?fr=v.baidu.com/browse" class="hb" target="_blank" title="张惠妹神似梅超风双目失明" static="stp=hb&no=4">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/3ac79f3df8dcd1005bea11b6748b4710b9122f37.gif" alt="张惠妹神似梅超风双目失明" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Paq?fr=v.baidu.com/browse" class="title" target="_blank" title="张惠妹神似梅超风双目失明" static="stp=hb&no=4">
+张惠妹神似梅超风双目失明
+</a>
+</li>
+<li class="poster li5">
+<a href="http://baidu.hz.letv.com/kan/a2AR9?fr=v.baidu.com/browse" class="hb" target="_blank" title="甄子丹晒17岁练功照" static="stp=hb&no=5">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/d6ca7bcb0a46f21f7c0c17c7f0246b600c33ae6e.gif" alt="甄子丹晒17岁练功照" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2AR9?fr=v.baidu.com/browse" class="title" target="_blank" title="甄子丹晒17岁练功照" static="stp=hb&no=5">
+甄子丹晒17岁练功照
+</a>
+</li>
+<li class="poster li6 li-edge">
+<a href="http://baidu.hz.letv.com/kan/a2Paj?fr=v.baidu.com/browse" class="hb" target="_blank" title="宋钟国离婚出轨小10岁干侄女" static="stp=hb&no=6">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/f9198618367adab466cdf2d48dd4b31c8701e40c.gif" alt="宋钟国离婚出轨小10岁干侄女" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Paj?fr=v.baidu.com/browse" class="title" target="_blank" title="宋钟国离婚出轨小10岁干侄女" static="stp=hb&no=6">
+宋钟国离婚出轨小10岁干侄女
+</a>
+</li>
+<li class="poster li7">
+<a href="http://baidu.hz.letv.com/kan/a2bMV?fr=v.baidu.com/browse" class="hb" target="_blank" title="49岁巩俐白裙露背风采依旧" static="stp=hb&no=7">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/7dd98d1001e939015387bca87dec54e737d1969a.gif" alt="49岁巩俐白裙露背风采依旧" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2bMV?fr=v.baidu.com/browse" class="title" target="_blank" title="49岁巩俐白裙露背风采依旧" static="stp=hb&no=7">
+49岁巩俐白裙露背风采依旧
+</a>
+</li>
+<li class="poster li8">
+<a href="http://baidu.hz.letv.com/kan/a2bMX?fr=v.baidu.com/browse" class="hb" target="_blank" title="周杰伦回应照片被好友滥用" static="stp=hb&no=8">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/5bafa40f4bfbfbed434706e97ef0f736afc31f0d.gif" alt="周杰伦回应照片被好友滥用" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2bMX?fr=v.baidu.com/browse" class="title" target="_blank" title="周杰伦回应照片被好友滥用" static="stp=hb&no=8">
+周杰伦回应照片被好友滥用
+</a>
+</li>
+<li class="poster li9">
+<a href="http://baidu.hz.letv.com/kan/a2bMb?fr=v.baidu.com/browse" class="hb" target="_blank" title="霍建华被量长睫毛" static="stp=hb&no=9">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/3b87e950352ac65c451656e5fdf2b21193138a10.gif" alt="霍建华被量长睫毛" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2bMb?fr=v.baidu.com/browse" class="title" target="_blank" title="霍建华被量长睫毛" static="stp=hb&no=9">
+霍建华被量长睫毛
+</a>
+</li>
+<li class="poster li10">
+<a href="http://baidu.hz.letv.com/kan/PVu2?fr=v.baidu.com/browse" class="hb" target="_blank" title="章子怡被问与汪峰婚期" static="stp=hb&no=10">
+<img src="http://e.hiphotos.baidu.com/video/pic/item/00e93901213fb80e565e1a8935d12f2eb83894e4.jpg" alt="章子怡被问与汪峰婚期" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/PVu2?fr=v.baidu.com/browse" class="title" target="_blank" title="章子怡被问与汪峰婚期" static="stp=hb&no=10">
+章子怡被问与汪峰婚期
+</a>
+</li>
+</ul>
+</div></li>
+<li class="tang-body-item" monkey="info_ent_info_videos_1">
+<div class="picarea"  monkeyconfig="event=click&amp;to=play">
+<ul class="bd" static="bl=info_ent_video&to=play"  monkey="info_ent_video" monkeyconfig="event=click&amp;to=play">
+<li class="poster li1 li-edge">
+<a href="http://baidu.hz.letv.com/kan/a2GWh?fr=v.baidu.com/browse" class="hb" target="_blank" title="杜淳罗晋加盟《全员加速中》" static="stp=hb&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/060828381f30e9248fa977a64a086e061d95f71c.gif" alt="杜淳罗晋加盟《全员加速中》" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2GWh?fr=v.baidu.com/browse" class="title" target="_blank" title="杜淳罗晋加盟《全员加速中》" static="stp=hb&no=1">
+杜淳罗晋加盟《全员加速中》
+</a>
+</li>
+<li class="poster li2">
+<a href="http://baidu.hz.letv.com/kan/a2T5C?fr=v.baidu.com/browse" class="hb" target="_blank" title="莫小棋真空露八字奶疑似下垂" static="stp=hb&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/d788d43f8794a4c2bca4d8bd08f41bd5ac6e39a4.gif" alt="莫小棋真空露八字奶疑似下垂" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2T5C?fr=v.baidu.com/browse" class="title" target="_blank" title="莫小棋真空露八字奶疑似下垂" static="stp=hb&no=2">
+莫小棋真空露八字奶疑似下垂
+</a>
+</li>
+<li class="poster li3">
+<a href="http://baidu.hz.letv.com/kan/a2G9y?fr=v.baidu.com/browse" class="hb" target="_blank" title="韩庚纪录电影《卸装》" static="stp=hb&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/6d81800a19d8bc3e7bc7ee5d848ba61ea9d3455e.gif" alt="韩庚纪录电影《卸装》" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G9y?fr=v.baidu.com/browse" class="title" target="_blank" title="韩庚纪录电影《卸装》" static="stp=hb&no=3">
+韩庚纪录电影《卸装》
+</a>
+</li>
+<li class="poster li4">
+<a href="http://baidu.hz.letv.com/kan/a2T58?fr=v.baidu.com/browse" class="hb" target="_blank" title="黄渤唱TFboys歌曲 网友惊呆" static="stp=hb&no=4">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/8644ebf81a4c510fe5dcdc8c6659252dd42aa50f.gif" alt="黄渤唱TFboys歌曲 网友惊呆" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2T58?fr=v.baidu.com/browse" class="title" target="_blank" title="黄渤唱TFboys歌曲 网友惊呆" static="stp=hb&no=4">
+黄渤唱TFboys歌曲 网友惊呆
+</a>
+</li>
+<li class="poster li5">
+<a href="http://baidu.hz.letv.com/kan/a2Ged?fr=v.baidu.com/browse" class="hb" target="_blank" title="霍建华首演烧脑剧引高人气" static="stp=hb&no=5">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/38dbb6fd5266d016f25577bf912bd40734fa35dd.gif" alt="霍建华首演烧脑剧引高人气" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Ged?fr=v.baidu.com/browse" class="title" target="_blank" title="霍建华首演烧脑剧引高人气" static="stp=hb&no=5">
+霍建华首演烧脑剧引高人气
+</a>
+</li>
+<li class="poster li6 li-edge">
+<a href="http://baidu.hz.letv.com/kan/a2G9Q?fr=v.baidu.com/browse" class="hb" target="_blank" title="《隐藏的歌手》 张韶涵应战" static="stp=hb&no=6">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/aa64034f78f0f736bb85a4960c55b319ebc41329.gif" alt="《隐藏的歌手》 张韶涵应战" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G9Q?fr=v.baidu.com/browse" class="title" target="_blank" title="《隐藏的歌手》 张韶涵应战" static="stp=hb&no=6">
+《隐藏的歌手》 张韶涵应战
+</a>
+</li>
+<li class="poster li7">
+<a href="http://baidu.hz.letv.com/kan/a2G9d?fr=v.baidu.com/browse" class="hb" target="_blank" title="马伊琍戈壁拍片文章探班" static="stp=hb&no=7">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/32fa828ba61ea8d3324f9c93910a304e251f583c.gif" alt="马伊琍戈壁拍片文章探班" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G9d?fr=v.baidu.com/browse" class="title" target="_blank" title="马伊琍戈壁拍片文章探班" static="stp=hb&no=7">
+马伊琍戈壁拍片文章探班
+</a>
+</li>
+<li class="poster li8">
+<a href="http://baidu.hz.letv.com/kan/a2TII?fr=v.baidu.com/browse" class="hb" target="_blank" title="李成宇模仿易烊千玺" static="stp=hb&no=8">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/6a63f6246b600c33bfd8e05e1c4c510fd8f9a186.gif" alt="李成宇模仿易烊千玺" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2TII?fr=v.baidu.com/browse" class="title" target="_blank" title="李成宇模仿易烊千玺" static="stp=hb&no=8">
+李成宇模仿易烊千玺
+</a>
+</li>
+<li class="poster li9">
+<a href="http://baidu.hz.letv.com/kan/a2TIv?fr=v.baidu.com/browse" class="hb" target="_blank" title="《直通春晚》将复播" static="stp=hb&no=9">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/b64543a98226cffcf19b8124bf014a90f703eaf7.gif" alt="《直通春晚》将复播" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2TIv?fr=v.baidu.com/browse" class="title" target="_blank" title="《直通春晚》将复播" static="stp=hb&no=9">
+《直通春晚》将复播
+</a>
+</li>
+<li class="poster li10">
+<a href="http://baidu.hz.letv.com/kan/a2TIA?fr=v.baidu.com/browse" class="hb" target="_blank" title="朴灿烈将拍中国电影" static="stp=hb&no=10">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/79f0f736afc37931edccbfbfedc4b74542a911fb.gif" alt="朴灿烈将拍中国电影" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2TIA?fr=v.baidu.com/browse" class="title" target="_blank" title="朴灿烈将拍中国电影" static="stp=hb&no=10">
+朴灿烈将拍中国电影
+</a>
+</li>
+</ul>
+</div></li>
+<li class="tang-body-item" monkey="info_ent_info_videos_2">
+<div class="picarea"  monkeyconfig="event=click&amp;to=play">
+<ul class="bd" static="bl=info_ent_hot&to=play"  monkey="info_ent_hot" monkeyconfig="event=click&amp;to=play">
+<li class="poster li1 li-edge">
+<a href="http://baidu.hz.letv.com/kan/a2G3O?fr=v.baidu.com/browse" class="hb" target="_blank" title="刘亦菲素颜与猫咪合影" static="stp=hb&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/caef76094b36acafbc8e7d6b7ad98d1001e99c3f.gif" alt="刘亦菲素颜与猫咪合影" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G3O?fr=v.baidu.com/browse" class="title" target="_blank" title="刘亦菲素颜与猫咪合影" static="stp=hb&no=1">
+刘亦菲素颜与猫咪合影
+</a>
+</li>
+<li class="poster li2">
+<a href="http://baidu.hz.letv.com/kan/a2TyE?fr=v.baidu.com/browse" class="hb" target="_blank" title="刘翔与范玮琪儿子合影" static="stp=hb&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/8435e5dde71190ef00c5a949c81b9d16fdfa606d.gif" alt="刘翔与范玮琪儿子合影" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2TyE?fr=v.baidu.com/browse" class="title" target="_blank" title="刘翔与范玮琪儿子合影" static="stp=hb&no=2">
+刘翔与范玮琪儿子合影
+</a>
+</li>
+<li class="poster li3">
+<a href="http://baidu.hz.letv.com/kan/a2G9H?fr=v.baidu.com/browse" class="hb" target="_blank" title="李晨谈娃色变大呼崩溃" static="stp=hb&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/242dd42a2834349b73c68512cfea15ce37d3be61.gif" alt="李晨谈娃色变大呼崩溃" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G9H?fr=v.baidu.com/browse" class="title" target="_blank" title="李晨谈娃色变大呼崩溃" static="stp=hb&no=3">
+李晨谈娃色变大呼崩溃
+</a>
+</li>
+<li class="poster li4">
+<a href="http://baidu.hz.letv.com/kan/a2G98?fr=v.baidu.com/browse" class="hb" target="_blank" title="周海媚穿黑丝镂空旗袍秀身材" static="stp=hb&no=4">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/c8177f3e6709c93da966e460993df8dcd0005495.gif" alt="周海媚穿黑丝镂空旗袍秀身材" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G98?fr=v.baidu.com/browse" class="title" target="_blank" title="周海媚穿黑丝镂空旗袍秀身材" static="stp=hb&no=4">
+周海媚穿黑丝镂空旗袍秀身材
+</a>
+</li>
+<li class="poster li5">
+<a href="http://baidu.hz.letv.com/kan/a2G9P?fr=v.baidu.com/browse" class="hb" target="_blank" title="天后那英素颜现身反差大" static="stp=hb&no=5">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/5366d0160924ab186d770ba033fae6cd7a890bc0.gif" alt="天后那英素颜现身反差大" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G9P?fr=v.baidu.com/browse" class="title" target="_blank" title="天后那英素颜现身反差大" static="stp=hb&no=5">
+天后那英素颜现身反差大
+</a>
+</li>
+<li class="poster li6 li-edge">
+<a href="http://baidu.hz.letv.com/kan/a2G9z?fr=v.baidu.com/browse" class="hb" target="_blank" title="黄晓明为Baby穿水晶婚鞋咬金镯" static="stp=hb&no=6">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/b812c8fcc3cec3fd196c72e2d088d43f869427d3.gif" alt="黄晓明为Baby穿水晶婚鞋咬金镯" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G9z?fr=v.baidu.com/browse" class="title" target="_blank" title="黄晓明为Baby穿水晶婚鞋咬金镯" static="stp=hb&no=6">
+黄晓明为Baby穿水晶婚鞋咬金镯
+</a>
+</li>
+<li class="poster li7">
+<a href="http://baidu.hz.letv.com/kan/a2TIS?fr=v.baidu.com/browse" class="hb" target="_blank" title="范冰冰录节目受伤李晨心疼" static="stp=hb&no=7">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/6d81800a19d8bc3e28753d5c848ba61ea8d34522.gif" alt="范冰冰录节目受伤李晨心疼" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2TIS?fr=v.baidu.com/browse" class="title" target="_blank" title="范冰冰录节目受伤李晨心疼" static="stp=hb&no=7">
+范冰冰录节目受伤李晨心疼
+</a>
+</li>
+<li class="poster li8">
+<a href="http://baidu.hz.letv.com/kan/a2Tyl?fr=v.baidu.com/browse" class="hb" target="_blank" title="蔡依林顶绿色假发自拍" static="stp=hb&no=8">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/e4dde71190ef76c6fc46e4bd9b16fdfaae51678b.gif" alt="蔡依林顶绿色假发自拍" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Tyl?fr=v.baidu.com/browse" class="title" target="_blank" title="蔡依林顶绿色假发自拍" static="stp=hb&no=8">
+蔡依林顶绿色假发自拍
+</a>
+</li>
+<li class="poster li9">
+<a href="http://baidu.hz.letv.com/kan/a2TyU?fr=v.baidu.com/browse" class="hb" target="_blank" title="李小璐穿皮裙秀傲人上围" static="stp=hb&no=9">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/d439b6003af33a87c44e1f8cc05c10385343b500.gif" alt="李小璐穿皮裙秀傲人上围" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2TyU?fr=v.baidu.com/browse" class="title" target="_blank" title="李小璐穿皮裙秀傲人上围" static="stp=hb&no=9">
+李小璐穿皮裙秀傲人上围
+</a>
+</li>
+<li class="poster li10">
+<a href="http://baidu.hz.letv.com/kan/a2G91?fr=v.baidu.com/browse" class="hb" target="_blank" title="陈坤牵强否认跟黄晓明不和" static="stp=hb&no=10">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/03087bf40ad162d9cd37b78b17dfa9ec8b13cd48.gif" alt="陈坤牵强否认跟黄晓明不和" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G91?fr=v.baidu.com/browse" class="title" target="_blank" title="陈坤牵强否认跟黄晓明不和" static="stp=hb&no=10">
+陈坤牵强否认跟黄晓明不和
+</a>
+</li>
+</ul>
+</div></li>
+</ul>
+</div>
+</div>
+<div class="sec-right">
+<div class="header">
+<h3>小编推荐</h3>
+</div>
+<ul id="info_ent_recommend" class="smallVideos" static="bl=info_ent_recommend&to=play"  monkey="info_ent_recommend" monkeyconfig="event=click&amp;to=play">
+<li class="item first">
+<a href="http://baidu.hz.letv.com/kan/a2G4Y?fr=v.baidu.com/browse" class="hb" target="_blank" title="张靓颖素颜陪未婚夫看球赛" static="stp=title&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/6a600c338744ebf87e7eb0a8dff9d72a6059a71e.gif" alt="张靓颖素颜陪未婚夫看球赛" />
+<span class="top-playicon"></span>
+<span class="title">张靓颖素颜陪未婚夫看球赛</span>
+</a>
+</li>
+<li class="item ">
+<a href="http://baidu.hz.letv.com/kan/a2TA1?fr=v.baidu.com/browse" class="hb" target="_blank" title="李湘夫妇为王诗龄庆6岁生日" static="stp=title&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/43a7d933c895d1431535fcb575f082025baf07e0.gif" alt="李湘夫妇为王诗龄庆6岁生日" />
+<span class="top-playicon"></span>
+<span class="title">李湘夫妇为王诗龄庆6岁生日</span>
+</a>
+</li>
+<li class="item ">
+<a href="http://baidu.hz.letv.com/kan/a2Pz8?fr=v.baidu.com/browse" class="hb" target="_blank" title="汪峰示爱章子怡： 你说我听" static="stp=title&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/0eb30f2442a7d933cb5731e4ab4bd11372f001ad.gif" alt="汪峰示爱章子怡： 你说我听" />
+<span class="top-playicon"></span>
+<span class="title">汪峰示爱章子怡： 你说我听</span>
+</a>
+</li>
+</ul></div>
+</div>
+<div class="con-sec" id="sec-sport">
+<div class="sec-main"><div class="tabMode tang-tab" id="info_sport_info_videos" static="bl=info_sport_info_videos&to=play" monkey="info_sport_info_videos" monkeyconfig="event=click&amp;to=play">
+<div class="hd">
+<h3>体育</h3>
+<ul class="tang-title bdv-tabslider-dot">
+<li class="tang-title-item dot-selected">
+<a>视频资讯</a>
+</li>
+<li class="tang-title-item">
+<a>综合体育</a>
+</li>
+<li class="tang-title-item">
+<a>篮球</a>
+</li>
+<li class="tang-title-item">
+<a>足球</a>
+</li>
+</ul>
+</div>
+<ul class="bd tang-body bdv-tabslider-list">
+<li class="tang-body-item item-selected" monkey="info_sport_info_videos_0">
+<div class="picarea"  monkeyconfig="event=click&amp;to=play">
+<ul class="bd" static="bl=info_sport_info&to=play"  monkey="info_sport_info" monkeyconfig="event=click&amp;to=play">
+<li class="poster li1 li-edge">
+<a href="http://baidu.hz.letv.com/kan/a2Khm?fr=v.baidu.com/browse" class="hb" target="_blank" title="曝奥多姆因服壮阳药生命垂危" static="stp=hb&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/faf2b2119313b07e58baab9f0ad7912397dd8c26.jpg" alt="曝奥多姆因服壮阳药生命垂危" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Khm?fr=v.baidu.com/browse" class="title" target="_blank" title="曝奥多姆因服壮阳药生命垂危" static="stp=hb&no=1">
+曝奥多姆因服壮阳药生命垂危
+</a>
+</li>
+<li class="poster li2">
+<a href="http://baidu.hz.letv.com/kan/a2GID?fr=v.baidu.com/browse" class="hb" target="_blank" title="《体育滑翔机》第64期" static="stp=hb&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/b151f8198618367ae388844a28738bd4b31ce520.png" alt="《体育滑翔机》第64期" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2GID?fr=v.baidu.com/browse" class="title" target="_blank" title="《体育滑翔机》第64期" static="stp=hb&no=2">
+《体育滑翔机》第64期
+</a>
+</li>
+<li class="poster li3">
+<a href="http://baidu.hz.letv.com/kan/a2GIT?fr=v.baidu.com/browse" class="hb" target="_blank" title="上海赛-纳达尔苦战三盘进16强" static="stp=hb&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/e4dde71190ef76c6100d00bc9b16fdfaae51674e.jpg" alt="上海赛-纳达尔苦战三盘进16强" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2GIT?fr=v.baidu.com/browse" class="title" target="_blank" title="上海赛-纳达尔苦战三盘进16强" static="stp=hb&no=3">
+上海赛-纳达尔苦战三盘进16强
+</a>
+</li>
+<li class="poster li4">
+<a href="http://baidu.hz.letv.com/kan/a2Td4?fr=v.baidu.com/browse" class="hb" target="_blank" title="网友不满李毅声援国足" static="stp=hb&no=4">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/8b13632762d0f703c8266e4b0efa513d2797c595.png" alt="网友不满李毅声援国足" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Td4?fr=v.baidu.com/browse" class="title" target="_blank" title="网友不满李毅声援国足" static="stp=hb&no=4">
+网友不满李毅声援国足
+</a>
+</li>
+<li class="poster li5">
+<a href="http://baidu.hz.letv.com/kan/a2PAg?fr=v.baidu.com/browse" class="hb" target="_blank" title="C罗35张最美自拍全收录" static="stp=hb&no=5">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/8cb1cb134954092310b198e99458d109b2de4949.jpg" alt="C罗35张最美自拍全收录" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2PAg?fr=v.baidu.com/browse" class="title" target="_blank" title="C罗35张最美自拍全收录" static="stp=hb&no=5">
+C罗35张最美自拍全收录
+</a>
+</li>
+<li class="poster li6 li-edge">
+<a href="http://baidu.hz.letv.com/kan/a2GIR?fr=v.baidu.com/browse" class="hb" target="_blank" title="15-16赛季CBA巡礼之佛山" static="stp=hb&no=6">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/728da9773912b31b85b636be8018367adbb4e14b.png" alt="15-16赛季CBA巡礼之佛山" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2GIR?fr=v.baidu.com/browse" class="title" target="_blank" title="15-16赛季CBA巡礼之佛山" static="stp=hb&no=6">
+15-16赛季CBA巡礼之佛山
+</a>
+</li>
+<li class="poster li7">
+<a href="http://baidu.hz.letv.com/kan/a2GIf?fr=v.baidu.com/browse" class="hb" target="_blank" title="NBA中国赛-黄蜂113-71快船" static="stp=hb&no=7">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/203fb80e7bec54e79a7ce189bf389b504ec26a91.jpg" alt="NBA中国赛-黄蜂113-71快船" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2GIf?fr=v.baidu.com/browse" class="title" target="_blank" title="NBA中国赛-黄蜂113-71快船" static="stp=hb&no=7">
+NBA中国赛-黄蜂113-71快船
+</a>
+</li>
+<li class="poster li8">
+<a href="http://baidu.hz.letv.com/kan/a2GI7?fr=v.baidu.com/browse" class="hb" target="_blank" title="海峡杯-天津71-59胜北京" static="stp=hb&no=8">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/7a899e510fb30f2451161794ce95d143ac4b039c.png" alt="海峡杯-天津71-59胜北京" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2GI7?fr=v.baidu.com/browse" class="title" target="_blank" title="海峡杯-天津71-59胜北京" static="stp=hb&no=8">
+海峡杯-天津71-59胜北京
+</a>
+</li>
+<li class="poster li9">
+<a href="http://baidu.hz.letv.com/kan/a2GIq?fr=v.baidu.com/browse" class="hb" target="_blank" title="JORDAN30周年庆典全回顾" static="stp=hb&no=9">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/32fa828ba61ea8d320118e93910a304e251f5872.png" alt="JORDAN30周年庆典全回顾" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2GIq?fr=v.baidu.com/browse" class="title" target="_blank" title="JORDAN30周年庆典全回顾" static="stp=hb&no=9">
+JORDAN30周年庆典全回顾
+</a>
+</li>
+<li class="poster li10">
+<a href="http://baidu.hz.letv.com/kan/a2G3k?fr=v.baidu.com/browse" class="hb" target="_blank" title="挡不住!比利时FIFA排名将登顶" static="stp=hb&no=10">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/bd3eb13533fa828b7d0e6774fb1f4134970a5a7c.png" alt="挡不住!比利时FIFA排名将登顶" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G3k?fr=v.baidu.com/browse" class="title" target="_blank" title="挡不住!比利时FIFA排名将登顶" static="stp=hb&no=10">
+挡不住!比利时FIFA排名将登顶
+</a>
+</li>
+</ul>
+</div></li>
+<li class="tang-body-item" monkey="info_sport_info_videos_1">
+<div class="picarea"  monkeyconfig="event=click&amp;to=play">
+<ul class="bd" static="bl=info_sport_integrate&to=play"  monkey="info_sport_integrate" monkeyconfig="event=click&amp;to=play">
+<li class="poster li1 li-edge">
+<a href="http://baidu.hz.letv.com/kan/a2G2a?fr=v.baidu.com/browse" class="hb" target="_blank" title="95岁习武老人一拳KO偷包贼" static="stp=hb&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/8601a18b87d6277fa85eddaf2e381f30e824fcdd.png" alt="95岁习武老人一拳KO偷包贼" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G2a?fr=v.baidu.com/browse" class="title" target="_blank" title="95岁习武老人一拳KO偷包贼" static="stp=hb&no=1">
+95岁习武老人一拳KO偷包贼
+</a>
+</li>
+<li class="poster li2">
+<a href="http://baidu.hz.letv.com/kan/a2G2h?fr=v.baidu.com/browse" class="hb" target="_blank" title="李景亮北体大切磋武术学院高手" static="stp=hb&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/3ac79f3df8dcd10058ab16b6748b4710b9122f76.png" alt="李景亮北体大切磋武术学院高手" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G2h?fr=v.baidu.com/browse" class="title" target="_blank" title="李景亮北体大切磋武术学院高手" static="stp=hb&no=2">
+李景亮北体大切磋武术学院高手
+</a>
+</li>
+<li class="poster li3">
+<a href="http://baidu.hz.letv.com/kan/a2G2o?fr=v.baidu.com/browse" class="hb" target="_blank" title="凶残KO 拳手被打得抽搐窒息" static="stp=hb&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/b03533fa828ba61e790627b84734970a314e59b9.png" alt="凶残KO 拳手被打得抽搐窒息" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G2o?fr=v.baidu.com/browse" class="title" target="_blank" title="凶残KO 拳手被打得抽搐窒息" static="stp=hb&no=3">
+凶残KO 拳手被打得抽搐窒息
+</a>
+</li>
+<li class="poster li4">
+<a href="http://baidu.hz.letv.com/kan/a2G2L?fr=v.baidu.com/browse" class="hb" target="_blank" title="拳台凶狠飞膝2秒KO对手" static="stp=hb&no=4">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/a044ad345982b2b75fd4d65337adcbef77099bda.png" alt="拳台凶狠飞膝2秒KO对手" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G2L?fr=v.baidu.com/browse" class="title" target="_blank" title="拳台凶狠飞膝2秒KO对手" static="stp=hb&no=4">
+拳台凶狠飞膝2秒KO对手
+</a>
+</li>
+<li class="poster li5">
+<a href="http://baidu.hz.letv.com/kan/a2G29?fr=v.baidu.com/browse" class="hb" target="_blank" title="WWE史上最残忍地狱牢笼赛" static="stp=hb&no=5">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/500fd9f9d72a605955f50e8d2e34349b023bba44.png" alt="WWE史上最残忍地狱牢笼赛" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G29?fr=v.baidu.com/browse" class="title" target="_blank" title="WWE史上最残忍地狱牢笼赛" static="stp=hb&no=5">
+WWE史上最残忍地狱牢笼赛
+</a>
+</li>
+<li class="poster li6 li-edge">
+<a href="http://baidu.hz.letv.com/kan/a2GuL?fr=v.baidu.com/browse" class="hb" target="_blank" title="《黄腔》啪啪打脸的中国足协" static="stp=hb&no=6">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/c8177f3e6709c93dae16e160993df8dcd0005445.png" alt="《黄腔》啪啪打脸的中国足协" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2GuL?fr=v.baidu.com/browse" class="title" target="_blank" title="《黄腔》啪啪打脸的中国足协" static="stp=hb&no=6">
+《黄腔》啪啪打脸的中国足协
+</a>
+</li>
+<li class="poster li7">
+<a href="http://baidu.hz.letv.com/kan/a2GuB?fr=v.baidu.com/browse" class="hb" target="_blank" title="疯狂！AMG空中F1竞速对决" static="stp=hb&no=7">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/9825bc315c6034a8e5cd5616cd1349540923767e.png" alt="疯狂！AMG空中F1竞速对决" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2GuB?fr=v.baidu.com/browse" class="title" target="_blank" title="疯狂！AMG空中F1竞速对决" static="stp=hb&no=7">
+疯狂！AMG空中F1竞速对决
+</a>
+</li>
+<li class="poster li8">
+<a href="http://baidu.hz.letv.com/kan/a2GxG?fr=v.baidu.com/browse" class="hb" target="_blank" title="美国姑娘身残志坚成健美达人" static="stp=hb&no=8">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/9e3df8dcd100baa129cda82c4110b912c9fc2e40.png" alt="美国姑娘身残志坚成健美达人" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2GxG?fr=v.baidu.com/browse" class="title" target="_blank" title="美国姑娘身残志坚成健美达人" static="stp=hb&no=8">
+美国姑娘身残志坚成健美达人
+</a>
+</li>
+<li class="poster li9">
+<a href="http://baidu.hz.letv.com/kan/a2Gu7?fr=v.baidu.com/browse" class="hb" target="_blank" title="男子鳄鱼池上走扁带" static="stp=hb&no=9">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/5366d0160924ab18693e0fa033fae6cd7b890b79.png" alt="男子鳄鱼池上走扁带" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Gu7?fr=v.baidu.com/browse" class="title" target="_blank" title="男子鳄鱼池上走扁带" static="stp=hb&no=9">
+男子鳄鱼池上走扁带
+</a>
+</li>
+<li class="poster li10">
+<a href="http://baidu.hz.letv.com/kan/a2Khm?fr=v.baidu.com/browse" class="hb" target="_blank" title="英国竞走一哥宣布出柜" static="stp=hb&no=10">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/a686c9177f3e670914e2aa683dc79f3df9dc5543.png" alt="英国竞走一哥宣布出柜" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Khm?fr=v.baidu.com/browse" class="title" target="_blank" title="英国竞走一哥宣布出柜" static="stp=hb&no=10">
+英国竞走一哥宣布出柜
+</a>
+</li>
+</ul>
+</div></li>
+<li class="tang-body-item" monkey="info_sport_info_videos_2">
+<div class="picarea"  monkeyconfig="event=click&amp;to=play">
+<ul class="bd" static="bl=info_sport_basketball&to=play"  monkey="info_sport_basketball" monkeyconfig="event=click&amp;to=play">
+<li class="poster li1 li-edge">
+<a href="http://baidu.hz.letv.com/kan/a2Gjw?fr=v.baidu.com/browse" class="hb" target="_blank" title="奥多姆妓院VIP套间曝光" static="stp=hb&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/c75c10385343fbf2388240b4b67eca8064388fff.png" alt="奥多姆妓院VIP套间曝光" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Gjw?fr=v.baidu.com/browse" class="title" target="_blank" title="奥多姆妓院VIP套间曝光" static="stp=hb&no=1">
+奥多姆妓院VIP套间曝光
+</a>
+</li>
+<li class="poster li2">
+<a href="http://baidu.hz.letv.com/kan/a2GjF?fr=v.baidu.com/browse" class="hb" target="_blank" title="奥多姆大学逆天一战集锦" static="stp=hb&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/0df431adcbef7609d0077f0828dda3cc7cd99e1d.png" alt="奥多姆大学逆天一战集锦" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2GjF?fr=v.baidu.com/browse" class="title" target="_blank" title="奥多姆大学逆天一战集锦" static="stp=hb&no=2">
+奥多姆大学逆天一战集锦
+</a>
+</li>
+<li class="poster li3">
+<a href="http://baidu.hz.letv.com/kan/a2Gjx?fr=v.baidu.com/browse" class="hb" target="_blank" title="曝奥多姆恢复部分意识" static="stp=hb&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/dbb44aed2e738bd48b7754a6a78b87d6267ff9d7.png" alt="曝奥多姆恢复部分意识" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Gjx?fr=v.baidu.com/browse" class="title" target="_blank" title="曝奥多姆恢复部分意识" static="stp=hb&no=3">
+曝奥多姆恢复部分意识
+</a>
+</li>
+<li class="poster li4">
+<a href="http://baidu.hz.letv.com/kan/a2Gjr?fr=v.baidu.com/browse" class="hb" target="_blank" title="中国赛扣篮秀 小乔丹360大风车" static="stp=hb&no=4">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/9c16fdfaaf51f3de0c475ff392eef01f3b2979b4.png" alt="中国赛扣篮秀 小乔丹360大风车" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Gjr?fr=v.baidu.com/browse" class="title" target="_blank" title="中国赛扣篮秀 小乔丹360大风车" static="stp=hb&no=4">
+中国赛扣篮秀 小乔丹360大风车
+</a>
+</li>
+<li class="poster li5">
+<a href="http://baidu.hz.letv.com/kan/a2GIX?fr=v.baidu.com/browse" class="hb" target="_blank" title="张靓颖惊艳亮相NBA上海赛" static="stp=hb&no=5">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/0bd162d9f2d3572c5fb17a4b8c13632763d0c3d2.png" alt="张靓颖惊艳亮相NBA上海赛" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2GIX?fr=v.baidu.com/browse" class="title" target="_blank" title="张靓颖惊艳亮相NBA上海赛" static="stp=hb&no=5">
+张靓颖惊艳亮相NBA上海赛
+</a>
+</li>
+<li class="poster li6 li-edge">
+<a href="http://baidu.hz.letv.com/kan/a2Gju?fr=v.baidu.com/browse" class="hb" target="_blank" title="NBA众星大学时期劲爆扣篮集锦" static="stp=hb&no=6">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/b64543a98226cffc39d95925bf014a90f703eab2.png" alt="NBA众星大学时期劲爆扣篮集锦" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Gju?fr=v.baidu.com/browse" class="title" target="_blank" title="NBA众星大学时期劲爆扣篮集锦" static="stp=hb&no=6">
+NBA众星大学时期劲爆扣篮集锦
+</a>
+</li>
+<li class="poster li7">
+<a href="http://baidu.hz.letv.com/kan/a2Gjv?fr=v.baidu.com/browse" class="hb" target="_blank" title="库里高中时期珍贵视频集锦" static="stp=hb&no=7">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/a6efce1b9d16fdfa19fc2079b28f8c5495ee7b91.png" alt="库里高中时期珍贵视频集锦" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Gjv?fr=v.baidu.com/browse" class="title" target="_blank" title="库里高中时期珍贵视频集锦" static="stp=hb&no=7">
+库里高中时期珍贵视频集锦
+</a>
+</li>
+<li class="poster li8">
+<a href="http://baidu.hz.letv.com/kan/a2GjZ?fr=v.baidu.com/browse" class="hb" target="_blank" title="2米28巨人演胯下换手暴扣" static="stp=hb&no=8">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/79f0f736afc37931153a67beedc4b74542a911d2.jpg" alt="2米28巨人演胯下换手暴扣" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2GjZ?fr=v.baidu.com/browse" class="title" target="_blank" title="2米28巨人演胯下换手暴扣" static="stp=hb&no=8">
+2米28巨人演胯下换手暴扣
+</a>
+</li>
+<li class="poster li9">
+<a href="http://baidu.hz.letv.com/kan/a2Gjs?fr=v.baidu.com/browse" class="hb" target="_blank" title="1米8飞人逆天一扣" static="stp=hb&no=9">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/77c6a7efce1b9d1649bc7bf6f5deb48f8c54642a.jpg" alt="1米8飞人逆天一扣" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Gjs?fr=v.baidu.com/browse" class="title" target="_blank" title="1米8飞人逆天一扣" static="stp=hb&no=9">
+1米8飞人逆天一扣
+</a>
+</li>
+<li class="poster li10">
+<a href="http://baidu.hz.letv.com/kan/a2Gjb?fr=v.baidu.com/browse" class="hb" target="_blank" title="沃尔街球场与观众上演另类空接" static="stp=hb&no=10">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/d043ad4bd11373f091028f08a20f4bfbfbed0463.png" alt="沃尔街球场与观众上演另类空接" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Gjb?fr=v.baidu.com/browse" class="title" target="_blank" title="沃尔街球场与观众上演另类空接" static="stp=hb&no=10">
+沃尔街球场与观众上演另类空接
+</a>
+</li>
+</ul>
+</div></li>
+<li class="tang-body-item" monkey="info_sport_info_videos_3">
+<div class="picarea"  monkeyconfig="event=click&amp;to=play">
+<ul class="bd" static="bl=info_sport_football&to=play"  monkey="info_sport_football" monkeyconfig="event=click&amp;to=play">
+<li class="poster li1 li-edge">
+<a href="http://baidu.hz.letv.com/kan/a2PQv?fr=v.baidu.com/browse" class="hb" target="_blank" title="盘点伊布国家队十佳球" static="stp=hb&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/bd3eb13533fa828b75207f74fb1f4134970a5a22.png" alt="盘点伊布国家队十佳球" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2PQv?fr=v.baidu.com/browse" class="title" target="_blank" title="盘点伊布国家队十佳球" static="stp=hb&no=1">
+盘点伊布国家队十佳球
+</a>
+</li>
+<li class="poster li2">
+<a href="http://baidu.hz.letv.com/kan/a2PQX?fr=v.baidu.com/browse" class="hb" target="_blank" title="回顾劳尔皇马时期十佳球" static="stp=hb&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/314e251f95cad1c87b1c1eb0793e6709c83d5186.png" alt="回顾劳尔皇马时期十佳球" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2PQX?fr=v.baidu.com/browse" class="title" target="_blank" title="回顾劳尔皇马时期十佳球" static="stp=hb&no=2">
+回顾劳尔皇马时期十佳球
+</a>
+</li>
+<li class="poster li3">
+<a href="http://baidu.hz.letv.com/kan/a2PAI?fr=v.baidu.com/browse" class="hb" target="_blank" title="巴萨天王梅西肆虐皇马集锦" static="stp=hb&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/a6efce1b9d16fdfa1c9c2579b28f8c5495ee7bb1.png" alt="巴萨天王梅西肆虐皇马集锦" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2PAI?fr=v.baidu.com/browse" class="title" target="_blank" title="巴萨天王梅西肆虐皇马集锦" static="stp=hb&no=3">
+巴萨天王梅西肆虐皇马集锦
+</a>
+</li>
+<li class="poster li4">
+<a href="http://baidu.hz.letv.com/kan/a2PXg?fr=v.baidu.com/browse" class="hb" target="_blank" title="贝尔16年欧洲杯预选赛进球集合" static="stp=hb&no=4">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/0b7b02087bf40ad125be2574512c11dfa8eccecb.png" alt="贝尔16年欧洲杯预选赛进球集合" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2PXg?fr=v.baidu.com/browse" class="title" target="_blank" title="贝尔16年欧洲杯预选赛进球集合" static="stp=hb&no=4">
+贝尔16年欧洲杯预选赛进球集合
+</a>
+</li>
+<li class="poster li5">
+<a href="http://baidu.hz.letv.com/kan/a2PXX?fr=v.baidu.com/browse" class="hb" target="_blank" title="追忆罗本14/15赛季十佳球" static="stp=hb&no=5">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/5fdf8db1cb134954cdf30bf3504e9258d0094abc.png" alt="追忆罗本14/15赛季十佳球" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2PXX?fr=v.baidu.com/browse" class="title" target="_blank" title="追忆罗本14/15赛季十佳球" static="stp=hb&no=5">
+追忆罗本14/15赛季十佳球
+</a>
+</li>
+<li class="poster li6 li-edge">
+<a href="http://baidu.hz.letv.com/kan/a2G5T?fr=v.baidu.com/browse" class="hb" target="_blank" title="皇马官方回顾上赛季C罗48粒球" static="stp=hb&no=6">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/472309f79052982210ddda54d1ca7bcb0b46d4bf.png" alt="皇马官方回顾上赛季C罗48粒球" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2G5T?fr=v.baidu.com/browse" class="title" target="_blank" title="皇马官方回顾上赛季C罗48粒球" static="stp=hb&no=6">
+皇马官方回顾上赛季C罗48粒球
+</a>
+</li>
+<li class="poster li7">
+<a href="http://baidu.hz.letv.com/kan/a2PNr?fr=v.baidu.com/browse" class="hb" target="_blank" title="穆帅遭罚1场禁赛+5万英镑" static="stp=hb&no=7">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/ac345982b2b7d0a29f56e60acdef76094a369a8e.png" alt="穆帅遭罚1场禁赛+5万英镑" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2PNr?fr=v.baidu.com/browse" class="title" target="_blank" title="穆帅遭罚1场禁赛+5万英镑" static="stp=hb&no=7">
+穆帅遭罚1场禁赛+5万英镑
+</a>
+</li>
+<li class="poster li8">
+<a href="http://baidu.hz.letv.com/kan/a2Grd?fr=v.baidu.com/browse" class="hb" target="_blank" title="十大令人惋惜的错失进球" static="stp=hb&no=8">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/0823dd54564e925816aa64799a82d158cdbf4e8f.png" alt="十大令人惋惜的错失进球" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Grd?fr=v.baidu.com/browse" class="title" target="_blank" title="十大令人惋惜的错失进球" static="stp=hb&no=8">
+十大令人惋惜的错失进球
+</a>
+</li>
+<li class="poster li9">
+<a href="http://baidu.hz.letv.com/kan/a2PQz?fr=v.baidu.com/browse" class="hb" target="_blank" title="世界各地小梅西炫酷技巧大PK" static="stp=hb&no=9">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/8694a4c27d1ed21bf922cd72ab6eddc450da3fba.png" alt="世界各地小梅西炫酷技巧大PK" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2PQz?fr=v.baidu.com/browse" class="title" target="_blank" title="世界各地小梅西炫酷技巧大PK" static="stp=hb&no=9">
+世界各地小梅西炫酷技巧大PK
+</a>
+</li>
+<li class="poster li10">
+<a href="http://baidu.hz.letv.com/kan/a2Gfo?fr=v.baidu.com/browse" class="hb" target="_blank" title="唯美MV演绎厄祖仙风道骨" static="stp=hb&no=10">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/1e30e924b899a9010caeb9a11b950a7b0308f58a.png" alt="唯美MV演绎厄祖仙风道骨" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.hz.letv.com/kan/a2Gfo?fr=v.baidu.com/browse" class="title" target="_blank" title="唯美MV演绎厄祖仙风道骨" static="stp=hb&no=10">
+唯美MV演绎厄祖仙风道骨
+</a>
+</li>
+</ul>
+</div></li>
+</ul>
+</div>
+</div>
+<div class="sec-right">
+<div class="header">
+<h3>精彩集锦</h3>
+</div>
+<ul id="info_sport_wonderful" class="smallVideos" static="bl=info_sport_wonderful&to=play"  monkey="info_sport_wonderful" monkeyconfig="event=click&amp;to=play">
+<li class="item first">
+<a href="http://baidu.hz.letv.com/kan/a2i4n?fr=v.baidu.com/browse" class="hb" target="_blank" title="莱万苏神十佳球PK" static="stp=title&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/0b46f21fbe096b63557ef6ff0a338744ebf8ac3e.jpg" alt="莱万苏神十佳球PK" />
+<span class="top-playicon"></span>
+<span class="title">莱万苏神十佳球PK</span>
+</a>
+</li>
+<li class="item ">
+<a href="http://baidu.hz.letv.com/kan/a2f0H?fr=v.baidu.com/browse" class="hb" target="_blank" title="年度最强过人秀" static="stp=title&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/9922720e0cf3d7cae52697d9f41fbe096a63a949.jpg" alt="年度最强过人秀" />
+<span class="top-playicon"></span>
+<span class="title">年度最强过人秀</span>
+</a>
+</li>
+<li class="item ">
+<a href="http://baidu.hz.letv.com/kan/a2i4u?fr=v.baidu.com/browse" class="hb" target="_blank" title="街球巨星虐框合集" static="stp=title&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/0ff41bd5ad6eddc465841c543fdbb6fd52663339.jpg" alt="街球巨星虐框合集" />
+<span class="top-playicon"></span>
+<span class="title">街球巨星虐框合集</span>
+</a>
+</li>
+</ul></div>
+</div>
+<div style="margin-bottom: 12px; display:none;">
+<iframe src="http://baidu.lecai.com/page/zhuanti/baidu/video_w984.shtml?agentId=5440&stats=info" width="984" height="90" align="center,center" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+</div>
+<div class="con-sec" id="sec-amuse">
+<div class="sec-main"><div class="picarea"  monkeyconfig="event=click&amp;to=play">
+<div class="hd">
+<h3>搞笑</h3>
+</div>
+<ul class="bd" static="bl=info_amuse_new&to=play"  monkey="info_amuse_new" monkeyconfig="event=click&amp;to=play">
+<li class="poster li1 li-edge">
+<a href="http://baidu.ku6.com/kan/a2z3Q?fr=v.baidu.com/browse" class="hb" target="_blank" title="狗狗玩弄小宝宝的精彩配合" static="stp=hb&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/cf1b9d16fdfaaf51bcac8f268a5494eef11f7adf.jpg" alt="狗狗玩弄小宝宝的精彩配合" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.ku6.com/kan/a2z3Q?fr=v.baidu.com/browse" class="title" target="_blank" title="狗狗玩弄小宝宝的精彩配合" static="stp=hb&no=1">
+狗狗玩弄小宝宝的精彩配合
+</a>
+</li>
+<li class="poster li2">
+<a href="http://baidu.ku6.com/kan/a2z3T?fr=v.baidu.com/browse" class="hb" target="_blank" title="汪星人玩扑克爆笑" static="stp=hb&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/3bf33a87e950352adb472c915543fbf2b2118b00.jpg" alt="汪星人玩扑克爆笑" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.ku6.com/kan/a2z3T?fr=v.baidu.com/browse" class="title" target="_blank" title="汪星人玩扑克爆笑" static="stp=hb&no=2">
+汪星人玩扑克爆笑
+</a>
+</li>
+<li class="poster li3">
+<a href="http://baidu.ku6.com/kan/a2z30?fr=v.baidu.com/browse" class="hb" target="_blank" title="盘点那些闪瞎眼的“照骗” 　" static="stp=hb&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/0eb30f2442a7d933607aeaeaab4bd11372f0015c.jpg" alt="盘点那些闪瞎眼的“照骗” 　" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.ku6.com/kan/a2z30?fr=v.baidu.com/browse" class="title" target="_blank" title="盘点那些闪瞎眼的“照骗” 　" static="stp=hb&no=3">
+盘点那些闪瞎眼的“照骗” 　
+</a>
+</li>
+<li class="poster li4">
+<a href="http://baidu.ku6.com/kan/a2z3K?fr=v.baidu.com/browse" class="hb" target="_blank" title="健身球花样作死合集" static="stp=hb&no=4">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/b21c8701a18b87d6f304a586010828381e30fde1.jpg" alt="健身球花样作死合集" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.ku6.com/kan/a2z3K?fr=v.baidu.com/browse" class="title" target="_blank" title="健身球花样作死合集" static="stp=hb&no=4">
+健身球花样作死合集
+</a>
+</li>
+<li class="poster li5">
+<a href="http://baidu.ku6.com/kan/a2z31?fr=v.baidu.com/browse" class="hb" target="_blank" title="盘点儿时最崩溃的一幕" static="stp=hb&no=5">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/574e9258d109b3def8ceedf1cabf6c81800a4c31.jpg" alt="盘点儿时最崩溃的一幕" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.ku6.com/kan/a2z31?fr=v.baidu.com/browse" class="title" target="_blank" title="盘点儿时最崩溃的一幕" static="stp=hb&no=5">
+盘点儿时最崩溃的一幕
+</a>
+</li>
+<li class="poster li6 li-edge">
+<a href="http://baidu.ku6.com/kan/a2zLl?fr=v.baidu.com/browse" class="hb" target="_blank" title="小萝莉第一次跳水，笑死人 　" static="stp=hb&no=6">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/63d0f703918fa0ece5b46d94209759ee3d6ddb3c.jpg" alt="小萝莉第一次跳水，笑死人 　" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.ku6.com/kan/a2zLl?fr=v.baidu.com/browse" class="title" target="_blank" title="小萝莉第一次跳水，笑死人 　" static="stp=hb&no=6">
+小萝莉第一次跳水，笑死人 　
+</a>
+</li>
+<li class="poster li7">
+<a href="http://baidu.ku6.com/kan/a2zLE?fr=v.baidu.com/browse" class="hb" target="_blank" title="呆萌小男孩捡地上的球 　" static="stp=hb&no=7">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/c8177f3e6709c93d0cb0076e993df8dcd00054ec.jpg" alt="呆萌小男孩捡地上的球 　" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.ku6.com/kan/a2zLE?fr=v.baidu.com/browse" class="title" target="_blank" title="呆萌小男孩捡地上的球 　" static="stp=hb&no=7">
+呆萌小男孩捡地上的球 　
+</a>
+</li>
+<li class="poster li8">
+<a href="http://baidu.ku6.com/kan/a2zLH?fr=v.baidu.com/browse" class="hb" target="_blank" title="给两只猫配上神对话" static="stp=hb&no=8">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/6159252dd42a283425183f925db5c9ea14cebfe8.jpg" alt="给两只猫配上神对话" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.ku6.com/kan/a2zLH?fr=v.baidu.com/browse" class="title" target="_blank" title="给两只猫配上神对话" static="stp=hb&no=8">
+给两只猫配上神对话
+</a>
+</li>
+<li class="poster li9">
+<a href="http://baidu.ku6.com/kan/a2zLA?fr=v.baidu.com/browse" class="hb" target="_blank" title="好糗！大白熊犬頻漏接食物" static="stp=hb&no=9">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/7e3e6709c93d70cf46f7a394fedcd100baa12b1d.jpg" alt="好糗！大白熊犬頻漏接食物" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.ku6.com/kan/a2zLA?fr=v.baidu.com/browse" class="title" target="_blank" title="好糗！大白熊犬頻漏接食物" static="stp=hb&no=9">
+好糗！大白熊犬頻漏接食物
+</a>
+</li>
+<li class="poster li10">
+<a href="http://baidu.ku6.com/kan/a2XA3?fr=v.baidu.com/browse" class="hb" target="_blank" title="作死街头强行抱走别人女票" static="stp=hb&no=10">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/7dd98d1001e93901c80d35a97dec54e736d1961e.jpg" alt="作死街头强行抱走别人女票" />
+<span class="playicon"></span>
+</a>
+<a href="http://baidu.ku6.com/kan/a2XA3?fr=v.baidu.com/browse" class="title" target="_blank" title="作死街头强行抱走别人女票" static="stp=hb&no=10">
+作死街头强行抱走别人女票
+</a>
+</li>
+</ul>
+</div></div>
+<div class="sec-right">
+<div class="header">
+<h3>精彩视频</h3>
+</div>
+<ul id="info_amuse_wonderful" class="smallVideos" static="bl=info_amuse_wonderful&to=play"  monkey="info_amuse_wonderful" monkeyconfig="event=click&amp;to=play">
+<li class="item first">
+<a href="http://baidu.ku6.com/kan/a2OcC?fr=v.baidu.com/browse" class="hb" target="_blank" title="震精！叶良辰赵日天公然挑战交警" static="stp=title&no=1">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/91ef76c6a7efce1b66d1715da951f3deb58f65ab.jpg" alt="震精！叶良辰赵日天公然挑战交警" />
+<span class="top-playicon"></span>
+<span class="title">震精！叶良辰赵日天公然挑战交警</span>
+</a>
+</li>
+<li class="item ">
+<a href="http://baidu.ku6.com/kan/a2z3t?fr=v.baidu.com/browse" class="hb" target="_blank" title="目测脑震荡！老爸的破冰之举" static="stp=title&no=2">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/a5c27d1ed21b0ef488e996c7dbc451da81cb3e21.jpg" alt="目测脑震荡！老爸的破冰之举" />
+<span class="top-playicon"></span>
+<span class="title">目测脑震荡！老爸的破冰之举</span>
+</a>
+</li>
+<li class="item ">
+<a href="http://baidu.ku6.com/kan/a2bju?fr=v.baidu.com/browse" class="hb" target="_blank" title="宝宝被太阳光照到时的表情萌翻了 　" static="stp=title&no=3">
+<img src="http://hiphotos.baidu.com/baidu/pic/item/9e3df8dcd100baa10446872e4110b912c8fc2e39.jpg" alt="宝宝被太阳光照到时的表情萌翻了 　" />
+<span class="top-playicon"></span>
+<span class="title">宝宝被太阳光照到时的表情萌翻了 　</span>
+</a>
+</li>
+</ul></div>
+</div>
+<div class="con-sec" id="sec-woman" style="display:none">
+<h4 class="titleWoman">美女</h4>
+</div>
+</div>
+<div id="footer">
+<div class="footer" monkey="footer" alog-alias="footer">
+<div class="links">
+<a href="http://service.baidu.com/question?prod_en=video" target="_blank">帮助</a>&nbsp;|&nbsp;<a href="http://v.baidu.com/videoop.html" target="_blank">互联网视频开放协议</a>&nbsp;|&nbsp;<a href="http://qingting.baidu.com/index?pid=4" target="_blank">意见反馈</a><br />
+<a href="#" onclick="h(this,'http://www.baidu.com/');" class="action-sethome">把百度设为首页</a>&nbsp;|&nbsp;<a href="http://top.baidu.com/" target="_blank">搜索风云榜</a>&nbsp;|&nbsp;<a href="http://home.baidu.com/" target="_blank">关于百度</a>
+</div>
+<p>百度视频搜索结果源于互联网视频网站，系计算机系统根据搜索热度自动排列，不代表百度赞成被搜索网站的内容或立场。</p>
+<p class="copyright">&copy;&nbsp;2015&nbsp;Baidu&nbsp;<a href="http://www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;|&nbsp;<a href="http://v.baidu.com/license.html" target="_blank">网络视听许可证0110516号</a></p>
+</div>
+</div>
+<script src="http://img.baidu.com/hunter/alog/alog.min.js"></script>
+<script>
+        var pageId='page-video-info';
+        (function() {
+            alog('set', 'alias', {
+                monkey: 'http://img.baidu.com/hunter/alog/monkey.min.js',
+                element: 'http://img.baidu.com/hunter/alog/element.min.js'
+            });
+            alog('require', ['monkey', 'element'], function(monkey, element){
+                element.an("group", "monkey");
+                monkey.create({
+                    page: pageId,
+                    pid: 241,
+                    p: 104,
+                    hid: 337,
+                    postUrl: 'http://nsclick.baidu.com/u.gif',
+                    reports: {
+                        refer: 1,
+                        staytime: 1
+                    }
+                });
+            });
+            alog('monkey.send', 'pageview', {now: +new Date});
+
+            alog('monkey.on', 'send', function(data){
+                if ( data.xp && data.xp.indexOf('(searchContent)') > -1 ) {
+                    alog("monkey.set", "postUrl", "");
+                } else {
+                    alog("monkey.set", "postUrl", "http://nsclick.baidu.com/u.gif");
+                }
+            });
+
+        }());
+    </script>
+<script>with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://img.baidu.com/hunter/video.js?st='+~(new Date()/864e5)];</script><script type="text/html" id="index_banner_top_tpl">
+<%
+    var item = data[0];
+    if( data && data.length >1 ){
+        item = data[Math.floor(Math.random() * data.length)];
+    }
+%>
+<% if(item && item.hot_day == 1){ %>
+    <div class="ad-top-banner" > 
+        <a href="<%=item.url%>" target="_blank" id="linkAdv984" static="stp=adv_top_984_90">
+            <img src="<%=item.imgh_url%>" alt="<%=item.title%>"/>
+        </a>
+        <a href="javascript:void(0)" class="btnTopBannerClose"></a>
+    </div>
+<% } %>
+</script>
+<script type="text/html" id="index_banner_bottom_tpl">
+<%
+    var item = data[0];
+    if( data && data.length >1 ){
+        item = data[Math.floor(Math.random() * data.length)];
+    }
+%>
+<% if(item && item.hot_day == 1){ %>
+	<div> 
+	<a href="<%=item.url%>" target="_blank" static="stp=iph_promote_984_83">
+		<img src="<%=item.imgh_url%>" alt="<%=item.title%>" />
+	</a>
+	</div>
+<% } %>
+</script>
+<script type="text/html" id="index_right_top_tpl">
+<%
+    var item = data[0];
+    if( data && data.length >1 ){
+        item = data[Math.floor(Math.random() * data.length)];
+    }
+%>
+<% if(item && item.hot_day == 1){ %>
+<a href="<%=item.url%>" target="_blank" static="stp=toplist_140_70" style="background:url(<%=item.imgh_url%>) 100% 100% no-repeat;"></a>
+<% } %>
+</script>
+<script type="text/html" id="index_right_float_tpl">
+<div class="index_AD_right_close">
+	<a title="右侧悬浮广告" class="close" href="javascript:void(0)"></a>
+</div>
+<div class="adContainer">
+
+<% var data = data || []; %>
+<% for(var i = 0, len = data.length; i < len; i++) { %>
+<% var item = data[i]; %>
+<div id="adRightFloat<%=i%>" 
+    class="index_AD_right_fixed
+    <% if( item.title ){ %> has-title <% } %>">
+    <% if (item.intro == 1) { %> index_AD_right_fixed_big<% } %> 
+	<a class="normal" target="_blank" href="" static="bl=index_AD_right_fixed&stp=adv_right_90">
+		<img  src="<%=item.imgh_url || item.imgv_url%>" /><% if (item.intro != 1 ) { %><%=item.title%><% } %>
+	</a>
+	<a title="<%=item.title%>" class="close" href="javascript:void(0)"></a>
+</div>
+<% } %>
+</div>
+</script>
+<div id="back-to-top" class="back-to-top" alog-alias="backTop">
+<ul class="bt-list">
+<li class="bt-top"><a href="#" id="back-to-top-btn" class="bt-btn-top" title="回到顶部"></a></li>
+<li class="bt-bottom">
+<a target="_blank" href="http://qingting.baidu.com/index?pid=4"  class="bt-btn-feedback" id="showFeed">反馈</a>
+</li>
+</ul>
+</div>
+<div class="index-right-float" id="index_right_float" static="bl=adv_float_right" monkey="adv_float_right"></div>
+</body><script type="text/javascript" src="http://vs5.bdstatic.com/browse_static/v3/common/pkg/common_sync_js_0_a4e12a09.js"></script>
+<script type="text/javascript">require.resourceMap({"res":{"common:static\/ui\/carousel\/jCarouselLite.js":{"url":"http:\/\/vs6.bdstatic.com\/browse_static\/v3\/common\/ui\/carousel\/jCarouselLite_2ef10bec.js"}},"pkg":[]});</script><script type="text/javascript" src="http://vs6.bdstatic.com/browse_static/v3/common/pkg/common_sync_js_1_044081bf.js"></script><script type="text/javascript" src="http://vs6.bdstatic.com/browse_static/v3/common/pkg/common_video_5a87e05a.js"></script><script type="text/javascript" src="http://vs5.bdstatic.com/browse_static/v3/common/pkg/common_sync_js_4_7bc1e2e6.js"></script><script type="text/javascript" src="http://vs5.bdstatic.com/browse_static/v3/newinfo/widget/focus/focus_8925604.js"></script><script type="text/javascript" src="http://vs6.bdstatic.com/browse_static/v3/newinfo/widget/tabMode/tabMode_356641b.js"></script><script type="text/javascript" src="http://vs6.bdstatic.com/browse_static/v3/common/pkg/common_sync_js_2_7606a0ac.js"></script><script type="text/javascript" src="http://vs5.bdstatic.com/browse_static/v3/common/pkg/common_sync_js_3_96c73ced.js"></script><script type="text/javascript">
+!function(){			$.log('http://nsclick.baidu.com/p.gif?pid=104&tn=info&tpl=info');
+		}();
+!function(){	require('common:widget/video/userbar/userbar.js')('info');
+}();
+!function(){	require('common:widget/video/navmini/navmini.js')();
+}();
+!function(){    (function() {
+    	function log(src) {
+    		var t = new Date().getTime(),
+    			img = window['V_fix_img'+t] = new Image();
+    		img.onload = img.onerror = img.onabort = function() {
+    			img.onload = img.onerror = img.onabort = null;
+    			try {
+    				delete window['V_fix_img'+t];
+    				img = null;
+    			} catch(e) {
+    				img = null;
+    			}
+    		}
+    		img.src = src+'&r='+t;
+    	};
+    	var types = { movie: 21, tv: 22, show: 26, comic: 43, person: 50 };
+    	var bdvSugConfig = {
+    		form: 'bdvSearch',
+    		input: 'bdvSearchInput',
+    		num: 6,
+    		delay: 0,
+    		classname: 'bdv-qs-suggestion',
+    		onsubmit: function(evt) {
+    			log( 'http://nsclick.baidu.com/v.gif?pid=104&tn=sug&searchpage=info&s=zdjs&input=' + encodeURIComponent(evt.query) + '&wd=' + encodeURIComponent(evt.title) + ( evt.index ? '&li=' + evt.index : '' ) + ( evt.eventType ? '&eventtype=' + evt.eventType : '' ) );
+    		},
+    		onclicklink: function(evt) {
+    			log( 'http://nsclick.baidu.com/v.gif?pid=104&tn=sug&s=zdjs&bl=spa&input=' + encodeURIComponent(evt.query) + '&wd=' + encodeURIComponent(evt.title) + '&id=' + evt.id + '&ty=' + types[evt.type] + '&stp=' + evt.target + '&li=' + evt.index + '&u=' + encodeURIComponent(evt.url) );
+    		}
+    	};
+
+    	var sug = require("common:static/ui/suggestion/suggestion.js");
+    	sug(bdvSugConfig);
+    }());
+}();
+!function(){	require('common:widget/video/searchbox/searchbox.js')({
+		id: 'bdvSearch',
+				ismis: true,
+		    		pageTn: 'info'
+	});
+}();
+!function(){	require('common:widget/video/tabsearch/tabsearch.js')();
+}();
+!function(){    var trace = require('common:widget/video/bdv_trace/bdv_trace.js');
+    trace('info', '0');
+}();
+!function(){	window.bdvRecordConfig = {
+		proxy: location.protocol + '//' + location.host + '/browse_static/common/html/proxy_blank.html'
+	};
+
+    (function () {
+        var loginCheck = require('common:static/ui/loginCheck/loginCheck.js');
+        var url = 'http://vs3.bdstatic.com/pc_static/open/record/bdv-record-min.js?bdv=0924';
+        $.getScript(url, function () {
+            loginCheck(function (uinfo) {
+                if (uinfo.uid && uinfo.value) {
+                    try {
+                        bdvRecordAPI.init({
+                            islogin: true
+                        });
+                    } catch (e) {}
+                }
+            });
+        });
+    })();
+}();
+!function(){        var _ = require("common:static/vendor/underscore/underscore.js");
+        var tpl = _.template($("#index_right_shixiao_tpl").html());
+        $.ajax({
+            url: "http://v.baidu.com/staticapi/videoAd.json",
+            dataType: "jsonp",
+            jsonpCallback: "videoNewAd",
+            success: function(ret){
+                if (!ret || !ret.length || !ret[0]) return;
+                var item = ret[0].data.videos;
+                _.each(item, function(adItem){
+                    if (adItem.sub_title == "index_right_qipao"){
+                        if ($.cookie.getRaw("_bdvqipao") == -1){
+                            adItem.hot_week = 1;
+                            $.log("http://nsclick.baidu.com/u.gif?pid=104&bl=index_right_qipao&ext=close");
+                        } else {
+                            $.log("http://nsclick.baidu.com/u.gif?pid=104&bl=index_right_qipao&ext=open");
+                        }
+
+                        $("#index_right_shixiao").html(tpl({data: adItem}));
+
+                        $(".pop-wrap-big .pop-close").off("click").on("click", function(e){
+                            e.preventDefault();
+                            $(this).parent().hide()
+                                .next(".pop-wrap-small").show();
+                            $.cookie.setRaw("_bdvqipao", "-1", {
+                                expires: 3*24*60*60*1000
+                            });
+                        });
+
+                        return false;
+                    }
+                });
+            }
+        });
+        
+    }();
+!function(){require.async('common:widget/video/advList/advList.js',function(adv){
+    adv.push(function(){
+        return {"id":"index_right_top","classname":"index-right-top","bl":"adv_float_top","monkey":"adv_float_top"}
+    });
+});
+}();
+!function(){	require('common:widget/video/header/header.js')();
+}();
+!function(){				require.async(["common:static/ui/carousel/jCarouselLite.js", "common:static/vendor/jquery/jquery.js"],function(carousel,$){
+					var c = new carousel({
+								itemsTag:".bdv-carousel-item",
+								itemSize:370,
+								originalIndex:0,
+								duration:5000,
+								speed:400,
+								easing:null,
+								beforeStart:function(){},
+								afterEnd:function(a,b){
+									$(".bdv-carousel-dot li").removeClass("dot-selected");
+									$(".bdv-carousel-dot li").eq(Math.floor(a%5)).addClass("dot-selected");
+									//曝光统计
+									var showsize = document.getElementById('focusCarouselList').getBoundingClientRect().bottom;
+									if(showsize>-215) $.log('http://nsclick.baidu.com/u.gif?pid=104&tpl=info&bl=focus_area_poster_big&stp=picshow&ext='+showsize+'&i='+Math.floor(a%9));
+								},
+								visible:1,
+								step:1,
+								auto:true
+							});					
+
+					c.render("#focusCarouselList");
+					$("#focusCarousel .bdv-carousel-prev").on("click",function(){
+						c.prev();
+					});
+					$("#focusCarousel .bdv-carousel-next").on("click",function(){
+						c.next();
+					});
+					$("#focusCarousel").hover(function() {
+						$(this).children(".bdv-carousel-control").children("a").fadeIn();
+					},function(){
+						$(this).children(".bdv-carousel-control").children("a").fadeOut();	
+					});
+					$(".bdv-carousel-dot li").each(function(index,ele){
+						$(ele).on("mousemove",function(){
+							if(!$(this).hasClass("dot-selected")){
+								c.go(index);
+							}
+						})
+					});
+
+				});
+		}();
+!function(){	require("common:static/ui/tabSlider/tabSlider.js")("#info_china_info_videos").bdvTabSlider();	
+}();
+!function(){require.async("common:static/vendor/jquery/jquery.js",function($){
+	var li = $("#info_china_hot");
+		li.on("mouseover",".pic-item",function(){
+			$(this).addClass("pic-current")
+				   .siblings(".pic-item")
+				   .removeClass("pic-current");
+		});
+});
+}();
+!function(){	require("common:static/ui/tabSlider/tabSlider.js")("#info_ent_info_videos").bdvTabSlider();	
+}();
+!function(){	require("common:static/ui/tabSlider/tabSlider.js")("#info_sport_info_videos").bdvTabSlider();	
+}();
+!function(){$.ajax({
+    url: ' http://v.baidu.com/videoapi?page_name=cbgpopup&format=json&block_sign=list_pc_push',
+    dataType: "jsonp",
+    crossDomain: true,
+    scriptCharset: 'utf-8',
+    success: function (data) {
+        // data[0]['data']['videos'][0]['id'] = '0821-10:00$$0829-12:00';
+        // data[0]['data']['videos'][0]['update'] = '110';
+        if (data && data[0]['data']['videos'].length > 1) {
+            var getcookieid = data[0]['data']['videos'][0]['update'];
+            var cookieid = $.cookie.get(self.cookie);
+            if (getcookieid !== cookieid && parseInt(getcookieid, 10) !== 0) {
+                require("common:widget/video/push/push.js")(data[0]['data']['videos']);
+            } else {
+                                    $.getScript('http://static.pay.baidu.com/resource/tuisong/v1/tuiSong.js',function(){
+                        var t = new TuiSong();
+                    });
+                            }
+        } else {
+                            $.getScript('http://static.pay.baidu.com/resource/tuisong/v1/tuiSong.js',function(){
+                    var t = new TuiSong();
+                });
+                    }
+    }
+});
+
+window["h"] = function(obj, url){
+    if (document.all) {
+        obj.style.behavior = 'url(#default#homepage)';
+        obj.setHomePage(url);
+    }
+}
+}();
+!function(){	var loginCheck = require('common:static/ui/loginCheck/loginCheck.js');
+	require('common:static/ui/statistics/statistics.js');
+   	if ( location.hostname.match(/(?:\.baidu\.com$)|(?:\.hao123\.com$)/) ) {
+		var bdvref = $.cookie.get('bdvref');
+		if ( bdvref ) {
+			V.nsclick.setParam('VIDEO_FR', bdvref);
+		}
+	} else {
+		loginCheck(function(userinfo) {
+			if ( userinfo && userinfo.cookie && userinfo.cookie.bdvref ) {
+				V.nsclick.setParam('VIDEO_FR', userinfo.cookie.bdvref);
+			}
+		});
+	}
+
+															V.nsclick.setParam('tn', 'info');
+												V.nsclick.setParam('tpl', 'info');
+						}();
+!function(){$(function() {
+	$.getScript('http://cbjs.baidu.com/js/m.js', function() {
+		if ( window.BAIDU_CLB_fillSlotAsync ) {
+			$('.adm-union').each(function(index, item) {
+				var domid = item.getAttribute('id'),
+					uniodid = item.getAttribute('data-union');
+				if ( domid && uniodid ) {
+					BAIDU_CLB_fillSlotAsync(uniodid, domid);
+				}
+			});
+		}
+	});
+});
+}();
+!function(){require.async('common:widget/video/advList/advList.js',function(ADV){
+	ADV.init();
+});
+}();
+!function(){require.async('common:widget/video/advList/advList.js',function(adv){
+    adv.push(function(){
+        return {"id":"index_right_float","classname":"index-right-float","bl":"adv_float_right","monkey":"adv_float_right"}
+    });
+});
+}();
+!function(){		require("common:widget/global/backTop/backTop.js")();
+	}();
+!function(){			require('common:static/ui/responsive/responsive.js')();
+		}();
+</script></html>
+<!--06636367840490062602101611-->
+<script> var _trace_page_logid = 0663636784; </script>

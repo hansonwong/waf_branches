@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="d161c8f4-823b-4015-b8ed-b3e16be300ea" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="RulesDefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/controllers/RulesDefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/logic/BaseController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="654">
+              <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>insert</find>
+      <find>_is_result</find>
+      <find>checkResponseStatus</find>
+      <find>getRuleInfoNameByRealId</find>
+      <find>$tableal</find>
+      <find>$alertLogs</find>
+      <find>select</find>
+      <find>$dayInMonthFirst</find>
+      <find>sysStatusInfo_test</find>
+      <find>$modelCH</find>
+      <find>Aler</find>
+      <find>$start_dt</find>
+      <find>t_alertlogs</find>
+      <find>$log['rule_type_desc']</find>
+      <find>decode</find>
+      <find>$attack_ip_top50</find>
+      <find>getLastDay</find>
+      <find>$rule_type_name</find>
+      <find>$alert_logs_list</find>
+      <find>alert_test</find>
+      <find>AlertLogs</find>
+      <find>alert_test1</find>
+      <find>createCommand</find>
+      <find>realPath</find>
+      <find>$para</find>
+      <find>fnOpertion</find>
+      <find>bridgeType</find>
+      <find>update_system.sh</find>
+      <find>update_system</find>
+      <find>write</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\waf_branches\chuhuo_2.71\php\www\models</dir>
+      <dir>D:\waf_branches\chuhuo_2.71\php\www\views</dir>
+      <dir>D:\waf_branches\chuhuo_2.71\php</dir>
+      <dir>D:\waf_branches\chuhuo_2.71\php\FrameWork\yii2\advanced\vendor\kak</dir>
+      <dir>D:\waf_branches\chuhuo_2.71\php\www\controllers</dir>
+      <dir>D:\waf_branches\chuhuo_2.71\php\www</dir>
+    </dirStrings>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="ls" />
+      <command text="dir" />
+      <command text="div" />
+    </commandsHistory>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/www/models/IntelligentTrojanHorseSet.php" />
+        <option value="$PROJECT_DIR$/www/controllers/ByPassController.php" />
+        <option value="&lt;ede32245-19e8-4445-89fe-193aeba722b9&gt;/www/web/waf.php" />
+        <option value="$PROJECT_DIR$/www/views/misdeclaration-defend/index.php" />
+        <option value="$PROJECT_DIR$/www/models/SelfStudyRule.php" />
+        <option value="$PROJECT_DIR$/www/models/RuleModel.php" />
+        <option value="$PROJECT_DIR$/www/views/rules/index.php" />
+        <option value="$PROJECT_DIR$/www/controllers/MisdeclarationDefendController.php" />
+        <option value="$PROJECT_DIR$/www/views/misdeclaration-defend/edit.php" />
+        <option value="$PROJECT_DIR$/www/modelLogs/Viruslogs.php" />
+        <option value="&lt;ede32245-19e8-4445-89fe-193aeba722b9&gt;/www/views/rule-custom-defend-policy/edit-component.php" />
+        <option value="&lt;ede32245-19e8-4445-89fe-193aeba722b9&gt;/www/config/main-frontend.php" />
+        <option value="$PROJECT_DIR$/www/controllers/RulesSetController.php" />
+        <option value="$PROJECT_DIR$/www/logic/waf/models/WafRuleModel.php" />
+        <option value="$PROJECT_DIR$/www/views/web-site/group-policy.php" />
+        <option value="$PROJECT_DIR$/www/views/web-site/web-site-policy.php" />
+        <option value="$PROJECT_DIR$/www/controllers/WebSiteController.php" />
+        <option value="$PROJECT_DIR$/www/models/IpFilterSet.php" />
+        <option value="$PROJECT_DIR$/www/controllers/CclogsController.php" />
+        <option value="$PROJECT_DIR$/www/controllers/OutLinkLogController.php" />
+        <option value="$PROJECT_DIR$/www/controllers/DdosController.php" />
+        <option value="$PROJECT_DIR$/www/logic/waf/helpers/WafModels.php" />
+        <option value="$PROJECT_DIR$/www/views/error-list/errorlist-add.php" />
+        <option value="$PROJECT_DIR$/www/controllers/ErrorListController.php" />
+        <option value="$PROJECT_DIR$/www/controllers/IpFilterSetController.php" />
+        <option value="$PROJECT_DIR$/www/views/ip-filter-set/index.php" />
+        <option value="$PROJECT_DIR$/www/controllers/RulesController.php" />
+        <option value="$PROJECT_DIR$/www/controllers/RulesDefaultController.php" />
+        <option value="$PROJECT_DIR$/www/views/rules-default/add.php" />
+        <option value="$PROJECT_DIR$/www/views/rules-default/index.php" />
+        <option value="$PROJECT_DIR$/www/views/rules-set/add.php" />
+        <option value="$PROJECT_DIR$/www/logic/waf/models/AlertLogs.php" />
+        <option value="$PROJECT_DIR$/www/controllers/SysStatusInfoController.php" />
+        <option value="$PROJECT_DIR$/www/controllers/ReportAttackController.php" />
+        <option value="&lt;ede32245-19e8-4445-89fe-193aeba722b9&gt;/www/runtime/logs/app.log" />
+        <option value="$PROJECT_DIR$/www/controllers/BaseConfigController.php" />
+        <option value="$PROJECT_DIR$/www/logic/waf/report/ReportAttack.php" />
+        <option value="$PROJECT_DIR$/www/controllers/InvadeController.php" />
+        <option value="$PROJECT_DIR$/www/logic/waf/models/AlertLogsCH.php" />
+        <option value="$PROJECT_DIR$/www/controllers/TestController.php" />
+        <option value="$PROJECT_DIR$/www/controllers/IntelligentTrojanHorseSetController.php" />
+        <option value="$PROJECT_DIR$/www/logic/waf/helpers/WafHelper.php" />
+        <option value="$PROJECT_DIR$/www/views/intelligent-trojan-horse-set/index.php" />
+        <option value="$PROJECT_DIR$/www/views/uploaded-file-log/index.php" />
+        <option value="$PROJECT_DIR$/www/controllers/UploadedFileLogController.php" />
+        <option value="$PROJECT_DIR$/www/views/uploaded-file-log/report.php" />
+        <option value="$PROJECT_DIR$/www/views/invade/index.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/bower-asset/bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/bower-asset/jquery.inputmask/package.json" />
+      <path value="$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/bower-asset/jquery/package.json" />
+      <path value="$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/bower-asset/punycode/package.json" />
+      <path value="$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/bower-asset/typeahead.js/package.json" />
+      <path value="$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/bower-asset/yii2-pjax/package.json" />
+      <path value="$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/bower/bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/bower/typeahead.js/package.json" />
+      <path value="$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/bower/yii2-pjax/package.json" />
+      <path value="$PROJECT_DIR$/www/web/assets/h-ui/lib/echarts/2.2.7/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="20" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="820" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\waf_branches\chuhuo_2.71\php\www\views" />
+      <recent name="D:\waf_branches\chuhuo_2.71\php\www\controllers" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://172.16.2.170:444" />
+          <option name="urlPath" value="/waf.php" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d161c8f4-823b-4015-b8ed-b3e16be300ea" name="Default" comment="" />
+      <created>1513646830393</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1513646830393</updated>
+      <workItem from="1513646831675" duration="385000" />
+      <workItem from="1513647250413" duration="15401000" />
+      <workItem from="1513731772414" duration="324000" />
+      <workItem from="1513734444671" duration="4170000" />
+      <workItem from="1514360860593" duration="9000" />
+      <workItem from="1515477489910" duration="2047000" />
+      <workItem from="1515547280121" duration="1564000" />
+      <workItem from="1515556226619" duration="10470000" />
+      <workItem from="1515630918695" duration="26653000" />
+      <workItem from="1515717818295" duration="11000" />
+      <workItem from="1515721197066" duration="23273000" />
+      <workItem from="1515976486929" duration="1264000" />
+      <workItem from="1515977819467" duration="4433000" />
+      <workItem from="1516003441574" duration="7014000" />
+      <workItem from="1516064445323" duration="16619000" />
+      <workItem from="1516149470327" duration="19820000" />
+      <workItem from="1516235600522" duration="27002000" />
+      <workItem from="1516326701185" duration="9000" />
+      <workItem from="1516327553469" duration="5455000" />
+      <workItem from="1516334259858" duration="6670000" />
+      <workItem from="1516349409739" duration="105000" />
+      <workItem from="1516349562953" duration="249000" />
+      <workItem from="1516350172165" duration="4965000" />
+      <workItem from="1516581306453" duration="546000" />
+      <workItem from="1516582522680" duration="17101000" />
+      <workItem from="1516679041000" duration="400000" />
+      <workItem from="1516687345493" duration="253000" />
+      <workItem from="1516779709412" duration="6161000" />
+      <workItem from="1516864404436" duration="10408000" />
+      <workItem from="1516926678576" duration="3183000" />
+      <workItem from="1516930433319" duration="9975000" />
+      <workItem from="1516957157253" duration="14000" />
+      <workItem from="1516957644798" duration="2981000" />
+      <workItem from="1517185909793" duration="30167000" />
+      <workItem from="1517272680214" duration="245000" />
+      <workItem from="1519283087774" duration="4351000" />
+      <workItem from="1519288314281" duration="62000" />
+      <workItem from="1519369210238" duration="686000" />
+      <workItem from="1519370534178" duration="52000" />
+      <workItem from="1520328617331" duration="738000" />
+      <workItem from="1520383156027" duration="673000" />
+      <workItem from="1520843517501" duration="1305000" />
+      <workItem from="1520846991548" duration="90000" />
+      <workItem from="1520921862652" duration="3531000" />
+      <workItem from="1520926611946" duration="7924000" />
+      <workItem from="1520989641730" duration="8434000" />
+      <workItem from="1521011149281" duration="1261000" />
+      <workItem from="1521077039397" duration="608000" />
+      <workItem from="1521095276083" duration="15000" />
+      <workItem from="1521618834877" duration="796000" />
+      <workItem from="1521769233309" duration="730000" />
+      <workItem from="1521786239450" duration="606000" />
+      <workItem from="1522314838176" duration="720000" />
+      <workItem from="1522319467085" duration="4000" />
+      <workItem from="1523325672945" duration="5000" />
+      <workItem from="1523328311417" duration="81000" />
+      <workItem from="1523354543057" duration="48000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="292066000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32972974" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32972974" />
+      <window_info id="Remote Host" order="2" weight="0.19412607" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22206303" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="bottom" id="REST Client" order="8" weight="0.17972973" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="7" weight="0.32972974" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="File Transfer" order="8" weight="0.32972974" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/www/logic/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/controllers/RulesDefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/logic/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/widget/AdminListConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+          <folding>
+            <element signature="e#119#125#0" expanded="true" />
+            <element signature="e#125#131#0" expanded="true" />
+            <element signature="e#131#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/controllers/ErrorListController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="98" column="21" lean-forward="true" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/views/error-list/errorlist-add.php" />
+    <entry file="file://$PROJECT_DIR$/www/controllers/IpFilterSetController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="96" column="52" lean-forward="true" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/views/ip-filter-set/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="71" column="60" selection-start-line="71" selection-start-column="60" selection-end-line="71" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/views/rules/index.php" />
+    <entry file="file://$PROJECT_DIR$/www/controllers/RulesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="144" column="15" lean-forward="true" selection-start-line="144" selection-start-column="15" selection-end-line="144" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/views/rules-default/index.php" />
+    <entry file="file://$PROJECT_DIR$/www/views/rules-set/add.php" />
+    <entry file="file://$PROJECT_DIR$/www/views/rules-default/add.php" />
+    <entry file="file://$PROJECT_DIR$/www/controllers/RulesSetController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="322" column="19" selection-start-line="322" selection-start-column="19" selection-end-line="322" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/logic/waf/models/SelectList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/models/ActionCat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" selection-start-line="18" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/kak/clickhouse/ActiveRecord.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/yiisoft/yii2/base/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/kak/clickhouse/Schema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/yiisoft/yii2/db/ActiveQuery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="309" column="20" selection-start-line="309" selection-start-column="20" selection-end-line="309" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/yiisoft/yii2/db/Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="163" column="20" selection-start-line="163" selection-start-column="20" selection-end-line="163" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/config/main-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="87" column="19" lean-forward="true" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/models/SelfStudyRule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/console/controllers/TimerReportController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/views/layouts/chart-main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/controllers/BaseConfigController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/kak/clickhouse/Connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1096">
+          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrameWork/yii2/advanced/vendor/kak/clickhouse/Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="141" column="20" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/logic/waf/models/AlertLogsCH.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/controllers/SysStatusInfoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/controllers/ReportAttackController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="63" column="57" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/controllers/TestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/controllers/InvadeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6494">
+          <caret line="391" column="22" selection-start-line="391" selection-start-column="22" selection-end-line="391" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/logic/waf/helpers/WafHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="123" column="9" lean-forward="true" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/logic/waf/report/ReportAttack.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1122">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/modelLogs/UploadedFileLogs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/views/out-link-log/index.php" />
+    <entry file="file://$PROJECT_DIR$/www/views/intelligent-trojan-horse-set/index.php" />
+    <entry file="file://$PROJECT_DIR$/www/controllers/IntelligentTrojanHorseSetController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/controllers/VulnerabilityScanController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="224" selection-start-line="224" selection-end-line="249" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/views/uploaded-file-log/index.php" />
+    <entry file="file://$PROJECT_DIR$/www/views/invade/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="273" lean-forward="true" selection-start-line="273" selection-end-line="273" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/views/uploaded-file-log/report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/views/vulnerability-scan/index.php" />
+    <entry file="file://$PROJECT_DIR$/www/controllers/UploadedFileLogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="286" column="45" selection-start-line="286" selection-start-column="45" selection-end-line="286" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/controllers/UpgradeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/controllers/RulesDefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/widget/AdminListConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1029">
+          <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+          <folding>
+            <element signature="e#119#125#0" expanded="true" />
+            <element signature="e#125#131#0" expanded="true" />
+            <element signature="e#131#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/logic/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

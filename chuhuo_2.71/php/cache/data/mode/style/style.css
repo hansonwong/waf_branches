@@ -1,0 +1,13 @@
+﻿@charset "utf-8";
+/* CSS Document 2017-03-30 姚秀萍*/
+body {margin:0; padding:0; font:13px/1.5 \5FAE\8F6F\96C5\9ED1, \5b8b\4f53,Arial,sans-serif; color:#555;}
+
+/*---出错页面---*/
+.error{ width:420px; height:160px; padding:0 0 0 185px; margin:200px auto 0 auto; color:#777; background:url(../images/error.png);_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src="../../skin/blue/images/error.png");}
+.error p{ font-family:Arial, Helvetica, Microsoft YaHei,"微软雅黑",Verdana, Tahoma;  font-size:65px; color:#999;  padding:5px 0; line-height:100%; font-weight:bold; }
+.error p b{ color:#ec4040; }
+.error h3{ font-size:15px; border-bottom:1px solid #ccc; padding:10px 0; color:#777; margin-bottom:10px;}
+.error span{color:#ec4040;}
+.error a{color:#015fc0;}
+

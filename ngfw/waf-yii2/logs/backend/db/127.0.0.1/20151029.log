@@ -1,0 +1,183 @@
+2015-10-29 19:30:26 [127.0.0.1][-][tbjvrkuafkhd5c5305d4f3qki5][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=yii2basic
+    in E:\yii2\models\User.php:82
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 19:30:26 [127.0.0.1][-][tbjvrkuafkhd5c5305d4f3qki5][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=yii2basic
+    in E:\yii2\models\User.php:82
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 19:30:28 [127.0.0.1][-][tbjvrkuafkhd5c5305d4f3qki5][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=yii2basic
+    in E:\yii2\models\User.php:82
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 19:30:28 [127.0.0.1][-][tbjvrkuafkhd5c5305d4f3qki5][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in E:\yii2\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 E:\yii2\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 E:\yii2\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 E:\yii2\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 E:\yii2\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 E:\yii2\vendor\yiisoft\yii2\db\Schema.php(477): yii\db\Connection->getSlavePdo()
+#5 E:\yii2\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('<span class="st...')
+#6 E:\yii2\vendor\yiisoft\yii2\db\Command.php(172): yii\db\Connection->quoteValue('<span class="st...')
+#7 E:\yii2\vendor\yiisoft\yii2\db\Command.php(806): yii\db\Command->getRawSql()
+#8 E:\yii2\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#9 E:\yii2\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#10 E:\yii2\vendor\yiisoft\yii2\db\ActiveQuery.php(300): yii\db\Query->one('<span class="ke...')
+#11 E:\yii2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveQuery->one()
+#12 E:\yii2\models\User.php(82): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#13 E:\yii2\models\LoginForm.php(73): models\User::findByUsername('<span class="st...')
+#14 E:\yii2\models\LoginForm.php(44): models\LoginForm->getUser()
+#15 [internal function]: models\LoginForm->validatePassword('<span class="st...', '<span class="ke...')
+#16 E:\yii2\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...')
+#17 E:\yii2\vendor\yiisoft\yii2\validators\Validator.php(240): yii\validators\InlineValidator->validateAttribute(Object(models\LoginForm), '<span class="st...')
+#18 E:\yii2\vendor\yiisoft\yii2\base\Model.php(352): yii\validators\Validator->validateAttributes(Object(models\LoginForm), '[<span class="s...')
+#19 E:\yii2\models\LoginForm.php(58): yii\base\Model->validate()
+#20 E:\yii2\apps\backend\controllers\SiteController.php(68): models\LoginForm->login()
+#21 [internal function]: apps\backend\controllers\SiteController->actionLogin()
+#22 E:\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#23 E:\yii2\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[]')
+#24 E:\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[]')
+#25 E:\yii2\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#26 E:\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 E:\yii2\apps\backend\themes\index.php(8): yii\base\Application->run()
+#28 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in E:\yii2\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 E:\yii2\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 E:\yii2\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 E:\yii2\vendor\yiisoft\yii2\db\Schema.php(477): yii\db\Connection->getSlavePdo()
+#3 E:\yii2\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('<span class="st...')
+#4 E:\yii2\vendor\yiisoft\yii2\db\Command.php(172): yii\db\Connection->quoteValue('<span class="st...')
+#5 E:\yii2\vendor\yiisoft\yii2\db\Command.php(806): yii\db\Command->getRawSql()
+#6 E:\yii2\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 E:\yii2\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#8 E:\yii2\vendor\yiisoft\yii2\db\ActiveQuery.php(300): yii\db\Query->one('<span class="ke...')
+#9 E:\yii2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveQuery->one()
+#10 E:\yii2\models\User.php(82): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#11 E:\yii2\models\LoginForm.php(73): models\User::findByUsername('<span class="st...')
+#12 E:\yii2\models\LoginForm.php(44): models\LoginForm->getUser()
+#13 [internal function]: models\LoginForm->validatePassword('<span class="st...', '<span class="ke...')
+#14 E:\yii2\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...')
+#15 E:\yii2\vendor\yiisoft\yii2\validators\Validator.php(240): yii\validators\InlineValidator->validateAttribute(Object(models\LoginForm), '<span class="st...')
+#16 E:\yii2\vendor\yiisoft\yii2\base\Model.php(352): yii\validators\Validator->validateAttributes(Object(models\LoginForm), '[<span class="s...')
+#17 E:\yii2\models\LoginForm.php(58): yii\base\Model->validate()
+#18 E:\yii2\apps\backend\controllers\SiteController.php(68): models\LoginForm->login()
+#19 [internal function]: apps\backend\controllers\SiteController->actionLogin()
+#20 E:\yii2\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#21 E:\yii2\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[]')
+#22 E:\yii2\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[]')
+#23 E:\yii2\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#24 E:\yii2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 E:\yii2\apps\backend\themes\index.php(8): yii\base\Application->run()
+#26 {main}
+Additional Information:
+
+2015-10-29 20:51:55 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:85
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 20:51:55 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:85
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 20:51:55 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:85
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 20:51:55 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`username`='admin') AND (`status`=10)
+    in E:\yii2\models\User.php:85
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 20:51:55 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`username`='admin') AND (`status`=10)
+    in E:\yii2\models\User.php:85
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 20:51:55 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`username`='admin') AND (`status`=10)
+    in E:\yii2\models\User.php:85
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 20:51:55 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:85
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 20:51:55 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:85
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 20:51:55 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:85
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 20:51:55 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:85
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 20:51:55 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:85
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 20:51:55 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:85
+    in E:\yii2\models\LoginForm.php:73
+    in E:\yii2\models\LoginForm.php:44
+2015-10-29 20:51:56 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-10-29 20:51:56 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-10-29 20:51:56 [127.0.0.1][1][-][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-10-29 20:51:56 [127.0.0.1][1][-][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+2015-10-29 20:51:56 [127.0.0.1][1][-][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-10-29 20:51:56 [127.0.0.1][1][-][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+2015-10-29 20:51:56 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-10-29 20:51:56 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-10-29 20:51:56 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-10-29 20:51:56 [127.0.0.1][1][-][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-10-29 20:51:56 [127.0.0.1][1][-][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-10-29 20:51:56 [127.0.0.1][1][-][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+2015-10-29 20:51:57 [127.0.0.1][1][9n4kh2h87fies4tab841g8pva7][info][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-10-29 20:51:57 [127.0.0.1][1][9n4kh2h87fies4tab841g8pva7][info][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-10-29 20:51:57 [127.0.0.1][1][9n4kh2h87fies4tab841g8pva7][profile begin][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-10-29 20:51:57 [127.0.0.1][1][9n4kh2h87fies4tab841g8pva7][profile end][yii\db\Connection::open] Opening DB connection: sqlite:E:\yii2\config/../data/yii.db
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-10-29 20:51:57 [127.0.0.1][1][9n4kh2h87fies4tab841g8pva7][profile begin][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-10-29 20:51:57 [127.0.0.1][1][9n4kh2h87fies4tab841g8pva7][profile end][yii\db\Command::query] SELECT * FROM `m_tbUser` WHERE (`id`=1) AND (`status`=10)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-10-29 20:51:57 [127.0.0.1][1][9n4kh2h87fies4tab841g8pva7][info][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-10-29 20:51:57 [127.0.0.1][1][9n4kh2h87fies4tab841g8pva7][profile begin][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-10-29 20:51:57 [127.0.0.1][1][9n4kh2h87fies4tab841g8pva7][profile end][yii\db\Command::query] PRAGMA table_info(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-10-29 20:51:57 [127.0.0.1][1][9n4kh2h87fies4tab841g8pva7][info][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-10-29 20:51:57 [127.0.0.1][1][9n4kh2h87fies4tab841g8pva7][profile begin][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40
+2015-10-29 20:51:57 [127.0.0.1][1][9n4kh2h87fies4tab841g8pva7][profile end][yii\db\Command::query] PRAGMA foreign_key_list(`m_tbUser`)
+    in E:\yii2\models\User.php:66
+    in E:\yii2\apps\backend\themes\default\views\layouts\main.php:40

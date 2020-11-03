@@ -1,0 +1,131 @@
+#!/bin/sh
+
+IPTCMD=/sbin/iptables
+LOG_LEVEL="--log-level notice"
+
+iptables_init() {
+# Flush all rules and delete all custom chains
+    $IPTCMD -F
+    $IPTCMD -t nat -F
+    $IPTCMD -X
+    $IPTCMD -t nat -X
+
+# Set up policies
+    $IPTCMD -P INPUT DROP     #when release, is DROP
+    $IPTCMD -P FORWARD DROP   #when release, is DROP
+    $IPTCMD -P OUTPUT ACCEPT
+    
+# This chain will log, then DROPs packets with certain bad combinations
+# of flags might indicate a port-scan attempt (xmas, null, etc)
+    $IPTCMD -N PSCAN
+    $IPTCMD -A PSCAN -p tcp  -m limit --limit 10/minute -j LOG $LOG_LEVEL --log-prefix "TCPScan? "
+    $IPTCMD -A PSCAN -p udp  -m limit --limit 10/minute -j LOG $LOG_LEVEL --log-prefix "UDPScan? "
+    $IPTCMD -A PSCAN -p icmp -m limit --limit 10/minute -j LOG $LOG_LEVEL --log-prefix "ICMPScan? "
+    $IPTCMD -A PSCAN -f      -m limit --limit 10/minute -j LOG $LOG_LEVEL --log-prefix "FRAGScan? "
+    $IPTCMD -A PSCAN -j DROP
+    
+# New tcp packets without SYN set - could well be an obscure type of port scan
+# that's not covered above, may just be a broken windows machine
+    $IPTCMD -N NEWNOTSYN
+    $IPTCMD -A NEWNOTSYN -m limit --limit 10/minute -j LOG $LOG_LEVEL --log-prefix "NEWnotSYN? "
+    $IPTCMD -A NEWNOTSYN -j DROP
+    
+# Chain to contain all the rules relating to bad TCP flags
+    $IPTCMD -N BADTCP
+    $IPTCMD -A INPUT -j BADTCP
+    $IPTCMD -A BADTCP -p tcp --tcp-flags ALL FIN,URG,PSH  -j PSCAN      # nmap xmas
+    $IPTCMD -A BADTCP -p tcp --tcp-flags ALL NONE -j PSCAN              # Null
+    $IPTCMD -A BADTCP -p tcp --tcp-flags ALL FIN -j PSCAN               # FIN
+    $IPTCMD -A BADTCP -p tcp --tcp-flags SYN,RST SYN,RST -j PSCAN       # SYN/RST:SYN+RST+...
+    $IPTCMD -A BADTCP -p tcp --tcp-flags SYN,FIN SYN,FIN -j PSCAN       # SYN/FIN:QueSO or nmap
+    $IPTCMD -A BADTCP -p tcp ! --syn -m state --state NEW -j NEWNOTSYN  # NEW TCP without SYN
+
+#ICMP-flood
+    iptables -N icmp-flood
+    iptables -A INPUT -p icmp -j icmp-flood
+    iptables -A icmp-flood -m limit --limit 4/s --limit-burst 4  -m comment --comment "Limit ICMP rate" -j ACCEPT
+    iptables -A icmp-flood -m limit --limit 6/minute --limit-burst 1 -j LOG $LOG_LEVEL --log-prefix "Firewall>Probable icmp flood "
+    iptables -A icmp-flood -j DROP
+    
+#SYN-flood
+#    iptables -N syn-flood
+#    iptables -A INPUT -p tcp --syn -j syn-flood
+#    iptables -A syn-flood -m limit --limit 100/s --limit-burst 100 -m comment --comment "Limit TCP SYN rate" -j RETURN
+#    iptables -A syn-flood -m limit --limit 6/minute --limit-burst 1 -j LOG $LOG_LEVEL --log-prefix "Firewall>Probable syn flood "
+#    iptables -A syn-flood -j DROP
+
+# chains for firewall rules
+    $IPTCMD -N FW_INPUT
+    $IPTCMD -A INPUT -j FW_INPUT
+    $IPTCMD -A FW_INPUT -p tcp -i eth0 --dport 22 -j ACCEPT
+    $IPTCMD -A FW_INPUT -p tcp -i eth0 --dport 88 -j ACCEPT
+    
+# access for web sever port
+    for i in $@; do
+       if test $i = "start"; then
+           continue
+       else
+           $IPTCMD -A FW_INPUT -p tcp --dport $i -j ACCEPT
+       fi
+    done
+}
+
+
+# See how we were called.
+case "$1" in
+start)
+#    iptables_init $@
+# Accept everything connected
+#    $IPTCMD -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+# localhost and ethernet.
+#    $IPTCMD -A INPUT -i lo -m state --state NEW -j ACCEPT
+#    $IPTCMD -A INPUT -s 127.0.0.0/8 -m state --state NEW -j DROP    # Loopback not on lo
+#    $IPTCMD -A INPUT -d 127.0.0.0/8 -m state --state NEW -j DROP
+    
+#    $IPTCMD -F
+#    $IPTCMD -t nat -F
+#    $IPTCMD -X
+#    $IPTCMD -t nat -X
+
+#    # Set up policies
+#    $IPTCMD -P INPUT DROP     #when release, is DROP
+#    $IPTCMD -P FORWARD DROP   #when release, is DROP
+#    $IPTCMD -P OUTPUT ACCEPT
+#    $IPTCMD -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+#    $IPTCMD -A INPUT -i lo -m state --state NEW -j ACCEPT
+#    $IPTCMD -A INPUT -p icmp -j ACCEPT
+#    $IPTCMD -A INPUT -p tcp --dport 22 -j ACCEPT
+#    $IPTCMD -A INPUT -p tcp --dport 88 -j ACCEPT
+    
+#    for i in $@; do
+#       if test $i = "start"; then
+#           continue
+#       else
+#           $IPTCMD -A INPUT -p tcp --dport $i -j ACCEPT
+#       fi
+#    done
+     $IPTCMD -F
+     $IPTCMD -t nat -F
+     $IPTCMD -X
+     $IPTCMD -t nat -X
+     $IPTCMD -P INPUT ACCEPT
+     $IPTCMD -P FORWARD ACCEPT
+     $IPTCMD -P OUTPUT ACCEPT
+    ;;
+stop)
+    $IPTCMD -F
+    $IPTCMD -t nat -F
+    $IPTCMD -X
+    $IPTCMD -t nat -X
+    $IPTCMD -P INPUT ACCEPT
+    $IPTCMD -P FORWARD ACCEPT
+    $IPTCMD -P OUTPUT ACCEPT
+    ;;
+*)
+    echo "Usage: $0 {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
+

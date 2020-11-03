@@ -1,0 +1,133 @@
+[2017-06-21 09:57:03] [main] [INFO] starting ip-monitor
+[2017-06-21 10:08:45] [main] [INFO] starting ip-monitor
+[2017-06-21 10:54:11] [main] [INFO] starting ip-monitor
+[2017-06-21 10:59:27] [main] [INFO] starting ip-monitor
+[2017-06-26 17:15:12] [main] [INFO] starting ip-monitor
+[2017-06-26 17:54:14] [main] [INFO] starting ip-monitor
+[2017-07-13 10:08:51] [main] [INFO] starting ip-monitor
+[2017-07-13 11:03:28] [main] [INFO] starting ip-monitor
+[2017-07-13 13:40:00] [main] [INFO] starting ip-monitor
+[2017-07-14 09:20:01] [main] [INFO] starting ip-monitor
+[2017-07-14 09:20:02] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:20:03] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:20:04] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:20:05] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:20:12] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:20:13] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:20:17] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:20:18] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:20:20] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:20:21] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:20:29] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:20:30] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:20:31] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:20:32] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:20:39] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:20:40] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:20:42] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:20:43] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:20:44] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:20:45] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:20:52] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:20:53] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:20:57] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:20:58] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:21:02] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:21:03] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:21:07] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:21:08] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:21:10] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:21:11] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:21:13] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:21:14] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:21:15] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:21:16] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:21:23] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:21:24] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:21:25] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:21:26] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:21:28] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:21:29] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:21:30] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:21:31] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:21:35] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:21:36] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:21:43] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:21:44] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:21:46] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:21:47] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:22:08] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:22:09] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:22:16] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:22:17] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:22:19] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:22:20] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:22:21] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:22:22] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:22:24] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:22:25] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:22:27] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:22:28] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:22:37] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:22:38] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:22:39] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:22:40] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:22:45] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:22:46] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:22:52] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:22:53] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:22:57] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:22:58] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:23:00] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:23:01] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:23:02] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:23:03] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:23:10] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:23:11] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:23:20] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:23:21] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:23:44] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:23:45] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:23:49] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:23:50] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:23:54] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:23:56] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:23:57] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:23:58] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:24:02] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:24:03] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:24:07] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:24:08] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:24:12] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:24:13] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:24:15] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:24:16] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:24:19] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:24:20] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:24:22] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:24:23] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:24:24] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:24:25] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:24:28] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:24:29] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:24:34] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:24:35] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:25:46] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:30:47] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:30:50] [main] [INFO] 7: enp9s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 09:30:55] [main] [INFO] 7: enp9s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 09:30:58] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 10:38:13] [main] [INFO] 4: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 10:38:39] [main] [INFO] 4: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 11:03:09] [main] [INFO] starting ip-monitor
+[2017-07-14 11:17:10] [main] [INFO] 3: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 11:22:52] [main] [INFO] 3: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 11:22:53] [main] [INFO] ip -4 route add 0.0.0.0/0  via 172.16.2.254   dev enp8s0  
+[2017-07-14 11:57:08] [main] [INFO] 3: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-14 14:00:37] [main] [INFO] 3: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-14 14:00:38] [main] [INFO] ip -4 route add 0.0.0.0/0  via 172.16.2.254   dev enp8s0  
+[2017-07-14 14:00:38] [main] [WARNING] RTNETLINK answers: File exists
+[2017-07-14 14:16:18] [main] [INFO] 3: enp8s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN
+[2017-07-17 14:06:41] [main] [INFO] 3: enp8s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP
+[2017-07-17 14:06:42] [main] [INFO] ip -4 route add 0.0.0.0/0  via 172.16.2.254   dev enp8s0  
+[2017-07-17 14:06:42] [main] [WARNING] RTNETLINK answers: File exists

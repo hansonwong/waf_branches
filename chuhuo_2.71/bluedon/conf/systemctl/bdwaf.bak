@@ -1,0 +1,15 @@
+[Unit]
+Description=Firewall bdwaf service
+After=dpdk.service
+Requires=dpdk.service
+
+[Service]
+Type=forking
+User=root
+Group=root
+ExecStart=/usr/local/bdwaf/sbin/bdwaf
+RestartSec=2
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

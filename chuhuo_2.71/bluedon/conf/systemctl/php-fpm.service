@@ -1,0 +1,14 @@
+[Unit]
+Description=Firewall php-fpm service
+After=php-nginx.service mysqld.service
+Wants=php-nginx.service mysqld.service
+
+[Service]
+Type=forking
+User=root
+Group=root
+ExecStart=/Data/apps/php7/sbin/php-fpm -R
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

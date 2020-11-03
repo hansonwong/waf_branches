@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FAULT_CODE_FAIL	xmlrpc_dispatch.h	/^	FAULT_CODE_FAIL$/;"	e	enum:__anon1
+FAULT_CODE_OK	xmlrpc_dispatch.h	/^	FAULT_CODE_OK = 0,$/;"	e	enum:__anon1
+MAX_RPC_FUN_COUNT	xmlrpc_dispatch.h	13;"	d
+RPCFUN	xmlrpc_dispatch.h	/^typedef int (*RPCFUN)(void*, char**);$/;"	t
+XMLRPC_DISPATCH_FAULT_CODE	xmlrpc_dispatch.h	/^} XMLRPC_DISPATCH_FAULT_CODE;$/;"	t	typeref:enum:__anon1
+__API_XMLRPC_DISPATCH__	xmlrpc_dispatch.h	3;"	d
+_tag_xmlrpc_dispatch_client	xmlrpc_dispatch.h	/^typedef struct _tag_xmlrpc_dispatch_client$/;"	s
+_tag_xmlrpc_dispatch_remote_fun	xmlrpc_dispatch.h	/^typedef struct _tag_xmlrpc_dispatch_remote_fun$/;"	s
+clientname	xmlrpc_dispatch.h	/^	char clientname[64];$/;"	m	struct:_tag_xmlrpc_dispatch_client
+env	xmlrpc_dispatch.h	/^	xmlrpc_env env;$/;"	m	struct:_tag_xmlrpc_dispatch_client
+fault_code	xmlrpc_dispatch.h	/^	int fault_code;$/;"	m	struct:_tag_xmlrpc_dispatch_client
+fault_string	xmlrpc_dispatch.h	/^	char fault_string[256];$/;"	m	struct:_tag_xmlrpc_dispatch_client
+fun	xmlrpc_dispatch.h	/^	RPCFUN fun;$/;"	m	struct:_tag_xmlrpc_dispatch_remote_fun
+fun_count	xmlrpc_dispatch.h	/^	int fun_count;$/;"	m	struct:_tag_xmlrpc_dispatch_client
+funs	xmlrpc_dispatch.h	/^	xmlrpc_dispatch_remote_fun funs[MAX_RPC_FUN_COUNT];$/;"	m	struct:_tag_xmlrpc_dispatch_client
+main	xmlrpc_dispatch_test.c	/^int  main(int const argc, const char ** const argv)$/;"	f
+methodName	xmlrpc_dispatch.h	/^	char methodName[64];$/;"	m	struct:_tag_xmlrpc_dispatch_remote_fun
+myAddFun	xmlrpc_dispatch_test.c	/^int myAddFun(void* param, char** outbuf)$/;"	f
+myTestFun	xmlrpc_dispatch_test.c	/^int myTestFun(void* param, char** outbuf)$/;"	f
+running	xmlrpc_dispatch.h	/^	int running;$/;"	m	struct:_tag_xmlrpc_dispatch_client
+serverurl	xmlrpc_dispatch.h	/^	char serverurl[128];$/;"	m	struct:_tag_xmlrpc_dispatch_client
+tid	xmlrpc_dispatch.h	/^	pthread_t tid;$/;"	m	struct:_tag_xmlrpc_dispatch_client
+xml_rpc_dispatch_thread	xmlrpc_dispatch.c	/^void xml_rpc_dispatch_thread(void* arg)$/;"	f
+xmlrpc_dispatch_client	xmlrpc_dispatch.h	/^} xmlrpc_dispatch_client;$/;"	t	typeref:struct:_tag_xmlrpc_dispatch_client
+xmlrpc_dispatch_invoke	xmlrpc_dispatch.c	/^int xmlrpc_dispatch_invoke(xmlrpc_dispatch_client *client, const char* clientname, const char* methodname, char* jsonstr, char *retbuf, int retbuflen)$/;"	f
+xmlrpc_dispatch_register	xmlrpc_dispatch.c	/^xmlrpc_dispatch_register(xmlrpc_dispatch_client* client, const char* clientname)$/;"	f
+xmlrpc_dispatch_register_function	xmlrpc_dispatch.c	/^int xmlrpc_dispatch_register_function(xmlrpc_dispatch_client* client, char *methodName, RPCFUN fun)$/;"	f
+xmlrpc_dispatch_remote_fun	xmlrpc_dispatch.h	/^} xmlrpc_dispatch_remote_fun;$/;"	t	typeref:struct:_tag_xmlrpc_dispatch_remote_fun

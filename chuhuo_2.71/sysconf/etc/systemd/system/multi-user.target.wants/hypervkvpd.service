@@ -1,0 +1,10 @@
+[Unit]
+Description=Hyper-V KVP daemon
+ConditionVirtualization=microsoft
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/hypervkvpd
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,51 @@
+! Configuration File for keepalived
+
+global_defs {
+   vrrp_sync_group G1{
+
+    group {
+        {% if hot -%}
+        network_group
+        {% endif -%}
+    }
+   }
+
+   router_id localhost.localdomain
+}
+
+
+{% if hot -%}
+vrrp_script check_down
+{
+    script "/etc/keepalived/check.sh {% for h in hot %} {{ h.terminalIP }} {% endfor %}"
+    interval 3
+    weight -255
+}
+
+
+vrrp_instance network_group {
+    state BACKUP
+    interface {{ ha_data.sHeartAddress }}
+    track_interface {
+    }
+    mcast_src_ip {{ ha_data.sLocalIP }}
+    virtual_router_id 157
+    priority {{ ha_data.priority }}
+    advert_int 2
+    authentication {
+        auth_type PASS
+        auth_pass 1111
+    }
+    track_script {
+        check_down
+    }
+    virtual_ipaddress {
+        {% for h in hot -%}
+        {% if h.OUTIP %}{{ h.OUTIP[0] }} dev {{ h.NIC }} {% endif %}
+        {% endfor -%}
+    }
+    notify_master "/etc/conntrackd/primary-backup.sh primary"
+    notify_backup "/etc/conntrackd/primary-backup.sh backup"
+    notify_fault "/etc/conntrackd/primary-backup.sh fault"
+}
+{% endif %}

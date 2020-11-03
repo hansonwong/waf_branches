@@ -1,0 +1,14 @@
+interface {{name}}
+{
+    AdvSendAdvert on;
+    UnicastOnly on;
+    AdvHomeAgentFlag off;
+
+    prefix {{prefix}}::/64
+    {
+        AdvOnLink on;
+    AdvAutonomous on;
+    AdvRouterAddr off;
+    };
+};
+

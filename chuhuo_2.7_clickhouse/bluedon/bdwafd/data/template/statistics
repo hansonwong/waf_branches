@@ -1,0 +1,16 @@
+蓝盾Web防火墙提醒您，在刚刚过去的{{data['INTERVAL']}}个小时里，共检测到：
+ - 入侵总数: {{ data['ALL'] }}
+ - SQL注入: {{ data['SQLI'] }}
+ - 跨站脚本: {{ data['XSS'] }}
+ - 通用攻击: {{ data['GENERIC'] }}
+ - HTTP保护: {{ data['PROTOCOL'] }}
+ - 木马病毒: {{ data['TROJANS'] }}
+ - 信息泄漏: {{ data['LEAKAGE'] }}
+ - 其它攻击: {{ data['OTHER'] }}
+ - 溢出攻击: {{ data['OVERFLOW'] }}
+ - 访问控制: {{ data['ACCESSCTRL'] }}
+ - CC攻击: {{ data['CC'] }}
+ - DDOS攻击: {{ data['DDOS'] }}
+ - 非法外联: {{ data['OUTBOUND'] }}
+
+                               -- {{ data['SENDOR'] }}

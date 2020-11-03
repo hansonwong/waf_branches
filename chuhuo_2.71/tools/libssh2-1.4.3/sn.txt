@@ -1,0 +1,9 @@
+./configure --with-libssl-prefix=/usr/local/ssl
+vi example/Makefile
+vi tests/Makefile
+
+LDFLAGS = -ldl
+make
+make install
+
+ cp -f /usr/local/lib/libssh2.so.1.0.1 /usr/lib64/

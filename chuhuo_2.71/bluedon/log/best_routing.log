@@ -1,0 +1,108 @@
+[2017-06-21 09:56:56] [main] [INFO]  systemctl status best-routing
+[2017-06-21 09:56:56] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+[2017-06-21 09:56:56] [main] [INFO]  systemctl disable best-routing
+[2017-06-21 09:56:56] [main] [INFO]  systemctl stop best-routing
+[2017-06-21 10:06:23] [main] [INFO]  systemctl status best-routing
+[2017-06-21 10:06:23] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+Jun 21 09:56:56 localhost.localdomain systemd[1]: Stopped best-routing.
+[2017-06-21 10:06:23] [main] [INFO]  systemctl disable best-routing
+[2017-06-21 10:06:23] [main] [INFO]  systemctl stop best-routing
+[2017-06-21 10:08:39] [main] [INFO]  systemctl status best-routing
+[2017-06-21 10:08:39] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+[2017-06-21 10:08:39] [main] [INFO]  systemctl disable best-routing
+[2017-06-21 10:08:39] [main] [INFO]  systemctl stop best-routing
+[2017-06-21 10:51:48] [main] [INFO]  systemctl status best-routing
+[2017-06-21 10:51:48] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+Jun 21 10:08:39 localhost.localdomain systemd[1]: Stopped best-routing.
+[2017-06-21 10:51:48] [main] [INFO]  systemctl disable best-routing
+[2017-06-21 10:51:48] [main] [INFO]  systemctl stop best-routing
+[2017-06-21 10:54:04] [main] [INFO]  systemctl status best-routing
+[2017-06-21 10:54:04] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+[2017-06-21 10:54:04] [main] [INFO]  systemctl disable best-routing
+[2017-06-21 10:54:04] [main] [INFO]  systemctl stop best-routing
+[2017-06-21 10:59:20] [main] [INFO]  systemctl status best-routing
+[2017-06-21 10:59:20] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+[2017-06-21 10:59:20] [main] [INFO]  systemctl disable best-routing
+[2017-06-21 10:59:20] [main] [INFO]  systemctl stop best-routing
+[2017-06-26 17:15:05] [main] [INFO]  systemctl status best-routing
+[2017-06-26 17:15:05] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+[2017-06-26 17:15:05] [main] [INFO]  systemctl disable best-routing
+[2017-06-26 17:15:05] [main] [INFO]  systemctl stop best-routing
+[2017-06-26 17:51:51] [main] [INFO]  systemctl status best-routing
+[2017-06-26 17:51:51] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+Jun 26 17:15:05 localhost.localdomain systemd[1]: Stopped best-routing.
+[2017-06-26 17:51:51] [main] [INFO]  systemctl disable best-routing
+[2017-06-26 17:51:51] [main] [INFO]  systemctl stop best-routing
+[2017-06-26 17:54:07] [main] [INFO]  systemctl status best-routing
+[2017-06-26 17:54:07] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+[2017-06-26 17:54:07] [main] [INFO]  systemctl disable best-routing
+[2017-06-26 17:54:07] [main] [INFO]  systemctl stop best-routing
+[2017-07-13 10:07:47] [main] [INFO]  systemctl status best-routing
+[2017-07-13 10:07:47] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+[2017-07-13 10:07:47] [main] [INFO]  systemctl disable best-routing
+[2017-07-13 10:07:47] [main] [INFO]  systemctl stop best-routing
+[2017-07-13 10:08:43] [main] [INFO]  systemctl status best-routing
+[2017-07-13 10:08:43] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+[2017-07-13 10:08:43] [main] [INFO]  systemctl disable best-routing
+[2017-07-13 10:08:43] [main] [INFO]  systemctl stop best-routing
+[2017-07-13 11:03:22] [main] [INFO]  systemctl status best-routing
+[2017-07-13 11:03:22] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+[2017-07-13 11:03:22] [main] [INFO]  systemctl disable best-routing
+[2017-07-13 11:03:22] [main] [INFO]  systemctl stop best-routing
+[2017-07-13 13:39:53] [main] [INFO]  systemctl status best-routing
+[2017-07-13 13:39:53] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+[2017-07-13 13:39:53] [main] [INFO]  systemctl disable best-routing
+[2017-07-13 13:39:53] [main] [INFO]  systemctl stop best-routing
+[2017-07-14 09:19:54] [main] [INFO]  systemctl status best-routing
+[2017-07-14 09:19:54] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+[2017-07-14 09:19:54] [main] [INFO]  systemctl disable best-routing
+[2017-07-14 09:19:54] [main] [INFO]  systemctl stop best-routing
+[2017-07-14 11:03:02] [main] [INFO]  systemctl status best-routing
+[2017-07-14 11:03:02] [main] [WARNING] best-routing.service - best-routing
+   Loaded: loaded (/usr/lib/systemd/system/best-routing.service; disabled)
+   Active: inactive (dead)
+
+[2017-07-14 11:03:02] [main] [INFO]  systemctl disable best-routing
+[2017-07-14 11:03:02] [main] [INFO]  systemctl stop best-routing

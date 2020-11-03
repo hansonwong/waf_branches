@@ -1,0 +1,45 @@
+﻿/*---各种链接样式---*/
+a.link{ color:#015fc0; text-decoration:none;}
+a.link:hover{ text-decoration:underline;}
+
+
+/*---登录页面---*/
+.log{ background:url(../images/public/login_bg.jpg) center top no-repeat #51afe5; _text-align:center;}
+.login{ width:100%; margin:0 auto;}
+.logoimg{margin:100px auto 0 auto; text-align:center;}
+.logoimg{background: url(../images/custom/logo_l.png) no-repeat center;height: 74px; }
+/*.logomin{ background:url(../images/custom/logomin.png) no-repeat center right;width:640px; height:40px; margin:0px auto;}*/
+.logomin{ margin-bottom:40px;}
+.login_nr{width:640px;height:302px;margin:10px auto 0px; background:#fff; 
+    -moz-box-shadow: 0px 0px 10px #555; 
+    -webkit-box-shadow: 0px 0px 10px #555; 
+    box-shadow:0 0 10px #555;
+    behavior: url(ie-css3.htc); }
+.logo_b{float:left;}
+.logo_b{ margin-top:0px;padding:5px;}
+.logo_b .img{background: url(../images/custom/logo_banner.jpg) no-repeat; width: 210px;height: 290px;}
+.login_text{margin:0 auto; padding-top:36px;padding-left:62px;float:left;}
+.login_text p {margin:0 0 20px 0; position:relative;_text-align:left;}
+.log_name,.log_pwd,.log_yzm{ height:36px; line-height:36px; width:290px; border:1px solid #c5d2da; background:#f8fcff;  padding: 0 0 0 35px; 
+box-shadow:inset 2px 0 3px #edf2f5, inset 0 2px 3px #edf2f5; 
+-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Color='#edf2f5')";
+border-radius:2px; behavior: url(ie-css3.htc);font-size:16px; color:#516c7d; }
+
+:-ms-input-placeholder{color:#aaa;}  
+.log_name,.log_pwd,.log_yzm{background:url(../images/public/icon_log.png) no-repeat #f8fcff;_background:url(../images/public/icon_log_8.png) no-repeat #f8fcff;}
+.log_name{ background-position:8px 9px; }
+.log_pwd{ background-position:8px -32px;}
+.log_yzm{ background-position:8px -70px; width:170px; }
+.login_text p img { border:1px solid #c5d2da; position:absolute; top:0; left:192px; width:96px; height:36px; cursor:pointer; }
+.login_text p span{ position:absolute; top:-12px; left:1px; color:#ff6500; background:url(../images/public/icon_log.png) 0 -108px no-repeat; padding:0 0 0 20px;}
+.log_btn{ height:40px; width:290px; background:#4fa0cd; color:#e7f3fd; border:none; cursor:pointer; margin:15px 0 0 0; font-size:20px; letter-spacing:5px; -moz-border-radius:1px; -webkit-border-radius:1px; border-radius:1px; }
+.log_btn:hover{ background:#368ec0; color:#fcfeff;}
+.banquan{ color:#154867; text-align:center; font-size:13px;padding-top:50px;}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+ box-shadow:0 0 0 60px #fff inset;
+ -webkit-text-fill-color: #516c7d;
+ background-image:url(../images/public/icon_log.png);
+}

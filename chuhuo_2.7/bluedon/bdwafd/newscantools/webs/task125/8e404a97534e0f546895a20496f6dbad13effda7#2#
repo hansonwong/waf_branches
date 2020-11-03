@@ -1,0 +1,167 @@
+status:200
+content-length:8115
+content-location:http://news.baidu.com/resource/
+set-cookie:BAIDUID=DD073DC58DF9F773E120278CC3DB9F56:FG=1; expires=Sat, 15-Oct-16 03:10:15 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+accept-ranges:bytes
+vary:Accept-Encoding, Accept-Encoding
+server:Apache
+last-modified:Wed, 02 Sep 2015 23:34:30 GMT
+cache-control:max-age=180
+date:Fri, 16 Oct 2015 03:10:15 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM "
+content-type:text/html
+####################
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <link href="css/idangerous.swiper.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style2.css" rel="stylesheet" />
+    <!--<link href="css/animate.css" rel="stylesheet" />-->
+
+    <title>反战之权：日本人的和平之路</title>
+    <script src="js/init.js"></script>
+
+</head>
+<body>
+    <div class="swiper-container swiper-parent" id="mainSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" data-page="0" id="slide0">
+               
+                <div class="ad-box" id="ad1">
+                    <div class="ad-box-mn ad-box-0">
+                        <div class="ad-box-mnc">
+                            <div class="ad-box-cover"></div>
+                            <img loadsrc="images/slide0-box0-h1.png" id="ad_box0_h1" />
+                            <img loadsrc="images/slide0-box0-p1.png" id="ad_box0_p1" />
+                            <img loadsrc="images/slide0-box0-p2.png" id="ad_box0_p2" />
+                        </div>
+                    </div>
+                    <div class="ad-box-mn ad-box-1">
+                        <div class="ad-box-mnc">
+                            <div class="ad-box-cover"></div>
+                            <img loadsrc="images/slide0-box1-h1.png" id="ad_box1_h1" />
+                            <img loadsrc="images/slide0-box1-p1.png" id="ad_box1_p1" />
+                            <img loadsrc="images/slide0-box1-p2.png" id="ad_box1_p2" />
+                            <img loadsrc="images/slide0-box1-p3.png" id="ad_box1_p3" />
+                        </div>
+                    </div>
+                    <div class="ad-box-mn ad-box-2">
+                        <div class="ad-box-mnc">
+                            <div class="ad-box-cover"></div>
+                            <img loadsrc="images/slide0-box2-h1.png" id="ad_box2_h1" />
+                            <img loadsrc="images/slide0-box2-p1.png" id="ad_box2_p1" />
+                            <img loadsrc="images/slide0-box2-p2.png" id="ad_box2_p2" />
+                        </div>
+                    </div>
+                    <div class="ad-box-mn ad-box-3">
+                        <div class="ad-box-mnc">
+                            <div class="ad-box-cover"></div>
+                            <img loadsrc="images/slide0-box3-h1.png" id="ad_box3_h1" />
+                            <img loadsrc="images/slide0-box3-p1.png" id="ad_box3_p1" />
+                            <img loadsrc="images/slide0-box3-p2.png" id="ad_box3_p2" />
+                            <img loadsrc="images/slide0-box3-p3.png" id="ad_box3_p3" />
+                        </div>
+                    </div>
+                    <div class="ad-box-mn ad-box-4">
+                        <div class="ad-box-mnc">
+                            <div class="ad-box-cover"></div>
+                            <div class="ad-box-4-mn" id="ad_box_4">
+                                <img loadsrc="images/4.jpg" id="ad_box_4_0" />
+                                <img loadsrc="images/2.jpg" id="ad_box_4_1" />
+                                <img loadsrc="images/3.jpg" id="ad_box_4_2" />
+                                <img loadsrc="images/1.jpg" id="ad_box_4_3" />
+                            </div>
+                            <img loadsrc="images/slide0-box4-h1.png" id="ad_box4_h1" />
+                            <img loadsrc="images/logo.png" id="logo" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide" data-page="1" id="slide1">
+                <ul id="scene" class="scene border fill">
+                    <li class="layer expand-width" data-depth="1.00"></li>
+                </ul>
+                <img loadsrc="images/slide1-box1-p1.png" id="slide1_box1_p1" />
+                <img loadsrc="images/slide1-box1-p2.png" id="slide1_box1_p2" />
+                <img loadsrc="images/slide1-box1-p3.png" id="slide1_box1_p3" />
+                <img loadsrc="images/slide1-box1-p4.png" id="slide1_box1_p4" />
+            </div>
+            <div class="swiper-slide" data-page="2" id="slide2">
+                <img loadsrc="images/slide2-bg.jpg" id="slide2_box1_bg" />
+                <img loadsrc="images/slide2-box1-p1.png" id="slide2_box1_p1" />
+                <img loadsrc="images/slide2-box1-p2.png" id="slide2_box1_p2" />
+            </div>
+            <div class="swiper-slide" data-page="3" id="slide3">
+                <img loadsrc="images/slide3-box1-p1.png" id="slide3_box1_p1" />
+                <img loadsrc="images/slide3-box1-p2.png" id="slide3_box1_p2" />
+            </div>
+            <div class="swiper-slide" data-page="4" id="slide4">
+                <img loadsrc="images/slide4-box1-p1.png" id="slide4_box1_p1" />
+                <img loadsrc="images/slide4-box1-p2.png" id="slide4_box1_p2" />
+            </div>
+            <div class="swiper-slide" data-page="5" id="slide5">
+                <img loadsrc="images/slide5-box1-p1.png" id="slide5_box1_p1" />
+                <img loadsrc="images/slide5-box1-p2.png" id="slide5_box1_p2" />
+            </div>
+            <div class="swiper-slide" data-page="6" id="slide6">
+                <img loadsrc="images/slide6-box1-p1.png" id="slide6_box1_p1" />
+                <img loadsrc="images/slide6-box1-p2.png" id="slide6_box1_p2" />
+            </div>
+            <div class="swiper-slide" data-page="7" id="slide7">
+                <img loadsrc="images/slide7-box1-p1.png" id="slide7_box1_p1" />
+                <img loadsrc="images/slide7-box1-p2.png" id="slide7_box1_p2" />
+            </div>
+            <div class="swiper-slide" data-page="8" id="slide8">
+                <img loadsrc="images/slide8-box1-p1.png" id="slide8_box1_p1" />
+                <img loadsrc="images/slide8-box1-p2.png" id="slide8_box1_p2" />
+            </div>
+            <div class="swiper-slide" data-page="9" id="slide9">
+                <img loadsrc="images/slide9-box1-p1.png" id="slide9_box1_p1" />
+                <img loadsrc="images/slide9-box1-p2.png" id="slide9_box1_p2" />
+                <img loadsrc="images/slide9-box1-p3.png" id="slide9_box1_p3" />
+                <img loadsrc="images/slide9-box1-p4.png" id="slide9_box1_p4" />
+                <img loadsrc="images/slide9-box1-p5.png" id="slide9_box1_p5" />
+                <img loadsrc="images/logo.png" id="logo2" />
+                <div class="ad-box-cover" id="share_cover">
+                    <img loadsrc="images/slide9-box1-p6.png" id="slide9_box1_p6" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loading">
+        <div class="loading-mn"></div>
+        <img id="login_img_1" src="images/logo.png" />
+        <div id="percent">0%</div>
+    </div>
+
+    <div id="music">
+        <div class="music play"></div>
+        <span>开启</span>
+        <div class="musics"></div>
+        <audio src="musics/music.mp3" loop="loop" id="bgmusic"></audio>
+    </div>
+
+    <div class="hand" id="hand">
+        <div class="hand-bo"></div>
+    </div>
+
+    <img loadsrc="images/arrow.png" id="arrow" />
+    <img loadsrc="images/goup.png" id="goup" />
+</body>
+</html>
+<script src="js/jquery-2.1.1.tap.min.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
+<script src="js/jquery.transit.min.js"></script>
+<script src="js/jquery.textillate.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/jquery.lettering.js"></script>
+<script src="js/swiper.js"></script>
+

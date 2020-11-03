@@ -1,0 +1,8 @@
+[
+	{"sTitle":"ID","data":"sFrameId","bVisible":true},
+	{"sTitle":"时间","data":"sFrameName"},
+	{"sTitle":"开机时间","data":"sFrameType"},
+	{"sClass":"btn_edit","bVisible":false,"data":""},
+	{"sClass":"btn_view","bVisible":false,"data":""},
+	{"sClass":"btn_del","bVisible":false,"data":""}
+]

@@ -1,0 +1,183 @@
+[2017-06-21 09:56:57] [DDOS] [DEBUG] not start ddos!
+[2017-06-21 10:06:27] [DDOS] [DEBUG] not start ddos!
+[2017-06-21 10:08:39] [DDOS] [DEBUG] not start ddos!
+[2017-06-21 10:16:29] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos_flag enable
+[2017-06-21 10:16:29] [DDOS] [DEBUG] MODULE_INIT_reassinit
+MODULE_EXIT_reassexit
+MODULE_INIT_Flow_table_init
+MODULE_EXIT_Flow_table_exit
+MODULE_INIT_dpi_init
+MODULE_EXIT_dpi_exit
+rte_eal_init_for_shm  --------->
+EAL: Setting up memory...
+EAL: Analysing 3072 files
+EAL: Mapped segment 0 of size 0x400000
+EAL: Mapped segment 1 of size 0x43800000
+EAL: Mapped segment 2 of size 0xa400000
+EAL: Mapped segment 3 of size 0x12c400000
+EAL: Mapped segment 4 of size 0x400000
+EAL: Mapped segment 5 of size 0x200000
+EAL: Mapped segment 6 of size 0x200000
+EAL: Mapped segment 7 of size 0x600000
+EAL: Mapped segment 8 of size 0x400000
+EAL: Mapped segment 9 of size 0x200000
+EAL: Mapped segment 10 of size 0x400000
+EAL: Mapped segment 11 of size 0x1200000
+EAL: Mapped segment 12 of size 0x3000000
+EAL: Mapped segment 13 of size 0x200000
+memzone dpdk-system-info have been created !
+ddos_flag enable success
+[2017-06-21 10:16:29] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type arp_flood -limit 100 -state off -log off
+[2017-06-21 10:16:29] [DDOS] [DEBUG] 
+[2017-06-21 10:16:29] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type udp_flood -limit 100 -state off -log off
+[2017-06-21 10:16:29] [DDOS] [DEBUG] 
+[2017-06-21 10:16:29] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type dns_flood -limit 100 -state off -log off
+[2017-06-21 10:16:29] [DDOS] [DEBUG] 
+[2017-06-21 10:16:29] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type syn_flood -limit 100 -state off -log off
+[2017-06-21 10:16:29] [DDOS] [DEBUG] 
+[2017-06-21 10:16:29] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type icmp_flood -limit 100 -state off -log off
+[2017-06-21 10:16:29] [DDOS] [DEBUG] 
+[2017-06-21 10:16:29] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type winnuke -limit 0 -state off -log off
+[2017-06-21 10:16:29] [DDOS] [DEBUG] 
+[2017-06-21 10:16:29] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type teardrop -limit 0 -state off -log off
+[2017-06-21 10:16:29] [DDOS] [DEBUG] 
+[2017-06-21 10:16:29] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type land -limit 0 -state off -log off
+[2017-06-21 10:16:29] [DDOS] [DEBUG] 
+[2017-06-21 10:16:29] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type jubo_icmp -limit 0 -state off -log off
+[2017-06-21 10:16:29] [DDOS] [DEBUG] 
+[2017-06-21 10:16:29] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type smurf -limit 0 -state off -log off
+[2017-06-21 10:16:29] [DDOS] [DEBUG] 
+[2017-06-21 10:16:30] [DDOS] [DEBUG] MODULE_INIT_reassinit
+MODULE_EXIT_reassexit
+MODULE_INIT_Flow_table_init
+MODULE_EXIT_Flow_table_exit
+MODULE_INIT_dpi_init
+MODULE_EXIT_dpi_exit
+rte_eal_init_for_shm  --------->
+EAL: Setting up memory...
+EAL: Analysing 3072 files
+EAL: Mapped segment 0 of size 0x400000
+EAL: Mapped segment 1 of size 0x43800000
+EAL: Mapped segment 2 of size 0xa400000
+EAL: Mapped segment 3 of size 0x12c400000
+EAL: Mapped segment 4 of size 0x400000
+EAL: Mapped segment 5 of size 0x200000
+EAL: Mapped segment 6 of size 0x200000
+EAL: Mapped segment 7 of size 0x600000
+EAL: Mapped segment 8 of size 0x400000
+EAL: Mapped segment 9 of size 0x200000
+EAL: Mapped segment 10 of size 0x400000
+EAL: Mapped segment 11 of size 0x1200000
+EAL: Mapped segment 12 of size 0x3000000
+EAL: Mapped segment 13 of size 0x200000
+memzone dpdk-system-info have been created !
+ddos_flag = 1(enable)
+
+[2017-06-21 10:51:54] [DDOS] [DEBUG] not start ddos!
+[2017-06-21 10:54:05] [DDOS] [DEBUG] not start ddos!
+[2017-06-21 10:59:21] [DDOS] [DEBUG] not start ddos!
+[2017-06-26 17:15:05] [DDOS] [DEBUG] not start ddos!
+[2017-06-26 17:33:42] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos_flag enable
+[2017-06-26 17:33:42] [DDOS] [DEBUG] MODULE_INIT_reassinit
+MODULE_EXIT_reassexit
+MODULE_INIT_Flow_table_init
+MODULE_EXIT_Flow_table_exit
+MODULE_INIT_dpi_init
+MODULE_EXIT_dpi_exit
+rte_eal_init_for_shm  --------->
+EAL: Setting up memory...
+EAL: Analysing 3072 files
+EAL: Mapped segment 0 of size 0xa00000
+EAL: Mapped segment 1 of size 0x600000
+EAL: Mapped segment 2 of size 0x600000
+EAL: Mapped segment 3 of size 0x200000
+EAL: Mapped segment 4 of size 0x43400000
+EAL: Mapped segment 5 of size 0x9400000
+EAL: Mapped segment 6 of size 0x200000
+EAL: Mapped segment 7 of size 0x12b800000
+EAL: Mapped segment 8 of size 0x200000
+EAL: Mapped segment 9 of size 0x600000
+EAL: Mapped segment 10 of size 0x200000
+EAL: Mapped segment 11 of size 0x200000
+EAL: Mapped segment 12 of size 0x200000
+EAL: Mapped segment 13 of size 0x200000
+EAL: Mapped segment 14 of size 0x200000
+EAL: Mapped segment 15 of size 0x200000
+EAL: Mapped segment 16 of size 0x200000
+EAL: Mapped segment 17 of size 0x200000
+EAL: Mapped segment 18 of size 0x200000
+EAL: Mapped segment 19 of size 0x200000
+EAL: Mapped segment 20 of size 0x200000
+EAL: Mapped segment 21 of size 0x200000
+EAL: Mapped segment 22 of size 0x400000
+EAL: Mapped segment 23 of size 0x1000000
+EAL: Mapped segment 24 of size 0x3000000
+EAL: Mapped segment 25 of size 0x200000
+memzone dpdk-system-info have been created !
+ddos_flag enable success
+[2017-06-26 17:33:42] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type arp_flood -limit 100 -state off -log off
+[2017-06-26 17:33:42] [DDOS] [DEBUG] 
+[2017-06-26 17:33:42] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type udp_flood -limit 100 -state off -log off
+[2017-06-26 17:33:42] [DDOS] [DEBUG] 
+[2017-06-26 17:33:42] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type dns_flood -limit 100 -state off -log off
+[2017-06-26 17:33:42] [DDOS] [DEBUG] 
+[2017-06-26 17:33:42] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type syn_flood -limit 100 -state off -log off
+[2017-06-26 17:33:42] [DDOS] [DEBUG] 
+[2017-06-26 17:33:42] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type icmp_flood -limit 100 -state off -log off
+[2017-06-26 17:33:42] [DDOS] [DEBUG] 
+[2017-06-26 17:33:42] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type winnuke -limit 0 -state off -log off
+[2017-06-26 17:33:42] [DDOS] [DEBUG] 
+[2017-06-26 17:33:42] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type teardrop -limit 0 -state off -log off
+[2017-06-26 17:33:42] [DDOS] [DEBUG] 
+[2017-06-26 17:33:42] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type land -limit 0 -state off -log off
+[2017-06-26 17:33:42] [DDOS] [DEBUG] 
+[2017-06-26 17:33:42] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type jubo_icmp -limit 0 -state off -log off
+[2017-06-26 17:33:42] [DDOS] [DEBUG] 
+[2017-06-26 17:33:42] [DDOS] [DEBUG] /home/ng_platform/bd_dpdk_warper/clients/ddos-ctl -dir source         -type smurf -limit 0 -state off -log off
+[2017-06-26 17:33:42] [DDOS] [DEBUG] 
+[2017-06-26 17:33:42] [DDOS] [DEBUG] MODULE_INIT_reassinit
+MODULE_EXIT_reassexit
+MODULE_INIT_Flow_table_init
+MODULE_EXIT_Flow_table_exit
+MODULE_INIT_dpi_init
+MODULE_EXIT_dpi_exit
+rte_eal_init_for_shm  --------->
+EAL: Setting up memory...
+EAL: Analysing 3072 files
+EAL: Mapped segment 0 of size 0xa00000
+EAL: Mapped segment 1 of size 0x600000
+EAL: Mapped segment 2 of size 0x600000
+EAL: Mapped segment 3 of size 0x200000
+EAL: Mapped segment 4 of size 0x43400000
+EAL: Mapped segment 5 of size 0x9400000
+EAL: Mapped segment 6 of size 0x200000
+EAL: Mapped segment 7 of size 0x12b800000
+EAL: Mapped segment 8 of size 0x200000
+EAL: Mapped segment 9 of size 0x600000
+EAL: Mapped segment 10 of size 0x200000
+EAL: Mapped segment 11 of size 0x200000
+EAL: Mapped segment 12 of size 0x200000
+EAL: Mapped segment 13 of size 0x200000
+EAL: Mapped segment 14 of size 0x200000
+EAL: Mapped segment 15 of size 0x200000
+EAL: Mapped segment 16 of size 0x200000
+EAL: Mapped segment 17 of size 0x200000
+EAL: Mapped segment 18 of size 0x200000
+EAL: Mapped segment 19 of size 0x200000
+EAL: Mapped segment 20 of size 0x200000
+EAL: Mapped segment 21 of size 0x200000
+EAL: Mapped segment 22 of size 0x400000
+EAL: Mapped segment 23 of size 0x1000000
+EAL: Mapped segment 24 of size 0x3000000
+EAL: Mapped segment 25 of size 0x200000
+memzone dpdk-system-info have been created !
+ddos_flag = 1(enable)
+
+[2017-06-26 17:51:56] [DDOS] [DEBUG] not start ddos!
+[2017-06-26 17:54:08] [DDOS] [DEBUG] not start ddos!
+[2017-07-13 10:07:57] [DDOS] [DEBUG] not start ddos!
+[2017-07-13 10:08:44] [DDOS] [DEBUG] not start ddos!
+[2017-07-13 11:03:22] [DDOS] [DEBUG] not start ddos!
+[2017-07-13 13:39:54] [DDOS] [DEBUG] not start ddos!
+[2017-07-14 09:19:55] [DDOS] [DEBUG] not start ddos!
+[2017-07-14 11:03:03] [DDOS] [DEBUG] not start ddos!

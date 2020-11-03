@@ -1,0 +1,48 @@
+! Configuration File for keepalived
+
+global_defs {
+   vrrp_sync_group G1{
+
+       group{
+       {% for hotStandby in hot %} 
+       VI_{{hotStandby['NUM']}}
+       {% endfor %}
+       }
+
+   }
+
+   router_id localhost.localdomain
+}
+
+{% for hotStandby in hot %}
+vrrp_instance VI_{{hotStandby['NUM']}} {
+    state BACKUP
+    interface {{hotStandby['NIC']}}
+     track_interface {
+     {% for nic in hotStandby['nics'] %}     
+            {{nic}}{% endfor %}
+         }
+    virtual_router_id {{hotStandby['VRID']}}
+    priority {{hotStandby['LEVEL']}}
+    advert_int 1
+    authentication {
+        auth_type PASS
+        auth_pass 1111
+    }
+    virtual_ipaddress {
+        {% for virIP in hotStandby['OUTIP'] %}
+        {{virIP}}
+        {% endfor %}
+    }
+    {% if hotStandby['targetip']!='' %}
+    virtual_routes{
+    {{ hotStandby['targetip']}} via {{ hotStandby['gateway']}}
+    }
+    {% endif %}
+    {% if hotStandby['NUM']==1 %}
+    notify_master "/etc/conntrackd/primary-backup.sh primary"
+    notify_backup "/etc/conntrackd/primary-backup.sh backup"
+    notify_fault "/etc/conntrackd/primary-backup.sh fault"
+    {% endif %}
+}
+{% endfor %}

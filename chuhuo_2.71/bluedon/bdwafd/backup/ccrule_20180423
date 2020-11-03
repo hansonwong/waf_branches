@@ -1,0 +1,53 @@
+
+## cc protect rules
+
+#
+# -- [[ Brute Force Protection ]] ---------------------------------------------------------
+#
+# If you are using the Brute Force Protection rule set, then uncomment the following
+# lines and set the following variables:
+# - Protected URLs: resources to protect (e.g. login pages) - set to your login page
+# - Burst Time Slice Interval: time interval window to monitor for bursts
+# - Request Threshold: request # threshold to trigger a burst
+# - Block Period: temporary block timeout
+#
+{% if ccrule.brouteswitch == 1 %}
+SecAction \
+  "id:'900014', \
+  phase:1, \
+  t:none, \
+  setvar:'tx.brute_force_protected_urls={{ccrule.brouteurls}}', \
+  setvar:'tx.brute_force_burst_time_slice={{ccrule.brouteperiod}}', \
+  setvar:'tx.brute_force_counter_threshold={{ccrule.broutetimes}}', \
+  setvar:'tx.brute_force_block_timeout={{ccrule.brouteblocktime}}', \
+  nolog, \
+  pass"
+
+Include "modsecurity_crs_11_brute_force_new.conf"
+#Include "../experimental_rules/modsecurity_crs_11_brute_force.conf"
+{% endif %}
+
+
+#
+# -- [[ DoS Protection ]] ----------------------------------------------------------------
+#
+# If you are using the DoS Protection rule set, then uncomment the following
+# lines and set the following variables:
+# - Burst Time Slice Interval: time interval window to monitor for bursts
+# - Request Threshold: request # threshold to trigger a burst
+# - Block Period: temporary block timeout
+#
+{% if ccrule.ccswitch == 1 %}
+SecAction \
+  "id:'900015', \
+  phase:1, \
+  t:none, \
+  setvar:'tx.dos_burst_time_slice={{ccrule.ccperiod}}', \
+  setvar:'tx.dos_counter_threshold={{ccrule.cctimes}}', \
+  setvar:'tx.dos_block_timeout={{ccrule.ccblocktime}}', \
+  nolog, \
+  pass"
+
+Include "../experimental_rules/modsecurity_crs_11_dos_protection.conf"
+
+{% endif %}

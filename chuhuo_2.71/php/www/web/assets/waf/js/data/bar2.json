@@ -1,0 +1,12 @@
+{ "seriesList": [  
+                {"name":"境内邮件","dataNumber":"100", "color":"#87cefa","title":"查看详情"},
+				{"name":"境外邮件","dataNumber":"10", "color":"#87cefa","title":"查看细节"},
+				{"name":"博客","dataNumber":"15000", "color":"#87cefa","title":"查看详1情"},
+				{"name":"微博","dataNumber":"120", "color":"#87cefa","title":"查看详情2"},
+				{"name":"网络论坛","dataNumber":"200000","color":"#87cefa","title":"查看详情3"},
+				{"name":"境外发贴","dataNumber":"50", "color":"#87cefa","title":"查看详情4"},
+				{"name":"新闻组","dataNumber":"8000", "color":"#87cefa","title":"查看详5情"},
+				{"name":"其它","dataNumber":"98", "color":"#87cefa","title":"查看详6情"}
+        ],
+	"title":"言论型涉密事件统计" 
+}  

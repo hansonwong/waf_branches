@@ -1,0 +1,149 @@
+status:200
+content-length:2334
+content-location:https://www.baidu.com/robots.txt
+set-cookie:BAIDUID=26A5DB26E350D33B3A1480CD2C042DE1:FG=1; expires=Sat, 15-Oct-16 02:52:50 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1, __bsi=2189269716028579840_00_0_I_R_1_0303_C02F_N_I_I_0; expires=Fri, 16-Oct-15 02:52:55 GMT; domain=www.baidu.com; path=/
+accept-ranges:bytes
+vary:Accept-Encoding,User-Agent
+server:bfe/1.0.8.5
+last-modified:Wed, 03 Jun 2015 09:46:09 GMT
+connection:keep-alive
+etag:"91e-51799edb43a40"
+date:Fri, 16 Oct 2015 02:52:50 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM "
+content-type:text/plain
+####################
+User-agent: Baiduspider
+Disallow: /baidu
+Disallow: /s?
+Disallow: /ulink?
+Disallow: /link?
+
+User-agent: Googlebot
+Disallow: /baidu
+Disallow: /s?
+Disallow: /shifen/
+Disallow: /homepage/
+Disallow: /cpro
+Disallow: /ulink?
+Disallow: /link?
+
+User-agent: MSNBot
+Disallow: /baidu
+Disallow: /s?
+Disallow: /shifen/
+Disallow: /homepage/
+Disallow: /cpro
+Disallow: /ulink?
+Disallow: /link?
+
+User-agent: Baiduspider-image
+Disallow: /baidu
+Disallow: /s?
+Disallow: /shifen/
+Disallow: /homepage/
+Disallow: /cpro
+Disallow: /ulink?
+Disallow: /link?
+
+User-agent: YoudaoBot
+Disallow: /baidu
+Disallow: /s?
+Disallow: /shifen/
+Disallow: /homepage/
+Disallow: /cpro
+Disallow: /ulink?
+Disallow: /link?
+
+User-agent: Sogou web spider
+Disallow: /baidu
+Disallow: /s?
+Disallow: /shifen/
+Disallow: /homepage/
+Disallow: /cpro
+Disallow: /ulink?
+Disallow: /link?
+
+User-agent: Sogou inst spider
+Disallow: /baidu
+Disallow: /s?
+Disallow: /shifen/
+Disallow: /homepage/
+Disallow: /cpro
+Disallow: /ulink?
+Disallow: /link?
+
+User-agent: Sogou spider2
+Disallow: /baidu
+Disallow: /s?
+Disallow: /shifen/
+Disallow: /homepage/
+Disallow: /cpro
+Disallow: /ulink?
+Disallow: /link?
+
+User-agent: Sogou blog
+Disallow: /baidu
+Disallow: /s?
+Disallow: /shifen/
+Disallow: /homepage/
+Disallow: /cpro
+Disallow: /ulink?
+Disallow: /link?
+
+User-agent: Sogou News Spider
+Disallow: /baidu
+Disallow: /s?
+Disallow: /shifen/
+Disallow: /homepage/
+Disallow: /cpro
+Disallow: /ulink?
+Disallow: /link?
+
+User-agent: Sogou Orion spider
+Disallow: /baidu
+Disallow: /s?
+Disallow: /shifen/
+Disallow: /homepage/
+Disallow: /cpro
+Disallow: /ulink?
+Disallow: /link?
+
+User-agent: ChinasoSpider
+Disallow: /baidu
+Disallow: /s?
+Disallow: /shifen/
+Disallow: /homepage/
+Disallow: /cpro
+Disallow: /ulink?
+Disallow: /link?
+
+User-agent: Sosospider
+Disallow: /baidu
+Disallow: /s?
+Disallow: /shifen/
+Disallow: /homepage/
+Disallow: /cpro
+Disallow: /ulink?
+Disallow: /link?
+
+
+User-agent: yisouspider
+Disallow: /baidu
+Disallow: /s?
+Disallow: /shifen/
+Disallow: /homepage/
+Disallow: /cpro
+Disallow: /ulink?
+Disallow: /link?
+
+User-agent: EasouSpider
+Disallow: /baidu
+Disallow: /s?
+Disallow: /shifen/
+Disallow: /homepage/
+Disallow: /cpro
+Disallow: /ulink?
+Disallow: /link?
+
+User-agent: *
+Disallow: /

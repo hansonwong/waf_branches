@@ -1,0 +1,12 @@
+status:200
+content-length:0
+content-location:http://news.baidu.com/z/
+set-cookie:BAIDUID=984BF4CAC042E75668A862DBE157B870:FG=1; expires=Sat, 15-Oct-16 03:10:16 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+accept-ranges:bytes
+server:Apache
+last-modified:Fri, 10 Oct 2014 08:13:52 GMT
+cache-control:max-age=180
+date:Fri, 16 Oct 2015 03:10:16 GMT
+p3p:CP=" OTI DSP COR IVA OUR IND COM "
+content-type:text/html
+####################

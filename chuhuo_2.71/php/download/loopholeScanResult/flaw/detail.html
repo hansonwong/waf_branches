@@ -1,0 +1,1732 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<div class="main" style="width:100%;">
+  <a id="10101"></a>
+  <div class="detail">
+    <h2>一 : SSL证书发行人信息</h2>
+    <p class="b"><b>1、什么是SSL？</b></p>
+    <p>安全套接字层 (SSL) 技术通过加密信息和提供鉴权，保护您的网站安全。一份SSL证书包括一个公共密钥和一个私用密钥。公共密钥用于加密信息，私用密钥用于解译加密的信息。浏览器指向一个安全域时，SSL同步确认服务器和客户端，并创建一种加密方式和一个唯一的会话密钥。它们可以启动一个保证消息的隐私性和完整性的安全会话。
+漏洞描述：
+虽然一个网站可能使用了SSL安全技术，但这并不是说在该网站中正在输入和以后输入的数据也是安全的。所有人都应该意识到SSL提供的仅仅是电子商务整体安全中的一小部份解决方案。SSL在网站上的使用可能会造成管理员对其站点安全性的某些错觉。使用了SSL的网站所可能受到的攻击和其它服务器并无任何区别，同样应该留意各方面的安全性。简言之，加密和数字证书，SSL的主要组成，从来都无法保护服务器，它们仅仅可以保护该服务器所收发的数据。</p>
+    <p class="b"><b>2、漏洞的危害性：</b></p>
+    <p>2002年9月以来，有许多利用OpenSSL安全漏洞的蠕虫，比如"Apache/mod_ssl", "Slapper", "bugtraq.c"蠕虫。这些蠕虫的攻击对象是使用OpenSSL 0.8.6d之前的SSL模块（mod_ssl）和在Linux上运行的Apache服务器，但仅限于SSL v2设置位有效的且硬件位Intel x86的设备。 蠕虫将以下请求发往连接在Internet上的TCP80端口，并搜索攻击对象的Apache服务器： GET /mod_ssl:error:HTTP-request HTTP/1.0 
+如果根据 反应确认是Apache服务器,那么就会通过TCP 443发送蠕虫的源代码.之后编辑送入的源代码，并在被攻击设备上执行。让后被感染的设备上再寻找下一个目标。在各台设备上运行的蠕虫通过UDP 2002端口通信，并形成P2P网络。使用这一网络，可以将特定的数据包一齐向特定目标发送，也就是说可以作为DDOS攻击的平台使用。 
+现在可以看出，OpenSSL系统的安全漏洞不仅危害SSL通信的安全，而且对整个网络系统的安全也有一定的影响。</p>d
+    <p class="b"><b>3、漏洞的解决方案：</b></p>
+    <p>至于如何保护证书的安全，你可以采用IDS（Intrusion Detection System），它是一种用于监测攻击服务器企图的技术和方法。典型的IDS监视网络通讯，并将其与保存在数据库中的已知攻击"特征"或方法比较。如果发现攻击，IDS可以提醒系统管理员、截断连接或甚至实施反攻击等。问题在于如果网络通讯是加密的，IDS将无法监视。这反而可能会使攻击更为轻松。假设在一个典型的被防火墙和IDS防护的DMZ环境中，黑客能轻松地探测被SSL保护的网站，因为SSL对数据的加密使得IDS无法正常监测攻击。通常一台单一的网站服务器会同时使用SSL和普通的TCP协议。由于黑客攻击的服务器而不是网络连接，他们可以选择任意一种途径。通过SSL途径，黑客知道SSL加密为他们带来的好处，这样更容易避开IDS系统的监测。</p>
+  </div>
+  
+  <a id="10201"></a>
+  <div class="detail">
+    <h2>二 : 新增的HTTP cookie</h2>
+    <p class="b"><b>1、漏洞描述:</b></p>
+    <p>一般来说，Cookie通过HTTP Headers从服务器端返回到浏览器上。首先，服务器端在响应中利用Set-Cookie header来创建一个Cookie ，然后，浏览器在它的请求中通过Cookie header包含这个已经创建的Cookie，并且把它返回至服务器，从而完成浏览器的论证。例如，我们创建了一个名字为login的Cookie来包含访问者的信息，创建Cookie时，服务器端的Header如下面所示，这里假设访问者的注册名是"Michael Jordan"，同时还对所创建的Cookie的属性如pathdomain、expires等进行了指定。expires=Monday,01-Mar-99 00:00:01 GMT上面这个Header会自动在浏览器端计算机的Cookie文件中添加一条记录。浏览器将变量名为"login"的Cookie赋值为"Michael Jordon"。注意，在实际传递过程中这个Cookie的值是经过了URLEncode方法的URL编码操作的。这个含有Cookie值的HTTP Header被保存到浏览器的Cookie文件后，Header就通知浏览器将Cookie通过请求以忽略路径的方式返回到服务器，完成浏览器的认证操作。此外，我们使用了Cookie的一些属性来限定该Cookie的使用。例如Domain属性能够在浏览器端对Cookie发送进行限定，具体到上面的例子，该Cookie只能传送到指定的服务器上，而决不会跑到其他的如的Web站点上去。Expires属性则指定了该Cookie保存的时间期限，例如上面的Cookie在浏览器上只保存到1999年3月1日1秒。当然，如果浏览器上Cookie 太多，超过了系统所允许的范围，浏览器将自动对它进行删除。至于属性Path，用来指定Cookie将被发送到服务器的哪一个目录路径下。
+说明：浏览器创建了一个Cookie后，对于每一个针对该网站的请求，都会在Header中带着这个Cookie；不过，对于其他网站的请求Cookie是绝对不会跟着发送的。而且浏览器会这样一直发送，直到Cookie过期为止。上一部分讲了有关Cookie的技术背景，这部分来说说在PHP里如何设置、使用、删除Cookie，及Cookie的一些限制。PHP对Cookie支持是透明的，用起来非常方便。</p>
+    <p class="b"><b>2、Cookie漏洞的危害性：</b></p>
+    <p>尽管cookie没有病毒那么危险，但它仍包含了一些敏感信息：用户名，计算机名，使用的浏览器和曾经访问的网站。用户不希望这些内容泄漏出去，尤其是当其中还包含有私人信息的时候。这并非危言耸听，一种名为Cross site scripting的工具可以达到此目的。在受到Cross site scripting攻击时，cookie盗贼和cookie毒药将窃取内容。一旦cookie落入攻击者手中，它将会重现其价值。cookie盗贼：搜集用户cookie并发给攻击者的黑客。攻击者将利用cookie信息通过合法手段进入用户帐户。cookie毒药：利用安全机制，攻击者加入代码从而改写cookie内容，以便持续攻击。Cookie记录着用户的帐户ID、密码之类的信息，如果在网上传递，通常使用的是MD5方法加密。这样经过加密处理后的信息，即使被网络上一些别有用心的人截获，也看不懂，因为他看到的只是一些无意义的字母和数字。然而，现在遇到的问题是，截获Cookie的人不需要知道这些字符串的含义，他们只要把别人的Cookie向服务器提交，并且能够通过验证，他们就可以冒充受害人的身份，登陆网站。这种方法叫做Cookie欺骗。Cookie欺骗实现的前提条件是服务器的验证程序存在漏洞，并且冒充者要获得被冒充的人的Cookie信息。目前网站的验证程序要排除所有非法登录是非常困难的，例如，编写验证程序使用的语言可能存在漏洞。而且要获得别人Cookie是很容易的，用支持Cookie的语言编写一小段代码就可以实现（具体方法见三），只要把这段代码放到网络里，那么所有人的Cookie都能够被收集。如果一个论坛允许HTML代码或者允许使用Flash标签就可以利用这些技术收集Cookie的代码放到论坛里，然后给帖子取一个吸引人的主题，写上有趣的内容，很快就可以收集到大量的Cookie。在论坛上，有许多人的密码就被这种方法盗去的。</p>
+    <p class="b"><b>3、漏洞的解决方案：</b></p>
+    <p>对于如何防范，目前还没有特效药，我们也只能使用通常的防护方法，不要在论坛里使用重要的密码，也不要使用IE自动保存密码的功能，以及尽量不登陆不了解底细的网站。</p>
+  </div>
+  
+  <a id="10202"></a>
+  <div class="detail">
+    <h2>三 : 发现新的'Server'头数值</h2>
+    <p class="b"><b>1、什么是'Server'头？</b></p>
+    <p>默认情况下，Apache安装时会显示版本号及操作系统的版本，甚至会显示服务器上安装了哪些Apache模块。这些信息可能会被黑客利用，并且黑客还可以从中得知你所配置的服务器上的很多设置都是默认状态。</p>
+  </div>  
+  
+  <a id="10203"></a>
+  <div class="detail">
+    <h2>四 :　发现新的'Via'头数值</h2>
+    <p class="b"><b>1、什么是'Via'头？</b></p>
+    <p>当客户端请求到达第一个代理服务器时，该服务器会在自己发出的请求里面添加 Via 头部，并填上自己的相关信息，当下一个代理服务器 收到第一个代理服务器的请求时，会在自己发出的请求里面复制前一个代理服务器的请求的Via头部，并把自己的相关信息加到后面， 以此类推，当 OCS 收到最后一个代理服务器的请求时，检查 Via 头部，就知道该请求所经过的路由。    </p>    
+    <p>例如：Via：1.0 236-81.D07071953.sina.com.cn:80 (squid/2.6.STABLE13)</p>
+  </div>
+  
+  <a id="10204"></a>
+  <div class="detail">
+    <h2>五 :　发现新的'X-*'头数值</h2>
+    <p class="b"><b>1、什么是'X-*'头:</b></p>
+    <p>X头域是HTTP请求中以X为开头的头域的统称。简单的说，这些头域是一些非标准HTTP协议所包括的或者是专有的。X头域可以在诸多方面得到应用：用户身份认证，设备辨识，网络特性确认等等。无论是从创建良好的移动应用体验还是从满意度来看，这些信息都是很有用的。</p>
+  </div>
+  
+  <a id="10205"></a>
+  <div class="detail">
+    <h2>六 :　发现新的404签名</h2>
+    <p class="b"><b>1、漏洞描述：</b></p>
+    <p>404是一个http错误代码，即请求的网页不存在。代码404的第一个"4"代表客户端的错误，如错误的网页地址；后两的数字码则代表着特定的错误讯息。就是当用户输入了错误的链接时，返回的页面。这样的目的是告诉浏览者其所请求的页面不存在或链接错误，同时引导用户使用网站其他页面而不是关闭窗户离开。</p>
+     <p class="b"><b>2、漏洞的危害性：</b></p>
+    <p>http 404 错误意味着链接指向的网页不存在，即原始网页的URL失效，这种情况经常会发生，很难避免，比如说：网页URL生成规则改变、网页文件更名或移动位置、导入链接拼写错误等，导致原来的URL地址无法访问；当Web 服务器接到类似请求时，会返回一个404 状态码，告诉浏览器要请求的资源并不存在。但是，Web服务器默认的404错误页面，无论Apache还是IIS，均十分简陋、呆板且对用户不友好，无法给用户提供必要的信息以获取更多线索，无疑这会造成用户的流失。</p>
+     <p class="b"><b>3、漏洞的解决方案：</b></p>
+    <p>使用自定义404错误的方式以提供用户体验避免用户流失。一般而言，自定义404页面通用的做法是在页面中放置网站快速导航链接、搜索框以及网站提供的特色服务，这样可以有效的帮助用户访问站点并获取需要的信息。</p>
+  </div>    
+  
+  <a id="10401"></a>
+  <div class="detail">
+    <h2>七 :　资源不允许直接访问</h2>
+    <p class="b"><b>1、漏洞描述:</b></p>
+    <p>对于Web服务器上的一些资源，是不允许客户端直接请求获取的，例如，网站的配置文件、App_Code文件夹中的代码文件等。</p>
+    <p class="b"><b>2、漏洞的危害性:</b></p>
+    <p>如果服务器上的一些原本就不允许用户访问资源，被用户访问到了，如果在这些资源中包含了源码，那么恶意攻击者通过对这些源码的分析，就能过很容易的找到了网站的脆弱点。那么网站就会很容易的遭到恶意攻击。假如这些资源中有包含了敏感信息，那么恶意攻击者就有可能通过这些敏感信息从而达到了对目标服务器的控制的目的。</p>
+    <p class="b"><b>3、漏洞的解决方案:</b></p>
+    <p>对于不允许客户端获取的文件，可以将这些请求的处理程序映射到一个特殊的处理程序来解决，这个处理程序简单地返回一个禁止访问的回应即可。在 ASP.NET 中这个处理程序的类型是 HttpForbiddenHandler。HttpForbiddenHandler 直接返回一个状态码为 403 的 HTTP 回应，来表示访问被拒绝。可以使用它来禁止所希望禁止的任何请求，在系统的 web.config 中，已经将项目文件、代码文件以及其他类型被禁止客户端访问的文件映射到了这个处理程序。</p>
+  </div>
+  
+  <a id="10402"></a>
+  <div class="detail">
+    <h2>八 :　需要HTTP身份认证</h2>
+    <p class="b"><b>1、漏洞描述：</b></p>
+    <p>计算机网络世界中一切信息包括用户的身份信息都是用一组特定的数据来表示的，计算机只能识别用户的数字身份，所有对用户的授权也是针对用户数字身份的授权。
+如何保证以数字身份进行操作的操作者就是这个数字身份合法拥有者，也就是说保证操作者的物理身份与数字身份相对应，身份认证就是为了解决这个问题，作为防护网络资产的第一道关口，身份认证有着举足轻重的作用。他是判断客户端是否有资格访问资源的过程。HTTP协议支持将身份验证作为协商访问安全资源的一种方式。
+    </p>
+    <p class="b"><b>2、漏洞的危害性：</b></p>
+    <p>如果将身份验证凭据以明文形式从客户端传递到服务器，在同一网络的某台主机上配备有基本网络监控软件的攻击者可以捕获传递的信息并获取用户的名称和密码。对于这种安全威胁，身份认证系统对用户名和口令进行加密，避免以明文的形式在网络上传输。但是威胁依然存在，对于普通的加密算法，攻击者会有办法解密从而获取用户口令。即使是采用加强的加密算法，攻击者一时无法解密，也可以实施会话重放攻击。这对于网站来说，无疑是一个极大的威胁。</p>
+    <p class="b"><b>3、漏洞的解决方案：</b></p>
+    <p>一种解决的办法是，当执行关键操作时，重新进行身份认证。比如，当用户通过身份验证后，可以进入VOD点播的页面；当用户指定播放某一VOD影片时，系统要求用户重新输入用户名、口令进行再一次验证。但是这样做，会让用户频繁输入用户名、口令，并不可取。
+更好的做法是：采取结合DES算法，采用加入时间戳基于MD5摘要算法的一次一密方法对访问用户的口令进行加密，把用户名、口令和时间戳一起进行加密传输，即使攻击者进行重放攻击，由于时间戳已经改变，就不能通过认证。并且在执行关键操作时，由内容业务系统到身份认证系统再次进行验证，而不需要用户重新输入用户名和口令。
+    </p>
+  </div>
+  
+  <a id="10404"></a>
+  <div class="detail">
+    <h2>九 :　启用目录列表</h2>
+    <p class="b"><b>1、漏洞描述：</b></p>
+    <p>如果目标目录启用了自动目录列表功能，假如用户访问的网址是某个目录地址，服务器自动显示了该目录所包含的文件列表内容。那么，这对于网站来说无疑是一个极大的安全隐患，我们可以假设，用户请求的URL地址是某个目录地址的时候，如果该目录开启了自动列表功能并且WEB服务器默认的页面文件(如index.html/home.html/default.htm/default.asp/default.aspx/index.php等)也不存在，那么该目录所包含的文件就会被自动的以列表的形式显示出来，这将可能是网站上的一些敏感的文件遭到泄露的危险。</p>
+    <p class="b"><b>2、漏洞的危害性：</b></p>
+    <p>该漏洞导致任何人都可以浏览该目录下的所有文件列表。使得网站存在着极大的安全隐患。如果该目录不存在默认的主页面文件，并且该目录包含了敏感的文件内容（如应用程序源码文件或其它的重要文件内容），那么将导致网站的敏感文件内容外泄，从而对企业造成直接的经济损失，也为恶意的攻击者提供了进一步攻击网站的有效信息。</p>
+    <p class="b"><b>3、漏洞的解决方案：</b></p>
+    <p>如果必须开启该目录的目录列表功能，那么应该对该目录下的文件进行详细检查，确保不包含敏感文件。如非必要，请重新配置WEB服务器，禁止该目录的自动目录列表功能。</p>
+  </div>
+  
+  <a id="10405"></a>
+  <div class="detail">
+    <h2>十 :　已发现的文件/目录</h2>
+    <p class="b"><b>1、漏洞描述：</b></p>
+    <p>对于一个安全的Web服务器来说，对Web内容进行恰当的访问控制是极为关键的。目录遍历是Http所存在的一个安全漏洞，它使得攻击者能够访问受限制的目录，并在Web服务器的根目录以外执行命令。</p>
+    <p class="b"><b>2、漏洞的危害性：</b></p>
+    <p>利用这个漏洞，攻击者能够走出服务器的根目录，从而访问到文件系统的其他部分，譬如攻击者就能够看到一些受限制的文件，或者更危险的，攻击者能够执行一些造成整个系统崩溃的指令。这对于服务器来说无疑是一个重大的威胁。</p>
+    <p class="b"><b>3、漏洞的解决方案：</b></p>
+    <p>解决该漏洞的最好的方式就是使用Web漏洞扫描器，通过Web漏洞扫描器能够遍历你Web站点的所有目录以判断是否存在目录遍历漏洞，如果有它会报告该漏洞并给出解决的方法，除了目录遍历漏洞以外，Web应用扫描还能检查SQL注入、跨站点脚本攻击以及其他的漏洞。</p>
+  </div>
+  
+  <a id="10501"></a>
+  <div class="detail">
+    <h2>十一 :　所有外部链接</h2>
+    <p class="b"><b>1、什么是外部链接?</b></p>
+    <p>外部链接是指通过互联网上的其他网页或者网站首页给与我们网站指向的锚文字链接, 尽管外部链接不是我们优化网站的全部，但是它却在网站排名因素总起着至关重要的作用，外部链接分为锚文本链接和直接网址链接，锚文本链接能迅速提升我们网站某个关键词的排名，而网址链接则能提升我们网站的整体权重。</p>
+    <p class="b"><b>2、漏洞的危害性：</b></p>
+    <p>由于当今的seo排名的激烈性，有的站长因为无法把自己的网站优化好，就想着歪主意去陷害竞争对手。现在陷害的手法归纳为两种，一种是站内一种是站外，至于手段就看各自的高明了。DDOS攻击，黑如对方网站加上隐藏文字，隐藏链接、非法内容，甚至修改robots文件禁止收录，显然可以陷害到对手，对于这种手法在网络上使违法的。竞争对手是通过什么样的途径来陷害你，你要如何防御，其实说来说去，也没法预防，人在暗处你在明确，明枪易躲暗箭难防啊。你只有做好你的本职工作，其他事情你想也是多余的。深度链接和锚文字我再谷歌站长帮助文档中看到有这么一句话，你的竞争对手基本上是无法破坏你网站的排名，或者将您的网站从我们的索引中删除。有不少人观察过谷歌保龄球的显示案例，前不久我也看到过竞争对手制造大量黑链接，导致网站被惩罚很长一段时间的例子。所以无论从原理上还是现实中，竞争对手通过外部链接导致您望着那排名收到影响的可能是比较低的。黑链这种手法同样也出现在百度搜索引擎。</p>
+    <p class="b"><b>3、漏洞的解决方案：</b></p>
+    <p>要防止这种陷害，你唯一要做的就是提高自己网站的权重。你只要花时间去做好做强自己的网站，外部链接构成健康，有大量高质量的链接，锚文字自然分散，竞争对手就没办法陷害你，一般来说，seo不必为竞争对手是否通过外部链接陷害而担心。当你的网站没权重、没排名时候，没人会陷害你。当你的网站有了权重、有了排名的时候，陷害是比较难的。</p>
+  </div>
+  
+  <a id="10502"></a>
+  <div class="detail">
+    <h2>十二 :　外部URL重定向器</h2>
+    <p class="b"><b>1、漏洞描述：</b></p>
+    <p>如果应用程序提取用户可控制的输入，并使用这个数据执行一个重定向，指示用户的浏览器访问一个不同于用户要求的URL，那么就会造成重定向漏洞。 </p>
+    <p class="b"><b>2、漏洞的危害性：</b></p>
+    <p>相比于可用以执行大量恶意操作的跨站点脚本漏洞，重定向漏洞不大会引起攻击者的兴趣。攻击者主要利用重定向漏洞实施钓鱼攻击，诱使受害者访问一个欺骗性Web站点并输入敏感信息。对受害者而言，重定向漏洞提高了攻击者的可信度，因为它允许攻击者创建一个指向他所针对的可信Web站点的 URL，因此更具有说服力，但任何访问这个URL的用户将被悄悄重定向到攻击者控制的一个Web站点。</p>
+    <p class="b"><b>3、漏洞的解决方案 ：</b></p>
+    <p>绝不将用户提交的数据合并到重定向目标中是避免重定向漏洞的最有效方法。从应用程序中删除重定向页面，用直接指向相关目标URL的链接替代指向重定向页面的链接。
+建立一个包含所有有效重定向URL的列表。不以参数的形式向重定向页面传送目标 URL，相反，传送这个列表的一个索引。重定向页面应在它的列表中查询这个索引，并返回一个指向相关URL的重定向。
+如果重定向页面不可避免地要收到用户提交的输入并将它合并到重定向目标中，应使用以下措施降低重定向攻击的风险。
+应用程序应在所有重定向中使用相对 URL，重定向页面应严格确认它收到的URL是一个相对URL。它应当确认：用户提交的URL或者以单独一个斜线字符、后接一个字母开头，或者以一个字母开头，并且在第一个斜线前没有冒号。应拒绝而不是净化任何其他输入。
+    </p>
+  </div>
+  
+  <a id="40101"></a>
+  <div class="detail">
+    <h2>十三 :　文档正文存在XSS</h2>
+    <p class="b"><b>1、 引言:</b></p>
+    <p>在Web 2.0出现以前，跨站脚本（XSS）攻击不是那么引人注目，但是在Web 2.0出现以后，配合流行的AJAX技术，XSS的危害性达到了十分严重的地步。比如，世界上第一个跨站脚本蠕虫发生在MySpace网站，20小时内就传染了一百万个用户，最后导致该网站瘫痪。
+跨站脚本是最普遍的web应用安全漏洞。当应用程序在发送给浏览器的页面中包含用户提供的数据，但没有经过适当验证或转译那些内容，这就导致跨站脚本漏洞。
+    </p>
+    <p class="b"><b>2、 XSS攻击的定义及各类:</b></p>
+    <p>2.1跨站脚本英文名称是（Cross Site Script），为了与层叠样式表（Cascading Style Sheets）区分，故命名为XSS。</p>
+    <p>XSS攻击是指入侵者在远程WEB页面的HTML代码中插入具有恶意目的的数据，用户认为该页面是可信赖的，但是当浏览器下载该页面时，嵌入其中的脚本将被解释执行。</p>
+    <p>2.2 XSS攻击种类</p>
+    <p>XSS攻击分成两类，一类是来自内部的攻击，主要指的是利用程序自身的漏洞，构造跨站语句，如:dvbbs的showerror.asp存在的跨站漏洞。 　　另一类则是来自外部的攻击，主要指的自己构造XSS跨站漏洞网页或者寻找非目标机以外的有跨站漏洞的网页。如当我们要渗透一个站点，我们自己构造一个有跨站漏洞的网页，然后构造跨站语句，通过结合其它技术，如社会工程学等，欺骗目标服务器的管理员打开。</p>
+    <p class="b"><b>3、 跨站脚本漏洞的成因:</b></p>
+    <p>3.1XSS成因概括</p>
+    <p>XSS其实就是Html的注入问题，攻击者的输入没有经过严格的控制进入了数据库最 
+　　终显示给来访的用户，导致可以在来访用户的浏览器里以浏览用户的身份执行Html代码，数据流程如下：攻击者的Html输入—>web程序—>进入数据库—>web程序—>用户浏览器。
+    </p>
+    <p>3.2常规跨站漏洞</p>
+    <p>我们来看一段接收评论的代码： 
+　　<% 
+　　	UserName= Request.Form(" UserName") 
+　　	Comment=Request.Form("Commmet") 
+　　	Email= Request.Form("Email") 
+　　	Conn.execute("insert into Comment (Com_UserName, Com_Comment, Com_Email) values('"& UserName&"','"& Comment&"','"& Email"')") 
+　　%> 
+　　	可以看到，从客户端输入的所有变量没有经过任何过滤就直接进入了数据库。攻击者可以在表单中输入：，点击提交后，那么其他用户在浏览该页面时就会不知不觉打开一个预先挂有木马的页面http://www.xxx.com/muma.html，如果没打相应的补丁，就会中马。当然XSS的攻击方式还有很多，比如通过跨站将上传的图片备份直接得到WebShell、结合AJAX技术通过蠕虫攻击等，因为这不是本文的重点，在这里就不一一列举了。
+    </p>
+    <p>3.3 UBB跨站漏洞</p>
+    <p>在很多论坛里发帖时，点击图片模样的按钮，在编辑区域就会出现[IMG][/IMG]的字样，这是采用了一种UBB编码的方式，如果攻击者输入，它会默认将其转换为，通过这种方式诱发的跨站漏洞称为UBB跨站漏洞。</p>
+    <p class="b"><b>4、 防范方法 </b></p>
+    <p>4.1针对常规跨站漏洞</p>
+    <p>在常规的跨站漏洞中，正是因为攻击者可以不受限制地引入"<>"，导致了他可以操纵一个html标记，从而诱发了XSS攻击。因此首先就要过滤掉"<>"： 
+　　Replace(str,"<","<") 
+　　 Replace(str,">",">") 
+    </p>
+    <p>4.2针对UBB跨站漏洞</p>
+    <p>UBB跨站漏洞的防范相对来说比较复杂，首先攻击者必须引入javascript或vbscript代码来达到攻击的目的，所以首先要过滤中javascript后面的冒号，将其用中文的冒号替代： 
+　　Replace(str,":","：")</p>
+    <p>但是HTML支持&#ASCII这样的编码，攻击者又可以通过重新达到目的（58是冒号的十进制ASCII码），所以必须过滤&符号： 
+　　Replace(str,"&","&")</p>
+    <p>以上虽然已经过滤了来自标签属性的威胁，攻击者还是可以通过触发一个错误事件来达到目的。所以还需过滤掉以下字符： 
+　　Replace(str," "," ")//过滤空格 
+　　Replace(str,"=","=")//过滤等号 
+　　Replace(str,"""",""")//过滤双引号
+    </p>
+    <p class="b"><b>5、 结束语</b></p>
+    <p>通过以上分析我们看到，XSS是一种危害较大、较难防范，并且更加隐蔽的攻击方式。其实只要明白其原理，再加上勤加思考防范的对策，就可以根治XSS漏洞。</p>
+    <p>防范措施是Web应用程序中最常见的漏洞之一。如果您的站点没有预防XSS漏洞的固定方法，那么就存在XSS漏洞。这个利用XSS漏洞的病毒之所以具有重要意义是因为，通常难以看到XSS漏洞的威胁，而该病毒则将其发挥得淋漓尽致。</p>
+  </div>
+  
+  <a id="40102"></a>
+  <div class="detail">
+    <h2>十四 :　XSS通过任意的URLS</h2>
+    <p>请参考 : <a href="./detail.html#40101">十三 :　文档正文存在XSS</a></p>
+  </div>
+  
+  <a id="40103"></a>
+  <div class="detail">
+    <h2>十五 :　HTTP响应头部分割</h2>
+    <p class="b"><b>1、前言</b></p>
+    <p>"HTTP响应头拆分漏洞"是一种新型的web攻击方案，它重新产生了很多安全漏洞包括：web缓存感染、用户信息涂改、窃取敏感用户页面、跨站脚本漏洞。这项攻击方案，包括其衍生的一系列技术产生，是由于web应用程序没有对用户的提交进行严格过滤，导致非法用户可以提交一些恶意字符，更具体来说，是对用户输入的CR 和LF字符没有进行严格的过滤。</p>
+    <p class="b"><b>2、介绍</b></p>
+    <p>HTTP 响应头拆分攻击本质是：
+    攻击者可以发送一个或几个HTTP指令迫使漏洞服务器产生一个攻击者构想好的输出。它可以让服务器误把几条HTTP请求看成一次完成的HTTP请求来解释。第一条请求也许攻击者部分控制着一部分，但这并不是危险的；危险的是，攻击者完全控制着第二条HTTP请求，即从HTTP状态行一直到HTTP请求的尾部。如果这样可行，攻击者就会发送多个请求指令到目标系统：第一条使得服务器完全接受两个HTTP响应，第二条响应通常是在服务器上请求一些非法资源，而服务器将会自动匹配到第二条响应，输出攻击者想要请求的资源，从而达到攻击者的目的。
+</p>
+    <p class="b"><b>3、http传输的信息内容</b></p>
+    <p>当我们浏览器端和服务器端进行信息交互时，http除了发送请求和响应信息外，还会自动发送一系列的附加信息。这些Http自动发送的附加信息，称为http头信息。根据请求和响应的不同阶段，将http头信息，分成请求头信息和响应头信息。</p>
+    <p>请求头信息含义:在向服务器端发送请求的同时，浏览器自动向服务器发送的一系列的附加信息。
+目的:告诉服务器端，客户端能够或希望接收的响应信息。
+特点:头信息，总是名称与值的成对的集合(类似于属性Attrabute、parameter和Map集合的构成)。浏览器自动实现，不需要进行人为的操作。</p>
+    <p class="b">3.1、HTTP请求头的内容：</p>
+    <p class="b"><a href="./images/flaw01.png" target="_blank" title="点击查看大图"><img src="./images/flaw01.png" border="0" width="620" /></a></p>
+    <p class="b" style="padding-left:25px;">Accept: text/html,image/*(浏览器可以接收的类型)<br /> 
+Accept-Charset: ISO-8859-1(浏览器可以接收的编码类型)<br /> 
+Accept-Encoding: gzip,compress(浏览器可以接收压缩编码类型)<br /> 
+Accept-Language: en-us,zh-cn(浏览器可以接收的语言和国家类型)<br /> 
+Host: www.it315.org:80(浏览器请求的主机和端口) <br />
+If-Modified-Since: Tue, 11 Jul 2000 18:23:51 GMT(某个页面缓存时间)<br />
+Referer: http://www.it315.org/index.jsp(请求来自于哪个页面)<br />
+User-Agent: Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)(浏览器相关信息)<br /> 
+Cookie：(浏览器暂存服务器发送的信息) <br />
+Connection: close(1.0)/Keep-Alive(1.1)(HTTP请求的版本的特点)<br /> 
+Date: Tue, 11 Jul 2000 18:23:51 GMT(请求网站的时间)
+</p>
+    <p class="b">3.2、HTTP响应头的内容：</p>
+    <p class="b"><a href="./images/flaw02.png" target="_blank" title="点击查看大图"><img src="./images/flaw02.png" border="0" width="620" /></a></p>
+    <p class="b" style="padding-left:25px;">Location: http://www.it315.org/index.jsp(控制浏览器显示哪个页面)<br /> 
+Server:apache tomcat(服务器的类型) <br />
+Content-Encoding: gzip(服务器发送的压缩编码方式) <br />
+Content-Length: 80(服务器发送显示的字节码长度) <br />
+Content-Language: zh-cn(服务器发送内容的语言和国家名)<br /> 
+Content-Type: image/jpeg; charset=UTF-8(服务器发送内容的类型和编码类型)<br /> 
+Last-Modified: Tue, 11 Jul 2000 18:23:51 GMT(服务器最后一次修改的时间) <br />
+Refresh: 1;url=http://www.it315.org(控制浏览器1秒钟后转发URL所指向的页面) <br />
+Content-Disposition: attachment; filename=aaa.jpg(服务器控制浏览器发下载方式打开文件)<br /> 
+Transfer-Encoding: chunked(服务器分块传递数据到客户端）  <br />
+Set-Cookie:SS=Q0=5Lb_nQ; path=/search(服务器发送Cookie相关的信息)<br /> 
+Expires: -1(服务器控制浏览器不要缓存网页，默认是缓存) <br />
+Cache-Control: no-cache(服务器控制浏览器不要缓存网页) <br />
+Pragma: no-cache(服务器控制浏览器不要缓存网页)   <br />
+Connection: close/Keep-Alive(HTTP请求的版本的特点) <br /> 
+Date: Tue, 11 Jul 2000 18:23:51 GMT(响应网站的时间)
+    </p>
+    <p class="b">3.3、Http协议的状态码不居于任何语言的改变而改变，其中特定的状态代码分为5类：</p>
+    <p class="b" style="padding-left:25px;">
+    • 100~199：这之间的代码都是信息性的，标示客户应该采取的其它动作；<br />
+• 200~299：表示请求成功；<br />
+• 300~399：用于那些已经移走的文件，常常包括Location报头，指出新的地址；<br />
+• 400~499：表明由客户引发的错误；<br />
+• 500~599：表示由服务器引发的错误；
+</p>
+    <p class="b" style="padding-left:25px;">其中比较重要、常用的状态码有：<br />
+⑴、200 ：表示一切OK，一切正常；<br />
+⑵、400 ：请求出现语法错误；<br />
+⑶、404 ：无法找到指定位置的资源；<br />
+⑷、405 ：请求方法（GET、POST、HEAD、DELETE、PUT、TRACE等）对指定的资源不适用；<br />
+⑸、500 ：内部服务器程序有问题，抛异常；<br />
+⑹、503 ：服务器不可用；<br />
+⑺、505 ：不支持的Http版本；
+</p>
+    <p class="b">3.4、延伸阅读</p>
+    <p class="b" style="padding-left:25px;">• 客户端的请求由一个http命令（get/post）、0或多个请求报头以及要请求的资源组成。<br />
+• 服务器的响应一般由一个状态行、一些响应报头、一个空行和相应文档组成。<br />
+• Http响应的状态行由http版本、一个状态代码和一段消息组成。<br />
+• http版本由服务器来决定，一般情况下，servlet也不需要设置状态代码，系统自动默认为200。如果需要明确指明当前程序的运行状态，则可以利用response.setStatus(int 状态代码)进行设置
+</p>
+    <p class="b"><b>4、 HTTP响应头漏洞攻击基本技术</b></p>
+    <p class="b" style="padding-left:25px;">HTTP响应头攻击把代码嵌入到用户信息中并放在HTTP头部，也发生在把用户信息和代码嵌入到重定向到的URL中，或者把脚本嵌入到cookie值或者name里。在第一条响应中，重定向的URL是HTTP响应头的一部分，第二条响应是确定cookie，cookie中的name/value是响应头中set-cookie的一部分。<br />
+由于攻击的特殊性，在实现攻击前，我们先来了解一下这两个字符的编码：<br />
+CR = %0d = \r<br />
+LF = %0a = \n<br />
+比如，我们考虑以下jsp页面(/isno.jsp)，内容如下：<br />
+<% <br />
+response.sendRedirect("/isno.jsp?lang="+request.getParameter("lang")); <br />
+%> <br />
+假如使得parmeter lang=ivory，程序将会重定向到/isno.jsp?lang=ivory。通常一个标准的HTTP请求会如下：<br />
+HTTP/1.1 302 Moved Temporarily\r\n <br />
+Date: Wed, 1 Mar 2005 12:53:28 GMT\r\n <br />
+Location: http://192.168.0.1/isno.jsp?lang=ivory\r\n <br />
+Server: WebLogic XMLX Module 8.1 SP1 Fri Jun 20 23:06:40 PDT 2003 271009 with\r\n <br />
+Content-Type: text/html\r\n <br />
+Set-Cookie: JSESSIONID=1pMRZOiOQzZiE6Y6iivsREg82pq9Bo1ape7h4YoHZ62RXjApqwBE!- <br />
+1251019693; path=/\r\n <br />
+Connection: Close\r\n <br />
+&lt;html&gt;&lt;head&gt;&lt;title&gt;302 Moved Temporarily&lt;/title&gt;&lt;/head&gt;\r\n <br />
+&lt;body bgcolor="#FFFFFF"&gt;\r\n <br />
+&lt;p&gt;This document you requested has moved temporarily.&lt;/p&gt;\r\n <br />
+&lt;p&gt;It's now at &lt;a href="http://192.168.0.1/isno.jsp?lang=ivory"&gt;[url]http://192.168.0.1/isno.jsp?lang=ivory&lt;/a&gt;.&lt;/p&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n[/url]
+这样我们能清楚的看出lang所赋的值被嵌入在Location响应头中。
+好，我们来实行HTTP响应头攻击，再将lang赋值，这次并不是ivory，而是给另外一个东西。
+/isno.jsp?lang=Allyesno%0d%0aContent-Length:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aContent-Type:%20text/html%0d%0aContent-Length:%2024%0d%0a%0d%0a&lt;html&gt;I'm%20isno!&lt;/html&gt;
+这样的话，HTTP将会如下发送：
+HTTP/1.1 302 Moved Temporarily\r\n
+Date: Wed, 1 Mar 2005 15:26:41 GMT\r\n
+Location: http://192.168.0.1/isno.jsp?lang=Allyesno\r\n
+Content-Length: 0\r\n
+HTTP/1.1 200 OK\r\n
+Content-Type: text/html\r\n
+Content-Length: 24\r\n
+&lt;html&gt;I'm%20isno!</html>\r\n
+Server: WebLogic XMLX Module 8.1 SP1 Fri Jun 20 23:06:40 PDT 2003 271009 with\r\n
+Content-Type: text/html\r\n
+Set-Cookie: JSESSIONID=1pwxbgHwzeaIIFyaksxqsq92Z0VULcQUcAanfK7In7IyrCST9UsS!-
+1251019693; path=/\r\n
+Connection: Close\r\n
+
+
+&lt;html&gt;&lt;head&gt;&lt;title&gt;302 Moved Temporarily&lt;/title&gt;&lt;/head&gt;\r\n
+&lt;body bgcolor="#FFFFFF"&gt;\r\n
+&lt;p&gt;This document you requested has moved temporarily.&lt;/p&gt;\r\n
+&lt;p&gt;It's now at &lt;a href="http://192.168.0.1/isno.jsp?lang=Allyesno\r\n
+Content-Length: 0\r\n
+HTTP/1.1 200 OK\r\n
+Content-Type: text/html\r\n
+Content-Length: 24\r\n
+&lt;html&gt;I'm%20isno!&lt;/html&gt;">http://192.168.0.1/isno.jsp?lang=Allyesno\r\n
+Content-Length: 0\r\n
+HTTP/1.1 200 OK\r\n
+Content-Type: text/html\r\n
+Content-Length: 24\r\n
+&lt;html&gt;I'm%20isno!&lt;/html&gt;&lt;/a&gt;.&lt;/p&gt;\r\n
+&lt;/body&gt;&lt;/html&gt;\r\n
+
+
+这里提交了两个请求，第一个指向的URL是
+/isno.jsp?lang=Allyesno%0d%0aContent-Length:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aContent-Type:%20text/html%0d%0aContent-Length:%2024%0d%0a%0d%0a&lt;html&gt;I'm%20isno!&lt;/html&gt;
+
+第二个指向的URL是/index.html这样服务器会给第一个请求匹配到第一个响应：
+
+HTTP/1.1 302 Moved Temporarily\r\n
+Date: Wed, 1 Mar 2005 15:26:41 GMT\r\n
+Location: http://192.168.0.1/isno.jsp?lang=Allyesno\r\n
+Content-Length: 0\r\n
+对第二个请求(/index.html)自动匹配到第二个响应：
+HTTP/1.1 200 OK\r\n
+Content-Type: text/html\r\n
+Content-Length: 24\r\n
+&lt;html&gt;I'm%20isno!&lt;/html&gt;&lt;/a&gt;.&lt;/p&gt;\r\n
+&lt;/body&gt;&lt;/html&gt;\r\n
+
+这样，攻击者就成功的愚弄了服务器。
+</p>
+    <p class="b"><b>5、合理建议</b></p>
+    <p class="b">5.1 错误处理机制。</p>
+    <p class="b" style="padding-left:25px;">" 错误处理"曾是iis漏洞的一个漏洞点，在iis5.0中，它允许客户端定制一个脚本来处理HTTP错误信息，而不是给出真正的错误页面。举例来说，当用户请求一个资源，而该资源不存在的时候，会出现"资源无法访问（你所找的页面不存在）"（HTTP状态404），而同时IIS5.0允许产生一个脚本代码响应给用户，这个代码可以是静态的HTML，也可以是动态的ASP等等。因此，这里就会产生一个HTTP响应头拆分漏洞，但是只是针对iis5.0。</p>
+    <p class="b">5.2 字符过滤器的饶过。</p>
+    <p class="b" style="padding-left:25px;">另一个要面对的问题就是，一些应用程序会过滤掉一些用户输入的非法字符。特别是对一些非ASCII字符作严格的过滤。例如ASP.NET 1.0/1.1会尝试对数据进行UTF-8编码，如果在UTF-8中不符合的数据将会自动丢失；ASP.NET 1.1不允许有'&lt;'字符出现在一些数据的后面。<br />
+    而我们在构造header头的时候，基本上都不会出现被过滤的情况。关键就是对body请求的构造，因为这个地方会出现一些让字符过滤器过滤的字符。
+饶过的方法当然就是对body处进行UTF-7进行编码(RFC 2152 - [1])，这种编码方法可以对任意的unicode字符编码到"A-Z"，"a-z"，"0-9"，"/"，"-"，"+"中，这样可以让过滤器对我们提交的数据无法过滤。具体实现的方法如下：<br />
+I 修改第一处：<br />
+Content-Type: text/html;charset=utf-7 <br />
+II 修改第二处：<br />
+将&lt;html&gt;&lt;body&gt;&lt;script&gt;alert('get,cookies:'+document.cookie)&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;<br />
+编码后成为：<br />
++ADw-html+AD4-+ADw-body+AD4-+ADw-script+AD4-alert('get,cookies:'+-document.cookie)+ADw-/script+AD4-+ADw-/body+AD4-+ADw-/html+AD4-
+    </p>
+    <p class="b">5.3 使请求的URL长度尽量缩小。</p>
+  </div>
+  
+  <a id="40104"></a>
+  <div class="detail">
+    <h2>十六 :　在嵌入的内容中发现攻击者提供的URLS（高风险）</h2>
+    <p>略…</p>
+  </div>
+  
+  <a id="40201"></a>
+  <div class="detail">
+    <h2>十七 :　页面上被嵌入外部内容（高风险）</h2>
+    <p>略…</p>
+  </div>
+  
+  <a id="40202"></a>
+  <div class="detail">
+    <h2>十八 :　页面上被嵌入混合内容（高风险）</h2>
+    <p>略…</p>
+  </div>
+  
+   <a id="40301"></a>
+  <div class="detail">
+    <h2>十九 :　错误或缺失的MIME类型（高风险）</h2>
+    <p class="b"><b>1、MIME的基本概念</b></p>
+    <p>MIME的英文全称是"Multipurpose Internet Mail Extensions" 多功能Internet 邮件扩充服务，它是一种多用途网际邮件扩充协议，在1992年最早应用于电子邮件系统，但后来也应用到浏览器。服务器会将它们发送的多媒体数据的类型告诉浏览器，而通知手段就是说明该多媒体数据的MIME类型，从而让浏览器知道接收到的信息哪些是MP3文件，哪些是Shockwave文件等等。服务器将MIME标志符放入传送的数据中来告诉浏览器使用哪种插件读取相关文件。<br /> 
+    MIME能够支持非ASCII字符、二进制格式附件等多种格式的邮件消息。这个标准被定义在; RFC 2045，; RFC 2046，; RFC 2047，; RFC 2048，; RFC 2049等RFC中。 由RFC 822转变而来的RFC 2822，规定电子邮件标准并不允许在邮件消息中使用7位ASCII字符集以外的字符。正因如此，一些非英语字符消息和二进制文件，图像，声音等非文字消息都不能在电子邮件中传输。MIME规定了用于表示各种各样的数据类型的符号化方法。
+</p>
+    <p class="b"><b>2、MIME类型</b></p>
+    <p class="b" style="padding-left:25px;">MIME类型有二部分，一个是文件的一般格式(如文本、图像或应用程序)另一个是文件的特殊的格式(对文本有html、plain格式，对图像有GIF、JPEG格式)。<br />
+    text/html                             html htm shtml;<br />
+    text/css                              css;<br />
+    text/xml                              xml;<br />
+    image/gif                             gif;<br />
+    image/jpeg                            jpeg jpg;<br />
+    application/x-javascript              js;<br />
+    application/atom+xml                  atom;<br />
+    application/rss+xml                   rss;<br />
+
+    text/mathml                           mml;<br />
+    text/plain                            txt;<br />
+    text/vnd.sun.j2me.app-descriptor      jad;<br />
+    text/vnd.wap.wml                      wml;<br />
+    text/x-component                      htc;<br />
+
+    image/png                             png;<br />
+    image/tiff                            tif tiff;<br />
+    image/vnd.wap.wbmp                    wbmp;<br />
+    image/x-icon                          ico;<br />
+    image/x-jng                           jng;<br />
+    image/x-ms-bmp                        bmp;<br />
+    image/svg+xml                         svg svgz;<br />
+    image/webp                            webp;<br />
+
+    application/java-archive              jar war ear;<br />
+    application/mac-binhex40              hqx;<br />
+    application/msword                    doc;<br />
+    application/pdf                       pdf;<br />
+    application/postscript                ps eps ai;<br />
+    application/rtf                       rtf;<br />
+    application/vnd.ms-excel              xls;<br />
+    application/vnd.ms-powerpoint         ppt;<br />
+    application/vnd.wap.wmlc              wmlc;<br />
+    application/vnd.google-earth.kml+xml  kml;<br />
+    application/vnd.google-earth.kmz      kmz;<br />
+    application/x-7z-compressed           7z;<br />
+    application/x-cocoa                   cco;<br />
+    application/x-java-archive-diff       jardiff;<br />
+    application/x-java-jnlp-file          jnlp;<br />
+    application/x-makeself                run;<br />
+    application/x-perl                    pl pm;<br />
+    application/x-pilot                   prc pdb;<br />
+    application/x-rar-compressed          rar;<br />
+    application/x-redhat-package-manager  rpm;<br />
+    application/x-sea                     sea;<br />
+    application/x-shockwave-flash         swf;<br />
+    application/x-stuffit                 sit;<br />
+    application/x-tcl                     tcl tk;<br />
+    application/x-x509-ca-cert            der pem crt;<br />
+    application/x-xpinstall               xpi;<br />
+    application/xhtml+xml                 xhtml;<br />
+    application/zip                       zip;<br />
+
+    application/octet-stream              bin exe dll;<br />
+    application/octet-stream              deb;<br />
+    application/octet-stream              dmg;<br />
+    application/octet-stream              eot;<br />
+    application/octet-stream              iso img;<br />
+    application/octet-stream              msi msp msm;<br />
+
+    audio/midi                            mid midi kar;<br />
+    audio/mpeg                            mp3;<br />
+    audio/ogg                             ogg;<br />
+    audio/x-m4a                           m4a;<br />
+    audio/x-realaudio                     ra;<br />
+
+    video/3gpp                            3gpp 3gp;<br />
+    video/mp4                             mp4;<br />
+    video/mpeg                            mpeg mpg;<br />
+    video/quicktime                       mov;<br />
+    video/webm                            webm;<br />
+    video/x-flv                           flv;<br />
+    video/x-m4v                           m4v;<br />
+    video/x-mng                           mng;<br />
+    video/x-ms-asf                        asx asf;<br />
+    video/x-ms-wmv                        wmv;<br />
+    video/x-msvideo                       avi;<br />
+    </p>
+    <p class="b"><b>3、 错误或缺失的MIME类型漏洞的发现</b></p>
+    <p>该漏洞是由Juan Carlos Garcia Cuartango安全小组发现的，该小组发现在MEMI在处理不正常的MIME类型中存在问题，攻击者可以建立一个包含可执行文件的附件的HTML EMAIL并修改MIME头，使IE不正确处理这个MIME所指定的执行文件附件。一般情况下如果附件是文本文件，IE会读它，如果是VIDEOCLIP，IE会查看，如果是图形文件，IE就会显示它，但如果是一个EXE文件，IE就会提示用户是否执行，但具有危害的是，当攻击者更改MIME类型后，IE就会不经过提示用户是否执行而直接运行，从而使攻击者加在附件中的程序或者攻击命令能够按照攻击者设想的情况实行。</p>
+    <p class="b"><b>4、 存在错误或缺失的MIME类型漏洞环境</b></p>
+    <p class="b" style="padding-left:25px;">windows95/98/me winNT4 win2k<br />
+Microsoft Internet Explorer 5.0<br />
+Microsoft Internet Explorer 5.01<br />
+Microsoft Internet Explorer 5.5
+</p>
+    <p class="b"><b>5、错误的MIME头漏洞的解决办法</b></p>
+    <p>建议升级您的操作系统及程序到最新版本。</p>
+  </div>
+  
+  <a id="40302"></a>
+  <div class="detail">
+    <h2>二十 :　泛化的MIME类型（高风险）</h2>
+    <p>略…</p>
+  </div>
+  
+  <a id="40304"></a>
+  <div class="detail">
+    <h2>二十一 :　字符集错误或缺失（高风险）</h2>
+    <p class="b"><b>字符集和字符编码（Charset & Encoding）</b></p>
+    <p class="b"><b>1.基础知识</b></p>
+    <p>计算机中储存的信息都是用二进制数表示的；而我们在屏幕上看到的英文、汉字等字符是二进制数转换之后的结果。通俗的说，按照何种规则将字符存储在计算机中，如'a'用什么表示，称为"编码"；反之，将存储在计算机中的二进制数解析显示出来，称为"解码"，如同密码学中的加密和解密。在解码过程中，如果使用了错误的解码规则，则导致'a'解析成'b'或者乱码。</p>
+    <p>字符集（Charset）：是一个系统支持的所有抽象字符的集合。字符是各种文字和符号的总称，包括各国家文字、标点符号、图形符号、数字等。</p>
+    <p>字符编码（Character Encoding）：是一套法则，使用该法则能够对自然语言的字符的一个集合（如字母表或音节表），与其他东西的一个集合（如号码或电脉冲）进行配对。即在符号集合与数字系统之间建立对应关系，它是信息处理的一项基本技术。通常人们用符号集合（一般情况下就是文字）来表达信息。而以计算机为基础的信息处理系统则是利用元件（硬件）不同状态的组合来存储和处理信息的。元件不同状态的组合能代表数字系统的数字，因此字符编码就是将符号转换为计算机可以接受的数字系统的数，称为数字代码。</p>
+    <p class="b"><b>2.常用字符集和字符编码</b></p>
+    <p>常见字符集名称：ASCII字符集、GB2312字符集、BIG5字符集、GB18030字符集、Unicode字符集等。计算机要准确的处理各种字符集文字，需要进行字符编码，以便计算机能够识别和存储各种文字。</p>
+    <p class="b">2.1. ASCII字符集&编码</p>
+    <p>ASCII（American Standard Code for Information Interchange，美国信息交换标准代码）是基于拉丁字母的一套电脑编码系统。它主要用于显示现代英语，而其扩展版本EASCII则可以勉强显示其他西欧语言。它是现今最通用的单字节编码系统（但是有被Unicode追上的迹象），并等同于国际标准ISO/IEC 646。 </p>
+    <p>ASCII字符集：主要包括控制字符（回车键、退格、换行键等）；可显示字符（英文大小写字符、阿拉伯数字和西文符号）。</p>
+    <p>ASCII编码：将ASCII字符集转换为计算机可以接受的数字系统的数的规则。使用7位（bits）表示一个字符，共128字符；但是7位编码的字符集只能支持128个字符，为了表示更多的欧洲常用字符对ASCII进行了扩展，ASCII扩展字符集使用8位（bits）表示一个字符，共256字符。</p>
+    <p>ASCII的最大缺点是只能显示26个基本拉丁字母、阿拉伯数目字和英式标点符号，因此只能用于显示现代美国英语（而且在处理英语当中的外来词如naïve、café、élite等等时，所有重音符号都不得不去掉，即使这样做会违反拼写规则）。而EASCII虽然解决了部份西欧语言的显示问题，但对更多其他语言依然无能为力。因此现在的苹果电脑已经抛弃ASCII而转用Unicode。</p>
+    <p class="b">2.2. GBXXXX字符集&编码</p>
+    <p>计算机发明之处及后面很长一段时间，只用应用于美国及西方一些发达国家，ASCII能够很好满足用户的需求。但是当中国也有了计算机之后，为了显示中文，必须设计一套编码规则用于将汉字转换为计算机可以接受的数字系统的数。</p>
+    <p>中国专家把那些127号之后的奇异符号们（即EASCII）取消掉，规定：一个小于127的字符的意义与原来相同，但两个大于127的字符连在一起时，就表示一个汉字，前面的一个字节（他称之为高字节）从0xA1用到 0xF7，后面一个字节（低字节）从0xA1到0xFE，这样我们就可以组合出大约7000多个简体汉字了。在这些编码里，还把数学符号、罗马希腊的 字母、日文的假名们都编进去了，连在ASCII里本来就有的数字、标点、字母都统统重新编了两个字节长的编码，这就是常说的"全角"字符，而原来在127号以下的那些就叫"半角"字符了。</p>
+    <p>上述编码规则就是GB2312。GB2312或GB2312-80是中国国家标准简体中文字符集，全称《信息交换用汉字编码字符集•基本集》，又称GB0，由中国国家标准总局发布，1981年5月1日实施。</p>
+    <p>GB2312编码通行于中国大陆；新加坡等地也采用此编码。中国大陆几乎所有的中文系统和国际化的软件都支持GB2312。GB2312的出现，基本满足了汉字的计算机处理需要，它所收录的汉字已经 
+覆盖中国大陆99.75%的使用频率。对于人名、古汉语等方面出现的罕用字，GB2312不能处理，这导致了后来GBK及GB 18030汉字字符集的出现。</p>
+    <p>由于GB 2312-80只收录6763个汉字，有不少汉字，如部分在GB 2312-80推出以后才简化的汉字（如"啰"），部分人名用字（如中国前总理朱镕基的"镕"字），台湾及香港使用的繁体字，日语及 
+朝鲜语汉字等，并未有收录在内。于是厂商微软利用GB 2312-80未使用的编码空间，收录GB 13000.1-93全部字符制定了GBK编码。根据微软资料，GBK是对GB2312-80的扩展，也就是CP936字码表  
+(Code Page 936)的扩展（之前CP936和GB 2312-80一模一样），最早实现于Windows 95简体中文版。虽然GBK收录GB 13000.1-93的全部字符，但编码方式并不相同。GBK自身并非国家标准，只是 
+曾由国家技术监督局标准化司、电子工业部科技与质量监督司公布为"技术规范指导性文件"。原始GB13000一直未被业界采用，后续国家标准GB18030技术上兼容GBK而非GB13000。GB 18030，全称：国家标准GB 18030-2005《信息技术 中文编码字符集》，是中华人民共和国现时最新的内码字集，是GB 18030-2000《信息技术 信息交换用汉字编码字符集 基本集的扩充》的修订版。与GB 2312-1980完全兼容，与GBK基本兼容，支持GB 13000及Unicode的全部统一汉字，共收录汉字70244个。
+    </p>
+    <p class="b">GB 18030主要有以下特点：</p>
+    <p class="b" style="padding-left:25px;">
+•与UTF-8相同，采用多字节编码，每个字可以由1个、2个或4个字节组成。 <br />
+•编码空间庞大，最多可定义161万个字符。 <br />
+•支持中国国内少数民族的文字，不需要动用造字区。<br /> 
+•汉字收录范围包含繁体汉字以及日韩汉字 </p>
+<p>本规格的初版使中华人民共和国信息产业部电子工业标准化研究所起草，由国家质量技术监督局于2000年3月17日发布。现行版本为国家质量监督检验总局和中国国家标准化管理委员会于2005年11月8日发布，2006年5月1日实施。此规格为在中国境内所有软件产品支持的强制规格。
+</p>
+    <p class="b">2.3. BIG5字符集&编码</p>
+    <p>Big5，又称为大五码或五大码，是使用繁体中文（正体中文）社区中最常用的电脑汉字字符集标准，共收录13,060个汉字。中文码分为内码及交换码两类，Big5属中文内码，知名的中文交换码有CCCII、CNS11643。Big5虽普及于台湾、香港与澳门等繁体中文通行区，但长期以来并非当地的国家标准，而只是业界标准。倚天中文系统、Windows等主要系统的字符集都是以Big5为基准，但厂商又各自增加不同的造字与造字区，派生成多种不同版本。2003年，Big5被收录到CNS11643中文标准交换码的附录当中，取得了较正式的地位。这个最新版本被称为Big5-2003。 
+Big5码是一套双字节字符集，使用了双八码存储方法，以两个字节来安放一个字。第一个字节称为"高位字节"，第二个字节称为"低位字节"。"高位字节"使用了0x81-0xFE，"低位字节"使用了0x40-0x7E，及0xA1-0xFE。 
+    </p>
+    <p class="b">Unicode字符集&UTF编码</p>
+    <p class="b">3.1、Unicode字符集</p>
+    <p>
+    当计算机传到世界各个国家时，为了适合当地语言和字符，设计和实现类似GB232/GBK/GB18030/BIG5的编码方案。这样各搞一套，在本地使用没有问题，一旦出现在网络中，由于不兼容，互相访问就出现了乱码现象。</p>
+    <p>为了解决这个问题，一个伟大的创想产生了——Unicode。Unicode编码系统为表达任意语言的任意字符而设计。它使用4字节的数字来表达每个字母、符号，或者表意文字(ideograph)。每个数字代表唯一的至少在某种语言中使用的符号。（并不是所有的数字都用上了，但是总数已经超过了65535，所以2个字节的数字是不够用的。）被几种语言共用的字符通常使用相同的数字来编码，除非存在一个在理的语源学(etymological)理由使不这样做。不考虑这种情况的话，每个字符对应一个数字，每个数字对应一个字符。即不存在二义性。不再需要记录"模式"了。U+0041总是代表'A'，即使这种语言没有'A'这个字符。</p>
+    <p>在计算机科学领域中，Unicode（统一码、万国码、单一码、标准万国码）是业界的一种标准，它可以使电脑得以体现世界上数十种文字的系统。Unicode 是基于通用字符集（Universal
+Character Set）的标准来发展，并且同时也以书本的形式[1]对外发表。Unicode 还不断在扩增， 每个新版本插入更多新的字符。直至目前为止的第六版，Unicode 就已经包含了超过十万个字符（在2005年，Unicode 的第十万个字符被采纳且认可成为标准之一）、一组可用以作为视觉参考的代码图表、一套编码方法与一组标准字符编码、一套包含了上标字、下标字等字符特性的枚举等。Unicode 组织（The Unicode Consortium）是由一个非营利性的机构所运作，并主导 Unicode 的后续发展，其目标在于：将既有的字符编码方案以Unicode 编码方案来加以取代，特别是既有的方案在多语环境下，皆仅有有限的空间以及不兼容的问题。
+（可以这样理解：Unicode是字符集，UTF-32/ UTF-16/ UTF-8是三种字符编码方案。）</p>
+    <p class="b">3.1 UTF-8</p>
+    <p>UTF-8（8-bit Unicode Transformation Format）是一种针对Unicode的可变长度字符编码（定长码），也是一种前缀码。它可以用来表示Unicode标准中的任何字符，且其编码中的第一个字节仍与ASCII兼容，这使得原来处理ASCII字符的软件无须或只须做少部份修改，即可继续使用。因此，它逐渐成为电子邮件、网页及其他存储或传送文字的应用中，优先采用的编码。互联网工程工作小组（IETF）要求所有互联网协议都必须支持UTF-8编码。</p>
+    <p>UTF-8使用一至四个字节为每个字符编码： 
+1.128个US-ASCII字符只需一个字节编码（Unicode范围由U+0000至U+007F）。 
+2.带有附加符号的拉丁文、希腊文、西里尔字母、亚美尼亚语、希伯来文、阿拉伯文、叙利亚文及它拿字母则需要二个字节编码（Unicode范围由U+0080至U+07FF）。
+3.其他基本多文种平面（BMP）中的字符（这包含了大部分常用字）使用三个字节编码。 
+4.其他极少使用的Unicode辅助平面的字符使用四字节编码。 
+
+在处理经常会用到的ASCII字符方面非常有效。在处理扩展的拉丁字符集方面也不比UTF-16差。对于中文字符来说，比UTF-32要好。同时，（在这一条上你得相信我，因为我不打算给你展示它的数学原理。）由位操作的天性使然，使用UTF-8不再存在字节顺序的问题了。一份以utf-8编码的文档在不同的计算机之间是一样的比特流。
+    </p>
+    <p>总体来说，在Unicode字符串中不可能由码点数量决定显示它所需要的长度，或者显示字符串之后在文本缓冲区中光标应该放置的位置；组合字符、变宽字体、不可打印字符和从右至左的文字都是其归因。所以尽管在UTF-8字符串中字符数量与码点数量的关系比UTF-32更为复杂，在实际中很少会遇到有不同的情形。</p>
+    <p class="b" style="padding-left:25px;">优点 : <br />
+•UTF-8是ASCII的一个超集。因为一个纯ASCII字符串也是一个合法的UTF-8字符串，所以现存的ASCII文本不需要转换。为传统的扩展ASCII字符集设计的软件通常可以不经修改或很少修改就能与UTF-8一起使用。<br />
+•使用标准的面向字节的排序例程对UTF-8排序将产生与基于Unicode代码点排序相同的结果。（尽管这只有有限的有用性，因为在任何特定语言或文化下都不太可能有仍可接受的文字排列顺序。<br />
+•UTF-8和UTF-16都是可扩展标记语言文档的标准编码。所有其它编码都必须通过显式或文本声明来指定。 <br />
+•任何面向字节的字符串搜索算法都可以用于UTF-8的数据（只要输入仅由完整的UTF-8字符组成）。但是，对于包含字符记数的正则表达式或其它结构必须小心。<br /> 
+•UTF-8字符串可以由一个简单的算法可靠地识别出来。就是，一个字符串在任何其它编码中表现为合法的UTF-8的可能性很低，并随字符串长度增长而减小。举例说，字符值C0,C1,F5至FF从来没有出现。为了更好的可靠性，可以使用正则表达式来统计非法过长和替代值（可以查看W3 FAQ: Multilingual Forms上的验证UTF-8字符串的正则表达式）。
+</p>
+  <p class="b" style="padding-left:25px;">缺点 : <br />
+因为每个字符使用不同数量的字节编码，所以寻找串中第N个字符是一个O(N)复杂度的操作 — 即，串越长，则需要更多的时间来定位特定的字符。同时，还需要位变换来把字符编码成字节，把字节解码成字符。 <br />
+ Accept-Charset/Accept-Encoding/Accept-Language/Content-Type/Content-Encoding/Content-Language在HTTP中，与字符集和字符编码相关的消息头是Accept-Charset/Content-Type，另外主区区分Accept-Charset/Accept-Encoding/Accept-Language/Content-Type/Content-Encoding/Content-Language： 
+Accept-Charset：浏览器申明自己接收的字符集，这就是本文前面介绍的各种字符集和字符编码，如gb2312，utf-8（通常我们说Charset包括了相应的字符编码方案）； 
+Accept-Encoding：浏览器申明自己接收的编码方法，通常指定压缩方法，是否支持压缩，支持什么压缩方法（gzip，deflate），（注意：这不是只字符编码）； 
+Accept-Language：浏览器申明自己接收的语言。语言跟字符集的区别：中文是语言，中文有多种字符集，比如big5，gb2312，gbk等等； 
+Content-Type：WEB服务器告诉浏览器自己响应的对象的类型和字符集。例如：Content-Type: text/html; charset='gb2312' Content-Encoding：WEB服务器表明自己使用了什么压缩方法（gzip，deflate）压缩响应中的对象。例如：Content-Encoding：gzip 
+Content-Language：WEB服务器告诉浏览器自己响应的对象的语言。
+    </p>
+    <p class="b"><b>5. 关于字符集编码漏洞</b></p>
+    <p>在一般的web程序里，显示数据给浏览器的时候都会指定一个字符集，在国内平时我们用到的字符集有utf-8，GBK，gb2312等等，字符集指示了浏览器该如何对待返回的数据。其中gb2312和GBK字符集使用得非常广泛，但是经证明，IE在处理这些宽字符集的时候存在问题，导致可能程序的一些安全规则被Bypass掉，引发严重的跨站脚本安全漏洞。在IE里，如果它遇到一个字符，它是指定字符集里的第一位的时候，就会认为其后续字符和当前字符构成一个合法的字符，这样它在解析包括html标签，处理javascript，Css时都会做如此考虑，以下使用ie6和ie7为例进行介绍。</p>
+    <p class="b">5.1 Bypass某些js的检查规则</p>
+    <p class="b" style="padding-left:25px;">&lt;HTML&gt;<br />
+&lt;HEAD&gt;<br />
+&lt;TITLE&gt;80sec test&lt;/TITLE&gt;<br />
+&lt;meta http-equiv="Content-Type" content="text/html; charset=gb2312" /&gt;<br />
+&lt;/HEAD&gt;<br />
+&lt;BODY&gt;<br />
+&lt;script&gt;<br />
+window.onerror=function(){
+alert('Vul');
+return true;
+}<br />
+&lt;/script&gt;<br />
+&lt;script&gt;x='&lt;?php echo chr(0xC1);?&gt;';y='[User_IN_PUT]';&lt;/script&gt;<br />
+&lt;/BODY&gt;<br />
+&lt;/HTML&gt;<br />
+
+这里即使是过滤了<>'\等字符一样可以利用非法字符集序列来实现\的作用，因为它会把原来存在的'给结合掉，然后前面的'找不到闭合，后面[User_IN_PUT]就可以用来执行js代码了。
+</p>
+    <p class="b">5.2 Bypass某些属性的检查规则</p>
+    <p>为了避免直接使用html导致出现漏洞，一些论坛和程序使用了UBB标签，但是在gbk等多字节编码下，一样容易出现问题，以最容易出现问题的一个UBB标签为例子：
+[color=xyz&lt;?php echo chr(0xC1);?&gt;][/color][color=abc onmouseover=alert(/xss/) s=&lt;?php echo chr(0xC1);?&gt;]exploited[/color]0xC1是一个gb2312的第一个字节，上面结果将会转化为：
+&lt;font color="xyz?&gt;&lt;/font&gt;&lt;font color="abc onmouseover=alert(/xss/) s=?&gt;exploited&lt;/font&gt;
+其中的alert(/xss/)将会做一个事件执行，所以即使UBB标签也变得不安全，能饶过"的保护。许多论坛都没有注意这点，phpwind，动网等论坛就容易受到这种攻击。而Discuz通过在转换结果之后附加一个空格，修补了这一安全问题。这里使用到ubb标签其实有一个很有意思的tips在里面，因为有的数据库会抛弃与指定字符集不匹配的字符，所以必须借助后面的]等字符来形成一个有效的汉字才能存储到数据库里，当然像ACCESS这种就不会有问题了，另外一些语言在处理字符串的时候会强制字符串的字符集类型，不合法的字符会导致转码的失败或者遭到抛弃，所以也不能利用这种类型的攻击。
+</p>
+    <p class="b">5.3 几个小例子</p>
+    <p>Phpwind论坛charset跨站脚本漏洞
+[email=xxxx羃[/email][email=xxxx onmouseover=alert() s=羃]Fuck Me[/email]
+[font=宋体;0xc1]xxx[/font][url=http://onmouseover=alert()//]xx[/url]
+羃是一个特殊的十六进制编码和后面的]结合出来的字符，第一个种方法可以直接复制的：）
+0xc1表示一个十六进制的字符编码同样在dvbbs论坛也很容易产生一个xss代码如下
+&lt;font face="微软雅黑"&gt;xxxxxxxxxxx&lt;/font&gt;&lt;font face=" onmouseover=alert() x=羃&gt;xxxxxxxxxxx&lt;/font&gt;
+均在新版和老版测试通过。
+</p>
+    <p class="b">5.4 关于修复</p>
+    <p class="b" style="padding-left:25px;">对于程序设计者，由于UTF-8字符集的可靠性，不存在这个安全漏洞，所以大家在设计站点的时候可以考虑使用UTF-8字符集。<br />
+对于广大开发者，可以牢记最小输入等于最大安全的原则，在匹配正则的时候限制输入的字符的范围，尽量匹配ascii字符，如果必须使用中文，可以考虑类似于discuz的在中文后面添加空格修复该问题。<br />
+对于广大用户，这个漏洞由于浏览器处理页面字符的不同，可以考虑使用如Firefox浏览器，可以避免一部分这样的问题。
+</p>
+  </div>
+  
+  <a id="40305"></a>
+  <div class="detail">
+    <h2>二十二 :　MIME/字符集信息冲突（高风险）</h2>
+    <p class="b"><b>1、漏洞描述：</b></p>
+    <p>若使用有冲突的MIME头，可能会将某个文件更名成无法包含在Content-Type 域中的文件类型，而在Content-Disposition 域中却是源文件名，这就导致能够使用某个相应的应用程序来执行该文件。</p>
+    <p class="b" style="padding-left:25px;">例如：<br />
+　　Content-Type: application/msword;name=filename.nch <br />
+　　Content-Transfer-Encoding: base64 <br />
+　　Content-Disposition: attachment;filename=filename.doc <br />
+    </p>
+    <p>一般防毒软件会认为附件是.nch文件，而微软Office则认为是.doc扩展名，从而作为doc文件进行相应的处理。假如doc附件刚好是个Word宏病毒，那么就会在用户的系统上执行。</p>
+    <p class="b"><b>2、解决办法：</b></p>
+    <p>安装杀毒软件,并建议启动"自动保护"功能来扫描激活文件中的病毒、木马及蠕虫。另外"脚本模块化"功能能够进一步阻止任何恶意脚本在目标系统上运行。</p>
+    <p class="b"><b>3、受影响系统：</b></p>
+    <p class="b" style="padding-left:25px;">Microsoft Windows 98 0.0<br />
+        Microsoft Windows 2000 Professional<br />
+        Microsoft Windows NT Workstation <br />
+        Microsoft Windows XP Professional<br />
+  </div>
+  
+  <a id="40401"></a>
+  <div class="detail">
+    <h2>二十三 :　令人关注的文件</h2>
+    <p>略…</p>
+  </div>
+  
+  <a id="40402"></a>
+  <div class="detail">
+    <h2>二十四 :令人关注的服务器信息　</h2>
+    <p>在缺省情况下，当你登陆到linux系统，它会告诉你该linux发行版的名称、版本、内核版本、服务器的名称。应用程序也常常产生错误信息并显示给使用者，如果泄露太多的细节（如错误堆栈跟踪信息、SQL语句等等），很多时候，这些错误信息对"黑客"是非常有用的，因为它们揭示实施细则或有用的开发信息利用的漏洞。</p>
+    <p class="b"><b>1、隐藏服务器系统信息</b></p>
+    <p class="b" style="padding-left:25px;">/etc/issue       本地登陆输入用户名和密码前显示的信息；<br />
+    /etc/issue.net    telnet登入显示的信息，默认里面内容与/etc/issue一样；<br />
+    /etc/motd       登陆系统显示的信息，默认为空可以在这里面写您要显示的信息。<br />
+
+    /etc/issue文件中的一些代码含义:<br />
+    \d 本地端时间的日期；<br />
+    \l 显示第几个终端机介面；<br />
+    \m 显示硬体的等级 (i386/i486/i586/i686...)；<br />
+    \n 显示主机的网路名称；<br />
+    \o 显示 domain name；<br />
+    \r 作业系统的版本 (相当于 uname -r)<br />
+    \t 显示本地端时间的时间；<br />
+    \s 作业系统的名称；<br />
+    \v 作业系统的版本。
+</p>
+    <p class="b"><b>2、常用WEB服务软件版本信息屏蔽</b></p>
+    <p class="b" style="padding-left:25px;">2.1隐藏apache版本信息:<br />
+编辑/etc/apache2/conf.d/security<br />
+ServerTokens ProductOnly<br />
+ServerSignature Off <br />
+
+2.2隐藏Nginx版本信息:<br />
+编辑 /etc/nginx/conf/nginx.conf，在http { }里加上：<br />
+server_tokens off; <br />
+
+2.3隐藏php-fpm版本信息：<br />
+编辑/etc/nginx/conf/fastcgi.conf 找到：<br />
+fastcgi_param SERVER_SOFTWARE nginx/$nginx_version;<br />
+改为：<br />
+fastcgi_param SERVER_SOFTWARE nginx0.0.0;<br /> 
+
+隐藏PHP版本信息：<br />
+编辑/etc/php5/fpm/php.ini<br /> 
+expose_php = Off <br />
+ 
+注：<br />
+由于获得WEB程序的版本信息及服务器的信息手段很多，以上方法只能禁止通过常规手段不能获得操作系统和WEB程序的版本信息。
+</p>
+  </div>
+  
+  <a id="40501"></a>
+  <div class="detail">
+    <h2>二十五 :　可能的目录遍历/文件包含</h2>
+    <p>Web服务器存在的主要漏洞包括物理路径泄露，CGI源代码泄露，目录遍历，执行任意命令，缓冲区溢出，拒绝服务，SQL注入，条件竞争和跨站脚本执行漏洞，和CGI漏洞有些相似的地方，但是更多的地方还是有着本质的不同。不过无论是什么漏洞，都体现着安全是一个整体的真理，考虑Web服务器的安全性，必须要考虑到与之相配合的操作系统。</p>
+    <p class="b"><b>1、目录遍历</b></p>
+    <p>目录遍历对于Web服务器来说并不多见，通过对任意目录附加"../"，或者是在有特殊意义的目录附加"../"，或者是附加"../"的一些变形，如".."或"..//"甚至其编码，都可能导致目录遍历。前一种情况并不多见，但是后面的几种情况就常见得多，以前非常流行的IIS二次解码漏洞和Unicode解码漏洞都可以看作是变形后的编码。</p>
+    <p class="b"><b>2、解决方法及建议</b></p>
+    <p class="b" style="padding-left:25px;">2.1. IIS<br />
+    建议定期为操作系统更新补丁或者安装杀毒软件。<br />
+    打开"管理工具" -->找到"Internet 信息服务(IIS)管理器"--> 把"目录浏览"的选勾去掉。<br />
+    <a href="./images/flaw03.png" target="_blank" title="点击查看大图"><img src="./images/flaw03.png" border="0" width="620" /></a><br />
+    2.2. APACHE<br />
+    如果客户端发送一个URL请求， 但是相应的目录里面没有DirectoryIndex属性指定的文件名，那么可以使用mod_autoindex模块来列出该目录的文件名。<br />
+编译Apache的时候包含mod_autoindex模块，然后参考下面的例子来设置Apache配置文件：<br />
+/etc/apache2/sites-available/default 关闭列目录功能<br />
+    <a href="./images/flaw04.png" target="_blank" title="点击查看大图"><img src="./images/flaw04.png" border="0" width="620" /></a><br />
+    2.3. nginx<br />
+    nginx是一款高性能的web服务器，使用非常广泛，其不仅经常被用作反向代理，也可以非常好的支持PHP的运行。<br />
+    nginx不正确处理用户提交的URI请求，提交包含特殊目录遍历序列的请求，可绕过WEB ROOT限制，以WEB权限查看系统文件内容。nginx-0.6.x的版本有可能会受影响。目前厂商没有详细的解决方案，建议将程序升级到当前稳定版。<br />
+    2.4. Tomcat<br />
+
+    编辑conf/web.xml文件里把listings值改为false如:<br />
+    &lt;servlet&gt;<br />
+        &lt;servlet-name&gt;default&lt;/servlet-name&gt;<br />
+        &lt;servlet-class&gt;org.apache.catalina.servlets.DefaultServlet&lt;/servlet-class&gt;<br />
+        &lt;init-param&gt;<br />
+            &lt;param-name&gt;debug&lt;/param-name&gt;<br />
+            &lt;param-value&gt;0&lt;/param-value&gt;<br />
+        &lt;/init-param&gt;<br />
+        &lt;init-param&gt;<br />
+            &lt;param-name&gt;listings&lt;/param-name&gt;<br />
+            &lt;param-value&gt;false&lt;/param-value&gt;<br />
+        &lt;/init-param&gt;<br />
+        &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;<br />
+    &lt;/servlet&gt;
+    </p>
+  </div>
+  
+  <a id="40601"></a>
+  <div class="detail">
+    <h2>二十六 :　错误的缓存指令（高风险）</h2>
+    <p class="b"><b>1、HTTP协议</b></p>
+    <p>HTTP消息由客户端到服务器的请求和服务器到客户端的响应组成。请求消息和响应消息都是由开始行（对于请求消息，开始行就是请求行，对于响应消息，开始行就是状态行）、消息报头（可选）、空行（只有CRLF的行）、消息正文（可选）组成。</p>
+    <p>HTTP消息报头包括普通报头、请求报头、响应报头、实体报头。每一个报头域都是由名字+"："+空格+值 组成，消息报头域的名字是大小写无关的。</p>
+    <p class="b"><b>2、普通报头</b></p>
+    <p>在普通报头中，Cache-Control指定请求和响应遵循的缓存机制。缓存指令是单向的（响应中出现的缓存指令在请求中未必会出现），且是独立的（一个消息的缓存指令不会影响另一个消息处理的缓存机制），HTTP1.0使用的类似的报头域为Pragma。</p>
+    <p>请求时的缓存指令包括：<br />
+no-cache（用于指示请求或响应消息不能缓存）、no-store、max-age、max-stale、min-fresh、only-if-cached;<br />
+
+响应时的缓存指令包括：<br />
+public、private、no-cache、no-store、no-transform、must-revalidate、proxy-revalidate、max-age、s-maxage.<br />
+
+示例：<br />为了指示IE浏览器（客户端）不要缓存页面，服务器端的JSP程序可以编写如下：<br />
+response.sehHeader("Cache-Control","no-cache");<br />
+response.setHeader("Pragma","no-cache");<br />
+上述代码，通常两者合用这句代码将在发送的响应消息中设置普通报头域：Cache-Control:no-cache
+</p>
+    <p class="b"><b>3、Apache HTTP Server Mod_Cache模块漏洞</b></p>
+    <p class="b" style="padding-left:25px;">受影响系统： <br />
+      Apache Group Apache 2.2.x<br />
+      Apache Group Apache 2.0.x<br />
+      Apache Group Apache 1.3.x<br />
+      
+      不受影响系统：<br /> 
+      Apache Group Apache 2.2.6<br />
+      Apache Group Apache 2.0.61<br />
+      Apache Group Apache 1.3.39<br />
+      
+      描述： <br />
+      
+      BUGTRAQ  ID: 24649<br />
+      CVE(CAN) ID: CVE-2007-1863 <br />
+      Apache HTTP Server是一款流行的Web服务器。 <br />
+      Apache HTTP Server（httpd）的mod_cache模块中的cache_util.c文件存在安全漏洞，远程攻击者可能利用此漏洞导致服务器崩溃。<br /> 
+      如果服务器启用了缓存且在使用线程多处理模块（MPM），远程攻击者就可以通过发送特制的HTTP请求且不对s-maxage、max-age、min-fresh或max-stale Cache-Control头设置值导致子进程处理器崩溃。<br />
+       
+      厂商补丁：<br /> 
+      Apache Group<br />
+      目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载：<br /> 
+      http://httpd.apache.org/download.cgi<br />
+       
+      RedHat<br />
+      RedHat已经为此发布了安全公告（RHSA-2007:0557-01、RHSA-2007:0533-01、RHSA-2007:0556-01、RHSA-2007:0534-01）以及相应补丁:<br />
+      RHSA-2007:0557-01：Moderate: httpd security update<br />
+      链接：https://www.redhat.com/support/errata/RHSA-2007-0557.html<br />
+       
+      RHSA-2007:0533-01：Moderate: httpd security update<br />
+      链接：https://www.redhat.com/support/errata/RHSA-2007-0533.html<br />
+       
+      RHSA-2007:0556-01：Moderate: httpd security update<br />
+      链接：https://www.redhat.com/support/errata/RHSA-2007-0556.html<br />
+       
+      RHSA-2007:0534-01：Moderate: httpd security update<br />
+      链接：https://www.redhat.com/support/errata/RHSA-2007-0534.html
+      </p>
+      <p class="b"><b>4、错误：Cache-Control:no-cache HTTP 头和 HTTP 压缩出现脚本错误</b></p>
+      <p>症状: 读取网站中的网页时，HTML 页可能不完整，您也可能会在 Microsoft Internet Explorer (Programming) 版本 6.0 中收到类似如下的脚本错误信息：
+        Object doesn't support this property or method - 或 - '(object reference)' is null or not an object HTML 页也有可能不完整。<br />
+        
+        当从使用下列所有项的网站中读取网页时会出现上述情况：<br /> 
+        •外部文件中的脚本，例如 JScript (.js) 文件<br />
+        •引用其他框架中所定义的变量或方法的框架和框架内的脚本<br />
+        •用于压缩 HTML 和脚本文件的 HTTP 压缩<br />
+        •防止浏览器对页面进行缓存的 HTTP 头<br />
+        
+        此问题的症状通常不同，而且可能会随机出现。有时第一次加载网站时可能会显示错误信息。此外在刷新页面时也可能会显示错误信息。
+        </p>
+            <p class="b"><b>5、替代方法</b></p>
+            <p>要避免此问题，请执行以下任一操作：<br /> 
+        •如果使用 Cache-Control:no-cache HTTP 头来防止缓存文件，请删除该头。在某些情况下，如果用 Expires HTTP 头作为替代，将不会引发该问题。<br />
+        •或者不对脚本文件启用 HTTP 压缩。<br />
+        
+        参考<br />
+        有关开发基于 Web 的解决方案的更多信息，请访问下面的 Microsoft 网站：<br />
+        http://support.microsoft.com/kb/327286/zh-cn<br />
+        http://msdn.microsoft.com/workshop/entry.asp<br />
+        http://msdn2.microsoft.com/en-us/ie/default.aspx<br />
+        http://support.microsoft.com/iep
+        </p>
+          </div>
+          
+          <a id="40701"></a>
+          <div class="detail">
+            <h2>二十七 :　密码表单的提交来自或发往非HTTPS页面</h2>
+            <p>略…</p>
+          </div>
+          
+          <a id="30101"></a>
+          <div class="detail">
+            <h2>二十八 :　URLS中发现HTTP认证信息</h2>
+            <p>Http认证方式：<br />
+            HTTP请求报头： Authorization<br />
+            HTTP响应报头： WWW-Authenticate<br />
+            基于质询/回应(challenge/response)的认证模式。<br />
+            三种认证方式：
+            </p>
+            <p class="b"><b>一、基本认证 basic authentication（HTTP1.0提出的认证方法）</b></p>
+            <p>客户端对于每一个realm，通过提供用户名和密码来进行认证的方式。<br />
+              是否包含明文传递：包含密码的明文传递<br />
+              基本认证步骤：<br />
+                1. 客户端访问一个受http基本认证保护的资源。<br />
+                2. 服务器返回401状态，要求客户端提供用户名和密码进行认证。<br />
+                401 Unauthorized<br />
+                WWW-Authenticate： Basic realm="WallyWorld"<br />
+                3. 客户端将输入的用户名密码用Base64进行编码后，采用非加密的明文方式传送给服务器。<br />
+                Authorization: Basic xxxxxxxxxx.<br />
+                4. 如果认证成功，则返回相应的资源。如果认证失败，则仍返回401状态，要求重新进行认证。<br />
+                特点：<br />
+                1. Http是无状态的，同一个客户端对同一个realm内资源的每一个访问会被要求进行认证。<br />
+                2. 客户端通常会缓存用户名和密码，并和authentication realm一起保存，所以，一般不需要你重新输入用户名和密码。<br />
+                3. 以非加密的明文方式传输，虽然转换成了不易被人直接识别的字符串，但是无法防止用户名密码被恶意盗用。
+              </p>
+            <p class="b"><b>二、摘要认证 digest authentication（HTTP1.1提出的基本认证的替代方法）</b></p>
+            <p>服务器端以nonce进行质询，客户端以用户名，密码，nonce，HTTP方法，请求的URI等信息为基础产生的response信息进行认证的方式。
+        是否包含明文传递：不包含密码的明文传递<br />
+            
+         摘要认证步骤：<br />
+         1. 客户端访问一个受http摘要认证保护的资源。<br />
+         2. 服务器返回401状态以及nonce等信息，要求客户端进行认证。<br />
+        HTTP/1.1 401 Unauthorized<br />
+        WWW-Authenticate: Digest<br />
+        realm="testrealm@host.com",<br />
+        qop="auth,auth-int",<br />
+        nonce="dcd98b7102dd2f0e8b11d0f600bfb0c093",<br />
+        opaque="5ccc069c403ebaf9f0171e9517f40e41"<br />
+         3. 客户端将以用户名，密码，nonce值，HTTP方法, 和被请求的URI为校验值基础而加密（默认为MD5算法）的摘要信息返回给服务器。<br />
+          认证必须的五个情报：<br />
+        　　・ realm ： 响应中包含信息<br />
+        　　・ nonce ： 响应中包含信息<br />
+        　　・ username ： 用户名<br />
+        　　・ digest-uri ： 请求的URI<br />
+        　　・ response ： 以上面四个信息加上密码信息，使用MD5算法得出的字符串。<br />
+        
+        Authorization: Digest <br />
+        username="Mufasa",　（客户端已知信息）<br />
+        realm="testrealm@host.com", 　（服务器端质询响应信息）<br />
+        nonce="dcd98b7102dd2f0e8b11d0f600bfb0c093", 　（服务器端质询响应信息）<br />
+        uri="/dir/index.html", （客户端已知信息）<br />
+        qop=auth, 　（服务器端质询响应信息）<br />
+        nc=00000001, （客户端计算出的信息）<br />
+        cnonce="0a4f113b", （客户端计算出的客户端nonce）<br />
+        response="6629fae49393a05397450978507c4ef1", （最终的摘要信息 ha3）<br />
+        opaque="5ccc069c403ebaf9f0171e9517f40e41"　 （服务器端质询响应信息）<br />
+        4. 如果认证成功，则返回相应的资源。如果认证失败，则仍返回401状态，要求重新进行认证。<br />
+        
+          特点：<br />
+          1.避免将密码作为明文在网络上传递，相对提高了HTTP认证的安全性。<br />
+          2.当用户为某个realm首次设置密码时，服务器保存的是以用户名，realm，密码为基础计算出的哈希值（ha1），而非密码本身。<br />
+          3.如果qop=auth-int，在计算ha2时，除了包括HTTP方法，URI路径外，还包括请求实体主体，从而防止PUT和POST请求表示被人篡改。<br />
+          4.但是因为nonce本身可以被用来进行摘要认证，所以也无法确保认证后传递过来的数据的安全性。<br />
+        
+          nonce：随机字符串，每次返回401响应的时候都会返回一个不同的nonce。 <br />
+          nounce：随机字符串，每个请求都得到一个不同的nounce。 <br />
+          MD5(Message Digest algorithm 5，信息摘要算法)<br />
+        1、用户名:realm:密码　⇒　ha1<br />
+        2、HTTP方法:URI　⇒　ha2<br />
+        3、ha1:nonce:nc:cnonce:qop:ha2　⇒　ha3
+        </p>
+    <p class="b"><b>三、WSSE(WS-Security)认证　（扩展HTTP认证）</b></p>
+    <p>WSSE UsernameToken<br />
+   	  服务器端以nonce进行质询，客户端以用户名，密码，nonce，HTTP方法，请求的URI等信息为基础产生的response信息进行认证的方式。
+      是否包含明文传递：不包含密码的明文传递<br />
+        
+      WSSE认证步骤：<br />
+      1. 客户端访问一个受WSSE认证保护的资源。<br />
+      2. 服务器返回401状态，要求客户端进行认证。<br />
+      HTTP/1.1 401 Unauthorized<br />
+      WWW-Authenticate: WSSE <br />
+      realm="testrealm@host.com",<br />
+      profile="UsernameToken"（服务器期望你用UsernameToken规则生成回应）<br />
+      
+      UsernameToken规则：<br />
+      客户端生成一个nonce，然后根据该nonce，密码和当前日时来算出哈希值。<br />
+      3. 客户端将生成一个nonce值，并以该nonce值，密码，当前日时为基础，算出哈希值返回给服务器。<br />
+      Authorization: WSSE profile="UsernameToken"<br />
+      X-WSSE:UsernameToken<br />
+      username="Mufasa",<br />
+      PasswordDigest="Z2Y......",<br />
+      Nonce="dcd98b7102dd2f0e8b11d0f600bfb0c093",<br />
+      Created="2010-01-01T09:00:00Z"<br />
+       4. 如果认证成功，则返回相应的资源。如果认证失败，则仍返回401状态，要求重新进行认证。<br />
+      
+      特点：<br />
+      1.避免将密码作为明文在网络上传递。<br />
+      2. 不需要在服务器端作设置。<br />
+      3. 服务器端必须保存密码本身，否则无法进行身份验证。
+      </p>
+  </div>
+  
+  <a id="30201"></a>
+  <div class="detail">
+    <h2>二十九 :　SSL证书已过期或尚未生效</h2>
+    <p>如果证书的有效日期范围与当前日期不匹配，或者当前日期早于或晚于证书的有效期，则会显示此错误。网站必须向证书颁发机构续订其证书才能使其保持最新。过期证书可能存在安全风险。证书到期之后，颁发证书的证书颁发机构对确保证书不被误用不再负责。对于如何防范，目前还没有特效药，我们也只能使用通常的防护方法，不要在论坛里使用重要的密码，也不要使用IE自动保存密码的功能，以及尽量不登陆不了解底细的网站。</p>
+  </div>
+  
+  <a id="30202"></a>
+  <div class="detail">
+    <h2>三十 :　自签名的SSL证书</h2>
+    <p class="b"><b>1. 自签证书最容易被假冒和伪造，而被欺诈网站所利用</b></p>
+    <p>所谓自签证书，就是自己做的证书，不法分子可以做成跟你的证书一模一样，会非常方便地伪造成为有一样证书的假冒网银网站了。 </p>
+    <p>而使用支持浏览器的SSL证书就不会有被伪造的问题，颁发给用户的证书是全球唯一的可以信任的证书，是不可以伪造的，一旦欺诈网站使用伪造证书(证书信息 一样)，由于浏览器有一套可靠的验证机制，会自动识别出伪造证书而警告用户此证书不受信任，可能试图欺骗您或截获您向服务器发送的数据！</p>
+    <p class="b"><b>2. 自签证书最容易受到SSL中间人攻击</b></p>
+    <p>自签证书是不会被浏览器所信任的证书，用户在访问自签证书时，浏览器会警告用户此证书不受信任，需要人工确认是否信任此证书。所有使用自签证书的网站都明确地告诉用户出现这种情况，用户必须点信任并继续浏览！这就给中间人攻击造成了可之机。 </p>
+    <p>典型的SSL中间人攻击就是中间人与用户或服务器在同一个局域网，中间人可以截获用户的数据包，包括SSL数据包，并与做一个假的服务器SSL证书与用户通信，从而截获用户输入的机密信息。如果服务器部署的支持浏览器的可信的SSL证书，则浏览器在收到假的证书时会有安全警告，用户会发觉不对而放弃连接，从而不会被受到攻击。但是，如果服务器使用的是自签证书，用户会以为是网站又要他点信任而麻木地点信任了攻击者的假证书，这样用户的机密信息就被攻击者得 到，如网银密码等，则非常危险，所以，重要的网银系统绝对不能用自签SSL证书！</p>
+    <p class="b"><b>3. 自签证书支持不安全的SSL通信重新协商机制</b></p>
+    <p>几乎所有使用自签SSL证书的服务器都存在不安全的SSL通信重新协商安全漏洞，这是SSL协议的安全漏洞，由于自签证书系统并没有跟踪最新的技术而没有及时补漏！此类漏洞会被黑客利用而截获用户的加密信息，如银行账户和密码等，非常危险。</p>
+    <p class="b"><b>4. 自签证书支持非常不安全的SSL V2.0协议</b></p>
+    <p>这也是部署自签SSL证书服务器中普遍存在的问题，因为SSL v2.0协议是最早出台的协议，存在许多安全漏洞问题，目前各种新版浏览器都已经不支持不安全的SSL v2.0协议 。而由于部署自签SSL证书而无法获得专业SSL证书提供商的专业指导，所以，一般都没有关闭不安全的SSL v2.0协议。</p>
+    <p class="b"><b>5. 自签证书没有可访问的吊销列表</b></p>
+    <p>这也是所有自签SSL证书普遍存在的问题，做一个SSL证书并不难，使用OpenSSL几分钟就搞定，但真正让一个SSL证书发挥作用就不是那么轻松的事情了。要保证SSL证书正常工作，其中一个必要功能是证书中带有浏览器可访问的证书吊销列表，如果没有有效的吊销列表，则如果证书丢失或被盗而无法吊销， 就极有可能被用于非法用途而让用户蒙受损失。同时，浏览器在访问时会有安全警告：吊销列表不可用，是否继续？，并且会大大延长浏览器的处理时间，影响网页 的流量速度。</p>
+    <p class="b"><b>6. 自签证书使用不安全的1024位非对称密钥对</b></p>
+    <p>1024位RSA非对称密钥对已经变得不安全了，所以，美国国家标准技术研究院( NIST ) 要求停止使用不安全的1024位非对称加密算法。微软已经要求所有受信任的根证书颁发机构必须于2010年12月31日之前升级其不安全的1024位根证 书到2048位和停止颁发不安全的1024位用户证书，12 月 31 日之后会把不安全都所有 1024 位根证书从 Windows 受信任的根证书颁发机构列表中删除！</p>
+    <p>而目前几乎所有自签证书都是1024位，自签根证书也都是1024位，当然都是不安全的。还是那句话：由于部署自签SSL证书而无法获得专业SSL证书提供商的专业指导，根本就不知道1024位已经不安全了。</p>
+    <p class="b"><b>7. 自签证书证书有效期太长</b></p>
+    <p>自签证书中还有一个普遍的问题是证书有效期太长，短则5年，长则20年、30年的都有，并且还都是使用不安全1024位加密算法。可能是自签证书制作时反正又不要钱，就多发几年吧，而根本不知道PKI技术标准中为何要限制证书有效期的基本原理是：有效期越长，就越有可能被黑客破解，因为他有足够长的时间 (20年)来破解你的加密。</p>
+  </div>
+  
+  <a id="30203"></a>
+  <div class="detail">
+    <h2>三十一 :　SSL证书主机名不匹配</h2>
+    <p>此错误表示网站正在使用颁发给不同 Web 地址的数字证书, 由于服务器证书的common name与此服务器的主机名不匹配导致。如果公司拥有多个网站，并且将为某个 Web 地址颁发的证书用于另一个网站（例如，用于不同的部门或分部），则也可能会发生此错误。只有当您确信该网站真正与证书上的网站相关时，才可忽略此错误。</p>
+  </div>
+  
+  <a id="30204"></a>
+  <div class="detail">
+    <h2>三十二 :　未发现SSL证书数据</h2>
+    <p>略...</p>
+  </div>
+  
+  <a id="30205"></a>
+  <div class="detail">
+    <h2>三十三 :　弱SSL密码被破解</h2>
+    <p>SSL协议涉及到的加密的环节，有两个加密位数，一是证书公钥位数，分为512位、 1024位、2048位，主流的是1024位。一是会话秘钥（对称密钥）位数，分为40位，128位，256位，主流的是128位。公钥算法主要是用来加密会话秘钥，会话秘钥是SSL会话建立之后对会话内容进行加密，会话秘钥的长度和浏览器支持的密钥长度相关，微软的 IE系列浏览器，有40位和128位两种，例如firefox，可以支持 256位会话秘钥。</p>
+  </div>
+  
+  <a id="30301"></a>
+  <div class="detail">
+    <h2>三十四 :　目录列表限制条件被绕过</h2>
+    <p>略...</p>
+  </div>
+  
+  <a id="30401"></a>
+  <div class="detail">
+    <h2>三十五 :　被重定向至攻击者提供的URLS</h2>
+    <p class="b" style="padding-left:25px;">攻击者如何重定向你网站的用户：<br />
+    攻击者可能提供一个外表跟实际网站相似的链接，假设一个带有客户登录的网上银行系统，它所提供的url类似如下：www.bank.com?next=login.html，银行网站希望能够重定向客户到登录页面，但是如果页面被攻击者修改成如下形式：www.bank.com?next=attackesite.html<br />
+    这个链接将会引导网站用户点击攻击者所重定向的链接，如果用户在被引导的网站登录用户名及密码等敏感信息，将会被攻击者所截取<br />
+    
+    解决方法：<br />
+    1.	创建一个信任的模式列表来匹配输入的URL。<br />
+    2.	创建一个URL的唯一标识符的映射。例如ID 1映射到mysite.com/page1的，只接受符合已知ID的输入。<br />
+    3.	强制所有重定向先通过一个页面，通知他们将要离开本网站，并让他们点击链接以确认。
+    </p>
+  </div>
+  
+  <a id="30402"></a>
+  <div class="detail">
+    <h2>三十六 :　在嵌入的内容中发现攻击者提供的URLS（低风险）</h2>
+    <p>略</p>
+  </div>
+  
+  <a id="30501"></a>
+  <div class="detail">
+    <h2>三十七 :　页面上被嵌入外部内容（低风险）</h2>
+    <p>略...</p>
+  </div>
+  
+  <a id="30502"></a>
+  <div class="detail">
+    <h2>三十八 :　页面上被嵌入混合内容（低风险）</h2>
+    <p>略...</p>
+  </div>
+
+  <a id="30503"></a>
+  <div class="detail">
+    <h2>三十九 :　向HTTP URL提交HTTPS表单</h2>
+    <p class="b"><b>1. https的页面里“包含”http的内容，将会被提示</b></p>
+    <p>注意：这里的“包含”是这么理解的，是指打开该https页面时读取到http的内容，如： src属性 ，flash object的codebase属性等，不要以为a标签的href属性指向了http的链接就是不安全的，因为在该https页面他只是显示，没有读取里 面的内容，所以不是不安全元素。</p>
+    <p class="b"><b>2. https到http跳转时的提示</b></p>
+    <p>其实，从https到http跳转有多种方式，而且一般来讲，只要不将安全页面里的内容扔给不安全页面或不在安全页面里读取不安全页面的内容都是没 有问题的，显然，在安全页面里的一个form要提交到不安全页面是违反原则的，一般要提示；另外，浏览器的选项里一般可以设置，从https到http的简单的跳转也可以设置成提示的。</p>
+  </div>
+
+  <a id="30601"></a>
+  <div class="detail">
+    <h2>四十 :　没有明显XSRF保护的HTML表单</h2>
+    <p>“跨站请求伪造”(CSRF / XSRF)(Cross Site Request Forgery)是通过一个受害者在发送一个HTTP请求到网站,然后以这种方式记录和信任该用户。</p>
+	<p>以这种方式攻击须要构造一些恶意的HTML和JAVASCRIPT代码。用途是一个受害者访问了这个网站后会做到我们之前所放置的一些行为。而这种形为就是一种复杂性证明的CSRF攻击!而这种会话传输能够很轻易的被Html的行为和标记语言所接受。</p>
+	<p class="b"><b>关于认证:</b></p>
+	<p>通常，当一个用户登陆到一个受信任的站点，验证系统将用“标识符”来表记这个用户，告诉网站系统当前的用户是经过验证的可以访问一些保留的页面和服务。</p>
+	<p>这些“标识符”是实现和创建 Cookies和Sessions，通常所生成的是一些HASH和经过编码的号码，会严格确定每一个用户。</p>
+	<p>随时这个用户都会用他自己的证书登陆到这个WEB站点，这标志着一个新的Sessions将产生。与此同时一位攻击者在WEB站点的里将容易地去做一些越权的行为。</p>
+	<p>异处：XSS和CSRF之间：<br />
+实际上，XSS和CSRF到底有什么实际上的差异呢？<br /> 
+实事上它们两个颇为相似，但是有一个核心的差异使这两个弱点区分开来。<br />
+在XSS漏洞里用户是完全信任该站点的，并会提交一些受骗的信息给攻击者（以抓取Cookies信息为例）。
+</p>
+    <p>在CSRF漏洞里站点是信任某个用户的请求和完成任何种类的行为，这样一来所提交的一些表单中的“认证标记”将有利用攻击者。这标志一种以经登陆并拥有相应的权限。</p>
+	<p>关于CSRF的一个简单形式图如下：<br />
+                    trusted &lt;-----flag-----. <br />
+     .--------. .-------. .-----|--------.<br />
+     | ATTACKER |_____| USER |_____| WEBSITE |<br />
+     `----------`  tricks  `------` (request) `---------`<br />
+      |                     "_ _ _ _ _ _ _ _/                          |<br />
+      |                                                                        |<br />
+            `---------------------------------------------`<br />
+          web站点请求
+    </p>
+	<p>像我们所看到的这种形式是一种反方向的XSS，(该站点信任该用户的身份并授权给该用户。)公平的完成了这个用户的请求，这是一种模糊的认证。</p>
+	<p>重点是在于，这次的攻击请求是由该用户发送给WEB站点的，而不是攻击者，这使得该漏洞更具危险性！</p>
+	<p>深入了解CSRF：</p>
+	<p>现在我们要了解一下什么是CSRF。让我们从一些小的例子开始。</p>
+	<p>保证这个例子是一个用户赞成该WEB站点所提供的一些特殊项目。也许是提供一些金钱的交易:当这个用户已登录，这时该服务器将创建一个Cookies和Sessions标志着这个用户可以访问一些他自己的私人页面。</p>
+	<p>此外还要保证，这个WEB站点也许是一个“电子银行服务”，它提供了一种以HTML方式执行金钱交易。那么这段代码看起来将会像：</p>
+	<p class="b" style="padding-left:25px;">1&lt;!-- scratch of a form --&gt;<br />
+ 2&lt;form method="POST" action="sendmoney.php" name="sendmoney"&gt;<br />
+ 3     &lt;div&gt;How much: &lt;input type="text" name="cash"&gt;&lt;/div&gt;<br />
+ 4     &lt;div&gt;To: &lt;input type="text" name="toname"&gt;&lt;/div&gt;<br />
+ 5     &lt;div&gt;ABI: &lt;input type="text" name="toabi"&gt;&lt;/div&gt;<br />
+ 6     &lt;div&gt;CAB: &lt;input type="text" name="tocab"&gt;&lt;/div&gt;<br />
+ 7     &lt;div&gt;CIN: &lt;input type="text" name="tocin"&gt;&lt;/div&gt;<br />
+ 8     &lt;div&gt;&lt;input type="submit" name="submit" value="Buy"&gt;&lt;/div&gt;<br />
+ 9&lt;/form&gt;<br />
+10&lt;!-- EOF --&gt;
+</p>
+    <p>通过这种方式，用户将转移一些金钱到目标的账户里。</p>
+    <p>当这个用户将提交这些值到脚本。sendmoney.php将执行查询，使这个电子银行系统，完成他的转移请求。也许这个脚本看起来像：</p>
+	<p class="b" style="padding-left:25px;">1     /* sendmoney.php */<br />
+ 2     &lt;?<br />
+ 3     session_start();<br />
+ 4     if(isset($_REQUEST['cash']))<br />
+ 5          $cash = $_REQUEST['cash'];<br />
+ 6     else<br />
+ 7          die("Specify the amount of money");<br />
+ 8     if(isset($_REQUEST['toname']))<br />
+ 9          $toname = $_REQUEST['toname'];<br />
+10     else<br />
+11          die("Specify a recipient");<br />
+12     if(isset($_REQUEST['toabi']))<br />
+13          $toabi = $_REQUEST['toabi'];<br />
+14     else<br />
+15          die("Specify the ABI");<br />
+16     if(isset($_REQUEST['tocab']))<br />
+17          $tocab = $_REQUEST['tocab'];<br />
+18     else<br />
+19          die("Specify the CAB");<br />
+20     if(isset($_REQUEST['tocin']))<br />
+21          $tocin = $_REQUEST['tocin'];<br />
+22     else<br />
+23          die("Specify the CIN");<br />
+24     
+25     // This function safely send the money to the target<br />
+26     send_money($cash, $toname, $toabi, $tocab, $tocin);<br />
+27     <br />
+28     ?&gt;<br />
+29     /* EOF */
+    </p>
+	<p>在这个脚本中的变量Send_meney（）将有效的将值传给目标，完成这次的转移工作。</p>
+	<p>在这个特定的情况下，使用全局变量REQUEST允许一个攻击者disfrut在表单中使用GET方法，偷去用户的金钱。</p>
+	<p>如果这个用户是鉴别的，正如我以前所说的，一个攻击者将提供给这个用户网页或一个图片，起属性值设置如下：<br/>
+	1     &lt;!-- coolthing.html --&gt;<br/>
+2     &lt;html&gt;<br/>
+3     &lt;head&gt;&lt;title&gt;Cool Thing&lt;/title&gt;&lt;/head&gt;<br/>
+4     &lt;body&gt;<br/>
+5     &lt;img src="http://bankhost.com/sendmoney.php?cash=ALL&toname=ME&toabi=123456&tocab=123456&tocin=X"&gt;<br/>
+6     &lt;/body&gt;<br/>
+7     &lt;/html&gt;<br/>
+8     &lt;!-- EOF --&gt;
+	</p>
+	<p>其实，如果这个用户访问了这个页面并同时登录到“backhost.com”站点，这个图片载入将发送一个HTTP请求到这个WEB站点，询问他完成这个处理。这实际上是用户自己以前所发起的转移命令。</p>
+	<p>这是不是一个很好的方法管理交易呢，这个全球的REQUEST不是安全的。或许更多的脚本将使用POST变量代替发送sendmoney，因为他们可能认为这将是更安全的。</p>
+	<p>显然是不是想像的那样。<br/>
+考虑用coolthing.html这个文件代替前面那个：<br/>
+&lt;!-- coolthing.html --&gt;<br/>
+&lt;html&gt;<br/>
+&lt;head&gt;<br/>
+&lt;title&gt;Cool Thing&lt;/title&gt;<br/>
+&lt;script type="text/javascript"&gt;<br/>
+function stealMoney()<br/>
+{<br/>
+           iframe = document.frames["stealmoney"];<br/>
+           iframe.document.Submit("steal");<br/>
+}<br/>
+&lt;/script&gt;<br/>
+   &lt;/head&gt;<br/>
+   &lt;body onload="stealMoney()"&gt;<br/>
+   &lt;div&gt;&lt;img src="it.jpg"&gt;&lt;/div&gt;<br/>
+    &lt;iframe name="stealmoney" display="none"&gt;<br/>
+        &lt;form method="POST" name="steal" action="http://localhost:88/sendmoney.php"&gt;<br/>
+        &lt;input type="hidden" name="cash" value="ALL"&gt;<br/>
+        &lt;input type="hidden" name="toname" value="ME"&gt;<br/>
+        &lt;input type="hidden" name="toabi" value="123456"&gt;<br/>
+        &lt;input type="hidden" name="tocab" value="123456"&gt;<br/>
+        &lt;input type="hidden" name="tocin" value="X"&gt;<br/>
+    &lt;/form&gt;<br/>
+&lt;/iframe&gt;<br/>
+&lt;/body&gt;<br/>
+&lt;/html&gt;<br/>
+&lt;!-- EOF --&gt;
+</p>
+    <p>我们可以看到这个页面组成只是加载了一个it的图片，但是这是以一种隐藏的形式存放在iframe “stealMoney”将执行一个请求到“bankhost.com”网站，请求这个用户Sessions交易的Money到目标的信息。</p>
+	<p>攻击要点：<br/>
+总结一下在什么情况下发起CSRF攻击:<br/>
+a).攻击者找到一个不懂得什么是用户注册的人，利用这种方式发起CSRF攻击。<br/>
+b).攻击者创建一个HTML的页面其中将会自动的发送一些请求到脆弱的WEB站点。<br/>
+c).受害者登录到一个WEB站点并提交了一个开放的Sessions.<br/>
+d).攻击者提供一个精心构造的页面给受害者。<br/>
+e).受害者访问这个页面。<br/>
+f).所发送的请求完成了一个恶意的行为。
+</p>
+    <p> 防御CSRF:<br/>
+现在，我们以经知道了什么是CSRF攻击，分析一下如何防御在这类的攻击。<br/>
+可以使用独一无二的“代号”、验证码和其他的，<br/>
+但是他们仍然是不能够这么简单灵活的运用。<br/>
+建意至少要求这个用户的密码至少重试一次在敏感页面（如电子商贸形式和内容）<br/>
+为了确让这个Sessions不能劫持(实事上..如果这个攻击者不知道这个用户的密码，将不能做任何危险事情，和一些其他的方法，如果他真正知道这个密码，他将不请求任何的CSRF )。<br/>
+它真正容易实现的是Security misure,在表格中增添了新的域：<br/>
+&lt;!-- new scratch of the form --&gt;<br/>
+2      &lt;form method="POST" action="sendmoney.php" name="sendmoney"&gt;<br/>
+3           &lt;div&gt;How much: &lt;input type="text" name="cash"&gt;&lt;/div&gt;<br/>
+4           &lt;div&gt;To: &lt;input type="text" name="toname"&gt;&lt;/div&gt;<br/>
+5           &lt;div&gt;ABI: &lt;input type="text" name="toabi"&gt;&lt;/div&gt;<br/>
+6           &lt;div&gt;CAB: &lt;input type="text" name="tocab"&gt;&lt;/div&gt;<br/>
+7           &lt;div&gt;CIN: &lt;input type="text" name="tocin"&gt;&lt;/div&gt;<br/>
+8           &lt;div&gt;Your passord: &lt;input type="password" name="pass"&gt;&lt;/div&gt;<br/>
+9           &lt;div&gt;&lt;input type="submit" name="submit" value="Buy"&gt;&lt;/div&gt;<br/>
+10      &lt;/form&gt;<br/>
+11      &lt;!-- EOF --&gt;
+</p>
+    <p>接下来我们将核对一下'sendmoney.php'文件。<br/>
+	1      /* scratch from sendmoney.php */<br/>
+2      if(isset($_POST['pass']) && md5($_POST['pass']) == $mysql_row['pass']) {<br/>
+3           <br/>
+4      } else {<br/>
+5           die("You must specify a correct password!");<br/>
+6      }<br/>
+7      /* EOF */<br/>
+    这样，CSRF攻击企图将无效<br/>
+其他的解决方法如独一无二的“标记”在PHP 的 Sessions 的基础上建立，也许可以避免，因为攻击者能够绕开他们。
+	</p>
+  </div>
+  
+  <a id="30602"></a>
+  <div class="detail">
+    <h2>四十一 :　没有明显的XSSI保护的JSON响应</h2>
+	<p>由于JavaScript被用于传送数据而不是纯粹的代码，因此，一个恶意Web站点可以利用同源策略处理JavaScript方面的缺陷，访问由其他应用程序生成的数据。如前所述，实施这种攻击时需要提交一个XSRF请求。但是，由于现在恶意站点能够读取在跨站点响应中返回的数据，因而它能够与目标应用程序进行双向交互。</p>
+    <p>当然，恶意Web站点还是不能从另一个域加载一段脚本并查看它的内容。无论这时响应中是包含JavaScript还是其他内容，这样做依然会违反同源策略。于是，恶意Web站点使用一个&lt;script&gt;标签将目标脚本包含在内，并在自己的页面中执行这段脚本。这样，恶意站点就能够访问脚本中包含的数据。</p>
+	<p>目前恶意站点可以通过两种方法实施这种攻击：覆写默认的数据构造器或运行一个适当的回调函数（callback function）。</p>
+	<p class="b"><b>1. 覆写数组构造器</b></p>
+    <p>如果目标应用程序返回的JSON数据中包含一个序列化数组，那么恶意Web站点就可以覆写默认的数组构造器，以在构造数组时访问JSON数据。在 Firefox 浏览器中，攻击者可以使用以下脚本实施这种攻击：<br/>
+	<a href="./images/flaw05.jpg" target="_blank" title="点击查看大图"><img src="./images/flaw05.jpg" border="0" width="620" /></a><br/>
+	这个概念验证攻击执行以下三项关键操作。<br/>
+它运行一个叫做capture的函数，该函数生成一个警报，显示传送给它的任何数据。 <br/>
+它覆写Array对象，并将数组中前三个元素的 setter 定义为capture函数。 <br/>
+它通过将相关URL设置为一个&lt;script&gt;标签的src属性，将目标JSON对象包含在页面中。
+	</p>
+	<p>当实施这个攻击时，&lt;script&gt;标签的目标被获取并执行。同时，序列化对象也得以构建；它是一个多维数组，其中包含受害用户的联系信息。确定数组的每一个元素后，攻击者的脚本调用覆写后的setter，截取元素的内容。在这个示例中，脚本仅显示一系列包含数组数据的警报。</p>
+    <p>2006年，Jeremiah Grossman在GMail应用程序中发现了这种漏洞。在其他情况下，攻击者也可以覆写Object而非Array对象，达到同样的目的。 </p>
+	<p class="b"><b>2. 执行一个回调函数</b></p>
+    <p>在一些应用程序中，易受攻击的应用程序返回的JavaScript并不仅仅包含一个JSON对象，而且还对那个对象调用一个回调函数。例如：<br/>
+	<a href="./images/flaw06.jpg" target="_blank" title="点击查看大图"><img src="./images/flaw06.jpg" border="0" width="620" /></a><br/>
+	"混搭"（mash-up）常常使用这种技巧，其中一个应用程序包含一个来自另一个域的JSON对象，并在它访问脚本的请求中指定一个回调函数。返回的脚本对JSON对象调用指定的回调函数，允许调用函数的应用程序以任意方式处理数据。 
+	</p>
+	<p>由于这种机制主要是为解决浏览器的同源限制而特别设计的，因此攻击者当然可以利用它来截获从其他域返回的数据。在前面的示例中，攻击者只需运行showContacts函数并包含目标脚本，就可以实施攻击。例如：<br/>
+	<a href="./images/flaw07.jpg" target="_blank" title="点击查看大图"><img src="./images/flaw07.jpg" border="0" width="620" /></a><br/>
+	</p>
+    <p class="b"><b>3.查找JSON劫持漏洞</b></p>
+    <p>由于JSON劫持属于一种跨站点请求伪造漏洞，因此可以使用查找 XSRF 漏洞时使用的相同方法来查找某些JSON劫持漏洞。但是，因为攻击者可以利用JSON劫持获取其他域中的任意数据，而不仅仅是执行跨域操作，所以，与查找标准的XSRF漏洞时不同，这时还必须探查其他一些功能。</p>
+	<p class="b" style="padding-left:25px;">渗透测试步骤<br/>
+如果应用程序使用Ajax，寻找任何包含JSON格式的敏感数据或其他JavaScript的响应。<br/>
+与利用标准XSRF漏洞时一样，确定是否可以构造一个跨域请求获取上述数据。如果请求中存在一些能够预测的参数，那么应用程序可能易于受到攻击。<br/>
+只有使用GET方法才能实施JSON劫持攻击，因为只有使用这个方法才能获取在&lt;script&gt;中指定的URL。如果应用程序自己的请 求使用POST方法，确定在将请求中的方法改为GET方法并将主体参数移动到URL查询字符串中之后，应用程序是否依然接受这个请求。<br/>
+如果前面的要求得到满足，确定是否可以构造一个Web页面，并将其包含在&lt;script&gt;标签中，成功访问目标应用程序响应中的数据。尝试使用前面的两种方法或者其他任何适用于特殊情况的方法实施攻击。
+</p>
+    <p class="b"><b>4.防止JSON劫持</b></p>
+	<p>实施JSON劫持攻击必须满足几个前提条件。因此，要防止这种攻击，必须违反其中至少一个前提条件。目前使用下面的每一种防范机制应足以挫败JSON劫持攻击。但是，随着对这些攻击研究的深入，要想获得深层保护，我们建议在防御攻击时同时采用几种防范措施。</p>
+	<p>应用程序应使用标准的反XSRF防御阻止跨域请求访问敏感数据。访问JSON对象的请求中应包含一个无法预测的参数，并且在返回数据前应对其进行确认。</p>
+	<p>当应用程序从它自己的域中获取JSON对象时，并不仅限于使用&lt;script&gt;标签包含这个对象。因为请求在站内执行，客户端代码可以使用XMLHttpRequest自由访问响应数据，并可在将其作为JavaScript解释前对它进行其他处理。这意味着，为防止JOSN劫持，应用程序可以在响应的开始部分插入无效或有问题的JavaScript，客户应用程序在处理脚本前将会删除这些内容。Google 在防止前述针对 GMail 的攻击时即采用了这种方法，在返回的脚本开始部分插入以下代码：<br/>
+	while(1);  <br/>
+由于应用程序可以使用XMLHttpRequest获取JSON数据，因此它也可以使用POST请求完成这项任务。如果应用程序仅接受使用POST访问JSON对象的请求，它就能够阻止第三方站点将这些请求包含在&lt;script&gt;标签内。
+	</p>
+	<p class="b"><b>5.JSON劫持危害：</b></p>
+	<p class="b" style="padding-left:25px;">1、可能导致用户权限被盗用；
+攻击者通过JSON劫持构造盗取管理员或高权限用户的脚本，一旦被访问，权限立即被盗用。<br/>
+2、可以通过劫持对网页进行挂马；在JSON劫持点构造引向漏洞后门木马，但访问直接利用漏洞批量挂马。<br/>
+3、可对劫持页进行网站钓鱼；利用JSON劫持直接导向伪装网站地址。<br/>
+4、可做提权攻击；<br/>
+5、变种拒绝服务攻击；劫持后将流量导向受害网站，直接发动DDOS攻击。
+</p>
+  </div>
+  
+  <a id="30701"></a>
+  <div class="detail">
+    <h2>四十二 :　错误的缓存指令（低风险）</h2>
+    <p>略...</p>
+  </div>
+
+  <a id="30801"></a>
+  <div class="detail">
+    <h2>四十三 :　由用户控制的响应前缀（BOM/插件攻击）</h2>
+    <p>略...</p>
+  </div>
+
+  <a id="30901"></a>
+  <div class="detail">
+    <h2>四十四 :　HTTP消息头注入</h2>
+	<p>如果用户控制的数据以不安全的方式插入到应用程序返回的HTTP消息头中，就会出现HTTP消息头注入漏洞。如果攻击者能够在他控制的消息头中注入换行符，他就能在响应中插入其他HTTP消息头，并在响应主体中写入任意内容。</p>
+	<p>这种漏洞最常见于Location与Set-Cookie消息头中，但也会出现在其他HTTP消息头中。一些应用程序提取用户提交的输入，把它插入一个 cookie 值中。例如：<br/>
+	GET /home.php?uid=123 HTTP/1.1<br/>
+	Host: wahh-app.com<br/>
+	HTTP/1.1 200 OK<br/>
+	Set-Cookie: UserId=123<br/>
+	...
+	</p>
+	<p>在上述任何一种情况下，攻击者都可以使用回车符（0x0d）或换行符（0x0a）构造一个专门设计的请求，在他们控制的消息头中注入一个换行符，从而在下面的行中注入其他数据。例如：<br/>
+	GET /home.php?uid=123%0d%0aFoo:*bar HTTP/1.1<br/>
+	Host: myapp.com<br/><br/>
+    HTTP/1.1 200 OK<br/>
+	Set-Cookie: UserId=123<br/>
+	Foo : bar
+	</p>
+	<p>利用消息头注入漏洞 :
+查找消息头注入漏洞的方法与查找XSS漏洞的方法类似，同样需要寻找用户控制的输入重复出现在应用程序返回的HTTP消息头中的情况。因此，在探查应用程序是否存在http消息头注入漏洞的过程中，还应当确定任何应用程序可能易于受到消息头注入的位置。
+</p>
+    <p class="b"><b>渗透测试步骤:</b></p>
+    <p>在用户控制的输入被复制到HTTP消息头中的每个位置都可能存在漏洞，确认应用程序是否接受URL编码的回车符（%0d）与换行符（%0a），以及它们是否按原样在响应中返回。
+   注意，是在服务器的响应中而不是换行符的URL编码形式中寻找换行符本身。如果通过拦截代理服务器查看响应，攻击成功的话，应该会在HTTP消息头中看到另外一个新行。
+   如果服务器的响应中仅返回两个换行符中的一个，根据实际情况，仍然能够设计出有效的攻击方法。
+   如果发现换行符被应用程序阻止或净化，那么应该尝试以下攻击方法：<br/>
+     foo%O0%0d%0abar<br/> foo%250d%250abar<br/>foo%%0dOd%%0a0abar<br/>
+    </p>
+	<p>如果能够在响应中注入任意消息头和消息主体内容，那么这种行为可通过各种方式用于攻击应用程序的其他用户。</p>
+    <p class="b"><b>1. 注入cookie</b></p>
+    <p>攻击者可以建立一个URL，在请求它的任何用户的浏览器中设定任意cooike。例如： <br/>
+       GET /redir.php?target=/%0d%0aSet-cookie:+Sessid%3d120a12f98e8; HTTP/1.1<br/>
+	   Host: wahh-app.com<br/><br/>
+	   HTTP/1.1 302 Object moved <br/>Location: / <br/>Set-cookie: SessId=120a12f98e8<br/>
+如果进行适当配置，这些cookie可以访问不同的浏览器会话。这时，通过利用反射型漏洞的传送机制（电子邮件、第三方Web站点等），就可以诱使目标用户访问恶意URL。 
+在某些应用程序中，设置一个特殊的cookie可能会破坏应用程序的逻辑，给用户造成不利影响（例如，UseHttps=false）。而且，建立一个攻击者控制的会话令牌可用于实施会话固定攻击。
+</p>
+    <p>如果进行适当配置，这些cookie可以访问不同的浏览器会话。这时，通过利用反射型漏洞的传送机制（电子邮件、第三方Web站点等），就可以诱使目标用户访问恶意URL。 </p>
+	<p>在某些应用程序中，设置一个特殊的cookie可能会破坏应用程序的逻辑，给用户造成不利影响（例如，UseHttps=false）。而且，建立一个攻击者控制的会话令牌可用于实施会话固定攻击。</p>
+    <p class="b"><b>2. 传送其他攻击</b></p>
+    <p>因为HTTP消息头注入允许攻击者控制整个响应主体，所以几乎任何针对其他用户的攻击都可以使用它作为传送机制，包括虚拟Web站点置换、脚本注入、任意重定向、针对 ActiveX 控件的攻击等。</p>
+	<p class="b"><b>3. HTTP响应分割</b></p>
+    <p>这是一种试图通过恶意内容“毒害”代理服务器缓存，从而攻破通过代理服务器访问应用程序的其他用户的攻击技巧。例如，如果一个企业网络中的所有用户通过缓存代理服务器访问某个应用程序，那么，在代理服务器的缓存中注入恶意内容（显示给任何请求受影响页面的用户），攻击者就可以向它们实施攻击。</p>
+	<p>攻击者可以通过以下步骤，利用一个消息头注入漏洞传送响应分割攻击。</p>
+    <p>(1) 攻击者在代理服务器缓存中选择一个他希望“毒害”的应用程序页面。例如，他可能会用一个木马登录表单（用于向攻击者的服务器提交用户证书）代替/admin/位置的页面。</p>
+    <p>(2) 攻击者确定一个消息头注入漏洞，构造一个请求，在服务器响应中注入一个完整的HTTP主体以及另一组响应消息头和另一个响应主体。第二个响应主体中包含他的木马登录表单的HTML源代码。这样，服务器的响应看起来就像是两个连接在一起的单独HTTP响应。因此，这种技巧叫做HTTP响应分割（HTTP response splitting），因为攻击者已经把服务器的响应“分割”成两个单独的响应。例如： <br/>
+	GET /home.php?uid=123%0d%0aContent-Length:+22%%0a%0a%0d%0a&lt;html&gt;%0a%0afoo%0d%0a&lt;/html&gt;%0d%0aHTTP/1.1+200+OK%0a%0aContent-Length:+2307%0d%0a%0d%0a&lt;html&gt;%0d%0a&lt;head&gt;%0d%0a&lt;title&gt;Administrator+login&lt;/title&gt;%0d%0a{...long URL...} HTTP/1.1<br/>
+	Host: wahh-app.com <br/> HTTP/1.1 200 OK <br/> Set-Cookie: UserId=123 <br/> Content-Length: 22<br/><br/>
+	&lt;html&gt;<br/>foo<br/>&lt;html&gt;<br/>HTTP/1.1 200 OK<br/>Conent-Length: 2307<br/>&lt;html&gt;&lt;head&gt;<br/>
+	&lt;title&gt;Administrator login&lt;/title&gt;<br/>...
+	</p>
+    <p>(3) 攻击者与代理服务器建立 TCP 连接，传送这个精心设计的请求，后面紧跟着访问被“毒害”的页面的请求。在HTTP协议中，以这种方式连接请求是合法的。 <br/>
+	<a href="./images/flaw08.gif" target="_blank" title="点击查看大图"><img src="./images/flaw08.gif" border="0" width="620" /></a><br/>
+	</p>
+    <p>(4) 代理服务器与应用程序建立 TCP 连接，送出这两个以相同方式连接的请求。 </p>
+<p>(5) 应用程序用攻击者注入的HTTP内容响应第一个请求，它看起来就像是两个单独的HTTP响应。 </p>
+<p>(6) 代理服务器收到这两个看似单独的响应，并认为其中第二个响应与攻击者的第二个请求相对应，该请求指向URL：http://wahh-app/admin/。代理服务器把第二个响应作为这个URL的内容保存在缓存中。（如果代理服务器已经在缓存中保存有该页面的副本，那么攻击者就可以在他的第二个请求中插入一个适当的If-Modified-Since消息头，并在注入的响应中插入一个Last-Modified消息头，使得代理服务器重新请求这个URL，用新的内容更新它的缓存。）</p>
+<p>(7) 应用程序发布它对攻击者的第二个请求的响应，其中包含URL http://wahh-app.com/admin/ 的真实内容。代理服务器并不认为这个URL是对它发布的请求的响应，因而抛弃这个响应。</p>
+<p>(8) 一名用户通过代理服务器访问 http://wahh-app/admin/，并收到这个URL保存在代理服务器缓存中的内容。这个内容实际上是攻击者的木马登录表单，因此用户的证书被攻破。 
+防止消息头注入漏洞
+</p>
+   <p>防止HTTP消息头注入漏洞的最有效方法是，不将用户控制的输入插入到应用程序返回的HTTP消息头中。通常我们可以用一些较为安全的方法代替这种行为。</p>
+   <p>如果不可避免地要在HTTP消息头中插入用户控制的数据，那么应用程序应采取以下这种双重深层防御方法防止漏洞产生。</p>
+   <p>输入确认：应用程序应根据情形，对插入的数据进行尽可能严格的确认。例如，如果根据用户输入设定一个cookie值，那么应当限制这个值仅包含字母字符，最大长度为6B。 </p>
+   <p>输出确认：应对插入消息头的每一个数据进行过滤，检测可能的恶意字符。实际上，任何ASCII码小于0x20的字符都应被视为可疑的恶意字符，应用程序应拒绝包含这些字符的请求。 </p>
+   <p>通过对所有应用程序内容使用 HTTPS，应用程序即可防止攻击者利用任何残留的消息头注入漏洞“毒害”代理服务器缓存。</p>
+  </div>
+  
+  <a id="50101"></a>
+  <div class="detail">
+    <h2>四十五 :　服务器端的XML注入</h2>
+	<p>如同HTML脚本注入一样，在输出中包含攻击者提供的数据的地方，XML是容易受到攻击的。三种最常见的XML注入攻击是：XML数据注入、可扩展样式表语言转换（Extensible Stylesheet Language Transformation，XSLT）注入和XPath/XQuery 注入。</p>
+    <p class="b"><b>XML数据注入（XML Data Injection）</b></p>
+    <p>XML通常用于存储数据，如果用户提供的数据是以XML的方式进行存储，那么对攻击者来说，注入额外的、攻击者可能不能正常控制的XML是有可能的。考虑下述XML，在这个XML中，攻击者仅仅能够控制Attacker Text文本：<br/>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br/>
+&lt;USER role="guest"&gt;Attacker Text&lt;/USER&gt;<br/>
+如果用你的输入来替换Attacker Text，那将会是多么有趣的测试用例呢？如果开发人员不够谨慎的话，他们可能错误地允许XML注入。如果以User1&lt;/USER&gt;&lt;USER role=“admin”&gt;User2 作为输入的话，将会产生如下的XML（用户输入的是黑体文本部分）：<br/>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br/>
+&lt;USER role="guest"&gt;User1&lt;/USER&gt;<br/>
+&lt;USER role="admin"&gt;User2&lt;/USER&gt;<br/>
+如果应用程序读取这个文件，并且决定给每个用户分配何种访问权限的时候，User2将获得管理员权限！<br/>
+提示 : 如果你能够在XML文件的某个部分注入数据的话，那么发送相同的元素和属性（这些元素和属性是在以前的XML中出现过的，并且是你所不能访问的）就会很有价值。一些XML解析器会使用最后指定的那些元素/属性的实例，这样，你或许就能够有选择性地覆盖以前的一些值。 
+</p>
+    <p class="b"><b>可扩展样式表语言（XSL）</b></p>
+    <p>除了注入数据到XML之外，作为XML注入的结果，使代码运行也是可能的。XSL由XSL转换（XSL Transform，XSLT）、XML路径语言（XML Path Language，XPath）表达式和XSL格式化对象（Formatting Object，XSL-FO）组成，并且允许在XML文件中使用样式表。这种样式表能够把已有的XML数据转换成新的XML数据。这种新的XML文档通常以HTML的方式在Web浏览器中展现。在这种情况下，攻击者能够注入数据，而这些数据将使脚本在浏览器中运行。例如，下述XML是RSS提要（RSS feed）中的一部分，这个XML引用了一个超链接：<br/>
+&lt;link&gt;Attacker Text&lt;/link&gt;<br/>
+为了表示上述XML，应用XSLT将上述XML转换为如下的HTML，并传送给Web浏览器：<br/>
+&lt;A HREF="Attacker Text"&gt;Attacker Text&lt;/A&gt;<br/>
+如果你控制了Attacker Text文本的话，你能够想到一种方法来运行脚本吗？即使程序员对攻击者提供的文本进行了HTML编码，攻击者仍然能够利用脚本协议，通过类似于javascript：alert()的输入来运行脚本。如果这个HTML在一个站点或者一定的范围内表现得与原始RSS提要（RSS feed）不同的话，那么，这就是一种通过XML数据引发的HTML脚本攻击。<br/>
+重要提示 : 当测试XML注入的时候，可以试着发送尖括号和引号标志来转义当前的XML属性/标签。当应用程序被正确保护的时候，它就不会让用户提供数据来转义XML标签和属性，这样就可以防止XML注入攻击。通常，适用于脚本注入和跨站脚本的测试用例也适用于XML注入。
+</p>
+    <p class="b"><b>XPath/XQuery注入</b></p>
+    <p>XPath和XQuery是能够查询XML文档的语言，类似于结构化查询语言（SQL）。事实上，许多流行的数据库允许利用XPath和XQuery来查询数据库。在许多情况下，攻击者不能够直接访问XML数据，但是，攻击者可以用部分数据来创建XPath和XQuery语句，而这些语句能够用来查询XML。这样，攻击者就能够通过精心构造的输入来注入任意的查询，以此来获得数据，而这些数据在正常情况下是不允许攻击者访问的。<br/>XML文件能够包括信息的不同部分或者区域。有时，只有这些信息中的特定部分才会被暴露给最终用户，例如，下述XML包含了姓名和社会保障号：<br/>
+	&lt;?xml version='1.0'?&gt;<br/>
+	&lt;staff&gt;<br/>
+	&lt;author&gt; <br/>
+	&lt;name&gt;Tom Gallagher&lt;/name&gt;<br/>
+	&lt;SSN&gt;123-45-6789&lt;/SSN&gt;<br/>
+	&lt;/author&gt;<br/>
+	&lt;author&gt;<br/>
+	&lt;name&gt;Bryan Jeffries&lt;/name&gt;<br/>
+	&lt;SSN&gt;234-56-7890&lt;/SSN&gt;<br/>
+	&lt;/author&gt;<br/>
+	&lt;author&gt;<br/>
+	&lt;name&gt;Lawrence Landauer&lt;/name&gt;<br/>
+	&lt;SSN&gt;012-345-6789&lt;/SSN&gt;<br/>
+	&lt;/author&gt;<br/>
+	&lt;/staff&gt;<br/>
+	这个XML存储在一个Web服务器上，并且是不能够被最终用户直接访问的。在这个服务器上用于查询XML的一个网页是能够被最终用户访问的，而且，只有作者姓名能够通过网页进行显示。利用下述XPath表达式就能够获得XML数据：<br/>
+	//*[contains(name，'Attacker-Data')]/name<br/>
+Attacker-Data是最终用户指定的数据，正如你所看到的那样，攻击者能够控制部分XPath查询。通过指定数据为x'）] | //*| <br/>//*[contains（name，'y，攻击者能够获得这个XML文件的完整内容。这种输入构造了如下的XPath表达式：<br/>
+//*[contains(name，'x')] | //*| //*[contains(name，'y')]/name<br/>
+注意在上述表达式中，管道符号（|）用于表示或操作，左斜线和一个星号（//*）代表所有节点。上述XPath表达式可能有下述三种情况：<br/>
+1．任何包含x的姓名<br/>
+2．任何在这个XML文件中的节点<br/>
+3．任何包含y的姓名<br/>
+因为在第二种情况下能够返回所有节点，所以攻击者能够获得这个XML文件的所有数据！
+	</p>
+	<p class="b"><b>XPath 注入预防</b></p>
+    <p>因为 XPath 注入攻击与 SQL 注入攻击非常类似，所以很多预防方法也类似。这些预防方法中，多数也可以类似地应用于预防其他类型的代码注入攻击。</p>
+	<p class="b">身份验证</p>
+	<p class="b" style="padding-left:25px;">不论面对何种应用程序、环境或语言，都应遵守以下的最佳实践： <br/>
+•	假定所有输入都可疑。 <br/>
+•	不仅要验证数据的类型，还要验证其格式、长度、范围和内容（例如，一个简单的正则表达式 if (/^"*^';&<>()/) 就可以找出大多数可疑的特殊字符）。 <br/>
+•	在客户机和服务器上都要验证数据，因为客户机验证非常容易绕过。 <br/>
+•	根据安全软件开发的最佳实践，遵守一致的编写和 [missing word] 策略实现应用程序安全性（请参阅 参考资料 中 Apache 的优秀 Web 服务列表）。 <br/>
+•	在发布应用程序之前测试已知的威胁。参考资料 中的 “Fuzz Testing” 介绍了测试方法。 
+</p>
+    <p class="b">参数化</p>
+	<p>与多数数据库应用程序不同，XPath 不支持参数化查询的概念，但是您可以使用其他 API（比如 XQuery）模拟该概念。您不需要构建字符串表达式，然后传给 XPath 解析器以便在运行时动态执行（如清单 10 所示），而是通过创建保存查询的外部文件使查询参数化（如 清单 11 所示）。</p>
+	<p class="b" style="padding-left:25px;">清单 10. 传给 XPath 解析器的字符串 <br/>"//users/user[LoginID/text()=' " + loginID+ " ' and password/text()='"+ password +" ']" 在清单 11 中，通过创建保存查询的外部文件使查询参数化。<br/>
+清单 11. dologin.xqdeclare variable $loginID as xs:string external;
+declare variable $password as xs:string external;//users/user[@loginID=
+$loginID and @password=$password] <br/>对 清单 11 稍加修改，也可以完成同样的功能，如清单 12 所示。<br/>
+清单 12. XQuery 片段 <br/> Document doc = new Builder().build("users.xml");<br/>
+XQuery xquery = new XQueryFactory().createXQuery(new File("dologin.xq"));<br/>
+Map vars = new HashMap();<br/>
+vars.put("loginid", "abc");<br/>
+vars.put("password", "test123");<br/>
+Nodes results = xquery.execute(doc, null, vars).toNodes();<br/>
+for (int i=0; i < results.size(); i++) {<br/>
+System.out.println(results.get(i).toXML());<br/>
+}<br/>这样可以防止重要的显式变量 $loginID 和 $password 在运行时被作为可执行表达式处理。这样就分开了执行逻辑与数据；遗憾的是，查询参数化并不是 XPath 功能的一部分，但是可以从 SAXON 之类的开源解析器中免费获取（请参阅 参考资料 中的链接）。某些其他解析器支持这种功能，而且它可以作为防止 XPath 注入的一种可靠方式。
+</p>
+    <p class="b"><b>Web 服务器上的数据检查</b></p>
+    <p>要防止 XPath 注入和其他形式的代码注入，应该检查所有从 Web 服务器传到后端服务的数据。例如，对于 Apache 您可以使用 Mod_Security 筛选器（比如 SecFilterSelective THE_REQUEST "(\'|\")"）查找字符串中的单引号和双引号并禁止它们。您也可以使用同样的方法筛选和禁止其他形式的特殊字符，比如 ("*^';&>&lt;&gt;/)，这些字符都可以用于各种注入攻击。这种方法对于使用基于 REST 或 SOAP 的 XML 服务的应用程序可能很好，但是在其他情况下可能不适用。通常的最佳实践是，从最初的设计到应用程序实现都采用智能安全设计。</p>
+  </div>
+  
+  <a id="50102"></a>
+  <div class="detail">
+    <h2>四十六 :　"Shell 注入"（命令注入）</h2>
+	<p>命令注入攻击，是指这样一种攻击手段，黑客通过把HTML代码输入一个输入机制(例如缺乏有效验证限制的表格域)来改变网页的动态生成的内容。使用系统命令是一项危险的操作，尤其在你试图使用远程数据来构造要执行的命令时更是如此。如果使用了被污染数据，命令注入漏洞就产生了。</p>
+    <p class="b">命令注入攻击<br/>
+PHP中可以使用下列5个函数来执行外部的应用程序或函数<br/>
+system、exec、passthru、shell_exec、“(与shell_exec功能相同)<br/>
+函数原型<br/>
+string system(string command, int &return_var)<br/>
+command 要执行的命令<br/>
+return_var 存放执行命令的执行后的状态值<br/>
+string exec (string command, array &output, int &return_var)<br/>
+command 要执行的命令<br/>
+output 获得执行命令输出的每一行字符串<br/>
+return_var 存放执行命令后的状态值<br/>
+void passthru (string command, int &return_var)<br/>
+command 要执行的命令<br/>
+return_var 存放执行命令后的状态值<br/>
+string shell_exec (string command)<br/>
+command 要执行的命令<br/>
+漏洞实例<br/>
+例1:<br/>
+//ex1.php <br/><br/>
+&lt;?php<br/>
+$dir = $_GET["dir"]; <br/>
+if (isset($dir)) <br/>
+{ <br/>
+    echo ""; <br/>
+    system("ls -al ".$dir); <br/>
+    echo ""; <br/>
+  } <br/>
+  ?&gt; <br/>
+我们提交http://www.sectop.com/ex1.php?dir=| cat /etc/passwd<br/>
+提交以后，命令变成了 system("ls -al | cat /etc/passwd");<br/>
+<a href="./images/flaw09.jpg" target="_blank" title="点击查看大图"><img src="./images/flaw09.jpg" border="0" width="620" /></a><br/>
+eval注入攻击<br/>
+eval函数将输入的字符串参数当作PHP程序代码来执行<br/>
+函数原型:<br/>
+mixed eval(string code_str) //eval注入一般发生在攻击者能控制输入的字符串的时候<br/>
+//ex2.php <br/>
+&lt;?php<br/>
+$var = "var";<br/> 
+if (isset($_GET["arg"]))<br/> 
+{ <br/>
+    $arg = $_GET["arg"];<br/> 
+    eval("\$var = $arg;"); <br/>
+    echo "\$var =".$var; <br/>
+} <br/>
+?&gt; <br/>
+当我们提交http://www.sectop.com/ex2.php?arg=phpinfo();漏洞就产生了；<br/>
+动态函数<br/>
+&lt;?php <br/>
+func A() <br/>
+{ <br/>
+    dosomething(); <br/>
+} <br/>
+func B()<br/> 
+{ <br/>
+    dosomething();<br/> 
+} <br/>
+if (isset($_GET["func"])) <br/>
+{ <br/>
+    $myfunc = $_GET["func"];<br/> 
+    echo $myfunc(); <br/>
+} <br/>
+?&gt;
+程序员原意是想动态调用A和B函数，那我们提交http://www.sectop.com/ex.php?func=phpinfo漏洞产生<br/>
+防范方法<br/>
+1、尽量不要执行外部命令<br/>
+2、使用自定义函数或函数库来替代外部命令的功能<br/>
+3、使用escapeshellarg函数来处理命令参数<br/>
+4、使用safe_mode_exec_dir指定可执行文件的路径<br/>
+esacpeshellarg函数会将任何引起参数或命令结束的字符转义，单引号“’”，替换成“\’”，双引号“"”，替换成“\"”，分号“;”替换成“\;”
+用safe_mode_exec_dir指定可执行文件的路径，可以把会使用的命令提前放入此路径内<br/>
+safe_mode = On<br/>
+safe_mode_exec_dir = /usr/local/php/bin/
+</p>
+  </div>
+  
+  <a id="50103"></a>
+  <div class="detail">
+    <h2>四十七 :　"查询注入"（SQL注入）</h2>
+	<p>SQL注入：利用现有应用程序，将(恶意)的SQL命令注入到后台数据库引擎执行的能力，这是SQL注入的标准释义。<br/>
+随着B/S模式被广泛的应用，用这种模式编写应用程序的程序员也越来越多，但由于开发人员的水平和经验参差不齐，相当一部分的开发人员在编写代码的时候，没有对用户的输入数据或者是页面中所携带的信息（如Cookie）进行必要的合法性判断，导致了攻击者可以提交一段数据库查询代码，根据程序返回的结果，获得一些他想得到的数据。<br/>
+SQL注入利用的是正常的HTTP服务端口，表面上看来和正常的web访问没有区别，隐蔽性极强，不易被发现。
+</p>
+    <p class="b"><b>SQL注入过程</b></p>
+    <p><a href="./images/flaw10.png" target="_blank" title="点击查看大图"><img src="./images/flaw10.png" border="0" width="620" /></a><br/>
+	如上图所示，SQL注入攻击过程分为五个步骤：<br/>
+第一步：判断Web环境是否可以SQL注入。如果URL仅是对网页的访问，不存在SQL注入问题，<br/>如：http://news.xxx.com.cn/162414739931.shtml就是普通的网页访问。只有对数据库进行动态查询的业务才可能存在SQL注入，<br/>如：http://www.google.cn/webhp?id＝39，其中?id＝39表示数据库查询变量，这种语句会在数据库中执行，因此可能会给数据库带来威胁。<br/>
+第二步：寻找SQL注入点。完成上一步的片断后，就要寻找可利用的注入漏洞，通过输入一些特殊语句，可以根据浏览器返回信息，判断数据库类型，从而构建数据库查询语句找到注入点。<br/>
+第三步：猜解用户名和密码。数据库中存放的表名、字段名都是有规律可言的。通过构建特殊数据库语句在数据库中依次查找表名、字段名、用户名和密码的长度，以及内容。这个猜测过程可以通过网上大量注入工具快速实现，并借助破解网站轻易破译用户密码。<br/>
+第四步：寻找WEB管理后台入口。通常WEB后台管理的界面不面向普通用户开放，要寻找到后台的登陆路径，可以利用扫描工具快速搜索到可能的登陆地址，依次进行尝试，就可以试出管理台的入口地址。<br/>
+第五步：入侵和破坏。成功登陆后台管理后，接下来就可以任意进行破坏行为，如篡改网页、上传木马、修改、泄漏用户信息等，并进一步入侵数据库服务器。
+	</p>
+    <p class="b"><b>SQL注入攻击的特点:</b></p>
+    <p>变种极多，有经验的攻击者会手动调整攻击参数，致使攻击数据的变种是不可枚举的，这导致传统的特征匹配检测方法仅能识别相当少的攻击，难以防范。<br/>
+攻击过程简单，目前互联网上流行众多的SQL注入攻击工具，攻击者借助这些工具可很快对目标WEB系统实施攻击和破坏。<br/>
+危害大，由于WEB编程语言自身的缺陷以及具有安全编程能力的开发人员少之又少，大多数WEB业务系统均具有被SQL注入攻击的可能。而攻击者一旦攻击成功，可以对控制整个WEB业务系统，对数据做任意的修改，破坏力达到及至。
+</p>
+    <p class="b"><b>SQL注入的危害和现状</b></p>
+    <p>SQL注入的主要危害包括：<br/>
+未经授权状况下操作数据库中的数据<br/>
+恶意篡改网页内容<br/>
+私自添加系统帐号或者是数据库使用者帐号<br/>
+网页挂木马<br/>
+……
+</p>
+    <p class="b"><b>防护</b></p>
+    <p>1)开发阶段<br/>
+在编码阶段需要对输入进行细致的验证， 使用静态查询， 如使用参数化声明。 且遵循 “最 小权限准则” ，即只赋予应用程序完成其功能的最基本权限。以下是关于最小权限的一些建 议： 不要使用 root 权限访问数据库为数据表设定限制的可读/可写权限慎用存储过程。</p>
+<p>2)测试阶段<br/>
+在测试阶段采用以下两种方式确保 Web 应用程序代码的安全性：第一，采用源代码审 核方式，从编程者角度审视代码是否存在漏洞；第二，执行渗透测试， 从攻击者角度检查 代码的安全性。需要注意的是，尽管完成以上两步，仍不能确保 100%的安全，但这两种方 法对于确保应用程序质量是必须的。</p>
+<p>3)产品化阶段<br/>
+在产品化阶段，Web 应用程序已经正常上线，并对外提供服务。但还是会发现 Web应 用存在安全隐患，此时整改代码对各类组织来说已经不现实了，因为 需要付出较大代价。 这时，可以部署专用的 Web 应用防火墙（Web Application Firewall，简称 WAF） ，以大幅提 升 Web 应用的安全等。
+</p>
+  </div>
+  
+  <a id="50104"></a>
+  <div class="detail">
+    <h2>四十八 :　格式化字符串</h2>
+    <p class="b"><b>原理</b></p>
+    <p>格式化字符串漏洞主要是利用由于格式化函数的微妙程序设计错误造成的安全的漏洞， 通过传递精心编制的含有格式化指令的文本字符串，以使目标程序执行任意命令。<br/>
+    格式化字符串函数的主要功能为： 1. 将某些C类型的数据转换为字符串类型进行打印； 2. 根据参数format提供的控制信息，将其后的参数转换为某种输出格式； 3. 输出到不同的目标。
+    </p>
+    <p class="b"><b>受影响的编程语言</b></p>
+    <p>格式化字符串函数几乎被用在所有的 C 程序中，用来输出、打印错误信息或处理字符串。</p>
+    <p class="b"><b>防护</b></p>
+    <p>在代码审查中查找该漏洞，对格式化字符串漏洞的防范工具可以分为静态分析工具和动态工具。</p>
+	<p>1）	静态分析工具是 指对程序的源代码进行分析，试图从中找出存在的安全漏洞（如格式化字符串漏洞），然后 报告给程序的管理者，由其决定是否和如何作出修改。静态分析工具的优点在于：在程序部署之前发现漏洞，可 以及时进行修改，以消除程序中的漏洞。其缺点主要是：现有的工具误报较多，需要较多的人力 对工具的报告进行分析，以确定实际存在的漏洞。 对格式化字符串漏洞的静态分析软件主要指代码审查软件。代码审查软件根据预先定 义好的一个漏洞数据库对代码进行扫描。发现与数据库中漏洞相符合的语法结构就作出相 应报告。 主要的代码审查工具包括 FlawFinder, ITS4, RATS, SpLint等。</p>
+	<p>2）	动态工具是指根据程序运行时的状 态（包括系统的状态）进行判断，确定程序是否受到攻击并采取相应措施的工具。动态工具的优点在于：不需要对程序本身进行修改，而是通过在程序运行中及时发现 攻击然后采取相应的动作（通常是终止程序），使得攻击失败。其缺点主要是：程序中的漏 洞并没有减少。而动态工具只是针对现有的攻击方法进行相应的保护，如果攻击者发现了 新的对漏洞的攻击方法，就可以绕过动态工具的保护。 StackGuard是一种在编译时使用的技术。它将一个特征值（canary）插入到栈中的 函数返回地址之前。这样，在攻击者进行缓冲区溢出攻击时，溢出的字符串如果要改 写函数返回地址就会首先改写该特征值。在函数返回时，首先检查特征值是否被改写 了。StackGuard 的特征值方法只有在攻击者不能猜测特征值的情况下有效。因此，特征值采 用一个随机值。如果特征值被改写了，就说明攻击者正在利用缓冲区溢出漏洞。发现之后， 可以停止程序的运行，避免被攻击。微软在 C++编译器引入了一种类似特征值的机制。可以 通过打开/GS 标志来使用。但是，StackGuard 对于攻击者也不是无法逾越的。由于利用格 式化字符串漏洞可以直接修改函数的返回地址等，StackGuard 在这种情况下也无法起到作 用。 FormatGuard通过对 glibc 进行修改，在程序运行时计算 printf 函数的参数个数。如果， 格式化字符串参数指定的参数个数多于后面提供的参数个数，那么 FormatGuard 就认为发生 了利用格式化字符串漏洞进行的攻击，然后终止程序的运行。 FormatGuard 工具仍然有它的局限性：如果攻击者使用的参数个数相符，FormatGuard 就 无法发现该攻击。例如我们上文所提供的 fs-exmp4.c，如果该程序是真的攻击代码，那么就无法被发现。<br/>
+
+<p class="b"><b>发现该漏洞的测试技巧</b></p>
+格式化字符串漏洞同其他许多安全漏洞一样是由于程序员的 懒惰造成的。当你正在阅读本文的时候，也许有个程序员正在编 写代码，他的任务是：打印输出一个字符串或者把这个串拷贝到 某缓冲区内。他可以写出如下的代码： printf("%s", str); 但是为了节约时间和提高效率，并在源码中少输入 6 个字节，他 会这样写： printf(str); 为什么不呢？干嘛要和多余的 printf 参数打交道， 干嘛要花 时间分解那些愚蠢的格式？printf 的第一个参数无论如何都会 输出的！程序员在不知不觉中打开了一个安全漏洞，可以让攻击 者控制程序的执行，这就是不能偷懒的原因所在。 为 什么程序员写的是错误的呢？他传入了一个他想要逐字 打印的字符串。实际上该字符串被 printf 函数解释为一个格式 化字符串 （formatstring）。函数在其中寻找特殊的格式字符 比如"%d"。如果碰到格式字符，一个变量的参数值就从堆栈中取出。很明显，攻击者至少可以通过打印出堆栈中的这些值来偷看程序的内存。但是有些事情就不那么明显了，这个简单的错误允许向运行中程序的内存里写入任意值。 printf 中被忽略的东西在说明如何为了自己的目的滥用 printf 之前，我们应该深入领会 printf 提供的特性。 假定读者以前用过 printf 函数并且知道普通的格式化特性，比如如何打印整型和字符串，如何指定最大和最小字符串宽度等。除了这些普通的特性之外，还有一 些深奥和鲜为人知的特性。在这些特性当中，下面介绍的对我们比较有用： *在格式化字符串中任何位置都可以得到输出字符的个数。 当在格式化字符串中碰到"%n"的时候，在%n 域之前输出的字符个数会保存到下一个参数里。例如，为了获取在两个格式化的数字之间空间的偏量： intpos, x = 235, y = 93; printf("%d %n%d\n", x, &pos, y); printf("the offset was %d\n", pos); *%n 格式返回应该被输出的字符数目，而不是实际输出的字符数目。当把一个字符串格式化输出到一个定长缓冲区内时，输出字符串可能被截短。不考虑截短的影响，%n 格式表示如果不被截短的偏量值（输出字符数目）。为了说明这一点，下面的代 码会输出 100 而不是 20： char buf[20]; intpos, x = 0;
+snprintf(buf, sizeofbuf, "%.100d%n", x, &pos); printf("position: %d\n", pos); 
+</p>
+  </div>
+  
+  <a id="50105"></a>
+  <div class="detail">
+    <h2>四十九 :　整数溢出</h2>
+    <p class="b"><b>漏洞概述</b></p>
+    <p>整数溢出是缓冲区溢出的一种。 既然一个整数是一个固定的长度,它能存储的最大值是固定的,当尝试去存储一个大于这个固定的最大值时,将会导致一个整数溢出.在 ISO C99 的标准中讲。 到整数溢出将会导致"不能确定的行为",也就是说编译器遵从了这个的规则,那就是完全忽略溢出而退出这个程序.很多编译器似乎忽略了这个溢出,结果是一个意想不到的错误值被存储. 整数溢出是不能被立即察觉,因此没有办法去用一个应用程序来判断先前计算的结果是否实际上也是正确的.如果是用来计算缓冲区的大小或者计算数组索引排列的距离,这会变的危险。当然很多整数溢出并不是都是可利用的,因为并没有直接改写内存,但是有时,他们可导致其他类型的 bugs,缓冲区溢出等.而且,整数溢出很难被发现,因此,就算是审核过的代码也会产生 意外。</p>
+    <p class="b"><b>受影响的编程语言</b></p>
+    <p>C 和 C++</p>
+    <p class="b"><b>发现该漏洞的测试技巧</b></p>
+    <p>整数溢出是不能被立即察觉,因此没有办法去用一个应用程序来判断先前计算的结果是否实 际上也是正确的。整数溢出并不像普通的漏洞类型, 它们不允许直接的改写内存或者直接改变程序的控制流 程.而是更加精巧.程序的所有者面临的事实是没有办法在进程里面检查计算发生后的结果,所以有可能计算结果和正确结果之间有一定的偏差.就因为这样,大多数的整数溢出不能被利用。</p>
+    <p>可在运行时按溢出条件检查或不检查整数运算。如果检查溢出条件，当整数运算溢出时，将 引发 System.OverflowException 异常。如果不检查溢出条件，则整数运算溢出不引发异常。 编译环境确定是打开还是关闭此选项。</p>
+    <p class="b"><b>漏洞示例</b></p>
+    <p>例子: 10 modulo 5 = 0 11 modulo 5 = 1 所以在减轻体重法里面,一个大数被和(最大的 int 值 + 1)取模,在 C 语言中,取模操作的符号 是%. </NB> 这里有一个字节是多余的,可能是一个很好的象征性例子证明我们说的"导致不确定的行为". 我们有 2 个无符号的整数,a 和 b, 2 个数都是 32 位字节长,我们赋值给 a 一个 32 位整数的最 大值, b 被赋值为 1.然后我们让 a 和 b 相加然后存储结果到第 3 个无符号 32 位的整数 r: a = 0xffffffffff b = 0x1 r=a+b<br/>
+现在,当相加起来的结果不能用 32 位的的值来表示,结果,为了和 ISO 标准一致,被和 0x100000000 取模. r = (0xffffffff + 0x1) % 0x100000000 r = (0x100000000) % 0x100000000 = 0 减轻体重法的取模算法只能计算低于 32 位的计算结果,所以整数溢出导致结果被截断到一个 范围, 通常用一个变量来存储这个结果。 这个经常被称作一个"环绕" , 作为这里的结果,就出现了环绕到 0.
+</p>
+    <p class="b"><b>防御办法</b></p>
+    <p>下面我们针对整数溢出的防范措施: <br/>
+1.使用最高的警告级别 /W4 来编译 C 和 C++ 代码。 <br/>
+2.对于缓冲区大小和元素计数，尽量使用无符号的整数。 <br/>
+3.警惕内存分配函数（new、malloc 等）的有符号参数，因为它们将被视为无符号的整数。 4.从其他平台或编译器迁移的代码可能会使用不同的数据大小。一定要小心。 <br/>
+5.如果代码执行任意类型的整数操作（加、乘等） ，如果结果用于计算缓冲区大小时，请确保操作数位于一个小的容易理解的范围内。
+</p>
+  </div>
+
+  <a id="50106"></a>
+  <div class="detail">
+    <h2>五十 :　文件包含</h2>
+	<p>文件包含漏洞，如果允许客户端用户输入控制动态包含在服务器端的文件，会导致恶意代码的执行及敏感信息泄露，主要包括本地文件包含和远程文件包含两种形式</p>
+    <p class="b"><b>文件包含漏洞原理</b></p>
+    <p>由于开发人员编写源码，开放着将可重复使用的代码插入到单个的文件中，并在需要的时候将它们包含在特殊的功能代码文件中，然后包含文件中的代码会被解释执行。由于并没有针对代码中存在文件包含的函数入口做过滤，导致客户端可以提交恶意构造语句提交，并交由服务器端解释执行。文件包含攻击中WEB服务器源码里可能存在inlcude()此类文件包含操作函数，可以通过客户端构造提交文件路径，是该漏洞攻击成功的最主要原因。</p>
+    <p class="b"><b>文件包含漏洞实例</b></p>
+    <p>例1<br/>
+1.	&lt;?php<br/>
+2.	    include($server_root .'/myapp_header.php');<br/>
+3.	?&gt;<br/>
+如果 registerglobals 设置为 on，那么攻击者通过提供 $serverroot 作为请求参数，能够重写 $server_root 的值，从而在一定程度上控制动态包含指令。<br/>
+例2<br/>
+以下代码采用了指定用户的模板名称，并将该名称包含在要呈现的 PHP 页面中。 <br/>
+1.	&lt;?php<br/>
+2.	    include($_GET['headername']);<br/>
+3.	?&gt;<br/>
+攻击者通过提供给 headername 一个恶意数值，导致程序包含来自外部站点的文件，从而可以完全控制动态包含指令。比如提交：
+http://test.com/test.php?headername=../../../etc/passwd<br/>
+如果攻击者为动态包含指令指定一个有效文件，那么该文件的内容会被传递给 PHP 解析器,可直接在远程服务器上执行任意PHP文件。<br/>
+如果攻击者能够指定一条路径来指向被自己控制的远程站点，那么动态 include 指令就会执行由攻击者提供的任意恶意代码，也就是所谓的“远程文件包含”。
+</p>
+    <p class="b"><b>文件包含漏洞解决方案</b></p>
+    <p class="b" style="padding-left:25px;">1.	严格检查变量是否已经初始化。 <br/>
+2.	建议假定所有输入都是可疑的，尝试对所有输入提交可能可能包含的文件地址，包括服务器本地文件及远程文件，进行严格的检查，参数中不允许出现../之类的目录跳转符。 <br/>
+3.	严格检查include类的文件包含函数中的参数是否外界可控。 <br/>
+4.	不要仅仅在客户端做数据的验证与过滤，关键的过滤步骤在服务端进行。 <br/>
+在发布应用程序之前测试所有已知的威胁。
+</p>
+  </div>
+ 
+  <a id="50201"></a>
+  <div class="detail">
+    <h2>五十一 :　参数中存在SQL查询语句或类似语句</h2>
+    <p>略...</p>
+  </div>
+
+  <a id="50301"></a>
+  <div class="detail">
+    <h2>五十二 :　PUT请求被接受"(跨站请求伪造)</h2>
+    <p class="b"><b>CSRF 的基本概念特性</b></p>
+    <p>跨站请求伪造（CSRF）的是Web 应用程序一种常见的漏洞，其攻击特性是危害性大但非常隐蔽，尤其是在大量Web 2.0 技术的应用的背景下，CSRF 攻击完全可以在用户法毫无察觉的情况下发起攻击。国际上并未对CSRF 攻击做出一个明确的定义，同时，攻击的发起手段方式繁多，下文会做详细介绍。可以解释的是发起的目标都是通过伪造一个用户请求，该请求不是用户想发出去的请求，而对服务器或服务来说这个请求是完全合法的一个请求，但是却完成了一个攻击者所期望的操作，比如添加一个用户到管理者的群组中，或将一个用户的现金转到另外的一个帐户中。通常开发人员对CSRF 攻击的理解是有误区的，分为以下几方面，第一是如何攻击的，第二是危害到底在那里，第三是如何防范就才是一个完整的解决方案。本文就是要对这些基本的问题做一个详细的阐述，并且给出检测的有效方法。</p>
+    <p class="b"><b>CSRF 的危害实例</b></p>
+    <p>大部分网站往往对脚本注入有严格的防范，但是对CSRF 的防范做的就差很多。<br/>
+	实例1：<br/>假设某网站高级会员会享有某些特殊权限。而当一个普通用户付款完毕就可以让管理员将自己升级为高级会员。假设管理员将一个普通用户升级为高级会员的请求是：<br/>
+	http://www.2cto.com /promoteUser.jsp?username=aaaaa<br/>我们再假设普通用户有在网站某个论坛发表话题的权限，这样一个普通用户可以将这个URL 发表在某些话题之中，然后用我们称为社会工程学的方法引诱网站管理员点击这个链接。当管理员点击这个链接时，这个请求就会从浏览器发送到后台服务器，从而完成身份的升级。当然，在实际攻击过程中，有很多手段使得让管理员不点击也能发送这样的请求，比如将这个URL 设置为某个图片的源。<br/>
+	实例2：<br/>以一个二手跳蚤市场为例子，比如某商业交易网站注册用户Hacker01 和Customer01。Hacker01 在上交易频道摆上1 辆9 成新的宝马，投标价格是20000$，另外再摆上另外一量废旧车型标价1000$，然而网站是允许加载图片显示车的状况的。所以宝马车主可以上载一个自己的图片，废旧车主也可以上载一个自己的图片。<br/>宝马图片url:http://myrepository/BMW.jpg car id 100000001<br/>废旧车图片url:http://myrepository/oldCar.jpg car id 100000002<br/>而该拍卖网站是通过投标决定车的最终价格，假设是竞买者参加竞买宝马的时候点击购买按钮浏览器是通过发一个GET 请求到http://e-bussiness-car/bid?value=20000$&carid=100000001 来提交自己的竞标价格。那么Hacker01 则可以把废旧车图片修改为http://e-bussiness-car/bid?value=20000$&carid=100000001（或者其他的value 参数的数值）。<br/>这时候的情况是：Customer01 访问宝马能看见正确的图片，并且没有任何问题。而访问废旧车发现图片是一个无法看到的图片，但当Customer01 浏览旧车图片的时候，浏览器已经向宝马车发送了一个竞标请求。这样在用户的控制之外发出了一个合法的请求，并且被服务器接收。Hack01 可以在Customer01 不知觉的情况下将自己的宝马车卖出。通过此例可以发现CSRF 有着非常严重的危害性。
+	</p>
+    <p class="b"><b>CSRF 攻击的基本路径及方法</b></p>
+    <p>HTTP 协议中定义了，GET/POST/PUT/DELETE 四种基本操作方法如图1 标记-1 所示GET/POST 是所有网站或服务器必须使用的操作方法，而PUT/DELETE 功能强大，但是在以往的应用中并没有被广泛的使用，直到Web 2.0 的出现，Ajax 的引用导致PUT/DELETE 在REST 框架下被发扬光大，大量使用，也使CSRF 的攻击手段中多了一种攻击方式。本文以常用的GET/POST 为实例，这两者是被浏览器用作与服务起进行数据交互的主要手段，并包含Ajax 框架下的攻击介绍。</p>
+	<p>CSRF 攻击的方法多种多样，而对这些攻击方法的认识将更有助于去检查或在产品设计中加入对CSRF 攻击的防范使整个产品的开发的代价更小。按照攻击的方式来看，分为显式攻击和隐式攻击。显示攻击对用户来说是可以察觉的，例如通过各种方法向受害者发送链接，而隐式攻击则很难察觉，往往是访问了一个有漏洞的页面，或者一个恶意的页面，使用频率更多的则是隐性攻击，因为其更具备可操作性。下边介绍到的攻击方法都可以采取隐式攻击方法。要注意的是，用户网站是否存在脚本注入的漏洞，并不影响CSRF 攻击，通过使用第3 方存在安全隐患的网站一样可以完成CSRF 攻击。
+对图1 的基本解释，标记-1 是合法用户对用户网站的访问，执行合法有效的操作；标记-2 是通过邮件系统对用户发动攻击；标记3 是利用Web 的网站，包括用户的操作网站，普通网站，以及黑客网站，标记-4、5、6 指的是有害用户（标记-3）利用的3 种方式来攻击受害用户。<br/>CSRF 攻击示意图<br/><a href="./images/flaw11.png" target="_blank" title="点击查看大图"><img src="./images/flaw11.png" border="0" width="620" /></a>
+</p>
+    <p class="b"><b>对GET 请求的CSRF 漏洞的攻击方式</b></p>
+    <p>GET 请求使用的频率最高，隐式的GET 请求，例如&lt;img&gt; &lt;script&gt;&lt;frame&gt;&lt;iframe&gt;，在页面中引入上述页面元素，并且设置SRC 属性就能在用户未知的情况下发出一个GET 请求到想去攻击的网站。<br/>以IMG 标签为例，攻击者可以通过在图1 中的标记-5、标记-6、标记-2、标记-4 的途径发起攻击。这种攻击的特征是无明显提示，但是已经发出一个具有完整合法的用户请求。<br/>&lt;img src=http:// www.2cto.com /admin/deletepage?id=74NBCDSEFG/&gt;对于一个大量采用GET 请求的网站，隐式的通过http 标签发出一个GET 请求将是致命的。<br/>具体的可执行情形描述将在如何检测部分给出。<br/>对POST 请求的CSRF 漏洞的攻击方式<br/>对CSRF 有一种理解是把GET 改为POST 请求就认为是可以防止被攻击实际上是一种错误的理解，通过使用&lt;iframe&gt; 一样可以完成一个隐式的CSRF 攻击，具体脚本写法如下。<br/>
+	</p>
+	<p class="b" style="padding-left:25px;">清单1. Frame1.html 脚本<br/>
+&lt;script&gt;<br/>
+function post(url, fields) {<br/>
+var p = document.createElement('form');<br/>
+p.action = url;<br/>
+p.innerHTML = fields;<br/>
+p.target = '_self';<br/>
+p.enctype = 'multipart/form-data';<br/>
+p.method = 'post';<br/>
+document.body.appendChild(p);<br/>
+p.submit();<br/>
+}<br/><br/>
+
+function csrf_hack() {<br/>
+var fields;<br/>
+var csrf="&lt;addMember<br/>
+dnName="CN=manager 9/OU=Managers/OU=Users/O=QDSVT/DC=CN/DC=IBM/DC=COM"
+accessLevel="Author" isPerson="1" isLocal="0"/&gt;";<br/>
+fields += "&lt;input type='' name='action' value='"+csrf+"'&gt;";<br/>
+unescape(fields);<br/>
+post('http://usersite:80/dm/services/DocumentService?do401=true',fields);<br/>
+alert("csrf_end");<br/>
+}<br/>
+csrf_hack();<br/>
+alert('end')<br/>
+&lt;/script&gt;
+</p>
+    <p class="b" style="padding-left:25px;">清单2. IFrame.html<br/>
+&lt;IFRAME src=./frame1.html width=0 height=0&gt;&lt;/IFRAME&gt;<br/>
+
+这段代码通过脚本构造一个表单提交，通过IFRAME 加载页面自动执行本例，IFRAME 宽高属性设置成零的目的是为了达到隐式攻击的效果，JAVASCRIPT 只对窗口的大小有不成文的规范，宽高不能小于50 像素点，但是对iframe 并没有要求，这为隐式的跨域Post 攻击提供了一个量好的途径。写成脚本的形式并不是说明只要被检测的站点没有脚本注入就没有任何问题，POST 隐式攻击方式一样可以通过第3 方，如图1，4，5，6 攻击路径都适合本例的使用。
+</p>
+    <p class="b"><b>Web 2.0 攻击方式</b></p>
+    <p>Web 2.0 技术因其能大幅度提升用户的体验，已经被非常广泛的使用，并且Web 2.0 技术对跨站请求的提交有严格的检查，所以一般不用担心来自第三方的xmlhttp 发出的CSRF 攻击。Web 2.0 技术如果在本站点存在脚本注入漏洞，将会产生严重的CSRF 攻击问题；另外一条攻击路径则是通过邮件系统，向受害用户发送带有xmlhttp 请求的脚本文件，是否产生危害取决于用户是否执行该文件，危害性明显低于前两种。</p>
+	<p>对于发邮件，或者网站上传的文件发起攻击的案例是由IE 的特性造成，由于IE 允许从本地域(local domain) 对任意域发送，一个包含Web 2.0 代码的例子就能使IE 完成成一次离线状态的攻击，IE 允许通过对策略的修改以达到严格的安全配置，从而禁止对同域内容的访问。</p>
+	<p>以下是通常使用的对Web 2.0 类型的跨站漏洞的攻击代码。<br/>
+
+清单3. 通常使用的对Web 2.0 类型的跨站漏洞的攻击代码<br/>
+&lt;script&gt;<br/>
+alert('start delete');<br/>
+var payload="&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;soap:Header&gt;<br/>
+&lt;serviceVersion&gt;8.0.0<br/>
+&lt;/serviceVersion&gt;&lt;/soap:Header&gt;&lt;soap:Body&gt;&lt;deleteDocument
+xmlns="http://webservices.clb.content.ibm.com"&gt;<br/>
+&lt;path&gt;/@Pcsrftestplace/@RMain.nsf/@F/@DE44FD4FF0956D07648257570002C42DA
+&lt;/path&gt;<br/>
+&lt;/deleteDocument&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;";<br/>
+alert(message);<br/>
+var client = new XMLHttpRequest();<br/>
+client.open("POST","http://usercite.com /files/form/api/collections/
+2d0f6188-8872-4722-8922-3a3c842aa443/entry?format=xml ");<br/>
+client.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");<br/>
+client.setRequestHeader("x-method-override","DELETE");<br/>
+client.setRequestHeader("x-requested-with","XMLHttpRequest");<br/>
+(you can customized the header if you need)<br/>
+client.send("");<br/>
+&lt;/script&gt;<br/>
+&lt;html&gt;
+</p>
+    <p class="b"><b>登陆CSRF 攻击方式</b></p>
+    <p>登陆式的跨站请求伪造是一种较新的攻击方式，让用户错误的以为是用自己的帐户密码登陆，实际上是登录到一个Hacker 的账户。这种攻击方式的最显著的特征是，Hacker 可以监听到用户的实际操作，通过查询历史记录可以知道用户做了那些操作，如果是在商业网站则会在历史记录中留下信用卡号，如果是在个人信息相关系统则会留下用户的隐私操作。</p>
+    <p class="b"><b>使用Rational AppScan 对CSRF 的检测</b></p>
+    <p>APPSCAN 是IBM 收购WatchFire 之后获得一款强大的网络安全的检测工具，目前属于Rational 产品线，功能集中在网络应用产品的检测防范上，分静态与动态两种不同的功能，覆盖代码与产品的两端检测需求。
+APPSCAN 自从7.7 的版本以后加入对CSRF 的防范，基本原理是通过对同一个需要检测的URL 或者SERVICE 按照顺序发出两次请求，发送两次请求之间会做一次退出登录状态的操作，如果一个对CSRF 已经进行防范的网站是会发送回两个不同的回应内容。实例的说明如下。
+</p>
+    <p class="b" style="padding-left:25px;">请求1<br/>
+GET/POST http://myproduct.com/services?action=remove&id=10002<br/>
+Headers ….. …..<br/>
+Content: ……<br/>
+
+返回内容1<br/>
+Response 200<br/>
+Headers …. …..<br/>
+Content:…..<br/><br/>
+
+请求2<br/>
+GET/POST http://myproduct.com/services?action=remove&id=10002<br/>
+Headers ….. …..<br/>
+
+Content: ……<br/>
+
+返回内容2<br/>
+Response 200<br/>
+Headers …. …..<br/>
+Content:…..<br/>
+
+返回内容1 和返回内容2 如果是完全一致的则可以认为是有问题的，反之则可以认为是没有问题。看似简单的原理，在实际操作中有个很繁琐的逻辑问题，比如请求1 是一个删除动作，那么如何去构造一个请求2，并且获得一个一致的结果呢？解决的办法是，要先做一个操作1，然后再创建一个同样的1，再做操作2。
+</p>
+    <p>从上述的简单例子就可以发现有效监测CSRF 是一个较为繁琐的过程。AppScan 的检测前提就是对目标资源的操作在不同的一个Session 中返回的内容肯定是应该不一样的。</p>
+	<p>这里要注意的问题是误报，Web 应用程序操作大多都是对一个固定的URL 的请求，包含一些资源文件，以及一些功能性的请求。对于资源文件的操作，很多情况下都是一个静态的请求，在未使用PUT/DELETE 的应用程序，是无需对GET 请求进行CSRF 测试，在这种情况下是不存在CSRF 漏洞的。而如果使用了Ajax 框架的应用程序如果存在DELETE/PUT 操作则需注意很可能出现严重的CSRF 问题。未使用Ajax 的产品则集中在GET/POST 请求，需要注意的是GET/POST 请求对CSRF 来说是同样具有可操作性的，对产品的危害性是一致的。</p>
+	<p>对CSRF 测试的两个主要方向是路径覆盖测试，和精确测试。之所以是要做如此分类的原因是一个产品有大量的URL 如果一一测试需要大量的时间精力，覆盖测试是由工具去完成的是为了保证覆盖到产品的各个路径，有些产品实际上已经对CSRF 有很深的认识，在这种情况下大多数资源已经被很好的保护起来，没有CSRF 的问题，这时候一个对全路径的测试就是很必要的。
+精确测试是由人来完成的通过分析产品功能和开发人员的沟通，阅读设计文档来完成的。为何要做精确测试的原因是，所有Web 应用程序非常关注的问题之一就是产品的性能，而对所有请求都做CSRF 防范的话就比如在一个高速公路上设置一个人工收费站一样会大大影响性能，一个好的Web 应用在对CSRF 防范是有针对性的，对一个没有CSRF 保护的产品，一个良好的CSRF 保护开端可以是由精确测试的结果为发起的。通过对固定功能的检测，以及对设计文档的了解，基本就可以断定产品是否做了CSRF 保护。
+</p>
+    <p>一个正常的使用Appscan 来检测CSRF 的流程如图 所示。<br/>
+图. 一个正常的使用Appscan 来检测CSRF 的流程<br/><a href="./images/flaw12.png" target="_blank" title="点击查看大图"><img src="./images/flaw12.png" border="0" width="620" /></a><br/>AppScan 使用流程，AppScan 执行过程的一个分解，如图<br/>图. AppScan 执行过程的一个分解<br/><a href="./images/flaw13.png" target="_blank" title="点击查看大图"><img src="./images/flaw13.png" border="0" width="620" /></a><br/>精确测试的方法，目的是为了检测是否存在CSRF 保护。对CSRF 保护有个范围约束的问题，并不是所有的请求都需要对CSRF 攻击做防范。对静态资源除非有DELETE/PUT 操作允许的情况下，才需要进行测试；而对于关键的业务逻辑，比如银行转帐，确认收货人信息，参加竞标，删除一个用户，赋予用户高级权限，等等，对这类定性问题的约束是根据不同的商业产品各异，要具体问题具体分析。
+</p>
+    <p>本例以常见的页面删除为实例，阐述一个可以的测试方法。大概分为以下几种情况:</p>
+	<p>使用GET 来删除页面的，使用DELETE/PUT 来删除页面的，使用POST 来删除页面的，都是服务器与客户端的交互过程，具体的实例分析起来要远比分类更为复杂，一个操作可能带有很多各样的请求，找到有威胁的请求才是最终目的，有时候哪怕是AppScan 已经定位到具体是那个请求，也还需要通过手工将这个案例找出加以描述成为有实际操作价值的场景，这里就需要引入手工测试工具加以支持。</p>
+	<p>手工工具的介绍，做精确测试需要对HTTP 请求做频繁的操作，如果需要查看请求的内容，还有对具体请求的操作的观察，推荐使用Fiddler 或者WebScarab。</p>
+	<p>开始手动验证之前，还需要清楚CSRF 发生的条件。所有的问题的发生有个前提条件是用户常用的浏览器中有一个与目标服务器处于激活状态的会话。这个条件需要的原因是，CSRF 攻击的模式是用户A 被恶意用户B 所攻击，攻击是B 发起的被用户A 执行实现的。</p>
+	<p>而B 往往是在A 常去的网站注入代码，或者发送链接或者包含附件的文件给A，而包含着恶意代码或者链接的页面要被执行，条件是用户A 已经处在和服务器的会话之中，这也是CSRF 发生的前提条件，也是手工测试的基础。</p>
+    <p class="b"><b>对GET CSRF 漏洞的测试</b></p>
+    <p>GET 请求的情况下，请求如http://mysite/service?action=delete&pageid=100001 这类问题的验证最为直接，并且无需写脚本和使用fiddler 工具去观察实际的请求的格式。检测方法就是在维持一个与服务器连接的前提下，在浏览器地址栏输入如下网址，如果实际的页面被删除了就是CSRF 攻击成功了。对于如此清楚的实例基本看到URL 已经可以证明没有任何CSRF 保护。</p>
+	<p>可关联的攻击场景如下，在任何可以显示图片的地方写入如下&lt;img src=http://mysite/service?action=delete&pageid=100001 width=0 height=0/&gt;，另外只需要指引有删除权限的用户访问一下包含这个图片标签的网页，往往是通过发一个邮件或者MSN 一个简单的链接就可以完成删除页面的操作。</p>
+    <p class="b"><b>对POST CSRF 漏洞的测试</b></p>
+    <p>POST 请求的操作并不能免除CSRF 的攻击。在浏览器中要发出POST 请求，可以使用两种方法，一个是通过脚本调用页面文档元素form 直接进行提交操作，特点是可以进行跨域的脚本提交，隐式攻击。另一种是通过使用Ajax 对象直接发出请求，但是由于不能跨域发出请求，可执行的力度并不高，但是还是有可能性。同样是一个删除页面的操作，如下所示结构。<br/>
+POST http://mysite/service<br/>
+Headers….<br/>
+
+Action=delete&pageid=100001<br/>
+</p>
+    <p>这个不同于GET 之处是不能简单的通过在浏览器直接输入一个链接就能测试。需要借助一下预设好的HTTP 服务器如IBM HTTP Server、Domino，或者IIS。将IFrame.html 的清单拷贝到服务器的一个目录。通过修改frame1.html 中的csrf_hack() 如下。<br/>
+	清单4. 修改frame1.html 中的csrf_hack()<br/>
+function csrf_hack() {<br/>
+var fields;<br/>
+fields += "&lt;input type='' name='action' value='"+"delete"+"'&gt;";<br/>
+fields += "&lt;input type='' name=pageid value='"+"1000001" +"'&gt;";<br/>
+unescape(fields);<br/>
+post('http://mysite/service ',fields);<br/>
+alert("csrf_end");<br/>
+}</p>
+    <p>可关联的攻击场景如下 ，通过邮件或者MSN 发送一个链接http://hackerWebServer/iframe 给可以删除页面的用户，该操作就会被执行，如果页面删除，攻击成功。通过在其他网站可以做脚本注入的将 iframe.html 脚本写在该网站，一样可以达到攻击效果。</p>
+	<p>另一类通过Ajax 提交的post 请求，这类结构中多采用SOAP message 或者类似的XML 消息体，或者Jason 消息体提交请求。结构如下。<br/>
+	POST http://www.2cto.com /service<br/>
+Headers….<br/>
+
+&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;soap:Header&gt;<br/>
+&lt;serviceVersion&gt;8.0.0&lt;/serviceVersion&gt;<br/>
+&lt;/soap:Header&gt;&lt;soap:Body&gt;<br/>
+&lt;deleteDocument
+xmlns="http://webservices.clb.content.ibm.com"&gt;<br/>
+&lt;path&gt;/@Pcsrftestplace/@RMain.nsf/@F/@DE44FD4FF0956D07648257570002C42DA
+&lt;/path&gt;<br/>
+&lt;/deleteDocument&gt;<br/>
+&lt;/soap:Body&gt;<br/>
+&lt;/soap:Envelope&gt;
+</p>
+    <p>在此类情况下，需要修改form 的表单的enctype 属性为multipart/form-data，因为在默认的情况下是application/x-www-form-urlencoded，所有字符都会做URL 编码转换，提交的数据是不合法的无法被服务器端识别，所以需要修改enctype 属性，在multipart/formdata 的情况下，数据是不会被编码的，而在很多服务器的接收端有的就是使用multipart/formdata 去接受数据。由于javascript 出于对安全的考虑禁止脚本自动修改form 中提交的file 属性的输入的值，所以想通过脚本修改控制enctype 是不允许的，这样不同于第一类POST 请求。但是并不影响场景的合理性，通过在有漏洞的网站伪造表单请求，form 指向我们要操作的URL 即可。这种情况下，需要构造一个完整的表单，并通过用户点击一个任意方式发送的链接达到攻击效果。</p>
+   <p class="b"><b>对DELETE/PUT CSRF 漏洞的测试</b></p>
+    <p>DELETE/PUT 请求依赖于Web 2.0 技术，由于本身的限制，自由发出跨站的伪造请求是不可能的。更多使用的是离线攻击，或者本站点的脚本注入攻击。在存在本站点脚本注入攻击的情况下，所有这4 种情况下，都可以完成隐式的攻击方式。代码请参照Web 2.0 攻击章节的实例。</p>
+    <p class="b"><b>CSRF 的防范</b></p>
+    <p>CSRF 的防范机制有很多种，防范的方法也根据CSRF 攻击方式的不断升级而不断演化。常用的有检查Refer 头部信息，使用一次性令牌，使用验证图片等手段。出于性能的考虑，如果每个请求都加入令牌验证将极大的增加服务器的负担，具体采用那种方法更合理，需要谨慎审视每种保护的优缺点。<br/>1. 检查HTTP 头部Refer 信息，这是防止CSRF 的最简单容易实现的一种手段。根据RFC 对于HTTP 协议里面Refer 的定义，Refer 信息跟随出现在每个Http 请求头部。Server 端在收到请求之后，可以去检查这个头信息，只接受来自本域的请求而忽略外部域的请求，这样就可以避免了很多风险。当然这种检查方式由于过于简单也有它自身的弱点：<br/>a) 首先是检查Refer 信息并不能防范来自本域的攻击。在企业业务网站上，经常会有同域的论坛，邮件等形式的Web 应用程序存在，来自这些地方的CSRF 攻击所携带的就是本域的Refer 域信息，因此不能被这种防御手段所阻止。<br/>b) 同样，某些直接发送HTTP 请求的方式（指非浏览器，比如用后台代码等方法）可以伪造一些Refer 信息，虽然直接进行头信息伪造的方式属于直接发送请求，很难跟随发送cookie，但由于目前客户端手段层出不穷，flash，javascript 等大规模使用，从客户端进行refer 的伪造，尤其是在客户端浏览器安装了越来越多的插件的情况下已经成为可能了。<br/>2. 使用一次性令牌，这是当前Web 应用程序的设计人员广泛使用的一种方式，方法是对于Get 请求，在URL 里面加入一个令牌，对于Post 请求，在隐藏域中加入一个令牌。这个令牌由server 端生成，由编程人员控制在客户端发送请求的时候使请求携带本令牌然后在Server 端进行验证。但在令牌的设计上目前存在着几个错误的方案：<br/>a) 使用和Session 独立的令牌生成方式。这种令牌的值和Session 无关，因此容易被其他用户伪造。这里的其他用户指的是当前Web 应用程序的其他用户和活跃在网络传输阶段各个设置上的监听者，这种恶意用户可能使用自己的令牌来进行替换以便达到伪造的目的。<br/>b) 完全使用Session 认证信息作为令牌的生成方式。这种保护方式对于保护CSRF 是起了作用的，但是可能会造成其他危害，具体来说，如果某些URL 或者网页被拷贝下来与其他人共享，那么这些URL 或者拷贝下来的网页中可能会含有用户的会话信息，这种信息一旦被恶意用户获得，就能造成极大的危害。<br/>因此，一个正确的令牌设计应该是使用Session 信息做Hash，用得出的哈希值来做CSRF 的令牌。<br/>3. 使用验证图片，这种方法的出现的作用是对于机器人暴力攻击的防止。但在CSRF 的防范上，也有一些安全性要求比较高的的应用程序结合验证图片和一次性令牌来做双重保护。由于这种图片验证信息很难被恶意程序在客户端识别，因此能够提高更强的保护。当客户端的浏览器可能已经处于一种不安全的环境中的情况下（比如客户端的安全级别设置较低，客户端浏览器安装了不安全的插件等）。</p>
+	<p>以上给的这些只是防范CSRF 的比较通用的一些方法，Web 开发人员可以根据自己对自己的应用程序的功能的理解来确定安全级别的要求从而选择使用不同的保护措施，也推荐在同一应用程序内部结合使用多种方法来进行保护。</p>
+    <p class="b"><b>总结</b></p>
+    <p>CSRF 攻击作为一个存在已久的攻击方式，在大量的商业网站上都可以找出，应用本文的知识作出一个合理的分析，有针对性的提出改进方案才是本文作者希望看到的，在即不损害应用程序的性能的前提下，提高安全性；而对即将开发的网络应用程序来说，深刻理解其的危害性，在设计阶段就考虑到对CSRF 的防范，无疑能收到更好的效果。</p>
+  </div>
+
+</div>
+</body>
+</html>

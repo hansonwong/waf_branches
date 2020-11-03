@@ -1,0 +1,14 @@
+[Unit]
+Description=Firewall revcamera service
+After=dpdk.service
+Requires=dpdk.service
+
+[Service]
+Type=simple
+ExecStart=/etc/antidetect/antidet
+ExecStop=/etc/antidetect/antidet stop
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Certificate monitoring and PKI enrollment
+After=syslog.target network.target dbus.service
+
+[Service]
+Type=dbus
+PIDFile=/var/run/certmonger.pid
+EnvironmentFile=-/etc/sysconfig/certmonger
+ExecStart=/usr/sbin/certmonger -S -p /var/run/certmonger.pid -n $OPTS
+BusName=org.fedorahosted.certmonger
+
+[Install]
+WantedBy=multi-user.target

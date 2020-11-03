@@ -1,0 +1,57 @@
+#!/bin/bash
+# THIS FILE IS ADDED FOR COMPATIBILITY PURPOSES
+#
+# It is highly advisable to create own systemd services or udev rules
+# to run scripts during boot instead of using this file.
+#
+# In constrast to previous versions due to parallel execution during boot 
+# this script will NOT be run after all other services.
+#  
+# Please note that you must run 'chmod +x /etc/rc.d/rc.local' to ensure
+# that this script will be executed during boot.
+
+touch /var/lock/subsys/local
+
+#system service
+sleep 5
+systemctl start iptables.service
+systemctl disable irqbalance.service
+systemctl disable bluetooth.service
+systemctl disable ksm.service
+systemctl disable ksmtuned.service
+systemctl disable auditd.service
+systemctl stop firewalld.service
+setenforce 0
+modprobe bridge
+sleep 5
+echo 1 > /proc/sys/net/bridge/bridge-nf-call-iptables
+echo 0 > /proc/sys/net/ipv4/conf/all/rp_filter
+echo 0 > /proc/sys/net/ipv4/conf/default/rp_filter
+
+#dpdk
+sleep 3
+sh /home/ng_platform/sh/dpdk_init.sh
+/home/ng_platform/bd_dpdk_warper/server/mp_server  -c 0xc1 -n 4  --file-prefix "program1" --proc-type primary > /var/log/mp_server/mp_server.log 2>&1 &
+sleep 20
+
+#disable ASLR
+sh /home/ng_platform/sh/disable_aslr.sh > /dev/null 2>&1 &
+
+#web
+/Data/apps/nginx/sbin/nginx
+/Data/apps/php7/sbin/php-fpm -R
+mysqld_multi start 1-2
+
+sleep 5
+
+#python
+python /usr/local/bluedon/second_firewall_init.py > /var/log/restart.log 2>&1 &
+python /usr/local/bluedon/second_firewall_daemon.py -s start > /var/log/daemon.log 2>&1 &
+python /usr/local/bluedon/mysql_log_daemon.py -s start > /var/log/mysql.log 2>&1 &
+
+#ids-ipt
+sh /usr/local/ids-ipt/ids-ipt.sh > /dev/null 2>&1 &
+
+#syslog-ng
+/usr/local/syslog-ng/sbin/syslog-ng
+

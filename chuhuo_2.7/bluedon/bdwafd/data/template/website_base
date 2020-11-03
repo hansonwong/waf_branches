@@ -1,0 +1,5 @@
+SecMarker RULE_BASE_{{conf_name}}
+
+include {{conf_dir}}/{{conf_name}}/limits.conf
+
+secAction pass,nolog,id:{{420000001+index}},skipAfter:RULE_SPEC_END

@@ -1,0 +1,270 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BDLOG_HDRMASK_APPNAME	.\cli_log.h	65;"	d
+BDLOG_HDRMASK_LEVEL	.\cli_log.h	68;"	d
+BDLOG_HDRMASK_LOCATION	.\cli_log.h	74;"	d
+BDLOG_HDRMASK_TIMESTAMP	.\cli_log.h	71;"	d
+BD_SYSLOG_FIRST_READ	.\cli_log.h	137;"	d
+BD_SYSLOG_MAX_LINE_SIZE	.\cli_log.h	146;"	d
+BD_SYSLOG_READ_BUFFER_END	.\cli_log.h	143;"	d
+BD_SYSLOG_READ_BUFFER_ERROR	.\cli_log.h	140;"	d
+BUFLEN_256	.\cli.h	47;"	d
+BUFLEN_32	.\cli.h	45;"	d
+BUFLEN_64	.\cli.h	46;"	d
+BUFSIZ	.\cmdedit.c	49;"	d	file:
+BUFSIZ	.\cmdedit.c	50;"	d	file:
+CLI_BACKSPACE	.\cli.c	101;"	d	file:
+CLI_MAX_BUF_SZ	.\cli.h	43;"	d
+CMDEDIT_H	.\cmdedit.h	2;"	d
+CONFIG_FEATURE_CLEAN_UP	.\cmdedit.c	72;"	d	file:
+CONFIG_FEATURE_COMMAND_EDITING	.\cmdedit.c	54;"	d	file:
+CONFIG_FEATURE_COMMAND_EDITING	.\cmdedit.c	68;"	d	file:
+CONFIG_FEATURE_COMMAND_TAB_COMPLETION	.\cmdedit.c	69;"	d	file:
+CONFIG_FEATURE_COMMAND_USERNAME_COMPLETION	.\cmdedit.c	70;"	d	file:
+CONFIG_FEATURE_COMMAND_USERNAME_COMPLETION	.\cmdedit.c	86;"	d	file:
+CONFIG_FEATURE_GETUSERNAME_AND_HOMEDIR	.\cmdedit.c	90;"	d	file:
+CONFIG_FEATURE_NONPRINTABLE_INVERSE_PUT	.\cmdedit.c	71;"	d	file:
+CONSOLED_EXIT_ON_IDLE_TIMEOUT	.\cli.h	39;"	d
+D	.\cmdedit.c	64;"	d	file:
+D	.\cmdedit.c	74;"	d	file:
+DEFAULT_LOG_DESTINATION	.\cli_log.h	81;"	d
+DEFAULT_LOG_HEADER_MASK	.\cli_log.h	84;"	d
+DEFAULT_LOG_LEVEL	.\cli_log.h	78;"	d
+DEL	.\cmdedit.c	/^	DEL = 127,$/;"	e	enum:__anon6	file:
+ESC	.\cmdedit.c	/^	ESC = 27,$/;"	e	enum:__anon6	file:
+FALSE	.\cli.h	27;"	d
+FALSE	.\cmdedit.c	53;"	d	file:
+FIND_DIR_ONLY	.\cmdedit.c	/^	FIND_DIR_ONLY = 1,$/;"	e	enum:__anon5	file:
+FIND_EXE_ONLY	.\cmdedit.c	/^	FIND_EXE_ONLY = 0,$/;"	e	enum:__anon5	file:
+FIND_FILE_ONLY	.\cmdedit.c	/^	FIND_FILE_ONLY = 2,$/;"	e	enum:__anon5	file:
+INI_FILE_H_	.\inifile.h	14;"	d
+Isprint	.\cmdedit.c	57;"	d	file:
+Isprint	.\cmdedit.c	59;"	d	file:
+LEFT_BRACE	.\inifile.c	22;"	d	file:
+LOCK_NEEDED	.\cli_cmd.c	47;"	d	file:
+LOG_ALERT	.\cli_log.h	18;"	d
+LOG_CRIT	.\cli_log.h	22;"	d
+LOG_DEBUG	.\cli_log.h	42;"	d
+LOG_DEST_STDERR	.\cli_log.h	/^   LOG_DEST_STDERR  = 1,  \/**< Message output to stderr. *\/$/;"	e	enum:__anon3
+LOG_DEST_SYSLOG	.\cli_log.h	/^   LOG_DEST_SYSLOG  = 2,  \/**< Message output to syslog. *\/$/;"	e	enum:__anon3
+LOG_DEST_TELNET	.\cli_log.h	/^   LOG_DEST_TELNET  = 3   \/**< Message output to telnet clients. *\/$/;"	e	enum:__anon3
+LOG_ERR	.\cli_log.h	26;"	d
+LOG_INFO	.\cli_log.h	38;"	d
+LOG_LEVEL_DEBUG	.\cli_log.h	/^   LOG_LEVEL_DEBUG  = 7  \/**< Message at debug level. *\/$/;"	e	enum:__anon2
+LOG_LEVEL_ERR	.\cli_log.h	/^   LOG_LEVEL_ERR    = 3, \/**< Message at error level. *\/$/;"	e	enum:__anon2
+LOG_LEVEL_NOTICE	.\cli_log.h	/^   LOG_LEVEL_NOTICE = 5, \/**< Message at notice level. *\/$/;"	e	enum:__anon2
+LOG_NOTICE	.\cli_log.h	34;"	d
+LOG_WARNING	.\cli_log.h	30;"	d
+MAX_FILE_SIZE	.\inifile.c	21;"	d	file:
+MAX_HISTORY	.\cmdedit.c	104;"	d	file:
+MAX_HISTORY	.\cmdedit.c	106;"	d	file:
+MAX_LOG_LINE_LENGTH	.\cli_log.h	88;"	d
+MAX_MENU_PATH_LENGTH	.\cli.h	54;"	d
+NGFW	.\cli_cmd.c	24;"	d	file:
+NULL	.\cli.h	32;"	d
+NUM_CLI_CMDS	.\cli_cmd.c	162;"	d	file:
+QUOT	.\cmdedit.c	860;"	d	file:
+RIGHT_BRACE	.\inifile.c	23;"	d	file:
+SET_ATEXIT	.\cmdedit.c	/^	SET_ATEXIT = 1,		\/* when atexit() has been called $/;"	e	enum:__anon4	file:
+SET_RESET_TERM	.\cmdedit.c	/^	SET_RESET_TERM = 4,     \/* if the terminal needs to be reset upon exit *\/$/;"	e	enum:__anon4	file:
+SET_WCHG_HANDLERS	.\cmdedit.c	/^	SET_WCHG_HANDLERS = 2,  \/* winchg signal handler *\/$/;"	e	enum:__anon4	file:
+TRUE	.\cli.h	23;"	d
+TRUE	.\cmdedit.c	52;"	d	file:
+USEPRINTF	.\cli_cmd.c	49;"	d	file:
+_POSIX_VDISABLE	.\cmdedit.c	1328;"	d	file:
+__BD_LOG_H__	.\cli_log.h	10;"	d
+__anon1::cli_processing_func	.\cli_cmd.c	/^	cli_cmd_fnc cli_processing_func;$/;"	m	struct:__anon1	file:	access:public
+__anon1::cmd_help	.\cli_cmd.c	/^	char *cmd_help;$/;"	m	struct:__anon1	file:	access:public
+__anon1::cmd_name	.\cli_cmd.c	/^	char *cmd_name;$/;"	m	struct:__anon1	file:	access:public
+__anon1::is_lock_needed	.\cli_cmd.c	/^	unsigned char is_lock_needed;  \/**< Framework will acquire lock before calling processing func *\/$/;"	m	struct:__anon1	file:	access:public
+add_quote_for_spec_chars	.\cmdedit.c	/^static char *add_quote_for_spec_chars(char *found)$/;"	f	file:	signature:(char *found)
+bInitMySQL	.\cli_cmd.c	/^int bInitMySQL = 0;$/;"	v
+bb_applet_name	.\cmdedit.c	/^const char *bb_applet_name = "debug stuff usage";$/;"	v
+bb_msg_unknown	.\cmdedit.c	/^static const char * const bb_msg_unknown = "(unknown)";$/;"	v	file:
+bb_xstrdup	.\cmdedit.c	/^static char * bb_xstrdup (const char *s) $/;"	f	file:	signature:(const char *s)
+bdcli_print_welcome	.\cli.c	/^void bdcli_print_welcome(void)$/;"	f	signature:(void)
+bdcli_print_welcome	.\cli.h	/^void bdcli_print_welcome(void);$/;"	p	signature:(void)
+bdcli_run	.\cli.c	/^void bdcli_run(unsigned int exit_timeout)$/;"	f	signature:(unsigned int exit_timeout)
+bdcli_run	.\cli.h	/^void bdcli_run(unsigned int exit_on_timeout);$/;"	p	signature:(unsigned int exit_on_timeout)
+beep	.\cmdedit.c	/^static inline void beep(void)$/;"	f	file:	signature:(void)
+cli_cmd_fnc	.\cli_cmd.c	/^typedef void (*cli_cmd_fnc) (char *cmd_line);$/;"	t	file:
+cli_cmd_item	.\cli_cmd.c	/^} cli_cmd_item;$/;"	t	typeref:struct:__anon1	file:
+cli_cmd_table	.\cli_cmd.c	/^static const cli_cmd_item cli_cmd_table[] = {$/;"	v	file:
+cli_isIpAddress	.\cli.h	/^unsigned char cli_isIpAddress(const char *addr);$/;"	p	signature:(const char *addr)
+cli_isIpAddress	.\cli_util.c	/^unsigned char cli_isIpAddress(const char *addr)$/;"	f	signature:(const char *addr)
+cli_isMacAddress	.\cli.h	/^unsigned char cli_isMacAddress(char *addr);$/;"	p	signature:(char *addr)
+cli_isMacAddress	.\cli_util.c	/^unsigned char cli_isMacAddress(char *addr) $/;"	f	signature:(char *addr)
+cli_isNumber	.\cli.h	/^unsigned char cli_isNumber(const char *buf);$/;"	p	signature:(const char *buf)
+cli_isNumber	.\cli_util.c	/^unsigned char cli_isNumber(const char *buf)$/;"	f	signature:(const char *buf)
+cli_isValidIdleTimeout	.\cli.h	/^unsigned char cli_isValidIdleTimeout(const char *timeout);$/;"	p	signature:(const char *timeout)
+cli_isValidIdleTimeout	.\cli_util.c	/^unsigned char cli_isValidIdleTimeout(const char *timeout)$/;"	f	signature:(const char *timeout)
+cli_keep_looping	.\cli.c	/^unsigned char cli_keep_looping=TRUE;$/;"	v
+cli_log_cleanup	.\cli_log.c	/^void cli_log_cleanup(void)$/;"	f	signature:(void)
+cli_log_cleanup	.\cli_log.h	/^void cli_log_cleanup(void);$/;"	p	signature:(void)
+cli_log_debug	.\cli_log.h	93;"	d
+cli_log_destination	.\cli_log.h	/^} cli_log_destination;$/;"	t	typeref:enum:__anon3
+cli_log_error	.\cli_log.h	91;"	d
+cli_log_get_destination	.\cli_log.c	/^cli_log_destination cli_log_get_destination(void)$/;"	f	signature:(void)
+cli_log_get_destination	.\cli_log.h	/^cli_log_destination cli_log_get_destination(void);$/;"	p	signature:(void)
+cli_log_get_headermask	.\cli_log.c	/^unsigned int cli_log_get_headermask(void)$/;"	f	signature:(void)
+cli_log_get_headermask	.\cli_log.h	/^unsigned int cli_log_get_headermask(void);$/;"	p	signature:(void)
+cli_log_get_level	.\cli_log.c	/^cli_log_level cli_log_get_level(void)$/;"	f	signature:(void)
+cli_log_get_level	.\cli_log.h	/^cli_log_level cli_log_get_level(void);$/;"	p	signature:(void)
+cli_log_init	.\cli_log.c	/^void cli_log_init()$/;"	f
+cli_log_init	.\cli_log.h	/^void cli_log_init();$/;"	p	signature:()
+cli_log_level	.\cli_log.h	/^} cli_log_level;$/;"	t	typeref:enum:__anon2
+cli_log_notice	.\cli_log.h	92;"	d
+cli_log_read_partial	.\cli_log.c	/^int cli_log_read_partial(int ptr, char* buffer)$/;"	f	signature:(int ptr, char* buffer)
+cli_log_read_partial	.\cli_log.h	/^signed int cli_log_read_partial(signed int ptr, char* buffer);$/;"	p	signature:(signed int ptr, char* buffer)
+cli_log_set_destination	.\cli_log.c	/^void cli_log_set_destination(cli_log_destination dest)$/;"	f	signature:(cli_log_destination dest)
+cli_log_set_destination	.\cli_log.h	/^void cli_log_set_destination(cli_log_destination dest);$/;"	p	signature:(cli_log_destination dest)
+cli_log_set_headermask	.\cli_log.c	/^void cli_log_set_headermask(unsigned int headermask)$/;"	f	signature:(unsigned int headermask)
+cli_log_set_headermask	.\cli_log.h	/^void cli_log_set_headermask(unsigned int headerMask);$/;"	p	signature:(unsigned int headerMask)
+cli_log_set_level	.\cli_log.c	/^void cli_log_set_level(cli_log_level level)$/;"	f	signature:(cli_log_level level)
+cli_log_set_level	.\cli_log.h	/^void cli_log_set_level(cli_log_level level);$/;"	p	signature:(cli_log_level level)
+cli_process_cmd	.\cli.h	/^unsigned char cli_process_cmd(const char *cmd_line);$/;"	p	signature:(const char *cmd_line)
+cli_process_cmd	.\cli_cmd.c	/^unsigned char cli_process_cmd(const char *cmd_line)$/;"	f	signature:(const char *cmd_line)
+cli_processing_func	.\cli_cmd.c	/^	cli_cmd_fnc cli_processing_func;$/;"	m	struct:__anon1	file:	access:public
+cli_read_string	.\cli.c	/^int cli_read_string(char *buf, int size)$/;"	f	signature:(char *buf, int size)
+cli_read_string	.\cli.h	/^int cli_read_string(char *buf, int size);$/;"	p	signature:(char *buf, int size)
+cli_wait_for_input_available	.\cli.c	/^int cli_wait_for_input_available()$/;"	f
+cli_wait_for_input_available	.\cli.h	/^int cli_wait_for_input_available(void);$/;"	p	signature:(void)
+cmd_arp_help	.\cli_cmd.c	/^void cmd_arp_help(int argc)$/;"	f	signature:(int argc)
+cmd_get_eth_status	.\cli_cmd.c	/^int cmd_get_eth_status(char *eth)$/;"	f	signature:(char *eth)
+cmd_get_ipaddr	.\cli_cmd.c	/^char *cmd_get_ipaddr(char *eth)$/;"	f	signature:(char *eth)
+cmd_get_mask	.\cli_cmd.c	/^char *cmd_get_mask(char *eth)$/;"	f	signature:(char *eth)
+cmd_help	.\cli_cmd.c	/^	char *cmd_help;$/;"	m	struct:__anon1	file:	access:public
+cmd_name	.\cli_cmd.c	/^	char *cmd_name;$/;"	m	struct:__anon1	file:	access:public
+cmd_passwd_change	.\cli_cmd.c	/^int cmd_passwd_change(char *userName, char *passwd, char *msg) $/;"	f	signature:(char *userName, char *passwd, char *msg)
+cmd_passwd_help	.\cli_cmd.c	/^void cmd_passwd_help(int argc)$/;"	f	signature:(int argc)
+cmd_reset_data	.\cli_cmd.c	/^void cmd_reset_data()$/;"	f
+cmd_reset_default	.\cli_cmd.c	/^void cmd_reset_default()$/;"	f
+cmd_reset_help	.\cli_cmd.c	/^void cmd_reset_help(int argc)$/;"	f	signature:(int argc)
+cmd_set_ifeth	.\cli_cmd.c	/^int cmd_set_ifeth(char *eth)$/;"	f	signature:(char *eth)
+cmd_user_check	.\cli_cmd.c	/^int cmd_user_check(char *username)$/;"	f	signature:(char *username)
+cmdedit_init	.\cmdedit.c	/^static void cmdedit_init(void)$/;"	f	file:	signature:(void)
+cmdedit_prmt_len	.\cmdedit.c	/^static int cmdedit_prmt_len;	\/* lenght prompt without colores string *\/$/;"	v	file:
+cmdedit_prompt	.\cmdedit.c	/^char *cmdedit_prompt;		\/* --- "" - - "" - -"- --""-- --""--- *\/$/;"	v	file:
+cmdedit_read_input	.\cmdedit.c	/^int cmdedit_read_input(char *prompt, char command[BUFSIZ])$/;"	f	signature:(char *prompt, char command[BUFSIZ])
+cmdedit_read_input	.\cmdedit.h	/^int     cmdedit_read_input(char* promptStr, char* command);$/;"	p	signature:(char* promptStr, char* command)
+cmdedit_reset_term	.\cmdedit.c	/^static void cmdedit_reset_term(void)$/;"	f	file:	signature:(void)
+cmdedit_set_out_char	.\cmdedit.c	/^static void cmdedit_set_out_char(int next_char)$/;"	f	file:	signature:(int next_char)
+cmdedit_setwidth	.\cmdedit.c	/^static void cmdedit_setwidth(int w, int redraw_flg)$/;"	f	file:	signature:(int w, int redraw_flg)
+cmdedit_setwidth	.\cmdedit.c	/^static void cmdedit_setwidth(int w, int redraw_flg);$/;"	p	file:	signature:(int w, int redraw_flg)
+cmdedit_termw	.\cmdedit.c	/^volatile int cmdedit_termw = 80;	\/* actual terminal width *\/$/;"	v	file:
+cmdedit_x	.\cmdedit.c	/^static int cmdedit_x;		\/* real x terminal position *\/$/;"	v	file:
+cmdedit_y	.\cmdedit.c	/^static int cmdedit_y;		\/* pseudoreal y terminal position *\/$/;"	v	file:
+collapse_pos	.\cmdedit.c	862;"	d	file:
+command_ps	.\cmdedit.c	/^static char *command_ps;	\/* --- "" - - "" - -"- --""-- --""--- *\/$/;"	v	file:
+concat_path_file	.\cmdedit.c	/^static char *concat_path_file(const char *path, const char *filename)$/;"	f	file:	signature:(const char *path, const char *filename)
+cur_history	.\cmdedit.c	/^static int cur_history;$/;"	v	file:
+cursor	.\cmdedit.c	/^static int cursor;		\/* required global for signal handler *\/$/;"	v	file:
+end_of_string	.\inifile.c	/^static int end_of_string(char c)$/;"	f	file:	signature:(char c)
+exe_n_cwd_tab_completion	.\cmdedit.c	/^static char **exe_n_cwd_tab_completion(char *command, int *num_matches,$/;"	f	file:	signature:(char *command, int *num_matches, int type)
+exit_on_timeout	.\cli.c	/^unsigned int exit_on_timeout;$/;"	v
+find_match	.\cmdedit.c	/^static int find_match(char *matchBuf, int *len_with_quotes)$/;"	f	file:	signature:(char *matchBuf, int *len_with_quotes)
+g_bddb_ip	.\cli_cmd.c	/^char g_bddb_ip[64];$/;"	v
+g_bddb_name	.\cli_cmd.c	/^char g_bddb_name[64];$/;"	v
+g_bddb_password	.\cli_cmd.c	/^char g_bddb_password[64];$/;"	v
+g_bddb_port	.\cli_cmd.c	/^int g_bddb_port = 3306;$/;"	v
+g_bddb_user	.\cli_cmd.c	/^char g_bddb_user[64];$/;"	v
+g_conn	.\cli_cmd.c	/^MYSQL g_conn;$/;"	v
+g_daemon	.\cli_cmd.c	/^int g_daemon = 0;$/;"	v
+g_fileBuf	.\cli_cmd.c	/^char *g_fileBuf = NULL;$/;"	v
+g_fileBufLen	.\cli_cmd.c	/^int g_fileBufLen = 0;$/;"	v
+g_filesize	.\cli_cmd.c	/^int g_filesize = 0;$/;"	v
+g_sql	.\cli_cmd.c	/^char *g_sql = NULL;$/;"	v
+getTermSettings	.\cmdedit.c	121;"	d	file:
+get_next_history	.\cmdedit.c	/^static int get_next_history(void)$/;"	f	file:	signature:(void)
+get_previous_history	.\cmdedit.c	/^static void get_previous_history(void)$/;"	f	file:	signature:(void)
+goto_new_line	.\cmdedit.c	/^static void goto_new_line(void)$/;"	f	file:	signature:(void)
+handlers_sets	.\cmdedit.c	/^volatile int handlers_sets = 0;	\/* Set next bites: *\/$/;"	v	file:
+history	.\cmdedit.c	/^static char *history[MAX_HISTORY+1]; \/* history + current *\/$/;"	v	file:
+home_pwd_buf	.\cmdedit.c	/^static char *home_pwd_buf = "";$/;"	v	file:
+hostname_buf	.\cmdedit.c	/^static char *hostname_buf;$/;"	v	file:
+inifile	.\cli_cmd.c	/^char *inifile="\/home\/admin\/bd_cli\/config.ini";$/;"	v
+initMySQL	.\cli_cmd.c	/^int initMySQL()$/;"	f
+initial_settings	.\cmdedit.c	/^static struct termios initial_settings, new_settings;$/;"	v	typeref:struct:termios	file:
+input_backspace	.\cmdedit.c	/^static void input_backspace(void)$/;"	f	file:	signature:(void)
+input_backward	.\cmdedit.c	/^static void input_backward(int num)$/;"	f	file:	signature:(int num)
+input_delete	.\cmdedit.c	/^static void input_delete(void)$/;"	f	file:	signature:(void)
+input_end	.\cmdedit.c	/^static void input_end(void)$/;"	f	file:	signature:(void)
+input_forward	.\cmdedit.c	/^static void input_forward(void)$/;"	f	file:	signature:(void)
+input_tab	.\cmdedit.c	/^static void input_tab(int *lastWasTab)$/;"	f	file:	signature:(int *lastWasTab)
+is_execute	.\cmdedit.c	/^static int is_execute(const struct stat *st)$/;"	f	file:	signature:(const struct stat *st)
+is_lock_needed	.\cli_cmd.c	/^	unsigned char is_lock_needed;  \/**< Framework will acquire lock before calling processing func *\/$/;"	m	struct:__anon1	file:	access:public
+isright_brace	.\inifile.c	/^static int isright_brace(char c )$/;"	f	file:	signature:(char c )
+last_char_is	.\cmdedit.c	/^static char * last_char_is(const char *s, int c)$/;"	f	file:	signature:(const char *s, int c)
+left_barce	.\inifile.c	/^static int left_barce(char c)$/;"	f	file:	signature:(char c)
+len	.\cmdedit.c	/^static int len;			\/* --- "" - - "" - -"- --""-- --""--- *\/$/;"	v	file:
+load_history	.\cmdedit.c	/^extern void load_history ( const char *fromfile )$/;"	f	signature:( const char *fromfile )
+load_history	.\cmdedit.h	/^void    load_history ( const char *fromfile );$/;"	p	signature:( const char *fromfile )
+load_ini_file	.\inifile.c	/^static int load_ini_file(const char *file, char *buf,int *file_size)$/;"	f	file:	signature:(const char *file, char *buf,int *file_size)
+log_destination	.\cli_log.c	/^static cli_log_destination log_destination; \/**< Message logging destination. *\/$/;"	v	file:
+log_headermask	.\cli_log.c	/^static unsigned int log_headermask; \/**< Bitmask of which pieces of info we want in the log line header. *\/ $/;"	v	file:
+log_level	.\cli_log.c	/^static cli_log_level             log_level; \/**< Message logging level. *\/ $/;"	v	file:
+log_log	.\cli_log.c	/^void log_log(cli_log_level level, const char *func, unsigned int line_num, const char *pFmt, ... )$/;"	f	signature:(cli_log_level level, const char *func, unsigned int line_num, const char *pFmt, ... )
+log_log	.\cli_log.h	/^void log_log(cli_log_level level, const char *func, unsigned int line_num, const char *pFmt, ... );$/;"	p	signature:(cli_log_level level, const char *func, unsigned int line_num, const char *pFmt, ... )
+main	.\bd_cli.c	/^int main(signed int argc, char *argv[]) $/;"	f	signature:(signed int argc, char *argv[])
+main	.\cmdedit.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+match_compare	.\cmdedit.c	/^static int match_compare(const void *a, const void *b)$/;"	f	file:	signature:(const void *a, const void *b)
+memory_exhausted	.\cmdedit.c	/^const char *memory_exhausted = "Memory exhausted";$/;"	v
+menu_path_buf	.\cli.c	/^char menu_path_buf[MAX_MENU_PATH_LENGTH] = "<NGFW> ";$/;"	v
+my_euid	.\cmdedit.c	/^static int my_euid;$/;"	v	file:
+my_gid	.\cmdedit.c	/^static int my_gid;$/;"	v	file:
+my_uid	.\cmdedit.c	/^static int my_uid;$/;"	v	file:
+n_history	.\cmdedit.c	/^static int n_history;$/;"	v	file:
+new_settings	.\cmdedit.c	/^static struct termios initial_settings, new_settings;$/;"	v	typeref:struct:	file:
+newline	.\inifile.c	/^static int newline(char c)$/;"	f	file:	signature:(char c)
+num_ok_lines	.\cmdedit.c	/^static int num_ok_lines = 1;$/;"	v	file:
+out1str	.\cmdedit.c	/^static inline void out1str(const char *s)$/;"	f	file:	signature:(const char *s)
+parse_file	.\inifile.c	/^static int parse_file(const char *section, const char *key, const char *buf,int *sec_s,int *sec_e,$/;"	f	file:	signature:(const char *section, const char *key, const char *buf,int *sec_s,int *sec_e, int *key_s,int *key_e, int *value_s, int *value_e)
+parse_prompt	.\cmdedit.c	/^static void parse_prompt(const char *prmt_ptr)$/;"	f	file:	signature:(const char *prmt_ptr)
+path_parse	.\cmdedit.c	/^static int path_parse(char ***p, int flags)$/;"	f	file:	signature:(char ***p, int flags)
+process_arp_cmd	.\cli_cmd.c	/^static void process_arp_cmd(char *cmd_line);$/;"	p	file:	signature:(char *cmd_line)
+process_arp_cmd	.\cli_cmd.c	/^void process_arp_cmd(char *cmd_line)$/;"	f	signature:(char *cmd_line)
+process_exit_on_idle_cmd	.\cli_cmd.c	/^static void process_exit_on_idle_cmd(char *cmd_line);$/;"	p	file:	signature:(char *cmd_line)
+process_exit_on_idle_cmd	.\cli_cmd.c	/^void process_exit_on_idle_cmd(char *cmd_line)$/;"	f	signature:(char *cmd_line)
+process_help_cmd	.\cli_cmd.c	/^static void process_help_cmd(char *cmd_line);$/;"	p	file:	signature:(char *cmd_line)
+process_help_cmd	.\cli_cmd.c	/^void process_help_cmd(char *cmd_line __attribute((unused)))$/;"	f	signature:(char *cmd_line __attribute((unused)))
+process_ifconfig_cmd	.\cli_cmd.c	/^static void process_ifconfig_cmd(char *cmd_line);$/;"	p	file:	signature:(char *cmd_line)
+process_ifconfig_cmd	.\cli_cmd.c	/^void process_ifconfig_cmd(char *cmd_line)$/;"	f	signature:(char *cmd_line)
+process_input	.\cli.c	/^static void process_input(void);$/;"	p	file:	signature:(void)
+process_input	.\cli.c	/^void process_input() $/;"	f
+process_logout_cmd	.\cli_cmd.c	/^static void process_logout_cmd(char *cmd_line);$/;"	p	file:	signature:(char *cmd_line)
+process_logout_cmd	.\cli_cmd.c	/^void process_logout_cmd(char *cmd_line __attribute__((unused)))$/;"	f	signature:(char *cmd_line __attribute__((unused)))
+process_passwd_cmd	.\cli_cmd.c	/^static void process_passwd_cmd(char *cmd_line);$/;"	p	file:	signature:(char *cmd_line)
+process_passwd_cmd	.\cli_cmd.c	/^void process_passwd_cmd(char *cmd_line)$/;"	f	signature:(char *cmd_line)
+process_reboot_cmd	.\cli_cmd.c	/^static void process_reboot_cmd(char *cmd_line);$/;"	p	file:	signature:(char *cmd_line)
+process_reboot_cmd	.\cli_cmd.c	/^void process_reboot_cmd(char *cmd_line __attribute__((unused)))$/;"	f	signature:(char *cmd_line __attribute__((unused)))
+process_reset_cmd	.\cli_cmd.c	/^static void process_reset_cmd(char *cmd_line);$/;"	p	file:	signature:(char *cmd_line)
+process_reset_cmd	.\cli_cmd.c	/^void process_reset_cmd(char *cmd_line)$/;"	f	signature:(char *cmd_line)
+process_route_cmd	.\cli_cmd.c	/^static void process_route_cmd(char *cmd_line);$/;"	p	file:	signature:(char *cmd_line)
+process_route_cmd	.\cli_cmd.c	/^void process_route_cmd(char *cmd_line)$/;"	f	signature:(char *cmd_line)
+process_shutdown_cmd	.\cli_cmd.c	/^static void process_shutdown_cmd(char *cmd_line);$/;"	p	file:	signature:(char *cmd_line)
+process_shutdown_cmd	.\cli_cmd.c	/^void process_shutdown_cmd(char *cmd_line __attribute__((unused)))$/;"	f	signature:(char *cmd_line __attribute__((unused)))
+put_prompt	.\cmdedit.c	/^static void put_prompt(void)$/;"	f	file:	signature:(void)
+read_profile_int	.\inifile.c	/^int read_profile_int( const char *section, const char *key,int default_value, $/;"	f	signature:( const char *section, const char *key,int default_value, const char *file)
+read_profile_int	.\inifile.h	/^int read_profile_int( const char *section, const char *key,int default_value, const char *file);$/;"	p	signature:( const char *section, const char *key,int default_value, const char *file)
+read_profile_string	.\inifile.c	/^int read_profile_string( const char *section, const char *key,char *value, $/;"	f	signature:( const char *section, const char *key,char *value, int size, const char *default_value, const char *file)
+read_profile_string	.\inifile.h	/^int read_profile_string( const char *section, const char *key,char *value, int size,const char *default_value, const char *file);$/;"	p	signature:( const char *section, const char *key,char *value, int size,const char *default_value, const char *file)
+redraw	.\cmdedit.c	/^static void redraw(int y, int back_cursor)$/;"	f	file:	signature:(int y, int back_cursor)
+safe_read	.\cmdedit.c	/^static ssize_t safe_read(int fd, void *buf, size_t count)$/;"	f	file:	signature:(int fd, void *buf, size_t count)
+save_history	.\cmdedit.c	/^extern void save_history ( const char *tofile )$/;"	f	signature:( const char *tofile )
+save_history	.\cmdedit.h	/^void    save_history ( const char *tofile );$/;"	p	signature:( const char *tofile )
+setTermSettings	.\cmdedit.c	120;"	d	file:
+showfiles	.\cmdedit.c	/^static void showfiles(char **matches, int nfiles)$/;"	f	file:	signature:(char **matches, int nfiles)
+sighandler_t	.\cmdedit.c	/^typedef void (*sighandler_t) (int);$/;"	t	file:
+uinitMySQL	.\cli_cmd.c	/^void uinitMySQL()$/;"	f
+usage	.\bd_cli.c	/^static void usage(char *prog_name);$/;"	p	file:	signature:(char *prog_name)
+usage	.\bd_cli.c	/^void usage(char *prog_name)$/;"	f	signature:(char *prog_name)
+user_buf	.\cmdedit.c	/^static char *user_buf = "";$/;"	v	file:
+username_tab_completion	.\cmdedit.c	/^static char **username_tab_completion(char *ud, int *num_matches)$/;"	f	file:	signature:(char *ud, int *num_matches)
+vas_bd_mysql_exec	.\cli_cmd.c	/^int vas_bd_mysql_exec(char *sql)$/;"	f	signature:(char *sql)
+win_changed	.\cmdedit.c	/^static void win_changed(int nsig)$/;"	f	file:	signature:(int nsig)
+write_profile_string	.\inifile.c	/^int write_profile_string(const char *section, const char *key,$/;"	f	signature:(const char *section, const char *key, const char *value, const char *file)
+write_profile_string	.\inifile.h	/^int write_profile_string( const char *section, const char *key,const char *value, const char *file);$/;"	p	signature:( const char *section, const char *key,const char *value, const char *file)

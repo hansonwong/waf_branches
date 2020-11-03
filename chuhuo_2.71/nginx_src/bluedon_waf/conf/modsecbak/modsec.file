@@ -1,0 +1,6 @@
+activated_rules
+base_rules
+experimental_rules
+optional_rules
+modsecurity.conf
+modsecurity_crs_10_setup.conf.example

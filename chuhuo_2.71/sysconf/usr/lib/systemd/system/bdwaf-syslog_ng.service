@@ -1,0 +1,12 @@
+[Unit]
+Description=BDWAF syslog-ng
+After=dpdk.service
+Requires=dpdk.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/syslog-ng/sbin/syslog-ng
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

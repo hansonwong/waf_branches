@@ -1,0 +1,5 @@
+{% for info in data -%}
+{% if info.f_iAuthType=='pre_shared_key' -%}
+{{info.f_sAddress}} {{info.f_iAuthText}}
+{% endif %}
+{%- endfor %}

@@ -1,0 +1,18 @@
+1. 创建用户 admin 密码 bd@fwsc2016
+   # useradd admin
+   # passwd admin 
+     password: bd@fwsc2016
+
+2. 将 bd_cli 目录上传到 /home/admin/ 下
+   注：bd_cli 目录应至少包含以下文件：
+   1) bdcli
+   2) bdcli_setup.sh
+   3) config.ini
+
+3. 执行串口配置脚本
+   # cd /home/admin/bd_cli
+   # chmod +x ./bdcli_setup.sh
+   # ./bdcli_setup.sh
+
+4. 连接串口进行登陆
+   串口波特率设为115200

@@ -1,0 +1,159 @@
+#!/usr/bin/env python
+# coding=utf-8
+
+import time
+import json
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+import collections
+from netaddr import IPRange, IPNetwork
+from config import fetchall_sql as fcal_3306
+
+RuleCmd = collections.namedtuple('RuleCmd', 'action, snortid, sip')
+cmd = '1#1,23,3,4#rule_json#1,2,3#1#{ct}'
+
+rule_template_sql = 'SELECT * FROM m_tbaudit_rule_templates WHERE id in ({ids})'
+rule_enable_sql = ('SELECT sSnortRuleTemplate, SourceIPGroup, iSourceIPType '
+                   'FROM m_tbaudit_app_rules WHERE istatus=1;')
+
+AUDIT_RULE_FILE = '/usr/local/bluedon/tmp/bd_fw_audit_rules.rules'
+
+def make_rules(rule_list):
+    rule_buffer = []
+    rule_buf_count = 0
+    for rule in rule_list:
+        _sip = rule.sip
+        _act = rule.action
+        _classtype = ''
+        for res in fcal_3306(rule_template_sql.format(ids=rule.snortid)):
+            tpl = res.get('sTemplate')
+            _classtype = 'app-{act}-{cltp}'.format(act=_act, cltp=res.get('sClassType'))
+            _actual_rule =tpl.format(action=_act, sip=_sip, rule_name=res['sRuleName'],
+                                     classtype=_classtype)
+            print _actual_rule
+
+            # cache rules in a list, write to file when get more then 1024 rules
+            if rule_buf_count < 1024:
+                rule_buffer.append(_actual_rule)
+                rule_buf_count += 1
+            else:
+                with open(AUDIT_RULE_FILE, 'a+') as fp:
+                    for r in rule_buffer:
+                        fp.write('%s\n' % r)
+                rule_buf_count = 0
+
+    # if rules are less than 1024
+    if rule_buf_count > 0:
+        with open(AUDIT_RULE_FILE, 'a+') as fp:
+            for r in rule_buffer:
+                fp.write('%s\n' % r)
+        rule_buf_count = 0
+
+
+    # default rules
+
+    pass
+
+# parser for m_tbaddress_list[sIPJson] return a list of ip for snort rules'
+def ip_parser(ip_str):
+    try:
+        ip_js = json.loads(ip_str)
+    except Exception as e:
+        # log here
+        print('[make_rules] get wrong ip string %s, %s' % (ip_str, e))
+
+    ret = []
+    # ip json has string like 'ip/mask'
+    ip_mask = ip_js.get('ipmaskrange_int', None)
+    if ip_mask is not None:
+        if ip_mask == '0.0.0.0/0':
+            ret.append('any')
+        else:
+            ret.append(ip_mask)
+
+    # ip json is a range
+    ip_range = ip_js.get('iprange', None)
+    if ip_range is not None:
+        _ipr = ip_range.split('-')
+        if len(_ipr) != 2:
+            # log here
+            print('[make_rules] get wrong iprange %s' % ip_range)
+        else:
+            ret = IPRange(_ipr[0], _ipr[1])
+
+    # ip json is a single ip
+    ip_single = ip_js.get('ipmaskalone_int', None)
+    if ip_single is not None:
+        _ip = IPNetwork(ip_single)
+        ret.append(str(_ip.ip))
+    return ret
+
+def get_address_list():
+    addr_dict = dict()
+    get_addr_sql = 'SELECT id, sIPJson FROM m_tbaddress_list;'
+    for res in fcal_3306(get_addr_sql):
+        addr_dict[res['id']] = res['sIPJson']
+
+    addr_group = dict()
+    get_addr_group = 'SELECT id, sIP FROM m_tbaddressgroup;'
+    for res in fcal_3306(get_addr_group):
+        addr_group[res['id']] = [int(i) for i in res['sIP'].split(',')]
+
+    return addr_dict, addr_group
+
+
+
+# get address ID, generate the rules for those ip
+def make_rules_for_ip(_ip_str, _rules_id):
+    pass
+
+
+def make_rules_from_db():
+    make_rules_list = list()
+    # get address list and address group first
+    addr, addr_group = get_address_list()
+    # get address_id, address_type, and rules_id from db
+    _rule_info = ['sSnortRuleTemplate', 'sSnortAction', 'sSourceIPGroup', 'iSourceIPType']
+    get_info_sql = 'SELECT {} FROM m_tbaudit_app_rules WHERE istatus=1;'.format(','.join(_rule_info))
+    for res in fcal_3306(get_info_sql):
+        # ip group
+        if res['iSourceIPType'] == 2:
+            group_id = addr_group.get(res['sSourceIPGroup'], [])
+            if len(group_id) == 0:
+                # log here wrong ip group
+                continue
+            for _id in group_id:
+                # addr[id] --> get json description of ip
+                # ip_parser return a list of json get from addr[id]
+                _all_sip = ip_parser(addr[_id])
+                for _sip in _all_sip:
+                    _rule = RuleCmd(res['sSnortAction'], res['sSnortRuleTemplate'], _sip)
+                    print _rule
+                    make_rules_list.append(_rule)
+        # ip
+        else:
+            # addr[id] --> get json description of ip
+            # ip_parser return a list of json get from addr[id]
+            _addr_id = int(res['sSourceIPGroup'])
+            _all_sip = ip_parser(addr[_addr_id])
+            for _sip in _all_sip:
+                _rule = RuleCmd(res['sSnortAction'], res['sSnortRuleTemplate'], _sip)
+                print _rule
+                make_rules_list.append(_rule)
+
+    # get_json_sql = 'SELECT sIPJson FROM m_tbaddress_list WHERE id=%s;' % _address_id
+    print make_rules_list
+    make_rules(make_rules_list)
+    pass
+
+if __name__ == '__main__':
+    # make_rules(cmd.format(ct=int(time.time())))
+    # sql = 'SELECT sIPJson FROM m_tbaddress_list;'
+    # for res in fcal_3306(sql):
+    #     print res
+    #     for ip in ip_parser(res['sIPJson']):
+    #         print ip
+
+    make_rules_from_db()
+    pass

@@ -1,0 +1,16 @@
+[Unit]
+Description=Firewall Python Daemon
+After=dpdk.service mysqld.service firewall-python-init.service
+Wants=dpdk.service
+Requires=mysqld.service
+
+[Service]
+Type=forking
+PIDFile=/var/run/second_firewall.pid
+ExecStart=/usr/bin/python /usr/local/bluedon/second_firewall_daemon.py -s start
+ExecStop=/usr/bin/python /usr/local/bluedon/second_firewall_daemon.py -s stop
+Restart=always
+Environment=PYTHONPATH=/usr/local/bluedon
+
+[Install]
+WantedBy=multi-user.target

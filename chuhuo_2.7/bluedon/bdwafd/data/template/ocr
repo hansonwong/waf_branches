@@ -1,0 +1,37 @@
+## ocr function
+{% if ocr.status == 1 %}
+SecAction \
+  "id:'900100', \
+  phase:1, \
+  t:none, \
+  setvar:'tx.pic_ocr_protected_urls={{ocr.urls}}', \
+  setvar:'tx.pic_ocr_protected_exts={{ocr.exts}}', \
+  nolog, \
+  pass"
+
+SecRule REQUEST_METHOD "!^POST$" "phase:2,id:'900106',t:none,nolog,pass,skipAfter:END_PIC_OCR_PROTECTION_CHECK"
+# 大于 5M 不拦截
+SecRule REQUEST_BODY "@gt 5242880" "phase:2,id:'900107',t:none,nolog,pass,skipAfter:END_PIC_OCR_PROTECTION_CHECK"
+
+#SecRule &TX:PIC_OCR_PROTECTED_URLS "@eq 0" "phase:2,id:'900101',t:none,nolog,pass,skipAfter:END_PIC_OCR_PROTECTION_CHECK"
+#SecRule REQUEST_FILENAME ".*" "chain,phase:2,id:'900102',t:none,nolog,pass,setvar:'tx.filename=#%{request_filename}#',skipAfter:END_PIC_OCR_PROTECTION_CHECK"
+#SecRule TX:FILENAME "!@within %{tx.pic_ocr_protected_urls}" "t:none"
+
+SecRule TX:PIC_OCR_PROTECTED_URLS "!^$" "chain,phase:2,id:'900101',t:none,nolog,pass,skipAfter:END_PIC_OCR_PROTECTION_CHECK"
+  SecRule REQUEST_FILENAME ".*" "chain,t:none,setvar:'tx.filename=#%{request_filename}#'"
+  SecRule TX:FILENAME "!@within %{tx.pic_ocr_protected_urls}" "t:none"
+
+{% if ocr.exts %}
+SecRule FILES "!\.({{ocr.exts}})$" "phase:2,id:'900103',t:none,nolog,pass,skipAfter:END_PIC_OCR_PROTECTION_CHECK"
+{% endif %}
+# SecRule FILES "\.(%{tx.pic_ocr_protected_exts})$" "t:none"
+
+SecRule FILES_TMPNAMES "@inspectFile tesseract_ocr.lua" "phase:2,id:'900104',nolog,t:none,pass"
+
+
+SecRule &TX:OCR_TEXT "@eq 1" "chain,phase:2,id:900105,t:none,log,deny,msg:'OCR block %{tx.ocr_text}'"
+SecRule TX:OCR_TEXT "@pmFromFile modsecurity_ocr_scanners.data" "t:none"
+
+
+SecMarker END_PIC_OCR_PROTECTION_CHECK
+{% endif %}

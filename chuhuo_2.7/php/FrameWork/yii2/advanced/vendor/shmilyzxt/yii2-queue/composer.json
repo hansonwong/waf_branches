@@ -1,0 +1,22 @@
+{
+    "name": "shmilyzxt/yii2-queue",
+    "description": "a yii2 extension to make simple to use queue.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "shmilyzxt",
+            "email": "49783121@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "jeremeamia/SuperClosure" : "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "\\shmilyzxt\\queue\\": ""
+        }
+    }
+}

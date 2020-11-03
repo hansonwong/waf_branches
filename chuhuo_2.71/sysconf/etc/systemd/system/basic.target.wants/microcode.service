@@ -1,0 +1,12 @@
+[Unit]
+Description=Load CPU microcode update
+After=basic.target
+ConditionVirtualization=false
+
+[Service]
+Type=oneshot
+RemainAfterExit=no
+ExecStart=/usr/bin/bash -c "echo 1 > /sys/devices/system/cpu/microcode/reload"
+
+[Install]
+WantedBy=basic.target

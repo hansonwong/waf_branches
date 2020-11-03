@@ -1,0 +1,8 @@
+#!/bin/sh
+{% for ip_info in hot %}
+ping -c 1 {{ip_info['terminalIP']}}
+if [ $? -eq 1 ];then
+    exit 1
+fi{% endfor %}
+
+exit 0

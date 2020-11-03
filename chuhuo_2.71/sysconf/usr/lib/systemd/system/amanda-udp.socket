@@ -1,0 +1,9 @@
+[Unit]
+Description=Amanda Activation Socket
+
+[Socket]
+Service=amanda-udp.service
+ListenDatagram=10080
+
+[Install]
+WantedBy=sockets.target

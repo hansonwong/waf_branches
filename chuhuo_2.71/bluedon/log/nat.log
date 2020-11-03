@@ -1,0 +1,8 @@
+[2016-04-26 16:29:35] [SNAT] [DEBUG] /usr/sbin/iptables -t nat -I FWSNAT 1  -s 192.168.1.0/24    -j SNAT --to-source 172.16.5.29   
+[2016-04-26 16:29:35] [SNAT] [DEBUG] /usr/sbin/iptables -t nat -I FWSNAT 2  -s 192.168.10.11 -m iprange --dst-range 192.168.0.10-192.168.0.20   -j LOG --log-prefix "ipt_log=MASQUERADE "  
+[2016-04-26 16:29:35] [SNAT] [DEBUG] /usr/sbin/iptables -t nat -I FWSNAT 2  -s 192.168.10.11 -m iprange --dst-range 192.168.0.10-192.168.0.20   -j LOG --log-prefix "ipt_log=MASQUERADE "  
+[2016-04-26 16:29:35] [SNAT] [DEBUG] /usr/sbin/iptables -t nat -I FWSNAT 3  -s 192.168.10.11 -m iprange --dst-range 192.168.0.10-192.168.0.20    -o vEth1 -j MASQUERADE   
+[2016-04-26 16:29:35] [SNAT] [DEBUG] /usr/sbin/iptables -t nat -I FWSNAT 3  -s 192.168.10.11 -m iprange --dst-range 192.168.0.10-192.168.0.20    -o vEth1 -j MASQUERADE   
+[2016-04-26 16:29:35] [SNAT] [DEBUG] /usr/sbin/iptables -t nat -I FWSNAT 4  -s 192.168.1.100     -o vEth1 -j MASQUERADE   
+[2016-04-26 16:29:35] [SNAT] [DEBUG] /usr/sbin/iptables -t nat -I FWSNAT 4  -s 192.168.1.100     -o vEth1 -j MASQUERADE   
+[2016-04-26 16:29:35] [SNAT] [DEBUG] /usr/sbin/iptables -t nat -I FWSNAT 4  -s 192.168.1.100     -o vEth1 -j MASQUERADE   

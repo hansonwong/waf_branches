@@ -1,0 +1,8 @@
+[
+    {"sTitle":"IP或IP段","data":"IP"},
+    {"sTitle":"IP类型","data":"IPtyle"},
+    {"sTitle":"类型","data":"type"},
+    {"sClass":"btn_edit","bVisible":false,"data":""},
+    {"sClass":"btn_view","bVisible":false,"data":""},
+    {"sClass":"btn_del","bVisible":false,"data":""}
+]
